@@ -125,10 +125,21 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
 
-/** Abonnement Realtime : session (état du jeu) */
+/** Abonnement Realtime : session (état du jeu) — avec fallback polling 3 s */
 export function subscribeSession(sessionId: string, onUpdate: (s: OnlineSession) => void): () => void {
   const sb = getSupabaseBrowser();
   if (!sb) return () => {};
+  let cancelled = false;
+
+  const poll = async () => {
+    try {
+      const { data } = await sb.from("game_sessions").select("*").eq("id", sessionId).single();
+      if (!cancelled && data) onUpdate(data as OnlineSession);
+    } catch {
+      // salon supprimé ou réseau — ignoré, le polling continue
+    }
+  };
+
   const channel = sb
     .channel(`session-${sessionId}`)
     .on(
@@ -139,15 +150,25 @@ export function subscribeSession(sessionId: string, onUpdate: (s: OnlineSession)
       },
     )
     .subscribe();
+  const interval = setInterval(poll, 3000);
+
   return () => {
+    cancelled = true;
+    clearInterval(interval);
     sb.removeChannel(channel);
   };
 }
 
-/** Abonnement Realtime : joueurs du salon */
+/** Abonnement Realtime : joueurs du salon — avec fallback polling 3 s */
 export function subscribePlayers(sessionId: string, onUpdate: (players: OnlinePlayer[]) => void): () => void {
   const sb = getSupabaseBrowser();
   if (!sb) return () => {};
+  let cancelled = false;
+
+  const poll = () => {
+    if (!cancelled) void refreshPlayers(sessionId).then(onUpdate);
+  };
+
   const channel = sb
     .channel(`players-${sessionId}`)
     .on(
@@ -159,7 +180,11 @@ export function subscribePlayers(sessionId: string, onUpdate: (players: OnlinePl
     )
     .subscribe();
   void refreshPlayers(sessionId).then(onUpdate);
+  const interval = setInterval(poll, 3000);
+
   return () => {
+    cancelled = true;
+    clearInterval(interval);
     sb.removeChannel(channel);
   };
 }
@@ -171,10 +196,16 @@ export async function refreshPlayers(sessionId: string): Promise<OnlinePlayer[]>
   return (data ?? []) as OnlinePlayer[];
 }
 
-/** Abonnement Realtime : réponses */
+/** Abonnement Realtime : réponses — avec fallback polling 3 s */
 export function subscribeAnswers(sessionId: string, onUpdate: (answers: RoomAnswer[]) => void): () => void {
   const sb = getSupabaseBrowser();
   if (!sb) return () => {};
+  let cancelled = false;
+
+  const poll = () => {
+    if (!cancelled) void refreshAnswers(sessionId).then(onUpdate);
+  };
+
   const channel = sb
     .channel(`answers-${sessionId}`)
     .on(
@@ -186,7 +217,11 @@ export function subscribeAnswers(sessionId: string, onUpdate: (answers: RoomAnsw
     )
     .subscribe();
   void refreshAnswers(sessionId).then(onUpdate);
+  const interval = setInterval(poll, 3000);
+
   return () => {
+    cancelled = true;
+    clearInterval(interval);
     sb.removeChannel(channel);
   };
 }
