@@ -45,15 +45,19 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
       if (mode === "login") {
         const { data, error: err } = await sb.auth.signInWithPassword({ email, password });
         if (err) throw err;
-        if (data.user) {
-          setUser({ id: data.user.id, email: data.user.email ?? undefined });
+        if (data.session) {
+          setUser({ id: data.user!.id, email: data.user!.email ?? undefined });
           // Charge le profil (langue, nom)
           const { data: profile } = await sb
             .from("profiles")
             .select("username, avatar_color, language")
-            .eq("id", data.user.id)
+            .eq("id", data.user!.id)
             .single();
           if (profile?.language) setLanguage(profile.language as UILanguage);
+          // Connecté → direction le salon en ligne (créer ou rejoindre)
+          router.push("/play/online");
+        } else {
+          setError(lang === "fr" ? "Session non établie. Vérifie ton email de confirmation." : "No session. Check your confirmation email.");
         }
       } else {
         const { data, error: err } = await sb.auth.signUp({
@@ -62,15 +66,29 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
           options: { data: { username: name || email.split("@")[0] } },
         });
         if (err) throw err;
-        if (data.user) {
-          // Crée le profil
+        if (data.session) {
+          // Compte actif immédiatement (confirmation email désactivée)
+          await sb.from("profiles").insert({
+            id: data.user!.id,
+            username: name || email.split("@")[0],
+            avatar_color: 0,
+            language: lang,
+          });
+          setUser({ id: data.user!.id, email: data.user!.email ?? undefined });
+          router.push("/play/online");
+        } else if (data.user) {
+          // Confirmation email activée : le compte existe mais il faut confirmer
           await sb.from("profiles").insert({
             id: data.user.id,
             username: name || email.split("@")[0],
             avatar_color: 0,
             language: lang,
           });
-          setUser({ id: data.user.id, email: data.user.email ?? undefined });
+          setError(
+            lang === "fr"
+              ? `✅ Compte créé ! Un email de confirmation a été envoyé à ${email}. Clique le lien puis reconnecte-toi — ta session restera ensuite active.`
+              : `✅ Account created! A confirmation email was sent to ${email}. Click the link, then sign in — your session will then stay active.`,
+          );
         }
       }
     } catch (err) {

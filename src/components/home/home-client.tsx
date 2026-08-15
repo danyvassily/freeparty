@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { BRAND } from "@/lib/brand";
 import { ModeCard } from "@/components/ui/primitives";
+import { getSupabaseBrowser } from "@/lib/supabase/client";
 import { useGameStore, newPlayer, PLAYER_COLORS, type GameConfig, type Player } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
 import { useSettingsStore } from "@/lib/store/settings";
@@ -95,6 +96,7 @@ export function HomeClient() {
   const lang = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const settings = useSettingsStore();
+  const [userEmail, setUserEmail] = useState<string | null>(null);
   const [step, setStep] = useState<Step>("home");
   const [selectedMode, setSelectedMode] = useState<GameConfig["mode"]>("classic");
   const [category, setCategory] = useState<QuestionCategory | "mixed">("mixed");
@@ -107,6 +109,15 @@ export function HomeClient() {
   const [debateMode, setDebateMode] = useState("standard");
 
   const isDebate = selectedMode === "debate";
+
+  // Session persistée : afficher l'état connecté sans reconnexion
+  useEffect(() => {
+    const sb = getSupabaseBrowser();
+    if (!sb) return;
+    sb.auth.getUser().then(({ data }) => {
+      if (data.user) setUserEmail(data.user.email ?? "?");
+    });
+  }, []);
 
   function pickMode(mode: GameConfig["mode"]) {
     setSelectedMode(mode);
@@ -187,7 +198,13 @@ export function HomeClient() {
             aria-label={translate(lang, "auth.login")}
             className="rounded-full border border-fp-border bg-fp-surface px-3 py-1.5 text-xs font-semibold text-fp-text-dim transition-colors hover:text-white"
           >
-            👤
+            {userEmail ? (
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-fp-success to-fp-accent-2 text-[10px] font-bold text-white">
+                {userEmail.charAt(0).toUpperCase()}
+              </span>
+            ) : (
+              "👤"
+            )}
           </button>
         </div>
       </header>
