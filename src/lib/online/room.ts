@@ -79,17 +79,25 @@ export async function createRoom(opts: { mode: string; category: string; questio
     .single();
   if (error) throw error;
 
-  const { data: player, error: err2 } = await sb
+  const { error: err2 } = await sb
     .from("game_players")
     .insert({
       session_id: session.id,
       user_id: user.user.id,
       name: (user.user.user_metadata?.username as string) ?? "Hôte",
       is_host: true,
-    })
-    .select()
-    .single();
+    });
   if (err2) throw err2;
+
+  // Relit le joueur (un INSERT avec RETURNING échoue en RLS : policy SELECT
+  // pas encore applicable au moment du statement)
+  const { data: player, error: err3 } = await sb
+    .from("game_players")
+    .select("*")
+    .eq("session_id", session.id)
+    .eq("user_id", user.user.id)
+    .single();
+  if (err3) throw err3;
 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
@@ -110,17 +118,24 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
   if (error) throw error;
   if (!session) throw new Error("Room not found");
 
-  const { data: player, error: err2 } = await sb
+  const { error: err2 } = await sb
     .from("game_players")
     .insert({
       session_id: session.id,
       user_id: user.user.id,
       name: (user.user.user_metadata?.username as string) ?? "Joueur",
       is_host: false,
-    })
-    .select()
-    .single();
+    });
   if (err2) throw err2;
+
+  // Relit le joueur (même raison que createRoom : pas de RETURNING en RLS)
+  const { data: player, error: err3 } = await sb
+    .from("game_players")
+    .select("*")
+    .eq("session_id", session.id)
+    .eq("user_id", user.user.id)
+    .single();
+  if (err3) throw err3;
 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
