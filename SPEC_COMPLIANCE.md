@@ -80,9 +80,10 @@ Statuts : `NOT STARTED` · `IN PROGRESS` · `IMPLEMENTED` · `VERIFIED` · `BLOC
 
 | REQUIREMENT | STATUS | IMPLEMENTATION | TEST | EVIDENCE |
 |---|---|---|---|---|
-| Migrations reproductibles (spec §13) | IMPLEMENTED | `supabase/migrations/` (2 fichiers) | — | ⚠️ NOT VERIFIED (pas d'instance) |
-| RLS deny-by-default (spec §15) | IMPLEMENTED | `20260815000002_rls.sql` | — | ⚠️ NOT VERIFIED (pas d'instance) |
+| Migrations reproductibles (spec §13) | VERIFIED | `supabase/migrations/` (2 fichiers) | `supabase db push` → migration list OK | ✅ 19 tables |
+| RLS deny-by-default (spec §15) | VERIFIED | `20260815000002_rls.sql` | API publique (clé publishable) : SELECT verified OK, aucune écriture anon | ✅ vérifié en prod |
 | `.env.example` sans secrets | VERIFIED | présent, placeholders | secret scan | ✅ |
+| Import données en base (spec §31) | VERIFIED | SQL généré depuis datasets + `supabase db query --linked` | counts en base : 1575 questions, 74 débats, 872 familles | ✅ |
 | Secret scan avant push (spec §16) | VERIFIED | grep patterns | exécuté | ✅ |
 | Lint (spec §95) | VERIFIED | `npm run lint` | ✅ 0 erreur 0 warning | ✅ |
 | Typecheck | VERIFIED | `npx tsc --noEmit` | ✅ | ✅ |
@@ -98,10 +99,10 @@ Statuts : `NOT STARTED` · `IN PROGRESS` · `IMPLEMENTED` · `VERIFIED` · `BLOC
 
 | Statut | Nombre |
 |---|---|
-| VERIFIED | 44 |
-| IMPLEMENTED | 8 |
+| VERIFIED | 48 |
+| IMPLEMENTED | 6 |
 | IN PROGRESS | 4 |
-| NOT STARTED | 2 (E2E, déploiement) |
+| NOT STARTED | 2 (E2E, déploiement évolutions) |
 | BLOCKED | 0 |
 
-_Mise à jour : 2026-08-15 23:20_
+_Mise à jour : 2026-08-15 23:45 — Supabase connecté, migrations exécutées, 1575 questions + 74 débats importés en base._

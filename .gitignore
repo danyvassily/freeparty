@@ -44,3 +44,6 @@ next-env.d.ts
 /questions/.dedupe-report.json
 /questions/.verification-report.json
 /questions/.quality-report.json
+
+# supabase CLI temp
+/supabase/.temp/
