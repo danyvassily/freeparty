@@ -1,0 +1,1180 @@
+[
+  {
+    "id": "phil-sartre-existence-precedes-essence",
+    "conceptId": "sartre-existence-precedes-essence",
+    "familyId": "sartrean-existentialism",
+    "type": "mcq",
+    "question": "Quelle formule résume la philosophie de Sartre ?",
+    "answers": [
+      "« L'essence précède l'existence »",
+      "« Dieu est mort »",
+      "« Tout est nombre »",
+      "« L'existence précède l'essence »"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "sartre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9364",
+      "url": "https://www.wikidata.org/wiki/Q9364",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-sartre-being-and-nothingness",
+    "conceptId": "sartre-being-and-nothingness",
+    "familyId": "sartrean-works",
+    "type": "mcq",
+    "question": "Quel est le grand traité philosophique de Jean-Paul Sartre ?",
+    "answers": [
+      "L'Être et le Néant",
+      "La Phénoménologie de l'esprit",
+      "L'Évolution créatrice",
+      "Le Hasard et la Nécessité"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "sartre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9364",
+      "url": "https://www.wikidata.org/wiki/Q9364",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-sartre-hell-is-other-people",
+    "conceptId": "sartre-hell-is-other-people",
+    "familyId": "sartrean-works",
+    "type": "mcq",
+    "question": "Dans quelle pièce de Sartre lit-on « L'enfer, c'est les autres » ?",
+    "answers": [
+      "Le Diable et le Bon Dieu",
+      "Huis clos",
+      "Les Mouches",
+      "Les Mains sales"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "sartre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9364",
+      "url": "https://www.wikidata.org/wiki/Q9364",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-sartre-bad-faith",
+    "conceptId": "sartre-bad-faith",
+    "familyId": "sartrean-doctrine",
+    "type": "mcq",
+    "question": "Comment Sartre appelle-t-il le mensonge que l'on se fait à soi-même pour fuir sa liberté ?",
+    "answers": [
+      "La dissonance",
+      "L'aliénation",
+      "La mauvaise foi",
+      "Le refoulement"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "sartre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9364",
+      "url": "https://www.wikidata.org/wiki/Q9364",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-sartre-refused-nobel-prize",
+    "conceptId": "sartre-refused-nobel-prize",
+    "familyId": "sartre-biography",
+    "type": "mcq",
+    "question": "Quel prix Sartre refuse-t-il en 1964 ?",
+    "answers": [
+      "Le prix Goncourt",
+      "Le prix Pulitzer",
+      "Le prix Goethe",
+      "Le prix Nobel de littérature"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "sartre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9364",
+      "url": "https://www.wikidata.org/wiki/Q9364",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-camus-the-stranger",
+    "conceptId": "camus-the-stranger",
+    "familyId": "camusian-works",
+    "type": "mcq",
+    "question": "Quel roman de Camus s'ouvre sur la mort de la mère du narrateur ?",
+    "answers": [
+      "L'Étranger",
+      "La Peste",
+      "La Chute",
+      "L'Exil et le Royaume"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "camus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q784",
+      "url": "https://www.wikidata.org/wiki/Q784",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-camus-myth-of-sisyphus-absurd",
+    "conceptId": "camus-myth-of-sisyphus-absurd",
+    "familyId": "camusian-absurd",
+    "type": "mcq",
+    "question": "Dans quel essai Camus développe-t-il la notion d'absurde ?",
+    "answers": [
+      "Le Mythe de Prométhée",
+      "Le Mythe de Sisyphe",
+      "L'Homme révolté",
+      "L'Actuel"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "camus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q784",
+      "url": "https://www.wikidata.org/wiki/Q784",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-camus-sisyphus-happy",
+    "conceptId": "camus-sisyphus-happy",
+    "familyId": "camusian-absurd",
+    "type": "mcq",
+    "question": "Quelle phrase célèbre conclut Le Mythe de Sisyphe ?",
+    "answers": [
+      "« L'enfer, c'est les autres »",
+      "« Je pense donc je suis »",
+      "« Il faut imaginer Sisyphe heureux »",
+      "« Il faut cultiver notre jardin »"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "camus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q784",
+      "url": "https://www.wikidata.org/wiki/Q784",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-camus-the-plague-oran",
+    "conceptId": "camus-the-plague-oran",
+    "familyId": "camusian-works",
+    "type": "mcq",
+    "question": "Quel roman de Camus met en scène la ville d'Oran frappée par une épidémie ?",
+    "answers": [
+      "La Chute",
+      "L'Étranger",
+      "Le Premier Homme",
+      "La Peste"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "camus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q784",
+      "url": "https://www.wikidata.org/wiki/Q784",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-beauvoir-the-second-sex",
+    "conceptId": "beauvoir-the-second-sex",
+    "familyId": "beauvoirian-works",
+    "type": "mcq",
+    "question": "Quel est l'essai fondamental de Simone de Beauvoir sur la condition féminine ?",
+    "answers": [
+      "Le Deuxième Sexe",
+      "La Femme rompue",
+      "Les Belles Images",
+      "Mémoires d'une jeune fille rangée"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "beauvoir"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7197",
+      "url": "https://www.wikidata.org/wiki/Q7197",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-beauvoir-one-is-not-born-a-woman",
+    "conceptId": "beauvoir-one-is-not-born-a-woman",
+    "familyId": "beauvoirian-doctrine",
+    "type": "mcq",
+    "question": "Quelle phrase célèbre de Beauvoir résume sa thèse sur le genre ?",
+    "answers": [
+      "« Femme, réveille-toi »",
+      "« On ne naît pas femme, on le devient »",
+      "« La femme est un mythe »",
+      "« Le privé est politique »"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "beauvoir"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7197",
+      "url": "https://www.wikidata.org/wiki/Q7197",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-beauvoir-mandarins-goncourt",
+    "conceptId": "beauvoir-mandarins-goncourt",
+    "familyId": "beauvoir-biography",
+    "type": "mcq",
+    "question": "Quel roman de Beauvoir reçoit le prix Goncourt en 1954 ?",
+    "answers": [
+      "La Force de l'âge",
+      "Tous les hommes sont mortels",
+      "Les Mandarins",
+      "L'Invitée"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "beauvoir"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7197",
+      "url": "https://www.wikidata.org/wiki/Q7197",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-arendt-banality-of-evil",
+    "conceptId": "arendt-banality-of-evil",
+    "familyId": "arendtian-political",
+    "type": "mcq",
+    "question": "Quelle expression Hannah Arendt emploie-t-elle à propos du mal commis par Eichmann ?",
+    "answers": [
+      "Le mal radical",
+      "La faute tragique",
+      "Le péché originel",
+      "La banalité du mal"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "arendt"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q60025",
+      "url": "https://www.wikidata.org/wiki/Q60025",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-arendt-labor-work-action",
+    "conceptId": "arendt-labor-work-action",
+    "familyId": "arendtian-political",
+    "type": "mcq",
+    "question": "Dans Condition de l'homme moderne, quelles sont les trois activités fondamentales ?",
+    "answers": [
+      "Le travail, l'œuvre et l'action",
+      "L'amour, le jeu et la prière",
+      "La production, la consommation et l'échange",
+      "La guerre, le commerce et la science"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "arendt"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q60025",
+      "url": "https://www.wikidata.org/wiki/Q60025",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-arendt-origins-of-totalitarianism",
+    "conceptId": "arendt-origins-of-totalitarianism",
+    "familyId": "arendtian-works",
+    "type": "mcq",
+    "question": "Quel ouvrage d'Hannah Arendt analyse le nazisme et le stalinisme ?",
+    "answers": [
+      "Le Capital",
+      "Les Origines du totalitarisme",
+      "La Société ouverte et ses ennemis",
+      "L'Ancien Régime et la Révolution"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "arendt"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q60025",
+      "url": "https://www.wikidata.org/wiki/Q60025",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-rawls-theory-of-justice-1971",
+    "conceptId": "rawls-theory-of-justice-1971",
+    "familyId": "rawlsian-justice",
+    "type": "mcq",
+    "question": "Quel philosophe américain écrit Théorie de la justice en 1971 ?",
+    "answers": [
+      "Michael Sandel",
+      "Richard Rorty",
+      "John Rawls",
+      "Robert Nozick"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "rawls"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q172790",
+      "url": "https://www.wikidata.org/wiki/Q172790",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-rawls-veil-of-ignorance",
+    "conceptId": "rawls-veil-of-ignorance",
+    "familyId": "rawlsian-justice",
+    "type": "mcq",
+    "question": "Quel dispositif Rawls imagine-t-il pour garantir l'impartialité des principes de justice ?",
+    "answers": [
+      "La main invisible",
+      "La règle d'or",
+      "Le panoptique",
+      "Le voile d'ignorance"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "rawls"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q172790",
+      "url": "https://www.wikidata.org/wiki/Q172790",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-foucault-discipline-and-punish",
+    "conceptId": "foucault-discipline-and-punish",
+    "familyId": "foucauldian-power",
+    "type": "mcq",
+    "question": "Quel ouvrage de Foucault étudie la naissance de la prison ?",
+    "answers": [
+      "Surveiller et punir",
+      "L'Histoire de la folie",
+      "Les Mots et les Choses",
+      "La Volonté de savoir"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "foucault"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44272",
+      "url": "https://www.wikidata.org/wiki/Q44272",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-foucault-words-and-things-meninas",
+    "conceptId": "foucault-words-and-things-meninas",
+    "familyId": "foucauldian-works",
+    "type": "mcq",
+    "question": "Quel ouvrage de Foucault s'ouvre sur l'analyse du tableau Les Ménines de Vélasquez ?",
+    "answers": [
+      "La Naissance de la clinique",
+      "Les Mots et les Choses",
+      "L'Archéologie du savoir",
+      "L'Ordre du discours"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "foucault"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44272",
+      "url": "https://www.wikidata.org/wiki/Q44272",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-foucault-biopower",
+    "conceptId": "foucault-biopower",
+    "familyId": "foucauldian-power",
+    "type": "mcq",
+    "question": "Comment Foucault nomme-t-il le pouvoir qui s'exerce sur la vie des populations ?",
+    "answers": [
+      "La souveraineté",
+      "L'hégémonie",
+      "Le biopouvoir",
+      "Le pouvoir spirituel"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "foucault"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44272",
+      "url": "https://www.wikidata.org/wiki/Q44272",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-husserl-founder-of-phenomenology",
+    "conceptId": "husserl-founder-of-phenomenology",
+    "familyId": "phenomenological-movement",
+    "type": "mcq",
+    "question": "Quel philosophe est considéré comme le fondateur de la phénoménologie ?",
+    "answers": [
+      "Heidegger",
+      "Merleau-Ponty",
+      "Bergson",
+      "Husserl"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "phenomenologie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q48483",
+      "url": "https://www.wikidata.org/wiki/Q48483",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-heidegger-being-and-time",
+    "conceptId": "heidegger-being-and-time",
+    "familyId": "heideggerian-existentialism",
+    "type": "mcq",
+    "question": "Quel est l'ouvrage majeur de Martin Heidegger ?",
+    "answers": [
+      "Être et temps",
+      "L'Être et le Néant",
+      "La Nausée",
+      "Le Rire"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "existentialisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "heidegger"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q48301",
+      "url": "https://www.wikidata.org/wiki/Q48301",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-intentionality-consciousness-of-something",
+    "conceptId": "intentionality-consciousness-of-something",
+    "familyId": "phenomenological-movement",
+    "type": "mcq",
+    "question": "Quelle thèse phénoménologique énonce que « toute conscience est conscience de quelque chose » ?",
+    "answers": [
+      "La transparence",
+      "L'intentionnalité",
+      "La réflexivité",
+      "L'introspection"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "phenomenologie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q48483",
+      "url": "https://www.wikidata.org/wiki/Q48483",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-bergson-elan-vital",
+    "conceptId": "bergson-elan-vital",
+    "familyId": "bergsonian-philosophy",
+    "type": "mcq",
+    "question": "Quel philosophe français développe la notion d'élan vital ?",
+    "answers": [
+      "Taine",
+      "Renan",
+      "Bergson",
+      "Comte"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "bergson"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q212724",
+      "url": "https://www.wikidata.org/wiki/Q212724",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-wittgenstein-tractatus-final-proposition",
+    "conceptId": "wittgenstein-tractatus-final-proposition",
+    "familyId": "wittgensteinian-philosophy",
+    "type": "mcq",
+    "question": "Quelle formule conclut le Tractatus logico-philosophicus ?",
+    "answers": [
+      "« Dieu est mort »",
+      "« Tout est nombre »",
+      "« L'existence précède l'essence »",
+      "« Ce dont on ne peut parler, il faut le taire »"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "wittgenstein"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9391",
+      "url": "https://www.wikidata.org/wiki/Q9391",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-wittgenstein-meaning-is-use",
+    "conceptId": "wittgenstein-meaning-is-use",
+    "familyId": "wittgensteinian-philosophy",
+    "type": "mcq",
+    "question": "Dans ses Recherches philosophiques, que devient la signification d'un mot ?",
+    "answers": [
+      "Son usage dans le langage",
+      "Sa définition dans le dictionnaire",
+      "Son étymologie",
+      "Sa sonorité"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "wittgenstein"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9391",
+      "url": "https://www.wikidata.org/wiki/Q9391",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "phil-popper-falsifiability-criterion",
+    "conceptId": "popper-falsifiability-criterion",
+    "familyId": "popperian-epistemology",
+    "type": "mcq",
+    "question": "Quel critère Popper propose-t-il pour distinguer science et non-science ?",
+    "answers": [
+      "Le consensus",
+      "La falsifiabilité",
+      "La vérifiabilité",
+      "L'évidence"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "epistemologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "popper"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q81235",
+      "url": "https://www.wikidata.org/wiki/Q81235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-popper-open-society",
+    "conceptId": "popper-open-society",
+    "familyId": "popperian-politics",
+    "type": "mcq",
+    "question": "Quel ouvrage de Popper critique les philosophies de Platon, Hegel et Marx ?",
+    "answers": [
+      "Conjectures et Réfutations",
+      "La Misère de l'historicisme",
+      "La Société ouverte et ses ennemis",
+      "La Logique de la découverte scientifique"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "popper"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q81235",
+      "url": "https://www.wikidata.org/wiki/Q81235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-kuhn-paradigms",
+    "conceptId": "kuhn-paradigms",
+    "familyId": "kuhnian-epistemology",
+    "type": "mcq",
+    "question": "Quel historien des sciences introduit la notion de paradigme ?",
+    "answers": [
+      "Karl Popper",
+      "Gaston Bachelard",
+      "Alexandre Koyré",
+      "Thomas Kuhn"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "epistemologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kuhn"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q184527",
+      "url": "https://www.wikidata.org/wiki/Q184527",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-comte-law-of-three-stages",
+    "conceptId": "comte-law-of-three-stages",
+    "familyId": "comtean-positivism",
+    "type": "mcq",
+    "question": "Quelle « loi » Auguste Comte propose-t-il pour l'histoire de l'esprit humain ?",
+    "answers": [
+      "La loi des trois états",
+      "La loi de la gravitation",
+      "La loi des rendements décroissants",
+      "La loi de la sélection naturelle"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "comte"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12718",
+      "url": "https://www.wikidata.org/wiki/Q12718",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-freud-interpretation-of-dreams",
+    "conceptId": "freud-interpretation-of-dreams",
+    "familyId": "freudian-culture",
+    "type": "mcq",
+    "question": "Quel ouvrage de Freud fonde la psychanalyse en 1900 ?",
+    "answers": [
+      "L'Avenir d'une illusion",
+      "L'Interprétation des rêves",
+      "Le Malaise dans la culture",
+      "Totem et tabou"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "freud"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9215",
+      "url": "https://www.wikidata.org/wiki/Q9215",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  }
+]

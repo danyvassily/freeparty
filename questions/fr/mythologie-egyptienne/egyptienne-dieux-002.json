@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "egyptian-thoth-god-of-wisdom-and-writing",
+    "conceptId": "thoth-god-of-wisdom-and-writing",
+    "familyId": "thoth-roles",
+    "type": "mcq",
+    "question": "Quel dieu est le patron de la sagesse et de l'écriture ?",
+    "answers": [
+      "Anubis",
+      "Horus",
+      "Thot",
+      "Seth"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "thot"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q185742",
+      "url": "https://www.wikidata.org/wiki/Q185742",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-thoth-ibis-headed",
+    "conceptId": "thoth-ibis-headed",
+    "familyId": "thoth-identity",
+    "type": "mcq",
+    "question": "Quel oiseau est associé à Thot ?",
+    "answers": [
+      "Le faucon",
+      "Le vautour",
+      "La cigogne",
+      "L'ibis"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "thot"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q185742",
+      "url": "https://www.wikidata.org/wiki/Q185742",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-thoth-records-the-weighing",
+    "conceptId": "thoth-records-the-weighing",
+    "familyId": "thoth-roles",
+    "type": "mcq",
+    "question": "Quel rôle Thot joue-t-il lors du jugement des morts ?",
+    "answers": [
+      "Il enregistre le résultat de la pesée du cœur",
+      "Il pèse le cœur lui-même",
+      "Il dévore les coupables",
+      "Il conduit l'âme aux champs d'Ialou"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "thot"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q185742",
+      "url": "https://www.wikidata.org/wiki/Q185742",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-thot-moon-god",
+    "conceptId": "thot-moon-god",
+    "familyId": "thot-identity",
+    "type": "mcq",
+    "question": "À quel astre Thot est-il également associé ?",
+    "answers": [
+      "À Vénus",
+      "À la Lune",
+      "Au Soleil",
+      "Aux étoiles filantes"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "thot"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q185742",
+      "url": "https://www.wikidata.org/wiki/Q185742",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hathor-goddess-of-love-and-joy",
+    "conceptId": "hathor-goddess-of-love-and-joy",
+    "familyId": "hathor-roles",
+    "type": "mcq",
+    "question": "Quelle déesse incarne l'amour, la joie, la musique et la danse ?",
+    "answers": [
+      "Sekhmet",
+      "Nephtys",
+      "Hathor",
+      "Maât"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "hathor"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hathor-celestial-cow",
+    "conceptId": "hathor-celestial-cow",
+    "familyId": "hathor-identity",
+    "type": "mcq",
+    "question": "Sous quelle forme animale Hathor est-elle souvent représentée ?",
+    "answers": [
+      "Une lionne",
+      "Une chatte",
+      "Un cobra",
+      "Une vache"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "hathor"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hathor-protector-of-women",
+    "conceptId": "hathor-protector-of-women",
+    "familyId": "hathor-roles",
+    "type": "mcq",
+    "question": "Qui Hathor protège-t-elle tout particulièrement ?",
+    "answers": [
+      "Les femmes et les nouveau-nés",
+      "Les soldats",
+      "Les scribes",
+      "Les paysans"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "hathor"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hathor-sistrum-instrument",
+    "conceptId": "hathor-sistrum-instrument",
+    "familyId": "hathor-symbols",
+    "type": "mcq",
+    "question": "Quel instrument de musique sacré est associé au culte d'Hathor ?",
+    "answers": [
+      "Le tambour",
+      "Le sistre",
+      "La harpe",
+      "La flûte double"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "hathor"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-maat-goddess-of-truth",
+    "conceptId": "maat-goddess-of-truth",
+    "familyId": "maat-roles",
+    "type": "mcq",
+    "question": "Quelle déesse personnifie la vérité et la justice ?",
+    "answers": [
+      "Nout",
+      "Tefnout",
+      "Maât",
+      "Bastet"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "maat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-maat-ostrich-feather",
+    "conceptId": "maat-ostrich-feather",
+    "familyId": "maat-symbols",
+    "type": "mcq",
+    "question": "Quel objet est l'attribut de Maât ?",
+    "answers": [
+      "L'ankh",
+      "Le sceptre ouas",
+      "La croix ansée",
+      "La plume d'autruche"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "maat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-maat-cosmic-order",
+    "conceptId": "maat-cosmic-order",
+    "familyId": "maat-roles",
+    "type": "mcq",
+    "question": "Que représente Maât dans la pensée égyptienne ?",
+    "answers": [
+      "L'ordre juste du monde",
+      "La crue du Nil",
+      "La fertilité des champs",
+      "La puissance guerrière"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "maat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-sekhmet-lioness-goddess",
+    "conceptId": "sekhmet-lioness-goddess",
+    "familyId": "sekhmet-identity",
+    "type": "mcq",
+    "question": "Quelle déesse à tête de lionne incarne la guerre et la destruction ?",
+    "answers": [
+      "Isis",
+      "Sekhmet",
+      "Bastet",
+      "Hathor"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "sekhmet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q184756",
+      "url": "https://www.wikidata.org/wiki/Q184756",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-sekhmet-wife-of-ptah",
+    "conceptId": "sekhmet-wife-of-ptah",
+    "familyId": "sekhmet-family",
+    "type": "mcq",
+    "question": "Qui est l'épouse du dieu Ptah, déesse à tête de lionne ?",
+    "answers": [
+      "Nephtys",
+      "Maât",
+      "Sekhmet",
+      "Nout"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "sekhmet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q184756",
+      "url": "https://www.wikidata.org/wiki/Q184756",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-sekhmet-eye-of-ra",
+    "conceptId": "sekhmet-eye-of-ra",
+    "familyId": "sekhmet-roles",
+    "type": "mcq",
+    "question": "Quel titre guerrier Sekhmet porte-t-elle souvent ?",
+    "answers": [
+      "La Fille d'Osiris",
+      "La Sœur d'Anubis",
+      "L'Épouse d'Horus",
+      "L'Œil de Râ"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "sekhmet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q184756",
+      "url": "https://www.wikidata.org/wiki/Q184756",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-bastet-cat-goddess",
+    "conceptId": "bastet-cat-goddess",
+    "familyId": "bastet-identity",
+    "type": "mcq",
+    "question": "Quelle déesse est représentée avec une tête de chatte ?",
+    "answers": [
+      "Bastet",
+      "Sekhmet",
+      "Tefnout",
+      "Nephtys"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "bastet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q132707",
+      "url": "https://www.wikidata.org/wiki/Q132707",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-bastet-protector-of-the-home",
+    "conceptId": "bastet-protector-of-the-home",
+    "familyId": "bastet-roles",
+    "type": "mcq",
+    "question": "Quelle déesse protège le foyer et la maison ?",
+    "answers": [
+      "Nekhbet",
+      "Bastet",
+      "Sekhmet",
+      "Ouadjet"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "bastet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q132707",
+      "url": "https://www.wikidata.org/wiki/Q132707",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-bastet-cult-center-bubastis",
+    "conceptId": "bastet-cult-center-bubastis",
+    "familyId": "bastet-cult",
+    "type": "mcq",
+    "question": "Quelle ville est le grand centre de culte de Bastet ?",
+    "answers": [
+      "Saïs",
+      "Éléphantine",
+      "Bubastis",
+      "Abydos"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "bastet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q132707",
+      "url": "https://www.wikidata.org/wiki/Q132707",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-amun-god-of-thebes",
+    "conceptId": "amun-god-of-thebes",
+    "familyId": "amun-identity",
+    "type": "mcq",
+    "question": "Quel dieu est le grand dieu de la ville de Thèbes ?",
+    "answers": [
+      "Seth",
+      "Anubis",
+      "Khnoum",
+      "Amon"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "amon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q101851",
+      "url": "https://www.wikidata.org/wiki/Q101851",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-amun-karnak-temple",
+    "conceptId": "amun-karnak-temple",
+    "familyId": "amun-cult",
+    "type": "mcq",
+    "question": "Quel immense temple est consacré à Amon ?",
+    "answers": [
+      "Karnak",
+      "Abou Simbel",
+      "Edfou",
+      "Philae"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "amon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q101851",
+      "url": "https://www.wikidata.org/wiki/Q101851",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-amun-the-hidden-one",
+    "conceptId": "amun-the-hidden-one",
+    "familyId": "amun-identity",
+    "type": "mcq",
+    "question": "Que signifie le nom d'Amon ?",
+    "answers": [
+      "Le créateur",
+      "Le caché",
+      "Le puissant",
+      "Le soleil"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "amon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q101851",
+      "url": "https://www.wikidata.org/wiki/Q101851",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ptah-creator-god-of-memphis",
+    "conceptId": "ptah-creator-god-of-memphis",
+    "familyId": "ptah-identity",
+    "type": "mcq",
+    "question": "Quel dieu créateur est vénéré à Memphis ?",
+    "answers": [
+      "Geb",
+      "Râ",
+      "Ptah",
+      "Atoum"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ptah"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q180207",
+      "url": "https://www.wikidata.org/wiki/Q180207",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ptah-patron-of-artisans",
+    "conceptId": "ptah-patron-of-artisans",
+    "familyId": "ptah-roles",
+    "type": "mcq",
+    "question": "Quelle corporation Ptah protège-t-il ?",
+    "answers": [
+      "Les pêcheurs",
+      "Les scribes",
+      "Les médecins",
+      "Les artisans et les forgerons"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ptah"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q180207",
+      "url": "https://www.wikidata.org/wiki/Q180207",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ptah-creates-by-thought-and-word",
+    "conceptId": "ptah-creates-by-thought-and-word",
+    "familyId": "ptah-roles",
+    "type": "mcq",
+    "question": "Selon la théologie memphite, comment Ptah crée-t-il le monde ?",
+    "answers": [
+      "Par la pensée et la parole",
+      "Par la magie du sang",
+      "Par le combat",
+      "Par le souffle du vent"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ptah"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q180207",
+      "url": "https://www.wikidata.org/wiki/Q180207",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-nephthys-funerary-goddess",
+    "conceptId": "nephthys-funerary-goddess",
+    "familyId": "nephthys-roles",
+    "type": "mcq",
+    "question": "Quelle déesse assiste Isis dans les rites funéraires ?",
+    "answers": [
+      "Sekhmet",
+      "Nephtys",
+      "Hathor",
+      "Bastet"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "nephthys"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q195628",
+      "url": "https://www.wikidata.org/wiki/Q195628",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-nephthys-sister-of-isis",
+    "conceptId": "nephthys-sister-of-isis",
+    "familyId": "nephthys-family",
+    "type": "mcq",
+    "question": "Qui est Nephtys dans la fratrie divine ?",
+    "answers": [
+      "La femme de Thot",
+      "La mère de Bastet",
+      "La sœur d'Isis, d'Osiris et de Seth",
+      "La fille de Râ"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "nephthys"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q195628",
+      "url": "https://www.wikidata.org/wiki/Q195628",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-nephthys-isis-canopic-jars",
+    "conceptId": "nephthys-isis-canopic-jars",
+    "familyId": "nephthys-roles",
+    "type": "mcq",
+    "question": "Avec quelle déesse Nephtys protège-t-elle les vases canopes ?",
+    "answers": [
+      "Maât",
+      "Nout",
+      "Tefnout",
+      "Isis"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "nephthys"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q195628",
+      "url": "https://www.wikidata.org/wiki/Q195628",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-geb-god-of-the-earth",
+    "conceptId": "geb-god-of-the-earth",
+    "familyId": "geb-identity",
+    "type": "mcq",
+    "question": "Quel dieu est la personnification de la Terre ?",
+    "answers": [
+      "Geb",
+      "Chou",
+      "Noun",
+      "Seth"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q182510",
+      "url": "https://www.wikidata.org/wiki/Q182510",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-nut-goddess-of-the-sky",
+    "conceptId": "nut-goddess-of-the-sky",
+    "familyId": "nut-identity",
+    "type": "mcq",
+    "question": "Quelle déesse est la personnification du Ciel ?",
+    "answers": [
+      "Bastet",
+      "Nout",
+      "Gaïa",
+      "Maât"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q207006",
+      "url": "https://www.wikidata.org/wiki/Q207006",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-tefnout-goddess-of-moisture",
+    "conceptId": "tefnout-goddess-of-moisture",
+    "familyId": "tefnout-identity",
+    "type": "mcq",
+    "question": "Quelle déesse, parfois à tête de lionne, est la déesse de l'humidité ?",
+    "answers": [
+      "Hathor",
+      "Maât",
+      "Tefnout",
+      "Bastet"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q207006",
+      "url": "https://www.wikidata.org/wiki/Q207006",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-apep-serpent-enemy-of-ra",
+    "conceptId": "apep-serpent-enemy-of-ra",
+    "familyId": "apep-identity",
+    "type": "mcq",
+    "question": "Quel serpent géant est l'ennemi de Râ ?",
+    "answers": [
+      "Ouroboros",
+      "l'Uræus",
+      "le cobra sacré",
+      "Apopis"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-sobek-crocodile-god",
+    "conceptId": "sobek-crocodile-god",
+    "familyId": "sobek-identity",
+    "type": "mcq",
+    "question": "Quel dieu est représenté avec une tête de crocodile ?",
+    "answers": [
+      "Sobek",
+      "Bès",
+      "Anubis",
+      "Thot"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q182562",
+      "url": "https://www.wikidata.org/wiki/Q182562",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-khnum-ram-headed-potter",
+    "conceptId": "khnum-ram-headed-potter",
+    "familyId": "khnum-identity",
+    "type": "mcq",
+    "question": "Quel dieu à tête de bélier façonne les humains sur son tour de potier ?",
+    "answers": [
+      "Seth",
+      "Khnoum",
+      "Amon",
+      "Ptah"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "dieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q182320",
+      "url": "https://www.wikidata.org/wiki/Q182320",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  }
+]

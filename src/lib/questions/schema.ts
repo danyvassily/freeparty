@@ -119,11 +119,23 @@ export const QuestionSchema = z
     const qLower = q.question.toLowerCase();
     const goodAnswer = q.answers[q.correctAnswer]?.toLowerCase();
     if (goodAnswer && goodAnswer.length > 2 && qLower.includes(goodAnswer)) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        path: ["question"],
-        message: "La question ne doit pas contenir la bonne réponse",
-      });
+      // Exception légitime : homonymie ville-État, où la réponse EST le sujet de la question
+      // (ex: "Quelle est la capitale de Djibouti ?" → Djibouti ; "Djibouti est la capitale de quel pays ?" → Djibouti).
+      // Le piège d'homonymie est ici l'objet même de la question — pas une réponse apposée.
+      const escaped = goodAnswer.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const directHomonym = new RegExp(
+        `^quelle est la capitale de ${escaped}\\s*\\??\\s*$`,
+      ).test(qLower);
+      const reverseHomonym = new RegExp(
+        `^${escaped}\\s+est la capitale de quel pays\\s*\\??\\s*$`,
+      ).test(qLower);
+      if (!directHomonym && !reverseHomonym) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["question"],
+          message: "La question ne doit pas contenir la bonne réponse",
+        });
+      }
     }
   });
 

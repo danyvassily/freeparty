@@ -1,0 +1,496 @@
+[
+  {
+    "id": "greek-symbol-lightning-zeus",
+    "conceptId": "symbol-lightning-zeus",
+    "familyId": "zeus-attributes",
+    "type": "mcq",
+    "question": "Quel dieu est représenté avec la foudre ?",
+    "answers": [
+      "Zeus",
+      "Poséidon",
+      "Hadès",
+      "Apollon"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34201",
+      "url": "https://www.wikidata.org/wiki/Q34201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-trident-poseidon",
+    "conceptId": "symbol-trident-poseidon",
+    "familyId": "poseidon-attributes",
+    "type": "mcq",
+    "question": "Quel dieu tient un trident ?",
+    "answers": [
+      "Arès",
+      "Poséidon",
+      "Zeus",
+      "Hermès"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41127",
+      "url": "https://www.wikidata.org/wiki/Q41127",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-caduceus-hermes",
+    "conceptId": "symbol-caduceus-hermes",
+    "familyId": "hermes-attributes",
+    "type": "mcq",
+    "question": "Le caducée, bâton entouré de deux serpents, est l'attribut de quel dieu ?",
+    "answers": [
+      "Apollon",
+      "Dionysos",
+      "Hermès",
+      "Asclépios"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41492",
+      "url": "https://www.wikidata.org/wiki/Q41492",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-owl-athena",
+    "conceptId": "symbol-owl-athena",
+    "familyId": "athena-attributes",
+    "type": "mcq",
+    "question": "La chouette est le symbole de quelle déesse ?",
+    "answers": [
+      "Héra",
+      "Artémis",
+      "Aphrodite",
+      "Athéna"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37122",
+      "url": "https://www.wikidata.org/wiki/Q37122",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-peacock-hera",
+    "conceptId": "symbol-peacock-hera",
+    "familyId": "hera-attributes",
+    "type": "mcq",
+    "question": "Le paon est l'attribut de quelle déesse ?",
+    "answers": [
+      "Héra",
+      "Athéna",
+      "Déméter",
+      "Hestia"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47602",
+      "url": "https://www.wikidata.org/wiki/Q47602",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-lyre-apollo",
+    "conceptId": "symbol-lyre-apollo",
+    "familyId": "apollo-attributes",
+    "type": "mcq",
+    "question": "La lyre est l'attribut de quel dieu ?",
+    "answers": [
+      "Arès",
+      "Apollon",
+      "Hermès",
+      "Dionysos"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37340",
+      "url": "https://www.wikidata.org/wiki/Q37340",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-aegis-zeus-athena",
+    "conceptId": "symbol-aegis-zeus-athena",
+    "familyId": "aegis-attribute",
+    "type": "mcq",
+    "question": "L'égide, bouclier ou cuirasse magique, appartient à quels dieux ?",
+    "answers": [
+      "Apollon et Artémis",
+      "Arès et Aphrodite",
+      "Zeus et Athéna",
+      "Poséidon et Amphitrite"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34201",
+      "url": "https://www.wikidata.org/wiki/Q34201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-dove-aphrodite",
+    "conceptId": "symbol-dove-aphrodite",
+    "familyId": "aphrodite-attributes",
+    "type": "mcq",
+    "question": "La colombe est l'attribut de quelle déesse ?",
+    "answers": [
+      "Athéna",
+      "Artémis",
+      "Héra",
+      "Aphrodite"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35500",
+      "url": "https://www.wikidata.org/wiki/Q35500",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-grapes-dionysus",
+    "conceptId": "symbol-grapes-dionysus",
+    "familyId": "dionysus-attributes",
+    "type": "mcq",
+    "question": "La grappe de raisin est l'attribut de quel dieu ?",
+    "answers": [
+      "Dionysos",
+      "Apollon",
+      "Hermès",
+      "Héphaïstos"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44212",
+      "url": "https://www.wikidata.org/wiki/Q44212",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-wheat-demeter",
+    "conceptId": "symbol-wheat-demeter",
+    "familyId": "demeter-attributes",
+    "type": "mcq",
+    "question": "La gerbe de blé est l'attribut de quelle déesse ?",
+    "answers": [
+      "Aphrodite",
+      "Déméter",
+      "Héra",
+      "Athéna"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q40714",
+      "url": "https://www.wikidata.org/wiki/Q40714",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-winged-sandals-hermes",
+    "conceptId": "symbol-winged-sandals-hermes",
+    "familyId": "hermes-attributes",
+    "type": "mcq",
+    "question": "Quel dieu porte des sandales ailées ?",
+    "answers": [
+      "Arès",
+      "Poséidon",
+      "Hermès",
+      "Apollon"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41492",
+      "url": "https://www.wikidata.org/wiki/Q41492",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-laurel-apollo",
+    "conceptId": "symbol-laurel-apollo",
+    "familyId": "apollo-attributes",
+    "type": "mcq",
+    "question": "Quel arbre, symbole de victoire, est consacré à Apollon ?",
+    "answers": [
+      "Le chêne",
+      "L'olivier",
+      "Le cyprès",
+      "Le laurier"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37340",
+      "url": "https://www.wikidata.org/wiki/Q37340",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-symbol-silver-bow-artemis",
+    "conceptId": "symbol-silver-bow-artemis",
+    "familyId": "artemis-attributes",
+    "type": "mcq",
+    "question": "L'arc et les flèches d'argent sont les attributs de quelle déesse ?",
+    "answers": [
+      "Artémis",
+      "Athéna",
+      "Aphrodite",
+      "Héra"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q39503",
+      "url": "https://www.wikidata.org/wiki/Q39503",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  }
+]

@@ -1,0 +1,3852 @@
+[
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Afghanistan ?",
+    "answers": [
+      "Kaboul",
+      "La Valette",
+      "Riyad",
+      "Moroni"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "afghanistan",
+      "capitales"
+    ],
+    "familyId": "capital-afghanistan",
+    "confidence": 0.98,
+    "explanation": "Kaboul est la capitale de Afghanistan.",
+    "id": "afghanistan-1",
+    "conceptId": "fact-1",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Kaboul est la capitale de quel pays ?",
+    "answers": [
+      "Afghanistan",
+      "Syrie",
+      "Nicaragua",
+      "Serbie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "kaboul",
+      "capitales"
+    ],
+    "familyId": "capital-afghanistan",
+    "confidence": 0.98,
+    "id": "kaboul-2",
+    "conceptId": "fact-2",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Afrique du Sud ?",
+    "answers": [
+      "Pretoria",
+      "Rabat",
+      "Port-Louis",
+      "Port-d'Espagne"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "afrique-du-sud",
+      "capitales"
+    ],
+    "familyId": "capital-afrique-du-sud",
+    "confidence": 0.98,
+    "explanation": "Pretoria est la capitale de Afrique du Sud.",
+    "id": "afrique-du-sud-3",
+    "conceptId": "fact-3",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Pretoria est la capitale de quel pays ?",
+    "answers": [
+      "Afrique du Sud",
+      "Jamaïque",
+      "Slovaquie",
+      "Bosnie-Herzégovine"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "pretoria",
+      "capitales"
+    ],
+    "familyId": "capital-afrique-du-sud",
+    "confidence": 0.98,
+    "id": "pretoria-4",
+    "conceptId": "fact-4",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Albanie ?",
+    "answers": [
+      "Tirana",
+      "Asmara",
+      "Dublin",
+      "Sofia"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "albanie",
+      "capitales"
+    ],
+    "familyId": "capital-albanie",
+    "confidence": 0.98,
+    "explanation": "Tirana est la capitale de Albanie.",
+    "id": "albanie-5",
+    "conceptId": "fact-5",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Tirana est la capitale de quel pays ?",
+    "answers": [
+      "Albanie",
+      "Suriname",
+      "Liechtenstein",
+      "Lettonie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "tirana",
+      "capitales"
+    ],
+    "familyId": "capital-albanie",
+    "confidence": 0.98,
+    "id": "tirana-6",
+    "conceptId": "fact-6",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Allemagne ?",
+    "answers": [
+      "Berlin",
+      "Gaborone",
+      "Douchanbé",
+      "N'Djaména"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "allemagne",
+      "capitales"
+    ],
+    "familyId": "capital-allemagne",
+    "confidence": 0.98,
+    "explanation": "Berlin est la capitale de Allemagne.",
+    "id": "allemagne-7",
+    "conceptId": "fact-7",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Berlin est la capitale de quel pays ?",
+    "answers": [
+      "Allemagne",
+      "Canada",
+      "Chili",
+      "Ouzbékistan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "berlin",
+      "capitales"
+    ],
+    "familyId": "capital-allemagne",
+    "confidence": 0.98,
+    "id": "berlin-8",
+    "conceptId": "fact-8",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Angola ?",
+    "answers": [
+      "Luanda",
+      "Harare",
+      "Accra",
+      "Port-Louis"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "angola",
+      "capitales"
+    ],
+    "familyId": "capital-angola",
+    "confidence": 0.98,
+    "explanation": "Luanda est la capitale de Angola.",
+    "id": "angola-9",
+    "conceptId": "fact-9",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Luanda est la capitale de quel pays ?",
+    "answers": [
+      "Angola",
+      "Tchad",
+      "Barbade",
+      "Éthiopie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "luanda",
+      "capitales"
+    ],
+    "familyId": "capital-angola",
+    "confidence": 0.98,
+    "id": "luanda-10",
+    "conceptId": "fact-10",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Arabie saoudite ?",
+    "answers": [
+      "Riyad",
+      "Djouba",
+      "Malé",
+      "Banjul"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "arabie-saoudite",
+      "capitales"
+    ],
+    "familyId": "capital-arabie-saoudite",
+    "confidence": 0.98,
+    "explanation": "Riyad est la capitale de Arabie saoudite.",
+    "id": "arabie-saoudite-11",
+    "conceptId": "fact-11",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Riyad est la capitale de quel pays ?",
+    "answers": [
+      "Arabie saoudite",
+      "Brunéi",
+      "Malaisie",
+      "Guyana"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "riyad",
+      "capitales"
+    ],
+    "familyId": "capital-arabie-saoudite",
+    "confidence": 0.98,
+    "id": "riyad-12",
+    "conceptId": "fact-12",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Argentine ?",
+    "answers": [
+      "Buenos Aires",
+      "Bagdad",
+      "Ankara",
+      "Libreville"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "argentine",
+      "capitales"
+    ],
+    "familyId": "capital-argentine",
+    "confidence": 0.98,
+    "explanation": "Buenos Aires est la capitale de Argentine.",
+    "id": "argentine-13",
+    "conceptId": "fact-13",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Buenos Aires est la capitale de quel pays ?",
+    "answers": [
+      "Argentine",
+      "Maldives",
+      "Uruguay",
+      "Nigeria"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "buenos-aires",
+      "capitales"
+    ],
+    "familyId": "capital-argentine",
+    "confidence": 0.98,
+    "id": "buenos-aires-14",
+    "conceptId": "fact-14",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Arménie ?",
+    "answers": [
+      "Erevan",
+      "Pyongyang",
+      "Tbilissi",
+      "Managua"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "armenie",
+      "capitales"
+    ],
+    "familyId": "capital-armenie",
+    "confidence": 0.98,
+    "explanation": "Erevan est la capitale de Arménie.",
+    "id": "armenie-15",
+    "conceptId": "fact-15",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Erevan est la capitale de quel pays ?",
+    "answers": [
+      "Arménie",
+      "Colombie",
+      "Uruguay",
+      "Eswatini"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "erevan",
+      "capitales"
+    ],
+    "familyId": "capital-armenie",
+    "confidence": 0.98,
+    "id": "erevan-16",
+    "conceptId": "fact-16",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Australie ?",
+    "answers": [
+      "Canberra",
+      "Tachkent",
+      "Riga",
+      "Moscou"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "australie",
+      "capitales"
+    ],
+    "familyId": "capital-australie",
+    "confidence": 0.98,
+    "explanation": "Canberra est la capitale de Australie.",
+    "id": "australie-17",
+    "conceptId": "fact-17",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Canberra est la capitale de quel pays ?",
+    "answers": [
+      "Australie",
+      "Estonie",
+      "Algérie",
+      "Japon"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "canberra",
+      "capitales"
+    ],
+    "familyId": "capital-australie",
+    "confidence": 0.98,
+    "id": "canberra-18",
+    "conceptId": "fact-18",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Autriche ?",
+    "answers": [
+      "Vienne",
+      "Banjul",
+      "La Havane",
+      "Belmopan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "autriche",
+      "capitales"
+    ],
+    "familyId": "capital-autriche",
+    "confidence": 0.98,
+    "explanation": "Vienne est la capitale de Autriche.",
+    "id": "autriche-19",
+    "conceptId": "fact-19",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Vienne est la capitale de quel pays ?",
+    "answers": [
+      "Autriche",
+      "Sri Lanka",
+      "Suisse",
+      "Sénégal"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "vienne",
+      "capitales"
+    ],
+    "familyId": "capital-autriche",
+    "confidence": 0.98,
+    "id": "vienne-20",
+    "conceptId": "fact-20",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Azerbaïdjan ?",
+    "answers": [
+      "Bakou",
+      "Bratislava",
+      "Tegucigalpa",
+      "Ouagadougou"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "azerbaidjan",
+      "capitales"
+    ],
+    "familyId": "capital-azerbaidjan",
+    "confidence": 0.98,
+    "explanation": "Bakou est la capitale de Azerbaïdjan.",
+    "id": "azerbaidjan-21",
+    "conceptId": "fact-21",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Bakou est la capitale de quel pays ?",
+    "answers": [
+      "Azerbaïdjan",
+      "Érythrée",
+      "Vatican",
+      "Uruguay"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bakou",
+      "capitales"
+    ],
+    "familyId": "capital-azerbaidjan",
+    "confidence": 0.98,
+    "id": "bakou-22",
+    "conceptId": "fact-22",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bahamas ?",
+    "answers": [
+      "Nassau",
+      "Helsinki",
+      "Naypyidaw",
+      "Kampala"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bahamas",
+      "capitales"
+    ],
+    "familyId": "capital-bahamas",
+    "confidence": 0.98,
+    "explanation": "Nassau est la capitale de Bahamas.",
+    "id": "bahamas-23",
+    "conceptId": "fact-23",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Nassau est la capitale de quel pays ?",
+    "answers": [
+      "Bahamas",
+      "Angola",
+      "Rwanda",
+      "Monténégro"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "nassau",
+      "capitales"
+    ],
+    "familyId": "capital-bahamas",
+    "confidence": 0.98,
+    "id": "nassau-24",
+    "conceptId": "fact-24",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bahreïn ?",
+    "answers": [
+      "Manama",
+      "Erevan",
+      "Achgabat",
+      "Kiev"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bahrein",
+      "capitales"
+    ],
+    "familyId": "capital-bahrein",
+    "confidence": 0.98,
+    "explanation": "Manama est la capitale de Bahreïn.",
+    "id": "bahrein-25",
+    "conceptId": "fact-25",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Manama est la capitale de quel pays ?",
+    "answers": [
+      "Bahreïn",
+      "Guatemala",
+      "Guinée",
+      "Biélorussie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "manama",
+      "capitales"
+    ],
+    "familyId": "capital-bahrein",
+    "confidence": 0.98,
+    "id": "manama-26",
+    "conceptId": "fact-26",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bangladesh ?",
+    "answers": [
+      "Dacca",
+      "Addis-Abeba",
+      "Port-Vila",
+      "Kinshasa"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bangladesh",
+      "capitales"
+    ],
+    "familyId": "capital-bangladesh",
+    "confidence": 0.98,
+    "explanation": "Dacca est la capitale de Bangladesh.",
+    "id": "bangladesh-27",
+    "conceptId": "fact-27",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Dacca est la capitale de quel pays ?",
+    "answers": [
+      "Bangladesh",
+      "Slovénie",
+      "Roumanie",
+      "Papouasie-Nouvelle-Guinée"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "dacca",
+      "capitales"
+    ],
+    "familyId": "capital-bangladesh",
+    "confidence": 0.98,
+    "id": "dacca-28",
+    "conceptId": "fact-28",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Barbade ?",
+    "answers": [
+      "Bridgetown",
+      "Abuja",
+      "Yaoundé",
+      "Kinshasa"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "barbade",
+      "capitales"
+    ],
+    "familyId": "capital-barbade",
+    "confidence": 0.98,
+    "explanation": "Bridgetown est la capitale de Barbade.",
+    "id": "barbade-29",
+    "conceptId": "fact-29",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Bridgetown est la capitale de quel pays ?",
+    "answers": [
+      "Barbade",
+      "Haïti",
+      "Viêt Nam",
+      "Zimbabwe"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bridgetown",
+      "capitales"
+    ],
+    "familyId": "capital-barbade",
+    "confidence": 0.98,
+    "id": "bridgetown-30",
+    "conceptId": "fact-30",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Belgique ?",
+    "answers": [
+      "Bruxelles",
+      "Praia",
+      "Lilongwe",
+      "Mexico"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "belgique",
+      "capitales"
+    ],
+    "familyId": "capital-belgique",
+    "confidence": 0.98,
+    "explanation": "Bruxelles est la capitale de Belgique.",
+    "id": "belgique-31",
+    "conceptId": "fact-31",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Bruxelles est la capitale de quel pays ?",
+    "answers": [
+      "Belgique",
+      "Guinée-Bissau",
+      "Inde",
+      "Croatie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bruxelles",
+      "capitales"
+    ],
+    "familyId": "capital-belgique",
+    "confidence": 0.98,
+    "id": "bruxelles-32",
+    "conceptId": "fact-32",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bélize ?",
+    "answers": [
+      "Belmopan",
+      "Tokyo",
+      "Phnom Penh",
+      "Tirana"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "belize",
+      "capitales"
+    ],
+    "familyId": "capital-belize",
+    "confidence": 0.98,
+    "explanation": "Belmopan est la capitale de Bélize.",
+    "id": "belize-33",
+    "conceptId": "fact-33",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Belmopan est la capitale de quel pays ?",
+    "answers": [
+      "Bélize",
+      "Malawi",
+      "République dominicaine",
+      "Eswatini"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "belmopan",
+      "capitales"
+    ],
+    "familyId": "capital-belize",
+    "confidence": 0.98,
+    "id": "belmopan-34",
+    "conceptId": "fact-34",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bénin ?",
+    "answers": [
+      "Porto-Novo",
+      "Riyad",
+      "Sri Jayawardenapura Kotte",
+      "Londres"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "benin",
+      "capitales"
+    ],
+    "familyId": "capital-benin",
+    "confidence": 0.98,
+    "explanation": "Porto-Novo est la capitale de Bénin.",
+    "id": "benin-35",
+    "conceptId": "fact-35",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Porto-Novo est la capitale de quel pays ?",
+    "answers": [
+      "Bénin",
+      "Corée du Sud",
+      "Luxembourg",
+      "Russie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "porto-novo",
+      "capitales"
+    ],
+    "familyId": "capital-benin",
+    "confidence": 0.98,
+    "id": "porto-novo-36",
+    "conceptId": "fact-36",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bhoutan ?",
+    "answers": [
+      "Thimphou",
+      "Bangkok",
+      "Saint-Domingue",
+      "Séoul"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bhoutan",
+      "capitales"
+    ],
+    "familyId": "capital-bhoutan",
+    "confidence": 0.98,
+    "explanation": "Thimphou est la capitale de Bhoutan.",
+    "id": "bhoutan-37",
+    "conceptId": "fact-37",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Thimphou est la capitale de quel pays ?",
+    "answers": [
+      "Bhoutan",
+      "République dominicaine",
+      "Portugal",
+      "Botswana"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "thimphou",
+      "capitales"
+    ],
+    "familyId": "capital-bhoutan",
+    "confidence": 0.98,
+    "id": "thimphou-38",
+    "conceptId": "fact-38",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Biélorussie ?",
+    "answers": [
+      "Minsk",
+      "Addis-Abeba",
+      "Tripoli",
+      "Bakou"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bielorussie",
+      "capitales"
+    ],
+    "familyId": "capital-bielorussie",
+    "confidence": 0.98,
+    "explanation": "Minsk est la capitale de Biélorussie.",
+    "id": "bielorussie-39",
+    "conceptId": "fact-39",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Minsk est la capitale de quel pays ?",
+    "answers": [
+      "Biélorussie",
+      "Soudan",
+      "Gabon",
+      "Libéria"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "minsk",
+      "capitales"
+    ],
+    "familyId": "capital-bielorussie",
+    "confidence": 0.98,
+    "id": "minsk-40",
+    "conceptId": "fact-40",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Birmanie (Myanmar) ?",
+    "answers": [
+      "Naypyidaw",
+      "Thimphou",
+      "Harare",
+      "Accra"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "birmanie-myanmar-",
+      "capitales"
+    ],
+    "familyId": "capital-birmanie-myanmar-",
+    "confidence": 0.98,
+    "explanation": "Naypyidaw est la capitale de Birmanie (Myanmar).",
+    "id": "birmanie-myanmar--41",
+    "conceptId": "fact-41",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Naypyidaw est la capitale de quel pays ?",
+    "answers": [
+      "Birmanie (Myanmar)",
+      "Royaume-Uni",
+      "Luxembourg",
+      "Djibouti"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "naypyidaw",
+      "capitales"
+    ],
+    "familyId": "capital-birmanie-myanmar-",
+    "confidence": 0.98,
+    "id": "naypyidaw-42",
+    "conceptId": "fact-42",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bolivie ?",
+    "answers": [
+      "La Paz",
+      "Manama",
+      "Chișinău",
+      "Bridgetown"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bolivie",
+      "capitales"
+    ],
+    "familyId": "capital-bolivie",
+    "confidence": 0.98,
+    "explanation": "La Paz est la capitale de Bolivie.",
+    "id": "bolivie-43",
+    "conceptId": "fact-43",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "La Paz est la capitale de quel pays ?",
+    "answers": [
+      "Bolivie",
+      "Luxembourg",
+      "Slovénie",
+      "Kirghizistan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "la-paz",
+      "capitales"
+    ],
+    "familyId": "capital-bolivie",
+    "confidence": 0.98,
+    "id": "la-paz-44",
+    "conceptId": "fact-44",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bosnie-Herzégovine ?",
+    "answers": [
+      "Sarajevo",
+      "Yamoussoukro",
+      "Harare",
+      "Rabat"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bosnie-herzegovine",
+      "capitales"
+    ],
+    "familyId": "capital-bosnie-herzegovine",
+    "confidence": 0.98,
+    "explanation": "Sarajevo est la capitale de Bosnie-Herzégovine.",
+    "id": "bosnie-herzegovine-45",
+    "conceptId": "fact-45",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Sarajevo est la capitale de quel pays ?",
+    "answers": [
+      "Bosnie-Herzégovine",
+      "Suriname",
+      "Thaïlande",
+      "Hongrie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "sarajevo",
+      "capitales"
+    ],
+    "familyId": "capital-bosnie-herzegovine",
+    "confidence": 0.98,
+    "id": "sarajevo-46",
+    "conceptId": "fact-46",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Botswana ?",
+    "answers": [
+      "Gaborone",
+      "Rabat",
+      "Bagdad",
+      "Victoria"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "botswana",
+      "capitales"
+    ],
+    "familyId": "capital-botswana",
+    "confidence": 0.98,
+    "explanation": "Gaborone est la capitale de Botswana.",
+    "id": "botswana-47",
+    "conceptId": "fact-47",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Gaborone est la capitale de quel pays ?",
+    "answers": [
+      "Botswana",
+      "Sénégal",
+      "Bénin",
+      "Haïti"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gaborone",
+      "capitales"
+    ],
+    "familyId": "capital-botswana",
+    "confidence": 0.98,
+    "id": "gaborone-48",
+    "conceptId": "fact-48",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Brésil ?",
+    "answers": [
+      "Brasilia",
+      "Copenhague",
+      "Tokyo",
+      "Nouakchott"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bresil",
+      "capitales"
+    ],
+    "familyId": "capital-bresil",
+    "confidence": 0.98,
+    "explanation": "Brasilia est la capitale de Brésil.",
+    "id": "bresil-49",
+    "conceptId": "fact-49",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Brasilia est la capitale de quel pays ?",
+    "answers": [
+      "Brésil",
+      "Niger",
+      "Kirghizistan",
+      "Luxembourg"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "brasilia",
+      "capitales"
+    ],
+    "familyId": "capital-bresil",
+    "confidence": 0.98,
+    "id": "brasilia-50",
+    "conceptId": "fact-50",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Brunéi ?",
+    "answers": [
+      "Bandar Seri Begawan",
+      "Belgrade",
+      "Astana",
+      "Accra"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "brunei",
+      "capitales"
+    ],
+    "familyId": "capital-brunei",
+    "confidence": 0.98,
+    "explanation": "Bandar Seri Begawan est la capitale de Brunéi.",
+    "id": "brunei-51",
+    "conceptId": "fact-51",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Bandar Seri Begawan est la capitale de quel pays ?",
+    "answers": [
+      "Brunéi",
+      "Guatemala",
+      "Burkina Faso",
+      "Somalie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bandar-seri-begawan",
+      "capitales"
+    ],
+    "familyId": "capital-brunei",
+    "confidence": 0.98,
+    "id": "bandar-seri-begawan-52",
+    "conceptId": "fact-52",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Bulgarie ?",
+    "answers": [
+      "Sofia",
+      "Tokyo",
+      "Monrovia",
+      "Tbilissi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "bulgarie",
+      "capitales"
+    ],
+    "familyId": "capital-bulgarie",
+    "confidence": 0.98,
+    "explanation": "Sofia est la capitale de Bulgarie.",
+    "id": "bulgarie-53",
+    "conceptId": "fact-53",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Sofia est la capitale de quel pays ?",
+    "answers": [
+      "Bulgarie",
+      "Mauritanie",
+      "Paraguay",
+      "Afrique du Sud"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "sofia",
+      "capitales"
+    ],
+    "familyId": "capital-bulgarie",
+    "confidence": 0.98,
+    "id": "sofia-54",
+    "conceptId": "fact-54",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Burkina Faso ?",
+    "answers": [
+      "Ouagadougou",
+      "Lisbonne",
+      "Moroni",
+      "Caracas"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "burkina-faso",
+      "capitales"
+    ],
+    "familyId": "capital-burkina-faso",
+    "confidence": 0.98,
+    "explanation": "Ouagadougou est la capitale de Burkina Faso.",
+    "id": "burkina-faso-55",
+    "conceptId": "fact-55",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Ouagadougou est la capitale de quel pays ?",
+    "answers": [
+      "Burkina Faso",
+      "Érythrée",
+      "Rwanda",
+      "Belgique"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ouagadougou",
+      "capitales"
+    ],
+    "familyId": "capital-burkina-faso",
+    "confidence": 0.98,
+    "id": "ouagadougou-56",
+    "conceptId": "fact-56",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Burundi ?",
+    "answers": [
+      "Gitega",
+      "Vienne",
+      "Sofia",
+      "Conakry"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "burundi",
+      "capitales"
+    ],
+    "familyId": "capital-burundi",
+    "confidence": 0.98,
+    "explanation": "Gitega est la capitale de Burundi.",
+    "id": "burundi-57",
+    "conceptId": "fact-57",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Gitega est la capitale de quel pays ?",
+    "answers": [
+      "Burundi",
+      "Kirghizistan",
+      "Kenya",
+      "Mozambique"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gitega",
+      "capitales"
+    ],
+    "familyId": "capital-burundi",
+    "confidence": 0.98,
+    "id": "gitega-58",
+    "conceptId": "fact-58",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Cambodge ?",
+    "answers": [
+      "Phnom Penh",
+      "Copenhague",
+      "Asuncion",
+      "Managua"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "cambodge",
+      "capitales"
+    ],
+    "familyId": "capital-cambodge",
+    "confidence": 0.98,
+    "explanation": "Phnom Penh est la capitale de Cambodge.",
+    "id": "cambodge-59",
+    "conceptId": "fact-59",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Phnom Penh est la capitale de quel pays ?",
+    "answers": [
+      "Cambodge",
+      "Djibouti",
+      "Sénégal",
+      "Ouzbékistan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "phnom-penh",
+      "capitales"
+    ],
+    "familyId": "capital-cambodge",
+    "confidence": 0.98,
+    "id": "phnom-penh-60",
+    "conceptId": "fact-60",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Cameroun ?",
+    "answers": [
+      "Yaoundé",
+      "Achgabat",
+      "Brazzaville",
+      "Monrovia"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "cameroun",
+      "capitales"
+    ],
+    "familyId": "capital-cameroun",
+    "confidence": 0.98,
+    "explanation": "Yaoundé est la capitale de Cameroun.",
+    "id": "cameroun-61",
+    "conceptId": "fact-61",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Yaoundé est la capitale de quel pays ?",
+    "answers": [
+      "Cameroun",
+      "Sénégal",
+      "Mexique",
+      "Cap-Vert"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "yaounde",
+      "capitales"
+    ],
+    "familyId": "capital-cameroun",
+    "confidence": 0.98,
+    "id": "yaounde-62",
+    "conceptId": "fact-62",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Canada ?",
+    "answers": [
+      "Ottawa",
+      "Victoria",
+      "Reykjavik",
+      "Vilnius"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "canada",
+      "capitales"
+    ],
+    "familyId": "capital-canada",
+    "confidence": 0.98,
+    "explanation": "Ottawa est la capitale de Canada.",
+    "id": "canada-63",
+    "conceptId": "fact-63",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Ottawa est la capitale de quel pays ?",
+    "answers": [
+      "Canada",
+      "Corée du Nord",
+      "Indonésie",
+      "Somalie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ottawa",
+      "capitales"
+    ],
+    "familyId": "capital-canada",
+    "confidence": 0.98,
+    "id": "ottawa-64",
+    "conceptId": "fact-64",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Cap-Vert ?",
+    "answers": [
+      "Praia",
+      "Dublin",
+      "Vientiane",
+      "Brazzaville"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "cap-vert",
+      "capitales"
+    ],
+    "familyId": "capital-cap-vert",
+    "confidence": 0.98,
+    "explanation": "Praia est la capitale de Cap-Vert.",
+    "id": "cap-vert-65",
+    "conceptId": "fact-65",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Praia est la capitale de quel pays ?",
+    "answers": [
+      "Cap-Vert",
+      "Lettonie",
+      "Irak",
+      "Moldavie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "praia",
+      "capitales"
+    ],
+    "familyId": "capital-cap-vert",
+    "confidence": 0.98,
+    "id": "praia-66",
+    "conceptId": "fact-66",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Chili ?",
+    "answers": [
+      "Santiago",
+      "Abuja",
+      "Mascate",
+      "Mexico"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chili",
+      "capitales"
+    ],
+    "familyId": "capital-chili",
+    "confidence": 0.98,
+    "explanation": "Santiago est la capitale de Chili.",
+    "id": "chili-67",
+    "conceptId": "fact-67",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Santiago est la capitale de quel pays ?",
+    "answers": [
+      "Chili",
+      "Venezuela",
+      "Espagne",
+      "Togo"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "santiago",
+      "capitales"
+    ],
+    "familyId": "capital-chili",
+    "confidence": 0.98,
+    "id": "santiago-68",
+    "conceptId": "fact-68",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Chine ?",
+    "answers": [
+      "Pékin",
+      "Budapest",
+      "Managua",
+      "Yaoundé"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chine",
+      "capitales"
+    ],
+    "familyId": "capital-chine",
+    "confidence": 0.98,
+    "explanation": "Pékin est la capitale de Chine.",
+    "id": "chine-69",
+    "conceptId": "fact-69",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Pékin est la capitale de quel pays ?",
+    "answers": [
+      "Chine",
+      "Lesotho",
+      "Érythrée",
+      "Chypre"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "pekin",
+      "capitales"
+    ],
+    "familyId": "capital-chine",
+    "confidence": 0.98,
+    "id": "pekin-70",
+    "conceptId": "fact-70",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Chypre ?",
+    "answers": [
+      "Nicosie",
+      "Rome",
+      "Berne",
+      "Abuja"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chypre",
+      "capitales"
+    ],
+    "familyId": "capital-chypre",
+    "confidence": 0.98,
+    "explanation": "Nicosie est la capitale de Chypre.",
+    "id": "chypre-71",
+    "conceptId": "fact-71",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Nicosie est la capitale de quel pays ?",
+    "answers": [
+      "Chypre",
+      "Grèce",
+      "Corée du Nord",
+      "Nouvelle-Zélande"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "nicosie",
+      "capitales"
+    ],
+    "familyId": "capital-chypre",
+    "confidence": 0.98,
+    "id": "nicosie-72",
+    "conceptId": "fact-72",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Colombie ?",
+    "answers": [
+      "Bogota",
+      "Dacca",
+      "Bichkek",
+      "Kingston"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "colombie",
+      "capitales"
+    ],
+    "familyId": "capital-colombie",
+    "confidence": 0.98,
+    "explanation": "Bogota est la capitale de Colombie.",
+    "id": "colombie-73",
+    "conceptId": "fact-73",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Bogota est la capitale de quel pays ?",
+    "answers": [
+      "Colombie",
+      "Ouzbékistan",
+      "Guinée-Bissau",
+      "Macédoine du Nord"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bogota",
+      "capitales"
+    ],
+    "familyId": "capital-colombie",
+    "confidence": 0.98,
+    "id": "bogota-74",
+    "conceptId": "fact-74",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Comores ?",
+    "answers": [
+      "Moroni",
+      "Skopje",
+      "Bangkok",
+      "Belmopan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "comores",
+      "capitales"
+    ],
+    "familyId": "capital-comores",
+    "confidence": 0.98,
+    "explanation": "Moroni est la capitale de Comores.",
+    "id": "comores-75",
+    "conceptId": "fact-75",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Moroni est la capitale de quel pays ?",
+    "answers": [
+      "Comores",
+      "Japon",
+      "Bénin",
+      "Géorgie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "moroni",
+      "capitales"
+    ],
+    "familyId": "capital-comores",
+    "confidence": 0.98,
+    "id": "moroni-76",
+    "conceptId": "fact-76",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Congo (RDC) ?",
+    "answers": [
+      "Kinshasa",
+      "Erevan",
+      "Paramaribo",
+      "Suva"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "congo-rdc-",
+      "capitales"
+    ],
+    "familyId": "capital-congo-rdc-",
+    "confidence": 0.98,
+    "explanation": "Kinshasa est la capitale de Congo (RDC).",
+    "id": "congo-rdc--77",
+    "conceptId": "fact-77",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Kinshasa est la capitale de quel pays ?",
+    "answers": [
+      "Congo (RDC)",
+      "Afrique du Sud",
+      "Pays-Bas",
+      "Ukraine"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "kinshasa",
+      "capitales"
+    ],
+    "familyId": "capital-congo-rdc-",
+    "confidence": 0.98,
+    "id": "kinshasa-78",
+    "conceptId": "fact-78",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Congo (République) ?",
+    "answers": [
+      "Brazzaville",
+      "Vilnius",
+      "Ouagadougou",
+      "Ankara"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "congo-republique-",
+      "capitales"
+    ],
+    "familyId": "capital-congo-republique-",
+    "confidence": 0.98,
+    "explanation": "Brazzaville est la capitale de Congo (République).",
+    "id": "congo-republique--79",
+    "conceptId": "fact-79",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Brazzaville est la capitale de quel pays ?",
+    "answers": [
+      "Congo (République)",
+      "Haïti",
+      "Luxembourg",
+      "Nicaragua"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "brazzaville",
+      "capitales"
+    ],
+    "familyId": "capital-congo-republique-",
+    "confidence": 0.98,
+    "id": "brazzaville-80",
+    "conceptId": "fact-80",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Corée du Nord ?",
+    "answers": [
+      "Pyongyang",
+      "Port-d'Espagne",
+      "Budapest",
+      "Bridgetown"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "coree-du-nord",
+      "capitales"
+    ],
+    "familyId": "capital-coree-du-nord",
+    "confidence": 0.98,
+    "explanation": "Pyongyang est la capitale de Corée du Nord.",
+    "id": "coree-du-nord-81",
+    "conceptId": "fact-81",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Pyongyang est la capitale de quel pays ?",
+    "answers": [
+      "Corée du Nord",
+      "Vanuatu",
+      "Ghana",
+      "Papouasie-Nouvelle-Guinée"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "pyongyang",
+      "capitales"
+    ],
+    "familyId": "capital-coree-du-nord",
+    "confidence": 0.98,
+    "id": "pyongyang-82",
+    "conceptId": "fact-82",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Corée du Sud ?",
+    "answers": [
+      "Séoul",
+      "Ankara",
+      "Abou Dabi",
+      "Antananarivo"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "coree-du-sud",
+      "capitales"
+    ],
+    "familyId": "capital-coree-du-sud",
+    "confidence": 0.98,
+    "explanation": "Séoul est la capitale de Corée du Sud.",
+    "id": "coree-du-sud-83",
+    "conceptId": "fact-83",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Séoul est la capitale de quel pays ?",
+    "answers": [
+      "Corée du Sud",
+      "Slovénie",
+      "Argentine",
+      "Inde"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "seoul",
+      "capitales"
+    ],
+    "familyId": "capital-coree-du-sud",
+    "confidence": 0.98,
+    "id": "seoul-84",
+    "conceptId": "fact-84",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Costa Rica ?",
+    "answers": [
+      "San José",
+      "Téhéran",
+      "Malé",
+      "Belgrade"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "costa-rica",
+      "capitales"
+    ],
+    "familyId": "capital-costa-rica",
+    "confidence": 0.98,
+    "explanation": "San José est la capitale de Costa Rica.",
+    "id": "costa-rica-85",
+    "conceptId": "fact-85",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "San José est la capitale de quel pays ?",
+    "answers": [
+      "Costa Rica",
+      "Nicaragua",
+      "Libéria",
+      "Corée du Sud"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "san-jose",
+      "capitales"
+    ],
+    "familyId": "capital-costa-rica",
+    "confidence": 0.98,
+    "id": "san-jose-86",
+    "conceptId": "fact-86",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Côte d'Ivoire ?",
+    "answers": [
+      "Yamoussoukro",
+      "Rabat",
+      "Mogadiscio",
+      "Naypyidaw"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "cote-d-ivoire",
+      "capitales"
+    ],
+    "familyId": "capital-cote-d-ivoire",
+    "confidence": 0.98,
+    "explanation": "Yamoussoukro est la capitale de Côte d'Ivoire.",
+    "id": "cote-d-ivoire-87",
+    "conceptId": "fact-87",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Yamoussoukro est la capitale de quel pays ?",
+    "answers": [
+      "Côte d'Ivoire",
+      "Pakistan",
+      "Jamaïque",
+      "Bénin"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "yamoussoukro",
+      "capitales"
+    ],
+    "familyId": "capital-cote-d-ivoire",
+    "confidence": 0.98,
+    "id": "yamoussoukro-88",
+    "conceptId": "fact-88",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Croatie ?",
+    "answers": [
+      "Zagreb",
+      "Kuala Lumpur",
+      "Tegucigalpa",
+      "Hanoï"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "croatie",
+      "capitales"
+    ],
+    "familyId": "capital-croatie",
+    "confidence": 0.98,
+    "explanation": "Zagreb est la capitale de Croatie.",
+    "id": "croatie-89",
+    "conceptId": "fact-89",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Zagreb est la capitale de quel pays ?",
+    "answers": [
+      "Croatie",
+      "Malte",
+      "Tchad",
+      "Maurice"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "zagreb",
+      "capitales"
+    ],
+    "familyId": "capital-croatie",
+    "confidence": 0.98,
+    "id": "zagreb-90",
+    "conceptId": "fact-90",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Cuba ?",
+    "answers": [
+      "La Havane",
+      "Port-d'Espagne",
+      "Dakar",
+      "Mexico"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "cuba",
+      "capitales"
+    ],
+    "familyId": "capital-cuba",
+    "confidence": 0.98,
+    "explanation": "La Havane est la capitale de Cuba.",
+    "id": "cuba-91",
+    "conceptId": "fact-91",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "La Havane est la capitale de quel pays ?",
+    "answers": [
+      "Cuba",
+      "Roumanie",
+      "Viêt Nam",
+      "Costa Rica"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "la-havane",
+      "capitales"
+    ],
+    "familyId": "capital-cuba",
+    "confidence": 0.98,
+    "id": "la-havane-92",
+    "conceptId": "fact-92",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Danemark ?",
+    "answers": [
+      "Copenhague",
+      "Abou Dabi",
+      "Bridgetown",
+      "Kuala Lumpur"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "danemark",
+      "capitales"
+    ],
+    "familyId": "capital-danemark",
+    "confidence": 0.98,
+    "explanation": "Copenhague est la capitale de Danemark.",
+    "id": "danemark-93",
+    "conceptId": "fact-93",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Copenhague est la capitale de quel pays ?",
+    "answers": [
+      "Danemark",
+      "Ghana",
+      "Jamaïque",
+      "Panama"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "copenhague",
+      "capitales"
+    ],
+    "familyId": "capital-danemark",
+    "confidence": 0.98,
+    "id": "copenhague-94",
+    "conceptId": "fact-94",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de République dominicaine ?",
+    "answers": [
+      "Saint-Domingue",
+      "Manama",
+      "Khartoum",
+      "Kiev"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "republique-dominicaine",
+      "capitales"
+    ],
+    "familyId": "capital-republique-dominicaine",
+    "confidence": 0.98,
+    "explanation": "Saint-Domingue est la capitale de République dominicaine.",
+    "id": "republique-dominicaine-95",
+    "conceptId": "fact-95",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Saint-Domingue est la capitale de quel pays ?",
+    "answers": [
+      "République dominicaine",
+      "Arménie",
+      "Côte d'Ivoire",
+      "Luxembourg"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "saint-domingue",
+      "capitales"
+    ],
+    "familyId": "capital-republique-dominicaine",
+    "confidence": 0.98,
+    "id": "saint-domingue-96",
+    "conceptId": "fact-96",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Égypte ?",
+    "answers": [
+      "Le Caire",
+      "Luanda",
+      "Oslo",
+      "Lilongwe"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "egypte",
+      "capitales"
+    ],
+    "familyId": "capital-egypte",
+    "confidence": 0.98,
+    "explanation": "Le Caire est la capitale de Égypte.",
+    "id": "egypte-97",
+    "conceptId": "fact-97",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Le Caire est la capitale de quel pays ?",
+    "answers": [
+      "Égypte",
+      "Singapour",
+      "Espagne",
+      "Cameroun"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "le-caire",
+      "capitales"
+    ],
+    "familyId": "capital-egypte",
+    "confidence": 0.98,
+    "id": "le-caire-98",
+    "conceptId": "fact-98",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Émirats arabes unis ?",
+    "answers": [
+      "Abou Dabi",
+      "Nicosie",
+      "Kinshasa",
+      "Nairobi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "emirats-arabes-unis",
+      "capitales"
+    ],
+    "familyId": "capital-emirats-arabes-unis",
+    "confidence": 0.98,
+    "explanation": "Abou Dabi est la capitale de Émirats arabes unis.",
+    "id": "emirats-arabes-unis-99",
+    "conceptId": "fact-99",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Abou Dabi est la capitale de quel pays ?",
+    "answers": [
+      "Émirats arabes unis",
+      "Koweït",
+      "Canada",
+      "Turquie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "abou-dabi",
+      "capitales"
+    ],
+    "familyId": "capital-emirats-arabes-unis",
+    "confidence": 0.98,
+    "id": "abou-dabi-100",
+    "conceptId": "fact-100",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  }
+]

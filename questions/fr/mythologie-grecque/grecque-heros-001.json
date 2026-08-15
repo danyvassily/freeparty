@@ -1,0 +1,1180 @@
+[
+  {
+    "id": "greek-heracles-son-of-zeus",
+    "conceptId": "heracles-son-of-zeus",
+    "familyId": "heracles-genealogy",
+    "type": "mcq",
+    "question": "Qui est le père d'Héraclès ?",
+    "answers": [
+      "Arès",
+      "Zeus",
+      "Poséidon",
+      "Apollon"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-mother-alcmene",
+    "conceptId": "heracles-mother-alcmene",
+    "familyId": "heracles-genealogy",
+    "type": "mcq",
+    "question": "Qui est la mère mortelle d'Héraclès ?",
+    "answers": [
+      "Léda",
+      "Sémélé",
+      "Alcmène",
+      "Danaé"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-known-for-strength",
+    "conceptId": "heracles-known-for-strength",
+    "familyId": "heracles-identity",
+    "type": "mcq",
+    "question": "Pour quelle qualité Héraclès est-il surtout connu ?",
+    "answers": [
+      "Sa ruse",
+      "Sa vitesse",
+      "Sa sagesse",
+      "Sa force prodigieuse"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-roman-name-hercules",
+    "conceptId": "heracles-roman-name-hercules",
+    "familyId": "heracles-identity",
+    "type": "mcq",
+    "question": "Quel est le nom romain d'Héraclès ?",
+    "answers": [
+      "Hercule",
+      "Achille",
+      "Ulysse",
+      "Persée"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-strangles-snakes",
+    "conceptId": "heracles-strangles-snakes",
+    "familyId": "heracles-childhood",
+    "type": "mcq",
+    "question": "Quel exploit Héraclès accomplit-il dès son berceau ?",
+    "answers": [
+      "Il éteint un incendie",
+      "Il étrangle deux serpents",
+      "Il soulève un rocher",
+      "Il dompte un lion"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-iolaus-hydra-helper",
+    "conceptId": "heracles-iolaus-hydra-helper",
+    "familyId": "heracles-companions",
+    "type": "mcq",
+    "question": "Quel neveu d'Héraclès l'aide à vaincre l'hydre de Lerne ?",
+    "answers": [
+      "Patrocle",
+      "Antiloque",
+      "Iolaos",
+      "Thésée"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-death-nessus-tunic",
+    "conceptId": "heracles-death-nessus-tunic",
+    "familyId": "heracles-death",
+    "type": "mcq",
+    "question": "Comment Héraclès trouve-t-il la mort ?",
+    "answers": [
+      "Transpercé par une flèche",
+      "Dévoré par le lion de Némée",
+      "Noyé dans la mer",
+      "En revêtant une tunique empoisonnée offerte par sa femme"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "greek-perseus-kills-medusa",
+    "conceptId": "perseus-kills-medusa",
+    "familyId": "perseus-myth",
+    "type": "mcq",
+    "question": "Quel héros a tué la gorgone Méduse ?",
+    "answers": [
+      "Persée",
+      "Thésée",
+      "Jason",
+      "Bellérophon"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "perseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130721",
+      "url": "https://www.wikidata.org/wiki/Q130721",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-perseus-mirror-shield",
+    "conceptId": "perseus-mirror-shield",
+    "familyId": "perseus-myth",
+    "type": "mcq",
+    "question": "Comment Persée évite-t-il le regard pétrifiant de Méduse ?",
+    "answers": [
+      "En se cachant derrière un rocher",
+      "En utilisant son bouclier poli comme un miroir",
+      "En fermant les yeux",
+      "En portant un casque d'invisibilité"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "perseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130721",
+      "url": "https://www.wikidata.org/wiki/Q130721",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-perseus-andromeda",
+    "conceptId": "perseus-andromeda",
+    "familyId": "perseus-myth",
+    "type": "mcq",
+    "question": "Quelle princesse Persée délivre-t-il d'un monstre marin ?",
+    "answers": [
+      "Hélène",
+      "Cassandre",
+      "Andromède",
+      "Ariane"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "perseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130721",
+      "url": "https://www.wikidata.org/wiki/Q130721",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-theseus-kills-minotaur",
+    "conceptId": "theseus-kills-minotaur",
+    "familyId": "theseus-myth",
+    "type": "mcq",
+    "question": "Quel héros a tué le Minotaure ?",
+    "answers": [
+      "Persée",
+      "Héraclès",
+      "Jason",
+      "Thésée"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "theseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-ariadne-thread-labyrinth",
+    "conceptId": "ariadne-thread-labyrinth",
+    "familyId": "theseus-myth",
+    "type": "mcq",
+    "question": "Qui donne à Thésée le fil qui lui permet de sortir du Labyrinthe ?",
+    "answers": [
+      "Ariane",
+      "Médée",
+      "Phèdre",
+      "Circé"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "theseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-aegeus-throws-himself-into-sea",
+    "conceptId": "aegeus-throws-himself-into-sea",
+    "familyId": "theseus-myth",
+    "type": "mcq",
+    "question": "Pourquoi la mer Égée porte-t-elle ce nom ?",
+    "answers": [
+      "Parce qu'Égée y construisit sa flotte",
+      "Parce qu'Égée, croyant son fils mort, s'y est jeté",
+      "Parce qu'Égée y régna",
+      "Parce qu'Égée y fut vaincu"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "theseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-jason-golden-fleece",
+    "conceptId": "jason-golden-fleece",
+    "familyId": "jason-myth",
+    "type": "mcq",
+    "question": "Quel héros part à la conquête de la Toison d'or ?",
+    "answers": [
+      "Persée",
+      "Achille",
+      "Jason",
+      "Thésée"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "jason"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q168712",
+      "url": "https://www.wikidata.org/wiki/Q168712",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-medea-helps-jason",
+    "conceptId": "medea-helps-jason",
+    "familyId": "jason-myth",
+    "type": "mcq",
+    "question": "Quelle magicienne aide Jason à conquérir la Toison d'or ?",
+    "answers": [
+      "Circé",
+      "Hécate",
+      "Pasiphaé",
+      "Médée"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "jason"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q168712",
+      "url": "https://www.wikidata.org/wiki/Q168712",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-argonauts-ship-argo",
+    "conceptId": "argonauts-ship-argo",
+    "familyId": "jason-myth",
+    "type": "mcq",
+    "question": "Comment s'appelle le navire des compagnons de Jason ?",
+    "answers": [
+      "L'Argo",
+      "Le Pégase",
+      "Le Triton",
+      "L'Égée"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "jason"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q168712",
+      "url": "https://www.wikidata.org/wiki/Q168712",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-oedipus-sphinx-riddle",
+    "conceptId": "oedipus-sphinx-riddle",
+    "familyId": "oedipus-myth",
+    "type": "mcq",
+    "question": "Quel héros résout l'énigme du Sphinx ?",
+    "answers": [
+      "Bellérophon",
+      "Œdipe",
+      "Thésée",
+      "Ulysse"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "oedipe"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q133071",
+      "url": "https://www.wikidata.org/wiki/Q133071",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-oedipus-marries-jocaste",
+    "conceptId": "oedipus-marries-jocaste",
+    "familyId": "oedipus-myth",
+    "type": "mcq",
+    "question": "Qui Œdipe épouse-t-il sans le savoir ?",
+    "answers": [
+      "Sa tante Europe",
+      "Sa nourrice",
+      "Sa mère Jocaste",
+      "Sa sœur Antigone"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "oedipe"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q133071",
+      "url": "https://www.wikidata.org/wiki/Q133071",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-orpheus-eurydice",
+    "conceptId": "orpheus-eurydice",
+    "familyId": "orpheus-myth",
+    "type": "mcq",
+    "question": "Qui Orphée tente-t-il de ramener des Enfers ?",
+    "answers": [
+      "Perséphone",
+      "Daphné",
+      "Hélène",
+      "Eurydice"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "orphee"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128438",
+      "url": "https://www.wikidata.org/wiki/Q128438",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-orpheus-turns-around",
+    "conceptId": "orpheus-turns-around",
+    "familyId": "orpheus-myth",
+    "type": "mcq",
+    "question": "Pourquoi Orphée perd-il définitivement Eurydice ?",
+    "answers": [
+      "Parce qu'il se retourne pour la regarder avant la sortie des Enfers",
+      "Parce qu'il chante faux",
+      "Parce qu'il refuse de payer Charon",
+      "Parce qu'il la laisse boire l'eau du Léthé"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "orphee"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128438",
+      "url": "https://www.wikidata.org/wiki/Q128438",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-bellerophon-kills-chimera",
+    "conceptId": "bellerophon-kills-chimera",
+    "familyId": "bellerophon-myth",
+    "type": "mcq",
+    "question": "Quel héros, monté sur Pégase, tue la Chimère ?",
+    "answers": [
+      "Héraclès",
+      "Bellérophon",
+      "Persée",
+      "Jason"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q174131",
+      "url": "https://www.wikidata.org/wiki/Q174131",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-atalante-calydonian-boar",
+    "conceptId": "atalante-calydonian-boar",
+    "familyId": "atalante-myth",
+    "type": "mcq",
+    "question": "Quelle héroïne participe à la chasse au sanglier de Calydon ?",
+    "answers": [
+      "Cassandre",
+      "Andromaque",
+      "Atalante",
+      "Pénélope"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187692",
+      "url": "https://www.wikidata.org/wiki/Q187692",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-achilles-vulnerable-heel",
+    "conceptId": "achilles-vulnerable-heel",
+    "familyId": "achilles-identity",
+    "type": "mcq",
+    "question": "Quelle est la seule partie vulnérable du corps d'Achille ?",
+    "answers": [
+      "Le cou",
+      "Le genou",
+      "L'épaule",
+      "Le talon"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "achille"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41746",
+      "url": "https://www.wikidata.org/wiki/Q41746",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-achilles-mother-thetis",
+    "conceptId": "achilles-mother-thetis",
+    "familyId": "achilles-genealogy",
+    "type": "mcq",
+    "question": "Qui est la mère d'Achille, déesse marine ?",
+    "answers": [
+      "Thétis",
+      "Amphitrite",
+      "Héra",
+      "Léto"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "achille"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41746",
+      "url": "https://www.wikidata.org/wiki/Q41746",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-achilles-dipped-in-styx",
+    "conceptId": "achilles-dipped-in-styx",
+    "familyId": "achilles-genealogy",
+    "type": "mcq",
+    "question": "Dans quel fleuve Thétis plonge-t-elle Achille pour le rendre invulnérable ?",
+    "answers": [
+      "Le Cocyte",
+      "Le Styx",
+      "Le Léthé",
+      "L'Achéron"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "achille"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41746",
+      "url": "https://www.wikidata.org/wiki/Q41746",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-daedalus-builds-labyrinth",
+    "conceptId": "daedalus-builds-labyrinth",
+    "familyId": "daedalus-myth",
+    "type": "mcq",
+    "question": "Quel architecte a construit le Labyrinthe de Crète ?",
+    "answers": [
+      "Prométhée",
+      "Trophonios",
+      "Dédale",
+      "Icare"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130142",
+      "url": "https://www.wikidata.org/wiki/Q130142",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-icarus-wax-wings",
+    "conceptId": "icarus-wax-wings",
+    "familyId": "daedalus-myth",
+    "type": "mcq",
+    "question": "Pourquoi Icare tombe-t-il dans la mer ?",
+    "answers": [
+      "Il s'endort en volant",
+      "Sa corde se rompt",
+      "Il est frappé par la foudre de Zeus",
+      "Il s'approche trop du Soleil et ses ailes de cire fondent"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130142",
+      "url": "https://www.wikidata.org/wiki/Q130142",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-antigone-buries-polyneices",
+    "conceptId": "antigone-buries-polyneices",
+    "familyId": "antigone-myth",
+    "type": "mcq",
+    "question": "Quel acte Antigone commet-elle, selon la pièce de Sophocle ?",
+    "answers": [
+      "Elle enterre son frère malgré l'interdiction du roi",
+      "Elle trahit Athènes",
+      "Elle vole le feu sacré",
+      "Elle révèle un secret d'État"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7235",
+      "url": "https://www.wikidata.org/wiki/Q7235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-cadmus-founder-of-thebes",
+    "conceptId": "cadmus-founder-of-thebes",
+    "familyId": "cadmus-myth",
+    "type": "mcq",
+    "question": "Selon le mythe, qui est le fondateur de la cité de Thèbes ?",
+    "answers": [
+      "Érechthée",
+      "Cadmos",
+      "Danaos",
+      "Pélops"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q133071",
+      "url": "https://www.wikidata.org/wiki/Q133071",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "greek-theseus-son-of-aegeus",
+    "conceptId": "theseus-son-of-aegeus",
+    "familyId": "theseus-genealogy",
+    "type": "mcq",
+    "question": "Selon la version la plus courante, qui est le père de Thésée ?",
+    "answers": [
+      "Pélée",
+      "Éole",
+      "Égée",
+      "Poséidon"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "theseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-theseus-marathonian-bull",
+    "conceptId": "theseus-marathonian-bull",
+    "familyId": "theseus-myth",
+    "type": "mcq",
+    "question": "Quel héros athénien a capturé le taureau de Marathon ?",
+    "answers": [
+      "Héraclès",
+      "Persée",
+      "Jason",
+      "Thésée"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "heros",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "theseus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  }
+]

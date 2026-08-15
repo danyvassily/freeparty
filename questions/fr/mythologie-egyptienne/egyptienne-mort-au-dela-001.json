@@ -1,0 +1,572 @@
+[
+  {
+    "id": "egyptian-book-of-the-dead",
+    "conceptId": "book-of-the-dead",
+    "familyId": "funerary-texts",
+    "type": "mcq",
+    "question": "Quel recueil de formules accompagne les défunts dans l'au-delà ?",
+    "answers": [
+      "Le Papyrus d'Ani",
+      "La Pierre de Rosette",
+      "Le Livre des Morts",
+      "Le Livre des Pyramides"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q399088",
+      "url": "https://www.wikidata.org/wiki/Q399088",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-weighing-of-the-heart",
+    "conceptId": "weighing-of-the-heart",
+    "familyId": "judgment-of-the-dead",
+    "type": "mcq",
+    "question": "Contre quoi le cœur du défunt est-il pesé lors du jugement ?",
+    "answers": [
+      "Un scarabée d'or",
+      "Un vase canope",
+      "Le Livre des Morts",
+      "La plume de Maât"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-anubis-conducts-the-weighing",
+    "conceptId": "anubis-conducts-the-weighing",
+    "familyId": "judgment-of-the-dead",
+    "type": "mcq",
+    "question": "Quel dieu procède à la pesée du cœur ?",
+    "answers": [
+      "Anubis",
+      "Thot",
+      "Osiris",
+      "Horus"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ammit-the-devourer",
+    "conceptId": "ammit-the-devourer",
+    "familyId": "judgment-of-the-dead",
+    "type": "mcq",
+    "question": "Qu'arrive-t-il au défunt dont le cœur est plus lourd que la plume ?",
+    "answers": [
+      "Il recommence sa vie",
+      "Il est dévoré par la créature Ammit",
+      "Il est jeté dans le Noun",
+      "Il est changé en statue"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-forty-two-assessors",
+    "conceptId": "forty-two-assessors",
+    "familyId": "judgment-of-the-dead",
+    "type": "mcq",
+    "question": "Combien de juges assesseurs assistent Osiris au tribunal des morts ?",
+    "answers": [
+      "Trente",
+      "Sept",
+      "Quarante-deux",
+      "Douze"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-fields-of-ialu",
+    "conceptId": "fields-of-ialu",
+    "familyId": "afterlife-places",
+    "type": "mcq",
+    "question": "Comment s'appelle le paradis égyptien où les justes cultivent des champs ?",
+    "answers": [
+      "Le jardin d'Éden",
+      "L'Élysée",
+      "Le mont Bénou",
+      "Les champs d'Ialou"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ka-the-vital-force",
+    "conceptId": "ka-the-vital-force",
+    "familyId": "soul-concepts",
+    "type": "mcq",
+    "question": "Comment s'appelle la force vitale qui survit après la mort ?",
+    "answers": [
+      "Le ka",
+      "Le ba",
+      "L'akh",
+      "Le ren"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ba-the-bird-soul",
+    "conceptId": "ba-the-bird-soul",
+    "familyId": "soul-concepts",
+    "type": "mcq",
+    "question": "Sous quelle forme le ba, l'âme du défunt, est-il représenté ?",
+    "answers": [
+      "Un chat",
+      "Un oiseau à tête humaine",
+      "Un faucon",
+      "Un serpent ailé"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-duat-the-underworld",
+    "conceptId": "duat-the-underworld",
+    "familyId": "afterlife-places",
+    "type": "mcq",
+    "question": "Comment s'appelle le monde souterrain que traverse Râ chaque nuit ?",
+    "answers": [
+      "Le Noun",
+      "L'Akhét",
+      "La Douat",
+      "L'Ialou"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-mummification-seventy-days",
+    "conceptId": "mummification-seventy-days",
+    "familyId": "mummification",
+    "type": "mcq",
+    "question": "Combien de jours dure environ le processus de momification ?",
+    "answers": [
+      "Dix jours",
+      "Cent jours",
+      "Trente jours",
+      "Soixante-dix jours"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-canopic-jars-organs",
+    "conceptId": "canopic-jars-organs",
+    "familyId": "mummification",
+    "type": "mcq",
+    "question": "Que contiennent les vases canopes placés auprès de la momie ?",
+    "answers": [
+      "Les organes prélevés du défunt",
+      "Des bijoux en or",
+      "Des offrandes de nourriture",
+      "Les papyrus sacrés"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-four-sons-of-horus-guardians",
+    "conceptId": "four-sons-of-horus-guardians",
+    "familyId": "mummification",
+    "type": "mcq",
+    "question": "Qui protège les vases canopes ?",
+    "answers": [
+      "Les quatre points cardinaux",
+      "Les quatre fils d'Horus",
+      "Les quatre vents",
+      "Les quatre saisons"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ushabti-funerary-figurines",
+    "conceptId": "ushabti-funerary-figurines",
+    "familyId": "funerary-equipment",
+    "type": "mcq",
+    "question": "À quoi servent les ouchebtis placés dans les tombes ?",
+    "answers": [
+      "À nourrir le défunt",
+      "À éclairer le chemin vers l'au-delà",
+      "À remplacer le défunt dans les travaux des champs de l'au-delà",
+      "À garder la tombe"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-heart-scarab",
+    "conceptId": "heart-scarab",
+    "familyId": "funerary-equipment",
+    "type": "mcq",
+    "question": "Quel objet était placé sur le cœur de la momie pour l'empêcher de témoigner contre le défunt ?",
+    "answers": [
+      "L'œil oudjat",
+      "L'ankh",
+      "Le pilier djed",
+      "Le scarabée du cœur"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hall-of-two-truths",
+    "conceptId": "hall-of-two-truths",
+    "familyId": "judgment-of-the-dead",
+    "type": "mcq",
+    "question": "Dans quelle salle se déroule le jugement du défunt ?",
+    "answers": [
+      "La salle des Deux Vérités",
+      "La salle des Colonnes",
+      "La chambre du Roi",
+      "Le vestibule d'Osiris"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "mort-au-dela",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "au-dela"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  }
+]

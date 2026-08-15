@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "phil-descartes-cogito-ergo-sum",
+    "conceptId": "descartes-cogito-ergo-sum",
+    "familyId": "cartesian-cogito",
+    "type": "mcq",
+    "question": "Quel philosophe a formulé « Je pense, donc je suis » ?",
+    "answers": [
+      "Pascal",
+      "Descartes",
+      "Spinoza",
+      "Kant"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "descartes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9191",
+      "url": "https://www.wikidata.org/wiki/Q9191",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-descartes-discourse-on-method-1637",
+    "conceptId": "descartes-discourse-on-method-1637",
+    "familyId": "cartesian-works",
+    "type": "mcq",
+    "question": "En quelle année Descartes publie-t-il le Discours de la méthode ?",
+    "answers": [
+      "1650",
+      "1715",
+      "1637",
+      "1610"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "descartes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9191",
+      "url": "https://www.wikidata.org/wiki/Q9191",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-descartes-methodical-doubt",
+    "conceptId": "descartes-methodical-doubt",
+    "familyId": "cartesian-method",
+    "type": "mcq",
+    "question": "Quelle méthode Descartes adopte-t-il pour fonder la connaissance ?",
+    "answers": [
+      "L'observation empirique",
+      "L'intuition mystique",
+      "L'autorité des Anciens",
+      "Le doute méthodique"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "descartes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9191",
+      "url": "https://www.wikidata.org/wiki/Q9191",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-descartes-dualism-soul-body",
+    "conceptId": "descartes-dualism-soul-body",
+    "familyId": "cartesian-metaphysics",
+    "type": "mcq",
+    "question": "Quelle opposition structure la métaphysique de Descartes ?",
+    "answers": [
+      "L'âme (pensée) et le corps (étendue)",
+      "Le bien et le mal",
+      "L'être et le paraître",
+      "Le fini et l'infini"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "descartes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9191",
+      "url": "https://www.wikidata.org/wiki/Q9191",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-descartes-meditations-metaphysiques",
+    "conceptId": "descartes-meditations-metaphysiques",
+    "familyId": "cartesian-works",
+    "type": "mcq",
+    "question": "Quel ouvrage de Descartes contient la démonstration de l'existence de Dieu et de l'immortalité de l'âme ?",
+    "answers": [
+      "Le Traité du monde",
+      "Les Méditations métaphysiques",
+      "Le Discours de la méthode",
+      "Les Passions de l'âme"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "descartes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9191",
+      "url": "https://www.wikidata.org/wiki/Q9191",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-spinoza-ethics-geometric-method",
+    "conceptId": "spinoza-ethics-geometric-method",
+    "familyId": "spinozist-method",
+    "type": "mcq",
+    "question": "À la manière de quelle science Spinoza rédige-t-il son Éthique ?",
+    "answers": [
+      "La théologie",
+      "La grammaire",
+      "La géométrie",
+      "La médecine"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "spinoza"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35852",
+      "url": "https://www.wikidata.org/wiki/Q35852",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-spinoza-deus-sive-natura",
+    "conceptId": "spinoza-deus-sive-natura",
+    "familyId": "spinozist-metaphysics",
+    "type": "mcq",
+    "question": "Quelle formule célèbre résume le panthéisme de Spinoza ?",
+    "answers": [
+      "« Dieu est mort »",
+      "« Dieu est amour »",
+      "« Dieu joue aux dés »",
+      "« Dieu, c'est-à-dire la Nature »"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "spinoza"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35852",
+      "url": "https://www.wikidata.org/wiki/Q35852",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-spinoza-excommunicated-amsterdam",
+    "conceptId": "spinoza-excommunicated-amsterdam",
+    "familyId": "spinoza-biography",
+    "type": "mcq",
+    "question": "Quelle communauté exclut Spinoza en 1656 ?",
+    "answers": [
+      "La communauté juive d'Amsterdam",
+      "L'Église catholique de Rome",
+      "Les calvinistes de Leyde",
+      "Les jésuites de Paris"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "spinoza"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35852",
+      "url": "https://www.wikidata.org/wiki/Q35852",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-locke-tabula-rasa",
+    "conceptId": "locke-tabula-rasa",
+    "familyId": "british-empiricism",
+    "type": "mcq",
+    "question": "Quel philosophe compare l'esprit humain à une table rase ?",
+    "answers": [
+      "Kant",
+      "Locke",
+      "Descartes",
+      "Leibniz"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "empirisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9353",
+      "url": "https://www.wikidata.org/wiki/Q9353",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-berkeley-esse-est-percipi",
+    "conceptId": "berkeley-esse-est-percipi",
+    "familyId": "british-empiricism",
+    "type": "mcq",
+    "question": "Quel philosophe affirme qu'« être, c'est être perçu » ?",
+    "answers": [
+      "Locke",
+      "Bacon",
+      "Berkeley",
+      "Hume"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "empirisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q82067",
+      "url": "https://www.wikidata.org/wiki/Q82067",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-hume-problem-of-induction",
+    "conceptId": "hume-problem-of-induction",
+    "familyId": "hume-epistemology",
+    "type": "mcq",
+    "question": "Quel philosophe montre que l'induction ne peut être rationnellement justifiée ?",
+    "answers": [
+      "Bacon",
+      "Descartes",
+      "Leibniz",
+      "Hume"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "empirisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37160",
+      "url": "https://www.wikidata.org/wiki/Q37160",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-pascal-the-wager",
+    "conceptId": "pascal-the-wager",
+    "familyId": "pascal-philosophy",
+    "type": "mcq",
+    "question": "Quel argument célèbre Pascal propose-t-il en faveur de la croyance en Dieu ?",
+    "answers": [
+      "Le pari",
+      "La preuve ontologique",
+      "L'argument cosmologique",
+      "La preuve par les miracles"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "pascal"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1290",
+      "url": "https://www.wikidata.org/wiki/Q1290",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-leibniz-monads",
+    "conceptId": "leibniz-monads",
+    "familyId": "leibniz-metaphysics",
+    "type": "mcq",
+    "question": "Quels sont les éléments simples et indivisibles de la métaphysique de Leibniz ?",
+    "answers": [
+      "Les particules",
+      "Les monades",
+      "Les atomes",
+      "Les idées innées"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "leibniz"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9047",
+      "url": "https://www.wikidata.org/wiki/Q9047",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-kant-critique-of-pure-reason",
+    "conceptId": "kant-critique-of-pure-reason",
+    "familyId": "kantian-criticism",
+    "type": "mcq",
+    "question": "Quel est l'ouvrage principal de Kant ?",
+    "answers": [
+      "L'Éthique",
+      "Le Léviathan",
+      "La Critique de la raison pure",
+      "Le Discours de la méthode"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kant"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9312",
+      "url": "https://www.wikidata.org/wiki/Q9312",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-kant-categorical-imperative",
+    "conceptId": "kant-categorical-imperative",
+    "familyId": "kantian-ethics",
+    "type": "mcq",
+    "question": "Comment s'appelle le principe moral fondamental de Kant ?",
+    "answers": [
+      "La règle d'or",
+      "Le principe d'utilité",
+      "Le juste milieu",
+      "L'impératif catégorique"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kant"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9312",
+      "url": "https://www.wikidata.org/wiki/Q9312",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-kant-copernican-revolution",
+    "conceptId": "kant-copernican-revolution",
+    "familyId": "kantian-epistemology",
+    "type": "mcq",
+    "question": "Comment Kant qualifie-t-il son changement de perspective en philosophie ?",
+    "answers": [
+      "Une révolution copernicienne",
+      "Une table rase",
+      "Un retour aux choses mêmes",
+      "Une conversion morale"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kant"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9312",
+      "url": "https://www.wikidata.org/wiki/Q9312",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-kant-sapere-aude",
+    "conceptId": "kant-sapere-aude",
+    "familyId": "kantian-enlightenment",
+    "type": "mcq",
+    "question": "Quelle devise Kant donne-t-il aux Lumières ?",
+    "answers": [
+      "« Rien de trop »",
+      "« Sapere aude » : ose te servir de ton propre entendement",
+      "« Carpe diem »",
+      "« Connais-toi toi-même »"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kant"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9312",
+      "url": "https://www.wikidata.org/wiki/Q9312",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-hegel-phenomenology-of-spirit",
+    "conceptId": "hegel-phenomenology-of-spirit",
+    "familyId": "hegelian-works",
+    "type": "mcq",
+    "question": "Quel philosophe allemand écrit la Phénoménologie de l'esprit ?",
+    "answers": [
+      "Schopenhauer",
+      "Fichte",
+      "Hegel",
+      "Kant"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "hegel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9235",
+      "url": "https://www.wikidata.org/wiki/Q9235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-hegel-dialectical-method",
+    "conceptId": "hegel-dialectical-method",
+    "familyId": "hegelian-method",
+    "type": "mcq",
+    "question": "Quelle méthode caractérise la philosophie de Hegel ?",
+    "answers": [
+      "L'analyse linguistique",
+      "L'introspection",
+      "La déduction mathématique",
+      "La dialectique"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "hegel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9235",
+      "url": "https://www.wikidata.org/wiki/Q9235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-hegel-master-slave-dialectic",
+    "conceptId": "hegel-master-slave-dialectic",
+    "familyId": "hegelian-dialectic",
+    "type": "mcq",
+    "question": "Quelle célèbre figure de la Phénoménologie de l'esprit décrit la lutte de deux consciences ?",
+    "answers": [
+      "La dialectique du maître et de l'esclave",
+      "L'allégorie de la caverne",
+      "Le mythe de la caverne",
+      "Le pari de Pascal"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "hegel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9235",
+      "url": "https://www.wikidata.org/wiki/Q9235",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-nietzsche-god-is-dead",
+    "conceptId": "nietzsche-god-is-dead",
+    "familyId": "nietzschean-critique",
+    "type": "mcq",
+    "question": "Quelle annonce célèbre Nietzsche place dans la bouche de l'insensé ?",
+    "answers": [
+      "« Tout est nombre »",
+      "« Dieu est mort »",
+      "« L'homme est né libre »",
+      "« Je pense donc je suis »"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "nietzsche"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9358",
+      "url": "https://www.wikidata.org/wiki/Q9358",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-nietzsche-zarathustra-overman",
+    "conceptId": "nietzsche-zarathustra-overman",
+    "familyId": "nietzschean-doctrine",
+    "type": "mcq",
+    "question": "Quelle figure Nietzsche oppose-t-il au « dernier homme » ?",
+    "answers": [
+      "Le héros romantique",
+      "L'ange",
+      "Le surhomme",
+      "Le sage"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "nietzsche"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9358",
+      "url": "https://www.wikidata.org/wiki/Q9358",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-nietzsche-will-to-power",
+    "conceptId": "nietzsche-will-to-power",
+    "familyId": "nietzschean-doctrine",
+    "type": "mcq",
+    "question": "Quel concept central de Nietzsche désigne la force fondamentale qui anime tout vivant ?",
+    "answers": [
+      "La volonté de vivre",
+      "Le conatus",
+      "L'élan vital",
+      "La volonté de puissance"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "nietzsche"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9358",
+      "url": "https://www.wikidata.org/wiki/Q9358",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-nietzsche-genealogy-of-morals",
+    "conceptId": "nietzsche-genealogy-of-morals",
+    "familyId": "nietzschean-works",
+    "type": "mcq",
+    "question": "Quel ouvrage de Nietzsche entreprend la critique généalogique de la morale ?",
+    "answers": [
+      "La Généalogie de la morale",
+      "Le Capital",
+      "La Critique de la raison pure",
+      "Les Pensées"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "nietzsche"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9358",
+      "url": "https://www.wikidata.org/wiki/Q9358",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-kierkegaard-either-or",
+    "conceptId": "kierkegaard-either-or",
+    "familyId": "kierkegaardian-works",
+    "type": "mcq",
+    "question": "Quel philosophe danois écrit Ou bien... ou bien ?",
+    "answers": [
+      "Schopenhauer",
+      "Kierkegaard",
+      "Hegel",
+      "Nietzsche"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kierkegaard"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6512",
+      "url": "https://www.wikidata.org/wiki/Q6512",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-kierkegaard-three-stages-of-existence",
+    "conceptId": "kierkegaard-three-stages-of-existence",
+    "familyId": "kierkegaardian-doctrine",
+    "type": "mcq",
+    "question": "Quels sont les trois stades de l'existence selon Kierkegaard ?",
+    "answers": [
+      "Enfance, jeunesse, vieillesse",
+      "Corps, âme, esprit",
+      "Esthétique, éthique, religieux",
+      "Sensible, intelligible, divin"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kierkegaard"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6512",
+      "url": "https://www.wikidata.org/wiki/Q6512",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-kierkegaard-fear-and-trembling",
+    "conceptId": "kierkegaard-fear-and-trembling",
+    "familyId": "kierkegaardian-works",
+    "type": "mcq",
+    "question": "Quel ouvrage de Kierkegaard médite sur le sacrifice d'Abraham ?",
+    "answers": [
+      "Le Mythe de Sisyphe",
+      "La Nausée",
+      "Le Gai Savoir",
+      "Crainte et tremblement"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "kierkegaard"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6512",
+      "url": "https://www.wikidata.org/wiki/Q6512",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-marx-das-kapital",
+    "conceptId": "marx-das-kapital",
+    "familyId": "marxian-works",
+    "type": "mcq",
+    "question": "Quel est le grand ouvrage économique de Karl Marx ?",
+    "answers": [
+      "Le Capital",
+      "La Richesse des nations",
+      "L'Éthique",
+      "Le Léviathan"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marx"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9061",
+      "url": "https://www.wikidata.org/wiki/Q9061",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-marx-class-struggle",
+    "conceptId": "marx-class-struggle",
+    "familyId": "marxian-doctrine",
+    "type": "mcq",
+    "question": "Selon Marx, quelle est la clé de l'histoire des sociétés humaines ?",
+    "answers": [
+      "La sélection naturelle",
+      "La lutte des classes",
+      "La volonté de puissance",
+      "La lutte pour la reconnaissance"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marx"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9061",
+      "url": "https://www.wikidata.org/wiki/Q9061",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-marx-surplus-value",
+    "conceptId": "marx-surplus-value",
+    "familyId": "marxian-economics",
+    "type": "mcq",
+    "question": "Comment Marx appelle-t-il la valeur extraite du travail des ouvriers par les capitalistes ?",
+    "answers": [
+      "La rente",
+      "L'intérêt",
+      "La plus-value",
+      "Le profit net"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marx"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9061",
+      "url": "https://www.wikidata.org/wiki/Q9061",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-hobbes-leviathan-state-of-nature",
+    "conceptId": "hobbes-leviathan-state-of-nature",
+    "familyId": "hobbesian-politics",
+    "type": "mcq",
+    "question": "Quel philosophe décrit l'état de nature comme une guerre de tous contre tous ?",
+    "answers": [
+      "Locke",
+      "Rousseau",
+      "Montesquieu",
+      "Hobbes"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "politique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35840",
+      "url": "https://www.wikidata.org/wiki/Q35840",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-rousseau-social-contract",
+    "conceptId": "rousseau-social-contract",
+    "familyId": "rousseauian-politics",
+    "type": "mcq",
+    "question": "Qui écrit Du contrat social en 1762 ?",
+    "answers": [
+      "Rousseau",
+      "Voltaire",
+      "Diderot",
+      "Montesquieu"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "politique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9142",
+      "url": "https://www.wikidata.org/wiki/Q9142",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-machiavelli-the-prince",
+    "conceptId": "machiavelli-the-prince",
+    "familyId": "machiavellian-politics",
+    "type": "mcq",
+    "question": "Quel penseur politique italien écrit Le Prince ?",
+    "answers": [
+      "Botero",
+      "Machiavel",
+      "Guichardin",
+      "Castiglione"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "politique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1393",
+      "url": "https://www.wikidata.org/wiki/Q1393",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-montesquieu-separation-of-powers",
+    "conceptId": "montesquieu-separation-of-powers",
+    "familyId": "montesquieuian-politics",
+    "type": "mcq",
+    "question": "Quel philosophe des Lumières théorise la séparation des trois pouvoirs ?",
+    "answers": [
+      "Rousseau",
+      "Diderot",
+      "Montesquieu",
+      "Voltaire"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "philosophie-moderne",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "politique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9337",
+      "url": "https://www.wikidata.org/wiki/Q9337",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  }
+]

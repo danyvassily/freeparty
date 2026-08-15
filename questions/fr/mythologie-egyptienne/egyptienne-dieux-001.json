@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "egyptian-ra-sun-god",
+    "conceptId": "ra-sun-god",
+    "familyId": "ra-identity",
+    "type": "mcq",
+    "question": "Quel dieu est le grand dieu solaire de l'Égypte ancienne ?",
+    "answers": [
+      "Anubis",
+      "Ptah",
+      "Râ",
+      "Osiris"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ra-travels-in-solar-barge",
+    "conceptId": "ra-travels-in-solar-barge",
+    "familyId": "ra-journey",
+    "type": "mcq",
+    "question": "Comment Râ voyage-t-il dans le ciel pendant le jour ?",
+    "answers": [
+      "Sur un char tiré par des chevaux",
+      "Sur les ailes d'un faucon",
+      "À dos d'hippopotame",
+      "Dans une barque solaire"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ra-crosses-the-duat-at-night",
+    "conceptId": "ra-crosses-the-duat-at-night",
+    "familyId": "ra-journey",
+    "type": "mcq",
+    "question": "Que traverse Râ pendant la nuit ?",
+    "answers": [
+      "La Douat, le monde souterrain",
+      "Le Nil",
+      "Le désert de Libye",
+      "Les champs d'Ialou"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-khepri-scarab-morning-form",
+    "conceptId": "khepri-scarab-morning-form",
+    "familyId": "ra-forms",
+    "type": "mcq",
+    "question": "Sous quel nom et quelle forme Râ renaît-il chaque matin ?",
+    "answers": [
+      "Apis, le taureau",
+      "Khépri, le scarabée",
+      "Atoum, le serpent",
+      "Horus, le faucon"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-amun-ra-fusion",
+    "conceptId": "amun-ra-fusion",
+    "familyId": "ra-forms",
+    "type": "mcq",
+    "question": "Quel grand dieu de Thèbes fusionne avec Râ pour devenir le dieu suprême ?",
+    "answers": [
+      "Osiris",
+      "Khnoum",
+      "Amon",
+      "Ptah"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-atum-self-created-creator",
+    "conceptId": "atum-self-created-creator",
+    "familyId": "ra-forms",
+    "type": "mcq",
+    "question": "Dans la cosmogonie d'Héliopolis, quel dieu s'est créé lui-même avant de créer le monde ?",
+    "answers": [
+      "Geb",
+      "Chou",
+      "Seth",
+      "Atoum"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "ra"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-god-of-afterlife",
+    "conceptId": "osiris-god-of-afterlife",
+    "familyId": "osiris-identity",
+    "type": "mcq",
+    "question": "Quel dieu préside à l'au-delà et à la renaissance ?",
+    "answers": [
+      "Osiris",
+      "Râ",
+      "Thot",
+      "Horus"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-seth-kills-osiris",
+    "conceptId": "seth-kills-osiris",
+    "familyId": "osiris-myth",
+    "type": "mcq",
+    "question": "Qui tue Osiris par jalousie ?",
+    "answers": [
+      "Geb",
+      "Seth",
+      "Apopis",
+      "Anubis"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-dismembered-fourteen-pieces",
+    "conceptId": "osiris-dismembered-fourteen-pieces",
+    "familyId": "osiris-myth",
+    "type": "mcq",
+    "question": "Selon la version la plus répandue, en combien de morceaux Seth démembre-t-il Osiris ?",
+    "answers": [
+      "Trois",
+      "Vingt et un",
+      "Quatorze",
+      "Sept"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.94,
+    "qualityScore": 0.88,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-revives-osiris",
+    "conceptId": "isis-revives-osiris",
+    "familyId": "osiris-myth",
+    "type": "mcq",
+    "question": "Qui rassemble les morceaux d'Osiris et lui rend vie ?",
+    "answers": [
+      "Nephtys seule",
+      "Maât",
+      "Hathor",
+      "Isis"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-judge-of-the-dead",
+    "conceptId": "osiris-judge-of-the-dead",
+    "familyId": "osiris-roles",
+    "type": "mcq",
+    "question": "Quel rôle Osiris joue-t-il dans le tribunal des morts ?",
+    "answers": [
+      "Il préside le jugement de l'âme",
+      "Il pèse le cœur",
+      "Il écrit le verdict",
+      "Il garde la balance"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-god-of-vegetation",
+    "conceptId": "osiris-god-of-vegetation",
+    "familyId": "osiris-roles",
+    "type": "mcq",
+    "question": "À quel domaine naturel Osiris est-il aussi associé ?",
+    "answers": [
+      "Aux séismes",
+      "À la végétation et à la renaissance des récoltes",
+      "À la guerre et aux combats",
+      "Aux éclipses"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-horus-father-osiris",
+    "conceptId": "horus-father-osiris",
+    "familyId": "horus-genealogy",
+    "type": "mcq",
+    "question": "Qui est le père d'Horus ?",
+    "answers": [
+      "Seth",
+      "Geb",
+      "Osiris",
+      "Râ"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-sister-wife-of-osiris",
+    "conceptId": "isis-sister-wife-of-osiris",
+    "familyId": "isis-family",
+    "type": "mcq",
+    "question": "Quel lien unit Isis et Osiris ?",
+    "answers": [
+      "Ils sont simples alliés",
+      "Ils sont cousins",
+      "Ils sont maître et servante",
+      "Ils sont frère et sœur et époux"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-goddess-of-magic",
+    "conceptId": "isis-goddess-of-magic",
+    "familyId": "isis-roles",
+    "type": "mcq",
+    "question": "Quelle déesse est réputée pour ses grands pouvoirs magiques ?",
+    "answers": [
+      "Isis",
+      "Maât",
+      "Nout",
+      "Tefnout"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-protective-mother-goddess",
+    "conceptId": "isis-protective-mother-goddess",
+    "familyId": "isis-roles",
+    "type": "mcq",
+    "question": "Quelle déesse incarne la maternité et protège les enfants ?",
+    "answers": [
+      "Nephtys",
+      "Isis",
+      "Sekhmet",
+      "Maât"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-raises-horus-in-delta-marshes",
+    "conceptId": "isis-raises-horus-in-delta-marshes",
+    "familyId": "isis-myth",
+    "type": "mcq",
+    "question": "Où Isis élève-t-elle secrètement Horus ?",
+    "answers": [
+      "Dans le temple de Karnak",
+      "Sur la montagne de Thèbes",
+      "Dans les marais du Delta",
+      "Dans le palais de Memphis"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-hieroglyph-throne",
+    "conceptId": "isis-hieroglyph-throne",
+    "familyId": "isis-symbols",
+    "type": "mcq",
+    "question": "Que représente le hiéroglyphe qui écrit le nom d'Isis ?",
+    "answers": [
+      "Un œil",
+      "Une plume",
+      "Une barque",
+      "Un trône"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-nephthys-sisters",
+    "conceptId": "isis-nephthys-sisters",
+    "familyId": "isis-family",
+    "type": "mcq",
+    "question": "Quelles deux déesses sont sœurs dans la grande Ennéade d'Héliopolis ?",
+    "answers": [
+      "Isis et Nephtys",
+      "Hathor et Maât",
+      "Bastet et Sekhmet",
+      "Nout et Tefnout"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-horus-falcon-god",
+    "conceptId": "horus-falcon-god",
+    "familyId": "horus-identity",
+    "type": "mcq",
+    "question": "Sous quel animal Horus est-il représenté ?",
+    "answers": [
+      "L'ibis",
+      "Le faucon",
+      "Le chacal",
+      "Le crocodile"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-horus-avenges-osiris",
+    "conceptId": "horus-avenges-osiris",
+    "familyId": "horus-myth",
+    "type": "mcq",
+    "question": "Qui Horus combat-il pour venger son père Osiris ?",
+    "answers": [
+      "Râ",
+      "Anubis",
+      "Seth",
+      "Apopis"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-eye-of-horus-oudjat",
+    "conceptId": "eye-of-horus-oudjat",
+    "familyId": "horus-symbols",
+    "type": "mcq",
+    "question": "Qu'arrive-t-il à l'œil d'Horus au cours de son combat contre Seth ?",
+    "answers": [
+      "Il devient aveugle",
+      "Il pleure des larmes d'or",
+      "Il se change en soleil",
+      "Il est arraché puis restauré"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-thoth-restores-eye-of-horus",
+    "conceptId": "thoth-restores-eye-of-horus",
+    "familyId": "horus-symbols",
+    "type": "mcq",
+    "question": "Quel dieu restaure l'œil d'Horus ?",
+    "answers": [
+      "Thot",
+      "Anubis",
+      "Khonsou",
+      "Ptah"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-pharaoh-horus-the-living",
+    "conceptId": "pharaoh-horus-the-living",
+    "familyId": "horus-roles",
+    "type": "mcq",
+    "question": "Quel titre le pharaon porte-t-il en tant que souverain vivant ?",
+    "answers": [
+      "Époux de Maât",
+      "Horus vivant",
+      "Fils de Seth",
+      "Serviteur d'Apopis"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-seth-god-of-chaos",
+    "conceptId": "seth-god-of-chaos",
+    "familyId": "seth-identity",
+    "type": "mcq",
+    "question": "Quel dieu incarne le chaos, la violence et le désert ?",
+    "answers": [
+      "Khnoum",
+      "Bès",
+      "Seth",
+      "Thot"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "seth"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q147201",
+      "url": "https://www.wikidata.org/wiki/Q147201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-seth-unknown-animal",
+    "conceptId": "seth-unknown-animal",
+    "familyId": "seth-symbols",
+    "type": "mcq",
+    "question": "Quel animal représente Seth dans l'art égyptien ?",
+    "answers": [
+      "Le chat",
+      "L'ibis",
+      "L'hippopotame",
+      "Un animal imaginaire non identifié"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "seth"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q147201",
+      "url": "https://www.wikidata.org/wiki/Q147201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-seth-uncle-of-horus",
+    "conceptId": "seth-uncle-of-horus",
+    "familyId": "seth-family",
+    "type": "mcq",
+    "question": "Quel lien de parenté unit Seth et Horus ?",
+    "answers": [
+      "Seth est l'oncle d'Horus",
+      "Seth est le père d'Horus",
+      "Seth est le frère d'Horus",
+      "Seth est le cousin d'Horus"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "seth"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q147201",
+      "url": "https://www.wikidata.org/wiki/Q147201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-seth-wife-nephthys",
+    "conceptId": "seth-wife-nephthys",
+    "familyId": "seth-family",
+    "type": "mcq",
+    "question": "Quelle déesse est l'épouse de Seth ?",
+    "answers": [
+      "Tefnout",
+      "Nephtys",
+      "Isis",
+      "Nout"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "seth"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q147201",
+      "url": "https://www.wikidata.org/wiki/Q147201",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-anubis-jackal-headed",
+    "conceptId": "anubis-jackal-headed",
+    "familyId": "anubis-identity",
+    "type": "mcq",
+    "question": "Quel dieu est représenté avec une tête de chacal ?",
+    "answers": [
+      "Thot",
+      "Sobek",
+      "Anubis",
+      "Horus"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "anubis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-anubis-god-of-mummification",
+    "conceptId": "anubis-god-of-mummification",
+    "familyId": "anubis-roles",
+    "type": "mcq",
+    "question": "Quel dieu préside à la momification et à l'embaumement ?",
+    "answers": [
+      "Râ",
+      "Osiris",
+      "Khnoum",
+      "Anubis"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "anubis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-anubis-protector-of-necropolises",
+    "conceptId": "anubis-protector-of-necropolises",
+    "familyId": "anubis-roles",
+    "type": "mcq",
+    "question": "Quel dieu protège les nécropoles ?",
+    "answers": [
+      "Anubis",
+      "Bès",
+      "Ptah",
+      "Khonsou"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "anubis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-anubis-father-osiris",
+    "conceptId": "anubis-father-osiris",
+    "familyId": "anubis-genealogy",
+    "type": "mcq",
+    "question": "Selon la tradition la plus répandue, qui est le père d'Anubis ?",
+    "answers": [
+      "Râ",
+      "Osiris",
+      "Seth",
+      "Geb"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "anubis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146585",
+      "url": "https://www.wikidata.org/wiki/Q146585",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-isis-protective-wings",
+    "conceptId": "isis-protective-wings",
+    "familyId": "isis-symbols",
+    "type": "mcq",
+    "question": "Quelle déesse est souvent représentée avec de grandes ailes protectrices ?",
+    "answers": [
+      "Sekhmet",
+      "Nout",
+      "Isis",
+      "Bastet"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "isis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-green-skin",
+    "conceptId": "osiris-green-skin",
+    "familyId": "osiris-symbols",
+    "type": "mcq",
+    "question": "De quelle couleur est généralement la peau d'Osiris dans les représentations ?",
+    "answers": [
+      "Rouge",
+      "Bleue",
+      "Dorée",
+      "Verte"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-horus-mother-isis",
+    "conceptId": "horus-mother-isis",
+    "familyId": "horus-genealogy",
+    "type": "mcq",
+    "question": "Quelle déesse est la mère d'Horus ?",
+    "answers": [
+      "Isis",
+      "Hathor",
+      "Maât",
+      "Nephtys"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "horus"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-osiris-mummiform-representation",
+    "conceptId": "osiris-mummiform-representation",
+    "familyId": "osiris-symbols",
+    "type": "mcq",
+    "question": "Quel dieu est souvent représenté momiforme, c'est-à-dire emmailloté comme une momie ?",
+    "answers": [
+      "Ptah",
+      "Osiris",
+      "Anubis",
+      "Thot"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "dieux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "osiris"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  }
+]

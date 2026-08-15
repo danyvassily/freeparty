@@ -32,12 +32,11 @@ const NEUTRALITY_WORDS = [
   "la droite", "les islamistes", "les capitalistes", "le totalitarisme",
 ];
 
-/** Mots qui signalent un framing biaisé / prémisses douteuses — détection par mots entiers */
+/** Mots qui signalent un framing biaisé / prémisses douteuses */
 const FRAMING_WORDS = [
   "envahissent", "racket", "propagande", "décadence", "race", "trahison",
   "angoisse", "peur", "menace", "catastrophe", "effondrement",
 ];
-const FRAMING_PATTERNS = FRAMING_WORDS.map((w) => new RegExp(`\\b${w}\\b`, "i"));
 
 export function auditDebatePrompt(prompt: DebatePrompt): DebateQualityReport {
   const flags: string[] = [];
@@ -68,7 +67,7 @@ export function auditDebatePrompt(prompt: DebatePrompt): DebateQualityReport {
   if (prompt.context.length < 40) flags.push("Contexte factuel trop court (spec §65)");
 
   // 7. Biais : framing words
-  const framingHits = FRAMING_PATTERNS.filter((re) => re.test(text)).map((re) => re.source);
+  const framingHits = FRAMING_WORDS.filter((w) => text.includes(w));
   const bias = Math.max(0, 1 - framingHits.length * 0.25);
   if (framingHits.length > 0) flags.push(`Framing possible : ${framingHits.join(", ")}`);
 

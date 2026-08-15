@@ -74,7 +74,7 @@ describe("Debate Engine — machine à états", () => {
   });
 
   it("comptabilise le temps de parole réel et décrémente le budget", () => {
-    let d = createDebate(prompt, players, { durationSeconds: 300 });
+    const d = createDebate(prompt, players, { durationSeconds: 300 });
     const start = startTurn(d, "p1", "speech").state;
     const ended = endTurn(start, "p1").state;
     expect(ended.speakingTimeMs.p1).toBeGreaterThanOrEqual(0);

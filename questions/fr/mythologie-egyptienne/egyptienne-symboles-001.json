@@ -1,0 +1,306 @@
+[
+  {
+    "id": "egyptian-ankh-symbol-of-life",
+    "conceptId": "ankh-symbol-of-life",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Que symbolise l'ankh, la croix à anse ?",
+    "answers": [
+      "La guerre",
+      "La richesse",
+      "La vie",
+      "La mort"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134403",
+      "url": "https://www.wikidata.org/wiki/Q134403",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-oudjat-eye-of-horus",
+    "conceptId": "oudjat-eye-of-horus",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Que représente l'œil oudjat ?",
+    "answers": [
+      "L'œil de Râ, symbole de destruction",
+      "L'œil de Maât, symbole de jugement",
+      "L'œil d'Anubis, symbole de deuil",
+      "L'œil d'Horus, symbole de protection et de santé"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-scarab-beetle-rebirth",
+    "conceptId": "scarab-beetle-rebirth",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Quel insecte, symbole de renaissance et de régénération, est associé au soleil levant ?",
+    "answers": [
+      "Le scarabée",
+      "L'abeille",
+      "La libellule",
+      "Le scorpion"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-djed-pillar-stability",
+    "conceptId": "djed-pillar-stability",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Que symbolise le pilier djed ?",
+    "answers": [
+      "La sagesse, associé à Thot",
+      "La stabilité, associé à Osiris",
+      "La fertilité, associé à Isis",
+      "La guerre, associé à Seth"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-maat-feather-truth",
+    "conceptId": "maat-feather-truth",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Quel objet représente la vérité et la justice dans l'iconographie égyptienne ?",
+    "answers": [
+      "Le sceptre de Râ",
+      "La balance d'Anubis",
+      "La plume d'autruche de Maât",
+      "L'épée de Sekhmet"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187377",
+      "url": "https://www.wikidata.org/wiki/Q187377",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-sistrum-sacred-rattle",
+    "conceptId": "sistrum-sacred-rattle",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Quel instrument à percussion, sorte de hochet sacré, accompagne les rites d'Hathor ?",
+    "answers": [
+      "Le tambourin",
+      "Les castagnettes",
+      "Le gong",
+      "Le sistre"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-lotus-upper-egypt-emblem",
+    "conceptId": "lotus-upper-egypt-emblem",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Quelle fleur est l'emblème de la Haute-Égypte ?",
+    "answers": [
+      "Le lotus",
+      "Le papyrus",
+      "Le lys",
+      "La rose"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-papyrus-lower-egypt-emblem",
+    "conceptId": "papyrus-lower-egypt-emblem",
+    "familyId": "egyptian-symbols",
+    "type": "mcq",
+    "question": "Quelle plante est l'emblème de la Basse-Égypte ?",
+    "answers": [
+      "Le palmier",
+      "Le papyrus",
+      "Le lotus",
+      "Le roseau"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "symboles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  }
+]

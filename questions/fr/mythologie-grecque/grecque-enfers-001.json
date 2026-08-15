@@ -1,0 +1,458 @@
+[
+  {
+    "id": "greek-charon-ferryman-of-the-dead",
+    "conceptId": "charon-ferryman-of-the-dead",
+    "familyId": "underworld-charon",
+    "type": "mcq",
+    "question": "Qui fait traverser le fleuve des Enfers aux âmes des morts ?",
+    "answers": [
+      "Cerbère",
+      "Thanatos",
+      "Hermès",
+      "Charon"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83499",
+      "url": "https://www.wikidata.org/wiki/Q83499",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-charon-obol-payment",
+    "conceptId": "charon-obol-payment",
+    "familyId": "underworld-charon",
+    "type": "mcq",
+    "question": "Que glisse-t-on sous la langue des morts pour payer Charon ?",
+    "answers": [
+      "Une obole",
+      "Un drachme",
+      "Une perle",
+      "Une pièce d'or"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83499",
+      "url": "https://www.wikidata.org/wiki/Q83499",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-styx-river-of-the-underworld",
+    "conceptId": "styx-river-of-the-underworld",
+    "familyId": "underworld-rivers",
+    "type": "mcq",
+    "question": "Quel est le nom du fleuve principal des Enfers, dont les eaux rendent invulnérable ?",
+    "answers": [
+      "Le Pactole",
+      "Le Styx",
+      "Le Nil",
+      "L'Eurotas"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q162884",
+      "url": "https://www.wikidata.org/wiki/Q162884",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-lethe-river-of-forgetting",
+    "conceptId": "lethe-river-of-forgetting",
+    "familyId": "underworld-rivers",
+    "type": "mcq",
+    "question": "Quel fleuve des Enfers est le fleuve de l'oubli ?",
+    "answers": [
+      "L'Achéron",
+      "Le Phlégéthon",
+      "Le Léthé",
+      "Le Styx"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q162884",
+      "url": "https://www.wikidata.org/wiki/Q162884",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-minos-rhadamanthus-judges",
+    "conceptId": "minos-rhadamanthus-judges",
+    "familyId": "underworld-judges",
+    "type": "mcq",
+    "question": "Qui juge les âmes des morts aux Enfers ?",
+    "answers": [
+      "Zeus et Apollon",
+      "Héraclès et Thésée",
+      "Éaque et Tantale",
+      "Minos et Rhadamanthe"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-sisyphus-rolls-boulder",
+    "conceptId": "sisyphus-rolls-boulder",
+    "familyId": "underworld-punishments",
+    "type": "mcq",
+    "question": "Quel personnage est condamné à pousser éternellement un rocher ?",
+    "answers": [
+      "Sisyphe",
+      "Tantale",
+      "Ixion",
+      "Prométhée"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q124285",
+      "url": "https://www.wikidata.org/wiki/Q124285",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-tantalus-eternal-hunger",
+    "conceptId": "tantalus-eternal-hunger",
+    "familyId": "underworld-punishments",
+    "type": "mcq",
+    "question": "Quel est le supplice de Tantale ?",
+    "answers": [
+      "Tourner une roue enflammée",
+      "Une faim et une soif éternelles au milieu de fruits et d'eau qui se dérobent",
+      "Pousser un rocher",
+      "Être dévoré par un aigle"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q202187",
+      "url": "https://www.wikidata.org/wiki/Q202187",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-danaides-perforated-barrel",
+    "conceptId": "danaides-perforated-barrel",
+    "familyId": "underworld-punishments",
+    "type": "mcq",
+    "question": "Quel est le châtiment des Danaïdes ?",
+    "answers": [
+      "Porter l'eau du Styx",
+      "S'asseoir sur un trône brûlant",
+      "Remplir un tonneau percé",
+      "Pousser un rocher"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  },
+  {
+    "id": "greek-elysian-fields-blessed",
+    "conceptId": "elysian-fields-blessed",
+    "familyId": "underworld-places",
+    "type": "mcq",
+    "question": "Où séjournent les héros et les bienheureux après leur mort ?",
+    "answers": [
+      "Au Tartare",
+      "Dans les Champs des Asphodèles",
+      "Au jardin des Hespérides",
+      "Aux Champs Élysées"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-tartarus-deepest-abyss",
+    "conceptId": "tartarus-deepest-abyss",
+    "familyId": "underworld-places",
+    "type": "mcq",
+    "question": "Quel est le nom de l'abîme le plus profond des Enfers, prison des Titans ?",
+    "answers": [
+      "Le Tartare",
+      "Le Léthé",
+      "L'Érèbe",
+      "Le Styx"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-erinyes-vengeance-goddesses",
+    "conceptId": "erinyes-vengeance-goddesses",
+    "familyId": "underworld-deities",
+    "type": "mcq",
+    "question": "Quelles déesses personnifient la vengeance et poursuivent les criminels ?",
+    "answers": [
+      "Les Muses",
+      "Les Érinyes",
+      "Les Grâces",
+      "Les Moires"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-asphodel-meadows-ordinary-souls",
+    "conceptId": "asphodel-meadows-ordinary-souls",
+    "familyId": "underworld-places",
+    "type": "mcq",
+    "question": "Où errent les âmes des mortels ordinaires selon les mythes grecs ?",
+    "answers": [
+      "Au Tartare",
+      "Sur les rives du Léthé",
+      "Dans les Champs des Asphodèles",
+      "Aux Champs Élysées"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "enfers",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "enfers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41410",
+      "url": "https://www.wikidata.org/wiki/Q41410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  }
+]

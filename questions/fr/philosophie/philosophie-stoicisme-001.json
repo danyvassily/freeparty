@@ -1,0 +1,686 @@
+[
+  {
+    "id": "phil-zeno-of-citium-founder-of-stoicism",
+    "conceptId": "zeno-of-citium-founder-of-stoicism",
+    "familyId": "stoicism-foundation",
+    "type": "mcq",
+    "question": "Qui fonde le stoïcisme vers 300 av. J.-C. ?",
+    "answers": [
+      "Épicure",
+      "Socrate",
+      "Diogène",
+      "Zénon de Cition"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-the-porch-stoa-poikile",
+    "conceptId": "the-porch-stoa-poikile",
+    "familyId": "stoicism-foundation",
+    "type": "mcq",
+    "question": "Pourquoi l'école stoïcienne est-elle appelée « le Portique » ?",
+    "answers": [
+      "Zénon enseignait sous un portique peint d'Athènes",
+      "Le bâtiment était en marbre du Portique",
+      "Le mot vient du latin « portus »",
+      "Les stoïciens vendaient des tissus"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-stoics-virtue-is-the-only-good",
+    "conceptId": "stoics-virtue-is-the-only-good",
+    "familyId": "stoic-ethics",
+    "type": "mcq",
+    "question": "Quel est le seul vrai bien selon les stoïciens ?",
+    "answers": [
+      "La richesse",
+      "La vertu",
+      "Le plaisir",
+      "La santé"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-stoics-apatheia-absence-of-passions",
+    "conceptId": "stoics-apatheia-absence-of-passions",
+    "familyId": "stoic-ethics",
+    "type": "mcq",
+    "question": "Comment appelle-t-on l'idéal stoïcien d'absence de passions ?",
+    "answers": [
+      "La catharsis",
+      "L'hybris",
+      "L'apathie",
+      "L'ataraxie"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-stoics-live-in-accordance-with-nature",
+    "conceptId": "stoics-live-in-accordance-with-nature",
+    "familyId": "stoic-ethics",
+    "type": "mcq",
+    "question": "Quel précepte résume la morale stoïcienne ?",
+    "answers": [
+      "Jouir de l'instant présent",
+      "Fuir la société",
+      "Rechercher la gloire",
+      "Vivre conformément à la nature et à la raison"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-epictetus-dichotomy-of-control",
+    "conceptId": "epictetus-dichotomy-of-control",
+    "familyId": "epictetus-doctrine",
+    "type": "mcq",
+    "question": "Quelle distinction fondamentale Épictète enseigne-t-il au début de son Manuel ?",
+    "answers": [
+      "Ce qui dépend de nous et ce qui n'en dépend pas",
+      "Le bien et le mal",
+      "Le vrai et le faux",
+      "L'âme et le corps"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "epictete"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q177463",
+      "url": "https://www.wikidata.org/wiki/Q177463",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-epictetus-former-slave",
+    "conceptId": "epictetus-former-slave",
+    "familyId": "epictetus-biography",
+    "type": "mcq",
+    "question": "Quel était le statut d'Épictète avant de devenir philosophe ?",
+    "answers": [
+      "Il était soldat",
+      "Il était esclave",
+      "Il était empereur",
+      "Il était médecin"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "epictete"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q177463",
+      "url": "https://www.wikidata.org/wiki/Q177463",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-epictetus-enchiridion-manual",
+    "conceptId": "epictetus-enchiridion-manual",
+    "familyId": "epictetus-works",
+    "type": "mcq",
+    "question": "Comment s'appelle le petit manuel pratique d'Épictète, recueilli par son disciple Arrien ?",
+    "answers": [
+      "Les Lettres",
+      "Les Maximes",
+      "Le Manuel",
+      "Les Entretiens"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "epictete"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q177463",
+      "url": "https://www.wikidata.org/wiki/Q177463",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-seneca-letters-to-lucilius",
+    "conceptId": "seneca-letters-to-lucilius",
+    "familyId": "seneca-works",
+    "type": "mcq",
+    "question": "Quelle œuvre célèbre Sénèque adresse-t-il à son ami Lucilius ?",
+    "answers": [
+      "Les Pensées pour moi-même",
+      "Le Manuel",
+      "Les Confessions",
+      "Les Lettres à Lucilius"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "seneca"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2054",
+      "url": "https://www.wikidata.org/wiki/Q2054",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-seneca-tutor-of-nero",
+    "conceptId": "seneca-tutor-of-nero",
+    "familyId": "seneca-biography",
+    "type": "mcq",
+    "question": "Quel empereur romain Sénèque a-t-il été le précepteur ?",
+    "answers": [
+      "Néron",
+      "Auguste",
+      "Caligula",
+      "Trajan"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "seneca"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2054",
+      "url": "https://www.wikidata.org/wiki/Q2054",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "phil-seneca-on-the-brevity-of-life",
+    "conceptId": "seneca-on-the-brevity-of-life",
+    "familyId": "seneca-works",
+    "type": "mcq",
+    "question": "Quel traité de Sénèque porte sur le temps qui nous échappe ?",
+    "answers": [
+      "De l'esprit des lois",
+      "De la brièveté de la vie",
+      "De la nature des choses",
+      "Du contrat social"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "seneca"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2054",
+      "url": "https://www.wikidata.org/wiki/Q2054",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-marcus-aurelius-philosopher-emperor",
+    "conceptId": "marcus-aurelius-philosopher-emperor",
+    "familyId": "marcus-aurelius",
+    "type": "mcq",
+    "question": "Quel philosophe stoïcien est également empereur romain ?",
+    "answers": [
+      "Hadrien",
+      "Commode",
+      "Marc Aurèle",
+      "Néron"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marc-aurele"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1410",
+      "url": "https://www.wikidata.org/wiki/Q1410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "phil-marcus-aurelius-meditations-title",
+    "conceptId": "marcus-aurelius-meditations-title",
+    "familyId": "marcus-aurelius-works",
+    "type": "mcq",
+    "question": "Quel est le titre de l'œuvre personnelle de Marc Aurèle ?",
+    "answers": [
+      "Lettres à Lucilius",
+      "Le Manuel",
+      "Les Confessions",
+      "Pensées pour moi-même"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marc-aurele"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1410",
+      "url": "https://www.wikidata.org/wiki/Q1410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-marcus-aurelius-successor-commodus",
+    "conceptId": "marcus-aurelius-successor-commodus",
+    "familyId": "marcus-aurelius",
+    "type": "mcq",
+    "question": "Marc Aurèle est le dernier des « cinq bons empereurs ». Qui lui succède ?",
+    "answers": [
+      "Commode",
+      "Septime Sévère",
+      "Caracalla",
+      "Hadrien"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "marc-aurele"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1410",
+      "url": "https://www.wikidata.org/wiki/Q1410",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "phil-stoic-sage-ideal",
+    "conceptId": "stoic-sage-ideal",
+    "familyId": "stoic-ethics",
+    "type": "mcq",
+    "question": "Comment appelle-t-on l'homme parfait selon les stoïciens ?",
+    "answers": [
+      "L'élu",
+      "Le sage",
+      "Le surhomme",
+      "Le héros"
+    ],
+    "correctAnswer": 1,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "phil-chrysippus-second-founder",
+    "conceptId": "chrysippus-second-founder",
+    "familyId": "stoicism-history",
+    "type": "mcq",
+    "question": "Quel philosophe est parfois surnommé le « second fondateur » du stoïcisme ?",
+    "answers": [
+      "Posidonius",
+      "Panétius",
+      "Chrysippe",
+      "Cléanthès"
+    ],
+    "correctAnswer": 2,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "phil-stoic-three-parts-of-philosophy",
+    "conceptId": "stoic-three-parts-of-philosophy",
+    "familyId": "stoicism-doctrine",
+    "type": "mcq",
+    "question": "Quelles sont les trois parties de la philosophie stoïcienne ?",
+    "answers": [
+      "La rhétorique, la grammaire et la poétique",
+      "L'arithmétique, la géométrie et la musique",
+      "La métaphysique, la théologie et l'astronomie",
+      "La logique, la physique et l'éthique"
+    ],
+    "correctAnswer": 3,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "phil-cleanthes-hymn-to-zeus",
+    "conceptId": "cleanthes-hymn-to-zeus",
+    "familyId": "stoicism-history",
+    "type": "mcq",
+    "question": "Quel stoïcien, successeur de Zénon, compose un Hymne à Zeus ?",
+    "answers": [
+      "Cléanthès",
+      "Chrysippe",
+      "Sénèque",
+      "Épictète"
+    ],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "stoicisme",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "philosophie",
+      "stoicisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171315",
+      "url": "https://www.wikidata.org/wiki/Q171315",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  }
+]

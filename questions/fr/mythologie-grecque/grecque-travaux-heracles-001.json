@@ -1,0 +1,572 @@
+[
+  {
+    "id": "greek-heracles-twelve-labors-count",
+    "conceptId": "heracles-twelve-labors-count",
+    "familyId": "heracles-labors",
+    "type": "mcq",
+    "question": "Combien de travaux Héraclès doit-il accomplir ?",
+    "answers": [
+      "Douze",
+      "Dix",
+      "Sept",
+      "Vingt"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-labors-imposed-by-eurystheus",
+    "conceptId": "heracles-labors-imposed-by-eurystheus",
+    "familyId": "heracles-labors",
+    "type": "mcq",
+    "question": "Quel roi impose les travaux à Héraclès ?",
+    "answers": [
+      "Créon",
+      "Eurysthée",
+      "Agamemnon",
+      "Minos"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-first-labor-nemean-lion",
+    "conceptId": "heracles-first-labor-nemean-lion",
+    "familyId": "heracles-first-labor",
+    "type": "mcq",
+    "question": "Quel est le premier travail d'Héraclès ?",
+    "answers": [
+      "Capturer le sanglier d'Érymanthe",
+      "Nettoyer les écuries d'Augias",
+      "Tuer le lion de Némée",
+      "Tuer l'hydre de Lerne"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-strangles-nemean-lion",
+    "conceptId": "heracles-strangles-nemean-lion",
+    "familyId": "heracles-first-labor",
+    "type": "mcq",
+    "question": "Comment Héraclès tue-t-il le lion de Némée ?",
+    "answers": [
+      "Avec son arc",
+      "Avec son épée",
+      "En le noyant",
+      "En l'étranglant à mains nues"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-hydra-cauterizes-necks",
+    "conceptId": "heracles-hydra-cauterizes-necks",
+    "familyId": "heracles-second-labor",
+    "type": "mcq",
+    "question": "Comment Héraclès empêche-t-il les têtes de l'hydre de Lerne de repousser ?",
+    "answers": [
+      "En cautérisant les cous avec des tisons",
+      "En les coupant plus vite",
+      "En les gelant",
+      "En les enterrant"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-augian-stables",
+    "conceptId": "heracles-augian-stables",
+    "familyId": "heracles-fifth-labor",
+    "type": "mcq",
+    "question": "Comment Héraclès nettoie-t-il les écuries d'Augias ?",
+    "answers": [
+      "En y lâchant les bœufs de Géryon",
+      "En détournant deux fleuves",
+      "En les brûlant",
+      "En les vidant à la pelle"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-cerberus-last-labor",
+    "conceptId": "heracles-cerberus-last-labor",
+    "familyId": "heracles-twelfth-labor",
+    "type": "mcq",
+    "question": "Quel est le dernier des douze travaux d'Héraclès ?",
+    "answers": [
+      "Cueillir les pommes des Hespérides",
+      "Capturer la biche de Cérynie",
+      "Ramener Cerbère des Enfers",
+      "Tuer l'hydre de Lerne"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-hesperides-apples-atlas",
+    "conceptId": "heracles-hesperides-apples-atlas",
+    "familyId": "heracles-eleventh-labor",
+    "type": "mcq",
+    "question": "Qui aide Héraclès à cueillir les pommes d'or des Hespérides ?",
+    "answers": [
+      "Prométhée",
+      "Hermès",
+      "Eurysthée",
+      "Atlas"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-hippolyta-belt",
+    "conceptId": "heracles-hippolyta-belt",
+    "familyId": "heracles-ninth-labor",
+    "type": "mcq",
+    "question": "Quel travail d'Héraclès consiste à s'emparer de la ceinture d'une reine des Amazones ?",
+    "answers": [
+      "La ceinture d'Hippolyte",
+      "Le diadème de Penthésilée",
+      "Le collier d'Hélène",
+      "Le voile d'Électre"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-stymphalian-birds",
+    "conceptId": "heracles-stymphalian-birds",
+    "familyId": "heracles-sixth-labor",
+    "type": "mcq",
+    "question": "Quels oiseaux aux plumes de bronze Héraclès doit-il chasser ?",
+    "answers": [
+      "Les vautours du Caucase",
+      "Les oiseaux du lac Stymphale",
+      "Les harpies du Strymon",
+      "Les corbeaux du Parnasse"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-erymanthian-boar",
+    "conceptId": "heracles-erymanthian-boar",
+    "familyId": "heracles-fourth-labor",
+    "type": "mcq",
+    "question": "Que doit faire Héraclès du sanglier d'Érymanthe ?",
+    "answers": [
+      "Le noyer",
+      "Le dévorer",
+      "Le ramener vivant",
+      "Le tuer d'une flèche"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-cerynitian-hind",
+    "conceptId": "heracles-cerynitian-hind",
+    "familyId": "heracles-third-labor",
+    "type": "mcq",
+    "question": "Quelle particularité a la biche de Cérynie, troisième travail d'Héraclès ?",
+    "answers": [
+      "Son pelage est bleu",
+      "Elle est géante",
+      "Elle crache du feu",
+      "Ses cornes sont en or"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-cretan-bull",
+    "conceptId": "heracles-cretan-bull",
+    "familyId": "heracles-seventh-labor",
+    "type": "mcq",
+    "question": "Quel animal Héraclès doit-il capturer en Crète ?",
+    "answers": [
+      "Le taureau de Minos",
+      "Le cheval Pégase",
+      "Le chien Orthos",
+      "La chèvre Amalthée"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-diomedes-mares",
+    "conceptId": "heracles-diomedes-mares",
+    "familyId": "heracles-eighth-labor",
+    "type": "mcq",
+    "question": "Quelle est la particularité des juments de Diomède ?",
+    "answers": [
+      "Elles crachent du feu",
+      "Elles sont carnivores",
+      "Elles ont des ailes",
+      "Elles sont invisibles"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "greek-heracles-gerion-cattle",
+    "conceptId": "heracles-gerion-cattle",
+    "familyId": "heracles-tenth-labor",
+    "type": "mcq",
+    "question": "Quel géant à trois corps garde des bœufs qu'Héraclès doit voler ?",
+    "answers": [
+      "Alcyonée",
+      "Typhon",
+      "Géryon",
+      "Antée"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "travaux-heracles",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "heracles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122319",
+      "url": "https://www.wikidata.org/wiki/Q122319",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  }
+]

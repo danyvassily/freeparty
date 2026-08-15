@@ -1,19 +1,23 @@
 /**
  * Free Party — Supabase client (spec §13, §27)
  * LOCAL-FIRST : le jeu fonctionne sans Supabase. Ce client n'est actif
- * que si NEXT_PUBLIC_SUPABASE_URL et la clé anon sont configurées.
+ * que si NEXT_PUBLIC_SUPABASE_URL et la clé sont configurées.
+ *
+ * Clé utilisée : NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (nouveau format
+ * Supabase) avec repli sur la legacy anon key.
  */
 import { createBrowserClient } from "@supabase/ssr";
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const publishableKey =
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 /** true si Supabase est configuré (persistance optionnelle activée) */
-export const isSupabaseConfigured = Boolean(url && anonKey);
+export const isSupabaseConfigured = Boolean(url && publishableKey);
 
 export function getSupabaseBrowser() {
   if (!isSupabaseConfigured) return null;
-  return createBrowserClient(url!, anonKey!);
+  return createBrowserClient(url!, publishableKey!);
 }
 
 /** Type-safe : renvoie null si non configuré — le jeu n'est jamais bloqué. */

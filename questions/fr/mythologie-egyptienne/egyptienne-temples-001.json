@@ -1,0 +1,306 @@
+[
+  {
+    "id": "egyptian-karnak-largest-temple-complex",
+    "conceptId": "karnak-largest-temple-complex",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Quel est le plus grand complexe religieux de l'Égypte ancienne ?",
+    "answers": [
+      "Edfou",
+      "Karnak",
+      "Abou Simbel",
+      "Philae"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q183246",
+      "url": "https://www.wikidata.org/wiki/Q183246",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-luxor-temple-of-amun",
+    "conceptId": "luxor-temple-of-amun",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Quel temple, relié à Karnak par une allée de sphinx, est dédié à Amon ?",
+    "answers": [
+      "Esna",
+      "Kom Ombo",
+      "Louxor",
+      "Dendérah"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q101851",
+      "url": "https://www.wikidata.org/wiki/Q101851",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-abu-simbel-four-colossi",
+    "conceptId": "abu-simbel-four-colossi",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Combien de colosses de Ramsès II ornent la façade du grand temple d'Abou Simbel ?",
+    "answers": [
+      "Deux",
+      "Six",
+      "Huit",
+      "Quatre"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q177733",
+      "url": "https://www.wikidata.org/wiki/Q177733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-philae-temple-of-isis",
+    "conceptId": "philae-temple-of-isis",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Sur quelle île se dresse le grand temple d'Isis ?",
+    "answers": [
+      "Philae",
+      "Éléphantine",
+      "Roda",
+      "Sehel"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41488",
+      "url": "https://www.wikidata.org/wiki/Q41488",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-edfu-best-preserved-temple",
+    "conceptId": "edfu-best-preserved-temple",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Quel temple, dédié à Horus, est le mieux conservé d'Égypte ?",
+    "answers": [
+      "Philae",
+      "Edfou",
+      "Karnak",
+      "Louxor"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q146733",
+      "url": "https://www.wikidata.org/wiki/Q146733",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-dendera-temple-of-hathor",
+    "conceptId": "dendera-temple-of-hathor",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Quelle déesse est vénérée dans le grand temple de Dendérah ?",
+    "answers": [
+      "Bastet",
+      "Maât",
+      "Hathor",
+      "Sekhmet"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134259",
+      "url": "https://www.wikidata.org/wiki/Q134259",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-abydos-sanctuary-of-osiris",
+    "conceptId": "abydos-sanctuary-of-osiris",
+    "familyId": "temple-sites",
+    "type": "mcq",
+    "question": "Quelle ville abrite le grand sanctuaire d'Osiris ?",
+    "answers": [
+      "Saqqarah",
+      "Bubastis",
+      "Saïs",
+      "Abydos"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47699",
+      "url": "https://www.wikidata.org/wiki/Q47699",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-valley-of-the-kings",
+    "conceptId": "valley-of-the-kings",
+    "familyId": "royal-necropolis",
+    "type": "mcq",
+    "question": "Où les pharaons du Nouvel Empire sont-ils enterrés ?",
+    "answers": [
+      "Dans la vallée des Rois",
+      "Dans les pyramides de Gizeh",
+      "Dans le temple de Karnak",
+      "Sous le Sphinx"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "temples",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "temples"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q142546",
+      "url": "https://www.wikidata.org/wiki/Q142546",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  }
+]

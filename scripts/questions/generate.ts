@@ -49,9 +49,25 @@ function makeQuestion(
   };
 }
 
+/** Normalisation légère pour la détection d'homonymie ville-État */
+function norm(s: string): string {
+  return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-");
+}
+
+/** Pays dont la capitale est homonyme (complète ou partielle) du nom du pays :
+ *  "Quelle est la capitale de Djibouti ?" → "Djibouti" est légitime, mais
+ *  "Andorre-la-Vieille est la capitale de quel pays ?" → "Andorre" crée une
+ *  ambiguïté de garde-fou. On exclut ces pays de la génération automatisée. */
+function isHomonymCountry(country: (typeof COUNTRIES)[number]): boolean {
+  if (!country.capital) return true;
+  const n = norm(country.name);
+  const c = norm(country.capital);
+  return n === c || n.includes(c) || c.includes(n);
+}
+
 function generateCapitals(rng: () => number): Question[] {
   const out: Question[] = [];
-  const withCapitals = COUNTRIES.filter((c) => c.capital);
+  const withCapitals = COUNTRIES.filter((c) => c.capital && !isHomonymCountry(c));
   for (const country of withCapitals) {
     const others = shuffle(
       withCapitals.filter((c) => c.name !== country.name),
@@ -108,10 +124,21 @@ function generateCapitals(rng: () => number): Question[] {
 function generateCurrencies(rng: () => number): Question[] {
   const out: Question[] = [];
   const withCur = COUNTRIES.filter((c) => c.currencyName && c.currencyCode);
+  // Monnaies distinctes pour des distracteurs sans doublon (euro, franc CFA, dollar US…)
+  const distinctCurrencies = [...new Set(withCur.map((c) => c.currencyName))].sort();
   for (const country of withCur) {
-    const others = shuffle(withCur.filter((c) => c.name !== country.name), rng)
+    // Exclut les monnaies homonymes du pays (afghani/Afghanistan, leone/Sierra Leone…)
+    if (country.currencyName && norm(country.currencyName).length > 2) {
+      const n = norm(country.name);
+      const cur = norm(country.currencyName);
+      if (n.includes(cur) || cur.includes(n)) continue;
+    }
+    const others = shuffle(
+      distinctCurrencies.filter((name) => name !== country.currencyName),
+      rng,
+    )
       .slice(0, 3)
-      .map((c) => c.currencyName!);
+      .map((name) => name!);
     const slug = country.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z]+/g, "-");
     const answers = [country.currencyName!, ...others];
     out.push(

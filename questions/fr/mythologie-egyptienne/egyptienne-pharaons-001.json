@@ -1,0 +1,610 @@
+[
+  {
+    "id": "egyptian-khufu-great-pyramid",
+    "conceptId": "khufu-great-pyramid",
+    "familyId": "pyramid-builders",
+    "type": "mcq",
+    "question": "Quel pharaon a fait construire la Grande Pyramide de Gizeh ?",
+    "answers": [
+      "Djéser",
+      "Khéops",
+      "Khéphren",
+      "Mykérinos"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161904",
+      "url": "https://www.wikidata.org/wiki/Q161904",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-great-pyramid-last-standing-wonder",
+    "conceptId": "great-pyramid-last-standing-wonder",
+    "familyId": "pyramid-builders",
+    "type": "mcq",
+    "question": "Quelle particularité la Grande Pyramide a-t-elle parmi les Sept Merveilles du monde antique ?",
+    "answers": [
+      "Elle est la seule en pierre",
+      "Elle est la seule bâtie par des esclaves",
+      "Elle est la seule encore debout",
+      "Elle est la plus petite"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37228",
+      "url": "https://www.wikidata.org/wiki/Q37228",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-khafre-great-sphinx",
+    "conceptId": "khafre-great-sphinx",
+    "familyId": "pyramid-builders",
+    "type": "mcq",
+    "question": "Selon l'opinion la plus répandue, quel pharaon fait édifier le grand Sphinx de Gizeh ?",
+    "answers": [
+      "Khéops",
+      "Mykérinos",
+      "Ramsès II",
+      "Khéphren"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130962",
+      "url": "https://www.wikidata.org/wiki/Q130962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  },
+  {
+    "id": "egyptian-tutankhamun-tomb-discovered-1922",
+    "conceptId": "tutankhamun-tomb-discovered-1922",
+    "familyId": "tutankhamun",
+    "type": "mcq",
+    "question": "Qui découvre la tombe de Toutânkhamon en 1922 ?",
+    "answers": [
+      "Howard Carter",
+      "Champollion",
+      "Belzoni",
+      "Mariette"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q142546",
+      "url": "https://www.wikidata.org/wiki/Q142546",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-tutankhamun-child-king",
+    "conceptId": "tutankhamun-child-king",
+    "familyId": "tutankhamun",
+    "type": "mcq",
+    "question": "Pourquoi appelle-t-on Toutânkhamon le « pharaon enfant » ?",
+    "answers": [
+      "Il a régné uniquement pendant son enfance",
+      "Il est monté sur le trône très jeune",
+      "Il était de petite taille",
+      "Il était le plus jeune fils de Ramsès II"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q142546",
+      "url": "https://www.wikidata.org/wiki/Q142546",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ramses-ii-abu-simbel",
+    "conceptId": "ramses-ii-abu-simbel",
+    "familyId": "ramses-ii",
+    "type": "mcq",
+    "question": "Quel pharaon a fait tailler les temples d'Abou Simbel ?",
+    "answers": [
+      "Akhenaton",
+      "Thoutmôsis III",
+      "Ramsès II",
+      "Toutânkhamon"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161901",
+      "url": "https://www.wikidata.org/wiki/Q161901",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ramses-ii-battle-of-qadesh",
+    "conceptId": "ramses-ii-battle-of-qadesh",
+    "familyId": "ramses-ii",
+    "type": "mcq",
+    "question": "Contre quel peuple Ramsès II mène-t-il la bataille de Qadesh ?",
+    "answers": [
+      "Les Assyriens",
+      "Les Perses",
+      "Les Nubiens",
+      "Les Hittites"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161901",
+      "url": "https://www.wikidata.org/wiki/Q161901",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-cleopatra-last-queen-of-egypt",
+    "conceptId": "cleopatra-last-queen-of-egypt",
+    "familyId": "cleopatra",
+    "type": "mcq",
+    "question": "Qui est la dernière souveraine de l'Égypte ptolémaïque ?",
+    "answers": [
+      "Cléopâtre VII",
+      "Néfertiti",
+      "Hatshepsout",
+      "Arsinoé"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6351",
+      "url": "https://www.wikidata.org/wiki/Q6351",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "egyptian-cleopatra-alliances-caesar-antony",
+    "conceptId": "cleopatra-alliances-caesar-antony",
+    "familyId": "cleopatra",
+    "type": "mcq",
+    "question": "Quels Romains Cléopâtre VII s'allie-t-elle successivement ?",
+    "answers": [
+      "Néron puis Caligula",
+      "Jules César puis Marc Antoine",
+      "Auguste puis Tibère",
+      "Pompée puis Brutus"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6351",
+      "url": "https://www.wikidata.org/wiki/Q6351",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-akhenaten-cult-of-aton",
+    "conceptId": "akhenaten-cult-of-aton",
+    "familyId": "akhenaten",
+    "type": "mcq",
+    "question": "Quel pharaon instaure le culte exclusif du disque solaire Aton ?",
+    "answers": [
+      "Khéops",
+      "Sésostris",
+      "Akhenaton",
+      "Ramsès II"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q81736",
+      "url": "https://www.wikidata.org/wiki/Q81736",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-nefertiti-wife-of-akhenaten",
+    "conceptId": "nefertiti-wife-of-akhenaten",
+    "familyId": "akhenaten-family",
+    "type": "mcq",
+    "question": "Qui est Néfertiti ?",
+    "answers": [
+      "La fille de Ramsès II",
+      "La sœur de Cléopâtre",
+      "La mère de Toutânkhamon",
+      "L'épouse d'Akhenaton"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131302",
+      "url": "https://www.wikidata.org/wiki/Q131302",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-hatshepsut-female-pharaoh",
+    "conceptId": "hatshepsut-female-pharaoh",
+    "familyId": "hatshepsut",
+    "type": "mcq",
+    "question": "Quelle particularité Hatshepsout présente-t-elle ?",
+    "answers": [
+      "Elle est une femme devenue pharaon",
+      "Elle est la plus jeune pharaon",
+      "Elle est la seule pharaon aveugle",
+      "Elle est la première pharaon nubienne"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q107334",
+      "url": "https://www.wikidata.org/wiki/Q107334",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-imhotep-step-pyramid-architect",
+    "conceptId": "imhotep-step-pyramid-architect",
+    "familyId": "imhotep-djoser",
+    "type": "mcq",
+    "question": "Quel architecte a conçu la pyramide à degrés de Djéser ?",
+    "answers": [
+      "Inéni",
+      "Imhotep",
+      "Sénènmout",
+      "Hémon"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131169",
+      "url": "https://www.wikidata.org/wiki/Q131169",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-djoser-first-step-pyramid",
+    "conceptId": "djoser-first-step-pyramid",
+    "familyId": "imhotep-djoser",
+    "type": "mcq",
+    "question": "Quelle est la première pyramide construite en Égypte ?",
+    "answers": [
+      "La pyramide rhomboïdale",
+      "La pyramide de Meïdoum",
+      "La pyramide à degrés de Djéser à Saqqarah",
+      "La Grande Pyramide"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131169",
+      "url": "https://www.wikidata.org/wiki/Q131169",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-pharaoh-son-of-ra",
+    "conceptId": "pharaoh-son-of-ra",
+    "familyId": "pharaoh-ideology",
+    "type": "mcq",
+    "question": "Quel titre divin le pharaon porte-t-il ?",
+    "answers": [
+      "Frère d'Osiris",
+      "Serviteur de Seth",
+      "Prêtre d'Isis",
+      "Fils de Râ"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161240",
+      "url": "https://www.wikidata.org/wiki/Q161240",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-cartouche-royal-name",
+    "conceptId": "cartouche-royal-name",
+    "familyId": "pharaoh-symbols",
+    "type": "mcq",
+    "question": "Comment s'appelle l'anneau ovale qui encadre le nom du pharaon ?",
+    "answers": [
+      "Le cartouche",
+      "L'ankh",
+      "L'uræus",
+      "Le pschent"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "pharaons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "pharaons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161240",
+      "url": "https://www.wikidata.org/wiki/Q161240",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  }
+]

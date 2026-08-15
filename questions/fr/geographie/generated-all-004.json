@@ -1,0 +1,3891 @@
+[
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Trinité-et-Tobago ?",
+    "answers": [
+      "Port-d'Espagne",
+      "Quito",
+      "Bamako",
+      "San José"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "trinite-et-tobago",
+      "capitales"
+    ],
+    "familyId": "capital-trinite-et-tobago",
+    "confidence": 0.98,
+    "explanation": "Port-d'Espagne est la capitale de Trinité-et-Tobago.",
+    "id": "trinite-et-tobago-301",
+    "conceptId": "fact-301",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Port-d'Espagne est la capitale de quel pays ?",
+    "answers": [
+      "Trinité-et-Tobago",
+      "Guinée-Bissau",
+      "Danemark",
+      "Arabie saoudite"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "port-d-espagne",
+      "capitales"
+    ],
+    "familyId": "capital-trinite-et-tobago",
+    "confidence": 0.98,
+    "id": "port-d-espagne-302",
+    "conceptId": "fact-302",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Turkménistan ?",
+    "answers": [
+      "Achgabat",
+      "Bogota",
+      "Ljubljana",
+      "Nassau"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "turkmenistan",
+      "capitales"
+    ],
+    "familyId": "capital-turkmenistan",
+    "confidence": 0.98,
+    "explanation": "Achgabat est la capitale de Turkménistan.",
+    "id": "turkmenistan-303",
+    "conceptId": "fact-303",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Achgabat est la capitale de quel pays ?",
+    "answers": [
+      "Turkménistan",
+      "Sierra Leone",
+      "Rwanda",
+      "Lettonie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "achgabat",
+      "capitales"
+    ],
+    "familyId": "capital-turkmenistan",
+    "confidence": 0.98,
+    "id": "achgabat-304",
+    "conceptId": "fact-304",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Turquie ?",
+    "answers": [
+      "Ankara",
+      "Antananarivo",
+      "Libreville",
+      "Athènes"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "turquie",
+      "capitales"
+    ],
+    "familyId": "capital-turquie",
+    "confidence": 0.98,
+    "explanation": "Ankara est la capitale de Turquie.",
+    "id": "turquie-305",
+    "conceptId": "fact-305",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Ankara est la capitale de quel pays ?",
+    "answers": [
+      "Turquie",
+      "Kirghizistan",
+      "Libéria",
+      "Laos"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ankara",
+      "capitales"
+    ],
+    "familyId": "capital-turquie",
+    "confidence": 0.98,
+    "id": "ankara-306",
+    "conceptId": "fact-306",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Ukraine ?",
+    "answers": [
+      "Kiev",
+      "Bogota",
+      "Oslo",
+      "Skopje"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "ukraine",
+      "capitales"
+    ],
+    "familyId": "capital-ukraine",
+    "confidence": 0.98,
+    "explanation": "Kiev est la capitale de Ukraine.",
+    "id": "ukraine-307",
+    "conceptId": "fact-307",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Kiev est la capitale de quel pays ?",
+    "answers": [
+      "Ukraine",
+      "Roumanie",
+      "Bénin",
+      "Somalie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "kiev",
+      "capitales"
+    ],
+    "familyId": "capital-ukraine",
+    "confidence": 0.98,
+    "id": "kiev-308",
+    "conceptId": "fact-308",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Uruguay ?",
+    "answers": [
+      "Montevideo",
+      "Bagdad",
+      "Port Moresby",
+      "Podgorica"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "uruguay",
+      "capitales"
+    ],
+    "familyId": "capital-uruguay",
+    "confidence": 0.98,
+    "explanation": "Montevideo est la capitale de Uruguay.",
+    "id": "uruguay-309",
+    "conceptId": "fact-309",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Montevideo est la capitale de quel pays ?",
+    "answers": [
+      "Uruguay",
+      "Yémen",
+      "Albanie",
+      "Singapour"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "montevideo",
+      "capitales"
+    ],
+    "familyId": "capital-uruguay",
+    "confidence": 0.98,
+    "id": "montevideo-310",
+    "conceptId": "fact-310",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Vanuatu ?",
+    "answers": [
+      "Port-Vila",
+      "Copenhague",
+      "Libreville",
+      "Port Moresby"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "vanuatu",
+      "capitales"
+    ],
+    "familyId": "capital-vanuatu",
+    "confidence": 0.98,
+    "explanation": "Port-Vila est la capitale de Vanuatu.",
+    "id": "vanuatu-311",
+    "conceptId": "fact-311",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Port-Vila est la capitale de quel pays ?",
+    "answers": [
+      "Vanuatu",
+      "Autriche",
+      "Qatar",
+      "Malaisie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "port-vila",
+      "capitales"
+    ],
+    "familyId": "capital-vanuatu",
+    "confidence": 0.98,
+    "id": "port-vila-312",
+    "conceptId": "fact-312",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Venezuela ?",
+    "answers": [
+      "Caracas",
+      "Stockholm",
+      "Suva",
+      "Dublin"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "venezuela",
+      "capitales"
+    ],
+    "familyId": "capital-venezuela",
+    "confidence": 0.98,
+    "explanation": "Caracas est la capitale de Venezuela.",
+    "id": "venezuela-313",
+    "conceptId": "fact-313",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Caracas est la capitale de quel pays ?",
+    "answers": [
+      "Venezuela",
+      "Mexique",
+      "Sierra Leone",
+      "Italie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "caracas",
+      "capitales"
+    ],
+    "familyId": "capital-venezuela",
+    "confidence": 0.98,
+    "id": "caracas-314",
+    "conceptId": "fact-314",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Viêt Nam ?",
+    "answers": [
+      "Hanoï",
+      "Dodoma",
+      "Buenos Aires",
+      "Sri Jayawardenapura Kotte"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "viet-nam",
+      "capitales"
+    ],
+    "familyId": "capital-viet-nam",
+    "confidence": 0.98,
+    "explanation": "Hanoï est la capitale de Viêt Nam.",
+    "id": "viet-nam-315",
+    "conceptId": "fact-315",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Hanoï est la capitale de quel pays ?",
+    "answers": [
+      "Viêt Nam",
+      "Madagascar",
+      "Croatie",
+      "Trinité-et-Tobago"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "hanoi",
+      "capitales"
+    ],
+    "familyId": "capital-viet-nam",
+    "confidence": 0.98,
+    "id": "hanoi-316",
+    "conceptId": "fact-316",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Yémen ?",
+    "answers": [
+      "Sanaa",
+      "Tbilissi",
+      "Vientiane",
+      "Accra"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "yemen",
+      "capitales"
+    ],
+    "familyId": "capital-yemen",
+    "confidence": 0.98,
+    "explanation": "Sanaa est la capitale de Yémen.",
+    "id": "yemen-317",
+    "conceptId": "fact-317",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Sanaa est la capitale de quel pays ?",
+    "answers": [
+      "Yémen",
+      "Estonie",
+      "Brésil",
+      "Cap-Vert"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "sanaa",
+      "capitales"
+    ],
+    "familyId": "capital-yemen",
+    "confidence": 0.98,
+    "id": "sanaa-318",
+    "conceptId": "fact-318",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Zambie ?",
+    "answers": [
+      "Lusaka",
+      "Paramaribo",
+      "Tachkent",
+      "La Havane"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "zambie",
+      "capitales"
+    ],
+    "familyId": "capital-zambie",
+    "confidence": 0.98,
+    "explanation": "Lusaka est la capitale de Zambie.",
+    "id": "zambie-319",
+    "conceptId": "fact-319",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Lusaka est la capitale de quel pays ?",
+    "answers": [
+      "Zambie",
+      "Turkménistan",
+      "Nouvelle-Zélande",
+      "Monténégro"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "lusaka",
+      "capitales"
+    ],
+    "familyId": "capital-zambie",
+    "confidence": 0.98,
+    "id": "lusaka-320",
+    "conceptId": "fact-320",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle est la capitale de Zimbabwe ?",
+    "answers": [
+      "Harare",
+      "Malé",
+      "Bandar Seri Begawan",
+      "Banjul"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "zimbabwe",
+      "capitales"
+    ],
+    "familyId": "capital-zimbabwe",
+    "confidence": 0.98,
+    "explanation": "Harare est la capitale de Zimbabwe.",
+    "id": "zimbabwe-321",
+    "conceptId": "fact-321",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Harare est la capitale de quel pays ?",
+    "answers": [
+      "Zimbabwe",
+      "Biélorussie",
+      "Libye",
+      "Australie"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "harare",
+      "capitales"
+    ],
+    "familyId": "capital-zimbabwe",
+    "confidence": 0.98,
+    "id": "harare-322",
+    "conceptId": "fact-322",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Afrique du Sud ?",
+    "answers": [
+      "rand",
+      "balboa",
+      "dollar canadien",
+      "franc djiboutien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "afrique-du-sud",
+      "monnaies"
+    ],
+    "familyId": "currency-afrique-du-sud",
+    "confidence": 0.97,
+    "explanation": "Afrique du Sud utilise rand (ZAR).",
+    "id": "afrique-du-sud-100000",
+    "conceptId": "fact-100000",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Albanie ?",
+    "answers": [
+      "lek",
+      "dollar de Trinité",
+      "shilling ougandais",
+      "franc djiboutien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "albanie",
+      "monnaies"
+    ],
+    "familyId": "currency-albanie",
+    "confidence": 0.97,
+    "explanation": "Albanie utilise lek (ALL).",
+    "id": "albanie-100001",
+    "conceptId": "fact-100001",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Allemagne ?",
+    "answers": [
+      "euro",
+      "dirham marocain",
+      "shilling ougandais",
+      "hryvnia"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "allemagne",
+      "monnaies"
+    ],
+    "familyId": "currency-allemagne",
+    "confidence": 0.97,
+    "explanation": "Allemagne utilise euro (EUR).",
+    "id": "allemagne-100002",
+    "conceptId": "fact-100002",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Andorre ?",
+    "answers": [
+      "euro",
+      "ariary",
+      "hryvnia",
+      "kwacha zambien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "andorre",
+      "monnaies"
+    ],
+    "familyId": "currency-andorre",
+    "confidence": 0.97,
+    "explanation": "Andorre utilise euro (EUR).",
+    "id": "andorre-100003",
+    "conceptId": "fact-100003",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Angola ?",
+    "answers": [
+      "kwanza",
+      "livre sud-soudanaise",
+      "livre égyptienne",
+      "dollar des Bahamas"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "angola",
+      "monnaies"
+    ],
+    "familyId": "currency-angola",
+    "confidence": 0.97,
+    "explanation": "Angola utilise kwanza (AOA).",
+    "id": "angola-100004",
+    "conceptId": "fact-100004",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Arabie saoudite ?",
+    "answers": [
+      "riyal saoudien",
+      "rand",
+      "balboa",
+      "won sud-coréen"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "arabie-saoudite",
+      "monnaies"
+    ],
+    "familyId": "currency-arabie-saoudite",
+    "confidence": 0.97,
+    "explanation": "Arabie saoudite utilise riyal saoudien (SAR).",
+    "id": "arabie-saoudite-100005",
+    "conceptId": "fact-100005",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Argentine ?",
+    "answers": [
+      "peso argentin",
+      "couronne danoise",
+      "couronne tchèque",
+      "roupie indienne"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "argentine",
+      "monnaies"
+    ],
+    "familyId": "currency-argentine",
+    "confidence": 0.97,
+    "explanation": "Argentine utilise peso argentin (ARS).",
+    "id": "argentine-100006",
+    "conceptId": "fact-100006",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Arménie ?",
+    "answers": [
+      "dram",
+      "roupie indonésienne",
+      "leu moldave",
+      "birr"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "armenie",
+      "monnaies"
+    ],
+    "familyId": "currency-armenie",
+    "confidence": 0.97,
+    "explanation": "Arménie utilise dram (AMD).",
+    "id": "armenie-100007",
+    "conceptId": "fact-100007",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Autriche ?",
+    "answers": [
+      "euro",
+      "dollar zimbabwéen",
+      "shilling somalien",
+      "lari"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "autriche",
+      "monnaies"
+    ],
+    "familyId": "currency-autriche",
+    "confidence": 0.97,
+    "explanation": "Autriche utilise euro (EUR).",
+    "id": "autriche-100008",
+    "conceptId": "fact-100008",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bangladesh ?",
+    "answers": [
+      "taka",
+      "ngultrum",
+      "dinar bahreïni",
+      "shilling kényan"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bangladesh",
+      "monnaies"
+    ],
+    "familyId": "currency-bangladesh",
+    "confidence": 0.97,
+    "explanation": "Bangladesh utilise taka (BDT).",
+    "id": "bangladesh-100009",
+    "conceptId": "fact-100009",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Barbade ?",
+    "answers": [
+      "dollar barbadien",
+      "kwacha zambien",
+      "birr",
+      "livre sud-soudanaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "barbade",
+      "monnaies"
+    ],
+    "familyId": "currency-barbade",
+    "confidence": 0.97,
+    "explanation": "Barbade utilise dollar barbadien (BBD).",
+    "id": "barbade-100010",
+    "conceptId": "fact-100010",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Belgique ?",
+    "answers": [
+      "euro",
+      "livre turque",
+      "rand",
+      "livre égyptienne"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "belgique",
+      "monnaies"
+    ],
+    "familyId": "currency-belgique",
+    "confidence": 0.97,
+    "explanation": "Belgique utilise euro (EUR).",
+    "id": "belgique-100011",
+    "conceptId": "fact-100011",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bélize ?",
+    "answers": [
+      "dollar bélizien",
+      "dollar de Brunéi",
+      "kyat",
+      "dinar irakien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "belize",
+      "monnaies"
+    ],
+    "familyId": "currency-belize",
+    "confidence": 0.97,
+    "explanation": "Bélize utilise dollar bélizien (BZD).",
+    "id": "belize-100012",
+    "conceptId": "fact-100012",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bénin ?",
+    "answers": [
+      "franc CFA (BCEAO)",
+      "taka",
+      "franc congolais",
+      "shilling somalien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "benin",
+      "monnaies"
+    ],
+    "familyId": "currency-benin",
+    "confidence": 0.97,
+    "explanation": "Bénin utilise franc CFA (BCEAO) (XOF).",
+    "id": "benin-100013",
+    "conceptId": "fact-100013",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bhoutan ?",
+    "answers": [
+      "ngultrum",
+      "vatu",
+      "dinar libyen",
+      "livre libanaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bhoutan",
+      "monnaies"
+    ],
+    "familyId": "currency-bhoutan",
+    "confidence": 0.97,
+    "explanation": "Bhoutan utilise ngultrum (BTN).",
+    "id": "bhoutan-100014",
+    "conceptId": "fact-100014",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Biélorussie ?",
+    "answers": [
+      "rouble biélorusse",
+      "córdoba",
+      "dollar néo-zélandais",
+      "manat azerbaïdjanais"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bielorussie",
+      "monnaies"
+    ],
+    "familyId": "currency-bielorussie",
+    "confidence": 0.97,
+    "explanation": "Biélorussie utilise rouble biélorusse (BYN).",
+    "id": "bielorussie-100015",
+    "conceptId": "fact-100015",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Birmanie (Myanmar) ?",
+    "answers": [
+      "kyat",
+      "livre sterling",
+      "quetzal",
+      "dinar libyen"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "birmanie-myanmar-",
+      "monnaies"
+    ],
+    "familyId": "currency-birmanie-myanmar-",
+    "confidence": 0.97,
+    "explanation": "Birmanie (Myanmar) utilise kyat (MMK).",
+    "id": "birmanie-myanmar--100016",
+    "conceptId": "fact-100016",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bolivie ?",
+    "answers": [
+      "boliviano",
+      "livre sterling",
+      "dollar de Brunéi",
+      "dirham marocain"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bolivie",
+      "monnaies"
+    ],
+    "familyId": "currency-bolivie",
+    "confidence": 0.97,
+    "explanation": "Bolivie utilise boliviano (BOB).",
+    "id": "bolivie-100017",
+    "conceptId": "fact-100017",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bosnie-Herzégovine ?",
+    "answers": [
+      "mark convertible",
+      "shilling somalien",
+      "kwacha malawien",
+      "roupie des Seychelles"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bosnie-herzegovine",
+      "monnaies"
+    ],
+    "familyId": "currency-bosnie-herzegovine",
+    "confidence": 0.97,
+    "explanation": "Bosnie-Herzégovine utilise mark convertible (BAM).",
+    "id": "bosnie-herzegovine-100018",
+    "conceptId": "fact-100018",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Botswana ?",
+    "answers": [
+      "pula",
+      "rial iranien",
+      "roupie srilankaise",
+      "loti"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "botswana",
+      "monnaies"
+    ],
+    "familyId": "currency-botswana",
+    "confidence": 0.97,
+    "explanation": "Botswana utilise pula (BWP).",
+    "id": "botswana-100019",
+    "conceptId": "fact-100019",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Bulgarie ?",
+    "answers": [
+      "lev bulgare",
+      "couronne danoise",
+      "rial omanais",
+      "guaraní"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "bulgarie",
+      "monnaies"
+    ],
+    "familyId": "currency-bulgarie",
+    "confidence": 0.97,
+    "explanation": "Bulgarie utilise lev bulgare (BGN).",
+    "id": "bulgarie-100020",
+    "conceptId": "fact-100020",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Burkina Faso ?",
+    "answers": [
+      "franc CFA (BCEAO)",
+      "rial omanais",
+      "dinar serbe",
+      "złoty"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "burkina-faso",
+      "monnaies"
+    ],
+    "familyId": "currency-burkina-faso",
+    "confidence": 0.97,
+    "explanation": "Burkina Faso utilise franc CFA (BCEAO) (XOF).",
+    "id": "burkina-faso-100021",
+    "conceptId": "fact-100021",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Burundi ?",
+    "answers": [
+      "franc burundais",
+      "kwanza",
+      "shilling kényan",
+      "sum"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "burundi",
+      "monnaies"
+    ],
+    "familyId": "currency-burundi",
+    "confidence": 0.97,
+    "explanation": "Burundi utilise franc burundais (BIF).",
+    "id": "burundi-100022",
+    "conceptId": "fact-100022",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Cambodge ?",
+    "answers": [
+      "riel",
+      "franc rwandais",
+      "couronne islandaise",
+      "roupie mauricienne"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "cambodge",
+      "monnaies"
+    ],
+    "familyId": "currency-cambodge",
+    "confidence": 0.97,
+    "explanation": "Cambodge utilise riel (KHR).",
+    "id": "cambodge-100023",
+    "conceptId": "fact-100023",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Cameroun ?",
+    "answers": [
+      "franc CFA (BEAC)",
+      "dinar jordanien",
+      "franc comorien",
+      "yuan renminbi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "cameroun",
+      "monnaies"
+    ],
+    "familyId": "currency-cameroun",
+    "confidence": 0.97,
+    "explanation": "Cameroun utilise franc CFA (BEAC) (XAF).",
+    "id": "cameroun-100024",
+    "conceptId": "fact-100024",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Canada ?",
+    "answers": [
+      "dollar canadien",
+      "roupie srilankaise",
+      "yuan renminbi",
+      "sol péruvien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "canada",
+      "monnaies"
+    ],
+    "familyId": "currency-canada",
+    "confidence": 0.97,
+    "explanation": "Canada utilise dollar canadien (CAD).",
+    "id": "canada-100025",
+    "conceptId": "fact-100025",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Cap-Vert ?",
+    "answers": [
+      "escudo cap-verdien",
+      "dollar namibien",
+      "livre sud-soudanaise",
+      "cédi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "cap-vert",
+      "monnaies"
+    ],
+    "familyId": "currency-cap-vert",
+    "confidence": 0.97,
+    "explanation": "Cap-Vert utilise escudo cap-verdien (CVE).",
+    "id": "cap-vert-100026",
+    "conceptId": "fact-100026",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Chine ?",
+    "answers": [
+      "yuan renminbi",
+      "escudo cap-verdien",
+      "dollar du Suriname",
+      "roupie pakistanaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chine",
+      "monnaies"
+    ],
+    "familyId": "currency-chine",
+    "confidence": 0.97,
+    "explanation": "Chine utilise yuan renminbi (CNY).",
+    "id": "chine-100027",
+    "conceptId": "fact-100027",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Chypre ?",
+    "answers": [
+      "euro",
+      "shilling tanzanien",
+      "manat azerbaïdjanais",
+      "franc rwandais"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chypre",
+      "monnaies"
+    ],
+    "familyId": "currency-chypre",
+    "confidence": 0.97,
+    "explanation": "Chypre utilise euro (EUR).",
+    "id": "chypre-100028",
+    "conceptId": "fact-100028",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Comores ?",
+    "answers": [
+      "franc comorien",
+      "escudo cap-verdien",
+      "roupie mauricienne",
+      "afghani"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "comores",
+      "monnaies"
+    ],
+    "familyId": "currency-comores",
+    "confidence": 0.97,
+    "explanation": "Comores utilise franc comorien (KMF).",
+    "id": "comores-100029",
+    "conceptId": "fact-100029",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Congo (RDC) ?",
+    "answers": [
+      "franc congolais",
+      "złoty",
+      "franc CFA (BEAC)",
+      "franc rwandais"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "congo-rdc-",
+      "monnaies"
+    ],
+    "familyId": "currency-congo-rdc-",
+    "confidence": 0.97,
+    "explanation": "Congo (RDC) utilise franc congolais (CDF).",
+    "id": "congo-rdc--100030",
+    "conceptId": "fact-100030",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Congo (République) ?",
+    "answers": [
+      "franc CFA (BEAC)",
+      "đồng",
+      "lek",
+      "peso mexicain"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "congo-republique-",
+      "monnaies"
+    ],
+    "familyId": "currency-congo-republique-",
+    "confidence": 0.97,
+    "explanation": "Congo (République) utilise franc CFA (BEAC) (XAF).",
+    "id": "congo-republique--100031",
+    "conceptId": "fact-100031",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Corée du Nord ?",
+    "answers": [
+      "won nord-coréen",
+      "peso uruguayen",
+      "franc guinéen",
+      "kwacha malawien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "coree-du-nord",
+      "monnaies"
+    ],
+    "familyId": "currency-coree-du-nord",
+    "confidence": 0.97,
+    "explanation": "Corée du Nord utilise won nord-coréen (KPW).",
+    "id": "coree-du-nord-100032",
+    "conceptId": "fact-100032",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Corée du Sud ?",
+    "answers": [
+      "won sud-coréen",
+      "mark convertible",
+      "franc CFA (BEAC)",
+      "roupie indienne"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "coree-du-sud",
+      "monnaies"
+    ],
+    "familyId": "currency-coree-du-sud",
+    "confidence": 0.97,
+    "explanation": "Corée du Sud utilise won sud-coréen (KRW).",
+    "id": "coree-du-sud-100033",
+    "conceptId": "fact-100033",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Costa Rica ?",
+    "answers": [
+      "colón",
+      "kwacha zambien",
+      "rial iranien",
+      "shilling ougandais"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "costa-rica",
+      "monnaies"
+    ],
+    "familyId": "currency-costa-rica",
+    "confidence": 0.97,
+    "explanation": "Costa Rica utilise colón (CRC).",
+    "id": "costa-rica-100034",
+    "conceptId": "fact-100034",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Côte d'Ivoire ?",
+    "answers": [
+      "franc CFA (BCEAO)",
+      "franc burundais",
+      "dollar américain",
+      "rial iranien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "cote-d-ivoire",
+      "monnaies"
+    ],
+    "familyId": "currency-cote-d-ivoire",
+    "confidence": 0.97,
+    "explanation": "Côte d'Ivoire utilise franc CFA (BCEAO) (XOF).",
+    "id": "cote-d-ivoire-100035",
+    "conceptId": "fact-100035",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Croatie ?",
+    "answers": [
+      "euro",
+      "kwanza",
+      "franc CFA (BEAC)",
+      "dinar irakien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "croatie",
+      "monnaies"
+    ],
+    "familyId": "currency-croatie",
+    "confidence": 0.97,
+    "explanation": "Croatie utilise euro (EUR).",
+    "id": "croatie-100036",
+    "conceptId": "fact-100036",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Danemark ?",
+    "answers": [
+      "couronne danoise",
+      "dollar fidjien",
+      "rouble russe",
+      "couronne suédoise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "danemark",
+      "monnaies"
+    ],
+    "familyId": "currency-danemark",
+    "confidence": 0.97,
+    "explanation": "Danemark utilise couronne danoise (DKK).",
+    "id": "danemark-100037",
+    "conceptId": "fact-100037",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise République dominicaine ?",
+    "answers": [
+      "peso dominicain",
+      "dollar fidjien",
+      "đồng",
+      "dollar des Bahamas"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "republique-dominicaine",
+      "monnaies"
+    ],
+    "familyId": "currency-republique-dominicaine",
+    "confidence": 0.97,
+    "explanation": "République dominicaine utilise peso dominicain (DOP).",
+    "id": "republique-dominicaine-100038",
+    "conceptId": "fact-100038",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Égypte ?",
+    "answers": [
+      "livre égyptienne",
+      "dram",
+      "rouble biélorusse",
+      "dollar fidjien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "egypte",
+      "monnaies"
+    ],
+    "familyId": "currency-egypte",
+    "confidence": 0.97,
+    "explanation": "Égypte utilise livre égyptienne (EGP).",
+    "id": "egypte-100039",
+    "conceptId": "fact-100039",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Émirats arabes unis ?",
+    "answers": [
+      "dirham des Émirats",
+      "dinar libyen",
+      "metical",
+      "peso chilien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "emirats-arabes-unis",
+      "monnaies"
+    ],
+    "familyId": "currency-emirats-arabes-unis",
+    "confidence": 0.97,
+    "explanation": "Émirats arabes unis utilise dirham des Émirats (AED).",
+    "id": "emirats-arabes-unis-100040",
+    "conceptId": "fact-100040",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Équateur ?",
+    "answers": [
+      "dollar américain",
+      "won sud-coréen",
+      "tugrik",
+      "peso colombien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "equateur",
+      "monnaies"
+    ],
+    "familyId": "currency-equateur",
+    "confidence": 0.97,
+    "explanation": "Équateur utilise dollar américain (USD).",
+    "id": "equateur-100041",
+    "conceptId": "fact-100041",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Érythrée ?",
+    "answers": [
+      "nakfa",
+      "yuan renminbi",
+      "dollar de Brunéi",
+      "leu roumain"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "erythree",
+      "monnaies"
+    ],
+    "familyId": "currency-erythree",
+    "confidence": 0.97,
+    "explanation": "Érythrée utilise nakfa (ERN).",
+    "id": "erythree-100042",
+    "conceptId": "fact-100042",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Espagne ?",
+    "answers": [
+      "euro",
+      "livre libanaise",
+      "livre égyptienne",
+      "córdoba"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "espagne",
+      "monnaies"
+    ],
+    "familyId": "currency-espagne",
+    "confidence": 0.97,
+    "explanation": "Espagne utilise euro (EUR).",
+    "id": "espagne-100043",
+    "conceptId": "fact-100043",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Estonie ?",
+    "answers": [
+      "euro",
+      "balboa",
+      "dollar de Brunéi",
+      "peso cubain"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "estonie",
+      "monnaies"
+    ],
+    "familyId": "currency-estonie",
+    "confidence": 0.97,
+    "explanation": "Estonie utilise euro (EUR).",
+    "id": "estonie-100044",
+    "conceptId": "fact-100044",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Eswatini ?",
+    "answers": [
+      "lilangeni",
+      "dollar de Trinité",
+      "dinar jordanien",
+      "dinar libyen"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "eswatini",
+      "monnaies"
+    ],
+    "familyId": "currency-eswatini",
+    "confidence": 0.97,
+    "explanation": "Eswatini utilise lilangeni (SZL).",
+    "id": "eswatini-100045",
+    "conceptId": "fact-100045",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise États-Unis ?",
+    "answers": [
+      "dollar américain",
+      "naira",
+      "kina",
+      "denar"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "etats-unis",
+      "monnaies"
+    ],
+    "familyId": "currency-etats-unis",
+    "confidence": 0.97,
+    "explanation": "États-Unis utilise dollar américain (USD).",
+    "id": "etats-unis-100046",
+    "conceptId": "fact-100046",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Éthiopie ?",
+    "answers": [
+      "birr",
+      "peso cubain",
+      "dollar guyanais",
+      "franc CFA (BEAC)"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ethiopie",
+      "monnaies"
+    ],
+    "familyId": "currency-ethiopie",
+    "confidence": 0.97,
+    "explanation": "Éthiopie utilise birr (ETB).",
+    "id": "ethiopie-100047",
+    "conceptId": "fact-100047",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Finlande ?",
+    "answers": [
+      "euro",
+      "roupie srilankaise",
+      "taka",
+      "rufiyaa"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "finlande",
+      "monnaies"
+    ],
+    "familyId": "currency-finlande",
+    "confidence": 0.97,
+    "explanation": "Finlande utilise euro (EUR).",
+    "id": "finlande-100048",
+    "conceptId": "fact-100048",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise France ?",
+    "answers": [
+      "euro",
+      "dollar libérien",
+      "dollar namibien",
+      "đồng"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "france",
+      "monnaies"
+    ],
+    "familyId": "currency-france",
+    "confidence": 0.97,
+    "explanation": "France utilise euro (EUR).",
+    "id": "france-100049",
+    "conceptId": "fact-100049",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Gabon ?",
+    "answers": [
+      "franc CFA (BEAC)",
+      "riyal qatari",
+      "forint",
+      "đồng"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gabon",
+      "monnaies"
+    ],
+    "familyId": "currency-gabon",
+    "confidence": 0.97,
+    "explanation": "Gabon utilise franc CFA (BEAC) (XAF).",
+    "id": "gabon-100050",
+    "conceptId": "fact-100050",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Gambie ?",
+    "answers": [
+      "dalasi",
+      "ouguiya",
+      "dinar irakien",
+      "kwacha malawien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gambie",
+      "monnaies"
+    ],
+    "familyId": "currency-gambie",
+    "confidence": 0.97,
+    "explanation": "Gambie utilise dalasi (GMD).",
+    "id": "gambie-100051",
+    "conceptId": "fact-100051",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Géorgie ?",
+    "answers": [
+      "lari",
+      "euro",
+      "franc CFA (BEAC)",
+      "lev bulgare"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "georgie",
+      "monnaies"
+    ],
+    "familyId": "currency-georgie",
+    "confidence": 0.97,
+    "explanation": "Géorgie utilise lari (GEL).",
+    "id": "georgie-100052",
+    "conceptId": "fact-100052",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Ghana ?",
+    "answers": [
+      "cédi",
+      "rouble biélorusse",
+      "boliviano",
+      "bolívar"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ghana",
+      "monnaies"
+    ],
+    "familyId": "currency-ghana",
+    "confidence": 0.97,
+    "explanation": "Ghana utilise cédi (GHS).",
+    "id": "ghana-100053",
+    "conceptId": "fact-100053",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Grèce ?",
+    "answers": [
+      "euro",
+      "roupie népalaise",
+      "cédi",
+      "franc suisse"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "grece",
+      "monnaies"
+    ],
+    "familyId": "currency-grece",
+    "confidence": 0.97,
+    "explanation": "Grèce utilise euro (EUR).",
+    "id": "grece-100054",
+    "conceptId": "fact-100054",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Guatemala ?",
+    "answers": [
+      "quetzal",
+      "dollar namibien",
+      "bolívar",
+      "kwacha malawien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "guatemala",
+      "monnaies"
+    ],
+    "familyId": "currency-guatemala",
+    "confidence": 0.97,
+    "explanation": "Guatemala utilise quetzal (GTQ).",
+    "id": "guatemala-100055",
+    "conceptId": "fact-100055",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Guinée-Bissau ?",
+    "answers": [
+      "franc CFA (BCEAO)",
+      "dollar barbadien",
+      "rial yéménite",
+      "couronne tchèque"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "guinee-bissau",
+      "monnaies"
+    ],
+    "familyId": "currency-guinee-bissau",
+    "confidence": 0.97,
+    "explanation": "Guinée-Bissau utilise franc CFA (BCEAO) (XOF).",
+    "id": "guinee-bissau-100056",
+    "conceptId": "fact-100056",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Haïti ?",
+    "answers": [
+      "gourde",
+      "dollar namibien",
+      "naira",
+      "peso colombien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "haiti",
+      "monnaies"
+    ],
+    "familyId": "currency-haiti",
+    "confidence": 0.97,
+    "explanation": "Haïti utilise gourde (HTG).",
+    "id": "haiti-100057",
+    "conceptId": "fact-100057",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Honduras ?",
+    "answers": [
+      "lempira",
+      "dollar de Brunéi",
+      "złoty",
+      "roupie népalaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "honduras",
+      "monnaies"
+    ],
+    "familyId": "currency-honduras",
+    "confidence": 0.97,
+    "explanation": "Honduras utilise lempira (HNL).",
+    "id": "honduras-100058",
+    "conceptId": "fact-100058",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Hongrie ?",
+    "answers": [
+      "forint",
+      "couronne norvégienne",
+      "livre sud-soudanaise",
+      "dollar bélizien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "hongrie",
+      "monnaies"
+    ],
+    "familyId": "currency-hongrie",
+    "confidence": 0.97,
+    "explanation": "Hongrie utilise forint (HUF).",
+    "id": "hongrie-100059",
+    "conceptId": "fact-100059",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Inde ?",
+    "answers": [
+      "roupie indienne",
+      "réal brésilien",
+      "peso dominicain",
+      "dollar de Singapour"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inde",
+      "monnaies"
+    ],
+    "familyId": "currency-inde",
+    "confidence": 0.97,
+    "explanation": "Inde utilise roupie indienne (INR).",
+    "id": "inde-100060",
+    "conceptId": "fact-100060",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Irlande ?",
+    "answers": [
+      "euro",
+      "rufiyaa",
+      "shilling ougandais",
+      "rand"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "irlande",
+      "monnaies"
+    ],
+    "familyId": "currency-irlande",
+    "confidence": 0.97,
+    "explanation": "Irlande utilise euro (EUR).",
+    "id": "irlande-100061",
+    "conceptId": "fact-100061",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Islande ?",
+    "answers": [
+      "couronne islandaise",
+      "réal brésilien",
+      "dram",
+      "dirham marocain"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "islande",
+      "monnaies"
+    ],
+    "familyId": "currency-islande",
+    "confidence": 0.97,
+    "explanation": "Islande utilise couronne islandaise (ISK).",
+    "id": "islande-100062",
+    "conceptId": "fact-100062",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Israël ?",
+    "answers": [
+      "shekel",
+      "dinar algérien",
+      "peso cubain",
+      "couronne islandaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "israel",
+      "monnaies"
+    ],
+    "familyId": "currency-israel",
+    "confidence": 0.97,
+    "explanation": "Israël utilise shekel (ILS).",
+    "id": "israel-100063",
+    "conceptId": "fact-100063",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Italie ?",
+    "answers": [
+      "euro",
+      "peso mexicain",
+      "franc djiboutien",
+      "livre sud-soudanaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "italie",
+      "monnaies"
+    ],
+    "familyId": "currency-italie",
+    "confidence": 0.97,
+    "explanation": "Italie utilise euro (EUR).",
+    "id": "italie-100064",
+    "conceptId": "fact-100064",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Jamaïque ?",
+    "answers": [
+      "dollar jamaïcain",
+      "mark convertible",
+      "đồng",
+      "leone"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jamaique",
+      "monnaies"
+    ],
+    "familyId": "currency-jamaique",
+    "confidence": 0.97,
+    "explanation": "Jamaïque utilise dollar jamaïcain (JMD).",
+    "id": "jamaique-100065",
+    "conceptId": "fact-100065",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Japon ?",
+    "answers": [
+      "yen",
+      "dinar algérien",
+      "balboa",
+      "dollar de Brunéi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "japon",
+      "monnaies"
+    ],
+    "familyId": "currency-japon",
+    "confidence": 0.97,
+    "explanation": "Japon utilise yen (JPY).",
+    "id": "japon-100066",
+    "conceptId": "fact-100066",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Kazakhstan ?",
+    "answers": [
+      "tenge",
+      "dirham des Émirats",
+      "couronne norvégienne",
+      "riel"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "kazakhstan",
+      "monnaies"
+    ],
+    "familyId": "currency-kazakhstan",
+    "confidence": 0.97,
+    "explanation": "Kazakhstan utilise tenge (KZT).",
+    "id": "kazakhstan-100067",
+    "conceptId": "fact-100067",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Kirghizistan ?",
+    "answers": [
+      "som kirghize",
+      "boliviano",
+      "shilling somalien",
+      "tugrik"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "kirghizistan",
+      "monnaies"
+    ],
+    "familyId": "currency-kirghizistan",
+    "confidence": 0.97,
+    "explanation": "Kirghizistan utilise som kirghize (KGS).",
+    "id": "kirghizistan-100068",
+    "conceptId": "fact-100068",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Laos ?",
+    "answers": [
+      "kip",
+      "couronne norvégienne",
+      "dirham des Émirats",
+      "somoni"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "laos",
+      "monnaies"
+    ],
+    "familyId": "currency-laos",
+    "confidence": 0.97,
+    "explanation": "Laos utilise kip (LAK).",
+    "id": "laos-100069",
+    "conceptId": "fact-100069",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Lesotho ?",
+    "answers": [
+      "loti",
+      "livre syrienne",
+      "birr",
+      "bolívar"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "lesotho",
+      "monnaies"
+    ],
+    "familyId": "currency-lesotho",
+    "confidence": 0.97,
+    "explanation": "Lesotho utilise loti (LSL).",
+    "id": "lesotho-100070",
+    "conceptId": "fact-100070",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Lettonie ?",
+    "answers": [
+      "euro",
+      "pula",
+      "dram",
+      "riyal saoudien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "lettonie",
+      "monnaies"
+    ],
+    "familyId": "currency-lettonie",
+    "confidence": 0.97,
+    "explanation": "Lettonie utilise euro (EUR).",
+    "id": "lettonie-100071",
+    "conceptId": "fact-100071",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Libéria ?",
+    "answers": [
+      "dollar libérien",
+      "dinar algérien",
+      "livre libanaise",
+      "livre sud-soudanaise"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "liberia",
+      "monnaies"
+    ],
+    "familyId": "currency-liberia",
+    "confidence": 0.97,
+    "explanation": "Libéria utilise dollar libérien (LRD).",
+    "id": "liberia-100072",
+    "conceptId": "fact-100072",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Liechtenstein ?",
+    "answers": [
+      "franc suisse",
+      "peso argentin",
+      "dollar américain",
+      "riyal saoudien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "liechtenstein",
+      "monnaies"
+    ],
+    "familyId": "currency-liechtenstein",
+    "confidence": 0.97,
+    "explanation": "Liechtenstein utilise franc suisse (CHF).",
+    "id": "liechtenstein-100073",
+    "conceptId": "fact-100073",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Lituanie ?",
+    "answers": [
+      "euro",
+      "somoni",
+      "som kirghize",
+      "peso colombien"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "lituanie",
+      "monnaies"
+    ],
+    "familyId": "currency-lituanie",
+    "confidence": 0.97,
+    "explanation": "Lituanie utilise euro (EUR).",
+    "id": "lituanie-100074",
+    "conceptId": "fact-100074",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Luxembourg ?",
+    "answers": [
+      "euro",
+      "rouble russe",
+      "dinar irakien",
+      "livre sterling"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "luxembourg",
+      "monnaies"
+    ],
+    "familyId": "currency-luxembourg",
+    "confidence": 0.97,
+    "explanation": "Luxembourg utilise euro (EUR).",
+    "id": "luxembourg-100075",
+    "conceptId": "fact-100075",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Macédoine du Nord ?",
+    "answers": [
+      "denar",
+      "hryvnia",
+      "peso argentin",
+      "yuan renminbi"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "macedoine-du-nord",
+      "monnaies"
+    ],
+    "familyId": "currency-macedoine-du-nord",
+    "confidence": 0.97,
+    "explanation": "Macédoine du Nord utilise denar (MKD).",
+    "id": "macedoine-du-nord-100076",
+    "conceptId": "fact-100076",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  },
+  {
+    "type": "mcq",
+    "question": "Quelle monnaie utilise Madagascar ?",
+    "answers": [
+      "ariary",
+      "denar",
+      "franc suisse",
+      "dollar néo-zélandais"
+    ],
+    "correctAnswer": 0,
+    "category": "geographie",
+    "subcategory": "monnaies",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "madagascar",
+      "monnaies"
+    ],
+    "familyId": "currency-madagascar",
+    "confidence": 0.97,
+    "explanation": "Madagascar utilise ariary (MGA).",
+    "id": "madagascar-100077",
+    "conceptId": "fact-100077",
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "version": 1,
+    "qualityScore": 0.95
+  }
+]

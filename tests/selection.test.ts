@@ -38,7 +38,7 @@ describe("Selection Engine — anti-répétition", () => {
 
   it("ne resert pas une question déjà vue quand le pool le permet (200 tirages)", () => {
     const pool = Array.from({ length: 100 }, (_, i) => makeQuestion(`q${i}`, `f${i}`));
-    let history: SelectionHistoryEntry[] = [];
+    const history: SelectionHistoryEntry[] = [];
     const seen = new Set<string>();
 
     for (let round = 0; round < 200; round++) {

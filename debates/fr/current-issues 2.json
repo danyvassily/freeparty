@@ -136,13 +136,13 @@
     "id": "cur-07",
     "category": "current-issues",
     "topic": "Impression 3D",
-    "prompt": "La démocratisation de l'impression 3D est-elle un risque ou une opportunité pour la société ?",
+    "prompt": "La démocratisation de l'impression 3D est-elle une menace ou une opportunité pour la société ?",
     "context": "L'impression 3D permet de produire des objets à la demande (pièces détachées, prothèses, prototypes) et pose des questions nouvelles : fabrication d'armes (fichiers d'armes à feu imprimables), contrefaçon, propriété intellectuelle, impacts industriels. La technologie est utilisée dans la médecine, l'aérospatiale et l'éducation.",
     "perspectives": [
       "L'impression 3D décentralise la production : réparation locale, innovation accessible, moins de transports et de gaspillage.",
       "Elle facilite la fabrication d'objets dangereux (armes) et la contrefaçon : les risques dépassent les bénéfices sans régulation.",
       "La technologie n'est ni bonne ni mauvaise : les usages et le cadre juridique feront la différence.",
-      "L'impression 3D fragilise des emplois industriels et des modèles économiques : il faut anticiper les transitions."
+      "L'impression 3D menace des emplois industriels et des modèles économiques : il faut anticiper les transitions."
     ],
     "followUps": [
       "Faut-il interdire la diffusion de fichiers d'armes imprimables ?",

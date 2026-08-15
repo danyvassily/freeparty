@@ -22,6 +22,7 @@ from egypt1 import QUESTIONS as EGYPT1
 from egypt2 import QUESTIONS as EGYPT2
 from philo1 import QUESTIONS as PHILO1
 from philo2 import QUESTIONS as PHILO2
+from overrides import DIFFICULTY_OVERRIDES
 
 ALL = GREEK1 + GREEK2 + EGYPT1 + EGYPT2 + PHILO1 + PHILO2
 
@@ -42,15 +43,16 @@ def build2():
         assert KABOB.match(concept), f"conceptId invalide: {concept}"
         assert KABOB.match(family), f"familyId invalide: {family}"
         assert KABOB.match(sub), f"subcategory invalide: {sub}"
+        diff = DIFFICULTY_OVERRIDES.get(concept, diff)
         assert diff in ("easy", "medium", "hard", "expert"), f"difficulty invalide: {diff}"
         assert len(answers) == 4, f"4 réponses requises: {concept}"
         assert len(set(answers)) == 4, f"réponses dupliquées: {concept}"
         qid = PREFIX[category] + concept
         assert qid not in seen_ids, f"id dupliqué: {qid}"
         seen_ids.add(qid)
-        # position variable de la bonne réponse
+        # position variable de la bonne réponse (évite correctAnswer toujours à 0)
         pos = counter % 4
-        ordered = [answers[pos]] + [a for i, a in enumerate(answers) if i != pos]
+        ordered = [answers[(i - pos) % 4] for i in range(4)]
         q = {
             "id": qid,
             "conceptId": concept,
@@ -58,7 +60,7 @@ def build2():
             "type": "mcq",
             "question": text,
             "answers": list(ordered),
-            "correctAnswer": 0,
+            "correctAnswer": pos,
             "category": category,
             "subcategory": sub,
             "difficulty": diff,
@@ -86,7 +88,7 @@ def build2():
 def main():
     files, total = build2()
     for fname, qs in files.items():
-        path = os.path.join(BASE, "fr", fname)
+        path = os.path.join(BASE, fname)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(qs, f, ensure_ascii=False, indent=2)
             f.write("\n")

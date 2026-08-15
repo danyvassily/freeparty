@@ -1,0 +1,496 @@
+[
+  {
+    "id": "greek-mount-olympus-location",
+    "conceptId": "mount-olympus-location",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Où se trouve le mont Olympe, demeure des dieux ?",
+    "answers": [
+      "En Crète",
+      "Dans le Péloponnèse",
+      "Sur l'île de Délos",
+      "En Grèce, à la frontière entre la Thessalie et la Macédoine"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131148",
+      "url": "https://www.wikidata.org/wiki/Q131148",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-delphi-oracle-of-apollo",
+    "conceptId": "delphi-oracle-of-apollo",
+    "familyId": "delphi",
+    "type": "mcq",
+    "question": "Quel sanctuaire abrite le célèbre oracle d'Apollon ?",
+    "answers": [
+      "Delphes",
+      "Olympie",
+      "Épidaure",
+      "Délos"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37340",
+      "url": "https://www.wikidata.org/wiki/Q37340",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-pythia-prophetess-of-delphi",
+    "conceptId": "pythia-prophetess-of-delphi",
+    "familyId": "delphi",
+    "type": "mcq",
+    "question": "Comment s'appelle la prêtresse qui rend les oracles à Delphes ?",
+    "answers": [
+      "La Vestale",
+      "La Pythie",
+      "La Sibylle",
+      "La Ménade"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37340",
+      "url": "https://www.wikidata.org/wiki/Q37340",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-mount-parnassus-home-of-muses",
+    "conceptId": "mount-parnassus-home-of-muses",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Quelle montagne est le séjour des Muses ?",
+    "answers": [
+      "L'Ida",
+      "L'Etna",
+      "Le Parnasse",
+      "L'Olympe"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q66063",
+      "url": "https://www.wikidata.org/wiki/Q66063",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-atlantis-island-of-plato",
+    "conceptId": "atlantis-island-of-plato",
+    "familyId": "legendary-places",
+    "type": "mcq",
+    "question": "Quel philosophe grec raconte le mythe de l'Atlantide ?",
+    "answers": [
+      "Aristote",
+      "Homère",
+      "Hérodote",
+      "Platon"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q859",
+      "url": "https://www.wikidata.org/wiki/Q859",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-labyrinth-of-cnossos",
+    "conceptId": "labyrinth-of-cnossos",
+    "familyId": "legendary-places",
+    "type": "mcq",
+    "question": "Où se trouve le Labyrinthe du Minotaure ?",
+    "answers": [
+      "En Crète, à Cnossos",
+      "À Athènes",
+      "À Thèbes",
+      "À Mycènes"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42998",
+      "url": "https://www.wikidata.org/wiki/Q42998",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-colchis-golden-fleece",
+    "conceptId": "colchis-golden-fleece",
+    "familyId": "legendary-places",
+    "type": "mcq",
+    "question": "Dans quel pays lointain se trouve la Toison d'or ?",
+    "answers": [
+      "En Scythie",
+      "En Colchide",
+      "En Égypte",
+      "En Inde"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q168712",
+      "url": "https://www.wikidata.org/wiki/Q168712",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "greek-ithaca-kingdom-of-odysseus",
+    "conceptId": "ithaca-kingdom-of-odysseus",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Quelle île est le royaume d'Ulysse ?",
+    "answers": [
+      "Lesbos",
+      "Samos",
+      "Ithaque",
+      "Chypre"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q47220",
+      "url": "https://www.wikidata.org/wiki/Q47220",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-mount-ida-judgment-of-paris",
+    "conceptId": "mount-ida-judgment-of-paris",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Sur quel mont se déroule le jugement de Pâris ?",
+    "answers": [
+      "Le mont Olympe",
+      "Le Parnasse",
+      "Le Cithéron",
+      "Le mont Ida"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130543",
+      "url": "https://www.wikidata.org/wiki/Q130543",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-mycenae-city-of-agamemnon",
+    "conceptId": "mycenae-city-of-agamemnon",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Quelle cité est gouvernée par Agamemnon ?",
+    "answers": [
+      "Mycènes",
+      "Sparte",
+      "Athènes",
+      "Argos"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128176",
+      "url": "https://www.wikidata.org/wiki/Q128176",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "greek-sparta-city-of-menelaus",
+    "conceptId": "sparta-city-of-menelaus",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Quel roi règne sur Sparte aux côtés d'Hélène ?",
+    "answers": [
+      "Nestor",
+      "Ménélas",
+      "Agamemnon",
+      "Priam"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q165988",
+      "url": "https://www.wikidata.org/wiki/Q165988",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "greek-thebes-city-of-oedipus",
+    "conceptId": "thebes-city-of-oedipus",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "De quelle cité Œdipe devient-il le roi ?",
+    "answers": [
+      "Corinthe",
+      "Argos",
+      "Thèbes",
+      "Athènes"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q133071",
+      "url": "https://www.wikidata.org/wiki/Q133071",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "greek-aegean-sea-named-after-aegeus",
+    "conceptId": "aegean-sea-named-after-aegeus",
+    "familyId": "greek-geography",
+    "type": "mcq",
+    "question": "Quel roi légendaire a donné son nom à la mer qui sépare la Grèce de la Turquie ?",
+    "answers": [
+      "Minos",
+      "Éole",
+      "Nérée",
+      "Égée"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-grecque",
+    "subcategory": "lieux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-grecque",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q128962",
+      "url": "https://www.wikidata.org/wiki/Q128962",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  }
+]

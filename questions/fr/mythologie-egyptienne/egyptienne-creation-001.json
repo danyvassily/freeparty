@@ -1,0 +1,306 @@
+[
+  {
+    "id": "egyptian-nun-primordial-ocean",
+    "conceptId": "nun-primordial-ocean",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Comment s'appelle l'océan primordial d'où tout est issu selon les Égyptiens ?",
+    "answers": [
+      "La Douat",
+      "L'Ialou",
+      "Le Noun",
+      "Le Nil"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-primeval-mound",
+    "conceptId": "primeval-mound",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Selon les cosmogonies égyptiennes, sur quoi le dieu créateur se tient-il au commencement ?",
+    "answers": [
+      "Un rocher de granit",
+      "Le dos d'un crocodile",
+      "Un trône d'or",
+      "La butte primordiale"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-atum-creator-of-heliopolis",
+    "conceptId": "atum-creator-of-heliopolis",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Quel dieu est le créateur dans la cosmogonie d'Héliopolis ?",
+    "answers": [
+      "Atoum",
+      "Ptah",
+      "Khnoum",
+      "Amon"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.94,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ennead-nine-gods",
+    "conceptId": "ennead-nine-gods",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Combien de dieux compte l'Ennéade d'Héliopolis ?",
+    "answers": [
+      "Quatre",
+      "Neuf",
+      "Sept",
+      "Douze"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-shu-and-tefnout-children-of-atum",
+    "conceptId": "shu-and-tefnout-children-of-atum",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Quels sont les deux premiers dieux engendrés par Atoum ?",
+    "answers": [
+      "Osiris et Isis",
+      "Seth et Nephtys",
+      "Chou et Tefnout",
+      "Geb et Nout"
+    ],
+    "correctAnswer": 2,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.92,
+    "version": 1
+  },
+  {
+    "id": "egyptian-ogdoad-eight-deities",
+    "conceptId": "ogdoad-eight-deities",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Combien de divinités composent l'Ogdoade d'Hermopolis ?",
+    "answers": [
+      "Quatre",
+      "Dix",
+      "Six",
+      "Huit"
+    ],
+    "correctAnswer": 3,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.96,
+    "qualityScore": 0.91,
+    "version": 1
+  },
+  {
+    "id": "egyptian-shu-separates-nut-and-geb",
+    "conceptId": "shu-separates-nut-and-geb",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Quel dieu sépare la déesse du ciel Nout du dieu de la terre Geb ?",
+    "answers": [
+      "Chou",
+      "Râ",
+      "Thot",
+      "Anubis"
+    ],
+    "correctAnswer": 0,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.93,
+    "version": 1
+  },
+  {
+    "id": "egyptian-cosmic-egg-of-hermopolis",
+    "conceptId": "cosmic-egg-of-hermopolis",
+    "familyId": "creation-cosmogonies",
+    "type": "mcq",
+    "question": "Selon la cosmogonie d'Hermopolis, que pond l'oie primordiale ?",
+    "answers": [
+      "Un serpent géant",
+      "L'œuf d'où naît le soleil",
+      "Une pierre sacrée",
+      "Un lotus d'or"
+    ],
+    "correctAnswer": 1,
+    "category": "mythologie-egyptienne",
+    "subcategory": "creation",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "mythologie-egyptienne",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6587",
+      "url": "https://www.wikidata.org/wiki/Q6587",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.95,
+    "qualityScore": 0.9,
+    "version": 1
+  }
+]
