@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "book-hugo-notre-dame",
+    "conceptId": "hugo-notre-dame",
+    "familyId": "victor-hugo",
+    "type": "mcq",
+    "question": "Quel écrivain français a écrit Notre-Dame de Paris ?",
+    "answers": [
+      "Victor Hugo",
+      "Émile Zola",
+      "Honoré de Balzac",
+      "Gustave Flaubert"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-hugo-miserables",
+    "conceptId": "les-miserables-hugo",
+    "familyId": "victor-hugo",
+    "type": "mcq",
+    "question": "Quel roman de Victor Hugo met en scène Jean Valjean ?",
+    "answers": [
+      "Notre-Dame de Paris",
+      "Quatrevingt-treize",
+      "L'Homme qui rit",
+      "Les Misérables"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-hugo-javert",
+    "conceptId": "miserables-javert",
+    "familyId": "victor-hugo",
+    "type": "mcq",
+    "question": "Qui poursuit Jean Valjean tout au long des Misérables ?",
+    "answers": [
+      "L'inspecteur Colombo",
+      "Le juge Holden",
+      "L'inspecteur Javert",
+      "Le commissaire Maigret"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-dumas-musketeers",
+    "conceptId": "dumas-3-musketeers",
+    "familyId": "alexandre-dumas",
+    "type": "mcq",
+    "question": "Qui a écrit Les Trois Mousquetaires ?",
+    "answers": [
+      "Guy de Maupassant",
+      "Alexandre Dumas",
+      "Jules Verne",
+      "Victor Hugo"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-dumas-monte-cristo",
+    "conceptId": "comte-de-monte-cristo",
+    "familyId": "alexandre-dumas",
+    "type": "mcq",
+    "question": "Quel roman d'Alexandre Dumas raconte la vengeance d'Edmond Dantès ?",
+    "answers": [
+      "Le Comte de Monte-Cristo",
+      "Les Trois Mousquetaires",
+      "Vingt ans après",
+      "La Reine Margot"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-dartagnan",
+    "conceptId": "dartagnan-hero",
+    "familyId": "alexandre-dumas",
+    "type": "mcq",
+    "question": "Dans Les Trois Mousquetaires, quel est le nom du héros gascon ?",
+    "answers": [
+      "Porthos",
+      "Athos",
+      "Aramis",
+      "d'Artagnan"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-verne-80-jours",
+    "conceptId": "verne-around-the-world",
+    "familyId": "jules-verne",
+    "type": "mcq",
+    "question": "Quel roman de Jules Verne raconte le tour du monde de Phileas Fogg ?",
+    "answers": [
+      "De la Terre à la Lune",
+      "L'Île mystérieuse",
+      "Le Tour du monde en 80 jours",
+      "Vingt mille lieues sous les mers"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "aventures"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-verne-nautilus",
+    "conceptId": "nautilus-verne",
+    "familyId": "jules-verne",
+    "type": "mcq",
+    "question": "Comment s'appelle le sous-marin du capitaine Nemo ?",
+    "answers": [
+      "L'Espadon",
+      "Le Nautilus",
+      "Le Titanic",
+      "Le Beagle"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "aventures"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-verne-bet",
+    "conceptId": "verne-80-days-bet",
+    "familyId": "jules-verne",
+    "type": "mcq",
+    "question": "En combien de jours Phileas Fogg parie-t-il de faire le tour du monde ?",
+    "answers": [
+      "80",
+      "100",
+      "60",
+      "90"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "aventures"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-verne-nemo",
+    "conceptId": "verne-20000-leagues",
+    "familyId": "jules-verne",
+    "type": "mcq",
+    "question": "Quel roman de Jules Verne met en scène le capitaine Nemo ?",
+    "answers": [
+      "Cinq semaines en ballon",
+      "Robur le conquérant",
+      "Michel Strogoff",
+      "Vingt mille lieues sous les mers"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "aventures"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-maupassant",
+    "conceptId": "maupassant-boule-de-suif",
+    "familyId": "maupassant",
+    "type": "mcq",
+    "question": "Qui a écrit Boule de Suif et Bel-Ami ?",
+    "answers": [
+      "Alphonse Daudet",
+      "Stendhal",
+      "Guy de Maupassant",
+      "Émile Zola"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-flaubert",
+    "conceptId": "flaubert-madame-bovary",
+    "familyId": "flaubert",
+    "type": "mcq",
+    "question": "Qui est l'auteur de Madame Bovary ?",
+    "answers": [
+      "Marcel Proust",
+      "Gustave Flaubert",
+      "Honoré de Balzac",
+      "Stendhal"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-zola-rougon",
+    "conceptId": "zola-rougon-macquart",
+    "familyId": "zola",
+    "type": "mcq",
+    "question": "Quelle fresque romanesque Émile Zola a-t-il écrite ?",
+    "answers": [
+      "Les Rougon-Macquart",
+      "La Comédie humaine",
+      "Les Misérables",
+      "À la recherche du temps perdu"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-zola-germinal",
+    "conceptId": "zola-germinal-mines",
+    "familyId": "zola",
+    "type": "mcq",
+    "question": "Quel roman de Zola se déroule dans une mine de charbon du Nord ?",
+    "answers": [
+      "Nana",
+      "L'Assommoir",
+      "La Bête humaine",
+      "Germinal"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-balzac",
+    "conceptId": "balzac-comedie-humaine",
+    "familyId": "balzac",
+    "type": "mcq",
+    "question": "Comment s'appelle la grande fresque romanesque de Balzac ?",
+    "answers": [
+      "La Recherche",
+      "Les Misérables",
+      "La Comédie humaine",
+      "Les Rougon-Macquart"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-proust",
+    "conceptId": "proust-recherche",
+    "familyId": "proust",
+    "type": "mcq",
+    "question": "Quel est le titre du chef-d'œuvre de Marcel Proust ?",
+    "answers": [
+      "Voyage au bout de la nuit",
+      "À la recherche du temps perdu",
+      "Les Faux-monnayeurs",
+      "Le Grand Meaulnes"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-camus-etranger",
+    "conceptId": "camus-etranger",
+    "familyId": "camus",
+    "type": "mcq",
+    "question": "Quel roman d'Albert Camus s'ouvre sur « Aujourd'hui, maman est morte » ?",
+    "answers": [
+      "L'Étranger",
+      "La Peste",
+      "La Chute",
+      "Caligula"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-camus-nobel",
+    "conceptId": "camus-nobel-1957",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Quel écrivain français a reçu le prix Nobel de littérature en 1957 ?",
+    "answers": [
+      "Jean-Paul Sartre",
+      "André Gide",
+      "François Mauriac",
+      "Albert Camus"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-sartre-refus",
+    "conceptId": "sartre-nobel-refused",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Quel écrivain a refusé le prix Nobel de littérature en 1964 ?",
+    "answers": [
+      "Simone de Beauvoir",
+      "André Malraux",
+      "Jean-Paul Sartre",
+      "Albert Camus"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-saint-exupery",
+    "conceptId": "petit-prince",
+    "familyId": "saint-exupery",
+    "type": "mcq",
+    "question": "Qui a écrit Le Petit Prince ?",
+    "answers": [
+      "Marcel Pagnol",
+      "Antoine de Saint-Exupéry",
+      "Boris Vian",
+      "Jean Giono"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "contes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-petit-prince-record",
+    "conceptId": "petit-prince-translated",
+    "familyId": "saint-exupery",
+    "type": "mcq",
+    "question": "Quelle est la particularité du Petit Prince ?",
+    "answers": [
+      "C'est le livre français le plus traduit au monde",
+      "Il est écrit en vers",
+      "Il n'a jamais été publié en France",
+      "Il a été écrit en une nuit"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "livres"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-pagnol",
+    "conceptId": "pagnol-provence",
+    "familyId": "pagnol",
+    "type": "mcq",
+    "question": "Quel écrivain français a immortalisé la Provence avec La Gloire de mon père ?",
+    "answers": [
+      "Jean Giono",
+      "Alphonse Daudet",
+      "Frédéric Mistral",
+      "Marcel Pagnol"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "souvenirs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-baudelaire",
+    "conceptId": "baudelaire-fleurs-du-mal",
+    "familyId": "poesie",
+    "type": "mcq",
+    "question": "Qui a écrit Les Fleurs du mal ?",
+    "answers": [
+      "Paul Verlaine",
+      "Stéphane Mallarmé",
+      "Charles Baudelaire",
+      "Arthur Rimbaud"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "poesie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "poesie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-rimbaud-age",
+    "conceptId": "rimbaud-16",
+    "familyId": "poesie",
+    "type": "mcq",
+    "question": "À quel âge Arthur Rimbaud a-t-il écrit ses premiers grands poèmes ?",
+    "answers": [
+      "25 ans",
+      "16 ans",
+      "12 ans",
+      "20 ans"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "poesie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "poesie",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-moliere-name",
+    "conceptId": "moliere-poquelin",
+    "familyId": "theatre",
+    "type": "mcq",
+    "question": "Quel est le vrai nom de Molière ?",
+    "answers": [
+      "Jean-Baptiste Poquelin",
+      "Jean Racine",
+      "Pierre Corneille",
+      "Jean de La Fontaine"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "theatre",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "theatre",
+      "auteurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-moliere-avare",
+    "conceptId": "moliere-avare",
+    "familyId": "theatre",
+    "type": "mcq",
+    "question": "Quelle pièce de Molière met en scène le radin Harpagon ?",
+    "answers": [
+      "Le Misanthrope",
+      "Tartuffe",
+      "Les Fourberies de Scapin",
+      "L'Avare"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "theatre",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "theatre",
+      "comedies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-tartuffe",
+    "conceptId": "tartuffe-hypocrite",
+    "familyId": "theatre",
+    "type": "mcq",
+    "question": "Quel personnage de Molière est un faux dévot ?",
+    "answers": [
+      "Alceste",
+      "Sganarelle",
+      "Tartuffe",
+      "Dom Juan"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "theatre",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "theatre",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-la-fontaine",
+    "conceptId": "la-fontaine-fables",
+    "familyId": "poesie",
+    "type": "mcq",
+    "question": "Qui a écrit les Fables mettant en scène la cigale et la fourmi ?",
+    "answers": [
+      "Nicolas Boileau",
+      "Jean de La Fontaine",
+      "Voltaire",
+      "Jean Racine"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "fables"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-goethe-werther",
+    "conceptId": "goethe-werther",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Les Souffrances du jeune Werther ?",
+    "answers": [
+      "Johann Wolfgang von Goethe",
+      "Friedrich Schiller",
+      "Thomas Mann",
+      "Hermann Hesse"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-tolstoi",
+    "conceptId": "tolstoy-war-and-peace",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Quel écrivain russe a écrit Guerre et Paix ?",
+    "answers": [
+      "Fiodor Dostoïevski",
+      "Anton Tchekhov",
+      "Ivan Tourgueniev",
+      "Léon Tolstoï"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "book-dostoievski",
+    "conceptId": "dostoevsky-crime-punishment",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Crime et Châtiment ?",
+    "answers": [
+      "Fiodor Dostoïevski",
+      "Léon Tolstoï",
+      "Alexandre Pouchkine",
+      "Nicolas Gogol"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-orwell-1984",
+    "conceptId": "orwell-1984",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit 1984 ?",
+    "answers": [
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "H.G. Wells",
+      "George Orwell"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "dystopies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-big-brother",
+    "conceptId": "big-brother-1984",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Dans 1984, qui surveille constamment les citoyens ?",
+    "answers": [
+      "Le Grand Sage",
+      "Le Guide Suprême",
+      "Big Brother",
+      "Le Petit Père"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "dystopies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-ministry-of-love",
+    "conceptId": "ministry-of-love",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Dans 1984, quel ministère s'occupe notamment de la torture ?",
+    "answers": [
+      "Le ministère de l'Abondance",
+      "Le ministère de l'Amour",
+      "Le ministère de la Vérité",
+      "Le ministère de la Paix"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "romans",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "romans",
+      "dystopies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-huxley",
+    "conceptId": "huxley-brave-new-world",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Le Meilleur des mondes ?",
+    "answers": [
+      "Aldous Huxley",
+      "George Orwell",
+      "H.G. Wells",
+      "Karel Čapek"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "dystopies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-tolkien",
+    "conceptId": "tolkien-hobbit",
+    "familyId": "fantasy",
+    "type": "mcq",
+    "question": "Qui a écrit Bilbo le Hobbit et Le Seigneur des anneaux ?",
+    "answers": [
+      "C.S. Lewis",
+      "Terry Pratchett",
+      "George R.R. Martin",
+      "J.R.R. Tolkien"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "fantasy"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-narnia",
+    "conceptId": "lewis-narnia",
+    "familyId": "fantasy",
+    "type": "mcq",
+    "question": "Quel écrivain a écrit Le Monde de Narnia ?",
+    "answers": [
+      "Roald Dahl",
+      "Philip Pullman",
+      "C.S. Lewis",
+      "J.R.R. Tolkien"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "fantasy"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-rowling",
+    "conceptId": "rowling-harry-potter",
+    "familyId": "fantasy",
+    "type": "mcq",
+    "question": "Qui a écrit la saga Harry Potter ?",
+    "answers": [
+      "Cassandra Clare",
+      "J.K. Rowling",
+      "Suzanne Collins",
+      "Stephenie Meyer"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "jeunesse"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-collins",
+    "conceptId": "collins-hunger-games",
+    "familyId": "jeunesse",
+    "type": "mcq",
+    "question": "Qui a écrit Hunger Games ?",
+    "answers": [
+      "Suzanne Collins",
+      "Veronica Roth",
+      "James Dashner",
+      "Stephenie Meyer"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "jeunesse"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-christie-66",
+    "conceptId": "christie-66",
+    "familyId": "policier",
+    "type": "mcq",
+    "question": "Combien de romans policiers Agatha Christie a-t-elle écrits environ ?",
+    "answers": [
+      "30",
+      "100",
+      "45",
+      "66"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "policier"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-poirot",
+    "conceptId": "poirot-christie",
+    "familyId": "policier",
+    "type": "mcq",
+    "question": "Quel est le nom du célèbre détective belge d'Agatha Christie ?",
+    "answers": [
+      "Maigret",
+      "Nero Wolfe",
+      "Hercule Poirot",
+      "Sherlock Holmes"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "policier",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "policier",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-miss-marple",
+    "conceptId": "miss-marple",
+    "familyId": "policier",
+    "type": "mcq",
+    "question": "Quelle vieille dame détective Agatha Christie a-t-elle créée ?",
+    "answers": [
+      "Miss Lemon",
+      "Miss Marple",
+      "Miss Fisher",
+      "Miss Silver"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "policier",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "policier",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-conan-doyle",
+    "conceptId": "doyle-holmes",
+    "familyId": "policier",
+    "type": "mcq",
+    "question": "Qui a créé Sherlock Holmes ?",
+    "answers": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "Edgar Allan Poe",
+      "Gaston Leroux"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "policier"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-goncourt",
+    "conceptId": "goncourt-prize",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Quel prix littéraire français est décerné chaque année en novembre ?",
+    "answers": [
+      "Le prix Nobel",
+      "Le prix Pulitzer",
+      "Le Booker Prize",
+      "Le prix Goncourt"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-goncourt-brothers",
+    "conceptId": "goncourt-brothers",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Le prix Goncourt doit son nom à qui ?",
+    "answers": [
+      "À un éditeur italien",
+      "À un libraire parisien",
+      "Aux frères Goncourt",
+      "À un mécène anglais"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-le-clezio",
+    "conceptId": "le-clezio-nobel-2008",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Quel écrivain français a reçu le prix Nobel de littérature en 2008 ?",
+    "answers": [
+      "Emmanuel Carrère",
+      "J.M.G. Le Clézio",
+      "Michel Houellebecq",
+      "Patrick Modiano"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-modiano",
+    "conceptId": "modiano-nobel-2014",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Qui a reçu le prix Nobel de littérature en 2014 ?",
+    "answers": [
+      "Patrick Modiano",
+      "J.M.G. Le Clézio",
+      "Annie Ernaux",
+      "Jean d'Ormesson"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-ernaux",
+    "conceptId": "ernaux-nobel-2022",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Quelle autrice française a reçu le prix Nobel de littérature en 2022 ?",
+    "answers": [
+      "Leïla Slimani",
+      "Marguerite Duras",
+      "Simone de Beauvoir",
+      "Annie Ernaux"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-verlaine",
+    "conceptId": "verlaine-rimbaud",
+    "familyId": "poesie",
+    "type": "mcq",
+    "question": "Quel poète a été l'ami et le mentor d'Arthur Rimbaud ?",
+    "answers": [
+      "Guillaume Apollinaire",
+      "Stéphane Mallarmé",
+      "Paul Verlaine",
+      "Charles Baudelaire"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "poesie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "poesie",
+      "auteurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-apollinaire",
+    "conceptId": "apollinaire-calligrammes",
+    "familyId": "poesie",
+    "type": "mcq",
+    "question": "Quel poète a inventé les calligrammes, poèmes dessinés ?",
+    "answers": [
+      "Louis Aragon",
+      "Guillaume Apollinaire",
+      "Paul Éluard",
+      "André Breton"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "poesie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "poesie",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-perrault",
+    "conceptId": "perrault-tales",
+    "familyId": "contes",
+    "type": "mcq",
+    "question": "Qui a écrit les versions françaises des contes du Petit Chaperon rouge et de Cendrillon ?",
+    "answers": [
+      "Charles Perrault",
+      "Les frères Grimm",
+      "Hans Christian Andersen",
+      "Oscar Wilde"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "contes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-grimm",
+    "conceptId": "grimm-german",
+    "familyId": "contes",
+    "type": "mcq",
+    "question": "De quel pays sont originaires les frères Grimm ?",
+    "answers": [
+      "La France",
+      "Le Danemark",
+      "La Suède",
+      "L'Allemagne"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "contes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-andersen",
+    "conceptId": "andersen-danish",
+    "familyId": "contes",
+    "type": "mcq",
+    "question": "Quel conteur danois a écrit La Petite Sirène ?",
+    "answers": [
+      "Les frères Grimm",
+      "Oscar Wilde",
+      "Hans Christian Andersen",
+      "Charles Perrault"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "contes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-shelley",
+    "conceptId": "shelley-frankenstein",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Frankenstein ?",
+    "answers": [
+      "Charlotte Brontë",
+      "Mary Shelley",
+      "Emily Brontë",
+      "Jane Austen"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-austen",
+    "conceptId": "austen-pride-prejudice",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Orgueil et Préjugés ?",
+    "answers": [
+      "Jane Austen",
+      "Charlotte Brontë",
+      "George Eliot",
+      "Virginia Woolf"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-wilde",
+    "conceptId": "wilde-dorian-gray",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Le Portrait de Dorian Gray ?",
+    "answers": [
+      "Bram Stoker",
+      "Edgar Allan Poe",
+      "Robert Louis Stevenson",
+      "Oscar Wilde"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-stoker",
+    "conceptId": "stoker-dracula",
+    "familyId": "classiques-europeens",
+    "type": "mcq",
+    "question": "Qui a écrit Dracula ?",
+    "answers": [
+      "Oscar Wilde",
+      "H.P. Lovecraft",
+      "Bram Stoker",
+      "Mary Shelley"
+    ],
+    "correctAnswer": 2,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-hemingway",
+    "conceptId": "hemingway-old-man-and-sea",
+    "familyId": "classiques-americains",
+    "type": "mcq",
+    "question": "Qui a écrit Le Vieil Homme et la Mer ?",
+    "answers": [
+      "William Faulkner",
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "F. Scott Fitzgerald"
+    ],
+    "correctAnswer": 3,
+    "category": "litterature",
+    "subcategory": "auteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "auteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-pulitzer",
+    "conceptId": "pulitzer-prize",
+    "familyId": "prix-litteraires",
+    "type": "mcq",
+    "question": "Dans quel pays le prix Pulitzer est-il décerné ?",
+    "answers": [
+      "Aux États-Unis",
+      "Au Royaume-Uni",
+      "Au Canada",
+      "En Australie"
+    ],
+    "correctAnswer": 0,
+    "category": "litterature",
+    "subcategory": "prix",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "prix",
+      "etats-unis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "book-shakespeare-37",
+    "conceptId": "shakespeare-plays",
+    "familyId": "theatre",
+    "type": "mcq",
+    "question": "Combien de pièces de théâtre William Shakespeare a-t-il écrites environ ?",
+    "answers": [
+      "20",
+      "50",
+      "25",
+      "37"
+    ],
+    "correctAnswer": 1,
+    "category": "litterature",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "theatre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

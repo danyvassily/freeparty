@@ -1,0 +1,952 @@
+[
+  {
+    "id": "foot-wc-1930-host",
+    "conceptId": "wc-1930-uruguay",
+    "familyId": "world-cup",
+    "type": "mcq",
+    "question": "Dans quel pays s'est déroulée la première Coupe du monde de football en 1930 ?",
+    "answers": [
+      "L'Uruguay",
+      "Le Brésil",
+      "L'Italie",
+      "La France"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-wc-1930-winner",
+    "conceptId": "uruguay-wc-1930",
+    "familyId": "world-cup",
+    "type": "mcq",
+    "question": "Quelle équipe a remporté la première Coupe du monde en 1930 ?",
+    "answers": [
+      "L'Argentine",
+      "Le Brésil",
+      "L'Italie",
+      "L'Uruguay"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-brazil-5",
+    "conceptId": "brazil-5-titles",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel pays détient le record de victoires en Coupe du monde avec cinq titres ?",
+    "answers": [
+      "L'Italie",
+      "L'Argentine",
+      "Le Brésil",
+      "L'Allemagne"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "coupe-du-monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-france-1998",
+    "conceptId": "france-1998-final",
+    "familyId": "world-cup",
+    "type": "mcq",
+    "question": "Qui la France a-t-elle battu en finale de la Coupe du monde 1998 ?",
+    "answers": [
+      "L'Allemagne",
+      "Le Brésil",
+      "L'Italie",
+      "La Croatie"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "finales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-france-2018",
+    "conceptId": "france-2018-final",
+    "familyId": "world-cup",
+    "type": "mcq",
+    "question": "Qui la France a-t-elle battu en finale de la Coupe du monde 2018 ?",
+    "answers": [
+      "La Croatie",
+      "L'Argentine",
+      "La Belgique",
+      "L'Angleterre"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "finales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-wc-2022",
+    "conceptId": "argentina-2022",
+    "familyId": "world-cup",
+    "type": "mcq",
+    "question": "Qui a remporté la Coupe du monde 2022 au Qatar ?",
+    "answers": [
+      "La France",
+      "Le Brésil",
+      "Le Maroc",
+      "L'Argentine"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "finales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-messi-ballons",
+    "conceptId": "messi-8-ballons",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de Ballons d'or Lionel Messi a-t-il remportés ?",
+    "answers": [
+      "7",
+      "5",
+      "8",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "ballon-dor"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-messi-club",
+    "conceptId": "messi-barcelona",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Dans quel club Lionel Messi a-t-il gagné ses premiers Ballons d'or ?",
+    "answers": [
+      "Le PSG",
+      "Le FC Barcelone",
+      "Le Real Madrid",
+      "Manchester City"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "clubs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-ronaldo-nationality",
+    "conceptId": "ronaldo-portugal",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "De quelle nationalité est Cristiano Ronaldo ?",
+    "answers": [
+      "Portugais",
+      "Espagnol",
+      "Brésilien",
+      "Argentin"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "joueurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-ronaldo-record",
+    "conceptId": "ronaldo-international-goals",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel joueur détient le record de buts en sélection nationale ?",
+    "answers": [
+      "Lionel Messi",
+      "Neymar",
+      "Robert Lewandowski",
+      "Cristiano Ronaldo"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "joueurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-maradona-hand",
+    "conceptId": "maradona-hand-of-god",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Comment s'appelle le but marqué de la main par Maradona en 1986 ?",
+    "answers": [
+      "Le coup de poing",
+      "La main du Diable",
+      "La main de Dieu",
+      "Le but du siècle"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "coupe-du-monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-pele-titles",
+    "conceptId": "pele-3-wc",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Combien de Coupes du monde Pelé a-t-il remportées avec le Brésil ?",
+    "answers": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-real-ucl",
+    "conceptId": "real-madrid-ucl",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quel club détient le record de victoires en Ligue des champions ?",
+    "answers": [
+      "Le Real Madrid",
+      "Le Milan AC",
+      "Le Bayern Munich",
+      "Liverpool"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-ucl",
+    "conceptId": "ucl-best-clubs",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quelle compétition européenne oppose chaque année les meilleurs clubs du continent ?",
+    "answers": [
+      "La Ligue Europa Conférence",
+      "La Supercoupe d'Europe",
+      "La Coupe intercontinentale",
+      "La Ligue des champions"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "europe"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-psg-1970",
+    "conceptId": "psg-1970",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "En quelle année le Paris Saint-Germain a-t-il été fondé ?",
+    "answers": [
+      "1980",
+      "1990",
+      "1970",
+      "1960"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-psg-stadium",
+    "conceptId": "psg-parc-des-princes",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Dans quel stade le PSG joue-t-il ses matchs à domicile ?",
+    "answers": [
+      "Le Groupama Stadium",
+      "Le Parc des Princes",
+      "Le Stade de France",
+      "Le Vélodrome"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "stades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-marseille-1993",
+    "conceptId": "marseille-1993",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quel club français a remporté la Ligue des champions en 1993 ?",
+    "answers": [
+      "L'OM (Marseille)",
+      "Le PSG",
+      "L'AS Monaco",
+      "L'OL (Lyon)"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-france-euros",
+    "conceptId": "france-2-euros",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de fois la France a-t-elle remporté le championnat d'Europe des nations (Euro) ?",
+    "answers": [
+      "1 fois",
+      "3 fois",
+      "4 fois",
+      "2 fois"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "euro"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-zidane-1998",
+    "conceptId": "zidane-1998-final",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Combien de buts Zinédine Zidane a-t-il marqués en finale de la Coupe du monde 1998 ?",
+    "answers": [
+      "3",
+      "0",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "coupe-du-monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-zidane-clubs",
+    "conceptId": "zidane-clubs",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Dans lequel de ces clubs Zinédine Zidane n'a-t-il jamais joué ?",
+    "answers": [
+      "Les Girondins de Bordeaux",
+      "Le FC Barcelone",
+      "La Juventus",
+      "Le Real Madrid"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "clubs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-england-record",
+    "conceptId": "man-united-record",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quel club détient le record de titres de champion d'Angleterre ?",
+    "answers": [
+      "Manchester United",
+      "Liverpool",
+      "Arsenal",
+      "Chelsea"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-bayern",
+    "conceptId": "bayern-bundesliga",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quel club domine le championnat allemand de football ?",
+    "answers": [
+      "Le Borussia Dortmund",
+      "Le RB Leipzig",
+      "Le Bayer Leverkusen",
+      "Le Bayern Munich"
+    ],
+    "correctAnswer": 1,
+    "category": "football",
+    "subcategory": "clubs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "allemagne"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-juventus",
+    "conceptId": "juventus-serie-a",
+    "familyId": "clubs",
+    "type": "mcq",
+    "question": "Quel club détient le record de titres de champion d'Italie ?",
+    "answers": [
+      "L'Inter Milan",
+      "L'AS Rome",
+      "La Juventus",
+      "L'AC Milan"
+    ],
+    "correctAnswer": 2,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "clubs",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-klose",
+    "conceptId": "klose-16-goals",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Qui détient le record de buts en Coupe du monde avec 16 réalisations ?",
+    "answers": [
+      "Just Fontaine",
+      "Miroslav Klose",
+      "Ronaldo (Brésil)",
+      "Gerd Müller"
+    ],
+    "correctAnswer": 3,
+    "category": "football",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "coupe-du-monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "foot-stade-de-france",
+    "conceptId": "stade-de-france-1998",
+    "familyId": "coupe-du-monde",
+    "type": "mcq",
+    "question": "Dans quel stade la France a-t-elle remporté la Coupe du monde 1998 ?",
+    "answers": [
+      "Le Stade de France",
+      "Le Parc des Princes",
+      "Le Vélodrome",
+      "Wembley"
+    ],
+    "correctAnswer": 0,
+    "category": "football",
+    "subcategory": "coupe-du-monde",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "coupe-du-monde",
+      "stades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

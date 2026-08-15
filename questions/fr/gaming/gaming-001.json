@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "game-mario-creator",
+    "conceptId": "mario-shigeru-miyamoto",
+    "familyId": "mario",
+    "type": "mcq",
+    "question": "Qui a créé Super Mario ?",
+    "answers": [
+      "Shigeru Miyamoto",
+      "Hideo Kojima",
+      "Gunpei Yokoi",
+      "Satoru Iwata"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-mario-brother",
+    "conceptId": "luigi-mario-brother",
+    "familyId": "mario",
+    "type": "mcq",
+    "question": "Quel est le nom du frère de Mario ?",
+    "answers": [
+      "Wario",
+      "Waluigi",
+      "Toad",
+      "Luigi"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "mario"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-mario-princess",
+    "conceptId": "princess-peach",
+    "familyId": "mario",
+    "type": "mcq",
+    "question": "Quelle princesse Mario doit-il sauver dans la plupart des jeux ?",
+    "answers": [
+      "Rosalina",
+      "Zelda",
+      "Peach",
+      "Daisy"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "mario"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-mario-company",
+    "conceptId": "nintendo-mario",
+    "familyId": "mario",
+    "type": "mcq",
+    "question": "Quelle entreprise a créé Mario ?",
+    "answers": [
+      "Capcom",
+      "Nintendo",
+      "Sega",
+      "Sony"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-zelda-hero",
+    "conceptId": "link-zelda",
+    "familyId": "zelda",
+    "type": "mcq",
+    "question": "Dans The Legend of Zelda, quel est le nom du héros ?",
+    "answers": [
+      "Link",
+      "Zelda",
+      "Ganondorf",
+      "Epona"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "zelda"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-zelda-princess",
+    "conceptId": "zelda-princess",
+    "familyId": "zelda",
+    "type": "mcq",
+    "question": "Dans The Legend of Zelda, qui est Zelda ?",
+    "answers": [
+      "La fée guide",
+      "La sorcière",
+      "La déesse du temps",
+      "La princesse d'Hyrule"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "zelda"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-zelda-sword",
+    "conceptId": "master-sword",
+    "familyId": "zelda",
+    "type": "mcq",
+    "question": "Quel est le nom anglais de l'épée légendaire de Link ?",
+    "answers": [
+      "Frostmourne",
+      "Buster Sword",
+      "Master Sword",
+      "Excalibur"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "zelda"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-pokemon-creator",
+    "conceptId": "pokemon-satoshi-tajiri",
+    "familyId": "pokemon",
+    "type": "mcq",
+    "question": "Qui a créé Pokémon ?",
+    "answers": [
+      "Ken Sugimori",
+      "Satoshi Tajiri",
+      "Shigeru Miyamoto",
+      "Gunpei Yokoi"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-pokemon-starters",
+    "conceptId": "pokemon-red-blue",
+    "familyId": "pokemon",
+    "type": "mcq",
+    "question": "Quels sont les trois Pokémon de départ de la première génération ?",
+    "answers": [
+      "Bulbizarre, Salamèche, Carapuce",
+      "Pikachu, Rondoudou, Mewtwo",
+      "Évoli, Ponyta, Racaillou",
+      "Psykokwak, Magicarpe, Roucool"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "pokemon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-pokemon-gen1",
+    "conceptId": "pokemon-gen1-151",
+    "familyId": "pokemon",
+    "type": "mcq",
+    "question": "Combien de Pokémon comptait la première génération ?",
+    "answers": [
+      "100",
+      "250",
+      "721",
+      "151"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-fortnite-mode",
+    "conceptId": "fortnite-battle-royale",
+    "familyId": "fortnite",
+    "type": "mcq",
+    "question": "Quel mode de jeu a rendu Fortnite mondialement célèbre ?",
+    "answers": [
+      "Le mode Sauver le monde",
+      "Le mode Courses",
+      "Le Battle Royale",
+      "Le mode Créatif"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "fortnite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-minecraft-creator",
+    "conceptId": "minecraft-notch",
+    "familyId": "minecraft",
+    "type": "mcq",
+    "question": "Qui a créé Minecraft ?",
+    "answers": [
+      "Gabe Newell",
+      "Markus Persson (Notch)",
+      "Hideo Kojima",
+      "Todd Howard"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "creation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-minecraft-creeper",
+    "conceptId": "creeper-explodes",
+    "familyId": "minecraft",
+    "type": "mcq",
+    "question": "Quelle créature de Minecraft explose quand elle s'approche du joueur ?",
+    "answers": [
+      "Le Creeper",
+      "L'Enderman",
+      "Le Zombie",
+      "Le Squelette"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "minecraft"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-minecraft-ender-dragon",
+    "conceptId": "ender-dragon",
+    "familyId": "minecraft",
+    "type": "mcq",
+    "question": "Quel est le boss final de Minecraft ?",
+    "answers": [
+      "Le Wither",
+      "Le Warden",
+      "Herobrine",
+      "L'Ender Dragon"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "minecraft"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-sonic-rival",
+    "conceptId": "sonic-sega",
+    "familyId": "sonic",
+    "type": "mcq",
+    "question": "Quel est le rival bleu de Mario, créé par Sega ?",
+    "answers": [
+      "Rayman",
+      "Spyro",
+      "Sonic",
+      "Crash"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-sonic-speed",
+    "conceptId": "sonic-speed",
+    "familyId": "sonic",
+    "type": "mcq",
+    "question": "Quelle est la particularité de Sonic ?",
+    "answers": [
+      "Son invisibilité",
+      "Sa vitesse supersonique",
+      "Sa force surhumaine",
+      "Son vol"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "sonic"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-pacman-ghosts",
+    "conceptId": "pac-man-ghosts",
+    "familyId": "pac-man",
+    "type": "mcq",
+    "question": "Quel est le nom des créatures qui poursuivent Pac-Man ?",
+    "answers": [
+      "Les fantômes",
+      "Les gobelins",
+      "Les zombies",
+      "Les spectres"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-tetris-origin",
+    "conceptId": "tetris-russian",
+    "familyId": "tetris",
+    "type": "mcq",
+    "question": "De quel pays est originaire Tetris ?",
+    "answers": [
+      "Le Japon",
+      "Les États-Unis",
+      "Le Royaume-Uni",
+      "L'Union soviétique (Russie)"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-ff-company",
+    "conceptId": "final-fantasy-square",
+    "familyId": "final-fantasy",
+    "type": "mcq",
+    "question": "Quelle entreprise a créé Final Fantasy ?",
+    "answers": [
+      "Konami",
+      "Atlus",
+      "Square (Square Enix)",
+      "Bandai Namco"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-ff7-cloud",
+    "conceptId": "cloud-strife-ff7",
+    "familyId": "final-fantasy",
+    "type": "mcq",
+    "question": "Quel est le nom du héros de Final Fantasy VII ?",
+    "answers": [
+      "Tidus",
+      "Cloud Strife",
+      "Squall Leonhart",
+      "Zidane Tribal"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "final-fantasy"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-ff7-buster",
+    "conceptId": "buster-sword",
+    "familyId": "final-fantasy",
+    "type": "mcq",
+    "question": "Quelle épée démesurée Cloud porte-t-il dans Final Fantasy VII ?",
+    "answers": [
+      "La Buster Sword",
+      "La Master Sword",
+      "La Gunblade",
+      "La Soul Edge"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "final-fantasy"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-gta-vice-city",
+    "conceptId": "gta-vice-city",
+    "familyId": "gta",
+    "type": "mcq",
+    "question": "Quelle ville fictive est au cœur de GTA: Vice City ?",
+    "answers": [
+      "Liberty City",
+      "Los Santos",
+      "San Fierro",
+      "Vice City"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "gta"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-gta-studio",
+    "conceptId": "rockstar-gta",
+    "familyId": "gta",
+    "type": "mcq",
+    "question": "Quel studio a développé la série GTA ?",
+    "answers": [
+      "Electronic Arts",
+      "Activision",
+      "Rockstar Games",
+      "Ubisoft"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "studios"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-minecraft-best-seller",
+    "conceptId": "minecraft-best-selling",
+    "familyId": "minecraft",
+    "type": "mcq",
+    "question": "Quel jeu détient le record du plus grand nombre de ventes de l'histoire ?",
+    "answers": [
+      "Wii Sports",
+      "Minecraft",
+      "Tetris",
+      "GTA V"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "jeux-video"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-wow-arthas",
+    "conceptId": "wow-arthas",
+    "familyId": "world-of-warcraft",
+    "type": "mcq",
+    "question": "Dans World of Warcraft, comment s'appelle le roi-liche ?",
+    "answers": [
+      "Arthas",
+      "Illidan",
+      "Thrall",
+      "Sylvanas"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "univers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-cs-bomb",
+    "conceptId": "counter-strike-bomb",
+    "familyId": "counter-strike",
+    "type": "mcq",
+    "question": "Quel jeu de tir a popularisé le mode de jeu avec pose de bombe ?",
+    "answers": [
+      "Call of Duty: Warzone",
+      "Battlefield",
+      "Overwatch",
+      "Counter-Strike"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "fps"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-cod-price",
+    "conceptId": "captain-price",
+    "familyId": "call-of-duty",
+    "type": "mcq",
+    "question": "Quel personnage de Call of Duty est surnommé « Captain Price » ?",
+    "answers": [
+      "Simon Riley",
+      "Alex Mason",
+      "John Price",
+      "John MacTavish"
+    ],
+    "correctAnswer": 2,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "call-of-duty"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-skyrim-dovahkiin",
+    "conceptId": "skyrim-dovahkiin",
+    "familyId": "elder-scrolls",
+    "type": "mcq",
+    "question": "Dans The Elder Scrolls V: Skyrim, quel nom donne-t-on au héros qui parle le langage des dragons ?",
+    "answers": [
+      "Le Vestige",
+      "Dovahkiin",
+      "Nérévarine",
+      "L'Élu"
+    ],
+    "correctAnswer": 3,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "univers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-uncharted-nathan",
+    "conceptId": "uncharted-nathan-drake",
+    "familyId": "uncharted",
+    "type": "mcq",
+    "question": "Quel est le nom du chasseur de trésors dans Uncharted ?",
+    "answers": [
+      "Nathan Drake",
+      "Francis Drake",
+      "Sam Drake",
+      "Sully"
+    ],
+    "correctAnswer": 0,
+    "category": "gaming",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "uncharted"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "game-mario-first",
+    "conceptId": "mario-donkey-kong",
+    "familyId": "mario",
+    "type": "mcq",
+    "question": "Dans quel jeu Mario fait-il sa première apparition en 1981 ?",
+    "answers": [
+      "Super Mario Bros.",
+      "Mario Kart",
+      "Pac-Man",
+      "Donkey Kong"
+    ],
+    "correctAnswer": 1,
+    "category": "gaming",
+    "subcategory": "jeux-video",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "jeux-video",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "sci-diamond-carbon",
+    "conceptId": "diamond-carbon",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "De quel élément est composé le diamant ?",
+    "answers": [
+      "Le carbone",
+      "Le silicium",
+      "L'or",
+      "Le quartz"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-salt-nacl",
+    "conceptId": "salt-nacl",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quelle est la formule chimique du sel de table ?",
+    "answers": [
+      "KCl",
+      "CaCO3",
+      "H2SO4",
+      "NaCl"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-elements-118",
+    "conceptId": "elements-118",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Combien d'éléments compte environ le tableau périodique ?",
+    "answers": [
+      "100",
+      "150",
+      "118",
+      "92"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-helium-balloons",
+    "conceptId": "helium-balloons",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Pourquoi les ballons de fête s'envolent-ils avec de l'hélium ?",
+    "answers": [
+      "L'hélium est compressé",
+      "L'hélium est plus léger que l'air",
+      "L'hélium est chaud",
+      "L'hélium est magnétique"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-mendeleev",
+    "conceptId": "mendeleev-periodic-table",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Qui a inventé le tableau périodique des éléments ?",
+    "answers": [
+      "Dmitri Mendeleïev",
+      "Antoine Lavoisier",
+      "John Dalton",
+      "Robert Boyle"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-lavoisier",
+    "conceptId": "lavoisier-oxygen",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel chimiste français est considéré comme le père de la chimie moderne ?",
+    "answers": [
+      "Louis Pasteur",
+      "Pierre Curie",
+      "Claude Bernard",
+      "Antoine Lavoisier"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-chlorophyll",
+    "conceptId": "photosynthesis-chlorophyll",
+    "familyId": "biology",
+    "type": "mcq",
+    "question": "Quel pigment permet aux plantes de capter l'énergie du soleil ?",
+    "answers": [
+      "L'hémoglobine",
+      "La carotène",
+      "La chlorophylle",
+      "La mélanine"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "plantes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-photosynthesis-inputs",
+    "conceptId": "photosynthesis-co2",
+    "familyId": "biology",
+    "type": "mcq",
+    "question": "Quels sont les deux ingrédients de la photosynthèse ?",
+    "answers": [
+      "L'hydrogène et le sel",
+      "Le CO2 et l'eau",
+      "L'oxygène et l'azote",
+      "Le sucre et l'azote"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "plantes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-skin-organ",
+    "conceptId": "skin-largest-organ",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Quel est le plus grand organe du corps humain ?",
+    "answers": [
+      "La peau",
+      "Le foie",
+      "Les poumons",
+      "L'intestin"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-stomach-acid",
+    "conceptId": "stomach-acid-hcl",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Quel acide est présent dans l'estomac ?",
+    "answers": [
+      "L'acide sulfurique",
+      "L'acide citrique",
+      "L'acide nitrique",
+      "L'acide chlorhydrique"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-heart-pump",
+    "conceptId": "heart-pump",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Quel organe pompe le sang dans le corps ?",
+    "answers": [
+      "Les reins",
+      "La rate",
+      "Le cœur",
+      "Le foie"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-hummingbird",
+    "conceptId": "hummingbird-backwards",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Quel est le seul oiseau capable de voler à reculons ?",
+    "answers": [
+      "Le moineau",
+      "Le colibri",
+      "Le martinet",
+      "L'hirondelle"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-cheetah",
+    "conceptId": "fastest-land-animal",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Quel est l'animal terrestre le plus rapide ?",
+    "answers": [
+      "Le guépard",
+      "Le lion",
+      "L'antilope",
+      "Le cheval"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-blue-whale",
+    "conceptId": "blue-whale-largest",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Quel est le plus grand animal ayant jamais existé ?",
+    "answers": [
+      "L'éléphant d'Afrique",
+      "Le diplodocus",
+      "Le requin blanc",
+      "La baleine bleue"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-octopus-hearts",
+    "conceptId": "octopus-3-hearts",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Combien de cœurs possède une pieuvre ?",
+    "answers": [
+      "2",
+      "4",
+      "3",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-giraffe-vertebrae",
+    "conceptId": "giraffe-7-vertebrae",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Combien de vertèbres cervicales possède une girafe ?",
+    "answers": [
+      "30",
+      "7",
+      "14",
+      "21"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-panda-bamboo",
+    "conceptId": "panda-bamboo",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "Quelle est la nourriture quasi exclusive du panda géant ?",
+    "answers": [
+      "Le bambou",
+      "Les racines",
+      "Les poissons",
+      "Les fruits"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-kangaroo",
+    "conceptId": "kangaroo-australia",
+    "familyId": "biology-animals",
+    "type": "mcq",
+    "question": "De quel pays le kangourou est-il le symbole ?",
+    "answers": [
+      "La Nouvelle-Zélande",
+      "L'Afrique du Sud",
+      "Le Brésil",
+      "L'Australie"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-human-genes",
+    "conceptId": "human-genes",
+    "familyId": "biology-genetics",
+    "type": "mcq",
+    "question": "Combien de gènes environ possède le génome humain ?",
+    "answers": [
+      "1 million",
+      "5 000",
+      "20 000",
+      "100 000"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "genetique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-blood-groups",
+    "conceptId": "blood-groups",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Quels sont les quatre groupes sanguins principaux ?",
+    "answers": [
+      "Alpha, Bêta, Gamma et Delta",
+      "A, B, AB et O",
+      "A, B, C et D",
+      "1, 2, 3 et 4"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-neutron-star",
+    "conceptId": "neutron-star-density",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quel type d'étoile est si dense qu'une cuillère à café pèserait des milliards de tonnes ?",
+    "answers": [
+      "L'étoile à neutrons",
+      "La géante rouge",
+      "La naine blanche",
+      "La supergéante bleue"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "etoiles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-black-hole",
+    "conceptId": "black-hole-gravity",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Qu'est-ce qu'un trou noir ?",
+    "answers": [
+      "Un trou vers une autre galaxie",
+      "Une planète sombre",
+      "Une étoile éteinte",
+      "Un objet dont la gravité est si forte que rien n'en sort"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "trous-noirs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-milky-way",
+    "conceptId": "milky-way",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Comment s'appelle notre galaxie ?",
+    "answers": [
+      "Le Grand Nuage de Magellan",
+      "Messier 87",
+      "La Voie lactée",
+      "Andromède"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "galaxies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-comet-tail",
+    "conceptId": "comet-tail-sun",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "La queue d'une comète pointe toujours dans quelle direction ?",
+    "answers": [
+      "Vers Jupiter",
+      "Loin du Soleil",
+      "Vers le Soleil",
+      "Vers la Terre"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "cometes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-pluto",
+    "conceptId": "pluto-dwarf-planet",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Depuis 2006, quel est le statut officiel de Pluton ?",
+    "answers": [
+      "Planète naine",
+      "Planète géante",
+      "Astéroïde",
+      "Comète"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "planetes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-venus-hottest",
+    "conceptId": "venus-hottest",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle est la planète la plus chaude du Système solaire ?",
+    "answers": [
+      "Mercure",
+      "Mars",
+      "Jupiter",
+      "Vénus"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "planetes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-einstein-nobel",
+    "conceptId": "einstein-nobel-photoelectric",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Pour quelle découverte Einstein a-t-il reçu le prix Nobel en 1921 ?",
+    "answers": [
+      "La fission nucléaire",
+      "L'atome",
+      "L'effet photoélectrique",
+      "La relativité générale"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "prix-nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-emc2",
+    "conceptId": "e-mc2",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Que signifie E = mc² ?",
+    "answers": [
+      "Travail = force × distance",
+      "Énergie = masse × vitesse de la lumière au carré",
+      "Énergie = matière × chaleur",
+      "Force = masse × accélération"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "theories"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-newton-apple",
+    "conceptId": "newton-apple",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Quelle légende est associée à la découverte de la gravité par Newton ?",
+    "answers": [
+      "Une pomme tombant d'un arbre",
+      "Une plume tombant du ciel",
+      "Un ballon qui éclate",
+      "Une lampe qui se balance"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-eureka",
+    "conceptId": "archimedes-bath",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Quel savant grec a crié « Eurêka » dans son bain ?",
+    "answers": [
+      "Pythagore",
+      "Aristote",
+      "Euclide",
+      "Archimède"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-lever-quote",
+    "conceptId": "archimedes-lever",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "À qui attribue-t-on la phrase « Donnez-moi un point d'appui et je soulèverai le monde » ?",
+    "answers": [
+      "Newton",
+      "Platon",
+      "Archimède",
+      "Galilée"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-magnet-poles",
+    "conceptId": "magnet-north-south",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Quels sont les deux pôles d'un aimant ?",
+    "answers": [
+      "Haut et bas",
+      "Nord et sud",
+      "Est et ouest",
+      "Positif et négatif"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "matiere"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-rainbow",
+    "conceptId": "rainbow-7-colors",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Combien de couleurs compte l'arc-en-ciel dans la tradition occidentale ?",
+    "answers": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "optique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-ozone",
+    "conceptId": "ozone-layer",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel gaz forme la couche qui protège la Terre des rayons UV ?",
+    "answers": [
+      "Le dioxyde de carbone",
+      "Le méthane",
+      "L'hélium",
+      "L'ozone"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "atmosphere"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-greenhouse-co2",
+    "conceptId": "co2-greenhouse",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel est le principal gaz à effet de serre émis par l'activité humaine ?",
+    "answers": [
+      "L'azote",
+      "L'argon",
+      "Le dioxyde de carbone",
+      "L'oxygène"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "climat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-everest",
+    "conceptId": "everest-highest",
+    "familyId": "geography",
+    "type": "mcq",
+    "question": "Quel est le plus haut sommet du monde ?",
+    "answers": [
+      "Le Kilimandjaro",
+      "L'Everest",
+      "Le K2",
+      "Le Mont Blanc"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "geographie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "geographie",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-sahara",
+    "conceptId": "sahara-largest",
+    "familyId": "geography",
+    "type": "mcq",
+    "question": "Quel est le plus grand désert chaud du monde ?",
+    "answers": [
+      "Le Sahara",
+      "Le Gobi",
+      "Le Kalahari",
+      "L'Atacama"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "geographie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "geographie",
+      "deserts"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-nile",
+    "conceptId": "nile-longest",
+    "familyId": "geography",
+    "type": "mcq",
+    "question": "Quel est le plus long fleuve d'Afrique ?",
+    "answers": [
+      "Le Congo",
+      "Le Niger",
+      "Le Zambèze",
+      "Le Nil"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "geographie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "geographie",
+      "fleuves"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-earth-rotation",
+    "conceptId": "earth-rotation",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Combien de temps met la Terre pour tourner sur elle-même ?",
+    "answers": [
+      "Environ 48 heures",
+      "Environ 365 heures",
+      "Environ 24 heures",
+      "Environ 12 heures"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "terre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-leap-year",
+    "conceptId": "leap-year",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Pourquoi ajoute-t-on un jour au calendrier tous les quatre ans ?",
+    "answers": [
+      "Pour la Lune",
+      "Pour compenser le quart de jour excédentaire de l'année solaire",
+      "Pour les saisons",
+      "Pour les marées"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "calendrier"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

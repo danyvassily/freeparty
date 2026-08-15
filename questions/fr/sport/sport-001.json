@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "sport-olympics-greece",
+    "conceptId": "olympics-greece",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Dans quel pays les Jeux olympiques antiques sont-ils nés ?",
+    "answers": [
+      "La Grèce",
+      "Rome",
+      "L'Égypte",
+      "La Perse"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-olympics-1896",
+    "conceptId": "modern-olympics-1896",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "En quelle année les Jeux olympiques modernes ont-ils été relancés ?",
+    "answers": [
+      "1900",
+      "1912",
+      "1924",
+      "1896"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-coubertin",
+    "conceptId": "coubertin-founder",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Qui a relancé les Jeux olympiques modernes ?",
+    "answers": [
+      "Juan Antonio Samaranch",
+      "Thomas Bach",
+      "Pierre de Coubertin",
+      "Avery Brundage"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-olympic-rings",
+    "conceptId": "olympic-rings-5",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Combien d'anneaux comporte le symbole olympique ?",
+    "answers": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-olympic-flame",
+    "conceptId": "olympic-flame",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Où la flamme olympique est-elle allumée avant chaque édition des JO ?",
+    "answers": [
+      "Olympie (Grèce)",
+      "Athènes",
+      "Paris",
+      "Rome"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-olympic-motto",
+    "conceptId": "olympic-motto",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Quelle est la devise olympique ?",
+    "answers": [
+      "Toujours plus loin",
+      "Le sport pour tous",
+      "Unis dans la victoire",
+      "Plus vite, plus haut, plus fort"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "symboles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-100m-bolt",
+    "conceptId": "bolt-9-58",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Qui détient le record du monde du 100 mètres ?",
+    "answers": [
+      "Tyson Gay",
+      "Yohan Blake",
+      "Usain Bolt",
+      "Carl Lewis"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "athletisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-bolt-time",
+    "conceptId": "bolt-9-58-time",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le record du monde du 100 mètres d'Usain Bolt ?",
+    "answers": [
+      "9 s 87",
+      "9 s 58",
+      "9 s 69",
+      "9 s 72"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "athletisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-marathon-distance",
+    "conceptId": "marathon-42-195",
+    "familyId": "sports",
+    "type": "mcq",
+    "question": "Quelle est la distance officielle du marathon ?",
+    "answers": [
+      "42,195 km",
+      "40 km",
+      "45 km",
+      "50 km"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "athletisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-marathon-origin",
+    "conceptId": "marathon-phidippides",
+    "familyId": "sports",
+    "type": "mcq",
+    "question": "Le marathon commémore la course de quel messager grec ?",
+    "answers": [
+      "Miltiade",
+      "Léonidas",
+      "Thémistocle",
+      "Phidippidès"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-grand-slam",
+    "conceptId": "grand-slam-tournaments",
+    "familyId": "tennis",
+    "type": "mcq",
+    "question": "Combien de tournois du Grand Chelem y a-t-il par an ?",
+    "answers": [
+      "5",
+      "6",
+      "4",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "tennis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-roland-garros",
+    "conceptId": "roland-garros-clay",
+    "familyId": "tennis",
+    "type": "mcq",
+    "question": "Sur quelle surface se joue Roland-Garros ?",
+    "answers": [
+      "Le synthétique",
+      "La terre battue",
+      "Le gazon",
+      "Le dur"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "tennis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-djokovic-record",
+    "conceptId": "djokovic-grand-slam-record",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Qui détient le record de titres du Grand Chelem en simple messieurs ?",
+    "answers": [
+      "Novak Djokovic",
+      "Rafael Nadal",
+      "Roger Federer",
+      "Pete Sampras"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "tennis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-nadal-roland",
+    "conceptId": "nadal-roland-garros",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel joueur de tennis a remporté Roland-Garros à 14 reprises ?",
+    "answers": [
+      "Novak Djokovic",
+      "Björn Borg",
+      "Ivan Lendl",
+      "Rafael Nadal"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "tennis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-phelps-gold",
+    "conceptId": "phelps-23-gold",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de médailles d'or olympiques Michael Phelps a-t-il remportées ?",
+    "answers": [
+      "15",
+      "28",
+      "23",
+      "18"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "natation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-phelps-swimming",
+    "conceptId": "phelps-swimming",
+    "familyId": "legendes",
+    "type": "mcq",
+    "question": "Dans quel sport Michael Phelps est-il une légende ?",
+    "answers": [
+      "L'aviron",
+      "La natation",
+      "L'athlétisme",
+      "Le cyclisme"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "natation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-tour-de-france",
+    "conceptId": "tour-de-france",
+    "familyId": "cycling",
+    "type": "mcq",
+    "question": "Quelle course cycliste française est la plus célèbre du monde ?",
+    "answers": [
+      "Le Tour de France",
+      "Le Giro",
+      "La Vuelta",
+      "Paris-Roubaix"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "cyclisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-yellow-jersey",
+    "conceptId": "yellow-jersey",
+    "familyId": "cycling",
+    "type": "mcq",
+    "question": "De quelle couleur est le maillot du leader du Tour de France ?",
+    "answers": [
+      "Vert",
+      "Rouge",
+      "Rose",
+      "Jaune"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "cyclisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-merckx-tours",
+    "conceptId": "merckx-5-tours",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de fois Eddy Merckx a-t-il gagné le Tour de France ?",
+    "answers": [
+      "7",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "cyclisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-nba-usa",
+    "conceptId": "nba-usa",
+    "familyId": "basketball",
+    "type": "mcq",
+    "question": "Dans quel pays la NBA a-t-elle été créée ?",
+    "answers": [
+      "L'Australie",
+      "Les États-Unis",
+      "Le Canada",
+      "L'Espagne"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "basketball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-jordan-bulls",
+    "conceptId": "jordan-bulls",
+    "familyId": "basketball",
+    "type": "mcq",
+    "question": "Dans quelle équipe Michael Jordan a-t-il gagné six titres NBA ?",
+    "answers": [
+      "Les Chicago Bulls",
+      "Les Lakers de Los Angeles",
+      "Les Celtics de Boston",
+      "Les Knicks de New York"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "basketball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-jordan-23",
+    "conceptId": "jordan-23",
+    "familyId": "basketball",
+    "type": "mcq",
+    "question": "Quel numéro portait Michael Jordan sur son maillot ?",
+    "answers": [
+      "32",
+      "11",
+      "8",
+      "23"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "basketball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-naismith",
+    "conceptId": "naismith-basketball",
+    "familyId": "sports",
+    "type": "mcq",
+    "question": "Qui a inventé le basket-ball en 1891 ?",
+    "answers": [
+      "Luther Gulick",
+      "Walter Camp",
+      "James Naismith",
+      "William Morgan"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-volleyball-morgan",
+    "conceptId": "william-morgan-volleyball",
+    "familyId": "sports",
+    "type": "mcq",
+    "question": "Qui a inventé le volley-ball ?",
+    "answers": [
+      "Teddy Roosevelt",
+      "William Morgan",
+      "James Naismith",
+      "Pierre de Coubertin"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-hamilton-7",
+    "conceptId": "hamilton-7-titles",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel pilote partage le record de sept titres de champion du monde de F1 avec Michael Schumacher ?",
+    "answers": [
+      "Lewis Hamilton",
+      "Sebastian Vettel",
+      "Max Verstappen",
+      "Alain Prost"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "formule-1"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-schumacher-ferrari",
+    "conceptId": "schumacher-ferrari",
+    "familyId": "formula-1",
+    "type": "mcq",
+    "question": "Avec quelle écurie Michael Schumacher a-t-il gagné cinq de ses sept titres ?",
+    "answers": [
+      "Mercedes",
+      "Williams",
+      "McLaren",
+      "Ferrari"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "formule-1"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-six-nations",
+    "conceptId": "six-nations",
+    "familyId": "rugby",
+    "type": "mcq",
+    "question": "Comment s'appelle le tournoi européen de rugby qui oppose six nations ?",
+    "answers": [
+      "La Coupe d'Europe",
+      "Le Tournoi des Cinq Continents",
+      "Le Tournoi des Six Nations",
+      "Le Championnat d'Europe"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "rugby"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-handball-france",
+    "conceptId": "handball-france",
+    "familyId": "handball",
+    "type": "mcq",
+    "question": "Combien de fois l'équipe de France de handball a-t-elle été championne olympique ?",
+    "answers": [
+      "1 fois",
+      "3 fois",
+      "2 fois",
+      "5 fois"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "handball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-mma",
+    "conceptId": "mma-meaning",
+    "familyId": "combat",
+    "type": "mcq",
+    "question": "Que signifie le sigle MMA ?",
+    "answers": [
+      "Arts martiaux mixtes",
+      "Méthodes de combat ancestrales",
+      "Mondiaux de boxe anglaise",
+      "Matchs de lutte antique"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "combat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-ali-quote",
+    "conceptId": "ali-float-butterfly",
+    "familyId": "boxing",
+    "type": "mcq",
+    "question": "Quelle est la devise célèbre de Mohamed Ali ?",
+    "answers": [
+      "Plus on est de fous, plus on rit",
+      "La victoire appartient aux audacieux",
+      "Toujours plus haut",
+      "Flotte comme un papillon, pique comme une abeille"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "boxe"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-ali-heavyweight",
+    "conceptId": "ali-heavyweight",
+    "familyId": "boxing",
+    "type": "mcq",
+    "question": "Dans quelle catégorie Mohamed Ali était-il champion ?",
+    "answers": [
+      "Poids moyens",
+      "Poids welters",
+      "Poids lourds",
+      "Poids mi-lourds"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "legendes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "legendes",
+      "boxe"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-paris-2024",
+    "conceptId": "paris-2024-3rd",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Combien de fois Paris a-t-il accueilli les Jeux olympiques d'été jusqu'en 2024 inclus ?",
+    "answers": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-kipchoge",
+    "conceptId": "kipchoge-sub2",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Qui a couru le marathon en moins de deux heures en conditions non officielles ?",
+    "answers": [
+      "Eliud Kipchoge",
+      "Kenenisa Bekele",
+      "Haile Gebrselassie",
+      "Mo Farah"
+    ],
+    "correctAnswer": 0,
+    "category": "sport",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "athletisme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-milliat",
+    "conceptId": "alice-milliat",
+    "familyId": "olympics",
+    "type": "mcq",
+    "question": "Qui a fondé les Jeux olympiques féminins en 1922 ?",
+    "answers": [
+      "Suzanne Lenglen",
+      "Sonja Henie",
+      "Fanny Blankers-Koen",
+      "Alice Milliat"
+    ],
+    "correctAnswer": 1,
+    "category": "sport",
+    "subcategory": "jeux-olympiques",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "jeux-olympiques",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sport-judo-japan",
+    "conceptId": "judo-japan",
+    "familyId": "combat",
+    "type": "mcq",
+    "question": "De quel pays le judo est-il originaire ?",
+    "answers": [
+      "La Corée",
+      "La Thaïlande",
+      "Le Japon",
+      "La Chine"
+    ],
+    "correctAnswer": 2,
+    "category": "sport",
+    "subcategory": "sports",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "sports",
+      "combat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

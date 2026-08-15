@@ -1,0 +1,432 @@
+[
+  {
+    "id": "pol-01",
+    "category": "politics",
+    "topic": "Démocratie et tolérance",
+    "prompt": "Une démocratie peut-elle légitimement interdire des mouvements politiques qui souhaitent abolir la démocratie ?",
+    "context": "Depuis l'après-guerre, plusieurs démocraties ont adopté des mécanismes de « démocratie militante » (Allemagne, article 18 de la Loi fondamentale) ou de dissolution de partis extrêmes. La question oppose la tolérance libérale au principe de légitime défense démocratique.",
+    "perspectives": [
+      "La démocratie doit se défendre : ne pas réagir aux forces qui veulent la détruire revient à accepter sa propre disparition (Karl Loewenstein, « démocratie militante »).",
+      "Interdire des idées les rend plus attractives et donne aux mouvements interdits un statut de martyr ; la confrontation d'idées est préférable à leur répression.",
+      "La réponse dépend de la menace réelle : des groupes violents ou qui renoncent à la voie électorale justifient des mesures que de simples partis radicaux ne justifient pas.",
+      "Les garde-fous institutionnels (constitution rigide, cours constitutionnelles, fédéralisme) protègent la démocratie sans interdire les opinions."
+    ],
+    "followUps": [
+      "Qui devrait définir la frontière entre mouvement antidémocratique et simple opposition ?",
+      "Les critères d'interdiction changent-ils selon l'histoire du pays concerné ?",
+      "Une plateforme privée doit-elle appliquer les mêmes règles qu'un État ?",
+      "Une opinion peut-elle être interdite tout en voyant sa diffusion limitée ?"
+    ],
+    "sources": [
+      { "label": "Loi fondamentale allemande (article 18)", "type": "document" },
+      { "label": "Karl Loewenstein, Militant Democracy and Fundamental Rights (1937)", "type": "article" }
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "International",
+    "version": 1
+  },
+  {
+    "id": "pol-02",
+    "category": "politics",
+    "topic": "Sécurité et libertés",
+    "prompt": "Jusqu'où un État peut-il limiter les libertés individuelles au nom de la sécurité collective ?",
+    "context": "Après chaque crise majeure (terrorisme, pandémies), des États renforcent leurs pouvoirs de surveillance ou de restriction. Des philosophes comme Jeremy Bentham ont théorisé le panoptique ; la Cour européenne des droits de l'homme encadre ces limitations par des critères de proportionnalité.",
+    "perspectives": [
+      "La sécurité est la première des libertés : sans protection effective, les autres droits deviennent théoriques (Hobbes).",
+      "Les mesures d'exception tendent à devenir permanentes et à s'étendre bien au-delà de la menace initiale.",
+      "La proportionnalité est la clé : limitation acceptable si nécessaire, adaptée et temporaire, avec contrôle indépendant.",
+      "Une société qui accepte la surveillance généralisée change de nature même si elle reste formellement libre."
+    ],
+    "followUps": [
+      "Qui contrôle les mesures de sécurité pour éviter leur dérive ?",
+      "La mémoire des crises justifie-t-elle des dispositifs permanents ?",
+      "Les entreprises privées de sécurité ont-elles les mêmes obligations que l'État ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-03",
+    "category": "politics",
+    "topic": "Inégalités et libertés économiques",
+    "prompt": "Peut-on réduire fortement les inégalités de revenus sans limiter certaines libertés économiques ?",
+    "context": "Les travaux de Thomas Piketty (Le Capital au XXIe siècle, 2013) documentent la concentration du capital ; les comparaisons internationales montrent des arbitrages variables entre redistribution et croissance. Aucun pays n'a atteint une égalité complète, et tous les régimes à forte redistribution (pays nordiques) conservent une économie de marché.",
+    "perspectives": [
+      "La redistribution par l'impôt et les services publics réduit les inégalités sans supprimer l'économie de marché : les pays nordiques en sont la preuve.",
+      "Des prélèvements trop élevés découragent l'initiative, l'investissement et la prise de risque, ce qui finit par appauvrir tout le monde.",
+      "Le problème n'est pas la liberté économique en soi mais la concentration des rentes et des positions dominantes.",
+      "La mobilité sociale et l'égalité des chances importent davantage que l'égalité des revenus."
+    ],
+    "followUps": [
+      "Quel niveau d'inégalité est compatible avec une démocratie saine ?",
+      "L'héritage remet-il en cause le principe de méritocratie ?",
+      "Une entreprise doit-elle avoir des obligations sociales au-delà du profit ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-04",
+    "category": "politics",
+    "topic": "Liberté d'expression",
+    "prompt": "La liberté d'expression doit-elle protéger les propos profondément offensants ?",
+    "context": "Le Premier amendement américain protège quasi absolument la parole, y compris haineuse (sauf incitation imminente à la violence). En Europe, la plupart des pays pénalisent l'incitation à la haine. La Cour européenne des droits de l'homme distingue l'offense, l'opinion protégée et l'incitation punissable.",
+    "perspectives": [
+      "Protéger aussi la parole offensante est le prix d'une liberté d'expression réelle : toute exception peut être instrumentalisée contre les voix dissidentes.",
+      "Les propos offensants ciblent souvent des groupes vulnérables et créent un climat d'exclusion incompatible avec l'égalité.",
+      "La distinction entre opinion, offense et incitation permet de punir l'essentiel sans sacrifier le débat.",
+      "Le contexte (pouvoir, notoriété, audience) change la nature de l'acte de parole."
+    ],
+    "followUps": [
+      "Qui devrait définir la frontière entre offense et incitation ?",
+      "Les règles changent-elles sur Internet par rapport à l'espace public ?",
+      "Une école ou une entreprise peut-elle imposer des standards de parole plus stricts que l'État ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "Europe / USA",
+    "version": 1
+  },
+  {
+    "id": "pol-05",
+    "category": "politics",
+    "topic": "Démocratie représentative",
+    "prompt": "Une démocratie représentative peut-elle encore fonctionner correctement à l'ère des réseaux sociaux ?",
+    "context": "Les réseaux sociaux ont transformé l'espace public : vitesse de l'information, chambres d'écho, algorithmes de recommandation, influenceurs politiques. Les études sur la polarisation (Pew Research, MIT Media Lab) montrent des effets contrastés : plus d'accès à l'information, mais aussi plus de fragmentation des espaces de débat.",
+    "perspectives": [
+      "Les réseaux sociaux ont élargi la participation et donné une voix à des citoyens jusqu'ici ignorés des médias traditionnels.",
+      "Les algorithmes favorisent l'indignation et la confirmation des opinions, ce qui radicalise le débat public et décourage la nuance.",
+      "La démocratie représentative repose sur des médiations (partis, presse, parlement) que les réseaux sociaux court-circuitent sans les remplacer.",
+      "Le problème vient moins des outils que des institutions qui n'ont pas évolué : régulation, éducation aux médias, nouvelles procédures."
+    ],
+    "followUps": [
+      "Faut-il réguler les algorithmes de recommandation comme des médias ?",
+      "Les débats en ligne peuvent-ils remplacer les assemblées délibérantes ?",
+      "L'anonymat en ligne aide-t-il ou nuit-il au débat démocratique ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-06",
+    "category": "politics",
+    "topic": "Démocratie directe",
+    "prompt": "Les citoyens devraient-ils pouvoir voter directement sur davantage de lois ?",
+    "context": "La Suisse pratique le référendum et l'initiative populaire à tous les niveaux ; de nombreux États américains connaissent le référendum d'initiative citoyenne. Les recherches (par ex. sur la Californie) montrent des effets ambivalents : participation accrue mais risque de lois contradictoires ou captées par des intérêts organisés.",
+    "perspectives": [
+      "Le vote direct renforce la légitimité des décisions et éduque les citoyens à la chose publique.",
+      "Les questions complexes exigent des compromis et une expertise que le référendum binaire ne permet pas.",
+      "La démocratie directe fonctionne bien quand elle est encadrée (Suisse) et mal quand elle court-circuite les institutions.",
+      "Le référendum peut servir de contrepoids aux abus des parlements comme de levier de manipulation par des intérêts privés."
+    ],
+    "followUps": [
+      "Quelles matières se prêtent au référendum et lesquelles n'y sont pas adaptées ?",
+      "Un vote référendaire doit-il pouvoir modifier la constitution ou les droits fondamentaux ?",
+      "Comment garantir un débat de qualité avant chaque vote ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-07",
+    "category": "politics",
+    "topic": "Droit au logement",
+    "prompt": "L'État doit-il garantir un niveau minimal de logement à chaque citoyen ?",
+    "context": "De nombreux pays reconnaissent un « droit au logement » (France : loi Quilliot 1982, loi DALO 2007 ; ONU : art. 25 de la Déclaration universelle). La crise du logement dans les grandes métropoles, la hausse des prix et le sans-abrisme posent la question de la portée réelle de ce droit.",
+    "perspectives": [
+      "Le logement est un besoin vital : sans toit, l'exercice de tous les autres droits devient impossible.",
+      "Un droit garanti par l'État crée des incitations négatives et des coûts que la collectivité ne peut assumer sans limite.",
+      "Le problème est un problème d'offre : construire plus et réguler la spéculation résout davantage que des aides.",
+      "Le droit au logement doit être progressif : hébergement d'urgence, logement social, accompagnement, plutôt qu'une garantie absolue."
+    ],
+    "followUps": [
+      "Qui doit définir le « niveau minimal » de logement ?",
+      "Ce droit vaut-il aussi dans les zones les plus chères des grandes villes ?",
+      "Le secteur privé doit-il être contraint de contribuer au logement abordable ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "France",
+    "version": 1
+  },
+  {
+    "id": "pol-08",
+    "category": "politics",
+    "topic": "Croissance et écologie",
+    "prompt": "Peut-on concilier croissance économique permanente et limites écologiques de la planète ?",
+    "context": "Les rapports du GIEC documentent les contraintes climatiques ; le concept de « croissance verte » postule une découplage entre PIB et émissions. Les économistes débattent : certains estiment le découplage possible (progrès technique), d'autres défendent la « décroissance » ou la sobriété comme nécessité.",
+    "perspectives": [
+      "La croissance verte est possible : efficacité énergétique, énergies renouvelables et économie circulaire permettent de produire plus avec moins.",
+      "Le découplage absolu n'est pas observé à l'échelle mondiale ; la croissance matérielle reste corrélée aux pressions écologiques.",
+      "La question est mal posée : ce qui compte est la qualité de la croissance (bien-être, santé, environnement) plutôt que son volume.",
+      "Les limites écologiques imposent de repenser les indicateurs de richesse et les modes de vie des pays les plus consommateurs."
+    ],
+    "followUps": [
+      "Qui devrait supporter le coût de la transition écologique ?",
+      "Les pays en développement ont-ils le même droit à la croissance que les pays industrialisés ?",
+      "La technologie peut-elle tout résoudre ou faut-il aussi changer nos comportements ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-09",
+    "category": "politics",
+    "topic": "Justice sociale",
+    "prompt": "Une société juste doit-elle chercher l'égalité des chances ou l'égalité des résultats ?",
+    "context": "John Rawls (Théorie de la justice, 1971) défend l'égalité des chances corrigée par le « principe de différence » ; Robert Nozick défend la liberté des échanges ; les données sur la mobilité sociale (OCDE) montrent des écarts importants entre pays sur les chances réelles des enfants issus de milieux défavorisés.",
+    "perspectives": [
+      "L'égalité des chances est le principe juste : chacun doit pouvoir réussir selon son mérite, sans que la naissance décide de tout.",
+      "Sans correction des inégalités de départ, l'égalité des chances reste un slogan : il faut agir sur les résultats pour égaliser les chances réelles.",
+      "L'égalité des résultats punit l'effort et décourage l'initiative ; la liberté individuelle prime sur l'égalité.",
+      "Une société juste combine plusieurs principes : chances, résultats minimaux (filets de sécurité) et liberté, arbitrés démocratiquement."
+    ],
+    "followUps": [
+      "Comment mesurer l'égalité des chances ?",
+      "L'héritage est-il compatible avec l'égalité des chances ?",
+      "L'école peut-elle compenser les inégalités sociales de départ ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-10",
+    "category": "politics",
+    "topic": "Responsabilité des plateformes",
+    "prompt": "Les plateformes numériques devraient-elles être responsables du contenu que leurs algorithmes recommandent ?",
+    "context": "Le Digital Services Act européen (2022) impose des obligations de modération et de transparence algorithmique ; aux États-Unis, la section 230 du Communications Decency Act protège les plateformes de la responsabilité éditoriale. Les débats portent sur la distinction entre hébergeur passif et éditeur actif.",
+    "perspectives": [
+      "Un algorithme qui amplifie un contenu est un choix éditorial : la responsabilité doit suivre l'amplification.",
+      "Rendre les plateformes responsables les poussera à la sur-modération et à la censure préventive.",
+      "La responsabilité doit être proportionnée et encadrée : obligations de moyens, audits, recours, plutôt que responsabilité de résultat.",
+      "Le problème de fond est la concentration du pouvoir algorithmique entre quelques entreprises."
+    ],
+    "followUps": [
+      "La responsabilité doit-elle s'appliquer aussi aux contenus générés par IA ?",
+      "Les petites plateformes doivent-elles avoir les mêmes obligations que les géantes ?",
+      "Qui contrôle l'audit des algorithmes ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "UE / USA",
+    "version": 1
+  },
+  {
+    "id": "pol-11",
+    "category": "politics",
+    "topic": "Intelligence artificielle et pouvoir",
+    "prompt": "L'intelligence artificielle risque-t-elle d'accroître les inégalités de pouvoir entre ceux qui la contrôlent et les autres ?",
+    "context": "Les modèles d'IA sont concentrés dans quelques entreprises et pays. Les rapports (AI Now Institute, PNUD) alertent sur la concentration des données, de la puissance de calcul et des compétences. Des initiatives (AI Act européen, 2024) tentent d'encadrer les usages à risque.",
+    "perspectives": [
+      "La concentration de l'IA entre peu de mains crée une nouvelle forme de pouvoir comparable à celle des empires de données.",
+      "L'IA ouvre au contraire des opportunités : outils gratuits, open source, éducation — elle peut démocratiser l'accès à l'expertise.",
+      "Le risque principal n'est pas technique mais institutionnel : absence de régulation et de contre-pouvoirs.",
+      "L'enjeu est l'usage : une IA peut servir à surveiller comme à soigner ; ce sont les règles qui font la différence."
+    ],
+    "followUps": [
+      "Qui doit contrôler l'IA : les États, les citoyens, les entreprises, des organismes internationaux ?",
+      "L'IA open source réduit-elle ou augmente-t-elle les risques ?",
+      "Faut-il un droit à l'explication des décisions algorithmiques ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-12",
+    "category": "politics",
+    "topic": "Désinformation",
+    "prompt": "La lutte contre la désinformation peut-elle devenir une forme de contrôle politique ?",
+    "context": "Depuis 2016, de nombreux États ont créé des dispositifs anti-désinformation (lois, agences, unités de fact-checking). L'UE a adopté un Code de bonnes pratiques contre la désinformation (2018, renforcé en 2022). Les critiques soulignent le risque d'instrumentalisation par les gouvernements eux-mêmes.",
+    "perspectives": [
+      "La désinformation massive menace les démocraties : ne rien faire revient à laisser les manipulations prospérer.",
+      "Qui définit la vérité ? Les dispositifs publics de lutte contre la désinformation peuvent être détournés contre les oppositions.",
+      "La réponse doit être indépendante : fact-checking pluraliste, éducation aux médias, transparence des algorithmes, plutôt que censure d'État.",
+      "Le problème est mondial : une réponse nationale est inefficace face à des campagnes transnationales."
+    ],
+    "followUps": [
+      "Quelle est la frontière entre erreur, opinion et manipulation ?",
+      "Les plateformes doivent-elles supprimer ou simplement étiqueter les contenus douteux ?",
+      "L'éducation aux médias peut-elle suffire à long terme ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-13",
+    "category": "politics",
+    "topic": "Immigration",
+    "prompt": "Un État démocratique peut-il fixer des quotas d'immigration sans trahir ses principes d'ouverture ?",
+    "context": "Les politiques migratoires combinent des dimensions économiques (marché du travail), humanitaires (asile) et de souveraineté (contrôle des frontières). La Convention de Genève (1951) garantit le droit d'asile ; l'UE a construit un espace Schengen avec des règles communes, sans consensus sur une politique migratoire commune.",
+    "perspectives": [
+      "Contrôler les frontières est un attribut de la souveraineté : chaque État peut décider qui entre, tout en respectant le droit d'asile.",
+      "L'asile et l'immigration économique sont liés dans les parcours réels : les séparer strictement produit des situations intenables.",
+      "L'immigration est un atout démographique et économique quand elle est bien intégrée : les quotas devraient refléter des besoins.",
+      "La question morale précède la question administrative : que devons-nous aux personnes qui fuient la guerre ou la misère ?"
+    ],
+    "followUps": [
+      "Où passe la frontière entre réfugié et migrant économique ?",
+      "Les quotas doivent-ils être négociés au niveau national ou européen ?",
+      "L'intégration réussie dépend-elle surtout des migrants ou de la société d'accueil ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "UE",
+    "version": 1
+  },
+  {
+    "id": "pol-14",
+    "category": "politics",
+    "topic": "Souveraineté et mondialisation",
+    "prompt": "La mondialisation rend-elle l'idée de souveraineté nationale obsolète ?",
+    "context": "Les États échangent leur souveraineté dans l'UE, l'OMC ou les traités climatiques ; les crises (financière 2008, pandémie, chaînes d'approvisionnement) ont relancé le débat sur la « souveraineté économique ». Le politiste Jean Bodin (1576) définissait la souveraineté comme pouvoir absolu et perpétuel — une définition que la mondialisation complexifie.",
+    "perspectives": [
+      "Les grands défis (climat, finance, pandémies, numérique) dépassent les frontières : seule la coopération internationale peut les traiter.",
+      "La souveraineté reste le cadre de la légitimité démocratique : les décisions doivent être prises là où les citoyens peuvent les contrôler.",
+      "La mondialisation n'a pas supprimé la souveraineté : elle l'a transformée — les États restent centraux mais partagent des compétences.",
+      "Le retour de la puissance et des rivalités montre que la souveraineté demeure un enjeu de premier plan."
+    ],
+    "followUps": [
+      "Quelles compétences doivent rester nationales et lesquelles doivent être partagées ?",
+      "Une entreprise multinationale a-t-elle plus de pouvoir qu'un État ?",
+      "La souveraineté numérique est-elle possible ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-15",
+    "category": "politics",
+    "topic": "Énergie",
+    "prompt": "Un État peut-il concilier la fin du nucléaire, la sortie des fossiles et la sécurité d'approvisionnement énergétique ?",
+    "context": "L'Allemagne a sorti le nucléaire (2023) en augmentant temporairement le charbon puis en développant les renouvelables ; la France maintient un parc nucléaire et vise la neutralité carbone en 2050. Les mix énergétiques nationaux reflètent des choix techniques, économiques et politiques différents.",
+    "perspectives": [
+      "Les renouvelables peuvent remplacer le nucléaire si on accepte des investissements massifs, du stockage et des réseaux renforcés.",
+      "Le nucléaire est une énergie bas carbone dense qui assure une base stable ; le sortir prématurément aggrave la dépendance aux fossiles.",
+      "La sobriété énergétique est le levier sous-estimé : réduire la consommation change l'équation sans choisir entre filières.",
+      "Le choix doit être démocratique et transparent sur les coûts réels, les déchets et les risques de chaque filière."
+    ],
+    "followUps": [
+      "Qui doit supporter les coûts de la transition : consommateurs, entreprises, État ?",
+      "Les choix énergétiques doivent-ils être européens ou nationaux ?",
+      "La dépendance aux importations d'énergie est-elle un risque politique acceptable ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "Europe",
+    "version": 1
+  },
+  {
+    "id": "pol-16",
+    "category": "politics",
+    "topic": "Services publics",
+    "prompt": "Les services publics essentiels doivent-ils être gérés par l'État ou peuvent-ils être délégués au secteur privé ?",
+    "context": "Depuis les années 1980, de nombreux pays ont libéralisé ou privatisé des secteurs (télécoms, énergie, transport, santé). Les comparaisons (OCDE, Eurostat) montrent des résultats contrastés selon les secteurs et les cadres réglementaires. La France conserve des monopoles publics dans certains domaines (électricité, rail) et des délégations dans d'autres (eau).",
+    "perspectives": [
+      "Le service public garantit l'égalité d'accès et la continuité : l'État seul peut assumer des missions non rentables.",
+      "La concurrence et le secteur privé apportent efficacité, innovation et meilleurs prix quand un cadre réglementaire solide existe.",
+      "La vraie question n'est pas public ou privé mais la qualité de la régulation : missions de service public, contrôle, sanctions.",
+      "Chaque secteur a sa logique : la santé et l'éducation exigent des garanties que les télécoms n'exigent pas."
+    ],
+    "followUps": [
+      "Quels services sont « essentiels » et lesquels ne le sont pas ?",
+      "Une entreprise privée peut-elle garantir l'égalité d'accès sur tout le territoire ?",
+      "Comment évaluer la qualité d'un service public ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-17",
+    "category": "politics",
+    "topic": "Éducation",
+    "prompt": "Le système éducatif doit-il viser en priorité la transmission des savoirs ou la formation du citoyen ?",
+    "context": "Depuis la IIIe République, l'école française a une double mission : instruction et éducation civique. Les débats sur les programmes (sciences, histoire, éducation civique, compétences psychosociales) opposent différentes conceptions de la finalité de l'école. Les comparaisons internationales (PISA) montrent des systèmes très différents.",
+    "perspectives": [
+      "L'école doit d'abord transmettre des savoirs solides : sans culture, il n'y a pas de citoyenneté éclairée.",
+      "Former des citoyens autonomes et critiques est la mission première : les savoirs servent cette finalité.",
+      "Les deux missions sont inséparables : on apprend en exerçant sa citoyenneté et on est citoyen en maîtrisant des savoirs.",
+      "L'école doit s'adapter aux besoins du monde du travail : employabilité et compétences pratiques d'abord."
+    ],
+    "followUps": [
+      "Qui doit définir les programmes : l'État, les enseignants, les familles ?",
+      "L'école peut-elle compenser les inégalités sociales ?",
+      "Le numérique à l'école aide-t-il ou nuit-il à l'apprentissage ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "pol-18",
+    "category": "politics",
+    "topic": "Vie privée",
+    "prompt": "La protection de la vie privée est-elle compatible avec les exigences de sécurité et d'efficacité des services numériques ?",
+    "context": "Le RGPD (2018) donne aux Européens des droits forts sur leurs données ; les services gratuits reposent sur la publicité ciblée. Les débats opposent modèles économiques, sécurité nationale (accès aux données chiffrées) et droit à l'intimité. La Cour de justice de l'UE a invalidé plusieurs mécanismes de transfert de données.",
+    "perspectives": [
+      "La vie privée est un droit fondamental : les services doivent s'y adapter, pas l'inverse.",
+      "Sans données, pas de services innovants ni de détection des fraudes : l'équilibre doit être pragmatique.",
+      "Le consentement informé et la minimisation des données permettent de concilier les intérêts.",
+      "Le modèle économique dominant (publicité ciblée) est le vrai problème : il faut des alternatives payantes et éthiques."
+    ],
+    "followUps": [
+      "Le droit à l'oubli doit-il s'appliquer aux contenus publiés volontairement ?",
+      "Les États peuvent-ils exiger des entreprises le décryptage des messages ?",
+      "Vos données personnelles vous appartiennent-elles vraiment ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "UE",
+    "version": 1
+  },
+  {
+    "id": "pol-19",
+    "category": "politics",
+    "topic": "Guerre et paix",
+    "prompt": "Le droit de la guerre suffit-il à limiter les horreurs des conflits armés modernes ?",
+    "context": "Le droit international humanitaire (conventions de Genève 1949 et protocoles) encadre la conduite des hostilités : protection des civils, interdiction de certaines armes. Les conflits récents posent la question de son application effective face aux bombardements urbains, aux drones et à l'information de guerre.",
+    "perspectives": [
+      "Les conventions de Genève sauvent des vies et créent des normes que même les belligérants invoquent : le droit change les comportements.",
+      "Sans mécanisme de sanction crédible, le droit reste lettre morte face aux États qui le violent.",
+      "La technologie (drones, cyberguerre, IA) crée des zones grises que le droit existant ne couvre pas.",
+      "Le problème est politique : sans volonté de faire respecter le droit, aucune norme ne suffit."
+    ],
+    "followUps": [
+      "Qui doit juger les crimes de guerre ?",
+      "Les armes autonomes doivent-elles être interdites par avance ?",
+      "La presse de guerre doit-elle montrer les images les plus dures ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  }
+]

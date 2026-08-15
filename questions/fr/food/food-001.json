@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "food-pizza-naples",
+    "conceptId": "pizza-naples",
+    "familyId": "italian-food",
+    "type": "mcq",
+    "question": "Dans quelle ville italienne la pizza est-elle née ?",
+    "answers": [
+      "Naples",
+      "Rome",
+      "Milan",
+      "Venise"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "italie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-margherita-colors",
+    "conceptId": "margherita-flag",
+    "familyId": "italian-food",
+    "type": "mcq",
+    "question": "La pizza Margherita représente les couleurs du drapeau italien. Lesquelles ?",
+    "answers": [
+      "Rouge, bleu, blanc",
+      "Vert, jaune, rouge",
+      "Blanc, bleu, rouge",
+      "Rouge, blanc, vert"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "italie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-margherita-name",
+    "conceptId": "margherita-queen",
+    "familyId": "italian-food",
+    "type": "mcq",
+    "question": "La pizza Margherita doit son nom à qui ?",
+    "answers": [
+      "Une région italienne",
+      "Une marque de fromage",
+      "La reine Marguerite d'Italie",
+      "Un chef napolitain"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-sushi-japan",
+    "conceptId": "sushi-japan",
+    "familyId": "asian-food",
+    "type": "mcq",
+    "question": "De quel pays le sushi est-il originaire ?",
+    "answers": [
+      "La Corée",
+      "Le Japon",
+      "La Chine",
+      "La Thaïlande"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "japon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-paella",
+    "conceptId": "paella-valencia",
+    "familyId": "spanish-food",
+    "type": "mcq",
+    "question": "De quelle région d'Espagne la paella est-elle originaire ?",
+    "answers": [
+      "La Valence",
+      "L'Andalousie",
+      "La Catalogne",
+      "Le Pays basque"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "espagne"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-tacos",
+    "conceptId": "tacos-mexico",
+    "familyId": "mexican-food",
+    "type": "mcq",
+    "question": "De quel pays les tacos sont-ils originaires ?",
+    "answers": [
+      "L'Espagne",
+      "Le Pérou",
+      "Les États-Unis",
+      "Le Mexique"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "mexique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-curry",
+    "conceptId": "curry-india",
+    "familyId": "indian-food",
+    "type": "mcq",
+    "question": "De quel pays le curry est-il originaire ?",
+    "answers": [
+      "Le Japon",
+      "La Thaïlande",
+      "L'Inde",
+      "La Chine"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "inde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-foie-gras",
+    "conceptId": "foie-gras-france",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Quel pays est le premier producteur mondial de foie gras ?",
+    "answers": [
+      "La Belgique",
+      "La France",
+      "L'Espagne",
+      "La Hongrie"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-ratatouille",
+    "conceptId": "ratatouille-provence",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "De quelle région française la ratatouille est-elle originaire ?",
+    "answers": [
+      "La Provence",
+      "La Bretagne",
+      "L'Alsace",
+      "La Normandie"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-cassoulet",
+    "conceptId": "cassoulet-southwest",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "De quelle région française le cassoulet est-il originaire ?",
+    "answers": [
+      "Le Nord",
+      "L'Est",
+      "Le Centre",
+      "Le Sud-Ouest"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-baguette-ingredients",
+    "conceptId": "baguette-ingredients",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Quels sont les ingrédients de base de la baguette ?",
+    "answers": [
+      "Farine, sucre, levure, lait",
+      "Farine, huile, eau, miel",
+      "Farine, eau, levure, sel",
+      "Farine, œufs, lait, beurre"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-baguette-unesco",
+    "conceptId": "baguette-unesco",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "En 2022, la baguette a été inscrite au patrimoine culturel immatériel de quelle organisation ?",
+    "answers": [
+      "La FAO",
+      "L'UNESCO",
+      "L'ONU",
+      "L'OMS"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "records",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-croissant-vienna",
+    "conceptId": "croissant-vienna",
+    "familyId": "pastry",
+    "type": "mcq",
+    "question": "Dans quelle ville le croissant a-t-il été inventé ?",
+    "answers": [
+      "Vienne",
+      "Paris",
+      "Bruxelles",
+      "Milan"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-champagne",
+    "conceptId": "champagne-region",
+    "familyId": "drinks",
+    "type": "mcq",
+    "question": "Dans quelle région française le champagne est-il produit ?",
+    "answers": [
+      "La Bourgogne",
+      "Le Bordelais",
+      "L'Alsace",
+      "La Champagne"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "boissons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-bordeaux",
+    "conceptId": "bordeaux-wine",
+    "familyId": "drinks",
+    "type": "mcq",
+    "question": "Quelle région est célèbre pour ses vins rouges comme le Médoc ?",
+    "answers": [
+      "Le Jura",
+      "La Corse",
+      "Bordeaux",
+      "La Champagne"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "boissons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-pastis",
+    "conceptId": "pastis-anise",
+    "familyId": "drinks",
+    "type": "mcq",
+    "question": "Quelle boisson anisée est emblématique de Marseille ?",
+    "answers": [
+      "Le calvados",
+      "Le pastis",
+      "Le kir",
+      "Le pineau"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "boissons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-tarte-tatin",
+    "conceptId": "tatin-inverted",
+    "familyId": "pastry",
+    "type": "mcq",
+    "question": "Quelle est la particularité de la tarte Tatin ?",
+    "answers": [
+      "Elle est cuite à l'envers",
+      "Elle ne contient pas de sucre",
+      "Elle est salée",
+      "Elle est glacée"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "desserts"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-macaron",
+    "conceptId": "macaron-two-shells",
+    "familyId": "pastry",
+    "type": "mcq",
+    "question": "Quelle pâtisserie française est composée de deux coques et d'une garniture ?",
+    "answers": [
+      "Le cannelé",
+      "Le chou à la crème",
+      "L'éclair",
+      "Le macaron"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "desserts"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-kebab-turkey",
+    "conceptId": "kebab-turkey",
+    "familyId": "world-food",
+    "type": "mcq",
+    "question": "De quel pays le kebab est-il originaire ?",
+    "answers": [
+      "Le Liban",
+      "L'Iran",
+      "La Turquie",
+      "La Grèce"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-hamburger",
+    "conceptId": "hamburger-hamburg",
+    "familyId": "world-food",
+    "type": "mcq",
+    "question": "Le nom du hamburger vient de quelle ville ?",
+    "answers": [
+      "Munich",
+      "Hambourg",
+      "Berlin",
+      "Francfort"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-frites-belgium",
+    "conceptId": "fries-belgium",
+    "familyId": "world-food",
+    "type": "mcq",
+    "question": "Quel pays revendique l'invention des frites ?",
+    "answers": [
+      "La Belgique",
+      "La France",
+      "Les États-Unis",
+      "L'Angleterre"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "monde"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-sushi-rice",
+    "conceptId": "sushi-rice",
+    "familyId": "asian-food",
+    "type": "mcq",
+    "question": "Quel ingrédient accompagne obligatoirement le poisson dans le sushi ?",
+    "answers": [
+      "Les pâtes",
+      "Le blé",
+      "Le quinoa",
+      "Le riz vinaigré"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "japon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-wasabi",
+    "conceptId": "wasabi-piquant",
+    "familyId": "asian-food",
+    "type": "mcq",
+    "question": "Quel est le goût caractéristique du wasabi ?",
+    "answers": [
+      "Amer",
+      "Salé",
+      "Piquant",
+      "Sucré"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "japon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-truffle",
+    "conceptId": "truffle-fungus",
+    "familyId": "ingredients",
+    "type": "mcq",
+    "question": "Qu'est-ce que la truffe noire du Périgord ?",
+    "answers": [
+      "Une algue",
+      "Un champignon",
+      "Une racine",
+      "Un fruit"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-saffron",
+    "conceptId": "saffron-expensive",
+    "familyId": "ingredients",
+    "type": "mcq",
+    "question": "Quelle épice est la plus chère du monde au poids ?",
+    "answers": [
+      "Le safran",
+      "La vanille",
+      "La cannelle",
+      "La cardamome"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-vanilla-orchid",
+    "conceptId": "vanilla-orchid",
+    "familyId": "ingredients",
+    "type": "mcq",
+    "question": "De quelle famille de plantes vient la vanille ?",
+    "answers": [
+      "Les rosiers",
+      "Les cactus",
+      "Les palmiers",
+      "Les orchidées"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "plantes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-chocolate-cocoa",
+    "conceptId": "chocolate-cocoa",
+    "familyId": "ingredients",
+    "type": "mcq",
+    "question": "Le chocolat est fabriqué à partir de quoi ?",
+    "answers": [
+      "De noix de coco",
+      "De soja",
+      "De fèves de cacao",
+      "De café"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "chocolat"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-cocoa-origin",
+    "conceptId": "chocolate-americas",
+    "familyId": "ingredients",
+    "type": "mcq",
+    "question": "De quel continent le cacao est-il originaire ?",
+    "answers": [
+      "L'Europe",
+      "L'Amérique",
+      "L'Afrique",
+      "L'Asie"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-herbes-provence",
+    "conceptId": "herbes-de-provence",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Laquelle de ces herbes fait partie du mélange « herbes de Provence » ?",
+    "answers": [
+      "Le thym",
+      "La menthe",
+      "La coriandre",
+      "L'aneth"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "ingredients",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "ingredients",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-dijon",
+    "conceptId": "dijon-mustard",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Dans quelle ville française la moutarde est-elle traditionnellement produite ?",
+    "answers": [
+      "Lyon",
+      "Bordeaux",
+      "Toulouse",
+      "Dijon"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-escargots",
+    "conceptId": "escargots-burgundy",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Quelle région française est célèbre pour ses escargots au beurre persillé ?",
+    "answers": [
+      "L'Alsace",
+      "Le Languedoc",
+      "La Bourgogne",
+      "La Bretagne"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-camembert",
+    "conceptId": "camembert-normandy",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "De quelle région française le camembert est-il originaire ?",
+    "answers": [
+      "La Savoie",
+      "La Normandie",
+      "L'Auvergne",
+      "Le Jura"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "fromages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-roquefort",
+    "conceptId": "roquefort-sheep",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Le roquefort est fabriqué avec le lait de quel animal ?",
+    "answers": [
+      "La brebis",
+      "La vache",
+      "La chèvre",
+      "La jument"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "fromages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-comte",
+    "conceptId": "comte-jura",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Quel fromage français à pâte pressée cuite est produit dans le Jura ?",
+    "answers": [
+      "Le roquefort",
+      "Le camembert",
+      "Le chèvre",
+      "Le comté"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "fromages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-boeuf-bourguignon",
+    "conceptId": "boeuf-bourguignon",
+    "familyId": "french-food",
+    "type": "mcq",
+    "question": "Quel plat traditionnel français mijote du bœuf dans du vin rouge ?",
+    "answers": [
+      "Le pot-au-feu",
+      "Le coq au vin",
+      "Le bœuf bourguignon",
+      "La blanquette de veau"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "plats"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-tapas",
+    "conceptId": "tapas-spain",
+    "familyId": "spanish-food",
+    "type": "mcq",
+    "question": "Comment s'appellent les petites portions servies dans les bars espagnols ?",
+    "answers": [
+      "Les dim sum",
+      "Les tapas",
+      "Les antipasti",
+      "Les mezze"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "espagne"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-dim-sum",
+    "conceptId": "dim-sum-china",
+    "familyId": "asian-food",
+    "type": "mcq",
+    "question": "Les dim sum sont originaires de quel pays ?",
+    "answers": [
+      "La Chine",
+      "Le Japon",
+      "La Thaïlande",
+      "Le Vietnam"
+    ],
+    "correctAnswer": 0,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "chine"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-couscous",
+    "conceptId": "couscous-maghreb",
+    "familyId": "world-food",
+    "type": "mcq",
+    "question": "De quelle région du monde le couscous est-il originaire ?",
+    "answers": [
+      "Le Moyen-Orient",
+      "L'Afrique de l'Ouest",
+      "L'Inde",
+      "Le Maghreb"
+    ],
+    "correctAnswer": 1,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "maghreb"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-chili-con-carne",
+    "conceptId": "chili-con-carne-texas",
+    "familyId": "american-food",
+    "type": "mcq",
+    "question": "De quel État américain le chili con carne est-il originaire ?",
+    "answers": [
+      "La Louisiane",
+      "Le Nouveau-Mexique",
+      "Le Texas",
+      "La Californie"
+    ],
+    "correctAnswer": 2,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "etats-unis"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "food-bagel",
+    "conceptId": "bagel-poland",
+    "familyId": "world-food",
+    "type": "mcq",
+    "question": "De quel pays d'Europe le bagel est-il originaire ?",
+    "answers": [
+      "L'Allemagne",
+      "La Pologne",
+      "L'Italie",
+      "La France"
+    ],
+    "correctAnswer": 3,
+    "category": "food",
+    "subcategory": "gastronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "gastronomie",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

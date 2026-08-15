@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "film-casablanca-rick",
+    "conceptId": "humphrey-bogart-casablanca",
+    "familyId": "casablanca",
+    "type": "mcq",
+    "question": "Quel acteur joue Rick Blaine dans Casablanca ?",
+    "answers": [
+      "Cary Grant",
+      "James Stewart",
+      "Clark Gable",
+      "Humphrey Bogart"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-casablanca-quote",
+    "conceptId": "play-it-again-sam",
+    "familyId": "casablanca",
+    "type": "mcq",
+    "question": "Quelle réplique célèbre est associée au film Casablanca ?",
+    "answers": [
+      "Jouez-la encore, Sam",
+      "Que la force soit avec vous",
+      "Je reviendrai",
+      "Houston, on a un problème"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-terminator-quote",
+    "conceptId": "i-will-be-back",
+    "familyId": "terminator-films",
+    "type": "mcq",
+    "question": "Quelle réplique culte prononce le Terminator ?",
+    "answers": [
+      "Here's Johnny!",
+      "Make my day",
+      "I'll be back",
+      "You talking to me?"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-scarface-quote",
+    "conceptId": "say-hello-to-my-little-friend",
+    "familyId": "scarface",
+    "type": "mcq",
+    "question": "Quelle réplique culte est prononcée par Tony Montana dans Scarface ?",
+    "answers": [
+      "Je suis le roi du monde",
+      "Tu me parles, à moi ?",
+      "Houston, on a un problème",
+      "Dis bonjour à mon petit ami"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-taxi-driver-quote",
+    "conceptId": "you-talking-to-me",
+    "familyId": "taxi-driver",
+    "type": "mcq",
+    "question": "Dans Taxi Driver, quelle réplique Robert De Niro répète-t-il devant son miroir ?",
+    "answers": [
+      "Bonne nuit, et bonne chance",
+      "Tu me parles, à moi ?",
+      "Je reviendrai",
+      "Qui va là ?"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-wizard-of-oz-quote",
+    "conceptId": "toto-kansas",
+    "familyId": "wizard-of-oz",
+    "type": "mcq",
+    "question": "Quelle réplique de Dorothy clôt Le Magicien d'Oz ?",
+    "answers": [
+      "Il n'y a pas d'endroit comme la maison",
+      "Je suis prête",
+      "Suis le chemin de briques jaunes",
+      "Toto, j'ai un mauvais pressentiment"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-record-11",
+    "conceptId": "ben-hur-11-oscars",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Avec Titanic et Le Retour du roi, quel film de 1959 détient le record de 11 Oscars ?",
+    "answers": [
+      "Cléopâtre",
+      "Lawrence d'Arabie",
+      "Autant en emporte le vent",
+      "Ben-Hur"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-actor-3",
+    "conceptId": "daniel-day-lewis-3-oscars",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Quel acteur a remporté trois Oscars du meilleur acteur ?",
+    "answers": [
+      "Tom Hanks",
+      "Denzel Washington",
+      "Daniel Day-Lewis",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-actress-4",
+    "conceptId": "katharine-hepburn-4-oscars",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Quelle actrice détient le record de quatre Oscars de la meilleure actrice ?",
+    "answers": [
+      "Ingrid Bergman",
+      "Katharine Hepburn",
+      "Meryl Streep",
+      "Bette Davis"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-parasite",
+    "conceptId": "parasite-best-picture-2020",
+    "familyId": "oscars-best-picture",
+    "type": "mcq",
+    "question": "Quel film a remporté l'Oscar du meilleur film en 2020 ?",
+    "answers": [
+      "Parasite",
+      "1917",
+      "Joker",
+      "Once Upon a Time in Hollywood"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-will-smith",
+    "conceptId": "will-smith-slap-2022",
+    "familyId": "oscars-ceremonies",
+    "type": "mcq",
+    "question": "Lors de quelle cérémonie des Oscars Will Smith a-t-il giflé Chris Rock ?",
+    "answers": [
+      "2018",
+      "2020",
+      "2024",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "ceremonies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-se7en-director",
+    "conceptId": "fincher-se7en",
+    "familyId": "fincher-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Seven (Se7en) et Fight Club ?",
+    "answers": [
+      "Paul Thomas Anderson",
+      "Darren Aronofsky",
+      "David Fincher",
+      "David Lynch"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-goodfellas-director",
+    "conceptId": "scorsese-goodfellas",
+    "familyId": "scorsese-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Les Affranchis (Goodfellas) ?",
+    "answers": [
+      "Sergio Leone",
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Quentin Tarantino"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-2001-director",
+    "conceptId": "kubrick-2001",
+    "familyId": "kubrick-films",
+    "type": "mcq",
+    "question": "Qui a réalisé 2001 : l'Odyssée de l'espace ?",
+    "answers": [
+      "Stanley Kubrick",
+      "Ridley Scott",
+      "Andreï Tarkovski",
+      "George Lucas"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-blade-runner-director",
+    "conceptId": "ridley-scott-blade-runner",
+    "familyId": "scott-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Blade Runner et Alien ?",
+    "answers": [
+      "James Cameron",
+      "John Carpenter",
+      "David Cronenberg",
+      "Ridley Scott"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-psycho-director",
+    "conceptId": "hitchcock-psycho",
+    "familyId": "hitchcock-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Psychose (Psycho) en 1960 ?",
+    "answers": [
+      "Billy Wilder",
+      "John Huston",
+      "Alfred Hitchcock",
+      "Orson Welles"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-citizen-kane",
+    "conceptId": "citizen-kane-welles",
+    "familyId": "citizen-kane",
+    "type": "mcq",
+    "question": "Quel film d'Orson Welles est régulièrement élu meilleur film de l'histoire ?",
+    "answers": [
+      "La Règle du jeu",
+      "Citizen Kane",
+      "Le Parrain",
+      "Casablanca"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "films",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-kill-bill-bride",
+    "conceptId": "beatrix-kiddo-bride",
+    "familyId": "tarantino-films",
+    "type": "mcq",
+    "question": "Quel est le vrai nom de « La Mariée » dans Kill Bill ?",
+    "answers": [
+      "Beatrix Kiddo",
+      "Verna Dewitt",
+      "Elle Driver",
+      "Gogo Yubari"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "films",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-avatar-pandora",
+    "conceptId": "pandora-avatar",
+    "familyId": "avatar-films",
+    "type": "mcq",
+    "question": "Sur quelle planète se déroule le film Avatar ?",
+    "answers": [
+      "Endor",
+      "Tatooine",
+      "Arrakis",
+      "Pandora"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "films",
+      "univers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-avatar-species",
+    "conceptId": "navi-avatar",
+    "familyId": "avatar-films",
+    "type": "mcq",
+    "question": "Comment s'appelle le peuple bleu humanoïde d'Avatar ?",
+    "answers": [
+      "Les Klingons",
+      "Les Wookies",
+      "Les Na'vi",
+      "Les Ewoks"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "films",
+      "univers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-jurassic-park-director",
+    "conceptId": "spielberg-jurassic-park",
+    "familyId": "spielberg-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Jurassic Park en 1993 ?",
+    "answers": [
+      "Michael Bay",
+      "Steven Spielberg",
+      "James Cameron",
+      "Roland Emmerich"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-interstellar-planet",
+    "conceptId": "interstellar-miller",
+    "familyId": "nolan-films",
+    "type": "mcq",
+    "question": "Dans Interstellar, quelle planète les astronautes visitent-ils en premier ?",
+    "answers": [
+      "Miller",
+      "Cooper",
+      "Edmunds",
+      "Mann"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "films",
+      "science-fiction"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-gladiator-maximus",
+    "conceptId": "maximus-gladiator",
+    "familyId": "gladiator-films",
+    "type": "mcq",
+    "question": "Quel acteur incarne Maximus dans Gladiator ?",
+    "answers": [
+      "Joaquin Phoenix",
+      "Mel Gibson",
+      "Hugh Jackman",
+      "Russell Crowe"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-fight-club-rule",
+    "conceptId": "fight-club-first-rule",
+    "familyId": "fight-club",
+    "type": "mcq",
+    "question": "Quelle est la première règle du Fight Club ?",
+    "answers": [
+      "On ne se bat jamais seul",
+      "Le combat s'arrête au premier sang",
+      "On ne parle pas du Fight Club",
+      "Toujours payer ses dettes"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "films",
+      "repliques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-amelie-arrondissement",
+    "conceptId": "amelie-montmartre",
+    "familyId": "amelie-poulain",
+    "type": "mcq",
+    "question": "Dans quel quartier parisien se déroule Le Fabuleux Destin d'Amélie Poulain ?",
+    "answers": [
+      "Belleville",
+      "Montmartre",
+      "Le Marais",
+      "Saint-Germain-des-Prés"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "films",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-asterix-depardieu",
+    "conceptId": "depardieu-obelix",
+    "familyId": "asterix-films",
+    "type": "mcq",
+    "question": "Quel acteur incarne Obélix dans les adaptations françaises d'Astérix ?",
+    "answers": [
+      "Gérard Depardieu",
+      "Christian Clavier",
+      "Daniel Auteuil",
+      "Alain Delon"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "comedie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-intouchables-actor",
+    "conceptId": "omar-sy-intouchables",
+    "familyId": "intouchables",
+    "type": "mcq",
+    "question": "Quel acteur joue Driss dans Intouchables ?",
+    "answers": [
+      "Gad Elmaleh",
+      "Jamel Debbouze",
+      "Romain Duris",
+      "Omar Sy"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "comedie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-taxi-marseille",
+    "conceptId": "taxi-besson",
+    "familyId": "taxi-films",
+    "type": "mcq",
+    "question": "Dans quelle ville se déroule la saga Taxi produite par Luc Besson ?",
+    "answers": [
+      "Lyon",
+      "Nice",
+      "Marseille",
+      "Paris"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "films",
+      "comedie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-bienvenue-chtis-record",
+    "conceptId": "chtis-boon",
+    "familyId": "boon-films",
+    "type": "mcq",
+    "question": "Quel film de Dany Boon détient le record d'entrées du cinéma français ?",
+    "answers": [
+      "Le Corniaud",
+      "Bienvenue chez les Ch'tis",
+      "Intouchables",
+      "Astérix et Obélix : Mission Cléopâtre"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "films",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-cotillard-oscar",
+    "conceptId": "marion-cotillard-la-mome",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Quelle actrice française a remporté l'Oscar de la meilleure actrice pour son rôle d'Édith Piaf dans La Môme ?",
+    "answers": [
+      "Marion Cotillard",
+      "Isabelle Huppert",
+      "Juliette Binoche",
+      "Audrey Tautou"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "actrices"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-leon-besson",
+    "conceptId": "leon-besson-film",
+    "familyId": "besson-films",
+    "type": "mcq",
+    "question": "Quel film de Luc Besson met en scène un tueur à gages et la jeune Mathilda ?",
+    "answers": [
+      "Nikita",
+      "Le Grand Bleu",
+      "Le Cinquième Élément",
+      "Léon"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "films",
+      "realisateurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-5th-element-leeloo",
+    "conceptId": "leeloo-fifth-element",
+    "familyId": "besson-films",
+    "type": "mcq",
+    "question": "Quelle actrice incarne Leeloo dans Le Cinquième Élément ?",
+    "answers": [
+      "Natalie Portman",
+      "Carrie-Anne Moss",
+      "Milla Jovovich",
+      "Scarlett Johansson"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-beetlejuice-burton",
+    "conceptId": "burton-beetlejuice",
+    "familyId": "burton-films",
+    "type": "mcq",
+    "question": "Qui a réalisé Beetlejuice, L'Étrange Noël de monsieur Jack et Edward aux mains d'argent ?",
+    "answers": [
+      "Guillermo del Toro",
+      "Tim Burton",
+      "Wes Anderson",
+      "Terry Gilliam"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-edward-scissors",
+    "conceptId": "depp-edward-scissorhands",
+    "familyId": "burton-films",
+    "type": "mcq",
+    "question": "Quel acteur incarne Edward aux mains d'argent ?",
+    "answers": [
+      "Johnny Depp",
+      "Tim Roth",
+      "Gary Oldman",
+      "Daniel Day-Lewis"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-la-la-land-director",
+    "conceptId": "chazelle-la-la-land",
+    "familyId": "chazelle-films",
+    "type": "mcq",
+    "question": "Qui a réalisé La La Land ?",
+    "answers": [
+      "David O. Russell",
+      "Tom Hooper",
+      "Rob Marshall",
+      "Damien Chazelle"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-mad-max-fury-road",
+    "conceptId": "max-fury-road",
+    "familyId": "mad-max-films",
+    "type": "mcq",
+    "question": "Quel acteur incarne Max dans Mad Max : Fury Road ?",
+    "answers": [
+      "Keanu Reeves",
+      "Jason Statham",
+      "Tom Hardy",
+      "Mel Gibson"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "acteurs",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "acteurs",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-inception-totem",
+    "conceptId": "inception-totem",
+    "familyId": "nolan-films",
+    "type": "mcq",
+    "question": "Dans Inception, quel objet sert de totem à Cobb ?",
+    "answers": [
+      "Un dé",
+      "Une toupie",
+      "Une montre",
+      "Une clé"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "films",
+      "univers"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-coco-mexico",
+    "conceptId": "coco-best-animation",
+    "familyId": "pixar-films",
+    "type": "mcq",
+    "question": "Quel film d'animation Pixar de 2017 se déroule au Mexique pour la fête des morts ?",
+    "answers": [
+      "Coco",
+      "Vice-Versa",
+      "Le Voyage d'Arlo",
+      "Soul"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "animation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "animation",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-ghibli-studio-prod",
+    "conceptId": "ghibli-spirited-away-producer",
+    "familyId": "animation-studios",
+    "type": "mcq",
+    "question": "Quel studio d'animation japonais a produit Le Voyage de Chihiro ?",
+    "answers": [
+      "Toei Animation",
+      "Madhouse",
+      "Production I.G.",
+      "Studio Ghibli"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "animation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animation",
+      "studios"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-dujardin-oscar",
+    "conceptId": "jean-dujardin-artist",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Quel acteur français a remporté l'Oscar du meilleur acteur pour The Artist en 2012 ?",
+    "answers": [
+      "Omar Sy",
+      "Vincent Cassel",
+      "Jean Dujardin",
+      "Gérard Depardieu"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "acteurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-artist-best-picture",
+    "conceptId": "artist-best-picture",
+    "familyId": "oscars-best-picture",
+    "type": "mcq",
+    "question": "Quel film muet en noir et blanc a remporté l'Oscar du meilleur film en 2012 ?",
+    "answers": [
+      "La Couleur des sentiments",
+      "The Artist",
+      "Hugo",
+      "Minuit à Paris"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-delorean-time-machine",
+    "conceptId": "delorean-time-machine",
+    "familyId": "back-to-the-future",
+    "type": "mcq",
+    "question": "Quel véhicule sert de machine à voyager dans le temps dans Retour vers le futur ?",
+    "answers": [
+      "Une DeLorean",
+      "Une Ford Mustang",
+      "Une Ferrari",
+      "Une Vespa"
+    ],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "films",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-bttf-director",
+    "conceptId": "zemeckis-bttf",
+    "familyId": "back-to-the-future",
+    "type": "mcq",
+    "question": "Qui a réalisé Retour vers le futur ?",
+    "answers": [
+      "Steven Spielberg",
+      "John Landis",
+      "Ivan Reitman",
+      "Robert Zemeckis"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "realisateurs",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-gremlins-rule",
+    "conceptId": "gremlins-rules",
+    "familyId": "gremlins",
+    "type": "mcq",
+    "question": "Quelle est l'une des trois règles à respecter avec un mogwai dans Gremlins ?",
+    "answers": [
+      "Ne pas le sortir de sa cage",
+      "Ne pas le faire dormir",
+      "Ne pas l'exposer à la lumière du soleil",
+      "Ne jamais lui parler"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "films",
+      "franchises"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-oscars-meryl",
+    "conceptId": "meryl-streep-nominations",
+    "familyId": "oscars-records",
+    "type": "mcq",
+    "question": "Quelle actrice détient le record du plus grand nombre de nominations aux Oscars ?",
+    "answers": [
+      "Judi Dench",
+      "Meryl Streep",
+      "Katharine Hepburn",
+      "Cate Blanchett"
+    ],
+    "correctAnswer": 3,
+    "category": "cinema",
+    "subcategory": "oscars",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "oscars",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "film-eiffel-1900",
+    "conceptId": "paris-1900-olympics-cinema",
+    "familyId": "films-historiques",
+    "type": "mcq",
+    "question": "Quel film de 2011 retrace la naissance du cinéma en noir et blanc, en hommage à Georges Méliès ?",
+    "answers": [
+      "Minuit à Paris",
+      "Le Discours d'un roi",
+      "Hugo Cabret",
+      "The Artist"
+    ],
+    "correctAnswer": 2,
+    "category": "cinema",
+    "subcategory": "films",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "films",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

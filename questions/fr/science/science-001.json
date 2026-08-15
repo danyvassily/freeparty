@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "sci-water-formula",
+    "conceptId": "water-h2o",
+    "familyId": "chemistry-basics",
+    "type": "mcq",
+    "question": "Quelle est la formule chimique de l'eau ?",
+    "answers": [
+      "H2O",
+      "CO2",
+      "O2",
+      "NaCl"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "basiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-gravity-newton",
+    "conceptId": "newton-gravity",
+    "familyId": "physics-laws",
+    "type": "mcq",
+    "question": "Qui a formulé la loi de la gravitation universelle ?",
+    "answers": [
+      "Albert Einstein",
+      "Galilée",
+      "Archimède",
+      "Isaac Newton"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "decouvertes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-einstein-relativity",
+    "conceptId": "einstein-relativity",
+    "familyId": "physics-theories",
+    "type": "mcq",
+    "question": "Quelle théorie Albert Einstein a-t-il publiée en 1905 et 1915 ?",
+    "answers": [
+      "La sélection naturelle",
+      "La tectonique des plaques",
+      "La relativité",
+      "La gravitation universelle"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "theories"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-light-speed",
+    "conceptId": "speed-of-light",
+    "familyId": "physics-constants",
+    "type": "mcq",
+    "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+    "answers": [
+      "30 000 km/s",
+      "300 000 km/s",
+      "150 000 km/s",
+      "1 000 km/s"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "constantes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-sound-vacuum",
+    "conceptId": "sound-vacuum",
+    "familyId": "physics-waves",
+    "type": "mcq",
+    "question": "Dans quel milieu le son ne se propage-t-il pas ?",
+    "answers": [
+      "Le vide",
+      "L'air",
+      "L'eau",
+      "L'acier"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "ondes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-earth-core",
+    "conceptId": "earth-inner-core",
+    "familyId": "geology",
+    "type": "mcq",
+    "question": "Quelle est la température approximative du noyau terrestre ?",
+    "answers": [
+      "1 000 °C",
+      "200 °C",
+      "15 000 °C",
+      "5 500 °C"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "geologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "geologie",
+      "terre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-earth-crust",
+    "conceptId": "earth-crust",
+    "familyId": "geology",
+    "type": "mcq",
+    "question": "Comment s'appelle la couche externe solide de la Terre ?",
+    "answers": [
+      "Le noyau",
+      "L'asthénosphère",
+      "La croûte",
+      "Le manteau"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "geologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "geologie",
+      "terre"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-atom-nucleus",
+    "conceptId": "atom-structure",
+    "familyId": "physics-atoms",
+    "type": "mcq",
+    "question": "Quelles particules se trouvent dans le noyau d'un atome ?",
+    "answers": [
+      "Photons et électrons",
+      "Protons et neutrons",
+      "Protons et électrons",
+      "Neutrons et électrons"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "atomes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-curie-radium",
+    "conceptId": "curie-radioactivity",
+    "familyId": "discoveries",
+    "type": "mcq",
+    "question": "Qui a découvert le radium et le polonium ?",
+    "answers": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Lise Meitner",
+      "Irène Joliot-Curie"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "prix-nobel"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-penicillin",
+    "conceptId": "fleming-penicillin",
+    "familyId": "discoveries",
+    "type": "mcq",
+    "question": "Qui a découvert la pénicilline en 1928 ?",
+    "answers": [
+      "Louis Pasteur",
+      "Robert Koch",
+      "Joseph Lister",
+      "Alexander Fleming"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "medecine"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-pasteur-rabies",
+    "conceptId": "pasteur-rabies",
+    "familyId": "discoveries",
+    "type": "mcq",
+    "question": "Contre quelle maladie Louis Pasteur a-t-il mis au point le premier vaccin humain ?",
+    "answers": [
+      "La tuberculose",
+      "Le tétanos",
+      "La rage",
+      "La variole"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "medecine"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-dna-shape",
+    "conceptId": "dna-double-helix",
+    "familyId": "biology-genetics",
+    "type": "mcq",
+    "question": "Quelle forme a la molécule d'ADN ?",
+    "answers": [
+      "Un cube",
+      "Une double hélice",
+      "Une spirale plate",
+      "Un cercle"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "genetique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-dna-cytosine",
+    "conceptId": "dna-bases",
+    "familyId": "biology-genetics",
+    "type": "mcq",
+    "question": "Quelle est la quatrième base de l'ADN, avec l'adénine, la thymine et la guanine ?",
+    "answers": [
+      "La cytosine",
+      "L'uracile",
+      "La xanthine",
+      "L'inosine"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "genetique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-human-cells",
+    "conceptId": "human-cells-count",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Combien de cellules environ compose le corps humain ?",
+    "answers": [
+      "1 milliard",
+      "100 millions",
+      "10 000 milliards",
+      "37 000 milliards"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-red-blood-cells",
+    "conceptId": "red-blood-cells",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Quelle cellule du sang transporte l'oxygène ?",
+    "answers": [
+      "La plaquette",
+      "Le lymphocyte",
+      "Le globule rouge",
+      "Le globule blanc"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-heart-chambers",
+    "conceptId": "heart-4-chambers",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Combien de cavités possède le cœur humain ?",
+    "answers": [
+      "6",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-adult-bones",
+    "conceptId": "adult-bones",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Combien d'os compte approximativement le squelette d'un adulte ?",
+    "answers": [
+      "206",
+      "150",
+      "300",
+      "98"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-baby-bones",
+    "conceptId": "baby-bones",
+    "familyId": "biology-human",
+    "type": "mcq",
+    "question": "Combien d'os environ possède un nouveau-né ?",
+    "answers": [
+      "Environ 100",
+      "Environ 500",
+      "Environ 50",
+      "Environ 300"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-chromosomes",
+    "conceptId": "human-chromosomes",
+    "familyId": "biology-genetics",
+    "type": "mcq",
+    "question": "Combien de chromosomes possède une cellule humaine normale ?",
+    "answers": [
+      "48",
+      "44",
+      "46",
+      "23"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "biologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "biologie",
+      "genetique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-darwin-origin",
+    "conceptId": "darwin-evolution",
+    "familyId": "biology-evolution",
+    "type": "mcq",
+    "question": "Qui a publié L'Origine des espèces en 1859 ?",
+    "answers": [
+      "Carl von Linné",
+      "Charles Darwin",
+      "Jean-Baptiste Lamarck",
+      "Georges Cuvier"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "evolution"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-dinosaur-extinction",
+    "conceptId": "dinosaur-extinction",
+    "familyId": "paleontology",
+    "type": "mcq",
+    "question": "Quelle catastrophe a provoqué l'extinction des dinosaures il y a 66 millions d'années ?",
+    "answers": [
+      "La chute d'un astéroïde",
+      "Une éruption solaire",
+      "Une glaciation totale",
+      "Une épidémie"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "paleontologie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "paleontologie",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-sun-star",
+    "conceptId": "sun-star",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quel type d'astre est le Soleil ?",
+    "answers": [
+      "Une planète",
+      "Une comète",
+      "Un satellite",
+      "Une étoile"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "systeme-solaire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-sun-position",
+    "conceptId": "sun-galaxy",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Où se situe le Soleil dans la Voie lactée ?",
+    "answers": [
+      "Au bord extérieur",
+      "Au-dessus du plan galactique",
+      "Dans un bras spiral, loin du centre",
+      "Au centre exact"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "galaxies"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-proxima",
+    "conceptId": "proxima-centauri",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle est l'étoile la plus proche du Soleil ?",
+    "answers": [
+      "Véga",
+      "Proxima du Centaure",
+      "Sirius",
+      "Bételgeuse"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "etoiles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-planets-8",
+    "conceptId": "planets-8",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Combien de planètes compte le Système solaire ?",
+    "answers": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "systeme-solaire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-jupiter-largest",
+    "conceptId": "jupiter-largest",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle est la plus grande planète du Système solaire ?",
+    "answers": [
+      "Saturne",
+      "Neptune",
+      "Uranus",
+      "Jupiter"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "planetes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-mars-red",
+    "conceptId": "mars-red",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle planète est surnommée la planète rouge ?",
+    "answers": [
+      "Mercure",
+      "Jupiter",
+      "Mars",
+      "Vénus"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "planetes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-saturn-rings",
+    "conceptId": "saturn-rings",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle planète est connue pour ses anneaux spectaculaires ?",
+    "answers": [
+      "Neptune",
+      "Saturne",
+      "Jupiter",
+      "Uranus"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "planetes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-moon-distance",
+    "conceptId": "moon-distance",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "À quelle distance approximative la Lune orbite-t-elle autour de la Terre ?",
+    "answers": [
+      "384 000 km",
+      "100 000 km",
+      "1 million de km",
+      "50 000 km"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "lune"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-armstrong",
+    "conceptId": "armstrong-moon",
+    "familyId": "space-exploration",
+    "type": "mcq",
+    "question": "Qui a été le premier homme à marcher sur la Lune en 1969 ?",
+    "answers": [
+      "Youri Gagarine",
+      "John Glenn",
+      "Michael Collins",
+      "Neil Armstrong"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "espace"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-gagarin",
+    "conceptId": "gagarin-first-space",
+    "familyId": "space-exploration",
+    "type": "mcq",
+    "question": "Qui a été le premier homme dans l'espace en 1961 ?",
+    "answers": [
+      "Valentina Terechkova",
+      "Alexeï Leonov",
+      "Youri Gagarine",
+      "Neil Armstrong"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "espace"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-tereshkova",
+    "conceptId": "tereshkova-first-woman",
+    "familyId": "space-exploration",
+    "type": "mcq",
+    "question": "Qui a été la première femme dans l'espace ?",
+    "answers": [
+      "Mae Jemison",
+      "Valentina Terechkova",
+      "Sally Ride",
+      "Kathryn Sullivan"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "decouvertes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "decouvertes",
+      "espace"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-new-moon",
+    "conceptId": "moon-phases",
+    "familyId": "astronomy",
+    "type": "mcq",
+    "question": "Quelle phase de la Lune se produit quand elle est entre la Terre et le Soleil ?",
+    "answers": [
+      "La nouvelle lune",
+      "La pleine lune",
+      "Le premier quartier",
+      "Le dernier quartier"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "astronomie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "astronomie",
+      "lune"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-ice-floats",
+    "conceptId": "ice-density",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Pourquoi la glace flotte-t-elle sur l'eau ?",
+    "answers": [
+      "Elle est plus lourde",
+      "Elle est plus chaude",
+      "Elle contient de l'air comprimé",
+      "Elle est moins dense que l'eau liquide"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "matiere"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-lightning-thunder",
+    "conceptId": "lightning-thunder",
+    "familyId": "physics",
+    "type": "mcq",
+    "question": "Pourquoi voit-on l'éclair avant d'entendre le tonnerre ?",
+    "answers": [
+      "L'éclair est plus proche",
+      "L'oreille est plus lente",
+      "La lumière va plus vite que le son",
+      "Le son ne se propage pas dans l'air"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "physique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "physique",
+      "ondes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-lava",
+    "conceptId": "volcano-lava",
+    "familyId": "geology",
+    "type": "mcq",
+    "question": "Comment s'appelle la roche en fusion lorsqu'elle sort d'un volcan ?",
+    "answers": [
+      "La pierre ponce",
+      "La lave",
+      "Le basalte",
+      "Le granite"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "geologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "geologie",
+      "volcans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-mariana",
+    "conceptId": "mariana-trench",
+    "familyId": "geography",
+    "type": "mcq",
+    "question": "Quel est l'endroit le plus profond des océans ?",
+    "answers": [
+      "La fosse des Mariannes",
+      "La fosse de Java",
+      "La fosse des Kouriles",
+      "La mer Morte"
+    ],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "geologie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "geologie",
+      "oceans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-nitrogen",
+    "conceptId": "atmosphere-nitrogen",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel gaz compose environ 78 % de l'atmosphère terrestre ?",
+    "answers": [
+      "L'oxygène",
+      "Le dioxyde de carbone",
+      "L'argon",
+      "L'azote"
+    ],
+    "correctAnswer": 1,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "atmosphere"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-iron-fe",
+    "conceptId": "iron-fe",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel est le symbole chimique du fer ?",
+    "answers": [
+      "F",
+      "Fr",
+      "Fe",
+      "Ir"
+    ],
+    "correctAnswer": 2,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "sci-gold-au",
+    "conceptId": "gold-au",
+    "familyId": "chemistry",
+    "type": "mcq",
+    "question": "Quel est le symbole chimique de l'or ?",
+    "answers": [
+      "Go",
+      "Au",
+      "Or",
+      "Ag"
+    ],
+    "correctAnswer": 3,
+    "category": "science",
+    "subcategory": "chimie",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chimie",
+      "elements"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

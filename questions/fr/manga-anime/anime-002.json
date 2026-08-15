@@ -1,0 +1,952 @@
+[
+  {
+    "id": "anime-fullmetal-law",
+    "conceptId": "fullmetal-equivalent-exchange",
+    "familyId": "fullmetal",
+    "type": "mcq",
+    "question": "Quel principe régit l'alchimie dans Fullmetal Alchemist ?",
+    "answers": [
+      "L'échange équivalent",
+      "La loi du plus fort",
+      "Le cycle sans fin",
+      "L'harmonie universelle"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "intrigues"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-fullmetal-brothers",
+    "conceptId": "elric-brothers",
+    "familyId": "fullmetal",
+    "type": "mcq",
+    "question": "Quels sont les prénoms des frères Elric dans Fullmetal Alchemist ?",
+    "answers": [
+      "Roy et Riza",
+      "Alex et Olivier",
+      "Van et Trisha",
+      "Edward et Alphonse"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "anime"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-bleach-zangetsu",
+    "conceptId": "zangetsu-ichigo",
+    "familyId": "bleach",
+    "type": "mcq",
+    "question": "Dans Bleach, quel est le nom de l'épée d'Ichigo ?",
+    "answers": [
+      "Kusanagi",
+      "Excalibur",
+      "Zangetsu",
+      "Muramasa"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-one-punch-saitama",
+    "conceptId": "saitama-one-punch",
+    "familyId": "one-punch-man",
+    "type": "mcq",
+    "question": "Quel est le nom du héros chauve qui terrasse tout d'un seul coup de poing ?",
+    "answers": [
+      "King",
+      "Saitama",
+      "Genos",
+      "Garou"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "personnages",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "anime"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-jjk-sukuna",
+    "conceptId": "jujutsu-kaisen-sukuna",
+    "familyId": "jujutsu-kaisen",
+    "type": "mcq",
+    "question": "Dans Jujutsu Kaisen, quel démon est scellé dans le corps de Yuji Itadori ?",
+    "answers": [
+      "Ryomen Sukuna",
+      "Mahito",
+      "Hanami",
+      "Jogo"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "intrigues"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-demon-slayer-nezuko",
+    "conceptId": "demon-slayer-nezuko",
+    "familyId": "demon-slayer",
+    "type": "mcq",
+    "question": "Dans Demon Slayer, quelle est la particularité de Nezuko ?",
+    "answers": [
+      "Elle peut voler",
+      "Elle est immortelle",
+      "Elle parle le langage des animaux",
+      "Elle ne mange pas les humains"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-demon-slayer-water",
+    "conceptId": "tanjiro-water-breathing",
+    "familyId": "demon-slayer",
+    "type": "mcq",
+    "question": "Quelle technique de respiration Tanjiro maîtrise-t-il au début de Demon Slayer ?",
+    "answers": [
+      "La respiration du vent",
+      "La respiration du tonnerre",
+      "La respiration de l'eau",
+      "La respiration du feu"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "intrigues"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-evangelion-shinji",
+    "conceptId": "evangelion-shinji",
+    "familyId": "evangelion",
+    "type": "mcq",
+    "question": "Quel adolescent pilote l'EVA-01 dans Neon Genesis Evangelion ?",
+    "answers": [
+      "Kaworu",
+      "Shinji",
+      "Asuka",
+      "Rei"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "anime"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-cowboy-bebop-ship",
+    "conceptId": "cowboy-bebop-ship",
+    "familyId": "cowboy-bebop",
+    "type": "mcq",
+    "question": "Comment s'appelle le vaisseau de l'équipage dans Cowboy Bebop ?",
+    "answers": [
+      "Le Bebop",
+      "Le Swordfish",
+      "Le Hammerhead",
+      "Le Outlaw Star"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "classiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-kiki-job",
+    "conceptId": "kiki-witch-job",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Dans Kiki la petite sorcière, quel est le métier de Kiki dans sa nouvelle ville ?",
+    "answers": [
+      "Coiffeuse",
+      "Bibliothécaire",
+      "Fleuriste",
+      "Livreuse"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-ponyo",
+    "conceptId": "ponyo-fish",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Dans Ponyo sur la falaise, quelle créature est Ponyo ?",
+    "answers": [
+      "Un crabe",
+      "Une étoile de mer",
+      "Un poisson rouge",
+      "Une pieuvre"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-howls-magic",
+    "conceptId": "howl-magic",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Dans Le Château ambulant, quel est le nom du magicien ?",
+    "answers": [
+      "Markl",
+      "Howl",
+      "Calcifer",
+      "Turnip Head"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-tokyo-ghoul-kaneki",
+    "conceptId": "tokyo-ghoul-kaneki",
+    "familyId": "tokyo-ghoul",
+    "type": "mcq",
+    "question": "Dans Tokyo Ghoul, quelle est la particularité de Kaneki ?",
+    "answers": [
+      "Il est mi-humain mi-ghoul",
+      "Il est un robot",
+      "Il est un vampire",
+      "Il est un dieu"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-mha-one-for-all",
+    "conceptId": "mha-one-for-all",
+    "familyId": "my-hero-academia",
+    "type": "mcq",
+    "question": "Dans My Hero Academia, comment s'appelle l'alter de Deku ?",
+    "answers": [
+      "All For One",
+      "Explosion",
+      "Gel",
+      "One For All"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "super-heros"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-jojo-stands",
+    "conceptId": "jojo-stands",
+    "familyId": "jojo",
+    "type": "mcq",
+    "question": "Dans JoJo's Bizarre Adventure, comment s'appellent les pouvoirs qui matérialisent des esprits combattants ?",
+    "answers": [
+      "Les Chakra",
+      "Les Bankai",
+      "Les Stands",
+      "Les Quirks"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "intrigues"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-hxh-exam",
+    "conceptId": "hunter-x-hunter-exam",
+    "familyId": "hunter-x-hunter",
+    "type": "mcq",
+    "question": "Dans Hunter × Hunter, quel examen Gon Freecss veut-il réussir ?",
+    "answers": [
+      "Le Grand Prix",
+      "L'examen Hunter",
+      "L'examen Chūnin",
+      "Le tournoi du Cell Games"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "intrigues"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-mononoke-san",
+    "conceptId": "mononoke-san",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Dans Princesse Mononoké, comment s'appelle la jeune fille élevée par les loups ?",
+    "answers": [
+      "San",
+      "Ashitaka",
+      "Eboshi",
+      "Moro"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-chihiro-bathhouse",
+    "conceptId": "spirited-away-bathhouse",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Dans Le Voyage de Chihiro, où Chihiro est-elle obligée de travailler ?",
+    "answers": [
+      "Dans une boulangerie",
+      "Dans un théâtre",
+      "Dans une école",
+      "Dans des bains publics"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-no-face",
+    "conceptId": "no-face-spirit",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Quel esprit masqué noir accompagne Chihiro dans Le Voyage de Chihiro ?",
+    "answers": [
+      "Le Kappa",
+      "Le Tengu",
+      "Sans-Visage",
+      "Sans-Nom"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "personnages"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-vegeta-prince",
+    "conceptId": "vegeta-saiyan-prince",
+    "familyId": "dragon-ball",
+    "type": "mcq",
+    "question": "Quel est le titre de Vegeta dans Dragon Ball ?",
+    "answers": [
+      "Empereur de l'univers",
+      "Prince des Saiyans",
+      "Roi des Nameks",
+      "Dieu de la destruction"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "dragon-ball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-freezer-forms",
+    "conceptId": "freezer-transformation",
+    "familyId": "dragon-ball",
+    "type": "mcq",
+    "question": "Quel antagoniste de Dragon Ball Z se transforme en plusieurs formes successives ?",
+    "answers": [
+      "Freezer",
+      "Raditz",
+      "Nappa",
+      "Ginyu"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "personnages",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "personnages",
+      "dragon-ball"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-slam-dunk",
+    "conceptId": "slam-dunk-basketball",
+    "familyId": "slam-dunk",
+    "type": "mcq",
+    "question": "Quel sport pratique le héros de Slam Dunk, Sakuragi ?",
+    "answers": [
+      "Le football",
+      "Le volley-ball",
+      "Le baseball",
+      "Le basket-ball"
+    ],
+    "correctAnswer": 1,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "sport"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-tsubasa",
+    "conceptId": "tsubasa-football",
+    "familyId": "captain-tsubasa",
+    "type": "mcq",
+    "question": "Quel sport est au centre du manga Captain Tsubasa (Olive et Tom) ?",
+    "answers": [
+      "Le judo",
+      "La natation",
+      "Le football",
+      "Le tennis"
+    ],
+    "correctAnswer": 2,
+    "category": "manga-anime",
+    "subcategory": "manga",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "manga",
+      "sport"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-wind-rises",
+    "conceptId": "wind-rises-horikoshi",
+    "familyId": "studio-ghibli",
+    "type": "mcq",
+    "question": "Quel film de Miyazaki raconte la vie de l'ingénieur aéronautique Jirō Horikoshi ?",
+    "answers": [
+      "Le Château dans le ciel",
+      "Le Vent se lève",
+      "Porco Rosso",
+      "Kiki la petite sorcière"
+    ],
+    "correctAnswer": 3,
+    "category": "manga-anime",
+    "subcategory": "studio-ghibli",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "studio-ghibli",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "anime-gear5",
+    "conceptId": "gear-five-luffy",
+    "familyId": "one-piece",
+    "type": "mcq",
+    "question": "Quelle forme de Luffy a été révélée dans le manga One Piece en 2022 ?",
+    "answers": [
+      "Le Gear 5",
+      "Le Gear 4",
+      "Le Gear 6",
+      "L'Ultra Instinct"
+    ],
+    "correctAnswer": 0,
+    "category": "manga-anime",
+    "subcategory": "anime",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "anime",
+      "one-piece"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

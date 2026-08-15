@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "tech-telephone-bell",
+    "conceptId": "telephone-bell",
+    "familyId": "communications",
+    "type": "mcq",
+    "question": "Qui est généralement crédité de l'invention du téléphone en 1876 ?",
+    "answers": [
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Guglielmo Marconi",
+      "Nikola Tesla"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "communications"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-lightbulb",
+    "conceptId": "edison-lightbulb",
+    "familyId": "energy",
+    "type": "mcq",
+    "question": "Qui a popularisé l'ampoule électrique à incandescence ?",
+    "answers": [
+      "Benjamin Franklin",
+      "James Watt",
+      "Michael Faraday",
+      "Thomas Edison"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "energie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-marconi-nobel",
+    "conceptId": "marconi-radio",
+    "familyId": "communications",
+    "type": "mcq",
+    "question": "Qui a reçu le prix Nobel de physique en 1909 pour la télégraphie sans fil ?",
+    "answers": [
+      "Heinrich Hertz",
+      "Thomas Edison",
+      "Guglielmo Marconi",
+      "Nikola Tesla"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "communications"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-arpanet",
+    "conceptId": "arpanet",
+    "familyId": "internet-history",
+    "type": "mcq",
+    "question": "Quel réseau militaire américain est l'ancêtre d'Internet ?",
+    "answers": [
+      "BITNET",
+      "ARPANET",
+      "Minitel",
+      "Enigma"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "internet"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-berners-lee",
+    "conceptId": "tim-berners-lee",
+    "familyId": "web",
+    "type": "mcq",
+    "question": "Qui a inventé le World Wide Web en 1989 ?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Jobs",
+      "Vint Cerf"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "web"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-apple-founders",
+    "conceptId": "apple-steve-jobs",
+    "familyId": "apple",
+    "type": "mcq",
+    "question": "Qui a cofondé Apple en 1976 ?",
+    "answers": [
+      "Bill Gates et Paul Allen",
+      "Larry Page et Sergey Brin",
+      "Jeff Bezos",
+      "Steve Jobs et Steve Wozniak"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "apple"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-microsoft-founders",
+    "conceptId": "microsoft-gates",
+    "familyId": "microsoft",
+    "type": "mcq",
+    "question": "Qui a fondé Microsoft ?",
+    "answers": [
+      "Mark Zuckerberg",
+      "Larry Ellison",
+      "Bill Gates et Paul Allen",
+      "Steve Jobs"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "microsoft"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-google-founders",
+    "conceptId": "google-page-brin",
+    "familyId": "google",
+    "type": "mcq",
+    "question": "Qui a fondé Google ?",
+    "answers": [
+      "Kevin Systrom",
+      "Larry Page et Sergey Brin",
+      "Mark Zuckerberg",
+      "Jack Dorsey"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "google"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-facebook-founder",
+    "conceptId": "facebook-zuckerberg",
+    "familyId": "facebook",
+    "type": "mcq",
+    "question": "Qui a fondé Facebook en 2004 ?",
+    "answers": [
+      "Mark Zuckerberg",
+      "Jack Dorsey",
+      "Kevin Systrom",
+      "Travis Kalanick"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "facebook"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-amazon-founder",
+    "conceptId": "amazon-bezos",
+    "familyId": "amazon",
+    "type": "mcq",
+    "question": "Qui a fondé Amazon ?",
+    "answers": [
+      "Elon Musk",
+      "Jack Ma",
+      "Pierre Omidyar",
+      "Jeff Bezos"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "amazon"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-tesla-cars",
+    "conceptId": "tesla-electric",
+    "familyId": "tesla",
+    "type": "mcq",
+    "question": "Quelle entreprise automobile a popularisé la voiture électrique haut de gamme ?",
+    "answers": [
+      "Volkswagen",
+      "Renault",
+      "Tesla",
+      "Toyota"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "automobile"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-spacex-mars",
+    "conceptId": "spacex-mars",
+    "familyId": "spacex",
+    "type": "mcq",
+    "question": "Quel est l'objectif affiché de SpaceX ?",
+    "answers": [
+      "Créer une station orbitale commerciale",
+      "Coloniser Mars",
+      "Explorer la Lune",
+      "Construire des satellites météo"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "espace"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-iphone-2007",
+    "conceptId": "iphone-2007",
+    "familyId": "apple",
+    "type": "mcq",
+    "question": "En quelle année le premier iPhone est-il sorti ?",
+    "answers": [
+      "2007",
+      "2005",
+      "2010",
+      "2003"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "apple"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-ibm-simon",
+    "conceptId": "ibm-simon",
+    "familyId": "mobile",
+    "type": "mcq",
+    "question": "Quel appareil est considéré comme le premier smartphone de l'histoire ?",
+    "answers": [
+      "Le Nokia 3310",
+      "Le BlackBerry 5810",
+      "Le Motorola StarTAC",
+      "L'IBM Simon"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "mobile"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-nokia-3310",
+    "conceptId": "nokia-3310",
+    "familyId": "mobile",
+    "type": "mcq",
+    "question": "Quel téléphone mythique de Nokia est réputé incassable ?",
+    "answers": [
+      "Le 8210",
+      "Le N95",
+      "Le 3310",
+      "Le 5110"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "mobile"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-snake-game",
+    "conceptId": "snake-nokia",
+    "familyId": "mobile",
+    "type": "mcq",
+    "question": "Quel jeu préinstallé a rendu célèbres les Nokia des années 1990-2000 ?",
+    "answers": [
+      "Brick Breaker",
+      "Snake",
+      "Tetris",
+      "Pac-Man"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "mobile"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-sony-playstation",
+    "conceptId": "sony-playstation",
+    "familyId": "consoles",
+    "type": "mcq",
+    "question": "Quelle entreprise japonaise fabrique la PlayStation ?",
+    "answers": [
+      "Sony",
+      "Samsung",
+      "Panasonic",
+      "Toshiba"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "consoles"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-ibm-pc",
+    "conceptId": "ibm-pc-1981",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Quelle entreprise a lancé le PC personnel en 1981 ?",
+    "answers": [
+      "Apple",
+      "Commodore",
+      "HP",
+      "IBM"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-macintosh-1984",
+    "conceptId": "macintosh-1984",
+    "familyId": "apple",
+    "type": "mcq",
+    "question": "En quelle année Apple a-t-il lancé le Macintosh ?",
+    "answers": [
+      "1988",
+      "1992",
+      "1984",
+      "1980"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "apple"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-mouse-engelbart",
+    "conceptId": "mouse-engelbart",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Qui a inventé la souris d'ordinateur ?",
+    "answers": [
+      "Vint Cerf",
+      "Douglas Engelbart",
+      "Alan Turing",
+      "John von Neumann"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-wifi",
+    "conceptId": "wifi-connectivity",
+    "familyId": "connectivity",
+    "type": "mcq",
+    "question": "Quelle technologie permet de connecter des appareils sans fil à Internet ?",
+    "answers": [
+      "Le Wi-Fi",
+      "Le HDMI",
+      "Le USB",
+      "Le RCA"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "connectivite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-bluetooth-king",
+    "conceptId": "bluetooth-harald",
+    "familyId": "connectivity",
+    "type": "mcq",
+    "question": "Le Bluetooth doit son nom à quel roi viking ?",
+    "answers": [
+      "Erik le Rouge",
+      "Olaf le Saint",
+      "Canut le Grand",
+      "Harald à la dent bleue"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "connectivite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-gps-meaning",
+    "conceptId": "gps-meaning",
+    "familyId": "connectivity",
+    "type": "mcq",
+    "question": "Que signifie le sigle GPS ?",
+    "answers": [
+      "Global Privacy Service",
+      "Guide Position Satellite",
+      "Global Positioning System",
+      "General Purpose System"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "navigation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-robot-word",
+    "conceptId": "robot-word-capek",
+    "familyId": "robotics",
+    "type": "mcq",
+    "question": "Qui a inventé le mot « robot » ?",
+    "answers": [
+      "Alan Turing",
+      "Karel Čapek",
+      "Isaac Asimov",
+      "Jules Verne"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "robotique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-ai-1956",
+    "conceptId": "ai-1956",
+    "familyId": "ai",
+    "type": "mcq",
+    "question": "En quelle année le terme « intelligence artificielle » a-t-il été inventé ?",
+    "answers": [
+      "1956",
+      "1945",
+      "1969",
+      "1980"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "ia"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-turing-father",
+    "conceptId": "turing-computing",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Quel mathématicien britannique est considéré comme le père de l'informatique ?",
+    "answers": [
+      "Charles Babbage",
+      "Ada Lovelace",
+      "John Nash",
+      "Alan Turing"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-enigma",
+    "conceptId": "enigma-turing",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Quelle machine à chiffrer allemande Alan Turing a-t-il contribué à décrypter ?",
+    "answers": [
+      "Purple",
+      "SIGABA",
+      "Enigma",
+      "Ultra"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-babbage",
+    "conceptId": "babbage-analytical-engine",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Qui a conçu la première machine à calculer programmable, ancêtre de l'ordinateur ?",
+    "answers": [
+      "Gottfried Leibniz",
+      "Charles Babbage",
+      "Alan Turing",
+      "Blaise Pascal"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-ada-lovelace",
+    "conceptId": "ada-lovelace",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Qui est considérée comme la première programmeuse de l'histoire ?",
+    "answers": [
+      "Ada Lovelace",
+      "Grace Hopper",
+      "Margaret Hamilton",
+      "Katherine Johnson"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-grace-hopper",
+    "conceptId": "grace-hopper-compiler",
+    "familyId": "computing",
+    "type": "mcq",
+    "question": "Quelle informaticienne américaine a inventé le premier compilateur ?",
+    "answers": [
+      "Ada Lovelace",
+      "Radia Perlman",
+      "Barbara Liskov",
+      "Grace Hopper"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "informatique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-volta-battery",
+    "conceptId": "volta-battery",
+    "familyId": "energy",
+    "type": "mcq",
+    "question": "Qui a inventé la pile électrique en 1800 ?",
+    "answers": [
+      "Michael Faraday",
+      "Thomas Edison",
+      "Alessandro Volta",
+      "Luigi Galvani"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "energie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-velcro",
+    "conceptId": "velcro-de-mestral",
+    "familyId": "everyday-objects",
+    "type": "mcq",
+    "question": "Qui a inventé le Velcro ?",
+    "answers": [
+      "Nikola Tesla",
+      "George de Mestral",
+      "Léonard de Vinci",
+      "Henry Ford"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "objets"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-postit",
+    "conceptId": "post-it-3m",
+    "familyId": "everyday-objects",
+    "type": "mcq",
+    "question": "Quelle entreprise a commercialisé les Post-it ?",
+    "answers": [
+      "3M",
+      "Xerox",
+      "Kodak",
+      "HP"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "objets"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-google-googol",
+    "conceptId": "google-googol",
+    "familyId": "google",
+    "type": "mcq",
+    "question": "Le nom Google vient de quel terme mathématique ?",
+    "answers": [
+      "Gigaoctet",
+      "Gauss",
+      "Graphe",
+      "Googol"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "google"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-youtube-2005",
+    "conceptId": "youtube-2005",
+    "familyId": "web",
+    "type": "mcq",
+    "question": "En quelle année YouTube a-t-il été créé ?",
+    "answers": [
+      "2007",
+      "2003",
+      "2005",
+      "2001"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "web",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "web",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-netflix-dvd",
+    "conceptId": "netflix-dvd",
+    "familyId": "streaming",
+    "type": "mcq",
+    "question": "Quel était le métier d'origine de Netflix ?",
+    "answers": [
+      "La vente de téléviseurs",
+      "La location de DVD par courrier",
+      "Le cinéma",
+      "La production télévisée"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "streaming"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-tesla-nikola",
+    "conceptId": "tesla-nikola",
+    "familyId": "tesla",
+    "type": "mcq",
+    "question": "La marque Tesla rend hommage à quel inventeur ?",
+    "answers": [
+      "Nikola Tesla",
+      "Thomas Edison",
+      "Alessandro Volta",
+      "André-Marie Ampère"
+    ],
+    "correctAnswer": 0,
+    "category": "technologie",
+    "subcategory": "entreprises",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "entreprises",
+      "histoire"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-ampere-unit",
+    "conceptId": "ampere-unit",
+    "familyId": "units",
+    "type": "mcq",
+    "question": "L'ampère est l'unité de mesure de quoi ?",
+    "answers": [
+      "La tension",
+      "La résistance",
+      "La puissance",
+      "L'intensité du courant électrique"
+    ],
+    "correctAnswer": 1,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "electricite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-volt-unit",
+    "conceptId": "volt-unit",
+    "familyId": "units",
+    "type": "mcq",
+    "question": "Le volt est l'unité de mesure de quoi ?",
+    "answers": [
+      "La fréquence",
+      "La capacité",
+      "La tension électrique",
+      "L'intensité"
+    ],
+    "correctAnswer": 2,
+    "category": "technologie",
+    "subcategory": "objets",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "objets",
+      "electricite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "tech-qwerty",
+    "conceptId": "qwerty-layout",
+    "familyId": "everyday-objects",
+    "type": "mcq",
+    "question": "Pourquoi le clavier QWERTY a-t-il été conçu à l'origine ?",
+    "answers": [
+      "Pour économiser l'encre",
+      "Pour éviter que les tiges des machines à écrire se coincent",
+      "Pour accélérer la frappe",
+      "Pour les gauchers"
+    ],
+    "correctAnswer": 3,
+    "category": "technologie",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "inventions",
+      "objets"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

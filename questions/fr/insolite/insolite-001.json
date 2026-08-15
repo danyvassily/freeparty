@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "odd-bee-dance",
+    "conceptId": "bee-waggle-dance",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quelle danse les abeilles exécutent-elles pour indiquer la direction d'une source de nourriture ?",
+    "answers": [
+      "La danse frétillante",
+      "La danse de la pluie",
+      "La valse des butineuses",
+      "La gigue"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "insectes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-koala-fingerprints",
+    "conceptId": "koala-fingerprints",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quel animal possède des empreintes digitales presque identiques à celles des humains ?",
+    "answers": [
+      "Le panda",
+      "Le singe capucin",
+      "L'orang-outan",
+      "Le koala"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "mammiferes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-octopus-blue-blood",
+    "conceptId": "octopus-blue-blood",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quelle est la couleur du sang de la pieuvre ?",
+    "answers": [
+      "Vert",
+      "Jaune",
+      "Bleu",
+      "Rouge"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "mer"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-shark-cartilage",
+    "conceptId": "shark-no-bones",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quelle est la particularité du squelette des requins ?",
+    "answers": [
+      "Il n'existe pas",
+      "Il est cartilagineux",
+      "Il est externe",
+      "Il est en os creux"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "mer"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-flamingo-pink",
+    "conceptId": "flamingo-pink-diet",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Pourquoi les flamants roses sont-ils roses ?",
+    "answers": [
+      "À cause de leur alimentation",
+      "À cause du soleil",
+      "À cause de leurs gènes",
+      "À cause de l'eau salée"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "oiseaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-goldfish-memory",
+    "conceptId": "goldfish-memory",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quelle est la durée de mémoire réelle d'un poisson rouge ?",
+    "answers": [
+      "3 secondes",
+      "1 minute",
+      "24 heures",
+      "Plusieurs mois"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "mythes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-snail-teeth",
+    "conceptId": "snail-teeth",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Combien de dents environ possède un escargot ?",
+    "answers": [
+      "Environ 100",
+      "Environ 1 000",
+      "Environ 25 000",
+      "Aucune"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-cow-friends",
+    "conceptId": "cow-best-friends",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quel animal de ferme se fait des amitiés durables et stresse quand il est séparé de ses amis ?",
+    "answers": [
+      "La chèvre",
+      "La vache",
+      "La poule",
+      "Le canard"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "ferme"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-cat-sleep",
+    "conceptId": "cat-sleep",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quelle proportion de sa vie un chat domestique passe-t-il à dormir ?",
+    "answers": [
+      "Environ deux tiers",
+      "Environ un dixième",
+      "Environ un tiers",
+      "Environ quatre cinquièmes"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "animaux-domestiques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-eiffel-year",
+    "conceptId": "eiffel-1889",
+    "familyId": "landmark-facts",
+    "type": "mcq",
+    "question": "En quelle année la tour Eiffel a-t-elle été inaugurée ?",
+    "answers": [
+      "1900",
+      "1875",
+      "1910",
+      "1889"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "landmark-facts",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-eiffel-grows",
+    "conceptId": "eiffel-thermal",
+    "familyId": "landmark-facts",
+    "type": "mcq",
+    "question": "Pourquoi la tour Eiffel grandit-elle légèrement en été ?",
+    "answers": [
+      "On y ajoute des antennes",
+      "Les visiteurs la font vibrer",
+      "La dilatation thermique du métal",
+      "Le vent la soulève"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "insolite",
+      "france"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-honey",
+    "conceptId": "honey-eternal",
+    "familyId": "food-facts",
+    "type": "mcq",
+    "question": "Combien de temps le miel peut-il se conserver ?",
+    "answers": [
+      "Cinquante ans",
+      "Des milliers d'années",
+      "Un an",
+      "Dix ans"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "food-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "food-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-banana-k40",
+    "conceptId": "banana-radioactive",
+    "familyId": "food-facts",
+    "type": "mcq",
+    "question": "Les bananes contiennent un élément légèrement radioactif. Lequel ?",
+    "answers": [
+      "Le potassium-40",
+      "L'uranium-238",
+      "Le radon",
+      "Le césium-137"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "food-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "food-facts",
+      "science"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-strawberry-seeds",
+    "conceptId": "strawberry-seeds-outside",
+    "familyId": "food-facts",
+    "type": "mcq",
+    "question": "Quelle est la particularité des fraises ?",
+    "answers": [
+      "Elles poussent sous terre",
+      "Elles sont toxiques crues",
+      "Elles n'ont pas de graines",
+      "Leurs « graines » sont à l'extérieur"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "food-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "food-facts",
+      "fruits"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-everest-grows",
+    "conceptId": "everest-tectonics",
+    "familyId": "landmark-facts",
+    "type": "mcq",
+    "question": "La hauteur de l'Everest augmente chaque année. Pourquoi ?",
+    "answers": [
+      "L'érosion des vents",
+      "Les tremblements de terre",
+      "La tectonique des plaques",
+      "Les chutes de neige"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "insolite",
+      "geologie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-ocean-unexplored",
+    "conceptId": "ocean-unexplored",
+    "familyId": "space-ocean-facts",
+    "type": "mcq",
+    "question": "Quelle est la proportion approximative des océans encore inexplorés ?",
+    "answers": [
+      "Environ 5 %",
+      "Environ 80 %",
+      "Environ 20 %",
+      "Environ 50 %"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "space-ocean-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "space-ocean-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-astronauts-grow",
+    "conceptId": "astronaut-growth",
+    "familyId": "human-body-facts",
+    "type": "mcq",
+    "question": "Pourquoi les astronautes grandissent-ils de quelques centimètres dans l'espace ?",
+    "answers": [
+      "La colonne vertébrale se détend sans gravité",
+      "Ils mangent plus",
+      "Leurs os s'étirent",
+      "Ils portent des combinaisons épaisses"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "human-body-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "human-body-facts",
+      "espace"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-sneeze-speed",
+    "conceptId": "sneeze-speed",
+    "familyId": "human-body-facts",
+    "type": "mcq",
+    "question": "À quelle vitesse environ l'air est-il expulsé lors d'un éternuement ?",
+    "answers": [
+      "20 km/h",
+      "50 km/h",
+      "400 km/h",
+      "160 km/h"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "human-body-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "human-body-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-heartbeat-lifetime",
+    "conceptId": "heartbeat-lifetime",
+    "familyId": "human-body-facts",
+    "type": "mcq",
+    "question": "Combien de fois environ le cœur bat-il au cours d'une vie humaine ?",
+    "answers": [
+      "10 millions",
+      "30 milliards",
+      "3 milliards",
+      "100 millions"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "human-body-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "human-body-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-hiccup-record",
+    "conceptId": "hiccup-68-years",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la durée record d'un hoquet ininterrompu ?",
+    "answers": [
+      "10 ans",
+      "68 ans",
+      "2 jours",
+      "6 mois"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "records",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "records",
+      "guinness"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-penguin-pebble",
+    "conceptId": "penguin-pebble",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Quel oiseau offre un caillou à sa partenaire comme preuve d'amour ?",
+    "answers": [
+      "Le manchot",
+      "Le flamant rose",
+      "La cigogne",
+      "Le paon"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "oiseaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-camel-humps",
+    "conceptId": "camel-humps-fat",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Que stockent les bosses du chameau ?",
+    "answers": [
+      "De l'eau",
+      "De la nourriture",
+      "De l'air",
+      "De la graisse"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "desert"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-elephant-trunk",
+    "conceptId": "elephant-trunk-water",
+    "familyId": "animal-facts",
+    "type": "mcq",
+    "question": "Combien de litres d'eau environ un éléphant peut-il aspirer avec sa trompe ?",
+    "answers": [
+      "50 litres",
+      "100 litres",
+      "Environ 10 litres",
+      "1 litre"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "animal-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "animal-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-lightning-frequency",
+    "conceptId": "lightning-frequency",
+    "familyId": "nature-facts",
+    "type": "mcq",
+    "question": "Combien de fois la foudre frappe-t-elle la Terre chaque seconde environ ?",
+    "answers": [
+      "10 000 fois",
+      "Environ 100 fois",
+      "1 fois",
+      "1 000 fois"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "nature-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "nature-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-space-silence",
+    "conceptId": "space-silence",
+    "familyId": "space-ocean-facts",
+    "type": "mcq",
+    "question": "Pourquoi n'entend-on aucun son dans l'espace ?",
+    "answers": [
+      "Le vide ne transporte pas le son",
+      "Le son y est trop rapide",
+      "Les oreilles y sont obstruées",
+      "Les ondes y sont trop faibles"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "space-ocean-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "space-ocean-facts",
+      "physique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-milky-way-light",
+    "conceptId": "milky-way-crossing",
+    "familyId": "space-ocean-facts",
+    "type": "mcq",
+    "question": "Combien de temps faut-il à la lumière pour traverser la Voie lactée ?",
+    "answers": [
+      "1 an",
+      "1 000 ans",
+      "1 million d'années",
+      "100 000 ans"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "space-ocean-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "space-ocean-facts",
+      "astronomie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-dice-7",
+    "conceptId": "dice-opposite-sides",
+    "familyId": "object-facts",
+    "type": "mcq",
+    "question": "Sur un dé classique, les faces opposées totalisent toujours quel nombre ?",
+    "answers": [
+      "8",
+      "9",
+      "7",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "category": "insolite",
+    "subcategory": "object-facts",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "object-facts",
+      "jeux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-barcode-gum",
+    "conceptId": "barcode-first-product",
+    "familyId": "object-facts",
+    "type": "mcq",
+    "question": "Quel produit a été le premier scanné avec un code-barres en 1974 ?",
+    "answers": [
+      "Une bouteille de lait",
+      "Un paquet de chewing-gum",
+      "Une boîte de conserve",
+      "Un paquet de céréales"
+    ],
+    "correctAnswer": 3,
+    "category": "insolite",
+    "subcategory": "object-facts",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "object-facts",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-venus-day",
+    "conceptId": "venus-day-longer",
+    "familyId": "space-ocean-facts",
+    "type": "mcq",
+    "question": "Sur quelle planète une journée dure-t-elle plus longtemps qu'une année ?",
+    "answers": [
+      "Vénus",
+      "Mars",
+      "Mercure",
+      "Jupiter"
+    ],
+    "correctAnswer": 0,
+    "category": "insolite",
+    "subcategory": "space-ocean-facts",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "space-ocean-facts",
+      "astronomie"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "odd-google-garage",
+    "conceptId": "google-garage",
+    "familyId": "object-facts",
+    "type": "mcq",
+    "question": "Selon la légende fondatrice, où Larry Page et Sergey Brin ont-ils lancé Google ?",
+    "answers": [
+      "Dans un train",
+      "Dans une cabane",
+      "Dans un sous-marin",
+      "Dans un garage"
+    ],
+    "correctAnswer": 1,
+    "category": "insolite",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "insolite",
+      "entreprise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

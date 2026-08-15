@@ -1,0 +1,401 @@
+[
+  {
+    "id": "phil-01",
+    "category": "philosophy",
+    "topic": "Liberté et bonheur",
+    "prompt": "Peut-on être heureux sans être libre ?",
+    "context": "Les stoïciens (Épictète, Marc Aurèle) affirment que le bonheur dépend de notre jugement intérieur, pas des circonstances extérieures. D'autres traditions (épicurisme, bouddhisme) distinguent désirs naturels et désirs vains. La psychologie contemporaine mesure des liens complexes entre autonomie perçue et bien-être.",
+    "perspectives": [
+      "La liberté intérieure suffit : maîtriser ses désirs et ses jugements rend heureux même en prison (Épictète).",
+      "Sans liberté d'action, le bonheur reste incomplet : être heureux exige de pouvoir mener sa vie comme on l'entend.",
+      "Certaines contraintes choisies (discipline, engagement) procurent plus de bonheur que la liberté sans repères.",
+      "La question dépend de ce qu'on appelle liberté : liberté de faire ou liberté d'être ?"
+    ],
+    "followUps": [
+      "Un prisonnier qui trouve la paix intérieure est-il vraiment heureux ?",
+      "Le confort sans choix rend-il heureux ?",
+      "Faut-il apprendre à désirer ce qu'on a ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-02",
+    "category": "philosophy",
+    "topic": "Morale et intentions",
+    "prompt": "Une action moralement bonne reste-t-elle bonne si elle est accomplie pour de mauvaises raisons ?",
+    "context": "Kant distingue l'action conforme au devoir et l'action accomplie par devoir : seule la seconde a une valeur morale pleine. Les utilitaristes jugent les conséquences ; les vertus éthiques (Aristote) regardent le caractère. L'expérience de la psychologie morale montre que nous jugeons souvent les deux.",
+    "perspectives": [
+      "La moralité se joue dans l'intention : un don fait pour la gloire n'est pas un acte moral au sens fort (Kant).",
+      "Ce qui compte est le résultat : un acte qui soulage est bon, quelle que soit la motivation profonde.",
+      "Les intentions sont inaccessibles : mieux vaut évaluer des dispositions stables (vertus) que des intentions ponctuelles.",
+      "Une bonne action avec de mauvaises raisons reste utile socialement, même si elle n'éduque pas le caractère."
+    ],
+    "followUps": [
+      "Pouvons-nous jamais connaître nos propres intentions ?",
+      "Faut-il encourager les bonnes actions même hypocrites ?",
+      "L'éducation morale doit-elle travailler les motifs ou les comportements ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-03",
+    "category": "philosophy",
+    "topic": "Responsabilité",
+    "prompt": "Sommes-nous responsables de ce que nous sommes devenus ?",
+    "context": "Sartre affirme que l'existence précède l'essence : nous sommes ce que nous faisons de nous-mêmes, sans excuse. Les sciences sociales et la psychologie soulignent l'influence des déterminismes (milieu, éducation, biologie). Le droit pénal articule responsabilité, intention et circonstances atténuantes.",
+    "perspectives": [
+      "Nous sommes radicalement libres : se définir par son passé, c'est se mentir (Sartre, mauvaise foi).",
+      "Le déterminisme social et biologique limite fortement notre responsabilité : personne ne choisit sa naissance.",
+      "La responsabilité est graduée : on répond de ses actes dans la mesure de sa liberté réelle, pas de tout son caractère.",
+      "Nous sommes responsables de ce que nous devenons à partir de ce que nous avons reçu : le projet compte plus que l'origine."
+    ],
+    "followUps": [
+      "Pardonner exige-t-il de croire à la responsabilité ?",
+      "Une personne issue d'un milieu défavorisé est-elle moins responsable de ses choix ?",
+      "Le déterminisme supprime-t-il le sens du mot « devoir » ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-04",
+    "category": "philosophy",
+    "topic": "Vérité et mensonge",
+    "prompt": "Une vérité douloureuse vaut-elle toujours mieux qu'un mensonge réconfortant ?",
+    "context": "Platon, dans La République, imagine le « noble mensonge » utile à la cité. Kant interdit tout mensonge, même salvateur. La médecine moderne distingue l'annonce de la vérité, désormais standard, des cas où elle peut nuire (bienfaisance). Les débats sur la transparence, la loyauté et la manipulation éclairent la question.",
+    "perspectives": [
+      "La vérité est un devoir : mentir, même pour de bonnes raisons, corrompt la confiance et prive l'autre de sa dignité (Kant).",
+      "La bienveillance peut justifier de taire ou d'arrondir une vérité qui détruit sans rien apprendre.",
+      "La vérité doit être dite avec soin : le problème est souvent la manière, pas la vérité elle-même.",
+      "Les mensonges « utiles » créent des dépendances et finissent par se retourner contre ceux qu'ils protègent."
+    ],
+    "followUps": [
+      "Un mensonge par omission est-il un mensonge ?",
+      "Faut-il toujours dire la vérité à un proche malade ?",
+      "Les États peuvent-ils mentir à leurs citoyens pour leur bien ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-05",
+    "category": "philosophy",
+    "topic": "Surveillance et liberté",
+    "prompt": "Une société parfaitement sûre mais constamment surveillée serait-elle encore libre ?",
+    "context": "Foucault a décrit la société disciplinaire à partir du panoptique de Bentham ; les régimes autoritaires utilisent la surveillance de masse ; les démocraties surveillent aussi (vidéosurveillance, données). La question articule sécurité, intimité et autonomie.",
+    "perspectives": [
+      "La surveillance généralisée change la nature de la liberté : on finit par s'autocensurer même sans être surveillé.",
+      "Une sécurité réelle est une condition de la liberté : personne n'est libre dans la peur permanente.",
+      "Tout dépend de la transparence des dispositifs : une surveillance légale, contrôlée et limitée préserve la liberté.",
+      "Le problème est la dissymétrie : ceux qui surveillent ne sont pas surveillés."
+    ],
+    "followUps": [
+      "La vidéosurveillance dissuade-t-elle la délinquance ou déplace-t-elle simplement les problèmes ?",
+      "Une surveillance qui sauve des vies (caméras, traçage) est-elle acceptable ?",
+      "Que devient la liberté dans un espace où chacun sait qu'il peut être observé ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "phil-06",
+    "category": "philosophy",
+    "topic": "Identité",
+    "prompt": "Notre identité dépend-elle davantage de nos souvenirs ou de nos choix ?",
+    "context": "Locke faisait de la continuité de la mémoire le critère de l'identité personnelle ; les expériences de pensée (transporteur de Star Trek, cerveaux échangés) interrogent cette conception. La psychologie montre que nous réécrivons nos souvenirs pour cohérence ; Sartre insiste sur les choix comme essence du sujet.",
+    "perspectives": [
+      "Sans mémoire, plus de continuité : l'identité est un fil de souvenirs (Locke).",
+      "Nous sommes surtout nos engagements : les choix répétés dessinent qui nous sommes, même si la mémoire flanche.",
+      "Les deux se nourrissent : on se souvient de ce qu'on a choisi, et on choisit selon ce qu'on se rappelle.",
+      "L'identité est aussi relationnelle : les autres nous reconnaissent et nous racontent."
+    ],
+    "followUps": [
+      "Quelqu'un qui perd toute mémoire est-il la même personne ?",
+      "Peut-on choisir d'être quelqu'un d'autre ?",
+      "Nos réseaux sociaux sont-ils une part de notre identité ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-07",
+    "category": "philosophy",
+    "topic": "IA et conscience",
+    "prompt": "Si une intelligence artificielle devenait consciente, aurait-elle des droits ?",
+    "context": "Le test de Turing (1950) porte sur le comportement, pas la conscience ; le « problème difficile de la conscience » (Chalmers) distingue fonction et expérience vécue. Les grands modèles de langage simulent la conversation sans preuve de conscience. La philosophie des droits (animal, humain) s'interroge sur les critères d'attribution.",
+    "perspectives": [
+      "Si elle est consciente, elle a des intérêts propres : lui refuser des droits serait un esclavagisme technologique.",
+      "La simulation de conscience n'est pas la conscience : sans preuve, étendre les droits est prématuré et dangereux.",
+      "Les droits ne suivent pas la conscience seule mais la capacité de souffrir et de vouloir (critère utilitariste).",
+      "Le risque est de projeter nos attentes : nous pourrions créer des entités qui nous ressemblent sans être conscientes."
+    ],
+    "followUps": [
+      "Comment saurions-nous qu'une IA est consciente ?",
+      "Faut-il interdire certaines expériences sur les IA avancées ?",
+      "Une IA qui demande des droits les mérite-t-elle ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-08",
+    "category": "philosophy",
+    "topic": "Vie réussie",
+    "prompt": "Une vie heureuse est-elle nécessairement une vie réussie ?",
+    "context": "Aristote faisait du bonheur (eudaimonia) le but ultime, lié à la vertu ; Nietzsche valorise la puissance créatrice, parfois douloureuse ; des vies marquées par la souffrance (artistes, explorateurs, résistants) sont jugées réussies sans être heureuses.",
+    "perspectives": [
+      "Le bonheur est le critère : une vie sans joie profonde est un échec, quels que soient les accomplissements.",
+      "Certaines vies réussies exigent de sacrifier le bonheur : sens, création, devoir priment sur le bien-être.",
+      "Le bonheur et la réussite se définissent différemment selon les cultures et les époques : la question est relative.",
+      "Une vie réussie combine les deux : épanouissement personnel et contribution à quelque chose de plus grand."
+    ],
+    "followUps": [
+      "Qui décide qu'une vie est réussie : la personne, ses proches, la société ?",
+      "Le bonheur se mesure-t-il au moment présent ou à la trajectoire entière ?",
+      "Une vie sans difficulté est-elle réussie ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-09",
+    "category": "philosophy",
+    "topic": "Violence et légitimité",
+    "prompt": "Existe-t-il des circonstances où la violence devient moralement légitime ?",
+    "context": "La théorie de la guerre juste (Augustin, Thomas d'Aquin) définit des conditions (cause juste, autorité légitime, proportionnalité) ; le pacifisme radical (Gandhi, Tolstoi) refuse toute violence. Les situations de légitime défense, de tyrannie ou de génocide nourrissent le débat contemporain.",
+    "perspectives": [
+      "La légitime défense, individuelle et collective, est moralement fondée : la violence défensive se distingue de l'agression.",
+      "La violence engendre la violence : les solutions non violentes sont plus efficaces et évitent le cycle des représailles.",
+      "Face à un génocide, l'inaction est elle-même une faute : la force peut être un devoir.",
+      "La légitimité dépend de conditions strictes (dernier recours, proportionnalité, chances de succès) rarement réunies en pratique."
+    ],
+    "followUps": [
+      "Qui est légitime pour déclencher la force : l'État, l'ONU, les individus ?",
+      "La violence révolutionnaire peut-elle être juste ?",
+      "La non-violence fonctionne-t-elle contre un régime qui ne respecte aucune règle ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "version": 1
+  },
+  {
+    "id": "phil-10",
+    "category": "philosophy",
+    "topic": "Progrès",
+    "prompt": "Le progrès technologique rend-il nécessairement l'humanité meilleure ?",
+    "context": "Les Lumières liaient science et émancipation ; le XXe siècle a montré les usages destructeurs de la technique (armes, totalitarismes industriels). Les techno-optimistes (transhumanisme) promettent l'amélioration ; les critiques (Ellul, Jonas) alertent sur l'autonomie de la technique et le principe de responsabilité.",
+    "perspectives": [
+      "La technique a amélioré la santé, l'espérance de vie et l'accès au savoir : le progrès moral suit le progrès matériel.",
+      "La technique amplifie nos défauts autant que nos qualités : elle rend nos erreurs plus destructrices.",
+      "Le progrès n'est pas automatique : il dépend des choix démocratiques sur l'usage des technologies.",
+      "La question est déplacée : c'est l'humanité qui doit progresser, la technologie n'est qu'un outil."
+    ],
+    "followUps": [
+      "Toute innovation doit-elle être mise sur le marché ?",
+      "Faut-il ralentir certaines technologies ?",
+      "La technologie peut-elle résoudre les problèmes qu'elle a créés ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-11",
+    "category": "philosophy",
+    "topic": "Mort et sens",
+    "prompt": "La conscience de la mort rend-elle la vie plus ou moins précieuse ?",
+    "context": "Épicure enseignait que la mort n'est rien pour nous (« quand nous sommes, elle n'est pas ») ; Heidegger fait du « pour-la-mort » la condition de l'authenticité ; les existentialistes y voient la source du sens comme du vertige. Les débats sur l'euthanasie et les soins palliatifs touchent à cette question.",
+    "perspectives": [
+      "Savoir qu'on va mourir donne de la valeur à chaque instant : la finitude rend la vie précieuse (Heidegger).",
+      "La mort est une interruption absurde qui dévalorise nos projets : mieux vaut vivre comme si elle n'existait pas (Épicure).",
+      "La conscience de la mort peut paralyser ou libérer selon la culture : les rites et les récits font la différence.",
+      "Ce n'est pas la mort mais la qualité de la vie présente qui donne le sens."
+    ],
+    "followUps": [
+      "Faut-il apprendre aux enfants l'existence de la mort ?",
+      "Une vie immortelle aurait-elle du sens ?",
+      "L'euthanasie est-elle un droit de choisir sa mort ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "phil-12",
+    "category": "philosophy",
+    "topic": "Libre arbitre",
+    "prompt": "Si nos décisions sont déterminées par des causes, le libre arbitre est-il une illusion ?",
+    "context": "Le déterminisme (physique, neurologique, social) semble laisser peu de place au libre arbitre. Les neurosciences (expériences de Libet) ont alimenté le débat, sans conclusion définitive. Les compatibilistes (Hume, Dennett) définissent la liberté comme capacité d'agir selon ses désirs réfléchis, compatible avec le déterminisme.",
+    "perspectives": [
+      "Tout a une cause : l'idée d'un choix totalement libre est incompatible avec la science (déterminisme).",
+      "Le libre arbitre est une expérience incontournable : nous délibérons, hésitons, décidons — nier cela contredit l'évidence.",
+      "La liberté peut être définie sans métaphysique : agir selon ses raisons, sans contrainte extérieure, suffit (compatibilisme).",
+      "Le déterminisme n'annule pas la responsabilité : nos raisons font partie des causes de nos actes."
+    ],
+    "followUps": [
+      "Si le libre arbitre n'existait pas, faudrait-il abolir la punition ?",
+      "Une IA sans libre arbitre peut-elle être responsable ?",
+      "Le sentiment de liberté est-il une preuve de liberté ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-13",
+    "category": "philosophy",
+    "topic": "Sens de la vie",
+    "prompt": "Le sens de la vie se trouve-t-il ou se construit-il ?",
+    "context": "Les religions proposent un sens donné (création, salut) ; les existentialistes (Sartre, Camus) affirment que le sens est à construire dans un monde sans dessein ; les sciences modernes décrivent l'univers sans finalité apparente. La psychologie positive mesure l'importance du sens pour le bien-être.",
+    "perspectives": [
+      "Le sens se découvre : traditions, spiritualités et sagesses offrent des réponses éprouvées.",
+      "Le sens se construit : projets, relations, création — nous donnons nous-mêmes forme à nos vies (Camus, Sisyphe heureux).",
+      "Le sens est à la fois trouvé et construit : nous héritons de cadres que nous réinterprétons librement.",
+      "La question elle-même est peut-être mal posée : la vie a la valeur qu'on lui donne dans l'action quotidienne."
+    ],
+    "followUps": [
+      "Une vie sans projet a-t-elle un sens ?",
+      "Le travail donne-t-il du sens ou en consomme-t-il ?",
+      "Faut-il un but à la vie pour être heureux ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-14",
+    "category": "philosophy",
+    "topic": "Justice et punition",
+    "prompt": "La punition doit-elle viser la rétribution, la dissuasion ou la réhabilitation ?",
+    "context": "Kant défend la rétribution : punir parce que le crime le mérite. Beccaria et les utilitaristes privilégient la dissuasion. Les données sur la récidive (recherches en criminologie) montrent des effets variables des peines. Les systèmes pénales combinent ces finalités dans des proportions différentes.",
+    "perspectives": [
+      "La punition doit rétablir la justice : la gravité de la peine répond à la gravité de la faute, indépendamment de son utilité (Kant).",
+      "La punition doit protéger la société : dissuader et neutraliser, en calculant les coûts et bénéfices.",
+      "La punition doit réhabiliter : une peine qui ne prépare pas le retour à la société est une peine perdue.",
+      "Toute punition doit aussi réparer la victime : la justice restaurative complète les trois finalités."
+    ],
+    "followUps": [
+      "Une peine de prison très longue est-elle jamais juste ?",
+      "Les peines doivent-elles être publiques ?",
+      "Peut-on punir quelqu'un qui ne comprend pas ce qu'il a fait ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "phil-15",
+    "category": "philosophy",
+    "topic": "Temps",
+    "prompt": "Le temps est-il une réalité objective ou une construction de l'esprit ?",
+    "context": "Newton concevait un temps absolu ; Einstein l'a intégré à l'espace-temps (relativité) ; Kant en faisait une forme a priori de la sensibilité ; la physique moderne (thermodynamique, flèche du temps) n'explique pas pleinement pourquoi nous percevons un passé et un futur distincts.",
+    "perspectives": [
+      "Le temps existe indépendamment de nous : les horloges mesurent une réalité physique (Newton, Einstein).",
+      "Le temps est une construction : l'esprit organise l'expérience en passé, présent, futur (Kant).",
+      "Le présent est la seule réalité : passé et futur sont des abstractions utiles (Augustin).",
+      "La physique et l'expérience doivent être réconciliées : le temps est réel mais sa flèche reste mystérieuse."
+    ],
+    "followUps": [
+      "Le temps s'écoule-t-il plus vite quand on est heureux ?",
+      "Le temps existe-t-il sans événements ?",
+      "Voyager dans le temps est-il concevable ?"
+    ],
+    "difficulty": "expert",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-16",
+    "category": "philosophy",
+    "topic": "Amour",
+    "prompt": "L'amour doit-il être inconditionnel pour être véritable ?",
+    "context": "Platon, dans Le Banquet, distingue l'amour des corps et l'amour des âmes ; la tradition du don (chrétienne) valorise l'amour sans conditions ; les philosophes contemporains (Fromm, Badinter) interrogent l'amour comme pratique et comme reconnaissance de l'autre dans sa liberté.",
+    "perspectives": [
+      "L'amour véritable ne pose pas de conditions : il aime l'autre pour ce qu'il est, pas pour ce qu'il fait.",
+      "Un amour sans aucune condition peut devenir une forme d'emprise : aimer, c'est aussi poser des limites.",
+      "L'amour est un engagement qui se construit : la conditionnalité n'est pas un défaut mais une exigence de réciprocité.",
+      "Aimer, c'est vouloir le bien de l'autre, ce qui suppose parfois de dire non."
+    ],
+    "followUps": [
+      "Peut-on choisir d'aimer ?",
+      "L'amour doit-il primer sur la justice ?",
+      "Aimer quelqu'un qui nous change : l'amour transforme-t-il l'identité ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-17",
+    "category": "philosophy",
+    "topic": "Mémoire",
+    "prompt": "Faut-il tout se rappeler ou est-il préférable d'oublier ?",
+    "context": "Nietzsche voyait dans la mémoire le fondement de la promesse ; mais aussi dans l'oubli une force de vie. La psychologie montre que l'oubli est une fonction normale et adaptative ; les débats sur le droit à l'oubli numérique et le devoir de mémoire historique posent la question en termes collectifs.",
+    "perspectives": [
+      "Se souvenir est un devoir : sans mémoire, ni promesse, ni justice, ni identité (Nietzsche, Ricoeur).",
+      "Oublier est vital : la rumination du passé empêche de vivre et d'agir.",
+      "Le bon équilibre est sélectif : retenir les leçons, oublier les blessures inutiles.",
+      "La mémoire collective doit être entretenue avec soin : les récits du passé orientent l'avenir."
+    ],
+    "followUps": [
+      "Le devoir de mémoire sert-il la réconciliation ?",
+      "Faut-il un droit à l'oubli sur Internet ?",
+      "Une société qui oublie est-elle condamnée à répéter ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-18",
+    "category": "philosophy",
+    "topic": "Pouvoir",
+    "prompt": "Le pouvoir corrompt-il nécessairement ceux qui l'exercent ?",
+    "context": "Lord Acton : « Le pouvoir corrompt, et le pouvoir absolu corrompt absolument. » Aristote distinguait les régimes bons (au profit de tous) et corrompus (au profit des gouvernants). La psychologie sociale (expérience de Stanford, Milgram) montre des transformations comportementales sous l'effet du rôle et de l'autorité.",
+    "perspectives": [
+      "Le pouvoir attire ceux qui le désirent, souvent les moins aptes à l'exercer sans abus (Platon).",
+      "Le pouvoir n'est pas une substance toxique : des institutions, des contre-pouvoirs et des vertus permettent de l'exercer sainement.",
+      "La corruption du pouvoir vient moins des personnes que des structures sans contrôle ni rotation.",
+      "L'expérience du pouvoir révèle ce qui était déjà là : elle ne crée pas, elle démasque."
+    ],
+    "followUps": [
+      "Les mandats courts protègent-ils des abus ?",
+      "Le pouvoir de l'information est-il plus corrupteur que le pouvoir politique ?",
+      "Peut-on exercer le pouvoir sans le désirer ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "phil-19",
+    "category": "philosophy",
+    "topic": "Égalité",
+    "prompt": "Les humains sont-ils égaux par nature ou l'égalité est-elle une construction sociale ?",
+    "context": "Aristote distinguait des inégalités naturelles ; la Déclaration de 1789 affirme l'égalité en droits ; les sciences (biologie, génétique) constatent des différences individuelles sans hiérarchie morale ; la philosophie contemporaine distingue égalité de traitement, d'opportunités et de statut.",
+    "perspectives": [
+      "L'égalité morale est première : aucun être humain ne vaut plus qu'un autre, quelles que soient ses différences.",
+      "Les humains sont différents par nature : l'égalité est un choix politique qui compense la nature.",
+      "L'égalité en droits est une construction nécessaire : elle ne décrit pas le réel, elle le transforme.",
+      "Confondre égalité et identité est une erreur : on peut être égaux en dignité et différents en tout le reste."
+    ],
+    "followUps": [
+      "L'égalité des chances suppose-t-elle de traiter différemment les défavorisés ?",
+      "Les différences de talent justifient-elles des différences de revenus ?",
+      "Une société peut-elle être à la fois égalitaire et libre ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "version": 1
+  }
+]

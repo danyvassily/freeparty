@@ -1,0 +1,261 @@
+[
+  {
+    "id": "eth-01",
+    "category": "ethics",
+    "topic": "Dilemme du tramway",
+    "prompt": "Est-il moralement acceptable de sacrifier une personne pour en sauver plusieurs ?",
+    "context": "Le dilemme du tramway (Foot, 1967 ; Thomson, 1985) oppose déontologie (ne pas tuer activement) et utilitarisme (maximiser les vies sauvées). Les neurosciences montrent que la plupart des gens refusent de pousser un homme sur les rails mais acceptent d'actionner un aiguillage : une distinction morale intuitive entre faire et laisser, ou entre moyen et effet secondaire.",
+    "perspectives": [
+      "Sauver cinq vies plutôt qu'une est rationnel et moral : la valeur d'une vie ne dépend pas de sa position (utilitarisme).",
+      "Chaque vie a une dignité inviolable : on ne peut jamais utiliser quelqu'un comme simple moyen, même pour le bien général (Kant).",
+      "La différence entre pousser et aiguiller révèle une morale à deux niveaux : règles publiques et calculs d'urgence.",
+      "Les dilemmes artificiels cachent le vrai problème : la plupart des situations réelles offrent des alternatives."
+    ],
+    "followUps": [
+      "Et si la personne sacrifiée est volontaire ?",
+      "La valeur d'une vie change-t-elle selon l'âge, la santé, le rôle social ?",
+      "Une voiture autonome doit-elle programmer ce choix ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "eth-02",
+    "category": "ethics",
+    "topic": "Mensonge par omission",
+    "prompt": "Ne pas dire la vérité quand personne ne la demande est-il un mensonge ?",
+    "context": "L'éthique de la communication (Habermas) exige la sincérité dans l'échange ; le droit distingue le dol (silence trompeur) de l'absence d'obligation d'information ; en médecine, le consentement éclairé repose sur l'information active. La question porte sur ce que nous devons à l'autre au-delà de ses questions.",
+    "perspectives": [
+      "Le silence trompeur est un mensonge déguisé : tromper par omission, c'est tromper tout court.",
+      "On ne doit pas tout dire : la discrétion et le respect de l'autre peuvent justifier de taire certaines choses.",
+      "Tout dépend de la relation et de l'enjeu : un vendeur doit informer sur son produit, un ami n'est pas un rapporteur.",
+      "La transparence totale est impossible : l'éthique consiste à choisir ce qui doit être dit, pas à tout dire."
+    ],
+    "followUps": [
+      "Un proche doit-il savoir un diagnostic qu'il n'a pas demandé ?",
+      "Le silence sur une infidélité est-il un mensonge ?",
+      "Les entreprises doivent-elles révéler ce qu'on ne leur demande pas ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "eth-03",
+    "category": "ethics",
+    "topic": "Priorités morales",
+    "prompt": "Faut-il d'abord aider les personnes proches ou celles qui en ont le plus besoin, même lointaines ?",
+    "context": "Peter Singer (1972) défend une obligation d'aider les plus démunis, où qu'ils soient, au nom de l'égalité morale ; les critiques défendent des devoirs particuliers envers les proches (famille, communauté). L'« altruisme efficace » prolonge Singer en calculant l'impact de chaque don.",
+    "perspectives": [
+      "La proximité crée des devoirs particuliers : famille et communauté passent avant l'humanité abstraite.",
+      "La souffrance d'un inconnu lointain vaut celle d'un proche : la géographie ne change pas la valeur des vies (Singer).",
+      "On peut combiner : les devoirs proches d'abord, puis une part de ses ressources pour les plus démunis.",
+      "L'efficacité doit guider : aider là où l'aide fait le plus de différence, même si c'est loin."
+    ],
+    "followUps": [
+      "Donner 10% de son revenu aux pauvres du monde est-il un devoir ?",
+      "Le bénévolat local vaut-il un don international ?",
+      "Faut-il mesurer l'efficacité de sa générosité ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "eth-04",
+    "category": "ethics",
+    "topic": "Fin de vie",
+    "prompt": "L'aide active à mourir doit-elle être un droit pour les personnes en fin de vie ?",
+    "context": "Des pays autorisent le suicide assisté ou l'euthanasie (Pays-Bas 2002, Belgique 2002, Canada 2016) ; la France a ouvert des débats sans légaliser (loi Claeys-Leonetti 2016 sur la sédation profonde). Les oppositions portent sur le caractère sacré de la vie, les risques de dérive et l'autonomie du patient.",
+    "perspectives": [
+      "L'autonomie du patient prime : choisir sa fin de vie est une liberté fondamentale quand la souffrance est incurable.",
+      "La vie humaine est inviolable : légaliser l'aide à mourir ouvre la porte à des pressions sur les plus vulnérables.",
+      "Les soins palliatifs bien développés rendent l'aide à mourir rarement nécessaire : il faut d'abord les garantir à tous.",
+      "Un cadre strict (double avis, délai, maladie incurable) permet d'éviter les dérives tout en respectant les volontés."
+    ],
+    "followUps": [
+      "Qui peut demander : le patient seul, ou aussi la famille ?",
+      "Le refus de soins et l'euthanasie sont-ils la même chose ?",
+      "Les médecins peuvent-ils refuser de pratiquer ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "France / Europe",
+    "version": 1
+  },
+  {
+    "id": "eth-05",
+    "category": "ethics",
+    "topic": "Travail des algorithmes",
+    "prompt": "Un algorithme qui se trompe sur vous (crédit, embauche, santé) doit-il pouvoir être contesté ?",
+    "context": "Le RGPD (2018) crée un droit à l'explication des décisions automatisées ; le règlement IA européen (2024) classe les décisions de crédit et d'embauche en « risque élevé » avec obligations d'audit. Les études montrent des biais algorithmiques (genre, origine) hérités des données d'entraînement.",
+    "perspectives": [
+      "Une décision qui affecte une vie doit pouvoir être expliquée et contestée : pas d'algorithme sans recours.",
+      "Les algorithmes sont souvent plus cohérents que les humains : l'exigence d'explication ne doit pas bloquer le progrès.",
+      "Le droit à l'explication est illusoire avec les modèles opaques : il faut des audits externes et des tests d'équité.",
+      "Le problème n'est pas la machine mais les données et les critères : c'est la conception qu'il faut encadrer."
+    ],
+    "followUps": [
+      "Qui doit auditer les algorithmes : l'État, des organismes indépendants, les entreprises ?",
+      "Un algorithme peut-il être raciste ou sexiste ?",
+      "Faut-il un droit à être jugé par un humain ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "UE",
+    "version": 1
+  },
+  {
+    "id": "eth-06",
+    "category": "ethics",
+    "topic": "Don d'organes",
+    "prompt": "Le prélèvement d'organes doit-il reposer sur le consentement présumé ou explicite ?",
+    "context": "La France et l'Espagne pratiquent le consentement présumé (prélèvement sauf opposition) ; l'Allemagne et les États-Unis l'opt-in explicite. L'Espagne, avec un taux de donneurs parmi les plus élevés, combine présomption et organisation performante des soins. Les listes d'attente restent longues partout.",
+    "perspectives": [
+      "Le consentement présumé sauve plus de vies : le défaut d'opposition ne coûte rien et la solidarité gagne.",
+      "Prélever sans consentement explicite viole l'autonomie : le corps n'appartient qu'à la personne.",
+      "Le consentement présumé reste un consentement : informé et réversible, il respecte la personne tout en réduisant l'inertie.",
+      "Le vrai problème est l'organisation (détection, familles, logistique) plus que le régime juridique."
+    ],
+    "followUps": [
+      "La famille doit-elle avoir le dernier mot ?",
+      "Peut-on vendre ses organes ?",
+      "Faut-il un marché régulé des organes ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "eth-07",
+    "category": "ethics",
+    "topic": "Tests sur les animaux",
+    "prompt": "Les tests sur les animaux sont-ils moralement acceptables pour le progrès médical ?",
+    "context": "La directive européenne 2010/63 impose la règle des 3R (remplacer, réduire, raffiner) et vise la sortie progressive des tests ; l'expérimentation animale reste obligatoire pour certaines autorisations (vaccins, toxicités). L'éthique animale (Singer, 1975) conteste la frontière espèce humaine / autres espèces.",
+    "perspectives": [
+      "La souffrance animale est moralement significative : les tests ne se justifient que sans alternative et avec un bénéfice majeur.",
+      "Le progrès médical humain justifie des sacrifices animaux dans des conditions strictes : la santé humaine prime.",
+      "Les 3R montrent que la voie est l'élimination progressive : investir dans les modèles alternatifs (organoïdes, simulations).",
+      "La question dépend de l'espèce et de la sensibilité : primates et grands mammifères posent des problèmes que les rongeurs ne posent pas."
+    ],
+    "followUps": [
+      "Les cosmétiques doivent-ils être testés sur les animaux ?",
+      "Peut-on comparer une vie de souris et une vie humaine ?",
+      "Les essais cliniques sur les humains sont-ils plus acceptables ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "version": 1
+  },
+  {
+    "id": "eth-08",
+    "category": "ethics",
+    "topic": "Gaspillage alimentaire",
+    "prompt": "Jeter de la nourriture est-il un problème moral ou simplement économique ?",
+    "context": "Un tiers de la production alimentaire mondiale est perdue ou gaspillée (FAO) ; le gaspillage alimentaire représente environ 8% des émissions mondiales de gaz à effet de serre (rapport ONU 2021). La France a interdit aux supermarchés de jeter des invendus consommables (loi Garot, 2016).",
+    "perspectives": [
+      "Gaspiller de la nourriture dans un monde où des millions souffrent de la faim est une faute morale.",
+      "Le gaspillage est surtout un problème économique et écologique : il faut le réduire par l'efficacité, pas par la culpabilité.",
+      "Le gaspillage individuel est marginal face aux pertes de production et aux chaînes logistiques : l'action doit être systémique.",
+      "Nos choix quotidiens comptent : la somme des comportements individuels change les standards sociaux."
+    ],
+    "followUps": [
+      "Les supermarchés doivent-ils être obligés de donner leurs invendus ?",
+      "Les dates de péremption sont-elles trop prudentes ?",
+      "Manger moins de viande est-il un acte moral ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "eth-09",
+    "category": "ethics",
+    "topic": "Dénonciation",
+    "prompt": "Révéler des secrets d'entreprise pour l'intérêt général est-il toujours légitime ?",
+    "context": "Les lanceurs d'alerte (Snowden, Assange, les « Panama Papers ») ont révélé des abus majeurs ; la directive européenne 2019/1937 protège les lanceurs d'alerte sous conditions (bonne foi, intérêt public). Le débat porte sur la légitimité, la méthode et les limites de la révélation.",
+    "perspectives": [
+      "L'intérêt général prime sur la loyauté envers l'entreprise : révéler un abus grave est un devoir civique.",
+      "La parole donnée et la confiance sont des biens précieux : la dénonciation doit rester l'exception, encadrée et motivée.",
+      "Tout dépend du canal : alerter en interne d'abord, puis aux autorités, et seulement en dernier recours publiquement.",
+      "Les lanceurs d'alerte sont parfois manipulés : il faut vérifier les faits, les motifs et les conséquences."
+    ],
+    "followUps": [
+      "Qui décide ce qui relève de l'intérêt général ?",
+      "Les révélations illégales (documents volés) sont-elles acceptables ?",
+      "Faut-il récompenser les lanceurs d'alerte ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "jurisdiction": "UE",
+    "version": 1
+  },
+  {
+    "id": "eth-10",
+    "category": "ethics",
+    "topic": "Guerre des données",
+    "prompt": "Vos données personnelles sont-elles un prix juste à payer pour des services gratuits ?",
+    "context": "Le modèle économique du web repose sur la publicité ciblée : les services « gratuits » (recherche, réseaux sociaux, vidéo) sont financés par la monétisation des données. Le RGPD impose le consentement ; les études montrent que peu d'utilisateurs lisent les conditions. Certains services proposent des versions payantes sans publicité.",
+    "perspectives": [
+      "L'échange est équitable : un service gratuit financé par la publicité est un deal transparent pour l'utilisateur.",
+      "Les données ne sont pas une monnaie comme une autre : leur collecte massive crée des asymétries de pouvoir.",
+      "Le vrai problème est l'opacité : avec un consentement éclairé et des alternatives payantes, l'échange devient juste.",
+      "Les données comportementales permettent des manipulations (nudges, influence) que la publicité classique n'offrait pas."
+    ],
+    "followUps": [
+      "Faut-il payer pour ne pas être suivi ?",
+      "Les données des enfants doivent-elles être traitées différemment ?",
+      "Un réseau social sans publicité est-il viable ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "version": 1
+  },
+  {
+    "id": "eth-11",
+    "category": "ethics",
+    "topic": "Responsabilité climatique",
+    "prompt": "Les individus sont-ils moralement responsables du changement climatique ou seulement les États et les entreprises ?",
+    "context": "Les émissions mondiales proviennent des activités humaines (GIEC) ; les 10% les plus riches émettent environ la moitié des émissions liées à la consommation ; les entreprises (Scope 1-3) et les États structurent les choix individuels. Les débats opposent responsabilité individuelle et action systémique.",
+    "perspectives": [
+      "Les choix individuels (transport, alimentation, énergie) comptent : la somme des comportements fait le système.",
+      "Responsabiliser les individus détourne l'attention des décisions politiques et industrielles qui structurent les émissions.",
+      "La responsabilité est partagée : individus, entreprises et États ont des marges de manœuvre différentes.",
+      "Le juste principe est la capacité : ceux qui émettent le plus (et en ont les moyens) doivent réduire le plus."
+    ],
+    "followUps": [
+      "Prendre l'avion est-il un acte moral ?",
+      "Les entreprises doivent-elles répondre de leurs émissions indirectes ?",
+      "La compensation carbone individuelle est-elle efficace ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "eth-12",
+    "category": "ethics",
+    "topic": "Solidarité",
+    "prompt": "Aider un inconnu dans la rue est-il un devoir ou un choix ?",
+    "context": "La parabole du bon Samaritain (Luc 10) fonde une tradition du devoir d'assistance ; le droit français pénalise la non-assistance à personne en danger (art. 223-6) ; la psychologie sociale (expérience du séminariste, Darley et Batson) montre que le contexte pèse plus que les convictions.",
+    "perspectives": [
+      "Chacun a un devoir minimal d'assistance : la non-assistance est sanctionnée par la loi et par la morale.",
+      "L'aide volontaire vaut plus que l'aide obligée : la solidarité ne se décrète pas.",
+      "Le devoir existe mais il est borné : on ne peut pas aider tout le monde, il faut prioriser sans s'épuiser.",
+      "Le vrai problème est social : si tant de gens ont besoin d'aide, c'est l'organisation collective qu'il faut changer."
+    ],
+    "followUps": [
+      "Faut-il donner de l'argent aux personnes sans abri ?",
+      "L'État doit-il remplacer la charité individuelle ?",
+      "Pourquoi aidons-nous moins quand nous sommes pressés ?"
+    ],
+    "difficulty": "accessible",
+    "sensitivity": "low",
+    "version": 1
+  }
+]

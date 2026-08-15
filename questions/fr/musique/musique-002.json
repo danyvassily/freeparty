@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "music-piano-88",
+    "conceptId": "piano-88-keys",
+    "familyId": "instruments",
+    "type": "mcq",
+    "question": "Combien de touches compte un piano classique ?",
+    "answers": [
+      "88",
+      "76",
+      "92",
+      "108"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "instruments",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "instruments",
+      "musique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-guitar-strings",
+    "conceptId": "guitar-6-strings",
+    "familyId": "instruments",
+    "type": "mcq",
+    "question": "Combien de cordes possède une guitare classique ?",
+    "answers": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "instruments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "instruments",
+      "musique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-violin-bow",
+    "conceptId": "violin-bow",
+    "familyId": "instruments",
+    "type": "mcq",
+    "question": "Avec quel accessoire joue-t-on du violon ?",
+    "answers": [
+      "Un plectre",
+      "Un médiator",
+      "Un archet",
+      "Une baguette"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "instruments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "instruments",
+      "musique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-saxophone-inventor",
+    "conceptId": "saxophone-adolphe-sax",
+    "familyId": "instruments",
+    "type": "mcq",
+    "question": "Qui a inventé le saxophone ?",
+    "answers": [
+      "Denis Papin",
+      "Adolphe Sax",
+      "Antoine Courtois",
+      "Théobald Boehm"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "instruments",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "instruments",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-turntable",
+    "conceptId": "turntable-vinyl",
+    "familyId": "instruments",
+    "type": "mcq",
+    "question": "Comment s'appelle l'appareil qui fait tourner les disques vinyles ?",
+    "answers": [
+      "Une platine",
+      "Un amplificateur",
+      "Un égaliseur",
+      "Un compresseur"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "instruments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "instruments",
+      "dj"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-rap-bronx",
+    "conceptId": "rap-bronx",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "Dans quel quartier de New York le hip-hop est-il né dans les années 1970 ?",
+    "answers": [
+      "Harlem",
+      "Brooklyn",
+      "Queens",
+      "Le Bronx"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-jazz-origin",
+    "conceptId": "jazz-new-orleans",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "Dans quelle ville américaine le jazz est-il né ?",
+    "answers": [
+      "Détroit",
+      "Memphis",
+      "La Nouvelle-Orléans",
+      "Chicago"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "jazz"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-reggae-origin",
+    "conceptId": "reggae-jamaica",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "De quel pays est originaire le reggae ?",
+    "answers": [
+      "Haïti",
+      "La Jamaïque",
+      "Cuba",
+      "Le Brésil"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "reggae"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-bob-marley",
+    "conceptId": "bob-marley-reggae",
+    "familyId": "reggae",
+    "type": "mcq",
+    "question": "Quel artiste est surnommé le « roi du reggae » ?",
+    "answers": [
+      "Bob Marley",
+      "Peter Tosh",
+      "Jimmy Cliff",
+      "Burning Spear"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "reggae"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-fado-country",
+    "conceptId": "fado-portugal",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "De quel pays le fado est-il la musique traditionnelle ?",
+    "answers": [
+      "L'Espagne",
+      "L'Italie",
+      "La Grèce",
+      "Le Portugal"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "traditions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-flamenco-country",
+    "conceptId": "flamenco-spain",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "Dans quel pays le flamenco est-il né ?",
+    "answers": [
+      "L'Argentine",
+      "Le Brésil",
+      "L'Espagne",
+      "Le Mexique"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "traditions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-tango-country",
+    "conceptId": "tango-argentina",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "De quel pays le tango est-il originaire ?",
+    "answers": [
+      "La Colombie",
+      "L'Argentine",
+      "Le Chili",
+      "Le Pérou"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "traditions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-opera-country",
+    "conceptId": "opera-italy",
+    "familyId": "genres",
+    "type": "mcq",
+    "question": "Dans quel pays l'opéra est-il né au début du XVIIe siècle ?",
+    "answers": [
+      "L'Italie",
+      "La France",
+      "L'Allemagne",
+      "L'Autriche"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "genres",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "genres",
+      "classique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-pavarotti-nessun",
+    "conceptId": "pavarotti-nessun-dorma",
+    "familyId": "opera",
+    "type": "mcq",
+    "question": "Quel ténor italien est célèbre pour son interprétation de Nessun Dorma ?",
+    "answers": [
+      "Placido Domingo",
+      "José Carreras",
+      "Enrico Caruso",
+      "Luciano Pavarotti"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "artistes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-three-tenors",
+    "conceptId": "three-tenors",
+    "familyId": "opera",
+    "type": "mcq",
+    "question": "Comment s'appelle le trio formé par Pavarotti, Domingo et Carreras ?",
+    "answers": [
+      "Les Trois Maestros",
+      "Les Trois Voix",
+      "Les Trois Ténors",
+      "Les Trois Sopranos"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "groupes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-iam-marseille",
+    "conceptId": "iam-marseille",
+    "familyId": "rap-francais",
+    "type": "mcq",
+    "question": "De quelle ville est originaire le groupe de rap IAM ?",
+    "answers": [
+      "Toulouse",
+      "Marseille",
+      "Paris",
+      "Lyon"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-ntm-origin",
+    "conceptId": "ntm-seine-saint-denis",
+    "familyId": "rap-francais",
+    "type": "mcq",
+    "question": "D'où viennent JoeyStarr et Kool Shen, membres de NTM ?",
+    "answers": [
+      "De Seine-Saint-Denis",
+      "De Marseille",
+      "De Lyon",
+      "De Bordeaux"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-mc-solaar",
+    "conceptId": "mc-solaar",
+    "familyId": "rap-francais",
+    "type": "mcq",
+    "question": "Quel rappeur français a commencé sa carrière comme DJ aux côtés de Jimmy Jay ?",
+    "answers": [
+      "Oxmo Puccino",
+      "Doc Gynéco",
+      "Passi",
+      "MC Solaar"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-stromae-formidable",
+    "conceptId": "stromae-formidable",
+    "familyId": "stromae",
+    "type": "mcq",
+    "question": "Quelle chanson de Stromae évoque une rupture amoureuse ?",
+    "answers": [
+      "Papaoutai",
+      "Tous les mêmes",
+      "Formidable",
+      "Alors on danse"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-indila-derniere",
+    "conceptId": "indila-derniere-danse",
+    "familyId": "indila",
+    "type": "mcq",
+    "question": "Quelle chanteuse française a connu un succès mondial avec Dernière Danse ?",
+    "answers": [
+      "Zaz",
+      "Indila",
+      "Tal",
+      "Shy'm"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-zaz-je-veux",
+    "conceptId": "zaz-je-veux",
+    "familyId": "zaz",
+    "type": "mcq",
+    "question": "Quelle chanson de Zaz est devenue un tube mondial en 2010 ?",
+    "answers": [
+      "Je veux",
+      "Elle me dit",
+      "Dernière danse",
+      "Formidable"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-gims-sap",
+    "conceptId": "gims-sap",
+    "familyId": "rap-francais",
+    "type": "mcq",
+    "question": "Quel rappeur français a interprété Sapés comme jamais ?",
+    "answers": [
+      "Booba",
+      "La Fouine",
+      "Rohff",
+      "Maître Gims"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-booba-92i",
+    "conceptId": "booba-92i",
+    "familyId": "rap-francais",
+    "type": "mcq",
+    "question": "Quel rappeur français est à l'origine du collectif 92i ?",
+    "answers": [
+      "Nekfeu",
+      "Damso",
+      "Booba",
+      "Kaaris"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rap"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-vianney-beau-papa",
+    "conceptId": "vianney-beau-papa",
+    "familyId": "vianney",
+    "type": "mcq",
+    "question": "Quel chanteur français a interprété Beau-papa ?",
+    "answers": [
+      "Julien Doré",
+      "Vianney",
+      "Kendji Girac",
+      "Louane"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-louane-avenir",
+    "conceptId": "louane-avenir",
+    "familyId": "louane",
+    "type": "mcq",
+    "question": "Quelle artiste française, révélée par The Voice, a chanté Avenir ?",
+    "answers": [
+      "Louane",
+      "Amir",
+      "Kendji Girac",
+      "Nadya"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-kendji-the-voice",
+    "conceptId": "kendji-girac-the-voice",
+    "familyId": "kendji",
+    "type": "mcq",
+    "question": "Quel artiste français a remporté la saison 3 de The Voice en 2014 ?",
+    "answers": [
+      "Amir",
+      "Louane",
+      "Slimane",
+      "Kendji Girac"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-mika-grace-kelly",
+    "conceptId": "mika-grace-kelly",
+    "familyId": "mika",
+    "type": "mcq",
+    "question": "Quel chanteur a interprété Grace Kelly ?",
+    "answers": [
+      "Robbie Williams",
+      "Elton John",
+      "Mika",
+      "James Blunt"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-adele-rolling",
+    "conceptId": "adele-rolling-in-the-deep",
+    "familyId": "adele",
+    "type": "mcq",
+    "question": "Quelle chanteuse britannique a interprété Rolling in the Deep ?",
+    "answers": [
+      "Jessie J",
+      "Adele",
+      "Amy Winehouse",
+      "Duffy"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-taylor-swift-country",
+    "conceptId": "taylor-swift-country",
+    "familyId": "taylor-swift",
+    "type": "mcq",
+    "question": "Dans quel pays est née Taylor Swift ?",
+    "answers": [
+      "Les États-Unis",
+      "Le Royaume-Uni",
+      "Le Canada",
+      "L'Australie"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-bts-country",
+    "conceptId": "bts-south-korea",
+    "familyId": "kpop",
+    "type": "mcq",
+    "question": "De quel pays est originaire le groupe BTS ?",
+    "answers": [
+      "Le Japon",
+      "La Chine",
+      "Taïwan",
+      "La Corée du Sud"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "kpop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-psy-gangnam",
+    "conceptId": "gangnam-style-psy",
+    "familyId": "kpop",
+    "type": "mcq",
+    "question": "Quel artiste a interprété Gangnam Style, première vidéo à dépasser le milliard de vues ?",
+    "answers": [
+      "G-Dragon",
+      "CL",
+      "Psy",
+      "BTS"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-eurovision-record",
+    "conceptId": "eurovision-most-wins",
+    "familyId": "eurovision",
+    "type": "mcq",
+    "question": "Quel pays détient le record de victoires à l'Eurovision ?",
+    "answers": [
+      "Le Royaume-Uni",
+      "L'Irlande",
+      "La France",
+      "La Suède"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "records",
+      "eurovision"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-white-christmas",
+    "conceptId": "white-christmas-best-seller",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle chanson de Bing Crosby est le single le plus vendu de l'histoire ?",
+    "answers": [
+      "White Christmas",
+      "Yesterday",
+      "Candle in the Wind 1997",
+      "I Will Always Love You"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "records",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "records",
+      "chansons"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-candle-in-the-wind",
+    "conceptId": "candle-in-the-wind-elton",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel artiste a réécrit Candle in the Wind en hommage à Lady Diana ?",
+    "answers": [
+      "George Michael",
+      "Sting",
+      "Paul McCartney",
+      "Elton John"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-nina-simone",
+    "conceptId": "nina-simone-feeling-good",
+    "familyId": "nina-simone",
+    "type": "mcq",
+    "question": "Quelle chanteuse a interprété Feeling Good ?",
+    "answers": [
+      "Etta James",
+      "Billie Holiday",
+      "Nina Simone",
+      "Aretha Franklin"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "jazz"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-aretha-soul",
+    "conceptId": "aretha-queen-of-soul",
+    "familyId": "soul",
+    "type": "mcq",
+    "question": "Qui est surnommée la « Reine de la soul » ?",
+    "answers": [
+      "Gladys Knight",
+      "Aretha Franklin",
+      "Tina Turner",
+      "Diana Ross"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "soul"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-tina-turner-country",
+    "conceptId": "tina-turner-origin",
+    "familyId": "tina-turner",
+    "type": "mcq",
+    "question": "Dans quel pays Tina Turner est-elle née ?",
+    "answers": [
+      "Les États-Unis",
+      "Le Royaume-Uni",
+      "La Jamaïque",
+      "L'Afrique du Sud"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "soul"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-johnny-cash-ring",
+    "conceptId": "johnny-cash-ring-of-fire",
+    "familyId": "country",
+    "type": "mcq",
+    "question": "Quelle légende de la country a chanté Ring of Fire ?",
+    "answers": [
+      "Willie Nelson",
+      "Dolly Parton",
+      "Kris Kristofferson",
+      "Johnny Cash"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "country"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-dolly-parton",
+    "conceptId": "dolly-parton-i-will",
+    "familyId": "country",
+    "type": "mcq",
+    "question": "Quelle chanteuse de country a écrit I Will Always Love You, repris par Whitney Houston ?",
+    "answers": [
+      "Reba McEntire",
+      "Carrie Underwood",
+      "Dolly Parton",
+      "Shania Twain"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "country"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-bob-dylan-nobel",
+    "conceptId": "bob-dylan-nobel",
+    "familyId": "bob-dylan",
+    "type": "mcq",
+    "question": "Quel chanteur a reçu le prix Nobel de littérature en 2016 ?",
+    "answers": [
+      "Paul Simon",
+      "Bob Dylan",
+      "Leonard Cohen",
+      "Bruce Springsteen"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-springsteen-boss",
+    "conceptId": "the-boss-springsteen",
+    "familyId": "springsteen",
+    "type": "mcq",
+    "question": "Quel est le surnom de Bruce Springsteen ?",
+    "answers": [
+      "The Boss",
+      "The King",
+      "The Duke",
+      "The Chief"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-u2-bono",
+    "conceptId": "bono-u2",
+    "familyId": "u2",
+    "type": "mcq",
+    "question": "Quel est le nom du chanteur du groupe irlandais U2 ?",
+    "answers": [
+      "Sting",
+      "Bryan Ferry",
+      "Robert Smith",
+      "Bono"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-coldplay-yellow",
+    "conceptId": "coldplay-yellow",
+    "familyId": "coldplay",
+    "type": "mcq",
+    "question": "Quel groupe a interprété Yellow et Viva la Vida ?",
+    "answers": [
+      "Keane",
+      "The Killers",
+      "Coldplay",
+      "Muse"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-green-day",
+    "conceptId": "green-day-american-idiot",
+    "familyId": "green-day",
+    "type": "mcq",
+    "question": "Quel groupe punk-rock a sorti American Idiot en 2004 ?",
+    "answers": [
+      "Sum 41",
+      "Green Day",
+      "The Offspring",
+      "Blink-182"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-ed-sheeran-shape",
+    "conceptId": "ed-sheeran-shape-of-you",
+    "familyId": "ed-sheeran",
+    "type": "mcq",
+    "question": "Quel artiste a interprété Shape of You ?",
+    "answers": [
+      "Ed Sheeran",
+      "Sam Smith",
+      "Justin Bieber",
+      "Shawn Mendes"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

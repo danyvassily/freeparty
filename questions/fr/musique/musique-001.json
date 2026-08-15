@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "music-queen-bohemian",
+    "conceptId": "bohemian-rhapsody-queen",
+    "familyId": "queen-songs",
+    "type": "mcq",
+    "question": "Quel groupe a interprété Bohemian Rhapsody ?",
+    "answers": [
+      "Queen",
+      "The Beatles",
+      "Pink Floyd",
+      "Led Zeppelin"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-freddie-mercury",
+    "conceptId": "freddie-mercury-lead",
+    "familyId": "queen-songs",
+    "type": "mcq",
+    "question": "Quel était le nom du chanteur de Queen ?",
+    "answers": [
+      "David Bowie",
+      "Elton John",
+      "Mick Jagger",
+      "Freddie Mercury"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-beatles-city",
+    "conceptId": "beatles-liverpool",
+    "familyId": "beatles",
+    "type": "mcq",
+    "question": "De quelle ville anglaise sont originaires les Beatles ?",
+    "answers": [
+      "Manchester",
+      "Birmingham",
+      "Liverpool",
+      "Londres"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-beatles-members",
+    "conceptId": "beatles-lineup",
+    "familyId": "beatles",
+    "type": "mcq",
+    "question": "Lequel de ces musiciens n'a jamais fait partie des Beatles ?",
+    "answers": [
+      "George Harrison",
+      "Mick Jagger",
+      "John Lennon",
+      "Paul McCartney"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-yesterday-most-covered",
+    "conceptId": "yesterday-most-covered",
+    "familyId": "beatles-songs",
+    "type": "mcq",
+    "question": "Quelle chanson des Beatles détient le record du plus grand nombre de reprises ?",
+    "answers": [
+      "Yesterday",
+      "Hey Jude",
+      "Let It Be",
+      "Help !"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-thriller-album",
+    "conceptId": "thriller-best-selling",
+    "familyId": "jackson-albums",
+    "type": "mcq",
+    "question": "Quel album de Michael Jackson est l'album le plus vendu de l'histoire ?",
+    "answers": [
+      "Bad",
+      "Dangerous",
+      "Off the Wall",
+      "Thriller"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "albums",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "albums",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-mj-title",
+    "conceptId": "michael-jackson-title",
+    "familyId": "jackson-albums",
+    "type": "mcq",
+    "question": "Quel surnom était donné à Michael Jackson ?",
+    "answers": [
+      "L'Empereur du blues",
+      "Le Prince de la soul",
+      "Le Roi de la pop",
+      "Le Roi du rock"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-madonna-title",
+    "conceptId": "madonna-title",
+    "familyId": "madonna",
+    "type": "mcq",
+    "question": "Quel surnom est associé à Madonna ?",
+    "answers": [
+      "La Dame de fer",
+      "La Reine de la pop",
+      "La Reine du rock",
+      "La Princesse de la soul"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-elvis-title",
+    "conceptId": "elvis-title",
+    "familyId": "elvis",
+    "type": "mcq",
+    "question": "Quel surnom est donné à Elvis Presley ?",
+    "answers": [
+      "Le King",
+      "Le Boss",
+      "Le Duke",
+      "Le Chief"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-elvis-graceland",
+    "conceptId": "graceland-elvis",
+    "familyId": "elvis",
+    "type": "mcq",
+    "question": "Comment s'appelle la propriété d'Elvis Presley à Memphis ?",
+    "answers": [
+      "Neverland",
+      "Sunset Ranch",
+      "Heartbreak Hotel",
+      "Graceland"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "lieux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-daft-punk-country",
+    "conceptId": "daft-punk-french",
+    "familyId": "daft-punk",
+    "type": "mcq",
+    "question": "De quel pays est originaire le duo Daft Punk ?",
+    "answers": [
+      "L'Allemagne",
+      "Le Royaume-Uni",
+      "La France",
+      "La Belgique"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "electro"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-daft-punk-members",
+    "conceptId": "daft-punk-members",
+    "familyId": "daft-punk",
+    "type": "mcq",
+    "question": "Quels sont les vrais noms des deux membres de Daft Punk ?",
+    "answers": [
+      "Guy-Manuel et Pedro",
+      "Thomas Bangalter et Guy-Manuel de Homem-Christo",
+      "Thomas et William",
+      "Pierre et Jacques"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "electro"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-stromae-papaoutai",
+    "conceptId": "stromae-papaoutai",
+    "familyId": "stromae",
+    "type": "mcq",
+    "question": "Quel chanteur belge a interprété Papaoutai ?",
+    "answers": [
+      "Stromae",
+      "Maître Gims",
+      "Damso",
+      "Angèle"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-angele-country",
+    "conceptId": "angele-belgian",
+    "familyId": "angele",
+    "type": "mcq",
+    "question": "De quel pays est originaire la chanteuse Angèle ?",
+    "answers": [
+      "La France",
+      "Le Canada",
+      "La Suisse",
+      "La Belgique"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-johnny-hallyday",
+    "conceptId": "johnny-hallyday",
+    "familyId": "johnny-hallyday",
+    "type": "mcq",
+    "question": "Quel chanteur français était surnommé « l'idole des jeunes » ?",
+    "answers": [
+      "Eddy Mitchell",
+      "Sacha Distel",
+      "Johnny Hallyday",
+      "Claude François"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-comme-dhabitude",
+    "conceptId": "comme-dhabitude",
+    "familyId": "claude-francois",
+    "type": "mcq",
+    "question": "Quelle chanson de Claude François est devenue My Way pour Frank Sinatra ?",
+    "answers": [
+      "Cette année-là",
+      "Comme d'habitude",
+      "Alexandrie Alexandra",
+      "Le téléphone pleure"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-piaf-milord",
+    "conceptId": "piaf-milord",
+    "familyId": "piaf",
+    "type": "mcq",
+    "question": "Laquelle de ces chansons est interprétée par Édith Piaf ?",
+    "answers": [
+      "Milord",
+      "Les Champs-Élysées",
+      "Ne me quitte pas",
+      "Aline"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-piaf-regrets",
+    "conceptId": "non-je-ne-regrette-rien",
+    "familyId": "piaf",
+    "type": "mcq",
+    "question": "Quelle chanson d'Édith Piaf évoque le fait de ne rien regretter ?",
+    "answers": [
+      "L'Hymne à l'amour",
+      "Mon légionnaire",
+      "Padam Padam",
+      "Non, je ne regrette rien"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-dassin-champs-elysees",
+    "conceptId": "dassin-champs-elysees",
+    "familyId": "dassin",
+    "type": "mcq",
+    "question": "Quel chanteur interprète Les Champs-Élysées ?",
+    "answers": [
+      "Michel Sardou",
+      "Charles Aznavour",
+      "Joe Dassin",
+      "Claude François"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-aznavour-boheme",
+    "conceptId": "aznavour-boheme",
+    "familyId": "aznavour",
+    "type": "mcq",
+    "question": "Quel chanteur français est l'auteur de La Bohème ?",
+    "answers": [
+      "Jacques Brel",
+      "Charles Aznavour",
+      "Georges Brassens",
+      "Serge Gainsbourg"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-brel-country",
+    "conceptId": "brel-belgian",
+    "familyId": "brel",
+    "type": "mcq",
+    "question": "De quel pays est originaire Jacques Brel ?",
+    "answers": [
+      "La Belgique",
+      "La France",
+      "La Suisse",
+      "Le Luxembourg"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-gainsbourg-jane",
+    "conceptId": "gainsbourg-jane",
+    "familyId": "gainsbourg",
+    "type": "mcq",
+    "question": "Quel est le prénom de la compagne la plus célèbre de Serge Gainsbourg ?",
+    "answers": [
+      "Brigitte",
+      "Françoise",
+      "Catherine",
+      "Jane"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "chanson-francaise"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-nirvana-smells",
+    "conceptId": "nirvana-smells-like-teen-spirit",
+    "familyId": "nirvana",
+    "type": "mcq",
+    "question": "Quel groupe de grunge a sorti Smells Like Teen Spirit ?",
+    "answers": [
+      "Soundgarden",
+      "Alice in Chains",
+      "Nirvana",
+      "Pearl Jam"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-kurt-cobain",
+    "conceptId": "kurt-cobain-nirvana",
+    "familyId": "nirvana",
+    "type": "mcq",
+    "question": "Quel était le nom du chanteur de Nirvana ?",
+    "answers": [
+      "Layne Staley",
+      "Kurt Cobain",
+      "Eddie Vedder",
+      "Chris Cornell"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-radiohead-creep",
+    "conceptId": "radiohead-creep",
+    "familyId": "radiohead",
+    "type": "mcq",
+    "question": "Quel groupe a interprété Creep ?",
+    "answers": [
+      "Radiohead",
+      "Coldplay",
+      "Oasis",
+      "Blur"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-oasis-wonderwall",
+    "conceptId": "oasis-wonderwall",
+    "familyId": "oasis",
+    "type": "mcq",
+    "question": "Quel groupe britannique a interprété Wonderwall ?",
+    "answers": [
+      "Blur",
+      "The Verve",
+      "Pulp",
+      "Oasis"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-stones-satisfaction",
+    "conceptId": "satisfaction-rolling-stones",
+    "familyId": "rolling-stones",
+    "type": "mcq",
+    "question": "Quel groupe a interprété (I Can't Get No) Satisfaction ?",
+    "answers": [
+      "The Kinks",
+      "The Doors",
+      "The Rolling Stones",
+      "The Who"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-stones-paint-it",
+    "conceptId": "paint-it-black",
+    "familyId": "rolling-stones",
+    "type": "mcq",
+    "question": "Quelle chanson des Rolling Stones contient les paroles « I see a red door and I want it painted black » ?",
+    "answers": [
+      "Brown Sugar",
+      "Paint It Black",
+      "Angie",
+      "Start Me Up"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-zeppelin-stairway",
+    "conceptId": "stairway-to-heaven",
+    "familyId": "led-zeppelin",
+    "type": "mcq",
+    "question": "Quel groupe a composé Stairway to Heaven ?",
+    "answers": [
+      "Led Zeppelin",
+      "Deep Purple",
+      "Black Sabbath",
+      "Pink Floyd"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-floyd-dark-side",
+    "conceptId": "dark-side-of-the-moon",
+    "familyId": "pink-floyd",
+    "type": "mcq",
+    "question": "Quel album de Pink Floyd met en scène un prisme sur sa pochette ?",
+    "answers": [
+      "The Wall",
+      "Wish You Were Here",
+      "Animals",
+      "The Dark Side of the Moon"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "albums",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "albums",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-floyd-another-brick",
+    "conceptId": "another-brick-in-the-wall",
+    "familyId": "pink-floyd",
+    "type": "mcq",
+    "question": "Quelle chanson de Pink Floyd évoque les murs de l'école ?",
+    "answers": [
+      "Money",
+      "Time",
+      "Another Brick in the Wall",
+      "Comfortably Numb"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-bowie-ziggy",
+    "conceptId": "ziggy-stardust",
+    "familyId": "bowie",
+    "type": "mcq",
+    "question": "Quel personnage extraterrestre David Bowie a-t-il inventé en 1972 ?",
+    "answers": [
+      "Thin White Duke",
+      "Ziggy Stardust",
+      "Major Tom",
+      "Aladdin Sane"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-bowie-space-oddity",
+    "conceptId": "space-oddity",
+    "familyId": "bowie",
+    "type": "mcq",
+    "question": "Quelle chanson de David Bowie raconte le voyage d'un astronaute ?",
+    "answers": [
+      "Space Oddity",
+      "Life on Mars",
+      "Starman",
+      "Heroes"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "rock"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-prince-purple-rain",
+    "conceptId": "purple-rain-prince",
+    "familyId": "prince",
+    "type": "mcq",
+    "question": "Quel artiste américain a composé Purple Rain ?",
+    "answers": [
+      "Michael Jackson",
+      "Stevie Wonder",
+      "Rick James",
+      "Prince"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-whitney-i-will",
+    "conceptId": "whitney-i-will-always",
+    "familyId": "whitney-houston",
+    "type": "mcq",
+    "question": "Qui interprète I Will Always Love You ?",
+    "answers": [
+      "Céline Dion",
+      "Aretha Franklin",
+      "Whitney Houston",
+      "Mariah Carey"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-dion-my-heart",
+    "conceptId": "celine-my-heart-will-go-on",
+    "familyId": "celine-dion",
+    "type": "mcq",
+    "question": "Quelle chanteuse interprète My Heart Will Go On, le générique de Titanic ?",
+    "answers": [
+      "Patricia Kaas",
+      "Céline Dion",
+      "Lara Fabian",
+      "Mylène Farmer"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-titanic-song",
+    "conceptId": "my-heart-will-go-on-titanic",
+    "familyId": "oscars-songs",
+    "type": "mcq",
+    "question": "Quel film a popularisé la chanson My Heart Will Go On ?",
+    "answers": [
+      "Titanic",
+      "Armageddon",
+      "La La Land",
+      "Le Roi lion"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "chansons",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "chansons",
+      "cinema"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-beyonce-destinys",
+    "conceptId": "beyonce-destinys-child",
+    "familyId": "beyonce",
+    "type": "mcq",
+    "question": "Dans quel groupe Beyoncé a-t-elle commencé sa carrière ?",
+    "answers": [
+      "TLC",
+      "En Vogue",
+      "Spice Girls",
+      "Destiny's Child"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "artistes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "artistes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-spice-girls-posh",
+    "conceptId": "spice-girls-nicknames",
+    "familyId": "spice-girls",
+    "type": "mcq",
+    "question": "Quel était le surnom de Victoria Beckham dans les Spice Girls ?",
+    "answers": [
+      "Sporty Spice",
+      "Ginger Spice",
+      "Posh Spice",
+      "Baby Spice"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-abba-waterloo",
+    "conceptId": "abba-waterloo-eurovision",
+    "familyId": "abba",
+    "type": "mcq",
+    "question": "Quel groupe suédois a remporté l'Eurovision en 1974 avec Waterloo ?",
+    "answers": [
+      "Europe",
+      "ABBA",
+      "Roxette",
+      "Ace of Base"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-abba-country",
+    "conceptId": "abba-swedish",
+    "familyId": "abba",
+    "type": "mcq",
+    "question": "De quel pays est originaire le groupe ABBA ?",
+    "answers": [
+      "La Suède",
+      "La Norvège",
+      "Le Danemark",
+      "La Finlande"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "groupes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "groupes",
+      "pop"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-mozart-city",
+    "conceptId": "mozart-salzburg",
+    "familyId": "mozart",
+    "type": "mcq",
+    "question": "Dans quelle ville autrichienne Wolfgang Amadeus Mozart est-il né ?",
+    "answers": [
+      "Vienne",
+      "Innsbruck",
+      "Graz",
+      "Salzbourg"
+    ],
+    "correctAnswer": 1,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "compositeurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-beethoven-fifth",
+    "conceptId": "beethoven-fifth",
+    "familyId": "beethoven",
+    "type": "mcq",
+    "question": "Quelle symphonie de Beethoven commence par « pom pom pom pôôôm » ?",
+    "answers": [
+      "La Troisième",
+      "La Septième",
+      "La Cinquième",
+      "La Neuvième"
+    ],
+    "correctAnswer": 2,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "compositeurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-ode-to-joy",
+    "conceptId": "ode-to-joy-hymn-europe",
+    "familyId": "beethoven",
+    "type": "mcq",
+    "question": "Quelle œuvre de Beethoven est devenue l'hymne officiel de l'Union européenne ?",
+    "answers": [
+      "Le Boléro",
+      "L'Ode à la joie",
+      "La Lettre à Élise",
+      "La Marche turque"
+    ],
+    "correctAnswer": 3,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "music-ravel-bolero",
+    "conceptId": "ravel-bolero",
+    "familyId": "ravel",
+    "type": "mcq",
+    "question": "Quel compositeur français a écrit le Boléro ?",
+    "answers": [
+      "Maurice Ravel",
+      "Claude Debussy",
+      "Camille Saint-Saëns",
+      "Hector Berlioz"
+    ],
+    "correctAnswer": 0,
+    "category": "musique",
+    "subcategory": "classique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "classique",
+      "compositeurs"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

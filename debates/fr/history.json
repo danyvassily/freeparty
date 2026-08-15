@@ -1,0 +1,270 @@
+[
+  {
+    "id": "hist-01",
+    "category": "history",
+    "topic": "Causes de 1914",
+    "prompt": "La Première Guerre mondiale était-elle évitable ?",
+    "context": "Le déclenchement de 1914 résulte d'un enchaînement d'alliances (Triple-Entente, Triplice), de crises balkaniques, de course aux armements et de plans militaires (plan Schlieffen). Les historiens débattent entre responsabilités partagées et mécanismes structurels. La controverse Fischer (1961) a relancé la question des responsabilités allemandes.",
+    "perspectives": [
+      "La guerre n'était pas inévitable : des décisions humaines (ultimatums, mobilisations) ont transformé une crise locale en guerre mondiale.",
+      "Le système d'alliances et la course aux armements rendaient l'explosion quasi inévitable : la guerre était dans la structure de l'Europe de 1914.",
+      "La guerre exprimait des rivalités impériales et économiques anciennes : les tensions auraient éclaté tôt ou tard.",
+      "Juger l'évitabilité exige de comparer avec les crises précédentes (Maroc 1905/1911) qui avaient été résolues par la diplomatie."
+    ],
+    "followUps": [
+      "Une mobilisation générale plus lente aurait-elle changé la donne ?",
+      "La responsabilité est-elle individuelle (dirigeants) ou collective (sociétés) ?",
+      "Les « leçons de 1914 » aident-elles à éviter les guerres actuelles ?"
+    ],
+    "sources": [
+      { "label": "Christopher Clark, Les Somnambules (2012)", "type": "article" },
+      { "label": "Fritz Fischer, Les Buts de guerre de l'Allemagne impériale (1961)", "type": "article" }
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-02",
+    "category": "history",
+    "topic": "Révolutions",
+    "prompt": "Les grandes révolutions naissent-elles davantage des idées ou des conditions économiques ?",
+    "context": "La Révolution française (1789) suit les Lumières ; la Révolution russe (1917) se produit dans un contexte de guerre et de famine. Les historiens marxistes privilégient les structures socio-économiques ; les historiens des idées soulignent les philosophies et les précédents. Tocqueville notait que la France de 1789 était l'une des moins misérables d'Europe.",
+    "perspectives": [
+      "Sans conditions matérielles insupportables, les idées restent des livres : la misère et les crises font les révolutions.",
+      "Sans idées de légitimité alternative, la révolte reste une émeute : la révolution est un changement de conception du pouvoir.",
+      "Les révolutions naissent quand les attentes montent plus vite que les conditions (théorie de la frustration relative).",
+      "Chaque révolution combine les deux dans des proportions propres : il faut comparer les cas pour comprendre."
+    ],
+    "followUps": [
+      "La Révolution française aurait-elle eu lieu sans les Lumières ?",
+      "Les révolutions réussissent-elles mieux en temps de guerre ?",
+      "Une révolution peut-elle être pacifique ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-03",
+    "category": "history",
+    "topic": "Juger le passé",
+    "prompt": "Peut-on juger moralement les personnages historiques avec les valeurs de notre époque ?",
+    "context": "La « querelle des statues » (Colomb, esclavagistes, colonisateurs) et les débats sur la mémoire coloniale opposent contextualisme et présentisme. Les historiens défendent la compréhension des contextes ; la philosophie morale interroge la validité transhistorique des principes (droits de l'homme, anti-esclavagisme existait déjà).",
+    "perspectives": [
+      "Juger le passé avec nos valeurs est un anachronisme : on ne peut exiger de figures d'autrefois qu'elles pensent comme nous.",
+      "Certains principes (refus de l'esclavage, de la torture) existaient déjà à l'époque : juger est possible et nécessaire.",
+      "On peut juger les actes sans condamner la personne entière : le jugement historique doit être nuancé.",
+      "Le débat n'est pas seulement moral : il décide de ce que nos sociétés choisissent de commémorer."
+    ],
+    "followUps": [
+      "Faut-il déboulonner les statues ?",
+      "Peut-on admirer une œuvre et condamner son auteur ?",
+      "Les crimes du passé doivent-ils être réparés aujourd'hui ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-04",
+    "category": "history",
+    "topic": "Empires",
+    "prompt": "Les empires ont-ils davantage contribué aux échanges ou à la domination ?",
+    "context": "L'Empire romain, les empires coloniaux européens, l'Empire ottoman ont créé des espaces d'échanges (routes, langues, monnaies, droit) et des rapports de domination (prélèvement, esclavage, acculturation). L'historiographie postcoloniale (Said, Chakrabarty) a renouvelé la lecture des héritages impériaux.",
+    "perspectives": [
+      "Les empires ont unifié des espaces, diffusé techniques et idées, créé des circulations qui ont profité à long terme.",
+      "L'échange impérial est asymétrique : il profite d'abord au centre, souvent par la violence et l'extraction.",
+      "La question est fausse : les échanges existaient avant les empires, et la domination a souvent détruit des réseaux antérieurs.",
+      "Il faut distinguer les empires selon leur forme : intégration, commerce, extraction ou génocide n'ont rien à voir."
+    ],
+    "followUps": [
+      "L'empire romain est-il comparable aux empires coloniaux modernes ?",
+      "Que reste-t-il des empires dans la mondialisation actuelle ?",
+      "La colonisation a-t-elle apporté des « bienfaits » ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-05",
+    "category": "history",
+    "topic": "Réforme ou rupture",
+    "prompt": "Les progrès politiques sont-ils généralement obtenus par réforme ou par rupture ?",
+    "context": "L'abolition de l'esclavage (France 1848, États-Unis 1865) suit des réformes progressives mais aussi des révoltes ; le suffrage universel s'étend par réformes au XIXe siècle ; les droits civiques américains combinent lois, mobilisation et pression. Les historiens débattent de l'efficacité relative des deux chemins.",
+    "perspectives": [
+      "Les réformes durables s'obtiennent par négociation et compromis : les ruptures créent des reculs violents.",
+      "Sans rupture (grèves, révoltes, révolutions), les réformes n'arrivent jamais : la pression radicale élargit le champ du possible.",
+      "Réforme et rupture sont souvent complémentaires : la menace de rupture rend la réforme possible.",
+      "Chaque avancée a sa logique propre : comparer l'Angleterre réformatrice et la France révolutionnaire ne donne pas de loi générale."
+    ],
+    "followUps": [
+      "La peur de la révolution a-t-elle accéléré les réformes au XIXe siècle ?",
+      "Les droits obtenus par la force sont-ils moins légitimes ?",
+      "Le compromis est-il toujours un progrès ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-06",
+    "category": "history",
+    "topic": "Grandes personnalités",
+    "prompt": "Les grandes personnalités changent-elles l'Histoire ou incarnent-elles surtout des forces déjà présentes ?",
+    "context": "Tolstoi, dans Guerre et Paix, minimise le rôle de Napoléon ; Carlyle exaltait les héros ; la théorie des « grands hommes » a été critiquée par l'histoire sociale (Annales, Braudel) qui privilégie les structures longues. Des contrefactuels (que serait l'Europe sans Napoléon ou sans Staline ?) animent le débat.",
+    "perspectives": [
+      "Les structures (climat, économie, démographie, institutions) déterminent les grandes évolutions : les individus ne font que les incarner.",
+      "Certaines décisions individuelles (guerre ou paix, réforme ou terreur) ont des conséquences massives : les acteurs comptent.",
+      "La question dépend de l'échelle : les individus pèsent à court terme, les structures à long terme (Braudel).",
+      "Le vrai pouvoir des « grands hommes » est souvent de lire et d'exploiter les forces de leur temps : génie et conjoncture se renforcent."
+    ],
+    "followUps": [
+      "Sans Hitler, la Seconde Guerre mondiale aurait-elle eu lieu ?",
+      "Les femmes et les hommes anonymes comptent-ils plus que les figures célèbres ?",
+      "Le leadership change-t-il les organisations et les États ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-07",
+    "category": "history",
+    "topic": "Guerre froide",
+    "prompt": "La fin de la guerre froide doit-elle davantage aux pressions extérieures ou aux évolutions internes du bloc soviétique ?",
+    "context": "La chute du mur de Berlin (1989) et la dissolution de l'URSS (1991) sont lues comme une victoire de l'Occident (course aux armements, Reagan) ou comme le produit de crises internes (économie planifiée, réformes de Gorbatchev, nationalismes). Les archives ouvertes depuis 1991 n'ont pas clos le débat.",
+    "perspectives": [
+      "La pression militaire et économique occidentale a épuisé l'URSS : la course aux armements a été décisive.",
+      "L'effondrement vient de l'intérieur : stagnation économique, perte de légitimité, réformes incontrôlables (glasnost, perestroïka).",
+      "Les mobilisations populaires (Pologne, Tchécoslovaquie, RDA) ont rendu le changement irréversible.",
+      "La fin du système résulte d'une combinaison : pressions externes, failles internes et contingence des événements de 1989."
+    ],
+    "followUps": [
+      "La guerre froide pouvait-elle se terminer pacifiquement autrement ?",
+      "L'élargissement de l'OTAN après 1991 a-t-il été une erreur ?",
+      "Quelle mémoire de la guerre froide construisent les nouvelles générations ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "medium",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-08",
+    "category": "history",
+    "topic": "Colonisation",
+    "prompt": "La colonisation doit-elle être étudiée principalement comme un système économique ou comme un système culturel ?",
+    "context": "L'historiographie oppose lectures économiques (extraction, marchés captifs : l'école de l'économie-monde de Wallerstein) et lectures culturelles (mission civilisatrice, orientalisme de Said, acculturation). Les empires ont mêlé exploitation matérielle et hiérarchies symboliques dont les effets persistent.",
+    "perspectives": [
+      "La colonisation est d'abord un système économique : extraction des ressources, main-d'œuvre et marchés captifs en définissent la logique.",
+      "La colonisation est aussi une entreprise culturelle : légitimer la domination par la « mission civilisatrice » et inférioriser les colonisés.",
+      "Les deux dimensions sont inséparables : l'exploitation économique a besoin de justifications culturelles, qui survivent à la domination.",
+      "Chaque empire a sa spécificité : le modèle français d'assimilation diffère du système indirect britannique."
+    ],
+    "followUps": [
+      "Les héritages coloniaux expliquent-ils les inégalités actuelles entre régions ?",
+      "Faut-il réécrire les manuels d'histoire ?",
+      "La coopération post-coloniale est-elle une forme de néo-colonialisme ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-09",
+    "category": "history",
+    "topic": "Révolution industrielle",
+    "prompt": "La révolution industrielle a-t-elle davantage amélioré ou détérioré les conditions de vie des travailleurs ?",
+    "context": "Les historiens (E.P. Thompson, Robert Allen) débattent de l'évolution des salaires réels et de la santé au XIXe siècle : amélioration progressive à long terme, mais détérioration dans les premières décennies (ateliers, hygiène, urbanisation). Les lois sociales (Factory Acts 1833-1864) répondent aux excès du système.",
+    "perspectives": [
+      "À long terme, l'industrialisation a sorti des masses de la pauvreté : salaires, alimentation, espérance de vie ont augmenté.",
+      "La première phase a dégradé les conditions : journées de 14h, travail des enfants, logements insalubres.",
+      "Le bilan dépend de la période et du lieu : les années 1780-1840 diffèrent radicalement de la fin du XIXe siècle.",
+      "Le progrès matériel s'est payé d'une nouvelle forme de dépendance : le travailleur vendu à la machine et au marché."
+    ],
+    "followUps": [
+      "Sans législation sociale, le capitalisme industriel aurait-il corrigé ses excès ?",
+      "La révolution industrielle a-t-elle profité plus aux capitalistes qu'aux travailleurs ?",
+      "L'IA est-elle une nouvelle révolution industrielle ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-10",
+    "category": "history",
+    "topic": "Mémoire historique",
+    "prompt": "Faut-il considérer la mémoire historique comme un devoir civique ou comme une arme politique ?",
+    "context": "Après 1945, le « devoir de mémoire » (lois mémorielles, journées de commémoration) s'est imposé en Europe ; les historiens (Ricoeur, Nora) distinguent mémoire et histoire ; les débats sur les lois mémorielles (loi Gayssot 1990, lois sur la colonisation) montrent le caractère politique de la mémoire officielle.",
+    "perspectives": [
+      "Se souvenir des crimes du passé est un devoir : sans mémoire, les victimes sont doublement effacées.",
+      "La mémoire officielle est sélective et instrumentalisée : chaque pouvoir construit le passé qui le légitime.",
+      "Le devoir de mémoire doit être un travail d'histoire : transmettre les faits documentés plutôt que des récits imposés.",
+      "La mémoire collective est nécessaire à la réconciliation, mais elle ne doit pas devenir un monopole d'État."
+    ],
+    "followUps": [
+      "Les lois mémorielles doivent-elles exister ?",
+      "Faut-il commémorer ce qui divise ?",
+      "Les musées d'histoire peuvent-ils être neutres ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-11",
+    "category": "history",
+    "topic": "Renaissance",
+    "prompt": "La Renaissance marque-t-elle une vraie rupture avec le Moyen Âge ou une continuité masquée ?",
+    "context": "Burckhardt (1860) a construit l'idée d'une rupture : retour à l'Antiquité, humanisme, individu moderne. Les historiens actuels (Jacques Le Goff, Jean Delumeau) insistent sur les continuités : la Renaissance naît dans le Moyen Âge finissant, et l'humanisme coexiste avec une société encore religieuse.",
+    "perspectives": [
+      "La Renaissance invente l'individu, la perspective, l'imprimerie : une rupture majeure dans la pensée et l'art.",
+      "Sans les universités, la scolastique et les traductions médiévales, pas de Renaissance : la continuité est profonde.",
+      "La rupture est surtout une construction historiographique : les contemporains de 1500 se sentaient dans le même monde que leurs parents.",
+      "Il faut distinguer les domaines : rupture dans les arts, continuité dans les structures sociales et religieuses."
+    ],
+    "followUps": [
+      "L'imprimerie a-t-elle été la vraie révolution ?",
+      "La Renaissance européenne est-elle comparable aux renaissances islamiques ou chinoises ?",
+      "Notre époque a-t-elle sa « Renaissance » ?"
+    ],
+    "difficulty": "intermediate",
+    "sensitivity": "low",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  },
+  {
+    "id": "hist-12",
+    "category": "history",
+    "topic": "Résistance et collaboration",
+    "prompt": "Comment juger les comportements des sociétés sous l'Occupation : résistance, accommodement ou collaboration ?",
+    "context": "Après 1945, le mythe résistancialiste a longtemps dominé en France (Résistance unanime) ; les travaux de Robert Paxton (1960s-1970s) ont documenté l'ampleur de la collaboration d'État (Vichy). Les historiens distinguent collaborationnisme, accommodation quotidienne et résistance armée, dans une zone grise complexe.",
+    "perspectives": [
+      "La majorité a subi l'Occupation sans choisir : les comportements doivent être jugés selon les situations et les risques.",
+      "La collaboration d'État (Vichy, rafles) engage des responsabilités politiques et administratives précises.",
+      "La résistance a été minoritaire mais décisive : son souvenir justifie l'honneur national.",
+      "Le jugement moral doit laisser place à la compréhension historique : chaque acteur avait une gamme limitée de choix."
+    ],
+    "followUps": [
+      "Faut-il juger les collaborateurs après coup ou laisser l'histoire trancher ?",
+      "Les entreprises qui ont profité de l'Occupation doivent-elles réparer ?",
+      "Comment transmettre cette histoire aux générations qui n'ont pas connu la guerre ?"
+    ],
+    "difficulty": "deep",
+    "sensitivity": "high",
+    "lastVerifiedAt": "2026-08-15",
+    "version": 1
+  }
+]

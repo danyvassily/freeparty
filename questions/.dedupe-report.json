@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-08-15T21:13:06.346Z",
+  "exactDuplicates": [],
+  "nearDuplicates": [
+    {
+      "a": "film-titanic-oscar-1998",
+      "b": "film-oscars-parasite",
+      "distance": 4,
+      "normalizedA": "quel film a remporte l oscar du meilleur film en 1998"
+    },
+    {
+      "a": "food-sushi-japan",
+      "b": "food-curry",
+      "distance": 4,
+      "normalizedA": "de quel pays le sushi est il originaire"
+    },
+    {
+      "a": "food-sushi-japan",
+      "b": "food-kebab-turkey",
+      "distance": 5,
+      "normalizedA": "de quel pays le sushi est il originaire"
+    },
+    {
+      "a": "food-sushi-japan",
+      "b": "music-tango-country",
+      "distance": 5,
+      "normalizedA": "de quel pays le sushi est il originaire"
+    },
+    {
+      "a": "food-sushi-japan",
+      "b": "sport-judo-japan",
+      "distance": 4,
+      "normalizedA": "de quel pays le sushi est il originaire"
+    },
+    {
+      "a": "food-curry",
+      "b": "food-kebab-turkey",
+      "distance": 5,
+      "normalizedA": "de quel pays le curry est il originaire"
+    },
+    {
+      "a": "food-curry",
+      "b": "music-tango-country",
+      "distance": 5,
+      "normalizedA": "de quel pays le curry est il originaire"
+    },
+    {
+      "a": "food-curry",
+      "b": "sport-judo-japan",
+      "distance": 4,
+      "normalizedA": "de quel pays le curry est il originaire"
+    },
+    {
+      "a": "food-cassoulet",
+      "b": "food-camembert",
+      "distance": 6,
+      "normalizedA": "de quelle region francaise le cassoulet est il originaire"
+    },
+    {
+      "a": "food-kebab-turkey",
+      "b": "music-tango-country",
+      "distance": 5,
+      "normalizedA": "de quel pays le kebab est il originaire"
+    },
+    {
+      "a": "food-kebab-turkey",
+      "b": "sport-judo-japan",
+      "distance": 5,
+      "normalizedA": "de quel pays le kebab est il originaire"
+    },
+    {
+      "a": "foot-france-1998",
+      "b": "foot-france-2018",
+      "distance": 3,
+      "normalizedA": "qui la france a t elle battu en finale de la coupe du monde 1998"
+    },
+    {
+      "a": "foot-england-record",
+      "b": "foot-juventus",
+      "distance": 8,
+      "normalizedA": "quel club detient le record de titres de champion d angleterre"
+    },
+    {
+      "a": "game-sonic-speed",
+      "b": "game-roblox-platform",
+      "distance": 5,
+      "normalizedA": "quelle est la particularite de sonic"
+    },
+    {
+      "a": "game-tetris-origin",
+      "b": "web-tiktok-china",
+      "distance": 5,
+      "normalizedA": "de quel pays est originaire tetris"
+    },
+    {
+      "a": "game-sims-creator",
+      "b": "tv-simpsons-creator",
+      "distance": 3,
+      "normalizedA": "qui a cree les sims"
+    },
+    {
+      "a": "book-camus-nobel",
+      "b": "book-le-clezio",
+      "distance": 4,
+      "normalizedA": "quel ecrivain francais a recu le prix nobel de litterature en 1957"
+    },
+    {
+      "a": "music-freddie-mercury",
+      "b": "music-kurt-cobain",
+      "distance": 6,
+      "normalizedA": "quel etait le nom du chanteur de queen"
+    },
+    {
+      "a": "music-abba-country",
+      "b": "music-bts-country",
+      "distance": 3,
+      "normalizedA": "de quel pays est originaire le groupe abba"
+    },
+    {
+      "a": "music-tango-country",
+      "b": "sport-judo-japan",
+      "distance": 4,
+      "normalizedA": "de quel pays le tango est il originaire"
+    },
+    {
+      "a": "sci-iron-fe",
+      "b": "sci-gold-au",
+      "distance": 4,
+      "normalizedA": "quel est le symbole chimique du fer"
+    },
+    {
+      "a": "tv-simpsons-homer",
+      "b": "tv-simpsons-maggie",
+      "distance": 5,
+      "normalizedA": "quel est le prenom du pere dans les simpson"
+    },
+    {
+      "a": "tv-friends-ross-paleo",
+      "b": "tv-friends-monica-chef",
+      "distance": 5,
+      "normalizedA": "quel est le metier de ross dans friends"
+    },
+    {
+      "a": "sport-mma",
+      "b": "tech-gps-meaning",
+      "distance": 3,
+      "normalizedA": "que signifie le sigle mma"
+    }
+  ],
+  "removedCount": 18
+}

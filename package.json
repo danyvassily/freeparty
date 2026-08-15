@@ -1,0 +1,44 @@
+{
+  "name": "freeparty",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "questions:validate": "tsx scripts/questions/validate.ts",
+    "questions:dedupe": "tsx scripts/questions/dedupe.ts",
+    "questions:stats": "tsx scripts/questions/stats.ts",
+    "questions:import": "tsx scripts/questions/import.ts",
+    "questions:generate": "tsx scripts/questions/generate.ts",
+    "questions:review": "tsx scripts/questions/review.ts",
+    "questions:verify": "tsx scripts/questions/verify.ts",
+    "questions:fetch": "tsx scripts/questions/fetch.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "motion": "^11.15.0",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "vitest": "^2.1.8"
+  }
+}
