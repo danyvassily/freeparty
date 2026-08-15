@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "war-ww2-debut-1939",
+    "conceptId": "ww2-debut-1939",
+    "familyId": "ww2-start",
+    "type": "mcq",
+    "question": "En quelle année débuta la Seconde Guerre mondiale ?",
+    "answers": [
+      "1939",
+      "1938",
+      "1940",
+      "1941"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q362",
+      "url": "https://www.wikidata.org/wiki/Q362",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-pologne",
+    "conceptId": "ww2-pologne",
+    "familyId": "ww2-start",
+    "type": "mcq",
+    "question": "Quel événement du 1er septembre 1939 déclencha la guerre ?",
+    "answers": [
+      "L'invasion de la Tchécoslovaquie",
+      "L'attaque de Pearl Harbor",
+      "L'invasion de la France",
+      "L'invasion de la Pologne par l'Allemagne"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2935376",
+      "url": "https://www.wikidata.org/wiki/Q2935376",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-drole-guerre",
+    "conceptId": "ww2-drole-guerre",
+    "familyId": "ww2-start",
+    "type": "mcq",
+    "question": "Comment appelle-t-on la période d'attente entre septembre 1939 et mai 1940 ?",
+    "answers": [
+      "La guerre froide",
+      "L'entre-deux-guerres",
+      "La drôle de guerre",
+      "La guerre éclair"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q190882",
+      "url": "https://www.wikidata.org/wiki/Q190882",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-blitzkrieg",
+    "conceptId": "ww2-blitzkrieg",
+    "familyId": "ww2-start",
+    "type": "mcq",
+    "question": "Quel terme allemand désigne la stratégie de guerre éclair ?",
+    "answers": [
+      "L'opération Barbarossa",
+      "La blitzkrieg",
+      "La guerre d'usure",
+      "La guerre de position"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q56506",
+      "url": "https://www.wikidata.org/wiki/Q56506",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-france-1940",
+    "conceptId": "ww2-france-1940",
+    "familyId": "ww2-france",
+    "type": "mcq",
+    "question": "En quelle année la France fut-elle envahie et vaincue par l'Allemagne ?",
+    "answers": [
+      "1940",
+      "1939",
+      "1941",
+      "1942"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q362",
+      "url": "https://www.wikidata.org/wiki/Q362",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-appel-18-juin",
+    "conceptId": "ww2-appel-18-juin",
+    "familyId": "ww2-france",
+    "type": "mcq",
+    "question": "Quel général français lança l'appel du 18 juin 1940 depuis Londres ?",
+    "answers": [
+      "Philippe Pétain",
+      "Jean Moulin",
+      "Leclerc",
+      "Charles de Gaulle"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2078515",
+      "url": "https://www.wikidata.org/wiki/Q2078515",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-vichy",
+    "conceptId": "ww2-vichy",
+    "familyId": "ww2-france",
+    "type": "mcq",
+    "question": "Dans quelle ville le maréchal Pétain installa-t-il son régime en 1940 ?",
+    "answers": [
+      "Lyon",
+      "Bordeaux",
+      "Vichy",
+      "Paris"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q69808",
+      "url": "https://www.wikidata.org/wiki/Q69808",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-bataille-angleterre",
+    "conceptId": "ww2-bataille-angleterre",
+    "familyId": "ww2-france",
+    "type": "mcq",
+    "question": "Quelle bataille aérienne de 1940 opposa la Royal Air Force à la Luftwaffe ?",
+    "answers": [
+      "Le Blitz",
+      "La bataille d'Angleterre",
+      "La bataille de France",
+      "La bataille de l'Atlantique"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q154720",
+      "url": "https://www.wikidata.org/wiki/Q154720",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-barbarossa",
+    "conceptId": "ww2-barbarossa",
+    "familyId": "ww2-front-est",
+    "type": "mcq",
+    "question": "Quel nom de code reçut l'invasion de l'URSS par l'Allemagne en 1941 ?",
+    "answers": [
+      "Opération Barbarossa",
+      "Opération Overlord",
+      "Opération Dynamo",
+      "Opération Torch"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83055",
+      "url": "https://www.wikidata.org/wiki/Q83055",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-barbarossa-annee",
+    "conceptId": "ww2-barbarossa-annee",
+    "familyId": "ww2-front-est",
+    "type": "mcq",
+    "question": "En quelle année Hitler lança-t-il l'opération Barbarossa ?",
+    "answers": [
+      "1940",
+      "1942",
+      "1943",
+      "1941"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83055",
+      "url": "https://www.wikidata.org/wiki/Q83055",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-pearl-harbor",
+    "conceptId": "ww2-pearl-harbor",
+    "familyId": "ww2-pacific",
+    "type": "mcq",
+    "question": "Quel événement du 7 décembre 1941 fit entrer les États-Unis en guerre ?",
+    "answers": [
+      "Le débarquement de Normandie",
+      "Le bombardement de Tokyo",
+      "L'attaque de Pearl Harbor",
+      "La bataille de Midway"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q52418",
+      "url": "https://www.wikidata.org/wiki/Q52418",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-midway",
+    "conceptId": "ww2-midway",
+    "familyId": "ww2-pacific",
+    "type": "mcq",
+    "question": "Quelle bataille navale de juin 1942 marqua le tournant de la guerre du Pacifique ?",
+    "answers": [
+      "Leyte",
+      "Midway",
+      "Pearl Harbor",
+      "Guadalcanal"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q173034",
+      "url": "https://www.wikidata.org/wiki/Q173034",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-stalingrad",
+    "conceptId": "ww2-stalingrad",
+    "familyId": "ww2-front-est",
+    "type": "mcq",
+    "question": "Quelle bataille de 1942-1943 marqua le tournant du front de l'Est, avec la capture de la 6e armée allemande ?",
+    "answers": [
+      "Stalingrad",
+      "Koursk",
+      "Moscou",
+      "Leningrad"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q38789",
+      "url": "https://www.wikidata.org/wiki/Q38789",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-stalingrad-fin",
+    "conceptId": "ww2-stalingrad-fin",
+    "familyId": "ww2-front-est",
+    "type": "mcq",
+    "question": "En quelle année la bataille de Stalingrad s'acheva-t-elle par la capitulation allemande ?",
+    "answers": [
+      "1942",
+      "1944",
+      "1945",
+      "1943"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q38789",
+      "url": "https://www.wikidata.org/wiki/Q38789",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-koursk",
+    "conceptId": "ww2-koursk",
+    "familyId": "ww2-front-est",
+    "type": "mcq",
+    "question": "Quelle bataille de chars de juillet 1943 fut la plus grande de l'histoire ?",
+    "answers": [
+      "El-Alamein",
+      "Kasserine",
+      "Koursk",
+      "Stalingrad"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130861",
+      "url": "https://www.wikidata.org/wiki/Q130861",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-el-alamein",
+    "conceptId": "ww2-el-alamein",
+    "familyId": "ww2-mediterranean",
+    "type": "mcq",
+    "question": "Quelle bataille de 1942 stoppa l'avancée de Rommel en Égypte ?",
+    "answers": [
+      "Kasserine",
+      "El-Alamein",
+      "Tobrouk",
+      "Benghazi"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q246653",
+      "url": "https://www.wikidata.org/wiki/Q246653",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-rommel",
+    "conceptId": "ww2-rommel",
+    "familyId": "ww2-mediterranean",
+    "type": "mcq",
+    "question": "Quel général allemand était surnommé le « Renard du désert » ?",
+    "answers": [
+      "Erwin Rommel",
+      "Gerd von Rundstedt",
+      "Erich von Manstein",
+      "Heinz Guderian"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q14060",
+      "url": "https://www.wikidata.org/wiki/Q14060",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-overlord",
+    "conceptId": "ww2-overlord",
+    "familyId": "ww2-dday",
+    "type": "mcq",
+    "question": "Quel nom de code reçut le débarquement de Normandie ?",
+    "answers": [
+      "Opération Barbarossa",
+      "Opération Dynamo",
+      "Opération Husky",
+      "Opération Overlord"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8641370",
+      "url": "https://www.wikidata.org/wiki/Q8641370",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-normandie-1944",
+    "conceptId": "ww2-normandie-1944",
+    "familyId": "ww2-dday",
+    "type": "mcq",
+    "question": "En quelle année eut lieu le débarquement de Normandie ?",
+    "answers": [
+      "1945",
+      "1942",
+      "1944",
+      "1943"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8641370",
+      "url": "https://www.wikidata.org/wiki/Q8641370",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-dragoon",
+    "conceptId": "ww2-dragoon",
+    "familyId": "ww2-dday",
+    "type": "mcq",
+    "question": "Quel nom de code reçut le débarquement allié en Provence en août 1944 ?",
+    "answers": [
+      "Opération Market Garden",
+      "Opération Dragoon",
+      "Opération Husky",
+      "Opération Torch"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q221111",
+      "url": "https://www.wikidata.org/wiki/Q221111",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-yalta",
+    "conceptId": "ww2-yalta",
+    "familyId": "ww2-end",
+    "type": "mcq",
+    "question": "Quelle conférence de février 1945 réunit Staline, Roosevelt et Churchill ?",
+    "answers": [
+      "Yalta",
+      "Potsdam",
+      "Téhéran",
+      "Munich"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161227",
+      "url": "https://www.wikidata.org/wiki/Q161227",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-potsdam-truman",
+    "conceptId": "ww2-potsdam-truman",
+    "familyId": "ww2-end",
+    "type": "mcq",
+    "question": "Quel président américain représenta les États-Unis à la conférence de Potsdam en 1945 ?",
+    "answers": [
+      "Franklin Roosevelt",
+      "Woodrow Wilson",
+      "Dwight Eisenhower",
+      "Harry Truman"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q11613",
+      "url": "https://www.wikidata.org/wiki/Q11613",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-hitler-mort",
+    "conceptId": "ww2-hitler-mort",
+    "familyId": "ww2-end",
+    "type": "mcq",
+    "question": "En quelle année Hitler se suicida-t-il dans son bunker à Berlin ?",
+    "answers": [
+      "1946",
+      "1943",
+      "1945",
+      "1944"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q352",
+      "url": "https://www.wikidata.org/wiki/Q352",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-8-mai",
+    "conceptId": "ww2-8-mai",
+    "familyId": "ww2-end",
+    "type": "mcq",
+    "question": "Quel jour l'Allemagne capitula-t-elle sans condition ?",
+    "answers": [
+      "Le 9 novembre 1989",
+      "Le 8 mai 1945",
+      "Le 6 juin 1944",
+      "Le 2 septembre 1945"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q362",
+      "url": "https://www.wikidata.org/wiki/Q362",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-ville-atomique",
+    "conceptId": "ww2-ville-atomique",
+    "familyId": "ww2-pacific",
+    "type": "mcq",
+    "question": "Sur quelles villes japonaises les bombes atomiques furent-elles larguées ?",
+    "answers": [
+      "Hiroshima et Nagasaki",
+      "Tokyo et Osaka",
+      "Hiroshima et Kyoto",
+      "Nagasaki et Yokohama"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34664",
+      "url": "https://www.wikidata.org/wiki/Q34664",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-annee-atomique",
+    "conceptId": "ww2-annee-atomique",
+    "familyId": "ww2-pacific",
+    "type": "mcq",
+    "question": "En quelle année les bombes atomiques furent-elles larguées sur le Japon ?",
+    "answers": [
+      "1944",
+      "1943",
+      "1946",
+      "1945"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34664",
+      "url": "https://www.wikidata.org/wiki/Q34664",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-manhattan",
+    "conceptId": "ww2-manhattan",
+    "familyId": "ww2-pacific",
+    "type": "mcq",
+    "question": "Quel était le nom du projet américain qui développa la bombe atomique ?",
+    "answers": [
+      "Le projet Overlord",
+      "Le projet Enigma",
+      "Le projet Manhattan",
+      "Le projet Apollo"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q127050",
+      "url": "https://www.wikidata.org/wiki/Q127050",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-2-septembre",
+    "conceptId": "ww2-2-septembre",
+    "familyId": "ww2-end",
+    "type": "mcq",
+    "question": "Quel jour la capitulation du Japon fut-elle signée, mettant fin à la guerre ?",
+    "answers": [
+      "Le 1er septembre 1939",
+      "Le 2 septembre 1945",
+      "Le 8 mai 1945",
+      "Le 6 août 1945"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q362",
+      "url": "https://www.wikidata.org/wiki/Q362",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-shoah",
+    "conceptId": "ww2-shoah",
+    "familyId": "ww2-holocaust",
+    "type": "mcq",
+    "question": "Quel nom donne-t-on à l'extermination systématique des Juifs d'Europe par les nazis ?",
+    "answers": [
+      "La Shoah",
+      "Le blitzkrieg",
+      "Le génocide arménien",
+      "L'épuration"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2763",
+      "url": "https://www.wikidata.org/wiki/Q2763",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-wannsee",
+    "conceptId": "ww2-wannsee",
+    "familyId": "ww2-holocaust",
+    "type": "mcq",
+    "question": "Quelle conférence de janvier 1942 organisa la « solution finale » ?",
+    "answers": [
+      "La conférence de Yalta",
+      "La conférence de Munich",
+      "La conférence de Potsdam",
+      "La conférence de Wannsee"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q152120",
+      "url": "https://www.wikidata.org/wiki/Q152120",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-moulin",
+    "conceptId": "ww2-moulin",
+    "familyId": "ww2-resistance",
+    "type": "mcq",
+    "question": "Qui unifia la Résistance française sous l'autorité du général de Gaulle en 1943 ?",
+    "answers": [
+      "Honoré d'Estienne d'Orves",
+      "Pierre Brossolette",
+      "Jean Moulin",
+      "Philippe Leclerc"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q632",
+      "url": "https://www.wikidata.org/wiki/Q632",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-dynamo",
+    "conceptId": "ww2-dynamo",
+    "familyId": "ww2-france",
+    "type": "mcq",
+    "question": "Quel nom de code reçut l'évacuation des troupes alliées à Dunkerque en 1940 ?",
+    "answers": [
+      "Opération Catapult",
+      "Opération Dynamo",
+      "Opération Overlord",
+      "Opération Seelöwe"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q911972",
+      "url": "https://www.wikidata.org/wiki/Q911972",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-auschwitz",
+    "conceptId": "ww2-auschwitz",
+    "familyId": "ww2-holocaust",
+    "type": "mcq",
+    "question": "Quel camp d'extermination polonais est devenu le symbole de la Shoah ?",
+    "answers": [
+      "Auschwitz",
+      "Dachau",
+      "Buchenwald",
+      "Sachsenhausen"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7341",
+      "url": "https://www.wikidata.org/wiki/Q7341",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-mussolini",
+    "conceptId": "ww2-mussolini",
+    "familyId": "ww2-leaders",
+    "type": "mcq",
+    "question": "Qui dirigeait l'Italie fasciste pendant la Seconde Guerre mondiale ?",
+    "answers": [
+      "Francisco Franco",
+      "António de Oliveira Salazar",
+      "Miklós Horthy",
+      "Benito Mussolini"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23559",
+      "url": "https://www.wikidata.org/wiki/Q23559",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-axe",
+    "conceptId": "ww2-axe",
+    "familyId": "ww2-leaders",
+    "type": "mcq",
+    "question": "Comment appelle-t-on l'alliance entre l'Allemagne, l'Italie et le Japon ?",
+    "answers": [
+      "L'Entente cordiale",
+      "La Petite Entente",
+      "L'Axe Rome-Berlin-Tokyo",
+      "La Triple-Entente"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q43056",
+      "url": "https://www.wikidata.org/wiki/Q43056",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww2-torch",
+    "conceptId": "ww2-torch",
+    "familyId": "ww2-mediterranean",
+    "type": "mcq",
+    "question": "En quelle année eut lieu le débarquement allié en Afrique du Nord (opération Torch) ?",
+    "answers": [
+      "1944",
+      "1942",
+      "1941",
+      "1943"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "seconde-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "seconde-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q194132",
+      "url": "https://www.wikidata.org/wiki/Q194132",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

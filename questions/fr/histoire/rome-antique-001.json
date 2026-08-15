@@ -1,0 +1,838 @@
+[
+  {
+    "id": "war-rome-fondation-annee",
+    "conceptId": "rome-fondation-annee",
+    "familyId": "rome-founding",
+    "type": "mcq",
+    "question": "Selon la légende, en quelle année Rome fut-elle fondée ?",
+    "answers": [
+      "753 av. J.-C.",
+      "509 av. J.-C.",
+      "27 av. J.-C.",
+      "476 apr. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2197",
+      "url": "https://www.wikidata.org/wiki/Q2197",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-fondation-jumeaux",
+    "conceptId": "rome-fondation-jumeaux",
+    "familyId": "rome-founding",
+    "type": "mcq",
+    "question": "Quels jumeaux légendaires fondèrent Rome ?",
+    "answers": [
+      "Castor et Pollux",
+      "Romulus et Tatius",
+      "Numa et Ancus",
+      "Romulus et Rémus"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2197",
+      "url": "https://www.wikidata.org/wiki/Q2197",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-republique-509",
+    "conceptId": "rome-republique-509",
+    "familyId": "roman-republic",
+    "type": "mcq",
+    "question": "Quel événement de 509 av. J.-C. marqua la naissance de la République romaine ?",
+    "answers": [
+      "L'invasion gauloise",
+      "La prise de Carthage",
+      "La chute du roi Tarquin le Superbe",
+      "L'assassinat de Jules César"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q193047",
+      "url": "https://www.wikidata.org/wiki/Q193047",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-cesar-gaule",
+    "conceptId": "rome-cesar-gaule",
+    "familyId": "caesar-gaul",
+    "type": "mcq",
+    "question": "Quel général romain conquit la Gaule entre 58 et 51 av. J.-C. ?",
+    "answers": [
+      "Marius",
+      "Jules César",
+      "Pompée",
+      "Crassus"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1048",
+      "url": "https://www.wikidata.org/wiki/Q1048",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-alesia",
+    "conceptId": "rome-alesia",
+    "familyId": "caesar-gaul",
+    "type": "mcq",
+    "question": "Quel chef gaulois fut vaincu et capturé au siège d'Alésia en 52 av. J.-C. ?",
+    "answers": [
+      "Vercingétorix",
+      "Brennus",
+      "Ambiorix",
+      "Diviciacos"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q178953",
+      "url": "https://www.wikidata.org/wiki/Q178953",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-rubicon",
+    "conceptId": "rome-rubicon",
+    "familyId": "caesar-rise",
+    "type": "mcq",
+    "question": "En quelle année Jules César franchit-il le Rubicon, déclenchant la guerre civile ?",
+    "answers": [
+      "58 av. J.-C.",
+      "44 av. J.-C.",
+      "27 av. J.-C.",
+      "49 av. J.-C."
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q172572",
+      "url": "https://www.wikidata.org/wiki/Q172572",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-alea-jacta",
+    "conceptId": "rome-alea-jacta",
+    "familyId": "caesar-rise",
+    "type": "mcq",
+    "question": "Quelle formule célèbre César aurait-il prononcée en franchissant le Rubicon ?",
+    "answers": [
+      "« Carthago delenda est »",
+      "« Panem et circenses »",
+      "« Alea jacta est »",
+      "« Veni, vidi, vici »"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q172572",
+      "url": "https://www.wikidata.org/wiki/Q172572",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-veni-vidi",
+    "conceptId": "rome-veni-vidi",
+    "familyId": "caesar-gaul",
+    "type": "mcq",
+    "question": "Qui prononça la célèbre formule « Veni, vidi, vici » ?",
+    "answers": [
+      "Pompée",
+      "Jules César",
+      "Auguste",
+      "Néron"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1048",
+      "url": "https://www.wikidata.org/wiki/Q1048",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-cesar-mort",
+    "conceptId": "rome-cesar-mort",
+    "familyId": "caesar-death",
+    "type": "mcq",
+    "question": "En quelle année Jules César fut-il assassiné ?",
+    "answers": [
+      "44 av. J.-C.",
+      "49 av. J.-C.",
+      "31 av. J.-C.",
+      "27 av. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1048",
+      "url": "https://www.wikidata.org/wiki/Q1048",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-ides-mars",
+    "conceptId": "rome-ides-mars",
+    "familyId": "caesar-death",
+    "type": "mcq",
+    "question": "Quel jour du calendrier romain Jules César fut-il assassiné ?",
+    "answers": [
+      "Les calendes de janvier",
+      "Les nones de mai",
+      "Les ides de juin",
+      "Les ides de mars"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q948604",
+      "url": "https://www.wikidata.org/wiki/Q948604",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-premier-empereur",
+    "conceptId": "rome-premier-empereur",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "Qui devint le premier empereur romain en 27 av. J.-C. ?",
+    "answers": [
+      "Néron",
+      "Trajan",
+      "Auguste",
+      "Caligula"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1405",
+      "url": "https://www.wikidata.org/wiki/Q1405",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-chute-476",
+    "conceptId": "rome-chute-476",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "En quelle année l'Empire romain d'Occident s'effondra-t-il ?",
+    "answers": [
+      "1453 apr. J.-C.",
+      "476 apr. J.-C.",
+      "410 apr. J.-C.",
+      "395 apr. J.-C."
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q103333",
+      "url": "https://www.wikidata.org/wiki/Q103333",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-odoacre",
+    "conceptId": "rome-odoacre",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "Quel chef barbare déposa le dernier empereur romain d'Occident, Romulus Augustule, en 476 ?",
+    "answers": [
+      "Odoacre",
+      "Alaric",
+      "Attila",
+      "Théodoric"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q103333",
+      "url": "https://www.wikidata.org/wiki/Q103333",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-constantinople",
+    "conceptId": "rome-constantinople",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "Quel empereur transféra la capitale de l'Empire à Byzance, rebaptisée Constantinople, en 330 ?",
+    "answers": [
+      "Dioclétien",
+      "Théodose",
+      "Justinien",
+      "Constantin Ier"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q229514",
+      "url": "https://www.wikidata.org/wiki/Q229514",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-trajan",
+    "conceptId": "rome-trajan",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "Sous quel empereur l'Empire romain atteignit-il sa plus grande extension territoriale ?",
+    "answers": [
+      "Hadrien",
+      "Marc Aurèle",
+      "Trajan",
+      "Auguste"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1425",
+      "url": "https://www.wikidata.org/wiki/Q1425",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-vesuve",
+    "conceptId": "rome-vesuve",
+    "familyId": "vesuvius-eruption",
+    "type": "mcq",
+    "question": "En quelle année l'éruption du Vésuve détruisit-elle Pompéi ?",
+    "answers": [
+      "117 apr. J.-C.",
+      "79 apr. J.-C.",
+      "64 apr. J.-C.",
+      "98 apr. J.-C."
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q524",
+      "url": "https://www.wikidata.org/wiki/Q524",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-herculanum",
+    "conceptId": "rome-herculanum",
+    "familyId": "vesuvius-eruption",
+    "type": "mcq",
+    "question": "Quelle autre ville fut ensevelie par l'éruption du Vésuve en 79 apr. J.-C., avec Pompéi ?",
+    "answers": [
+      "Herculanum",
+      "Ostie",
+      "Capoue",
+      "Ravenne"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q178813",
+      "url": "https://www.wikidata.org/wiki/Q178813",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-spartacus",
+    "conceptId": "rome-spartacus",
+    "familyId": "spartacus-revolt",
+    "type": "mcq",
+    "question": "Qui mena la grande révolte d'esclaves contre Rome entre 73 et 71 av. J.-C. ?",
+    "answers": [
+      "Catilina",
+      "Sertorius",
+      "Jugurtha",
+      "Spartacus"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83406",
+      "url": "https://www.wikidata.org/wiki/Q83406",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-mur-hadrien",
+    "conceptId": "rome-mur-hadrien",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "Quel empereur fit bâtir le célèbre mur fortifié traversant le nord de la Bretagne romaine ?",
+    "answers": [
+      "Antonin",
+      "Septime Sévère",
+      "Hadrien",
+      "Trajan"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1427",
+      "url": "https://www.wikidata.org/wiki/Q1427",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-incendie-64",
+    "conceptId": "rome-incendie-64",
+    "familyId": "roman-empire",
+    "type": "mcq",
+    "question": "En quelle année le grand incendie de Rome ravagea-t-il la ville sous le règne de Néron ?",
+    "answers": [
+      "79 apr. J.-C.",
+      "64 apr. J.-C.",
+      "54 apr. J.-C.",
+      "68 apr. J.-C."
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1413",
+      "url": "https://www.wikidata.org/wiki/Q1413",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-colisee",
+    "conceptId": "rome-colisee",
+    "familyId": "roman-monuments",
+    "type": "mcq",
+    "question": "Quel amphithéâtre emblématique fut inauguré à Rome vers 80 apr. J.-C. ?",
+    "answers": [
+      "Le Colisée",
+      "Le Panthéon",
+      "Le Circus Maximus",
+      "Les Thermes de Caracalla"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q10285",
+      "url": "https://www.wikidata.org/wiki/Q10285",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-rome-circus",
+    "conceptId": "rome-circus",
+    "familyId": "roman-monuments",
+    "type": "mcq",
+    "question": "Dans quel grand édifice romain se déroulaient les courses de chars ?",
+    "answers": [
+      "Le Colisée",
+      "Le Panthéon",
+      "Le Forum",
+      "Le Circus Maximus"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "rome-antique",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "rome-antique"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q207808",
+      "url": "https://www.wikidata.org/wiki/Q207808",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

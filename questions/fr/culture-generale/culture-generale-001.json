@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "cg-inv-gutenberg",
+    "conceptId": "inv-gutenberg",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui inventa l'imprimerie à caractères mobiles en Europe vers 1450 ?",
+    "answers": [
+      "Johannes Gutenberg",
+      "Léonard de Vinci",
+      "Martin Luther",
+      "Albrecht Dürer"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8958",
+      "url": "https://www.wikidata.org/wiki/Q8958",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-dynamite",
+    "conceptId": "inv-dynamite",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui inventa la dynamite en 1867 ?",
+    "answers": [
+      "Louis Pasteur",
+      "Thomas Edison",
+      "Gustave Eiffel",
+      "Alfred Nobel"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23810",
+      "url": "https://www.wikidata.org/wiki/Q23810",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-photo",
+    "conceptId": "inv-photo",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui réalisa la première photographie connue en 1826 ?",
+    "answers": [
+      "Étienne-Jules Marey",
+      "Les frères Lumière",
+      "Nicéphore Niépce",
+      "Louis Daguerre"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q188342",
+      "url": "https://www.wikidata.org/wiki/Q188342",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-edison",
+    "conceptId": "inv-edison",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Quel inventeur américain déposa plus de mille brevets et fonda General Electric ?",
+    "answers": [
+      "George Westinghouse",
+      "Thomas Edison",
+      "Henry Ford",
+      "Nikola Tesla"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8743",
+      "url": "https://www.wikidata.org/wiki/Q8743",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-cinema",
+    "conceptId": "inv-cinema",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui inventa le cinématographe en 1895 ?",
+    "answers": [
+      "Les frères Lumière",
+      "Thomas Edison",
+      "Georges Méliès",
+      "Les frères Montgolfier"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q55965",
+      "url": "https://www.wikidata.org/wiki/Q55965",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-diesel",
+    "conceptId": "inv-diesel",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Quel ingénieur allemand mit au point le moteur qui porte son nom en 1893 ?",
+    "answers": [
+      "Carl Benz",
+      "Nikolaus Otto",
+      "Étienne Lenoir",
+      "Rudolf Diesel"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12674",
+      "url": "https://www.wikidata.org/wiki/Q12674",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-radioactivite",
+    "conceptId": "inv-radioactivite",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Quel physicien français découvrit la radioactivité naturelle en 1896 ?",
+    "answers": [
+      "Pierre Curie",
+      "Ernest Rutherford",
+      "Henri Becquerel",
+      "Marie Curie"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41269",
+      "url": "https://www.wikidata.org/wiki/Q41269",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-radium",
+    "conceptId": "inv-radium",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui découvrit le radium avec son mari Pierre en 1898 ?",
+    "answers": [
+      "Émilie du Châtelet",
+      "Marie Curie",
+      "Irène Joliot-Curie",
+      "Lise Meitner"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7186",
+      "url": "https://www.wikidata.org/wiki/Q7186",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-avion",
+    "conceptId": "inv-avion",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Qui réussit le premier vol motorisé contrôlé en 1903 ?",
+    "answers": [
+      "Les frères Wright",
+      "Clément Ader",
+      "Louis Blériot",
+      "Alberto Santos-Dumont"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q35820",
+      "url": "https://www.wikidata.org/wiki/Q35820",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-inv-aspirine",
+    "conceptId": "inv-aspirine",
+    "familyId": "inventions",
+    "type": "mcq",
+    "question": "Quel chimiste allemand synthétisa l'aspirine chez Bayer en 1897 ?",
+    "answers": [
+      "Louis Pasteur",
+      "Joseph Lister",
+      "Alexander Fleming",
+      "Felix Hoffmann"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "inventions",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "inventions"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23810",
+      "url": "https://www.wikidata.org/wiki/Q23810",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-eiffel",
+    "conceptId": "mon-eiffel",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quelle tour métallique fut construite pour l'Exposition universelle de 1889 ?",
+    "answers": [
+      "Le viaduc de Millau",
+      "Le pont de Brooklyn",
+      "La tour Eiffel",
+      "La tour de Tokyo"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q243",
+      "url": "https://www.wikidata.org/wiki/Q243",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-eiffel-annee",
+    "conceptId": "mon-eiffel-annee",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "En quelle année la tour Eiffel fut-elle inaugurée ?",
+    "answers": [
+      "1885",
+      "1889",
+      "1878",
+      "1900"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q243",
+      "url": "https://www.wikidata.org/wiki/Q243",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-colisee",
+    "conceptId": "mon-colisee",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quel monument de Rome est le plus célèbre amphithéâtre du monde ?",
+    "answers": [
+      "Le Colisée",
+      "Le Panthéon",
+      "Le Circus Maximus",
+      "Les Thermes de Caracalla"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q10285",
+      "url": "https://www.wikidata.org/wiki/Q10285",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-kheops",
+    "conceptId": "mon-kheops",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quelle est la plus grande pyramide d'Égypte ?",
+    "answers": [
+      "La pyramide de Khéphren",
+      "La pyramide de Mykérinos",
+      "La pyramide de Djéser",
+      "La pyramide de Khéops"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q37200",
+      "url": "https://www.wikidata.org/wiki/Q37200",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-taj-mahal",
+    "conceptId": "mon-taj-mahal",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Dans quel pays se trouve le Taj Mahal ?",
+    "answers": [
+      "En Thaïlande",
+      "En Iran",
+      "En Inde",
+      "En Chine"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9141",
+      "url": "https://www.wikidata.org/wiki/Q9141",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-versailles",
+    "conceptId": "mon-versailles",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quel roi de France fit construire le château de Versailles ?",
+    "answers": [
+      "François Ier",
+      "Louis XIV",
+      "Louis XIII",
+      "Louis XV"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2946",
+      "url": "https://www.wikidata.org/wiki/Q2946",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-liberte",
+    "conceptId": "mon-liberte",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quel monument de New York fut offert par la France en 1886 ?",
+    "answers": [
+      "La statue de la Liberté",
+      "L'Empire State Building",
+      "Le pont de Brooklyn",
+      "Le Rockefeller Center"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9202",
+      "url": "https://www.wikidata.org/wiki/Q9202",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-nimes",
+    "conceptId": "mon-nimes",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Dans quelle ville française se trouvent les célèbres « Arènes » romaines ?",
+    "answers": [
+      "Arles",
+      "Orange",
+      "Vienne",
+      "Nîmes"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q179656",
+      "url": "https://www.wikidata.org/wiki/Q179656",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-bayeux",
+    "conceptId": "mon-bayeux",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quelle ville normande abrite la célèbre tapisserie de la reine Mathilde ?",
+    "answers": [
+      "Rouen",
+      "Honfleur",
+      "Bayeux",
+      "Caen"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187483",
+      "url": "https://www.wikidata.org/wiki/Q187483",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-mon-vatican",
+    "conceptId": "mon-vatican",
+    "familyId": "monuments",
+    "type": "mcq",
+    "question": "Quel palais abrite la chapelle Sixtine ?",
+    "answers": [
+      "Le château Saint-Ange",
+      "Le Vatican",
+      "Le palais Pitti",
+      "Le palais des Doges"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "monuments",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "monuments"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q237",
+      "url": "https://www.wikidata.org/wiki/Q237",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-france",
+    "conceptId": "flag-france",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "De quelles couleurs est le drapeau français ?",
+    "answers": [
+      "Bleu, blanc, rouge",
+      "Bleu, blanc, vert",
+      "Rouge, blanc, noir",
+      "Vert, jaune, rouge"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q43192",
+      "url": "https://www.wikidata.org/wiki/Q43192",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-canada",
+    "conceptId": "flag-canada",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays arbore une feuille d'érable rouge sur son drapeau ?",
+    "answers": [
+      "Les États-Unis",
+      "L'Australie",
+      "La Nouvelle-Zélande",
+      "Le Canada"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q80110",
+      "url": "https://www.wikidata.org/wiki/Q80110",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-japon",
+    "conceptId": "flag-japon",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays a un drapeau blanc avec un soleil rouge ?",
+    "answers": [
+      "La Chine",
+      "La Thaïlande",
+      "Le Japon",
+      "La Corée du Sud"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q43175",
+      "url": "https://www.wikidata.org/wiki/Q43175",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-suisse",
+    "conceptId": "flag-suisse",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays non scandinave a un drapeau rouge à croix blanche ?",
+    "answers": [
+      "La Finlande",
+      "La Suisse",
+      "Le Danemark",
+      "La Norvège"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q124020",
+      "url": "https://www.wikidata.org/wiki/Q124020",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-ghana",
+    "conceptId": "flag-ghana",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays africain a un drapeau vert, jaune et rouge avec une étoile noire ?",
+    "answers": [
+      "Le Ghana",
+      "Le Sénégal",
+      "Le Mali",
+      "Le Cameroun"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q160676",
+      "url": "https://www.wikidata.org/wiki/Q160676",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-usa-etoiles",
+    "conceptId": "flag-usa-etoiles",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Combien d'étoiles compte le drapeau des États-Unis ?",
+    "answers": [
+      "48",
+      "51",
+      "13",
+      "50"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42537",
+      "url": "https://www.wikidata.org/wiki/Q42537",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-danemark",
+    "conceptId": "flag-danemark",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays possède le plus ancien drapeau national encore en usage ?",
+    "answers": [
+      "La Suède",
+      "Le Royaume-Uni",
+      "Le Danemark",
+      "La France"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q60149",
+      "url": "https://www.wikidata.org/wiki/Q60149",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-union-jack",
+    "conceptId": "flag-union-jack",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Le drapeau de quel pays est surnommé l'« Union Jack » ?",
+    "answers": [
+      "L'Irlande",
+      "Le Royaume-Uni",
+      "Les États-Unis",
+      "La France"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83278",
+      "url": "https://www.wikidata.org/wiki/Q83278",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-angleterre",
+    "conceptId": "flag-angleterre",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quelle nation du Royaume-Uni a un drapeau blanc à croix rouge ?",
+    "answers": [
+      "L'Angleterre",
+      "L'Écosse",
+      "L'Irlande du Nord",
+      "Le Pays de Galles"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171117",
+      "url": "https://www.wikidata.org/wiki/Q171117",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-flag-italie",
+    "conceptId": "flag-italie",
+    "familyId": "flags",
+    "type": "mcq",
+    "question": "Quel pays arbore un drapeau vert, blanc et rouge à bandes verticales, sans emblème ?",
+    "answers": [
+      "Le Mexique",
+      "L'Irlande",
+      "La Hongrie",
+      "L'Italie"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "drapeaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "drapeaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42876",
+      "url": "https://www.wikidata.org/wiki/Q42876",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

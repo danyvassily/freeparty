@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "cg-cap-australie",
+    "conceptId": "cap-australie",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale de l'Australie ?",
+    "answers": [
+      "Canberra",
+      "Sydney",
+      "Melbourne",
+      "Perth"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q3114",
+      "url": "https://www.wikidata.org/wiki/Q3114",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-canada",
+    "conceptId": "cap-canada",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale du Canada ?",
+    "answers": [
+      "Toronto",
+      "Montréal",
+      "Vancouver",
+      "Ottawa"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1930",
+      "url": "https://www.wikidata.org/wiki/Q1930",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-suisse",
+    "conceptId": "cap-suisse",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale de la Suisse ?",
+    "answers": [
+      "Genève",
+      "Bâle",
+      "Berne",
+      "Zurich"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q70",
+      "url": "https://www.wikidata.org/wiki/Q70",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-bresil",
+    "conceptId": "cap-bresil",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale du Brésil ?",
+    "answers": [
+      "Salvador",
+      "Brasilia",
+      "Rio de Janeiro",
+      "São Paulo"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2844",
+      "url": "https://www.wikidata.org/wiki/Q2844",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-japon",
+    "conceptId": "cap-japon",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale du Japon ?",
+    "answers": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1490",
+      "url": "https://www.wikidata.org/wiki/Q1490",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-turquie",
+    "conceptId": "cap-turquie",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale de la Turquie ?",
+    "answers": [
+      "Istanbul",
+      "Izmir",
+      "Bursa",
+      "Ankara"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q3640",
+      "url": "https://www.wikidata.org/wiki/Q3640",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-usa",
+    "conceptId": "cap-usa",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale des États-Unis ?",
+    "answers": [
+      "Boston",
+      "Philadelphie",
+      "Washington",
+      "New York"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q61",
+      "url": "https://www.wikidata.org/wiki/Q61",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-afrique-sud",
+    "conceptId": "cap-afrique-sud",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle ville abrite la capitale administrative de l'Afrique du Sud ?",
+    "answers": [
+      "Durban",
+      "Pretoria",
+      "Johannesburg",
+      "Le Cap"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q3926",
+      "url": "https://www.wikidata.org/wiki/Q3926",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-nz",
+    "conceptId": "cap-nz",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+    "answers": [
+      "Wellington",
+      "Auckland",
+      "Christchurch",
+      "Queenstown"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23661",
+      "url": "https://www.wikidata.org/wiki/Q23661",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-cap-inde",
+    "conceptId": "cap-inde",
+    "familyId": "capitals",
+    "type": "mcq",
+    "question": "Quelle est la capitale de l'Inde ?",
+    "answers": [
+      "Bombay",
+      "Calcutta",
+      "Madras",
+      "New Delhi"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "capitales",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "capitales"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q987",
+      "url": "https://www.wikidata.org/wiki/Q987",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-titanic",
+    "conceptId": "xx-titanic",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "En quelle année le Titanic coula-t-il ?",
+    "answers": [
+      "1918",
+      "1925",
+      "1912",
+      "1905"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q25173",
+      "url": "https://www.wikidata.org/wiki/Q25173",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-titanic-bateau",
+    "conceptId": "xx-titanic-bateau",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel paquebot coula lors de sa traversée inaugurale en 1912 ?",
+    "answers": [
+      "Le Queen Mary",
+      "Le Titanic",
+      "Le Lusitania",
+      "Le Normandie"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q25173",
+      "url": "https://www.wikidata.org/wiki/Q25173",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-krach",
+    "conceptId": "xx-krach",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel événement financier de 1929 marqua le début de la Grande Dépression ?",
+    "answers": [
+      "Le krach de Wall Street",
+      "La crise de Suez",
+      "L'hyperinflation allemande",
+      "Le lundi noir de 1987"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q201684",
+      "url": "https://www.wikidata.org/wiki/Q201684",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-concorde",
+    "conceptId": "xx-concorde",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel avion supersonique franco-britannique effectua son premier vol commercial en 1976 ?",
+    "answers": [
+      "Le Boeing 747",
+      "Le Tupolev Tu-144",
+      "L'Airbus A380",
+      "Le Concorde"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q356462",
+      "url": "https://www.wikidata.org/wiki/Q356462",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-spoutnik",
+    "conceptId": "xx-spoutnik",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel pays lança le premier satellite artificiel, Spoutnik, en 1957 ?",
+    "answers": [
+      "La Chine",
+      "La France",
+      "L'URSS",
+      "Les États-Unis"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q170413",
+      "url": "https://www.wikidata.org/wiki/Q170413",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-spoutnik-annee",
+    "conceptId": "xx-spoutnik-annee",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "En quelle année le satellite Spoutnik fut-il lancé ?",
+    "answers": [
+      "1949",
+      "1957",
+      "1961",
+      "1955"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q170413",
+      "url": "https://www.wikidata.org/wiki/Q170413",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-gandhi",
+    "conceptId": "xx-gandhi",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel apôtre indien de la non-violence fut assassiné en 1948 ?",
+    "answers": [
+      "Gandhi",
+      "Nehru",
+      "Mandela",
+      "Tagore"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1001",
+      "url": "https://www.wikidata.org/wiki/Q1001",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-1969-tv",
+    "conceptId": "xx-1969-tv",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "Quel événement du 20 juillet 1969 fut suivi par des centaines de millions de téléspectateurs ?",
+    "answers": [
+      "Le couronnement d'Élisabeth II",
+      "La finale de la Coupe du monde 1966",
+      "Le premier vol du Concorde",
+      "Le premier pas de l'homme sur la Lune"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1615",
+      "url": "https://www.wikidata.org/wiki/Q1615",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-gagarine-annee",
+    "conceptId": "xx-gagarine-annee",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "En quelle année le premier homme fut-il envoyé dans l'espace ?",
+    "answers": [
+      "1965",
+      "1969",
+      "1961",
+      "1957"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7327",
+      "url": "https://www.wikidata.org/wiki/Q7327",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-xx-mur-1961",
+    "conceptId": "xx-mur-1961",
+    "familyId": "20th-century",
+    "type": "mcq",
+    "question": "En quelle année le mur de Berlin fut-il construit ?",
+    "answers": [
+      "1970",
+      "1961",
+      "1955",
+      "1963"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "xxeme-siecle",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "xxeme-siecle"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q5086",
+      "url": "https://www.wikidata.org/wiki/Q5086",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-coups-coeur",
+    "conceptId": "ins-coups-coeur",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Combien de fois le cœur humain bat-il environ par jour ?",
+    "answers": [
+      "Environ 100 000 fois",
+      "Environ 10 000 fois",
+      "Environ 1 million de fois",
+      "Environ 5 000 fois"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1072",
+      "url": "https://www.wikidata.org/wiki/Q1072",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-fuseaux",
+    "conceptId": "ins-fuseaux",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel pays compte le plus de fuseaux horaires, grâce à ses territoires d'outre-mer ?",
+    "answers": [
+      "La Russie",
+      "Les États-Unis",
+      "La Chine",
+      "La France"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q142",
+      "url": "https://www.wikidata.org/wiki/Q142",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-venus",
+    "conceptId": "ins-venus",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quelle planète tourne sur elle-même dans le sens inverse des autres ?",
+    "answers": [
+      "Mercure",
+      "Neptune",
+      "Vénus",
+      "Mars"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q313",
+      "url": "https://www.wikidata.org/wiki/Q313",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-soleil",
+    "conceptId": "ins-soleil",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Combien de temps la lumière du Soleil met-elle environ pour atteindre la Terre ?",
+    "answers": [
+      "2 heures",
+      "8 minutes",
+      "1 seconde",
+      "30 minutes"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q525",
+      "url": "https://www.wikidata.org/wiki/Q525",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-cheval",
+    "conceptId": "ins-cheval",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel animal domestique dort souvent debout ?",
+    "answers": [
+      "Le cheval",
+      "Le chat",
+      "Le chien",
+      "Le lapin"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q726",
+      "url": "https://www.wikidata.org/wiki/Q726",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-mandarin",
+    "conceptId": "ins-mandarin",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quelle est la langue la plus parlée au monde en nombre de locuteurs natifs ?",
+    "answers": [
+      "L'anglais",
+      "L'espagnol",
+      "L'hindi",
+      "Le mandarin"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9192",
+      "url": "https://www.wikidata.org/wiki/Q9192",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-inde",
+    "conceptId": "ins-inde",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel pays est devenu le plus peuplé du monde en 2023 ?",
+    "answers": [
+      "Les États-Unis",
+      "L'Indonésie",
+      "L'Inde",
+      "La Chine"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q668",
+      "url": "https://www.wikidata.org/wiki/Q668",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-pacifique",
+    "conceptId": "ins-pacifique",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel est le plus grand océan du monde ?",
+    "answers": [
+      "L'Arctique",
+      "Le Pacifique",
+      "L'Atlantique",
+      "L'océan Indien"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q98",
+      "url": "https://www.wikidata.org/wiki/Q98",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-sahara",
+    "conceptId": "ins-sahara",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel est le plus grand désert chaud du monde ?",
+    "answers": [
+      "Le Sahara",
+      "Le Gobi",
+      "L'Atacama",
+      "Le Kalahari"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6583",
+      "url": "https://www.wikidata.org/wiki/Q6583",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ins-asie",
+    "conceptId": "ins-asie",
+    "familyId": "fun-facts",
+    "type": "mcq",
+    "question": "Quel est le continent le plus peuplé ?",
+    "answers": [
+      "L'Afrique",
+      "L'Europe",
+      "L'Amérique du Nord",
+      "L'Asie"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "insolite",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "insolite"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q48",
+      "url": "https://www.wikidata.org/wiki/Q48",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

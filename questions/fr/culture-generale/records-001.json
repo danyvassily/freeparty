@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "cg-rec-everest",
+    "conceptId": "rec-everest",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la plus haute montagne du monde ?",
+    "answers": [
+      "L'Everest",
+      "Le K2",
+      "Le Kangchenjunga",
+      "Le Mont Blanc"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q513",
+      "url": "https://www.wikidata.org/wiki/Q513",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-everest-m",
+    "conceptId": "rec-everest-m",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est l'altitude officielle de l'Everest, environ ?",
+    "answers": [
+      "7 000 mètres",
+      "9 500 mètres",
+      "6 500 mètres",
+      "8 849 mètres"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q513",
+      "url": "https://www.wikidata.org/wiki/Q513",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-nil",
+    "conceptId": "rec-nil",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel fleuve d'Afrique est l'un des deux plus longs du monde ?",
+    "answers": [
+      "Le Niger",
+      "Le Zambèze",
+      "Le Nil",
+      "Le Congo"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q3392",
+      "url": "https://www.wikidata.org/wiki/Q3392",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-russie",
+    "conceptId": "rec-russie",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le plus grand pays du monde par sa superficie ?",
+    "answers": [
+      "Les États-Unis",
+      "La Russie",
+      "Le Canada",
+      "La Chine"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q159",
+      "url": "https://www.wikidata.org/wiki/Q159",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-vatican",
+    "conceptId": "rec-vatican",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le plus petit État du monde ?",
+    "answers": [
+      "Le Vatican",
+      "Monaco",
+      "Malte",
+      "Saint-Marin"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q237",
+      "url": "https://www.wikidata.org/wiki/Q237",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-mariannes",
+    "conceptId": "rec-mariannes",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle fosse océanique est la plus profonde du monde ?",
+    "answers": [
+      "La fosse de Java",
+      "La fosse des Tonga",
+      "La fosse de Porto Rico",
+      "La fosse des Mariannes"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q510",
+      "url": "https://www.wikidata.org/wiki/Q510",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-baleine",
+    "conceptId": "rec-baleine",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est l'animal le plus lourd du monde ?",
+    "answers": [
+      "Le rorqual commun",
+      "Le calmar géant",
+      "La baleine bleue",
+      "L'éléphant de savane"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42196",
+      "url": "https://www.wikidata.org/wiki/Q42196",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-faucon",
+    "conceptId": "rec-faucon",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel oiseau est le plus rapide du monde en piqué ?",
+    "answers": [
+      "L'hirondelle",
+      "Le faucon pèlerin",
+      "L'aigle royal",
+      "Le martinet noir"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q30535",
+      "url": "https://www.wikidata.org/wiki/Q30535",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-antarctique",
+    "conceptId": "rec-antarctique",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le plus grand désert du monde, toutes catégories confondues ?",
+    "answers": [
+      "L'Antarctique",
+      "Le Sahara",
+      "Le Gobi",
+      "Le désert d'Arabie"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q51",
+      "url": "https://www.wikidata.org/wiki/Q51",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-frontiere",
+    "conceptId": "rec-frontiere",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la plus longue frontière terrestre du monde ?",
+    "answers": [
+      "Entre la Russie et la Chine",
+      "Entre l'Argentine et le Chili",
+      "Entre l'Inde et la Chine",
+      "Entre le Canada et les États-Unis"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q16",
+      "url": "https://www.wikidata.org/wiki/Q16",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-burj",
+    "conceptId": "rec-burj",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le plus haut bâtiment du monde ?",
+    "answers": [
+      "L'Empire State Building",
+      "La Taipei 101",
+      "La tour Burj Khalifa",
+      "La tour Eiffel"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12495",
+      "url": "https://www.wikidata.org/wiki/Q12495",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-groenland",
+    "conceptId": "rec-groenland",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la plus grande île du monde ?",
+    "answers": [
+      "La Nouvelle-Guinée",
+      "Le Groenland",
+      "Madagascar",
+      "Bornéo"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q223",
+      "url": "https://www.wikidata.org/wiki/Q223",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-caspienne",
+    "conceptId": "rec-caspienne",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le plus grand lac du monde ?",
+    "answers": [
+      "La mer Caspienne",
+      "Le lac Supérieur",
+      "Le lac Victoria",
+      "Le lac Baïkal"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q5484",
+      "url": "https://www.wikidata.org/wiki/Q5484",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-baikal",
+    "conceptId": "rec-baikal",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le lac le plus profond du monde ?",
+    "answers": [
+      "Le lac Tanganyika",
+      "La mer Caspienne",
+      "Le lac Victoria",
+      "Le lac Baïkal"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q5513",
+      "url": "https://www.wikidata.org/wiki/Q5513",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-angel",
+    "conceptId": "rec-angel",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la plus haute chute d'eau du monde ?",
+    "answers": [
+      "Les chutes Victoria",
+      "Les chutes d'Iguazú",
+      "Le Salto Ángel",
+      "Les chutes du Niagara"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q80299",
+      "url": "https://www.wikidata.org/wiki/Q80299",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-jo",
+    "conceptId": "rec-jo",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel pays détient le record du plus grand nombre de médailles olympiques d'été ?",
+    "answers": [
+      "L'Allemagne",
+      "Les États-Unis",
+      "La Chine",
+      "La Russie"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q30",
+      "url": "https://www.wikidata.org/wiki/Q30",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-bolt",
+    "conceptId": "rec-bolt",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel sprinteur détient le record du monde du 100 mètres (9,58 s) ?",
+    "answers": [
+      "Usain Bolt",
+      "Carl Lewis",
+      "Yohan Blake",
+      "Asafa Powell"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1189",
+      "url": "https://www.wikidata.org/wiki/Q1189",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-bolt-annee",
+    "conceptId": "rec-bolt-annee",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "En quelle année Usain Bolt établit-il son record du monde du 100 mètres ?",
+    "answers": [
+      "2008",
+      "2012",
+      "2016",
+      "2009"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1189",
+      "url": "https://www.wikidata.org/wiki/Q1189",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-bresil",
+    "conceptId": "rec-bresil",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle équipe nationale a remporté le plus de Coupes du monde de football ?",
+    "answers": [
+      "L'Italie",
+      "L'Argentine",
+      "Le Brésil",
+      "L'Allemagne"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q155",
+      "url": "https://www.wikidata.org/wiki/Q155",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-bresil-5",
+    "conceptId": "rec-bresil-5",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de Coupes du monde de football le Brésil a-t-il remportées ?",
+    "answers": [
+      "Six",
+      "Cinq",
+      "Trois",
+      "Quatre"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q155",
+      "url": "https://www.wikidata.org/wiki/Q155",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-jo-ete",
+    "conceptId": "rec-jo-ete",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel pays a accueilli le plus de Jeux olympiques d'été ?",
+    "answers": [
+      "Les États-Unis",
+      "La France",
+      "Le Royaume-Uni",
+      "L'Italie"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q30",
+      "url": "https://www.wikidata.org/wiki/Q30",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-bible",
+    "conceptId": "rec-bible",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel est le livre le plus diffusé au monde ?",
+    "answers": [
+      "Le Coran",
+      "Don Quichotte",
+      "Le Petit Prince",
+      "La Bible"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1845",
+      "url": "https://www.wikidata.org/wiki/Q1845",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-calment",
+    "conceptId": "rec-calment",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel âge avait Jeanne Calment, doyenne de l'humanité, à sa mort ?",
+    "answers": [
+      "120 ans",
+      "125 ans",
+      "122 ans",
+      "115 ans"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q182260",
+      "url": "https://www.wikidata.org/wiki/Q182260",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-journee-terre",
+    "conceptId": "rec-journee-terre",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Combien de temps la Terre met-elle environ pour faire un tour sur elle-même ?",
+    "answers": [
+      "48 heures",
+      "24 heures",
+      "12 heures",
+      "36 heures"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2",
+      "url": "https://www.wikidata.org/wiki/Q2",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-chaleur",
+    "conceptId": "rec-chaleur",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la température la plus élevée jamais enregistrée à la surface de la Terre ?",
+    "answers": [
+      "56,7 °C",
+      "40 °C",
+      "50 °C",
+      "65 °C"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2",
+      "url": "https://www.wikidata.org/wiki/Q2",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-musulmans",
+    "conceptId": "rec-musulmans",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel pays compte la plus grande population musulmane du monde ?",
+    "answers": [
+      "Le Pakistan",
+      "L'Inde",
+      "L'Égypte",
+      "L'Indonésie"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q252",
+      "url": "https://www.wikidata.org/wiki/Q252",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-dollar",
+    "conceptId": "rec-dollar",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle est la monnaie la plus échangée au monde ?",
+    "answers": [
+      "Le yen",
+      "La livre sterling",
+      "Le dollar américain",
+      "L'euro"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q4917",
+      "url": "https://www.wikidata.org/wiki/Q4917",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-tokyo",
+    "conceptId": "rec-tokyo",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quelle agglomération est l'une des plus peuplées du monde, avec plus de 37 millions d'habitants ?",
+    "answers": [
+      "Londres",
+      "Tokyo",
+      "New York",
+      "Paris"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1490",
+      "url": "https://www.wikidata.org/wiki/Q1490",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-indonesie",
+    "conceptId": "rec-indonesie",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel archipel est le plus grand du monde ?",
+    "answers": [
+      "L'Indonésie",
+      "Les Philippines",
+      "Le Japon",
+      "Les îles Fidji"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q252",
+      "url": "https://www.wikidata.org/wiki/Q252",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-rec-araignee-web",
+    "conceptId": "rec-araignee-web",
+    "familyId": "records",
+    "type": "mcq",
+    "question": "Quel animal détient le record de la plus grande toile d'araignée ?",
+    "answers": [
+      "La veuve noire",
+      "La tarentule",
+      "L'araignée sauteuse",
+      "La néphile"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "records",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "records"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1357",
+      "url": "https://www.wikidata.org/wiki/Q1357",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

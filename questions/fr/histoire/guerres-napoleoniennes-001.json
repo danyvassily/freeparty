@@ -1,0 +1,800 @@
+[
+  {
+    "id": "war-nap-empereur-1804",
+    "conceptId": "nap-empereur-1804",
+    "familyId": "napoleon-rise",
+    "type": "mcq",
+    "question": "En quelle année Napoléon Bonaparte devint-il empereur des Français ?",
+    "answers": [
+      "1804",
+      "1799",
+      "1805",
+      "1815"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-pie7",
+    "conceptId": "nap-pie7",
+    "familyId": "napoleon-rise",
+    "type": "mcq",
+    "question": "Quel pape officia lors du sacre de Napoléon à Notre-Dame de Paris en 1804 ?",
+    "answers": [
+      "Pie VI",
+      "Léon XII",
+      "Grégoire XVI",
+      "Pie VII"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q124754",
+      "url": "https://www.wikidata.org/wiki/Q124754",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-trafalgar",
+    "conceptId": "nap-trafalgar",
+    "familyId": "napoleon-battles",
+    "type": "mcq",
+    "question": "Quelle bataille navale de 1805 vit l'amiral Nelson détruire la flotte franco-espagnole ?",
+    "answers": [
+      "Austerlitz",
+      "Lépante",
+      "Trafalgar",
+      "Aboukir"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q171416",
+      "url": "https://www.wikidata.org/wiki/Q171416",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-austerlitz",
+    "conceptId": "nap-austerlitz",
+    "familyId": "napoleon-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1805 est surnommée la « bataille des trois empereurs » ?",
+    "answers": [
+      "Waterloo",
+      "Austerlitz",
+      "Iéna",
+      "Wagram"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134114",
+      "url": "https://www.wikidata.org/wiki/Q134114",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-austerlitz-annee",
+    "conceptId": "nap-austerlitz-annee",
+    "familyId": "napoleon-battles",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille d'Austerlitz ?",
+    "answers": [
+      "1805",
+      "1804",
+      "1807",
+      "1815"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134114",
+      "url": "https://www.wikidata.org/wiki/Q134114",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-tilsit",
+    "conceptId": "nap-tilsit",
+    "familyId": "napoleon-europe",
+    "type": "mcq",
+    "question": "Quel traité Napoléon signa-t-il avec le tsar Alexandre Ier en 1807, au milieu du Niémen ?",
+    "answers": [
+      "Le traité de Campo-Formio",
+      "Le traité de Lunéville",
+      "Le traité de Fontainebleau",
+      "Le traité de Tilsit"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q154596",
+      "url": "https://www.wikidata.org/wiki/Q154596",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-blocus",
+    "conceptId": "nap-blocus",
+    "familyId": "napoleon-europe",
+    "type": "mcq",
+    "question": "Quel système économique Napoléon imposa-t-il pour tenter de ruiner l'Angleterre ?",
+    "answers": [
+      "L'union douanière",
+      "Le système des licences",
+      "Le blocus continental",
+      "Le pacte de famine"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q258081",
+      "url": "https://www.wikidata.org/wiki/Q258081",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-russie-1812",
+    "conceptId": "nap-russie-1812",
+    "familyId": "napoleon-1812",
+    "type": "mcq",
+    "question": "En quelle année Napoléon lança-t-il sa campagne de Russie ?",
+    "answers": [
+      "1815",
+      "1812",
+      "1805",
+      "1814"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-moscova",
+    "conceptId": "nap-moscova",
+    "familyId": "napoleon-1812",
+    "type": "mcq",
+    "question": "Quelle bataille Napoléon remporta-t-il devant Moscou en septembre 1812 ?",
+    "answers": [
+      "La Moskova",
+      "La Bérézina",
+      "Smolensk",
+      "Leipzig"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q184320",
+      "url": "https://www.wikidata.org/wiki/Q184320",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-berezina",
+    "conceptId": "nap-berezina",
+    "familyId": "napoleon-1812",
+    "type": "mcq",
+    "question": "Quelle rivière gelée fut le théâtre de la désastreuse retraite de la Grande Armée en novembre 1812 ?",
+    "answers": [
+      "La Volga",
+      "Le Danube",
+      "Le Rhin",
+      "La Bérézina"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q207927",
+      "url": "https://www.wikidata.org/wiki/Q207927",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-leipzig",
+    "conceptId": "nap-leipzig",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Quelle bataille de 1813, dite « bataille des Nations », scella la défaite de Napoléon ?",
+    "answers": [
+      "Lützen",
+      "Waterloo",
+      "Leipzig",
+      "Dresde"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2889128",
+      "url": "https://www.wikidata.org/wiki/Q2889128",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-abdication-1814",
+    "conceptId": "nap-abdication-1814",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "En quelle année Napoléon abdiqua-t-il pour la première fois ?",
+    "answers": [
+      "1812",
+      "1814",
+      "1813",
+      "1815"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-elbe",
+    "conceptId": "nap-elbe",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Sur quelle île Napoléon fut-il exilé après sa première abdication ?",
+    "answers": [
+      "L'île d'Elbe",
+      "Sainte-Hélène",
+      "La Corse",
+      "Malte"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q45328",
+      "url": "https://www.wikidata.org/wiki/Q45328",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-retour-1815",
+    "conceptId": "nap-retour-1815",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "En quelle année Napoléon revint-il de l'île d'Elbe et reprit-il le pouvoir ?",
+    "answers": [
+      "1814",
+      "1813",
+      "1816",
+      "1815"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-cent-jours",
+    "conceptId": "nap-cent-jours",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Combien de jours dura approximativement le second règne de Napoléon, dit « les Cent-Jours » ?",
+    "answers": [
+      "Environ 200 jours",
+      "Environ 365 jours",
+      "Environ 100 jours",
+      "Environ 30 jours"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-waterloo",
+    "conceptId": "nap-waterloo",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Quelle bataille de juin 1815 mit définitivement fin à l'épopée napoléonienne ?",
+    "answers": [
+      "Fleurus",
+      "Waterloo",
+      "Ligny",
+      "Wavre"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q48314",
+      "url": "https://www.wikidata.org/wiki/Q48314",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-wellington",
+    "conceptId": "nap-wellington",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Quel général anglais commandait les troupes victorieuses à Waterloo ?",
+    "answers": [
+      "Wellington",
+      "Nelson",
+      "Marlborough",
+      "Montgomery"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23661",
+      "url": "https://www.wikidata.org/wiki/Q23661",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-sainte-helene",
+    "conceptId": "nap-sainte-helene",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "Sur quelle île de l'Atlantique sud Napoléon mourut-il en 1821 ?",
+    "answers": [
+      "L'île d'Elbe",
+      "L'île Maurice",
+      "La Jamaïque",
+      "Sainte-Hélène"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34497",
+      "url": "https://www.wikidata.org/wiki/Q34497",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-mort-1821",
+    "conceptId": "nap-mort-1821",
+    "familyId": "napoleon-fall",
+    "type": "mcq",
+    "question": "En quelle année Napoléon Ier mourut-il ?",
+    "answers": [
+      "1830",
+      "1814",
+      "1821",
+      "1815"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q517",
+      "url": "https://www.wikidata.org/wiki/Q517",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-code-civil",
+    "conceptId": "nap-code-civil",
+    "familyId": "napoleon-legacy",
+    "type": "mcq",
+    "question": "Quel code promulgué en 1804 reste le fondement du droit civil français ?",
+    "answers": [
+      "Le Code de commerce",
+      "Le Code civil",
+      "Le Code pénal",
+      "La Charte constitutionnelle"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q151060",
+      "url": "https://www.wikidata.org/wiki/Q151060",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-nap-iena",
+    "conceptId": "nap-iena",
+    "familyId": "napoleon-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1806 vit la défaite écrasante de la Prusse, suivie de l'entrée de Napoléon à Berlin ?",
+    "answers": [
+      "Iéna",
+      "Eylau",
+      "Friedland",
+      "Saalfeld"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-napoleoniennes",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-napoleoniennes"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q154426",
+      "url": "https://www.wikidata.org/wiki/Q154426",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

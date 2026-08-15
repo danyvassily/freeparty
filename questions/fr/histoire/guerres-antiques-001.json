@@ -1,0 +1,1408 @@
+[
+  {
+    "id": "war-marathon-annee",
+    "conceptId": "marathon-annee",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille de Marathon ?",
+    "answers": [
+      "490 av. J.-C.",
+      "480 av. J.-C.",
+      "479 av. J.-C.",
+      "431 av. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q31900",
+      "url": "https://www.wikidata.org/wiki/Q31900",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-marathon-roi-perse",
+    "conceptId": "marathon-roi-perse",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quel roi perse régnait sur l'Empire achéménide lors de la bataille de Marathon ?",
+    "answers": [
+      "Xerxès Ier",
+      "Cyrus le Grand",
+      "Artaxerxès Ier",
+      "Darius Ier"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44387",
+      "url": "https://www.wikidata.org/wiki/Q44387",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-marathon-general",
+    "conceptId": "marathon-general",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quel stratège athénien commanda l'armée grecque à la bataille de Marathon ?",
+    "answers": [
+      "Léonidas",
+      "Périclès",
+      "Miltiade",
+      "Thémistocle"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q225287",
+      "url": "https://www.wikidata.org/wiki/Q225287",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-thermopyles-300",
+    "conceptId": "thermopyles-300",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quelle bataille des guerres médiques est célèbre pour la résistance d'environ 300 Spartiates ?",
+    "answers": [
+      "Platées",
+      "Les Thermopyles",
+      "Marathon",
+      "Salamine"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131969",
+      "url": "https://www.wikidata.org/wiki/Q131969",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-thermopyles-annee",
+    "conceptId": "thermopyles-annee",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille des Thermopyles ?",
+    "answers": [
+      "480 av. J.-C.",
+      "490 av. J.-C.",
+      "479 av. J.-C.",
+      "450 av. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131969",
+      "url": "https://www.wikidata.org/wiki/Q131969",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-thermopyles-roi",
+    "conceptId": "thermopyles-roi",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quel roi de Sparte mourut héroïquement aux Thermopyles ?",
+    "answers": [
+      "Agésilas",
+      "Cléomène",
+      "Pausanias",
+      "Léonidas"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q44228",
+      "url": "https://www.wikidata.org/wiki/Q44228",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-salamine-nature",
+    "conceptId": "salamine-nature",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quelle bataille navale vit la flotte grecque anéantir la flotte perse en 480 av. J.-C. ?",
+    "answers": [
+      "Lépante",
+      "Actium",
+      "Salamine",
+      "Mycale"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q178850",
+      "url": "https://www.wikidata.org/wiki/Q178850",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-salamine-strategie",
+    "conceptId": "salamine-strategie",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quel homme d'État athénien convainquit les Grecs de livrer bataille à Salamine ?",
+    "answers": [
+      "Cimon",
+      "Thémistocle",
+      "Miltiade",
+      "Aristide"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q179552",
+      "url": "https://www.wikidata.org/wiki/Q179552",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-platees-fin",
+    "conceptId": "platees-fin",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quelle bataille de 479 av. J.-C. mit fin à la seconde invasion perse de la Grèce ?",
+    "answers": [
+      "Platées",
+      "Mycale",
+      "Marathon",
+      "Thermopyles"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q204636",
+      "url": "https://www.wikidata.org/wiki/Q204636",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-xerxes-invasion",
+    "conceptId": "xerxes-invasion",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quel roi perse lança la grande invasion de la Grèce en 480 av. J.-C. ?",
+    "answers": [
+      "Darius Ier",
+      "Cambyse II",
+      "Cyrus le Grand",
+      "Xerxès Ier"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q129165",
+      "url": "https://www.wikidata.org/wiki/Q129165",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-marathon-distance",
+    "conceptId": "marathon-distance",
+    "familyId": "greek-persian-wars",
+    "type": "mcq",
+    "question": "Quelle distance le messager légendaire aurait-il parcourue de Marathon à Athènes pour annoncer la victoire ?",
+    "answers": [
+      "Environ 100 km",
+      "Environ 200 km",
+      "Environ 40 km",
+      "Environ 10 km"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-mediques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-mediques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q31900",
+      "url": "https://www.wikidata.org/wiki/Q31900",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-adversaires",
+    "conceptId": "peloponnese-adversaires",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "La guerre du Péloponnèse opposa principalement quelles deux cités grecques ?",
+    "answers": [
+      "Athènes et Argos",
+      "Athènes et Sparte",
+      "Athènes et Thèbes",
+      "Sparte et Corinthe"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q33745",
+      "url": "https://www.wikidata.org/wiki/Q33745",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-debut",
+    "conceptId": "peloponnese-debut",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "En quelle année débuta la guerre du Péloponnèse ?",
+    "answers": [
+      "431 av. J.-C.",
+      "490 av. J.-C.",
+      "404 av. J.-C.",
+      "338 av. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q33745",
+      "url": "https://www.wikidata.org/wiki/Q33745",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-fin",
+    "conceptId": "peloponnese-fin",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "En quelle année s'acheva la guerre du Péloponnèse, avec la capitulation d'Athènes ?",
+    "answers": [
+      "431 av. J.-C.",
+      "480 av. J.-C.",
+      "359 av. J.-C.",
+      "404 av. J.-C."
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q33745",
+      "url": "https://www.wikidata.org/wiki/Q33745",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-pericles",
+    "conceptId": "peloponnese-pericles",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "Quel stratège dirigea Athènes au début de la guerre du Péloponnèse et prononça une célèbre oraison funèbre ?",
+    "answers": [
+      "Cléon",
+      "Nicias",
+      "Périclès",
+      "Alcibiade"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q80398",
+      "url": "https://www.wikidata.org/wiki/Q80398",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-sicile",
+    "conceptId": "peloponnese-sicile",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "Quelle expédition désastreuse (415-413 av. J.-C.) affaiblit durablement Athènes pendant la guerre du Péloponnèse ?",
+    "answers": [
+      "L'expédition de Crète",
+      "L'expédition de Sicile",
+      "L'expédition d'Égypte",
+      "L'expédition de Chypre"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q844289",
+      "url": "https://www.wikidata.org/wiki/Q844289",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-peloponnese-lysandre",
+    "conceptId": "peloponnese-lysandre",
+    "familyId": "peloponnesian-war",
+    "type": "mcq",
+    "question": "Quel général spartiate remporta la victoire décisive d'Aigos Potamos en 405 av. J.-C. ?",
+    "answers": [
+      "Lysandre",
+      "Brasidas",
+      "Agésilas",
+      "Gylippe"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerre-peloponnese",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-peloponnese"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q143559",
+      "url": "https://www.wikidata.org/wiki/Q143559",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-precepteur",
+    "conceptId": "alexandre-precepteur",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quel philosophe grec fut le précepteur d'Alexandre le Grand ?",
+    "answers": [
+      "Aristote",
+      "Platon",
+      "Socrate",
+      "Épicure"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q868",
+      "url": "https://www.wikidata.org/wiki/Q868",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-trone",
+    "conceptId": "alexandre-trone",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "En quelle année Alexandre monta-t-il sur le trône de Macédoine ?",
+    "answers": [
+      "331 av. J.-C.",
+      "323 av. J.-C.",
+      "336 av. J.-C.",
+      "356 av. J.-C."
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8409",
+      "url": "https://www.wikidata.org/wiki/Q8409",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-granique",
+    "conceptId": "alexandre-granique",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quelle première grande victoire d'Alexandre sur les Perses eut lieu en 334 av. J.-C. ?",
+    "answers": [
+      "L'Hydaspe",
+      "Le Granique",
+      "Issos",
+      "Gaugamèles"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q192938",
+      "url": "https://www.wikidata.org/wiki/Q192938",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-issos",
+    "conceptId": "alexandre-issos",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quelle bataille de 333 av. J.-C. vit Alexandre affronter Darius III pour la première fois ?",
+    "answers": [
+      "Issos",
+      "Gaugamèles",
+      "Le Granique",
+      "L'Hydaspe"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q201526",
+      "url": "https://www.wikidata.org/wiki/Q201526",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-gaugameles",
+    "conceptId": "alexandre-gaugameles",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille de Gaugamèles ?",
+    "answers": [
+      "333 av. J.-C.",
+      "334 av. J.-C.",
+      "323 av. J.-C.",
+      "331 av. J.-C."
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q179670",
+      "url": "https://www.wikidata.org/wiki/Q179670",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-darius",
+    "conceptId": "alexandre-darius",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quel roi perse fut définitivement vaincu par Alexandre à Gaugamèles ?",
+    "answers": [
+      "Artaxerxès III",
+      "Darius II",
+      "Darius III",
+      "Xerxès Ier"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q102865",
+      "url": "https://www.wikidata.org/wiki/Q102865",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-alexandrie",
+    "conceptId": "alexandre-alexandrie",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quelle grande ville d'Égypte Alexandre fonda-t-il en 331 av. J.-C. ?",
+    "answers": [
+      "Thèbes",
+      "Alexandrie",
+      "Le Caire",
+      "Memphis"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q87",
+      "url": "https://www.wikidata.org/wiki/Q87",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-cheval",
+    "conceptId": "alexandre-cheval",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Comment s'appelait le célèbre cheval d'Alexandre le Grand ?",
+    "answers": [
+      "Bucéphale",
+      "Pégase",
+      "Incitatus",
+      "Babieca"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q201598",
+      "url": "https://www.wikidata.org/wiki/Q201598",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-noeud",
+    "conceptId": "alexandre-noeud",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "Quel nœud légendaire Alexandre trancha-t-il d'un coup d'épée ?",
+    "answers": [
+      "Le nœud d'Héraclès",
+      "Le nœud de Salomon",
+      "Le nœud de marin",
+      "Le nœud gordien"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q193373",
+      "url": "https://www.wikidata.org/wiki/Q193373",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-mort",
+    "conceptId": "alexandre-mort",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "En quelle année Alexandre le Grand mourut-il à Babylone ?",
+    "answers": [
+      "331 av. J.-C.",
+      "301 av. J.-C.",
+      "323 av. J.-C.",
+      "336 av. J.-C."
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8409",
+      "url": "https://www.wikidata.org/wiki/Q8409",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-alexandre-age",
+    "conceptId": "alexandre-age",
+    "familyId": "alexander-conquests",
+    "type": "mcq",
+    "question": "À quel âge Alexandre le Grand mourut-il ?",
+    "answers": [
+      "45 ans",
+      "32 ans",
+      "28 ans",
+      "40 ans"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "alexandre-le-grand",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "alexandre-le-grand"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8409",
+      "url": "https://www.wikidata.org/wiki/Q8409",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-adversaire",
+    "conceptId": "puniques-adversaire",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Les guerres puniques opposèrent Rome à quelle grande cité ?",
+    "answers": [
+      "Carthage",
+      "Corinthe",
+      "Syracuse",
+      "Athènes"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6343",
+      "url": "https://www.wikidata.org/wiki/Q6343",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-1ere-annee",
+    "conceptId": "puniques-1ere-annee",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "En quelle année débuta la première guerre punique ?",
+    "answers": [
+      "218 av. J.-C.",
+      "149 av. J.-C.",
+      "202 av. J.-C.",
+      "264 av. J.-C."
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q124988",
+      "url": "https://www.wikidata.org/wiki/Q124988",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-hannibal",
+    "conceptId": "puniques-hannibal",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Quel général carthaginois franchit les Alpes avec ses éléphants ?",
+    "answers": [
+      "Hamilcar Barca",
+      "Hannon le Navigateur",
+      "Hannibal Barca",
+      "Hasdrubal"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q36456",
+      "url": "https://www.wikidata.org/wiki/Q36456",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-alpes",
+    "conceptId": "puniques-alpes",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "En quelle année Hannibal franchit-il les Alpes pour envahir l'Italie ?",
+    "answers": [
+      "202 av. J.-C.",
+      "218 av. J.-C.",
+      "216 av. J.-C.",
+      "264 av. J.-C."
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q36456",
+      "url": "https://www.wikidata.org/wiki/Q36456",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-cannes",
+    "conceptId": "puniques-cannes",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Quelle bataille de 216 av. J.-C. vit Hannibal encercler et anéantir une armée romaine ?",
+    "answers": [
+      "Cannes",
+      "Zama",
+      "Trébie",
+      "Lac Trasimène"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q179591",
+      "url": "https://www.wikidata.org/wiki/Q179591",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-zama",
+    "conceptId": "puniques-zama",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Quelle bataille de 202 av. J.-C. mit fin à la deuxième guerre punique ?",
+    "answers": [
+      "Cannes",
+      "Trébie",
+      "L'Ebre",
+      "Zama"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q200056",
+      "url": "https://www.wikidata.org/wiki/Q200056",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-scipion",
+    "conceptId": "puniques-scipion",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Qui commandait l'armée romaine à la bataille de Zama ?",
+    "answers": [
+      "Marius",
+      "Sylla",
+      "Scipion l'Africain",
+      "Fabius Cunctator"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2253",
+      "url": "https://www.wikidata.org/wiki/Q2253",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-caton",
+    "conceptId": "puniques-caton",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "Quel homme politique romain terminait ses discours par « Carthage doit être détruite » ?",
+    "answers": [
+      "Tiberius Gracchus",
+      "Caton l'Ancien",
+      "Cicéron",
+      "Sénèque"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q180081",
+      "url": "https://www.wikidata.org/wiki/Q180081",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-puniques-destruction",
+    "conceptId": "puniques-destruction",
+    "familyId": "punic-wars",
+    "type": "mcq",
+    "question": "En quelle année Carthage fut-elle finalement détruite par Rome ?",
+    "answers": [
+      "146 av. J.-C.",
+      "149 av. J.-C.",
+      "202 av. J.-C.",
+      "121 av. J.-C."
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerres-puniques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerres-puniques"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q6343",
+      "url": "https://www.wikidata.org/wiki/Q6343",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

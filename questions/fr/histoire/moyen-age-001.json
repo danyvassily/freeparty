@@ -1,0 +1,1256 @@
+[
+  {
+    "id": "war-croisade-predit-1095",
+    "conceptId": "croisade-predit-1095",
+    "familyId": "crusades-start",
+    "type": "mcq",
+    "question": "En quelle année la première croisade fut-elle prêchée au concile de Clermont ?",
+    "answers": [
+      "1095",
+      "1099",
+      "1066",
+      "1187"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q51649",
+      "url": "https://www.wikidata.org/wiki/Q51649",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-pape",
+    "conceptId": "croisade-pape",
+    "familyId": "crusades-start",
+    "type": "mcq",
+    "question": "Quel pape appela à la première croisade ?",
+    "answers": [
+      "Grégoire VII",
+      "Innocent III",
+      "Léon IX",
+      "Urbain II"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q30578",
+      "url": "https://www.wikidata.org/wiki/Q30578",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-jerusalem-1099",
+    "conceptId": "croisade-jerusalem-1099",
+    "familyId": "crusades-jerusalem",
+    "type": "mcq",
+    "question": "En quelle année les croisés prirent-ils Jérusalem ?",
+    "answers": [
+      "1187",
+      "1204",
+      "1099",
+      "1095"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q51649",
+      "url": "https://www.wikidata.org/wiki/Q51649",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-godefroy",
+    "conceptId": "croisade-godefroy",
+    "familyId": "crusades-jerusalem",
+    "type": "mcq",
+    "question": "Quel chef croisé refusa le titre de roi de Jérusalem, préférant celui d'« Avoué du Saint-Sépulcre » ?",
+    "answers": [
+      "Bohémond de Tarente",
+      "Godefroy de Bouillon",
+      "Baudouin de Boulogne",
+      "Raymond de Saint-Gilles"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q76721",
+      "url": "https://www.wikidata.org/wiki/Q76721",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-saladin",
+    "conceptId": "croisade-saladin",
+    "familyId": "crusades-jerusalem",
+    "type": "mcq",
+    "question": "Quel sultan musulman reprit Jérusalem en 1187 ?",
+    "answers": [
+      "Saladin",
+      "Baybars",
+      "Al-Mansour",
+      "Haroun al-Rachid"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8581",
+      "url": "https://www.wikidata.org/wiki/Q8581",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-hattin",
+    "conceptId": "croisade-hattin",
+    "familyId": "crusades-jerusalem",
+    "type": "mcq",
+    "question": "Quelle bataille de 1187 précéda la reconquête de Jérusalem par Saladin ?",
+    "answers": [
+      "Aïn Djalout",
+      "Mansourah",
+      "Lépante",
+      "Hattin"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q233568",
+      "url": "https://www.wikidata.org/wiki/Q233568",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-richard",
+    "conceptId": "croisade-richard",
+    "familyId": "crusades-third",
+    "type": "mcq",
+    "question": "Quel roi d'Angleterre participa à la troisième croisade aux côtés de Philippe Auguste ?",
+    "answers": [
+      "Jean sans Terre",
+      "Édouard Ier",
+      "Richard Cœur de Lion",
+      "Henri II"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42305",
+      "url": "https://www.wikidata.org/wiki/Q42305",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-acre-1291",
+    "conceptId": "croisade-acre-1291",
+    "familyId": "crusades-end",
+    "type": "mcq",
+    "question": "En quelle année Saint-Jean-d'Acre, dernière grande place forte des croisés en Terre sainte, tomba-t-elle ?",
+    "answers": [
+      "1270",
+      "1291",
+      "1187",
+      "1204"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q28197137",
+      "url": "https://www.wikidata.org/wiki/Q28197137",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-templiers",
+    "conceptId": "croisade-templiers",
+    "familyId": "templars",
+    "type": "mcq",
+    "question": "À quel ordre religieux et militaire appartenaient les moines-soldats vêtus de blanc à croix rouge ?",
+    "answers": [
+      "Les Templiers",
+      "Les Hospitaliers",
+      "Les Teutoniques",
+      "Les Franciscains"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q41300",
+      "url": "https://www.wikidata.org/wiki/Q41300",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-molay",
+    "conceptId": "croisade-molay",
+    "familyId": "templars",
+    "type": "mcq",
+    "question": "Qui fut le dernier grand maître des Templiers, brûlé vif à Paris en 1314 ?",
+    "answers": [
+      "Hugues de Payns",
+      "Bernard de Clairvaux",
+      "Gérard Tenque",
+      "Jacques de Molay"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q208215",
+      "url": "https://www.wikidata.org/wiki/Q208215",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-croisade-nombre",
+    "conceptId": "croisade-nombre",
+    "familyId": "crusades-start",
+    "type": "mcq",
+    "question": "Combien de croisades majeures vers la Terre sainte dénombre-t-on traditionnellement ?",
+    "answers": [
+      "Cinq",
+      "Dix",
+      "Huit",
+      "Trois"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "croisades",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "croisades"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q51649",
+      "url": "https://www.wikidata.org/wiki/Q51649",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-adversaires",
+    "conceptId": "cent-ans-adversaires",
+    "familyId": "hundred-years-war-start",
+    "type": "mcq",
+    "question": "La guerre de Cent Ans opposa quels deux royaumes ?",
+    "answers": [
+      "La France et l'Empire germanique",
+      "La France et l'Angleterre",
+      "La France et l'Espagne",
+      "L'Angleterre et l'Écosse"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12551",
+      "url": "https://www.wikidata.org/wiki/Q12551",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-debut",
+    "conceptId": "cent-ans-debut",
+    "familyId": "hundred-years-war-start",
+    "type": "mcq",
+    "question": "En quelle année débuta la guerre de Cent Ans ?",
+    "answers": [
+      "1337",
+      "1415",
+      "1429",
+      "1453"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12551",
+      "url": "https://www.wikidata.org/wiki/Q12551",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-plantagenets",
+    "conceptId": "cent-ans-plantagenets",
+    "familyId": "hundred-years-war-start",
+    "type": "mcq",
+    "question": "Quelle dynastie anglaise revendiquait le trône de France à l'origine du conflit ?",
+    "answers": [
+      "Les Tudor",
+      "Les Stuart",
+      "Les Lancastre",
+      "Les Plantagenêts"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12551",
+      "url": "https://www.wikidata.org/wiki/Q12551",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-crecy",
+    "conceptId": "cent-ans-crecy",
+    "familyId": "hundred-years-war-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1346 vit la victoire écrasante des archers anglais ?",
+    "answers": [
+      "Azincourt",
+      "Castillon",
+      "Crécy",
+      "Poitiers"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q27759",
+      "url": "https://www.wikidata.org/wiki/Q27759",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-poitiers",
+    "conceptId": "cent-ans-poitiers",
+    "familyId": "hundred-years-war-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1356 aboutit à la capture du roi de France Jean II le Bon ?",
+    "answers": [
+      "Orléans",
+      "Poitiers",
+      "Crécy",
+      "Azincourt"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q201692",
+      "url": "https://www.wikidata.org/wiki/Q201692",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-azincourt",
+    "conceptId": "cent-ans-azincourt",
+    "familyId": "hundred-years-war-battles",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille d'Azincourt ?",
+    "answers": [
+      "1415",
+      "1337",
+      "1346",
+      "1429"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q188495",
+      "url": "https://www.wikidata.org/wiki/Q188495",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-henri5",
+    "conceptId": "cent-ans-henri5",
+    "familyId": "hundred-years-war-battles",
+    "type": "mcq",
+    "question": "Quel roi d'Angleterre commandait l'armée victorieuse à Azincourt ?",
+    "answers": [
+      "Édouard III",
+      "Richard III",
+      "Édouard de Woodstock",
+      "Henri V"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131581",
+      "url": "https://www.wikidata.org/wiki/Q131581",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-troyes",
+    "conceptId": "cent-ans-troyes",
+    "familyId": "hundred-years-war-start",
+    "type": "mcq",
+    "question": "Quel traité de 1420 déshérita le dauphin Charles au profit du roi d'Angleterre ?",
+    "answers": [
+      "Le traité de Picquigny",
+      "Le traité d'Arras",
+      "Le traité de Troyes",
+      "Le traité de Brétigny"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1134125",
+      "url": "https://www.wikidata.org/wiki/Q1134125",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-orleans",
+    "conceptId": "cent-ans-orleans",
+    "familyId": "joan-of-arc",
+    "type": "mcq",
+    "question": "Quelle ville Jeanne d'Arc délivra-t-elle du siège anglais en 1429 ?",
+    "answers": [
+      "Rouen",
+      "Orléans",
+      "Reims",
+      "Paris"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7226",
+      "url": "https://www.wikidata.org/wiki/Q7226",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-domremy",
+    "conceptId": "cent-ans-domremy",
+    "familyId": "joan-of-arc",
+    "type": "mcq",
+    "question": "Dans quel village lorrain Jeanne d'Arc est-elle née ?",
+    "answers": [
+      "Domrémy",
+      "Vaucouleurs",
+      "Chinon",
+      "Compiègne"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q209069",
+      "url": "https://www.wikidata.org/wiki/Q209069",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-jeanne-mort",
+    "conceptId": "cent-ans-jeanne-mort",
+    "familyId": "joan-of-arc",
+    "type": "mcq",
+    "question": "En quelle année Jeanne d'Arc fut-elle brûlée vive à Rouen ?",
+    "answers": [
+      "1429",
+      "1430",
+      "1453",
+      "1431"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7226",
+      "url": "https://www.wikidata.org/wiki/Q7226",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-charles7",
+    "conceptId": "cent-ans-charles7",
+    "familyId": "joan-of-arc",
+    "type": "mcq",
+    "question": "Quel roi de France fut sacré à Reims en 1429 grâce à Jeanne d'Arc ?",
+    "answers": [
+      "Charles V",
+      "Louis XI",
+      "Charles VII",
+      "Charles VI"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q225429",
+      "url": "https://www.wikidata.org/wiki/Q225429",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-cent-ans-castillon",
+    "conceptId": "cent-ans-castillon",
+    "familyId": "hundred-years-war-end",
+    "type": "mcq",
+    "question": "Quelle bataille de 1453 marqua la fin de la guerre de Cent Ans ?",
+    "answers": [
+      "Formigny",
+      "Castillon",
+      "Crécy",
+      "Azincourt"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "guerre-cent-ans",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "guerre-cent-ans"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q932613",
+      "url": "https://www.wikidata.org/wiki/Q932613",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-hastings",
+    "conceptId": "moyen-age-hastings",
+    "familyId": "norman-conquest",
+    "type": "mcq",
+    "question": "Quelle bataille de 1066 permit à Guillaume le Conquérant de s'emparer du trône d'Angleterre ?",
+    "answers": [
+      "Hastings",
+      "Bouvines",
+      "Stamford Bridge",
+      "Lewes"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q83224",
+      "url": "https://www.wikidata.org/wiki/Q83224",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-charlemagne",
+    "conceptId": "moyen-age-charlemagne",
+    "familyId": "charlemagne",
+    "type": "mcq",
+    "question": "En quelle année Charlemagne fut-il couronné empereur à Rome ?",
+    "answers": [
+      "768",
+      "843",
+      "962",
+      "800"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q3044",
+      "url": "https://www.wikidata.org/wiki/Q3044",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-verdun",
+    "conceptId": "moyen-age-verdun",
+    "familyId": "charlemagne",
+    "type": "mcq",
+    "question": "Quel traité de 843 partagea l'Empire de Charlemagne entre ses trois petits-fils ?",
+    "answers": [
+      "Le traité de Meersen",
+      "Le capitulaire de Quierzy",
+      "Le traité de Verdun",
+      "Le traité de Troyes"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q134840",
+      "url": "https://www.wikidata.org/wiki/Q134840",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-peste",
+    "conceptId": "moyen-age-peste",
+    "familyId": "black-death",
+    "type": "mcq",
+    "question": "Quelle épidémie dévasta l'Europe entre 1347 et 1352 ?",
+    "answers": [
+      "La grippe espagnole",
+      "La peste noire",
+      "Le choléra",
+      "La variole"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42005",
+      "url": "https://www.wikidata.org/wiki/Q42005",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-magna-carta",
+    "conceptId": "moyen-age-magna-carta",
+    "familyId": "magna-carta",
+    "type": "mcq",
+    "question": "Quelle charte de 1215 limita les pouvoirs du roi d'Angleterre Jean sans Terre ?",
+    "answers": [
+      "La Magna Carta",
+      "L'Habeas Corpus",
+      "La Bill of Rights",
+      "La Charte de Northampton"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12519",
+      "url": "https://www.wikidata.org/wiki/Q12519",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-serre",
+    "conceptId": "moyen-age-serre",
+    "familyId": "middle-ages-life",
+    "type": "mcq",
+    "question": "Qu'était un serf au Moyen Âge ?",
+    "answers": [
+      "Un chevalier au service d'un roi",
+      "Un artisan membre d'une guilde",
+      "Un moine vivant en abbaye",
+      "Un paysan dépendant d'un seigneur"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q103350",
+      "url": "https://www.wikidata.org/wiki/Q103350",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-notre-dame",
+    "conceptId": "moyen-age-notre-dame",
+    "familyId": "medieval-buildings",
+    "type": "mcq",
+    "question": "En quelle année débuta la construction de la cathédrale Notre-Dame de Paris ?",
+    "answers": [
+      "1215",
+      "1347",
+      "1163",
+      "1066"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2002409",
+      "url": "https://www.wikidata.org/wiki/Q2002409",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-adoubement",
+    "conceptId": "moyen-age-adoubement",
+    "familyId": "middle-ages-life",
+    "type": "mcq",
+    "question": "Comment appelle-t-on la cérémonie par laquelle un homme devient chevalier ?",
+    "answers": [
+      "L'investiture",
+      "L'adoubement",
+      "Le sacre",
+      "Le vasselage"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q547314",
+      "url": "https://www.wikidata.org/wiki/Q547314",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-moyen-age-charles5",
+    "conceptId": "moyen-age-charles5",
+    "familyId": "hundred-years-war-battles",
+    "type": "mcq",
+    "question": "Quel roi de France, surnommé « le Sage », reconquit la majeure partie du royaume pendant la guerre de Cent Ans ?",
+    "answers": [
+      "Charles V",
+      "Charles VI",
+      "Charles VII",
+      "Jean II"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "moyen-age",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "moyen-age"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q167782",
+      "url": "https://www.wikidata.org/wiki/Q167782",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

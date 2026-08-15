@@ -1,0 +1,458 @@
+[
+  {
+    "id": "war-ren-mouvement",
+    "conceptId": "ren-mouvement",
+    "familyId": "renaissance-italy",
+    "type": "mcq",
+    "question": "Quel grand mouvement culturel européen naquit en Italie au XVe siècle ?",
+    "answers": [
+      "La Renaissance",
+      "Le baroque",
+      "Le classicisme",
+      "Le romantisme"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2044",
+      "url": "https://www.wikidata.org/wiki/Q2044",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-berceau",
+    "conceptId": "ren-berceau",
+    "familyId": "renaissance-italy",
+    "type": "mcq",
+    "question": "Quelle ville italienne est considérée comme le berceau de la Renaissance ?",
+    "answers": [
+      "Rome",
+      "Venise",
+      "Milan",
+      "Florence"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2044",
+      "url": "https://www.wikidata.org/wiki/Q2044",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-medicis",
+    "conceptId": "ren-medicis",
+    "familyId": "renaissance-italy",
+    "type": "mcq",
+    "question": "Quelle grande famille dirigeait Florence à la Renaissance ?",
+    "answers": [
+      "Les Sforza",
+      "Les Visconti",
+      "Les Médicis",
+      "Les Borgia"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q170022",
+      "url": "https://www.wikidata.org/wiki/Q170022",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-sixtine",
+    "conceptId": "ren-sixtine",
+    "familyId": "renaissance-arts",
+    "type": "mcq",
+    "question": "Quel artiste peignit la fresque du plafond de la chapelle Sixtine ?",
+    "answers": [
+      "Botticelli",
+      "Michel-Ange",
+      "Léonard de Vinci",
+      "Raphaël"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2943",
+      "url": "https://www.wikidata.org/wiki/Q2943",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-joconde",
+    "conceptId": "ren-joconde",
+    "familyId": "renaissance-arts",
+    "type": "mcq",
+    "question": "Quelle célèbre œuvre de Léonard de Vinci est exposée au musée du Louvre ?",
+    "answers": [
+      "La Joconde",
+      "La Cène",
+      "La Naissance de Vénus",
+      "L'École d'Athènes"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q12418",
+      "url": "https://www.wikidata.org/wiki/Q12418",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-colomb",
+    "conceptId": "ren-colomb",
+    "familyId": "renaissance-italy",
+    "type": "mcq",
+    "question": "En quelle année Christophe Colomb atteignit-il l'Amérique ?",
+    "answers": [
+      "1488",
+      "1498",
+      "1519",
+      "1492"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7322",
+      "url": "https://www.wikidata.org/wiki/Q7322",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-francois1",
+    "conceptId": "ren-francois1",
+    "familyId": "renaissance-france",
+    "type": "mcq",
+    "question": "Quel roi de France invita Léonard de Vinci au château d'Amboise ?",
+    "answers": [
+      "Louis XII",
+      "Charles VIII",
+      "François Ier",
+      "Henri II"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q11333711",
+      "url": "https://www.wikidata.org/wiki/Q11333711",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-chambord",
+    "conceptId": "ren-chambord",
+    "familyId": "renaissance-france",
+    "type": "mcq",
+    "question": "Quel château de la Loire François Ier fit-il construire ?",
+    "answers": [
+      "Amboise",
+      "Chambord",
+      "Chenonceau",
+      "Blois"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q205367",
+      "url": "https://www.wikidata.org/wiki/Q205367",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-copernic",
+    "conceptId": "ren-copernic",
+    "familyId": "renaissance-science",
+    "type": "mcq",
+    "question": "Quel savant polonais publia en 1543 sa théorie du système héliocentrique ?",
+    "answers": [
+      "Nicolas Copernic",
+      "Galilée",
+      "Johannes Kepler",
+      "Ptolémée"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q619",
+      "url": "https://www.wikidata.org/wiki/Q619",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-imprimerie",
+    "conceptId": "ren-imprimerie",
+    "familyId": "renaissance-science",
+    "type": "mcq",
+    "question": "Quelle invention de Gutenberg révolutionna la diffusion des savoirs vers 1450 ?",
+    "answers": [
+      "La boussole",
+      "La poudre à canon",
+      "Le papier",
+      "L'imprimerie"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q11034",
+      "url": "https://www.wikidata.org/wiki/Q11034",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-rabelais",
+    "conceptId": "ren-rabelais",
+    "familyId": "renaissance-france",
+    "type": "mcq",
+    "question": "Quel humaniste français écrivit « Gargantua » et « Pantagruel » ?",
+    "answers": [
+      "Érasme",
+      "Pierre de Ronsard",
+      "François Rabelais",
+      "Michel de Montaigne"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131018",
+      "url": "https://www.wikidata.org/wiki/Q131018",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ren-catherine",
+    "conceptId": "ren-catherine",
+    "familyId": "renaissance-france",
+    "type": "mcq",
+    "question": "Quelle reine de France, épouse de Henri II, fut une figure majeure de la Renaissance ?",
+    "answers": [
+      "Diane de Poitiers",
+      "Catherine de Médicis",
+      "Anne de Bretagne",
+      "Marie Stuart"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "renaissance",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "renaissance"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q131552",
+      "url": "https://www.wikidata.org/wiki/Q131552",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

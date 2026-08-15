@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "cg-ani-plus-grand",
+    "conceptId": "ani-plus-grand",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel est le plus grand animal du monde ?",
+    "answers": [
+      "La baleine bleue",
+      "L'éléphant d'Afrique",
+      "La girafe",
+      "Le requin blanc"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42196",
+      "url": "https://www.wikidata.org/wiki/Q42196",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-plus-rapide",
+    "conceptId": "ani-plus-rapide",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel est l'animal terrestre le plus rapide ?",
+    "answers": [
+      "Le lion",
+      "L'antilope",
+      "Le cheval",
+      "Le guépard"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23907",
+      "url": "https://www.wikidata.org/wiki/Q23907",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-manchot",
+    "conceptId": "ani-manchot",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel oiseau de l'Antarctique est le plus grand des manchots ?",
+    "answers": [
+      "Le gorfou",
+      "L'albatros",
+      "Le manchot empereur",
+      "Le manchot royal"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q161829",
+      "url": "https://www.wikidata.org/wiki/Q161829",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-poulpe",
+    "conceptId": "ani-poulpe",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Combien de cœurs possède un poulpe ?",
+    "answers": [
+      "Quatre",
+      "Trois",
+      "Un",
+      "Deux"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q13219075",
+      "url": "https://www.wikidata.org/wiki/Q13219075",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-girafe",
+    "conceptId": "ani-girafe",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel animal possède le plus long cou ?",
+    "answers": [
+      "La girafe",
+      "L'autruche",
+      "Le chameau",
+      "L'alpaga"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q862089",
+      "url": "https://www.wikidata.org/wiki/Q862089",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-ornithorynque",
+    "conceptId": "ani-ornithorynque",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel mammifère pond des œufs ?",
+    "answers": [
+      "Le kangourou",
+      "Le koala",
+      "Le castor",
+      "L'ornithorynque"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q15343",
+      "url": "https://www.wikidata.org/wiki/Q15343",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-requin",
+    "conceptId": "ani-requin",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quelle est la plus grande espèce de requin ?",
+    "answers": [
+      "Le requin-tigre",
+      "Le requin-marteau",
+      "Le requin baleine",
+      "Le grand requin blanc"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q80378",
+      "url": "https://www.wikidata.org/wiki/Q80378",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-araignee",
+    "conceptId": "ani-araignee",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Combien de pattes possède une araignée ?",
+    "answers": [
+      "Quatre",
+      "Huit",
+      "Six",
+      "Dix"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1357",
+      "url": "https://www.wikidata.org/wiki/Q1357",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-felin",
+    "conceptId": "ani-felin",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel est le plus grand félin du monde ?",
+    "answers": [
+      "Le tigre",
+      "Le lion",
+      "Le jaguar",
+      "La panthère"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q19939",
+      "url": "https://www.wikidata.org/wiki/Q19939",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-colombe",
+    "conceptId": "ani-colombe",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Quel oiseau est le symbole universel de la paix ?",
+    "answers": [
+      "Le corbeau",
+      "L'aigle",
+      "Le hibou",
+      "La colombe"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42326",
+      "url": "https://www.wikidata.org/wiki/Q42326",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-ani-escargot",
+    "conceptId": "ani-escargot",
+    "familyId": "animals",
+    "type": "mcq",
+    "question": "Combien de dents possède environ un escargot ?",
+    "answers": [
+      "Environ 100",
+      "Environ 1 000",
+      "Environ 25 000",
+      "Environ 10"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "animaux",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "animaux"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q308841",
+      "url": "https://www.wikidata.org/wiki/Q308841",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-organe",
+    "conceptId": "corps-organe",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Quel est le plus grand organe du corps humain ?",
+    "answers": [
+      "Les poumons",
+      "La peau",
+      "Le foie",
+      "Le cerveau"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1074",
+      "url": "https://www.wikidata.org/wiki/Q1074",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-os",
+    "conceptId": "corps-os",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Combien d'os compte environ le corps humain adulte ?",
+    "answers": [
+      "206",
+      "150",
+      "250",
+      "300"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9621",
+      "url": "https://www.wikidata.org/wiki/Q9621",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-bebe",
+    "conceptId": "corps-bebe",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Combien d'os possède environ un nouveau-né ?",
+    "answers": [
+      "Environ 206",
+      "Environ 250",
+      "Environ 150",
+      "Environ 300"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q9621",
+      "url": "https://www.wikidata.org/wiki/Q9621",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-dents",
+    "conceptId": "corps-dents",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Combien de dents possède un adulte en moyenne ?",
+    "answers": [
+      "30",
+      "36",
+      "32",
+      "28"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q553",
+      "url": "https://www.wikidata.org/wiki/Q553",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-coeur",
+    "conceptId": "corps-coeur",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Quel organe pompe le sang dans le corps humain ?",
+    "answers": [
+      "La rate",
+      "Le cœur",
+      "Le foie",
+      "Les reins"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1072",
+      "url": "https://www.wikidata.org/wiki/Q1072",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-cellule",
+    "conceptId": "corps-cellule",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Quelle est la plus petite unité du vivant ?",
+    "answers": [
+      "La cellule",
+      "L'atome",
+      "La molécule",
+      "Le gène"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7868",
+      "url": "https://www.wikidata.org/wiki/Q7868",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-abo",
+    "conceptId": "corps-abo",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Combien de groupes sanguins principaux compte le système ABO ?",
+    "answers": [
+      "Trois",
+      "Cinq",
+      "Six",
+      "Quatre"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7873",
+      "url": "https://www.wikidata.org/wiki/Q7873",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-croissance",
+    "conceptId": "corps-croissance",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Quelles parties du corps humain continuent de grandir toute la vie ?",
+    "answers": [
+      "Les cheveux",
+      "Le crâne",
+      "Le nez et les oreilles",
+      "Les pieds et les mains"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q23852",
+      "url": "https://www.wikidata.org/wiki/Q23852",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-donneur",
+    "conceptId": "corps-donneur",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Quel groupe sanguin est appelé le « donneur universel » ?",
+    "answers": [
+      "B négatif",
+      "O négatif",
+      "AB positif",
+      "A positif"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7873",
+      "url": "https://www.wikidata.org/wiki/Q7873",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-corps-sang",
+    "conceptId": "corps-sang",
+    "familyId": "human-body",
+    "type": "mcq",
+    "question": "Combien de litres de sang un adulte possède-t-il environ ?",
+    "answers": [
+      "5 litres",
+      "2 litres",
+      "8 litres",
+      "12 litres"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "corps-humain",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "corps-humain"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q7873",
+      "url": "https://www.wikidata.org/wiki/Q7873",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-pomme",
+    "conceptId": "alim-pomme",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel fruit est souvent appelé le « fruit défendu » dans la tradition biblique ?",
+    "answers": [
+      "La figue",
+      "La grenade",
+      "L'orange",
+      "La pomme"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q89",
+      "url": "https://www.wikidata.org/wiki/Q89",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-chocolat",
+    "conceptId": "alim-chocolat",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel aliment est fabriqué à partir des fèves de cacao ?",
+    "answers": [
+      "La vanille",
+      "La réglisse",
+      "Le chocolat",
+      "Le caramel"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q195",
+      "url": "https://www.wikidata.org/wiki/Q195",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-guacamole",
+    "conceptId": "alim-guacamole",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel est l'ingrédient principal du guacamole ?",
+    "answers": [
+      "Le poivron",
+      "L'avocat",
+      "La tomate",
+      "Le concombre"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q961769",
+      "url": "https://www.wikidata.org/wiki/Q961769",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-safran",
+    "conceptId": "alim-safran",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quelle épice, la plus chère du monde, est issue d'un crocus ?",
+    "answers": [
+      "Le safran",
+      "La vanille",
+      "La cannelle",
+      "La cardamome"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q25434",
+      "url": "https://www.wikidata.org/wiki/Q25434",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-emmental",
+    "conceptId": "alim-emmental",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel fromage est célèbre pour ses trous ?",
+    "answers": [
+      "Le camembert",
+      "Le roquefort",
+      "Le comté",
+      "L'emmental"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q932214",
+      "url": "https://www.wikidata.org/wiki/Q932214",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-houmous",
+    "conceptId": "alim-houmous",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel est l'ingrédient principal du houmous ?",
+    "answers": [
+      "Le haricot blanc",
+      "Le soja",
+      "Le pois chiche",
+      "La lentille"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q241987",
+      "url": "https://www.wikidata.org/wiki/Q241987",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-vin",
+    "conceptId": "alim-vin",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quelle boisson est obtenue par fermentation du raisin ?",
+    "answers": [
+      "Le saké",
+      "Le vin",
+      "La bière",
+      "Le cidre"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q282",
+      "url": "https://www.wikidata.org/wiki/Q282",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-epinards",
+    "conceptId": "alim-epinards",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel légume donne sa force au personnage de Popeye ?",
+    "answers": [
+      "Les épinards",
+      "Les carottes",
+      "Les brocolis",
+      "Les haricots verts"
+    ],
+    "correctAnswer": 0,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q81464",
+      "url": "https://www.wikidata.org/wiki/Q81464",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-banane",
+    "conceptId": "alim-banane",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel fruit jaune est, botaniquement parlant, une baie ?",
+    "answers": [
+      "L'abricot",
+      "La pêche",
+      "La mangue",
+      "La banane"
+    ],
+    "correctAnswer": 1,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q503",
+      "url": "https://www.wikidata.org/wiki/Q503",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-curcuma",
+    "conceptId": "alim-curcuma",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quelle épice donne sa couleur jaune au curry ?",
+    "answers": [
+      "Le safran",
+      "Le gingembre",
+      "Le curcuma",
+      "Le paprika"
+    ],
+    "correctAnswer": 2,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42562",
+      "url": "https://www.wikidata.org/wiki/Q42562",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "cg-alim-yaourt",
+    "conceptId": "alim-yaourt",
+    "familyId": "food",
+    "type": "mcq",
+    "question": "Quel aliment est obtenu par fermentation du lait ?",
+    "answers": [
+      "Le miel",
+      "Le yaourt",
+      "La crème fraîche",
+      "Le beurre"
+    ],
+    "correctAnswer": 3,
+    "category": "culture-generale",
+    "subcategory": "alimentation",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "culture-generale",
+      "alimentation"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q13317",
+      "url": "https://www.wikidata.org/wiki/Q13317",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]

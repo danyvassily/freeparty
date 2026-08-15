@@ -47,3 +47,6 @@ next-env.d.ts
 
 # supabase CLI temp
 /supabase/.temp/
+
+# sous-agent build scripts
+/questions/fr/_build/

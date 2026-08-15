@@ -1,0 +1,1218 @@
+[
+  {
+    "id": "war-ww1-debut-1914",
+    "conceptId": "ww1-debut-1914",
+    "familyId": "ww1-start",
+    "type": "mcq",
+    "question": "En quelle année débuta la Première Guerre mondiale ?",
+    "answers": [
+      "1914",
+      "1915",
+      "1916",
+      "1918"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-assassinat",
+    "conceptId": "ww1-assassinat",
+    "familyId": "ww1-start",
+    "type": "mcq",
+    "question": "Quel assassinat, le 28 juin 1914 à Sarajevo, déclencha la Première Guerre mondiale ?",
+    "answers": [
+      "Celui de Jean Jaurès",
+      "Celui de Raspoutine",
+      "Celui du tsar Nicolas II",
+      "Celui de l'archiduc François-Ferdinand"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q43063",
+      "url": "https://www.wikidata.org/wiki/Q43063",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-triple-alliance",
+    "conceptId": "ww1-triple-alliance",
+    "familyId": "ww1-alliances",
+    "type": "mcq",
+    "question": "Quel était le nom de l'alliance entre l'Allemagne, l'Autriche-Hongrie et l'Italie ?",
+    "answers": [
+      "L'Axe",
+      "Le Pacte de Varsovie",
+      "La Triple-Alliance",
+      "La Triple-Entente"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q153867",
+      "url": "https://www.wikidata.org/wiki/Q153867",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-triple-entente",
+    "conceptId": "ww1-triple-entente",
+    "familyId": "ww1-alliances",
+    "type": "mcq",
+    "question": "Quel était le nom de l'alliance entre la France, le Royaume-Uni et la Russie ?",
+    "answers": [
+      "Le Commonwealth",
+      "La Triple-Entente",
+      "La Triple-Alliance",
+      "L'Entente cordiale"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q177859",
+      "url": "https://www.wikidata.org/wiki/Q177859",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-poilus",
+    "conceptId": "ww1-poilus",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Comment surnommait-on les soldats français de la Grande Guerre ?",
+    "answers": [
+      "Les poilus",
+      "Les grognards",
+      "Les doughboys",
+      "Les casques bleus"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-tranchees",
+    "conceptId": "ww1-tranchees",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quel type de guerre caractérisa le front occidental pendant la Grande Guerre ?",
+    "answers": [
+      "La guerre éclair",
+      "La guerre de mouvement",
+      "La guerre navale",
+      "La guerre de tranchées"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-verdun",
+    "conceptId": "ww1-verdun",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1916, la plus longue de la Grande Guerre, se déroula autour d'une forteresse française ?",
+    "answers": [
+      "La Marne",
+      "Le Chemin des Dames",
+      "Verdun",
+      "La Somme"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130847",
+      "url": "https://www.wikidata.org/wiki/Q130847",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-verdun-annee",
+    "conceptId": "ww1-verdun-annee",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "En quelle année eut lieu la bataille de Verdun ?",
+    "answers": [
+      "1918",
+      "1916",
+      "1914",
+      "1917"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q130847",
+      "url": "https://www.wikidata.org/wiki/Q130847",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-petain",
+    "conceptId": "ww1-petain",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quel général français commanda la défense de Verdun ?",
+    "answers": [
+      "Philippe Pétain",
+      "Foch",
+      "Joffre",
+      "Nivelle"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q5721",
+      "url": "https://www.wikidata.org/wiki/Q5721",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-somme",
+    "conceptId": "ww1-somme",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de 1916, menée par les Britanniques, vit la première utilisation massive des chars ?",
+    "answers": [
+      "Verdun",
+      "Ypres",
+      "Passchendaele",
+      "La Somme"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q132568",
+      "url": "https://www.wikidata.org/wiki/Q132568",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-marne",
+    "conceptId": "ww1-marne",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quelle bataille de septembre 1914 sauva Paris de l'invasion allemande ?",
+    "answers": [
+      "La bataille de la Somme",
+      "La bataille de Charleroi",
+      "La bataille de la Marne",
+      "La bataille de Verdun"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q190712",
+      "url": "https://www.wikidata.org/wiki/Q190712",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-taxis",
+    "conceptId": "ww1-taxis",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Comment appelait-on les taxis parisiens réquisitionnés pour transporter des troupes au front en 1914 ?",
+    "answers": [
+      "Les autobus de Reims",
+      "Les taxis de la Marne",
+      "Les taxis de Paris",
+      "Les camions de la Somme"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q2915002",
+      "url": "https://www.wikidata.org/wiki/Q2915002",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-usa-1917",
+    "conceptId": "ww1-usa-1917",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "En quelle année les États-Unis entrèrent-ils dans la Première Guerre mondiale ?",
+    "answers": [
+      "1917",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-wilson",
+    "conceptId": "ww1-wilson",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "Quel président américain décida l'entrée en guerre des États-Unis en 1917 ?",
+    "answers": [
+      "Theodore Roosevelt",
+      "Franklin D. Roosevelt",
+      "Harry Truman",
+      "Woodrow Wilson"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q34296",
+      "url": "https://www.wikidata.org/wiki/Q34296",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-octobre",
+    "conceptId": "ww1-octobre",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "Quel événement de 1917 porta les bolcheviks au pouvoir en Russie ?",
+    "answers": [
+      "La révolution de 1905",
+      "La guerre civile russe",
+      "La révolution d'Octobre",
+      "La révolution de Février"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q42976",
+      "url": "https://www.wikidata.org/wiki/Q42976",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-brest-litovsk",
+    "conceptId": "ww1-brest-litovsk",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "Quel traité de 1918 retira la Russie du conflit ?",
+    "answers": [
+      "Le traité de Saint-Germain",
+      "Le traité de Brest-Litovsk",
+      "Le traité de Versailles",
+      "Le traité de Tilsit"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q122371",
+      "url": "https://www.wikidata.org/wiki/Q122371",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-fin-1918",
+    "conceptId": "ww1-fin-1918",
+    "familyId": "ww1-end",
+    "type": "mcq",
+    "question": "En quelle année prit fin la Première Guerre mondiale ?",
+    "answers": [
+      "1918",
+      "1917",
+      "1919",
+      "1916"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-armistice-heure",
+    "conceptId": "ww1-armistice-heure",
+    "familyId": "ww1-end",
+    "type": "mcq",
+    "question": "À quelle heure l'armistice du 11 novembre 1918 entra-t-il en vigueur ?",
+    "answers": [
+      "À 6 heures",
+      "À midi",
+      "À 18 heures",
+      "À 11 heures"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q253224",
+      "url": "https://www.wikidata.org/wiki/Q253224",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-wagon",
+    "conceptId": "ww1-wagon",
+    "familyId": "ww1-end",
+    "type": "mcq",
+    "question": "Où l'armistice du 11 novembre 1918 fut-il signé ?",
+    "answers": [
+      "Dans une tranchée à Verdun",
+      "À bord d'un cuirassé",
+      "Dans un wagon-restaurant, en forêt de Compiègne",
+      "Au château de Versailles"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q253224",
+      "url": "https://www.wikidata.org/wiki/Q253224",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-versailles",
+    "conceptId": "ww1-versailles",
+    "familyId": "ww1-treaties",
+    "type": "mcq",
+    "question": "Quel traité de 1919 imposa des conditions de paix très dures à l'Allemagne ?",
+    "answers": [
+      "Le traité de Sèvres",
+      "Le traité de Versailles",
+      "Le traité de Saint-Germain",
+      "Le traité de Trianon"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q8736",
+      "url": "https://www.wikidata.org/wiki/Q8736",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-sdn",
+    "conceptId": "ww1-sdn",
+    "familyId": "ww1-treaties",
+    "type": "mcq",
+    "question": "Quelle organisation internationale fut créée en 1919, sur proposition de Woodrow Wilson ?",
+    "answers": [
+      "La Société des Nations",
+      "L'Organisation des Nations unies",
+      "L'OTAN",
+      "La Cour internationale de justice"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q38130",
+      "url": "https://www.wikidata.org/wiki/Q38130",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-gaz",
+    "conceptId": "ww1-gaz",
+    "familyId": "ww1-weapons",
+    "type": "mcq",
+    "question": "Quelle arme chimique fut massivement utilisée pour la première fois pendant la Grande Guerre ?",
+    "answers": [
+      "Le napalm",
+      "La dynamite",
+      "La bombe atomique",
+      "Les gaz de combat"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-doughboys",
+    "conceptId": "ww1-doughboys",
+    "familyId": "ww1-figures",
+    "type": "mcq",
+    "question": "Comment surnommait-on les soldats américains arrivés en Europe en 1917 ?",
+    "answers": [
+      "Les tommies",
+      "Les zouaves",
+      "Les doughboys",
+      "Les poilus"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-tommies",
+    "conceptId": "ww1-tommies",
+    "familyId": "ww1-figures",
+    "type": "mcq",
+    "question": "Quel était le surnom familier des soldats britanniques pendant la Grande Guerre ?",
+    "answers": [
+      "Les kiwis",
+      "Les tommies",
+      "Les poilus",
+      "Les doughboys"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-lusitania",
+    "conceptId": "ww1-lusitania",
+    "familyId": "ww1-weapons",
+    "type": "mcq",
+    "question": "Quel sous-marin allemand coula le paquebot Lusitania en 1915 ?",
+    "answers": [
+      "L'U-20",
+      "Le Bismarck",
+      "Le Graf Spee",
+      "Le Tirpitz"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q187425",
+      "url": "https://www.wikidata.org/wiki/Q187425",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-guillaume2",
+    "conceptId": "ww1-guillaume2",
+    "familyId": "ww1-end",
+    "type": "mcq",
+    "question": "Quel empereur allemand abdiqua en novembre 1918 ?",
+    "answers": [
+      "François-Joseph",
+      "Nicolas II",
+      "Léopold II",
+      "Guillaume II"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q223910",
+      "url": "https://www.wikidata.org/wiki/Q223910",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-nicolas2",
+    "conceptId": "ww1-nicolas2",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "Quel tsar de Russie fut renversé lors de la révolution de février 1917 ?",
+    "answers": [
+      "Pierre le Grand",
+      "Nicolas Ier",
+      "Nicolas II",
+      "Alexandre III"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q40787",
+      "url": "https://www.wikidata.org/wiki/Q40787",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-morts-francais",
+    "conceptId": "ww1-morts-francais",
+    "familyId": "ww1-end",
+    "type": "mcq",
+    "question": "Combien de soldats français environ sont morts pendant la Grande Guerre ?",
+    "answers": [
+      "Environ 800 000",
+      "Environ 1,4 million",
+      "Environ 300 000",
+      "Environ 5 millions"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-chemin-dames",
+    "conceptId": "ww1-chemin-dames",
+    "familyId": "ww1-battles",
+    "type": "mcq",
+    "question": "Quel secteur du front français devint tristement célèbre lors de l'offensive Nivelle de 1917 ?",
+    "answers": [
+      "Le Chemin des Dames",
+      "La ligne Maginot",
+      "Le saillant de Saint-Mihiel",
+      "La forêt d'Argonne"
+    ],
+    "correctAnswer": 0,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q1069359",
+      "url": "https://www.wikidata.org/wiki/Q1069359",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-ypres",
+    "conceptId": "ww1-ypres",
+    "familyId": "ww1-weapons",
+    "type": "mcq",
+    "question": "Quelle ville belge fut le théâtre des premières grandes attaques au gaz en 1915 ?",
+    "answers": [
+      "Bruxelles",
+      "Anvers",
+      "Liège",
+      "Ypres"
+    ],
+    "correctAnswer": 1,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q102728",
+      "url": "https://www.wikidata.org/wiki/Q102728",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-grande-guerre",
+    "conceptId": "ww1-grande-guerre",
+    "familyId": "ww1-start",
+    "type": "mcq",
+    "question": "Quel nom donnait-on à la Première Guerre mondiale avant la Seconde ?",
+    "answers": [
+      "La Guerre des nations",
+      "La Drôle de guerre",
+      "La Grande Guerre",
+      "La Guerre totale"
+    ],
+    "correctAnswer": 2,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "easy",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  },
+  {
+    "id": "war-ww1-mutineries",
+    "conceptId": "ww1-mutineries",
+    "familyId": "ww1-1917",
+    "type": "mcq",
+    "question": "Quelle année de la guerre fut marquée par d'importantes mutineries dans l'armée française ?",
+    "answers": [
+      "1918",
+      "1917",
+      "1915",
+      "1916"
+    ],
+    "correctAnswer": 3,
+    "category": "histoire",
+    "subcategory": "premiere-guerre-mondiale",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": [
+      "histoire",
+      "premiere-guerre-mondiale"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "Q361",
+      "url": "https://www.wikidata.org/wiki/Q361",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-15",
+      "sources": [
+        "wikidata"
+      ]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.95,
+    "version": 1
+  }
+]
