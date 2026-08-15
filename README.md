@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 Free Party
 
-## Getting Started
+**Joue. Connais. Débats.**
 
-First, run the development server:
+Free Party est une application web mobile-first de jeu social : quiz, culture générale, mythologies, défis intellectuels et **débats profonds** — conçue pour les soirées entre amis, sans inscription, prête en 5 secondes.
+
+> Architecture **local-first** : les parties fonctionnent 100% hors-ligne avec des datasets JSON versionnés. Aucune API externe n'est appelée pendant une partie (Wikidata/OpenTDB servent uniquement au pipeline de fabrication des questions).
+
+## ✨ Modes de jeu
+
+| Famille | Modes |
+|---|---|
+| 🎯 **Quiz** | Classic Quiz · Vrai/Faux · Rapid Fire · Timeline · Team Battle |
+| 🎉 **Social** | Would You Rather · Guess |
+| 💬 **Débat** | Politique · Philosophie · Histoire · Éthique · Actualité · Change My Mind · Avocat du diable · Dilemme éthique |
+| 📚 **Connaissance** | Géographie · Capitales · Monnaies · Histoire & guerres · Mythologies · Philosophie · Culture pop |
+
+## 🚀 Démarrage
 
 ```bash
+git clone https://github.com/danyvassily/freeparty.git
+cd freeparty
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez http://localhost:3000 — aucun compte requis.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Validation (spec §95)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint        # ESLint strict
+npm run typecheck   # TypeScript strict
+npm run test        # Vitest (42+ tests : schema, anti-répétition, débat, dédup…)
+npm run build       # Build de production Next.js
+```
 
-## Learn More
+## ❓ Pipeline des questions
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run questions:validate   # schéma Zod strict — 0 question invalide autorisée
+npm run questions:dedupe     # doublons exacts + quasi-doublons (Levenshtein)
+npm run questions:stats      # statistiques du dataset
+npm run questions:import     # import Supabase (si configuré)
+npm run questions:generate   # génération capitales/monnaies depuis world-data
+npm run questions:fetch      # registre des sources (Wikidata, OpenTDB…)
+npm run questions:verify     # rapport de vérification factuelle
+npm run questions:review     # revue qualité (production/review/quarantine)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/lib/questions/    Question Engine (schéma, sélection anti-répétition, dédup)
+src/lib/debate/       Debate Engine (machine à états, timers, qualité)
+src/lib/game/         Datasets sociaux (WYR, Guess, Timeline)
+src/components/game/  Composants de jeu
+supabase/migrations/  Schéma SQL + RLS (deny-by-default)
+questions/fr/         Datasets JSON versionnés par catégorie
+debates/fr/           Prompts de débat JSON
+```
 
-## Deploy on Vercel
+## 📚 Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ARCHITECTURE.md](ARCHITECTURE.md) — choix techniques et décisions
+- [DATABASE.md](DATABASE.md) — schéma Supabase et RLS
+- [QUESTION_ENGINE.md](QUESTION_ENGINE.md) — pipeline de fabrication des questions
+- [DEBATE_ENGINE.md](DEBATE_ENGINE.md) — moteur de débat et garanties de neutralité
+- [COMPETITIVE_ANALYSIS.md](COMPETITIVE_ANALYSIS.md) — analyse des concurrents
+- [SPEC_COMPLIANCE.md](SPEC_COMPLIANCE.md) — conformité à la spec
+- [CONTRIBUTING.md](CONTRIBUTING.md) — comment contribuer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Sécurité
+
+- RLS **deny-by-default** sur toutes les tables Supabase (voir `supabase/migrations/20260815000002_rls.sql`)
+- Aucun secret dans le dépôt : `.env.example` sans valeurs
+- Validation Zod stricte de toute donnée entrante
+- Debates : neutralité garantie par un audit automatique (perspectives multiples, pas de framing)
+
+## 📄 Licence des données
+
+- Questions : faits structurés (licence CC0 / Wikidata) + contenus originaux rédigés pour Free Party
+- Prompts de débat : contenus originaux
+- OpenTDB : évalué mais **non utilisé** (licence incompatible avec l'usage commercial — voir `QUESTION_ENGINE.md`)

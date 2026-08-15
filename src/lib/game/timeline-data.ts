@@ -72,7 +72,11 @@ export function pickTimelineSet(lastSetId: string | null): { setId: string; even
     (s) => s.setId !== lastSetId,
   );
   const chosen = available[Math.floor(Math.random() * available.length)];
-  // Mélange les événements pour l'affichage
-  const shuffled = [...chosen.events].sort(() => Math.random() - 0.5);
+  // Fisher-Yates : mélange uniforme pour l'affichage
+  const shuffled = [...chosen.events];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
   return { setId: chosen.setId, events: shuffled };
 }

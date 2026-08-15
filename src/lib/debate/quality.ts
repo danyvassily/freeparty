@@ -101,7 +101,20 @@ export function auditDebatePrompt(prompt: DebatePrompt): DebateQualityReport {
   const overall = Object.values(scores).reduce((s, x) => s + x, 0) / Object.keys(scores).length;
 
   const criticalFlags = flags.filter((f) => f.startsWith("Framing") || f.includes("Prémisses"));
-  const pass = overall >= 0.75 && criticalFlags.length === 0;
+
+  // Hard fails (spec §76) : un prompt sans perspectives, sans relances ou sans
+  // contexte factuel sérieux ne PEUT PAS passer, quel que soit le score moyen.
+  const hardFail =
+    prompt.perspectives.length < 2 ||
+    prompt.followUps.length === 0 ||
+    prompt.context.length < 40;
+  if (hardFail) {
+    if (prompt.perspectives.length < 2) flags.push("Moins de 2 perspectives (rejet)");
+    if (prompt.followUps.length === 0) flags.push("Aucune relance (rejet)");
+    if (prompt.context.length < 40) flags.push("Contexte factuel trop court (rejet)");
+  }
+
+  const pass = overall >= 0.75 && criticalFlags.length === 0 && !hardFail;
 
   return { id: prompt.id, scores, overall, flags, pass };
 }

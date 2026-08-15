@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# pipeline artifacts
+/questions/.dedupe-report.json
+/questions/.verification-report.json
+/questions/.quality-report.json

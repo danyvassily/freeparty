@@ -117,8 +117,8 @@ export const QuestionSchema = z
     }
     // La question ne doit pas contenir la réponse dans son texte
     const qLower = q.question.toLowerCase();
-    const goodAnswer = q.answers[q.correctAnswer].toLowerCase();
-    if (goodAnswer.length > 2 && qLower.includes(goodAnswer)) {
+    const goodAnswer = q.answers[q.correctAnswer]?.toLowerCase();
+    if (goodAnswer && goodAnswer.length > 2 && qLower.includes(goodAnswer)) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         path: ["question"],
