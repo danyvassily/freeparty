@@ -3,7 +3,6 @@
  * Sortie : /tmp/freeparty_import.sql (fichiers séparés par lot pour éviter les timeouts)
  */
 import fs from "node:fs";
-import path from "node:path";
 import { loadQuestions } from "../../src/lib/questions/load";
 import { loadDebatePrompts } from "../../src/lib/debate/load";
 

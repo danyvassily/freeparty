@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { BRAND } from "@/lib/brand";
 import { ModeCard } from "@/components/ui/primitives";
 import { useGameStore, newPlayer, PLAYER_COLORS, type GameConfig, type Player } from "@/lib/store/game";
+import { useLanguageStore } from "@/lib/store/language";
+import { translate, SUPPORTED_LANGUAGES } from "@/lib/i18n";
 import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
 import { DEBATE_CATEGORIES, DEBATE_DURATIONS, DEBATE_MODES } from "@/lib/debate/schema";
 
@@ -89,6 +91,8 @@ const DEBATE_MODE_LABELS: Record<string, string> = {
 export function HomeClient() {
   const router = useRouter();
   const { config, setConfig } = useGameStore();
+  const lang = useLanguageStore((s) => s.language);
+  const setLanguage = useLanguageStore((s) => s.setLanguage);
   const [step, setStep] = useState<Step>("home");
   const [selectedMode, setSelectedMode] = useState<GameConfig["mode"]>("classic");
   const [category, setCategory] = useState<QuestionCategory | "mixed">("mixed");
@@ -149,9 +153,28 @@ export function HomeClient() {
           </div>
           <span className="font-display text-xl font-bold tracking-tight">{BRAND.name}</span>
         </div>
-        <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs text-fp-text-dim">
-          {BRAND.tagline}
-        </span>
+        <div className="flex items-center gap-1.5">
+          <select
+            value={lang}
+            onChange={(e) => setLanguage(e.target.value as (typeof SUPPORTED_LANGUAGES)[number])}
+            aria-label={translate(lang, "profile.language")}
+            className="rounded-full border border-fp-border bg-fp-surface px-2.5 py-1.5 text-xs font-semibold text-fp-text-dim outline-none focus:border-fp-primary"
+          >
+            {SUPPORTED_LANGUAGES.map((l) => (
+              <option key={l} value={l}>
+                {l.toUpperCase()}
+              </option>
+            ))}
+          </select>
+          <button
+            type="button"
+            onClick={() => router.push("/auth")}
+            aria-label={translate(lang, "auth.login")}
+            className="rounded-full border border-fp-border bg-fp-surface px-3 py-1.5 text-xs font-semibold text-fp-text-dim transition-colors hover:text-white"
+          >
+            👤
+          </button>
+        </div>
       </header>
 
       {step === "home" ? (
@@ -173,8 +196,24 @@ export function HomeClient() {
               onClick={() => pickMode("classic")}
               className="fp-btn-primary mt-8 text-lg"
             >
-              🎲 Lancer une partie
+              🎲 {translate(lang, "home.play")}
             </button>
+            <div className="mt-3 flex justify-center gap-3">
+              <button
+                type="button"
+                onClick={() => router.push("/play/online")}
+                className="fp-btn-ghost"
+              >
+                🌍 {translate(lang, "home.play.online")}
+              </button>
+              <button
+                type="button"
+                onClick={() => router.push("/auth")}
+                className="fp-btn-ghost"
+              >
+                👤 {translate(lang, "auth.login")}
+              </button>
+            </div>
           </section>
 
           {/* Modes */}
