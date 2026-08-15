@@ -6,6 +6,7 @@ import { BRAND } from "@/lib/brand";
 import { ModeCard } from "@/components/ui/primitives";
 import { useGameStore, newPlayer, PLAYER_COLORS, type GameConfig, type Player } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
+import { useSettingsStore } from "@/lib/store/settings";
 import { translate, SUPPORTED_LANGUAGES } from "@/lib/i18n";
 import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
 import { DEBATE_CATEGORIES, DEBATE_DURATIONS, DEBATE_MODES } from "@/lib/debate/schema";
@@ -93,6 +94,7 @@ export function HomeClient() {
   const { config, setConfig } = useGameStore();
   const lang = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
+  const settings = useSettingsStore();
   const [step, setStep] = useState<Step>("home");
   const [selectedMode, setSelectedMode] = useState<GameConfig["mode"]>("classic");
   const [category, setCategory] = useState<QuestionCategory | "mixed">("mixed");
@@ -100,8 +102,8 @@ export function HomeClient() {
   const [players, setPlayers] = useState<Player[]>(() => [
     { id: "p1", name: "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 },
   ]);
-  const [questionCount, setQuestionCount] = useState(10);
-  const [debateMinutes, setDebateMinutes] = useState(5);
+  const [questionCount, setQuestionCount] = useState(settings.defaultQuestionCount);
+  const [debateMinutes, setDebateMinutes] = useState(settings.debateMinutes);
   const [debateMode, setDebateMode] = useState("standard");
 
   const isDebate = selectedMode === "debate";
@@ -118,7 +120,12 @@ export function HomeClient() {
       difficulty,
       players,
       questionCount,
-      timePerQuestion: selectedMode === "rapidfire" ? 6 : 15,
+      timePerQuestion:
+        selectedMode === "rapidfire"
+          ? settings.rapidFireTime
+          : selectedMode === "truefalse"
+            ? settings.trueFalseTime
+            : settings.classicTime,
       debateMinutes,
       debateMode,
     };
@@ -166,6 +173,14 @@ export function HomeClient() {
               </option>
             ))}
           </select>
+          <button
+            type="button"
+            onClick={() => router.push("/settings")}
+            aria-label={translate(lang, "profile.language")}
+            className="rounded-full border border-fp-border bg-fp-surface px-3 py-1.5 text-xs font-semibold text-fp-text-dim transition-colors hover:text-white"
+          >
+            ⚙️
+          </button>
           <button
             type="button"
             onClick={() => router.push("/auth")}

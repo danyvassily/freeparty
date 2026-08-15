@@ -3,9 +3,11 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickTimelineSet } from "@/lib/game/timeline-data";
+import { useSettingsStore } from "@/lib/store/settings";
 
 export function TimelineGame() {
   const router = useRouter();
+  const settings = useSettingsStore();
   const [round, setRound] = useState(0);
   const [setId, setSetId] = useState<string | null>(null);
   const [events, setEvents] = useState(() => pickTimelineSet(null).events);
@@ -32,7 +34,7 @@ export function TimelineGame() {
     setChecked(ok);
     if (ok) setScore((s) => s + 10);
     setTimeout(() => {
-      if (ok && round >= 2) {
+      if (ok && round >= settings.timelineRounds - 1) {
         setFinished(true);
         return;
       }

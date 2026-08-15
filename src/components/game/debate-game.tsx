@@ -6,6 +6,7 @@ import type { DebatePrompt } from "@/lib/debate/schema";
 import type { DebateVote } from "@/lib/debate/schema";
 import { createDebate, transition, nextPlayer, endTurn, revealFollowUp, castVote, addDiscussionMetric, buildResult, type DebateState } from "@/lib/debate/engine";
 import { useGameStore } from "@/lib/store/game";
+import { useSettingsStore } from "@/lib/store/settings";
 import { ProgressRing } from "@/components/ui/primitives";
 
 type LocalPhase = "loading" | "setup" | DebateState["phase"];
@@ -13,6 +14,7 @@ type LocalPhase = "loading" | "setup" | DebateState["phase"];
 export function DebateGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
+  const settings = useSettingsStore();
   const players = config?.players ?? [];
 
   const [phase, setPhase] = useState<LocalPhase>("loading");
@@ -82,7 +84,7 @@ export function DebateGame() {
     const state = createDebate(
       prompt,
       p.map((pl) => ({ id: pl.id, name: pl.name })),
-      { mode: debateMode, durationSeconds, preparationSeconds: 30 },
+      { mode: debateMode, durationSeconds, preparationSeconds: settings.debatePreparation },
     );
     stateRef.current = state;
     setDebate(state);

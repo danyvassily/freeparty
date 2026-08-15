@@ -4,9 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickWyrPair, WYR_CATEGORY_LABELS, type WouldYouRatherPair } from "@/lib/game/wyr-data";
 import { useGameStore } from "@/lib/store/game";
+import { useSettingsStore } from "@/lib/store/settings";
 
 export function WyrGame() {
   const router = useRouter();
+  const settings = useSettingsStore();
   const players = useGameStore((s) => s.config?.players) ?? [];
   const [pair, setPair] = useState<WouldYouRatherPair>(() => pickWyrPair([]));
   const [round, setRound] = useState(1);
@@ -17,7 +19,7 @@ export function WyrGame() {
   const [allVotes, setAllVotes] = useState<Record<string, { A: number; B: number }>>({});
   const [finished, setFinished] = useState(false);
 
-  const totalRounds = Math.max(4, players.length * 2);
+  const totalRounds = Math.max(settings.wyrRounds, players.length * 2);
 
   function choose(opt: "A" | "B") {
     if (chosen) return;

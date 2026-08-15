@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickGuessItem, type GuessItem } from "@/lib/game/guess-data";
+import { useSettingsStore } from "@/lib/store/settings";
 
 export function GuessGame() {
   const router = useRouter();
+  const settings = useSettingsStore();
   const [item, setItem] = useState<GuessItem>(() => pickGuessItem([]));
   const [hintsShown, setHintsShown] = useState(1);
   const [guess, setGuess] = useState("");
@@ -34,9 +36,9 @@ export function GuessGame() {
   }
 
   function next() {
-    if (round >= 5) {
+    if (round >= settings.guessRounds) {
       setStatus(score >= 60 ? "won" : "lost");
-      setRound(6); // termine
+      setRound(settings.guessRounds + 1); // termine
       return;
     }
     const nextItem = pickGuessItem(usedIds);
@@ -47,7 +49,7 @@ export function GuessGame() {
     setRound((r) => r + 1);
   }
 
-  if (round > 5) {
+  if (round > settings.guessRounds) {
     return (
       <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
         <div className="animate-pop text-6xl" aria-hidden="true">🕵️</div>
@@ -70,7 +72,7 @@ export function GuessGame() {
       <div className="flex items-center justify-between">
         <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim" aria-label="Quitter">✕</button>
         <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
-          Devinette {round}/5 · {score} pts
+          Devinette {round}/{settings.guessRounds} · {score} pts
         </span>
       </div>
 

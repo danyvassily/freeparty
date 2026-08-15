@@ -95,6 +95,13 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
   if (user) {
     return (
       <div className="fp-card w-full max-w-sm p-6 text-center">
+        <button
+          type="button"
+          onClick={() => router.push("/")}
+          className="mb-3 text-sm text-fp-text-dim transition-colors hover:text-white"
+        >
+          ← {t("config.back")}
+        </button>
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-fp-success to-fp-accent-2 text-2xl">
           ✓
         </div>
@@ -131,8 +138,16 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
           </p>
         </div>
 
-        <button type="button" onClick={logout} className="fp-btn-ghost mt-6 w-full">
+        <button type="button" onClick={() => router.push("/settings")} className="fp-btn-ghost mt-4 w-full">
+          ⚙️ {lang === "fr" ? "Réglages (temps de jeu)" : "Settings (game timers)"}
+        </button>
+
+        <button type="button" onClick={logout} className="fp-btn-ghost mt-3 w-full">
           {t("auth.logout")}
+        </button>
+
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-3 w-full">
+          🏠 {lang === "fr" ? "Retour à l'accueil" : "Back to home"}
         </button>
       </div>
     );
