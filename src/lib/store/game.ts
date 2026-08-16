@@ -7,6 +7,7 @@ import { persist } from "zustand/middleware";
 import type { QuestionCategory } from "@/lib/questions/schema";
 
 export const GAME_MODES = [
+  "prism",
   "classic",
   "truefalse",
   "rapidfire",
@@ -23,6 +24,7 @@ export interface Player {
   name: string;
   /** 0..5 : couleur d'avatar (index palette) */
   color: number;
+  specialtyId?: string;
   score: number;
   correct: number;
   wrong: number;
@@ -33,6 +35,8 @@ export interface Player {
 export interface GameConfig {
   mode: GameMode;
   category: QuestionCategory | "mixed";
+  thematicTheme?: string;
+  duration?: "express" | "classic"; // express = 10 min, classic = 20 min
   difficulty: string; // "mixed" | easy | medium | hard | expert
   players: Player[];
   questionCount: number;
@@ -40,6 +44,7 @@ export interface GameConfig {
   timePerQuestion: number;
   debateMinutes: number;
   debateMode: string;
+  spectatorsAllowed?: boolean;
 }
 
 export interface GameState {
@@ -55,10 +60,11 @@ export const PLAYER_COLORS = [
 ];
 
 export const DEFAULT_CONFIG: GameConfig = {
-  mode: "classic",
+  mode: "prism",
   category: "mixed",
+  duration: "express",
   difficulty: "mixed",
-  players: [{ id: "p1", name: "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 }],
+  players: [{ id: "p1", name: "Dany", color: 0, specialtyId: "cinema", score: 0, correct: 0, wrong: 0 }],
   questionCount: 10,
   timePerQuestion: 15,
   debateMinutes: 5,

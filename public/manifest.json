@@ -1,0 +1,18 @@
+{
+  "name": "PRISM — Free Party",
+  "short_name": "PRISM",
+  "description": "Jeu de culture compétitif pour adultes. Tour par tour, Buzzer, Le Cut et la finale signature La Ligne.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0a12",
+  "theme_color": "#0b0a12",
+  "orientation": "portrait-primary",
+  "categories": ["games", "entertainment", "education"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

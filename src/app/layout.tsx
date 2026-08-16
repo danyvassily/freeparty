@@ -18,14 +18,20 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: `${BRAND.name} — ${BRAND.tagline}`,
   description:
-    "Quiz, culture générale, jeux entre amis, défis intellectuels et débats profonds. Le jeu social qui fait réfléchir, rire et rejouer.",
+    "Jeu de culture compétitif pour adultes. Tour par tour, Buzzer, Le Cut et la finale signature La Ligne.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "PRISM",
+  },
   keywords: [
-    "quiz", "culture générale", "jeu social", "débat", "philosophie", "mythologie",
-    "histoire", "jeux entre amis", "trivia", "capitales", "monnaies",
+    "prism", "quiz", "culture générale", "jeu compétitif", "buzzer", "la ligne", "philosophie", "art",
+    "histoire", "cinéma", "sciences humaines",
   ],
   openGraph: {
     title: `${BRAND.name} — ${BRAND.tagline}`,
-    description: "Joue. Connais. Débats.",
+    description: "Jeu de culture compétitif pour adultes.",
     type: "website",
   },
 };

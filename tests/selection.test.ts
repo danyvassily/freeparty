@@ -12,6 +12,7 @@ function makeQuestion(id: string, familyId: string, category = "geographie", dif
     conceptId: `fact-${id}`,
     familyId,
     type: "mcq",
+    inputMode: "mcq",
     question: `Question unique numéro ${id} ?`,
     answers: ["Réponse A", "Réponse B", "Réponse C", "Réponse D"],
     correctAnswer: 0,

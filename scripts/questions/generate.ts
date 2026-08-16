@@ -35,10 +35,11 @@ function mulberry32(seed: number): () => number {
 }
 
 function makeQuestion(
-  partial: Omit<Question, "id" | "conceptId" | "source" | "verification" | "version" | "qualityScore">,
+  partial: Omit<Question, "id" | "conceptId" | "source" | "verification" | "version" | "qualityScore" | "inputMode"> & { inputMode?: "mcq" | "typed" },
   seed: number,
 ): Question {
   return {
+    inputMode: partial.inputMode ?? "mcq",
     ...partial,
     id: partial.tags?.length ? `${partial.tags[0]}-${seed}` : `gen-${seed}`,
     conceptId: `fact-${seed}`,

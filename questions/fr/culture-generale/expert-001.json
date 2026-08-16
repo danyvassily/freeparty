@@ -1,0 +1,170 @@
+[
+  {
+    "id": "cg-bourdieu-habitus-expert",
+    "conceptId": "concept-bourdieu-habitus",
+    "familyId": "cg-bourdieu",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Quel concept fondamental de Pierre Bourdieu désigne l'ensemble des dispositions durables et transposables, socialement acquises, qui structurent les pratiques et perceptions d'un individu ?",
+    "answers": ["L'habitus", "Le champ", "Le capital symbolique", "L'hexis corporelle"],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "sociologie",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": ["sciences-humaines", "sociologie", "bourdieu", "philosophie"],
+    "translations": {
+      "en": {
+        "question": "Which core sociological concept developed by Pierre Bourdieu describes the socially ingrained habits, skills, and dispositions that shape individuals' perceptions and actions?",
+        "answers": ["Habitus", "Field (Champ)", "Symbolic capital", "Bodily hexis"],
+        "explanation": "Pierre Bourdieu defines 'habitus' as durable, transposable dispositions acquired through socialization."
+      }
+    },
+    "explanation": "Pierre Bourdieu définit l'habitus comme des structures structurées prédisposées à fonctionner comme structures structurantes, intériorisant les conditions d'existence matérielle et sociale.",
+    "source": {
+      "provider": "Le Sens pratique / Raisons pratiques (Minuit)",
+      "url": "https://www.leseditionsdeminuit.fr",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Bourdieu, Le Sens pratique (1980)"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.99,
+    "version": 1
+  },
+  {
+    "id": "cg-deleuze-corps-organes-expert",
+    "conceptId": "concept-deleuze-cs0",
+    "familyId": "cg-deleuze",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Dans « L'Anti-Œdipe » et « Mille Plateaux », quel concept emprunté à Antonin Artaud est développé par Gilles Deleuze et Félix Guattari pour désigner un champ d'immanence non hiérarchisé ?",
+    "answers": ["Le Corps sans organes (CsO)", "L'agencement machinique", "Le pli baroque", "La ligne de fuite"],
+    "correctAnswer": 0,
+    "category": "philosophie",
+    "subcategory": "philosophie-contemporaine",
+    "difficulty": "expert",
+    "language": "fr",
+    "tags": ["philosophie", "deleuze", "guattari", "sciences-humaines"],
+    "translations": {
+      "en": {
+        "question": "In 'Capitalism and Schizophrenia', which concept borrowed from Antonin Artaud do Gilles Deleuze and Félix Guattari develop to describe an unstratified plane of immanence?",
+        "answers": ["Body without Organs (BwO)", "Machinic assemblage", "The baroque fold", "Line of flight"],
+        "explanation": "The 'Body without Organs' (BwO) designates an unorganized, intense field of virtual possibilities."
+      }
+    },
+    "explanation": "Le Corps sans organes (CsO) désigne une surface intensive sans stratification biologique ou sociale rigide, libérant des flux de désir.",
+    "source": {
+      "provider": "L'Anti-Œdipe / Capitalisme et schizophrénie (Minuit)",
+      "url": "https://www.leseditionsdeminuit.fr",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Deleuze & Guattari (1972)"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.98,
+    "version": 1
+  },
+  {
+    "id": "cg-clues-ridley-scott-buzzer",
+    "conceptId": "concept-ridley-scott",
+    "familyId": "cinema-ridleysct",
+    "type": "mcq",
+    "inputMode": "typed",
+    "question": "Buzzer / Indices progressifs : quel réalisateur britannique né en 1937 est décrit par ces chefs-d'œuvre ?",
+    "answers": ["Ridley Scott", "Stanley Kubrick", "Christopher Nolan", "Danny Boyle"],
+    "acceptedTypedAnswers": ["Ridley Scott", "Scott", "R. Scott"],
+    "correctAnswer": 0,
+    "category": "cinema",
+    "subcategory": "realisateurs",
+    "difficulty": "hard",
+    "language": "fr",
+    "progressiveClues": [
+      "Je suis un réalisateur britannique né en 1937 ayant débuté dans la publicité novatrice.",
+      "J'ai réalisé 'Alien, le huitième passager' et 'Blade Runner', révolutionnant la SF.",
+      "J'ai également réalisé 'Gladiator' et 'Thelma et Louise'."
+    ],
+    "tags": ["cinema", "realisateur", "bladerunner", "gladiator", "indices"],
+    "translations": {
+      "en": {
+        "question": "Progressive Clues Buzzer: Which British director born in 1937 is behind these cinema milestones?",
+        "answers": ["Ridley Scott", "Stanley Kubrick", "Christopher Nolan", "Danny Boyle"],
+        "acceptedTypedAnswers": ["Ridley Scott", "Scott", "R. Scott"],
+        "progressiveClues": [
+          "I am a British filmmaker born in 1937 who started in pioneering TV commercials.",
+          "I directed 'Alien' (1979) and 'Blade Runner' (1982), redefining sci-fi cinema.",
+          "I also directed 'Gladiator' (2000) and 'Thelma & Louise' (1991)."
+        ],
+        "explanation": "Sir Ridley Scott is renowned for Alien, Blade Runner, Gladiator, and Kingdom of Heaven."
+      }
+    },
+    "explanation": "Sir Ridley Scott a forgé l'esthétique du cinéma moderne avec Alien (1979), Blade Runner (1982) et Gladiator (2000).",
+    "source": {
+      "provider": "BFI / Academy of Motion Picture Arts and Sciences",
+      "url": "https://www.bfi.org.uk",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["BFI Sight and Sound"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.99,
+    "version": 1
+  },
+  {
+    "id": "cg-clues-godel-incompleteness-expert",
+    "conceptId": "concept-godel-incompleteness",
+    "familyId": "science-godel",
+    "type": "mcq",
+    "inputMode": "typed",
+    "question": "Buzzer / Indices progressifs : quel logicien et mathématicien austro-américain a bouleversé les fondements logiques en 1931 ?",
+    "answers": ["Kurt Gödel", "Alan Turing", "Bertrand Russell", "David Hilbert"],
+    "acceptedTypedAnswers": ["Kurt Gödel", "Godel", "Gödel", "Kurt Godel"],
+    "correctAnswer": 0,
+    "category": "science",
+    "subcategory": "mathematiques",
+    "difficulty": "expert",
+    "language": "fr",
+    "progressiveClues": [
+      "J'étais un membre éminent du Cercle de Vienne et un ami intime d'Albert Einstein à Princeton.",
+      "J'ai prouvé qu'aucun système formel cohérent capable d'arithmétique ne peut prouver sa propre cohérence.",
+      "Mes célèbres théorèmes d'incomplétude de 1931 ont anéanti le programme formaliste de David Hilbert."
+    ],
+    "tags": ["science", "mathematiques", "logique", "epistemologie", "indices"],
+    "translations": {
+      "en": {
+        "question": "Progressive Clues Buzzer: Which Austrian-American logician shattered mathematical certainty in 1931?",
+        "answers": ["Kurt Gödel", "Alan Turing", "Bertrand Russell", "David Hilbert"],
+        "acceptedTypedAnswers": ["Kurt Gödel", "Godel", "Gödel", "Kurt Godel"],
+        "progressiveClues": [
+          "I was a member of the Vienna Circle and Albert Einstein's closest walking companion at Princeton.",
+          "I proved that any consistent formal system sufficient for arithmetic contains undecidable statements.",
+          "My 1931 Incompleteness Theorems put an end to Hilbert's grand axiomatic program."
+        ],
+        "explanation": "Kurt Gödel's Incompleteness Theorems (1931) transformed 20th-century logic, mathematics, and philosophy."
+      }
+    },
+    "explanation": "Kurt Gödel a démontré en 1931 que dans tout système formel récursif contenant l'arithmétique, il existe des propositions indécidables.",
+    "source": {
+      "provider": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/goedel/",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Stanford Encyclopedia of Philosophy"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.99,
+    "version": 1
+  }
+]

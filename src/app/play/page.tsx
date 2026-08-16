@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useGameStore } from "@/lib/store/game";
+import { PrismGame } from "@/components/game/prism-game";
 import { QuizGame } from "@/components/game/quiz-game";
 import { TimelineGame } from "@/components/game/timeline-game";
 import { TeamBattleGame } from "@/components/game/team-battle";
@@ -22,13 +23,15 @@ export default function PlayPage() {
   if (!config) {
     return (
       <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center">
-        <div className="animate-spin-slow text-5xl">🎲</div>
+        <div className="animate-spin-slow text-5xl">⚡</div>
         <p className="mt-4 animate-pulse text-fp-text-dim">Redirection…</p>
       </main>
     );
   }
 
   switch (config.mode) {
+    case "prism":
+      return <PrismGame />;
     case "classic":
     case "truefalse":
     case "rapidfire":
@@ -44,6 +47,6 @@ export default function PlayPage() {
     case "debate":
       return <DebateGame />;
     default:
-      return null;
+      return <PrismGame />;
   }
 }

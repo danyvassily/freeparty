@@ -17,6 +17,7 @@ function q(id: string, question: string, answer = "Réponse A"): Question {
     conceptId: `fact-${id}`,
     familyId: `family-${id}`,
     type: "mcq",
+    inputMode: "mcq",
     question,
     answers: [answer, "Distracteur 1", "Distracteur 2", "Distracteur 3"],
     correctAnswer: 0,

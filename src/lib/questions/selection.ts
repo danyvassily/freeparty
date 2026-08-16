@@ -22,6 +22,10 @@ export interface SelectionOptions {
   categories?: string[];
   /** Difficultés autorisées (toutes si vide) */
   difficulties?: QuestionDifficulty[];
+  /** Spécialité du joueur actif (promut les questions de sa spécialité en Niveau 4 — Expert) */
+  playerSpecialty?: string;
+  /** Thématique de salon (ex: cinema, art, etc.) */
+  thematicTag?: string;
   /** Quota par famille (évite de resservir la même famille dans une partie) */
   maxPerFamily?: number;
   /** Poids du hasard contrôlé (0 = 100% déterministe, 1 = très aléatoire) */

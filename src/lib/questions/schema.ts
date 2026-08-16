@@ -63,6 +63,35 @@ export const VerificationSchema = z.object({
   sources: z.array(z.string()).default([]),
 });
 
+export const ArtworkMetadataSchema = z.object({
+  id: z.string().optional(),
+  title: z.string().min(1),
+  artist: z.string().min(1),
+  artistBirth: z.number().int().optional(),
+  artistDeath: z.number().int().optional(),
+  yearStart: z.number().int().optional(),
+  yearEnd: z.number().int().optional(),
+  movement: z.string().optional(),
+  country: z.string().optional(),
+  museum: z.string().optional(),
+  imageUrl: z.string().min(1),
+  imageLicense: z.string().default("Public Domain / CC0"),
+  sourceUrl: z.string().optional(),
+});
+export type ArtworkMetadata = z.infer<typeof ArtworkMetadataSchema>;
+
+export const QuestionTranslationSchema = z.object({
+  question: z.string().min(5),
+  answers: z.array(z.string().min(1)).length(4).optional(),
+  acceptedTypedAnswers: z.array(z.string()).optional(),
+  progressiveClues: z.array(z.string()).length(3).optional(),
+  explanation: z.string().optional(),
+});
+export type QuestionTranslation = z.infer<typeof QuestionTranslationSchema>;
+
+export const INPUT_MODES = ["mcq", "typed"] as const;
+export type InputMode = (typeof INPUT_MODES)[number];
+
 export const QuestionSchema = z
   .object({
     /** Identifiant stable unique (kebab-case) */
@@ -72,15 +101,24 @@ export const QuestionSchema = z
     /** Famille anti-répétition (ex: capital-spain) */
     familyId: z.string().min(2),
     type: z.enum(QUESTION_TYPES).default("mcq"),
+    inputMode: z.enum(INPUT_MODES).default("mcq"),
     question: z.string().min(10, "Question trop courte").max(500),
     answers: z
       .array(z.string().min(1).max(120))
       .length(4, "Exactement 4 réponses requises"),
     correctAnswer: z.number().int().min(0).max(3),
+    /** Réponses acceptées en mode saisie texte (ex: ["Ridley Scott", "Scott"]) */
+    acceptedTypedAnswers: z.array(z.string()).optional(),
+    /** 3 indices progressifs pour le mode buzzer (1000 pts -> 750 pts -> 500 pts) */
+    progressiveClues: z.array(z.string().min(3)).length(3).optional(),
+    /** Métadonnées d'œuvre d'art pour questions avec peinture/musée */
+    artwork: ArtworkMetadataSchema.optional(),
     category: z.enum(CATEGORIES),
     subcategory: z.string().min(1).max(60),
     difficulty: z.enum(DIFFICULTIES).default("medium"),
     language: z.enum(QUESTION_LANGUAGES).default("fr"),
+    /** Traductions multilingues partageant le même conceptId et questionId */
+    translations: z.record(z.enum(QUESTION_LANGUAGES), QuestionTranslationSchema).optional(),
     tags: z.array(z.string().min(1)).default([]),
     source: SourceSchema,
     verification: VerificationSchema.default({

@@ -1,0 +1,308 @@
+[
+  {
+    "id": "art-vangogh-starrynight-artist",
+    "conceptId": "concept-vangogh-starrynight",
+    "familyId": "art-starrynight",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Qui a peint le chef-d'œuvre postimpressionniste « La Nuit étoilée » (1889) depuis sa chambre d'asile à Saint-Rémy-de-Provence ?",
+    "answers": ["Vincent van Gogh", "Paul Gauguin", "Claude Monet", "Paul Cézanne"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": ["art", "peinture", "postimpressionnisme", "musées"],
+    "artwork": {
+      "title": "La Nuit étoilée",
+      "artist": "Vincent van Gogh",
+      "artistBirth": 1853,
+      "artistDeath": 1890,
+      "yearStart": 1889,
+      "yearEnd": 1889,
+      "movement": "Postimpressionnisme",
+      "country": "Pays-Bas",
+      "museum": "Museum of Modern Art (MoMA), New York",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.moma.org/collection/works/79802"
+    },
+    "translations": {
+      "en": {
+        "question": "Who painted the post-impressionist masterpiece 'The Starry Night' (1889) while staying at Saint-Paul-de-Mausole asylum?",
+        "answers": ["Vincent van Gogh", "Paul Gauguin", "Claude Monet", "Paul Cézanne"],
+        "explanation": "Vincent van Gogh painted 'The Starry Night' in June 1889 from his east-facing window at Saint-Rémy-de-Provence."
+      }
+    },
+    "explanation": "Vincent van Gogh a peint 'La Nuit étoilée' en juin 1889 pendant son séjour à l'asile du monastère Saint-Paul-de-Mausole à Saint-Rémy-de-Provence.",
+    "source": {
+      "provider": "Metropolitan / MoMA Open Access",
+      "sourceId": "moma-79802",
+      "url": "https://www.moma.org/collection/works/79802",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["MoMA Collections", "Van Gogh Museum"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.98,
+    "version": 1
+  },
+  {
+    "id": "art-vermeer-girlpearl-movement",
+    "conceptId": "concept-vermeer-girlpearl",
+    "familyId": "art-girlpearl",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "À quelle grande période de la peinture hollandaise rattache-t-on le maître Johannes Vermeer et son tableau « La Jeune Fille à la perle » ?",
+    "answers": ["Le Siècle d'or néerlandais (XVIIe)", "La Renaissance flamande (XVe)", "Le Romantisme (XIXe)", "Le Maniérisme (XVIe)"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": ["art", "peinture", "vermeer", "siecledor"],
+    "artwork": {
+      "title": "La Jeune Fille à la perle",
+      "artist": "Johannes Vermeer",
+      "artistBirth": 1632,
+      "artistDeath": 1675,
+      "yearStart": 1665,
+      "yearEnd": 1665,
+      "movement": "Siècle d'or néerlandais (Baroque)",
+      "country": "Pays-Bas",
+      "museum": "Mauritshuis, La Haye",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1024px-1665_Girl_with_a_Pearl_Earring.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring/"
+    },
+    "translations": {
+      "en": {
+        "question": "To which major artistic period does Johannes Vermeer and his iconic 'Girl with a Pearl Earring' belong?",
+        "answers": ["Dutch Golden Age (17th century)", "Flemish Renaissance (15th century)", "Romanticism (19th century)", "Mannerism (16th century)"],
+        "explanation": "Johannes Vermeer was a leading master of the Dutch Golden Age, active in Delft during the 17th century."
+      }
+    },
+    "explanation": "Johannes Vermeer peignait à Delft au XVIIe siècle, l'apogée du Siècle d'or néerlandais caractérisé par une maîtrise exceptionnelle du clair-obscur.",
+    "source": {
+      "provider": "Mauritshuis / Rijksmuseum Open Data",
+      "sourceId": "mauritshuis-670",
+      "url": "https://www.mauritshuis.nl",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Mauritshuis Collection Guide"]
+    },
+    "confidence": 0.98,
+    "qualityScore": 0.97,
+    "version": 1
+  },
+  {
+    "id": "art-rembrandt-nightwatch-museum",
+    "conceptId": "concept-rembrandt-nightwatch",
+    "familyId": "art-nightwatch",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Dans quel musée emblématique d'Amsterdam peut-on admirer « La Ronde de nuit » (1642) de Rembrandt van Rijn ?",
+    "answers": ["Rijksmuseum", "Musée Van Gogh", "Stedelijk Museum", "Mauritshuis"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": ["art", "peinture", "rembrandt", "amsterdam"],
+    "artwork": {
+      "title": "La Ronde de nuit",
+      "artist": "Rembrandt van Rijn",
+      "artistBirth": 1606,
+      "artistDeath": 1669,
+      "yearStart": 1642,
+      "yearEnd": 1642,
+      "movement": "Baroque néerlandais",
+      "country": "Pays-Bas",
+      "museum": "Rijksmuseum, Amsterdam",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/1280px-The_Night_Watch_-_HD.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/SK-C-5"
+    },
+    "translations": {
+      "en": {
+        "question": "In which iconic Amsterdam museum is Rembrandt's monumental masterpiece 'The Night Watch' (1642) housed?",
+        "answers": ["Rijksmuseum", "Van Gogh Museum", "Stedelijk Museum", "Mauritshuis"],
+        "explanation": "Rembrandt's 'The Night Watch' is the centerpiece of the Gallery of Honour at the Rijksmuseum in Amsterdam."
+      }
+    },
+    "explanation": "La 'Ronde de nuit' représente la compagnie de milice bourgeoise du capitaine Frans Banninck Cocq et trône dans la Galerie d'honneur du Rijksmuseum.",
+    "source": {
+      "provider": "Rijksmuseum Data API",
+      "sourceId": "SK-C-5",
+      "url": "https://data.rijksmuseum.nl",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Rijksmuseum Open Data"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.99,
+    "version": 1
+  },
+  {
+    "id": "art-monet-impression-sunrise-movement",
+    "conceptId": "concept-monet-sunrise",
+    "familyId": "art-sunrise",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Quel mouvement artistique mondial doit son nom au tableau de Claude Monet « Impression, soleil levant » (1872) ?",
+    "answers": ["L'Impressionnisme", "Le Fauvisme", "Le Pointillisme", "Le Symbolisme"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": ["art", "monet", "impressionnisme", "lehavre"],
+    "artwork": {
+      "title": "Impression, soleil levant",
+      "artist": "Claude Monet",
+      "artistBirth": 1840,
+      "artistDeath": 1926,
+      "yearStart": 1872,
+      "yearEnd": 1872,
+      "movement": "Impressionnisme",
+      "country": "France",
+      "museum": "Musée Marmottan Monet, Paris",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1280px-Monet_-_Impression%2C_Sunrise.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.marmottan.fr/collections/claude-monet/"
+    },
+    "translations": {
+      "en": {
+        "question": "Which worldwide art movement owes its name to Claude Monet's 1872 painting 'Impression, Sunrise'?",
+        "answers": ["Impressionism", "Fauvism", "Pointillism", "Symbolism"],
+        "explanation": "Art critic Louis Leroy coined the term 'Impressionism' after seeing Monet's 'Impression, Sunrise' at the 1874 exhibition."
+      }
+    },
+    "explanation": "Le critique Louis Leroy a utilisé le terme de façon ironique dans le journal Le Charivari en 1874, donnant son nom officiel au mouvement impressionniste.",
+    "source": {
+      "provider": "Musée Marmottan Monet / Joconde",
+      "sourceId": "marmottan-5004",
+      "url": "https://www.marmottan.fr",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Musée Marmottan Monet"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.98,
+    "version": 1
+  },
+  {
+    "id": "art-seurat-grandejatte-technique",
+    "conceptId": "concept-seurat-grandejatte",
+    "familyId": "art-grandejatte",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Quelle technique picturale révolutionnaire Georges Seurat utilise-t-il dans « Un dimanche après-midi à l'Île de la Grande Jatte » (1884-1886) ?",
+    "answers": ["Le Pointillisme (Divisionnisme)", "Le Sfumato", "Le Frottage", "Le Trompe-l'œil"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": ["art", "seurat", "pointillisme", "chicago"],
+    "artwork": {
+      "title": "Un dimanche après-midi à l'Île de la Grande Jatte",
+      "artist": "Georges Seurat",
+      "artistBirth": 1859,
+      "artistDeath": 1891,
+      "yearStart": 1884,
+      "yearEnd": 1886,
+      "movement": "Néo-impressionnisme / Pointillisme",
+      "country": "France",
+      "museum": "Art Institute of Chicago",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/1280px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884"
+    },
+    "translations": {
+      "en": {
+        "question": "Which revolutionary painting technique did Georges Seurat pioneer in 'A Sunday on La Grande Jatte' (1884–1886)?",
+        "answers": ["Pointillism (Divisionism)", "Sfumato", "Frottage", "Trompe-l'œil"],
+        "explanation": "Seurat juxtaposed tiny dots of pure color that visually blend in the viewer's eye, creating optical luminescence."
+      }
+    },
+    "explanation": "Georges Seurat a théorisé le divisionnisme (pointillisme), juxtaposant de minuscules touches de couleur pure pour créer une synthèse optique dans l'œil du spectateur.",
+    "source": {
+      "provider": "Art Institute of Chicago API",
+      "sourceId": "artic-27992",
+      "url": "https://www.artic.edu/artworks/27992",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Art Institute of Chicago Open Access"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.99,
+    "version": 1
+  },
+  {
+    "id": "art-hopper-nighthawks-museum",
+    "conceptId": "concept-hopper-nighthawks",
+    "familyId": "art-nighthawks",
+    "type": "mcq",
+    "inputMode": "mcq",
+    "question": "Quel musée conserve l'emblématique toile d'Edward Hopper « Nighthawks » (1942), représentant un diner new-yorkais au cœur de la nuit ?",
+    "answers": ["Art Institute of Chicago", "Whitney Museum of American Art", "Metropolitan Museum of Art", "National Gallery of Art (Washington)"],
+    "correctAnswer": 0,
+    "category": "art",
+    "subcategory": "peinture",
+    "difficulty": "hard",
+    "language": "fr",
+    "tags": ["art", "hopper", "realisme-americain", "chicago"],
+    "artwork": {
+      "title": "Nighthawks",
+      "artist": "Edward Hopper",
+      "artistBirth": 1882,
+      "artistDeath": 1967,
+      "yearStart": 1942,
+      "yearEnd": 1942,
+      "movement": "Réalisme américain",
+      "country": "États-Unis",
+      "museum": "Art Institute of Chicago",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/1280px-Nighthawks_by_Edward_Hopper_1942.jpg",
+      "imageLicense": "Public Domain / CC0",
+      "sourceUrl": "https://www.artic.edu/artworks/111628/nighthawks"
+    },
+    "translations": {
+      "en": {
+        "question": "Which renowned museum houses Edward Hopper's iconic 1942 painting 'Nighthawks'?",
+        "answers": ["Art Institute of Chicago", "Whitney Museum of American Art", "Metropolitan Museum of Art", "National Gallery of Art (Washington)"],
+        "explanation": "'Nighthawks' was purchased by the Art Institute of Chicago shortly after its completion in 1942."
+      }
+    },
+    "explanation": "Edward Hopper s'est inspiré d'un restaurant de Greenwich Avenue à New York ; l'Art Institute of Chicago a acquis l'œuvre dès 1942 pour 3 000 dollars.",
+    "source": {
+      "provider": "Art Institute of Chicago API",
+      "sourceId": "artic-111628",
+      "url": "https://www.artic.edu/artworks/111628",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026-08-16",
+      "sources": ["Art Institute of Chicago Open Access"]
+    },
+    "confidence": 0.99,
+    "qualityScore": 0.98,
+    "version": 1
+  }
+]
