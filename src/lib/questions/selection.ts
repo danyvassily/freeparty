@@ -64,7 +64,7 @@ export function selectQuestions(
   history: SelectionHistoryEntry[],
   options: SelectionOptions,
 ): SelectionResult {
-  const { count, jitter = 0.15, maxPerFamily = 1, now = Date.now() } = options;
+  const { count, jitter = 0.45, maxPerFamily = 1, now = Date.now() } = options;
   const rng = mulberry32(options.seed ?? (now % 2147483647));
 
   if (pool.length === 0) return { questions: [], scores: [] };
@@ -130,7 +130,7 @@ export function selectQuestions(
 
     const novelty = 1 - qSeen * 0.3; // jamais complètement 0 pour une question valide
 
-    const randomFactor = 0.7 + rng() * 0.6; // jitter contrôlé
+    const randomFactor = 0.3 + rng() * 1.4; // jitter large : ±40% autour de la moyenne
 
     const score =
       (novelty * 2 +
