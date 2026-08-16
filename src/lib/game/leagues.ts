@@ -12,7 +12,8 @@ export interface LeagueTier {
   nameEn: string;
   minPoints: number;
   maxPoints: number;
-  emoji: string;
+  icon: string;
+  emoji?: string;
   badgeColor: string;
   gradient: string;
   textColor: string;
@@ -25,9 +26,10 @@ export const LEAGUE_TIERS: LeagueTier[] = [
     nameEn: "Bronze",
     minPoints: 0,
     maxPoints: 999,
+    icon: "bronze",
     emoji: "🥉",
     badgeColor: "#cd7f32",
-    gradient: "from-amber-800 to-amber-950",
+    gradient: "from-amber-900/40 via-amber-950/60 to-black",
     textColor: "text-amber-400",
   },
   {
@@ -36,9 +38,10 @@ export const LEAGUE_TIERS: LeagueTier[] = [
     nameEn: "Silver",
     minPoints: 1000,
     maxPoints: 2499,
+    icon: "argent",
     emoji: "🥈",
-    badgeColor: "#c0c0c0",
-    gradient: "from-slate-400 to-slate-700",
+    badgeColor: "#e2e8f0",
+    gradient: "from-slate-700/50 via-slate-800/60 to-black",
     textColor: "text-slate-200",
   },
   {
@@ -47,9 +50,10 @@ export const LEAGUE_TIERS: LeagueTier[] = [
     nameEn: "Gold",
     minPoints: 2500,
     maxPoints: 4999,
+    icon: "or",
     emoji: "🥇",
     badgeColor: "#f59e0b",
-    gradient: "from-amber-400 to-yellow-600",
+    gradient: "from-amber-500/30 via-yellow-600/20 to-black",
     textColor: "text-amber-300",
   },
   {
@@ -58,9 +62,10 @@ export const LEAGUE_TIERS: LeagueTier[] = [
     nameEn: "Platinum",
     minPoints: 5000,
     maxPoints: 7999,
+    icon: "platine",
     emoji: "💎",
-    badgeColor: "#22d3ee",
-    gradient: "from-cyan-400 to-blue-600",
+    badgeColor: "#38bdf8",
+    gradient: "from-cyan-500/30 via-sky-600/20 to-black",
     textColor: "text-cyan-300",
   },
   {
@@ -69,21 +74,23 @@ export const LEAGUE_TIERS: LeagueTier[] = [
     nameEn: "Diamond",
     minPoints: 8000,
     maxPoints: 11999,
+    icon: "diamant",
     emoji: "👑",
-    badgeColor: "#d946ef",
-    gradient: "from-fuchsia-500 to-purple-800",
-    textColor: "text-fuchsia-300",
+    badgeColor: "#c084fc",
+    gradient: "from-fuchsia-600/30 via-purple-700/20 to-black",
+    textColor: "text-purple-300",
   },
   {
     id: "elite",
     name: "Élite (Top 1%)",
     nameEn: "Elite (Top 1%)",
-    emoji: "🌌",
     minPoints: 12000,
     maxPoints: Infinity,
-    badgeColor: "#8b5cf6",
-    gradient: "from-violet-500 via-fuchsia-500 to-amber-400",
-    textColor: "text-violet-200",
+    icon: "elite",
+    emoji: "🌌",
+    badgeColor: "#f43f5e",
+    gradient: "from-rose-500/30 via-violet-600/20 to-black",
+    textColor: "text-rose-300",
   },
 ];
 

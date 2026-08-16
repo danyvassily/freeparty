@@ -8,6 +8,7 @@ import { createDebate, transition, nextPlayer, endTurn, revealFollowUp, castVote
 import { useGameStore } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
 import { ProgressRing } from "@/components/ui/primitives";
+import { MessageSquareQuote, RefreshCw, Vote, Brain, AlertCircle, BookOpen, Mic } from "lucide-react";
 
 type LocalPhase = "loading" | "setup" | DebateState["phase"];
 
@@ -228,20 +229,24 @@ export function DebateGame() {
 
   if (error) {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="text-5xl">😕</div>
-        <h1 className="mt-4 font-display text-2xl font-bold">Oups</h1>
-        <p className="mt-2 text-fp-text-dim">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-8">Retour</button>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+          <AlertCircle className="h-6 w-6" />
+        </div>
+        <h1 className="mt-4 font-sans text-xl font-bold text-white">Une erreur est survenue</h1>
+        <p className="mt-2 text-xs text-neutral-400">{error}</p>
+        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-6 rounded-xl px-6 py-2.5 text-xs font-bold text-white">Retour</button>
       </main>
     );
   }
 
   if (phase === "loading") {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center">
-        <div className="animate-spin-slow text-5xl">💬</div>
-        <p className="mt-4 animate-pulse text-fp-text-dim">Préparation du débat…</p>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-600/20 text-cyan-300 border border-cyan-500/30 animate-pulse">
+          <MessageSquareQuote className="h-6 w-6" />
+        </div>
+        <p className="mt-4 text-xs text-neutral-400">Préparation du débat…</p>
       </main>
     );
   }
@@ -249,21 +254,22 @@ export function DebateGame() {
   if (phase === "setup" && prompt) {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim">← Retour</button>
-        <span className="mt-6 inline-block w-fit rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
+        <button type="button" onClick={() => router.push("/")} className="text-xs font-semibold text-neutral-400 hover:text-white">← Retour</button>
+        <span className="mt-6 inline-block w-fit rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-semibold text-neutral-300">
           {prompt.category} · {prompt.difficulty}
         </span>
-        <h1 className="mt-4 font-display text-3xl font-bold leading-snug">{prompt.prompt}</h1>
+        <h1 className="mt-4 font-sans text-2xl sm:text-3xl font-bold text-white leading-snug">{prompt.prompt}</h1>
 
-        {/* Carte de contexte factuel — séparée des opinions (spec §65) */}
-        <div className="fp-card mt-6 p-5">
-          <h2 className="font-display text-sm font-bold uppercase tracking-widest text-fp-accent-2">Contexte factuel</h2>
-          <p className="mt-2 text-sm leading-relaxed text-fp-text-dim">{prompt.context}</p>
+        {/* Carte de contexte factuel */}
+        <div className="glass-panel mt-6 rounded-3xl p-5 border-white/[0.08]">
+          <h2 className="font-sans text-xs font-bold uppercase tracking-widest text-cyan-400">Contexte factuel</h2>
+          <p className="mt-2 text-xs leading-relaxed text-neutral-300">{prompt.context}</p>
           {prompt.sources.length > 0 && (
             <div className="mt-3 flex flex-wrap gap-2">
               {prompt.sources.map((s) => (
-                <span key={s.label} className="rounded-full bg-white/5 px-2.5 py-1 text-[11px] text-fp-text-dim">
-                  📚 {s.label}
+                <span key={s.label} className="inline-flex items-center gap-1 rounded-full bg-white/[0.05] border border-white/[0.06] px-2.5 py-1 text-[11px] text-neutral-300">
+                  <BookOpen className="h-2.5 w-2.5 text-neutral-400" />
+                  <span>{s.label}</span>
                 </span>
               ))}
             </div>
@@ -271,33 +277,34 @@ export function DebateGame() {
         </div>
 
         {isCMM && (
-          <div className="mt-4 rounded-2xl border border-fp-warning/40 bg-fp-warning/10 p-4 text-sm">
-            <strong className="text-fp-warning">Mode Change My Mind</strong>
-            <p className="mt-1 text-fp-text-dim">
+          <div className="mt-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 p-4 text-xs">
+            <strong className="text-amber-300">Mode Change My Mind</strong>
+            <p className="mt-1 text-neutral-300">
               Des positions vous seront assignées pour le jeu. Elles ne reflètent pas nécessairement vos opinions.
             </p>
           </div>
         )}
         {isEthics && (
-          <div className="mt-4 rounded-2xl border border-fp-primary/40 bg-fp-primary/10 p-4 text-sm">
-            <strong className="text-fp-primary">Dilemme éthique</strong>
-            <p className="mt-1 text-fp-text-dim">30 s de réflexion, puis position, contre-argument et discussion.</p>
+          <div className="mt-4 rounded-2xl border border-violet-500/30 bg-violet-500/10 p-4 text-xs">
+            <strong className="text-violet-300">Dilemme éthique</strong>
+            <p className="mt-1 text-neutral-300">30 s de réflexion, puis position, contre-argument et discussion.</p>
           </div>
         )}
 
         <div className="mt-6">
-          <h3 className="font-display text-sm font-bold uppercase tracking-widest text-fp-text-dim">Règles du débat</h3>
-          <div className="mt-3 grid gap-2 text-sm">
+          <h3 className="font-sans text-xs font-bold uppercase tracking-widest text-neutral-400">Règles du débat</h3>
+          <div className="mt-3 grid gap-2 text-xs">
             {["Critique les arguments, pas les personnes.", "Laisse les autres terminer.", "Tu peux changer d’avis."].map((r) => (
-              <div key={r} className="rounded-xl border border-fp-border bg-fp-surface px-4 py-2.5 text-fp-text-dim">
+              <div key={r} className="rounded-xl border border-white/[0.06] bg-white/[0.02] px-4 py-2.5 text-neutral-300">
                 {r}
               </div>
             ))}
           </div>
         </div>
 
-        <button type="button" onClick={startDebate} className="fp-btn-primary mt-8 w-full text-lg">
-          💬 Lancer le débat ({durationSeconds / 60} min)
+        <button type="button" onClick={startDebate} className="glass-primary mt-8 flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white shadow-lg">
+          <MessageSquareQuote className="h-4 w-4" />
+          <span>Lancer le débat ({durationSeconds / 60} min)</span>
         </button>
       </main>
     );
@@ -307,9 +314,11 @@ export function DebateGame() {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-8">
         <div className="text-center">
-          <div className="animate-pop text-5xl">🧠</div>
-          <h1 className="mt-3 font-display text-3xl font-bold">Débat terminé</h1>
-          <p className="mt-1 text-fp-text-dim">Pas de gagnant ni de perdant — juste des idées en mouvement.</p>
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-cyan-600/20 text-cyan-300 border border-cyan-500/30 mb-3">
+            <Brain className="h-7 w-7" />
+          </div>
+          <h1 className="mt-2 font-sans text-2xl sm:text-3xl font-bold text-white">Débat terminé</h1>
+          <p className="mt-1 text-xs text-neutral-400">Pas de gagnant ni de perdant — confrontation rigoureuse d&apos;idées.</p>
         </div>
 
         <div className="fp-card mt-8 p-6">
@@ -399,51 +408,52 @@ export function DebateGame() {
       {phase === "player-turn" && (
         <div className="flex flex-1 flex-col">
           <div className="flex items-center justify-between">
-            <h2 className="font-display text-xl font-bold">
-              🎤 À toi, <span className="fp-gradient-text">{currentPlayer?.name}</span>
+            <h2 className="font-sans text-xl font-bold text-white flex items-center gap-2">
+              <Mic className="h-4 w-4 text-cyan-400" />
+              <span>À toi, {currentPlayer?.name}</span>
             </h2>
             <div className="text-right">
-              <div className="font-display text-2xl font-bold tabular-nums">
+              <div className="font-mono text-2xl font-bold tabular-nums text-white">
                 {Math.floor(speechSeconds / 60)}:{String(speechSeconds % 60).padStart(2, "0")}
               </div>
-              <div className="text-[11px] text-fp-text-dim">temps de parole</div>
+              <div className="text-[11px] text-neutral-400">temps de parole</div>
             </div>
           </div>
 
           {isCMM && (
-            <div className="mt-4 rounded-2xl border border-fp-warning/40 bg-fp-warning/10 p-4 text-sm">
-              <strong className="text-fp-warning">Position assignée :</strong>{" "}
-              <span className="text-fp-text">
+            <div className="mt-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 p-4 text-xs">
+              <strong className="text-amber-300">Position assignée :</strong>{" "}
+              <span className="text-white">
                 {prompt.assignedPositions?.[debate.turns.filter((t) => t.phase === "speech").length % Math.max(1, prompt.assignedPositions?.length ?? 1)] ??
                   "défends cette position comme si elle était la tienne"}
               </span>
             </div>
           )}
 
-          <p className="mt-4 text-fp-text-dim">Question du débat :</p>
-          <p className="mt-1 font-display text-lg font-bold leading-snug">{prompt.prompt}</p>
+          <p className="mt-4 text-xs text-neutral-400">Question du débat :</p>
+          <p className="mt-1 font-sans text-base sm:text-lg font-bold leading-snug text-white">{prompt.prompt}</p>
 
           {isDA && showDevil && (
-            <div className="animate-pop mt-4 rounded-2xl border border-fp-danger/40 bg-fp-danger/10 p-4">
-              <p className="text-sm font-bold text-fp-danger">👿 Avocat du diable</p>
-              <p className="mt-1 text-sm text-fp-text-dim">
+            <div className="animate-pop mt-4 rounded-2xl border border-rose-500/30 bg-rose-500/10 p-4">
+              <p className="text-xs font-bold text-rose-300">Perspective contradictoire</p>
+              <p className="mt-1 text-xs text-neutral-300">
                 {prompt.perspectives[prompt.perspectives.length - 1] ?? "Voici un contre-argument sérieux à considérer : qu’en dirait une personne de bonne foi qui pense l’inverse ?"}
               </p>
             </div>
           )}
 
           <div className="mt-6 flex gap-3">
-            <button type="button" onClick={finishTurn} className="fp-btn-primary flex-1">
+            <button type="button" onClick={finishTurn} className="glass-primary flex-1 py-3 rounded-xl text-xs font-bold text-white shadow-lg">
               Passer la parole
             </button>
-            <button type="button" onClick={moveToDiscussion} className="fp-btn-ghost flex-1">
+            <button type="button" onClick={moveToDiscussion} className="glass-button flex-1 py-3 rounded-xl text-xs font-semibold text-neutral-300">
               Discussion libre
             </button>
           </div>
           <button
             type="button"
             onClick={() => addMetric("points")}
-            className="mt-3 w-full rounded-2xl border border-dashed border-fp-border bg-fp-surface/40 py-2 text-xs font-semibold text-fp-text-dim transition-colors hover:border-fp-primary"
+            className="mt-3 w-full rounded-2xl border border-dashed border-white/[0.1] bg-white/[0.02] py-2 text-xs font-semibold text-neutral-400 transition-colors hover:border-violet-400 hover:text-white"
           >
             + Point discuté ({points.points})
           </button>
@@ -452,21 +462,24 @@ export function DebateGame() {
 
       {phase === "open-discussion" && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="animate-pop text-5xl">💬</div>
-          <h2 className="mt-4 font-display text-3xl font-bold">Discussion libre</h2>
-          <p className="mt-2 max-w-sm text-fp-text-dim">Tout le monde parle, on écoute, on creuse.</p>
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-cyan-600/20 text-cyan-300 border border-cyan-500/30 mb-2">
+            <MessageSquareQuote className="h-7 w-7" />
+          </div>
+          <h2 className="mt-2 font-sans text-2xl font-bold text-white">Discussion libre</h2>
+          <p className="mt-1 max-w-sm text-xs text-neutral-400">Échange d&apos;arguments sans chronomètre strict.</p>
           <div className="mt-6 flex w-full max-w-sm flex-col gap-2">
-            <button type="button" onClick={() => addMetric("arguments")} className="fp-btn-ghost">
+            <button type="button" onClick={() => addMetric("arguments")} className="glass-button py-2.5 rounded-xl text-xs text-neutral-300">
               + Un argument exploré ({points.arguments})
             </button>
-            <button type="button" onClick={() => addMetric("questions")} className="fp-btn-ghost">
+            <button type="button" onClick={() => addMetric("questions")} className="glass-button py-2.5 rounded-xl text-xs text-neutral-300">
               + Une question restante ({points.questions})
             </button>
-            <button type="button" onClick={showFollowUp} className="fp-btn-primary mt-2">
-              🔄 Nouvelle relance
+            <button type="button" onClick={showFollowUp} className="glass-primary mt-2 flex items-center justify-center gap-1.5 py-3 rounded-xl text-xs font-bold text-white shadow-lg">
+              <RefreshCw className="h-3.5 w-3.5" />
+              <span>Nouvelle relance</span>
             </button>
-            <button type="button" onClick={() => go("voting")} className="fp-btn-ghost mt-2">
-              Passer au vote →
+            <button type="button" onClick={() => go("voting")} className="glass-button mt-2 py-2.5 rounded-xl text-xs font-semibold text-neutral-400 hover:text-white">
+              Passer au vote final →
             </button>
           </div>
         </div>
@@ -474,14 +487,16 @@ export function DebateGame() {
 
       {phase === "follow-up" && activeFollowUp && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="animate-pop text-5xl">🔄</div>
-          <h2 className="mt-4 font-display text-2xl font-bold">Relance</h2>
-          <p className="mt-4 max-w-md font-display text-xl font-bold leading-snug">{activeFollowUp}</p>
+          <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-violet-600/20 text-violet-300 border border-violet-500/30 mb-2">
+            <RefreshCw className="h-6 w-6" />
+          </div>
+          <h2 className="mt-2 font-sans text-xl font-bold text-white">Relance d&apos;approfondissement</h2>
+          <p className="mt-3 max-w-md font-sans text-base sm:text-lg font-semibold text-neutral-200 leading-snug">{activeFollowUp}</p>
           <div className="mt-8 flex w-full max-w-sm flex-col gap-2">
-            <button type="button" onClick={() => go("player-turn")} className="fp-btn-primary">
+            <button type="button" onClick={() => go("player-turn")} className="glass-primary py-3 rounded-xl text-xs font-bold text-white shadow-lg">
               Reprendre les tours
             </button>
-            <button type="button" onClick={() => go("open-discussion")} className="fp-btn-ghost">
+            <button type="button" onClick={() => go("open-discussion")} className="glass-button py-2.5 rounded-xl text-xs text-neutral-300">
               Discussion libre
             </button>
           </div>
@@ -490,9 +505,11 @@ export function DebateGame() {
 
       {phase === "voting" && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="animate-pop text-5xl">🗳️</div>
-          <h2 className="mt-4 font-display text-2xl font-bold">Vote final</h2>
-          <p className="mt-2 text-fp-text-dim">As-tu changé de position après ce débat ?</p>
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-2">
+            <Vote className="h-7 w-7" />
+          </div>
+          <h2 className="mt-2 font-sans text-2xl font-bold text-white">Vote final</h2>
+          <p className="mt-1 text-xs text-neutral-400">Avez-vous fait évoluer votre point de vue ?</p>
           <div className="mt-6 grid w-full max-w-sm grid-cols-2 gap-2">
             {(
               [

@@ -6,6 +6,7 @@ import type { Question } from "@/lib/questions/schema";
 import { useGameStore } from "@/lib/store/game";
 import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
 import { TimerBar, Confetti } from "@/components/ui/primitives";
+import { Trophy, Swords, AlertCircle } from "lucide-react";
 
 export function TeamBattleGame() {
   const router = useRouter();
@@ -123,47 +124,53 @@ export function TeamBattleGame() {
 
   if (error) {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="text-5xl">😕</div>
-        <h1 className="mt-4 font-display text-2xl font-bold">Oups</h1>
-        <p className="mt-2 text-fp-text-dim">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-8">Retour</button>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+          <AlertCircle className="h-6 w-6" />
+        </div>
+        <h1 className="mt-4 font-sans text-xl font-bold text-white">Une erreur est survenue</h1>
+        <p className="mt-2 text-xs text-neutral-400">{error}</p>
+        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-6 rounded-xl px-6 py-2.5 text-xs font-bold text-white">Retour</button>
       </main>
     );
   }
 
   if (phase === "loading") {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center">
-        <div className="animate-spin-slow text-5xl">⚔️</div>
-        <p className="mt-4 animate-pulse text-fp-text-dim">Préparation du combat…</p>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 animate-pulse">
+          <Swords className="h-6 w-6" />
+        </div>
+        <p className="mt-4 text-xs text-neutral-400">Préparation du combat…</p>
       </main>
     );
   }
 
   if (phase === "results") {
-    const winner = scoreA === scoreB ? "Égalité parfaite !" : scoreA > scoreB ? "🏆 Équipe A gagne !" : "🏆 Équipe B gagne !";
+    const winner = scoreA === scoreB ? "Égalité parfaite" : scoreA > scoreB ? "Victoire de l'Équipe A" : "Victoire de l'Équipe B";
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
         <Confetti />
-        <div className="animate-pop text-6xl">🏆</div>
-        <h1 className="mt-4 font-display text-4xl font-bold">{winner}</h1>
-        <div className="fp-card mt-8 w-full max-w-sm p-6">
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+          <Trophy className="h-7 w-7" />
+        </div>
+        <h1 className="mt-2 font-sans text-3xl font-extrabold text-white">{winner}</h1>
+        <div className="glass-panel mt-6 w-full max-w-sm rounded-3xl p-6 border-white/[0.08]">
           <div className="flex items-center justify-around">
             <div>
-              <div className="font-display text-4xl font-bold text-fp-primary">{scoreA}</div>
-              <div className="text-sm text-fp-text-dim">Équipe A</div>
+              <div className="font-mono text-4xl font-black text-violet-400">{scoreA}</div>
+              <div className="text-xs text-neutral-400 mt-1">Équipe A</div>
             </div>
-            <div className="font-display text-2xl text-fp-text-dim">—</div>
+            <div className="font-mono text-xl text-neutral-600">—</div>
             <div>
-              <div className="font-display text-4xl font-bold text-fp-primary-2">{scoreB}</div>
-              <div className="text-sm text-fp-text-dim">Équipe B</div>
+              <div className="font-mono text-4xl font-black text-fuchsia-400">{scoreB}</div>
+              <div className="text-xs text-neutral-400 mt-1">Équipe B</div>
             </div>
           </div>
         </div>
-        <div className="mt-8 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost flex-1">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="fp-btn-primary flex-1">Rejouer</button>
+        <div className="mt-6 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">Accueil</button>
+          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">Rejouer</button>
         </div>
       </main>
     );

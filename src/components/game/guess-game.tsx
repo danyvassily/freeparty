@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickGuessItem, type GuessItem } from "@/lib/game/guess-data";
 import { useSettingsStore } from "@/lib/store/settings";
+import { Trophy } from "lucide-react";
 
 export function GuessGame() {
   const router = useRouter();
@@ -51,15 +52,17 @@ export function GuessGame() {
 
   if (round > settings.guessRounds) {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="animate-pop text-6xl" aria-hidden="true">🕵️</div>
-        <h1 className="mt-4 font-display text-4xl font-bold">
-          {score >= 60 ? "Maître détective !" : "Fin de partie"}
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 mb-3">
+          <Trophy className="h-7 w-7" />
+        </div>
+        <h1 className="mt-2 font-sans text-3xl font-extrabold text-white">
+          {score >= 60 ? "Excellente Déduction" : "Session Clôturée"}
         </h1>
-        <p className="mt-2 text-fp-text-dim">{score} points</p>
-        <div className="mt-8 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost flex-1">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="fp-btn-primary flex-1">Rejouer</button>
+        <p className="mt-1 text-xs text-neutral-400 font-mono">{score} points accumulés</p>
+        <div className="mt-6 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">Accueil</button>
+          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">Rejouer</button>
         </div>
       </main>
     );
@@ -76,19 +79,19 @@ export function GuessGame() {
         </span>
       </div>
 
-      <h1 className="mt-6 font-display text-3xl font-bold">🕵️ Guess</h1>
-      <p className="mt-2 text-fp-text-dim">Dévoile les indices puis devine. Moins d&apos;indices = plus de points.</p>
+      <h1 className="mt-6 font-sans text-2xl sm:text-3xl font-extrabold text-white">Indices & Déduction</h1>
+      <p className="mt-2 text-xs text-neutral-400">Dévoilez les indices successifs puis formulez votre réponse. Moins d&apos;indices utilisés = plus de points.</p>
 
       <div className="mt-6 space-y-2">
         {item.hints.slice(0, hintsShown).map((h, i) => (
-          <div key={i} className="animate-rise rounded-2xl border border-fp-border bg-fp-surface px-4 py-3">
-            <span className="font-display text-xs font-bold text-fp-primary">Indice {i + 1}</span>
-            <p className="mt-1 font-medium">{h}</p>
+          <div key={i} className="animate-rise rounded-2xl border border-white/[0.08] bg-white/[0.03] px-4 py-3">
+            <span className="font-mono text-xs font-bold text-violet-400">Indice {i + 1}</span>
+            <p className="mt-1 text-sm font-medium text-white">{h}</p>
           </div>
         ))}
         {hintsShown < item.hints.length && (
-          <button type="button" onClick={showHint} className="fp-btn-ghost w-full">
-            🔍 Dévoiler l&apos;indice {hintsShown + 1}
+          <button type="button" onClick={showHint} className="glass-button w-full rounded-xl py-3 text-xs font-semibold text-neutral-300">
+            Dévoiler l&apos;indice {hintsShown + 1}
           </button>
         )}
       </div>
@@ -104,22 +107,22 @@ export function GuessGame() {
           value={guess}
           onChange={(e) => setGuess(e.target.value)}
           disabled={!canGuess || status !== "playing"}
-          placeholder={canGuess ? "Ta réponse…" : "Dévoile encore un indice…"}
-          className="flex-1 rounded-full border border-fp-border bg-fp-surface px-5 py-3 font-semibold outline-none transition-colors placeholder:text-fp-text-dim/60 focus:border-fp-primary disabled:opacity-50"
+          placeholder={canGuess ? "Votre proposition…" : "Dévoilez encore un indice…"}
+          className="flex-1 rounded-xl border border-white/[0.1] bg-black/40 px-4 py-3 text-xs font-semibold outline-none transition-colors placeholder:text-neutral-500 focus:border-violet-400 disabled:opacity-40"
           aria-label="Ta réponse"
         />
         <button
           type="submit"
           disabled={!canGuess || !guess.trim() || status !== "playing"}
-          className="fp-btn-primary disabled:opacity-40"
+          className="glass-primary rounded-xl px-5 py-3 text-xs font-bold text-white shadow-lg disabled:opacity-40"
         >
-          Deviner
+          Valider
         </button>
       </form>
 
       {status === "won" && (
-        <p className="animate-pop mt-4 text-center font-bold text-fp-success">
-          ✓ Bravo ! C&apos;était {item.answer} 🎉
+        <p className="animate-pop mt-4 text-center text-xs font-bold text-emerald-400">
+          Bonne réponse : {item.answer}
         </p>
       )}
       {status === "lost" && (

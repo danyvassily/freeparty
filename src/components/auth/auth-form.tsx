@@ -133,8 +133,8 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
 
         {/* Langue de l'interface */}
         <div className="mt-6 text-left">
-          <h3 className="font-display text-sm font-bold uppercase tracking-widest text-fp-text-dim">
-            🌍 {t("profile.language")}
+          <h3 className="font-sans text-xs font-bold uppercase tracking-widest text-neutral-400">
+            {t("profile.language")}
           </h3>
           <div className="mt-2 flex flex-wrap gap-2">
             {SUPPORTED_LANGUAGES.map((l) => (
@@ -146,31 +146,31 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
                   const sb = getSupabaseBrowser();
                   sb?.from("profiles").update({ language: l }).eq("id", user.id);
                 }}
-                className={`rounded-full px-3 py-1.5 text-sm font-semibold transition-all ${
+                className={`rounded-xl px-3 py-1.5 text-xs font-semibold transition-all ${
                   lang === l
-                    ? "bg-gradient-to-r from-fp-primary to-fp-primary-2 text-white"
-                    : "border border-fp-border bg-fp-surface text-fp-text-dim hover:text-white"
+                    ? "glass-primary text-white"
+                    : "border border-white/[0.08] bg-white/[0.03] text-neutral-400 hover:text-white"
                 }`}
               >
                 {LANGUAGE_NAMES[l]}
               </button>
             ))}
           </div>
-          <p className="mt-2 text-xs text-fp-text-dim">
-            {lang === "fr" ? "Interface traduite ; le contenu des questions est en français pour l'instant." : "UI translated; question content is currently French-only."}
+          <p className="mt-2 text-xs text-neutral-400">
+            {lang === "fr" ? "Interface traduite ; catalogue de questions d'élite synchronisé." : "UI translated; question catalog synchronized."}
           </p>
         </div>
 
-        <button type="button" onClick={() => router.push("/settings")} className="fp-btn-ghost mt-4 w-full">
-          ⚙️ {lang === "fr" ? "Réglages (temps de jeu)" : "Settings (game timers)"}
+        <button type="button" onClick={() => router.push("/settings")} className="glass-button mt-4 w-full rounded-xl py-2.5 text-xs font-medium text-neutral-300">
+          {lang === "fr" ? "Réglages (temps de jeu)" : "Settings (game timers)"}
         </button>
 
-        <button type="button" onClick={logout} className="fp-btn-ghost mt-3 w-full">
+        <button type="button" onClick={logout} className="glass-button mt-2.5 w-full rounded-xl py-2.5 text-xs font-medium text-neutral-400 hover:text-white">
           {t("auth.logout")}
         </button>
 
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-3 w-full">
-          🏠 {lang === "fr" ? "Retour à l'accueil" : "Back to home"}
+        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-3 w-full rounded-xl py-3 text-xs font-bold text-white shadow-lg">
+          {lang === "fr" ? "Retour au menu" : "Back to home"}
         </button>
       </div>
     );

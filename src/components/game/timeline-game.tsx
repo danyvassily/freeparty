@@ -69,14 +69,14 @@ export function TimelineGame() {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim" aria-label="Quitter">✕</button>
-        <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
+        <button type="button" onClick={() => router.push("/")} className="text-xs font-semibold text-neutral-400 hover:text-white" aria-label="Quitter">✕ Quitter</button>
+        <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-semibold text-neutral-300">
           Manche {round + 1} · {score} pts
         </span>
       </div>
 
-      <h1 className="mt-6 font-display text-3xl font-bold">🕰️ Remets dans l&apos;ordre</h1>
-      <p className="mt-2 text-fp-text-dim">Touche les événements dans l&apos;ordre chronologique (du plus ancien au plus récent).</p>
+      <h1 className="mt-6 font-sans text-2xl sm:text-3xl font-extrabold text-white">Chronologie & Repères</h1>
+      <p className="mt-2 text-xs text-neutral-400">Sélectionnez les événements dans l&apos;ordre chronologique exact (du plus ancien au plus récent).</p>
 
       {/* Ordre choisi */}
       <div className="mt-6 min-h-24 rounded-2xl border-2 border-dashed border-fp-border bg-fp-surface/40 p-3">

@@ -5,6 +5,8 @@ import type { PrismPlayer } from "@/lib/game/prism-engine";
 import type { Question } from "@/lib/questions/schema";
 import { sound } from "@/lib/audio/sound-engine";
 import { getSpecialtyById } from "@/lib/game/profile-specialty";
+import { AppIcon } from "@/components/ui/icons";
+import { Swords, Check, ArrowRight, Sparkles, AlertTriangle } from "lucide-react";
 
 interface LeCutModalProps {
   players: PrismPlayer[];
@@ -53,82 +55,96 @@ export function LeCutModal({
   }
 
   function proceed() {
-    // Si un joueur du sauvetage a réussi, il remplace le 2e, sinon les 2 premiers restent
     const final2 = sauvetageWinner ?? top2;
     onProceedToFinale(top1, final2);
   }
 
   return (
-    <div className="w-full max-w-xl mx-auto my-auto p-6 fp-card border border-white/15 bg-fp-bg/95 backdrop-blur-xl animate-pop">
+    <div className="w-full max-w-xl mx-auto my-auto p-6 sm:p-8 glass-panel rounded-3xl border-white/[0.12] shadow-2xl animate-pop">
       {/* Header Le Cut */}
-      <div className="text-center pb-4 border-b border-white/10">
-        <span className="text-xs font-mono font-extrabold uppercase tracking-widest text-red-400">
-          🔴 ÉLIMINATION HYBRIDE
-        </span>
-        <h2 className="font-display text-3xl font-extrabold text-white mt-1">LE CUT</h2>
-        <p className="text-xs text-fp-text-dim mt-1">
+      <div className="text-center pb-4 border-b border-white/[0.08]">
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-rose-500/30 bg-rose-500/10 px-3 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-rose-300 mb-2">
+          <AlertTriangle className="h-3 w-3" />
+          <span>ÉLIMINATION HYBRIDE</span>
+        </div>
+        <h2 className="font-sans text-2xl sm:text-3xl font-extrabold text-white">LE CUT</h2>
+        <p className="text-xs text-neutral-400 mt-1 max-w-md mx-auto">
           {phase === "ranking"
-            ? "Les 2 premiers accèdent à la finale La Ligne. Les autres ont une dernière chance de sauvetage !"
+            ? "Les 2 premiers sont pré-qualifiés pour La Ligne. Les autres disposent d'une ultime question de sauvetage."
             : phase === "sauvetage-duel"
-            ? "Question de sauvetage : le plus rapide à répondre juste peut voler la 2e place !"
-            : "Les deux finalistes sont désignés !"}
+            ? "Question de sauvetage : une bonne réponse permet de dérober la seconde place de finaliste."
+            : "Les deux finalistes sont officiellement désignés."}
         </p>
       </div>
 
       {phase === "ranking" && (
-        <div className="my-6 space-y-3">
+        <div className="my-6 space-y-2.5">
           {sorted.map((p, i) => {
             const spec = getSpecialtyById(p.specialtyId);
             const isQualified = i < 2;
 
             return (
-              <div
-                key={p.id}
-                className={`flex items-center justify-between p-3.5 rounded-2xl border transition-all ${
-                  isQualified
-                    ? "border-emerald-500/50 bg-emerald-500/10 text-white font-bold"
-                    : "border-rose-500/30 bg-rose-500/5 text-white/70"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="font-mono text-sm font-black text-white/50">{i + 1}</span>
-                  <div className="flex flex-col">
-                    <span className="font-display text-base font-bold flex items-center gap-2">
-                      {p.name}
-                      {isQualified && (
-                        <span className="rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.2 text-[10px] uppercase font-mono">
-                          Qualifié
-                        </span>
-                      )}
+              <div key={p.id}>
+                {i === 2 && (
+                  <div className="my-3 flex items-center gap-2">
+                    <div className="h-px flex-1 bg-rose-500/40" />
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-rose-400 bg-rose-500/10 border border-rose-500/30 px-2.5 py-0.5 rounded-full">
+                      LIGNE DU CUT
                     </span>
-                    <span className="text-xs text-fp-text-dim">{spec.emoji} {spec.name}</span>
+                    <div className="h-px flex-1 bg-rose-500/40" />
                   </div>
-                </div>
+                )}
 
-                <span className="font-mono text-base font-extrabold text-amber-300">
-                  {p.score} pts
-                </span>
+                <div
+                  className={`flex items-center justify-between p-3.5 rounded-2xl border transition-all ${
+                    isQualified
+                      ? "border-emerald-500/40 bg-emerald-500/10 text-white"
+                      : "border-white/[0.06] bg-white/[0.02] text-neutral-400"
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-xs font-bold text-neutral-400 w-4">{i + 1}</span>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-2">
+                        <span className="font-sans text-sm font-bold text-white">{p.name}</span>
+                        {isQualified && (
+                          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.2 text-[9px] uppercase font-mono font-bold">
+                            <Check className="h-2.5 w-2.5" />
+                            <span>Qualifié</span>
+                          </span>
+                        )}
+                      </div>
+                      <span className="flex items-center gap-1 text-[11px] text-neutral-400 mt-0.5">
+                        <AppIcon name={spec.icon} className="h-3 w-3" />
+                        <span>{spec.name}</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <span className="font-mono text-sm font-bold text-white">{p.score} pts</span>
+                </div>
               </div>
             );
           })}
 
-          {/* Bouton Action */}
-          <div className="pt-4 flex gap-3">
+          <div className="mt-6 flex gap-3">
             {hasSauvetage ? (
               <button
                 type="button"
                 onClick={startSauvetage}
-                className="fp-btn-primary w-full text-base font-bold"
+                className="glass-primary flex-1 flex items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
               >
-                ⚡ Lancer le Sauvetage ({p3.name} & {p4?.name ?? "Challenger"})
+                <Swords className="h-4 w-4" />
+                <span>Lancer la Question de Sauvetage ({p3?.name} vs {p4?.name ?? "..."})</span>
               </button>
             ) : (
               <button
                 type="button"
                 onClick={proceed}
-                className="fp-btn-primary w-full text-base font-bold"
+                className="glass-primary flex-1 flex items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
               >
-                🔴 Accéder à La Ligne
+                <span>Accéder à La Ligne</span>
+                <ArrowRight className="h-4 w-4" />
               </button>
             )}
           </div>
@@ -137,33 +153,36 @@ export function LeCutModal({
 
       {phase === "sauvetage-duel" && sauvetageQuestion && (
         <div className="my-6 animate-rise">
-          <div className="rounded-2xl border border-amber-400/40 bg-amber-400/10 p-3 mb-4 text-center">
-            <span className="text-xs font-bold text-amber-300">
-              Duel de sauvetage pour {p3?.name} {p4 ? `et ${p4.name}` : ""} !
+          <div className="glass-panel-subtle rounded-2xl p-5 border border-amber-400/30 mb-5">
+            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-amber-300 block mb-1">
+              QUESTION DÉCISIVE DE SAUVETAGE
             </span>
+            <h3 className="font-sans text-base font-bold text-white leading-snug">
+              {sauvetageQuestion.question}
+            </h3>
           </div>
 
-          <h3 className="font-display text-xl font-bold text-white mb-4">
-            {sauvetageQuestion.question}
-          </h3>
-
-          <div className="grid grid-cols-1 gap-2.5">
-            {sauvetageQuestion.answers.map((ans, i) => (
-              <button
-                key={i}
-                type="button"
-                disabled={answeredIndex !== null}
-                onClick={() => handleSauvetageAnswer(p3, i)}
-                className={`p-3.5 rounded-xl border text-left text-sm font-semibold transition-all ${
-                  answeredIndex !== null
-                    ? i === sauvetageQuestion.correctAnswer
-                      ? "border-emerald-500 bg-emerald-500/20 text-emerald-300 font-bold"
-                      : "opacity-30 border-transparent"
-                    : "border-white/10 bg-white/5 hover:border-amber-400/50 text-white"
-                }`}
-              >
-                {ans}
-              </button>
+          {/* Boutons pour P3 et P4 */}
+          <div className="space-y-4">
+            {[p3, p4].filter(Boolean).map((player) => (
+              <div key={player.id} className="glass-panel rounded-2xl p-4 border-white/[0.08]">
+                <span className="text-xs font-bold text-neutral-300 block mb-2.5">
+                  Réponse de {player.name} :
+                </span>
+                <div className="grid grid-cols-2 gap-2">
+                  {sauvetageQuestion.answers.map((ans, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      disabled={answeredIndex !== null}
+                      onClick={() => handleSauvetageAnswer(player, idx)}
+                      className="glass-button rounded-xl p-2.5 text-left text-xs font-medium text-neutral-200 hover:text-white"
+                    >
+                      {ans}
+                    </button>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -171,20 +190,32 @@ export function LeCutModal({
 
       {phase === "qualification-revealed" && (
         <div className="my-6 text-center animate-pop">
-          <div className="text-5xl mb-3">🔥</div>
-          <h3 className="font-display text-2xl font-bold text-white">Finalistes Confirmés !</h3>
-          <p className="text-sm text-fp-text-dim mt-2 mb-6">
+          <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-violet-600/20 text-violet-300 border border-violet-500/30 mb-3">
+            <Sparkles className="h-6 w-6" />
+          </div>
+
+          <h3 className="font-sans text-lg font-bold text-white">
             {sauvetageWinner
-              ? `${sauvetageWinner.name} a réussi son sauvetage et se qualifie pour La Ligne !`
-              : `${top1.name} et ${top2.name} conservent leur place pour La Ligne !`}
-          </p>
+              ? `${sauvetageWinner.name} réussit son sauvetage et se qualifie !`
+              : "Le classement initial est maintenu pour la finale."}
+          </h3>
+
+          <div className="my-4 flex justify-center gap-3">
+            <span className="rounded-full bg-cyan-500/15 border border-cyan-500/30 px-4 py-1.5 text-xs font-bold text-cyan-300">
+              Finaliste 1 : {top1.name}
+            </span>
+            <span className="rounded-full bg-rose-500/15 border border-rose-500/30 px-4 py-1.5 text-xs font-bold text-rose-300">
+              Finaliste 2 : {(sauvetageWinner ?? top2).name}
+            </span>
+          </div>
 
           <button
             type="button"
             onClick={proceed}
-            className="fp-btn-primary w-full text-lg font-bold"
+            className="glass-primary mt-4 inline-flex items-center gap-2 rounded-xl px-6 py-3 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
           >
-            🔴 Lancer LA LIGNE
+            <span>Entrer dans La Ligne</span>
+            <ArrowRight className="h-4 w-4" />
           </button>
         </div>
       )}

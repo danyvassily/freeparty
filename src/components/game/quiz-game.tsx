@@ -7,6 +7,7 @@ import { REPORT_REASONS } from "@/lib/questions/schema";
 import { useGameStore } from "@/lib/store/game";
 import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
 import { ProgressRing, TimerBar, Confetti } from "@/components/ui/primitives";
+import { AlertCircle, Zap, Trophy } from "lucide-react";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";
@@ -163,12 +164,14 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   if (error) {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="text-5xl" aria-hidden="true">😕</div>
-        <h1 className="mt-4 font-display text-2xl font-bold">Oups</h1>
-        <p className="mt-2 text-fp-text-dim">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-8">
-          Retour à l&apos;accueil
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+          <AlertCircle className="h-6 w-6" />
+        </div>
+        <h1 className="mt-4 font-sans text-xl font-bold text-white">Une erreur est survenue</h1>
+        <p className="mt-2 text-xs text-neutral-400">{error}</p>
+        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-6 rounded-xl px-6 py-2.5 text-xs font-bold text-white">
+          Retour au menu
         </button>
       </main>
     );
@@ -176,9 +179,11 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   if (phase === "loading") {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center">
-        <div className="animate-spin-slow text-5xl" aria-hidden="true">🎲</div>
-        <p className="mt-4 animate-pulse text-fp-text-dim">Préparation des questions…</p>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 animate-pulse">
+          <Zap className="h-6 w-6" />
+        </div>
+        <p className="mt-4 text-xs text-neutral-400">Préparation des questions…</p>
       </main>
     );
   }
@@ -186,29 +191,31 @@ export function QuizGame({ mode }: QuizGameProps) {
   if (phase === "results") {
     const total = questions.length;
     const pct = Math.round((correctCount / total) * 100);
-    const grade = pct >= 90 ? "🏆 Légende !" : pct >= 70 ? "🌟 Excellent !" : pct >= 50 ? "👍 Pas mal !" : pct >= 30 ? "💪 On s’entraîne !" : "🫠 Reviens quand tu veux !";
+    const grade = pct >= 90 ? "Score Parfait" : pct >= 70 ? "Excellente Performance" : pct >= 50 ? "Bonne Maîtrise" : "Entraînement Requis";
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
         {pct >= 70 && <Confetti />}
-        <div className="animate-pop text-6xl" aria-hidden="true">{grade.split(" ")[0]}</div>
-        <h1 className="mt-4 font-display text-4xl font-bold">{grade}</h1>
-        <div className="fp-card mt-8 w-full max-w-sm p-6">
-          <div className="font-display text-6xl font-bold fp-gradient-text">
-            {correctCount}<span className="text-2xl text-fp-text-dim">/{total}</span>
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-tr from-violet-600 to-fuchsia-600 text-white shadow-xl mb-4">
+          <Trophy className="h-7 w-7" />
+        </div>
+        <h1 className="font-sans text-3xl font-extrabold text-white">{grade}</h1>
+        <div className="glass-panel mt-6 w-full max-w-sm rounded-3xl p-6 border-white/[0.1]">
+          <div className="font-mono text-5xl font-black text-white">
+            {correctCount}<span className="text-xl text-neutral-400 font-normal">/{total}</span>
           </div>
-          <p className="mt-2 text-fp-text-dim">{pct}% de bonnes réponses</p>
+          <p className="mt-1 text-xs text-neutral-400">{pct}% de réussite</p>
           {players.map((p) => (
-            <div key={p.id} className="mt-3 flex items-center justify-between rounded-xl bg-white/5 px-4 py-2">
-              <span className="font-semibold">{p.name}</span>
-              <span className="font-bold text-fp-accent">{roundScores[p.id] ?? 0} pts</span>
+            <div key={p.id} className="mt-3 flex items-center justify-between rounded-xl bg-white/[0.04] px-4 py-2 text-xs">
+              <span className="font-semibold text-white">{p.name}</span>
+              <span className="font-mono font-bold text-amber-300">{roundScores[p.id] ?? 0} pts</span>
             </div>
           ))}
         </div>
-        <div className="mt-8 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost flex-1">
+        <div className="mt-6 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">
             Accueil
           </button>
-          <button type="button" onClick={() => window.location.reload()} className="fp-btn-primary flex-1">
+          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">
             Rejouer
           </button>
         </div>
@@ -306,8 +313,9 @@ export function QuizGame({ mode }: QuizGameProps) {
 
         {/* Explication */}
         {phase === "answer" && current.explanation && (
-          <p className="animate-rise mt-4 rounded-2xl border border-fp-border bg-fp-surface/60 px-4 py-3 text-sm text-fp-text-dim">
-            💡 {current.explanation}
+          <p className="animate-rise mt-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] px-4 py-3 text-xs text-neutral-300">
+            <span className="font-bold text-violet-300 mr-1.5">Éclairage :</span>
+            {current.explanation}
           </p>
         )}
       </section>

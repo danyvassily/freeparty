@@ -6,6 +6,8 @@ import { pickWyrPair, WYR_CATEGORY_LABELS, type WouldYouRatherPair } from "@/lib
 import { useGameStore } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
 
+import { Scale } from "lucide-react";
+
 export function WyrGame() {
   const router = useRouter();
   const settings = useSettingsStore();
@@ -45,13 +47,15 @@ export function WyrGame() {
   if (finished) {
     const totalVotes = Object.values(allVotes).reduce((sum, v) => sum + v.A + v.B, 0);
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="animate-pop text-6xl" aria-hidden="true">🤝</div>
-        <h1 className="mt-4 font-display text-4xl font-bold">Débats tranchés !</h1>
-        <p className="mt-2 text-fp-text-dim">{round - 1} dilemmes · {totalVotes} votes</p>
-        <div className="mt-8 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost flex-1">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="fp-btn-primary flex-1">Rejouer</button>
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
+        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+          <Scale className="h-7 w-7" />
+        </div>
+        <h1 className="mt-2 font-sans text-3xl font-extrabold text-white">Dilemmes Clôturés</h1>
+        <p className="mt-1 text-xs text-neutral-400">{round - 1} dilemmes tranchés · {totalVotes} arbitrages</p>
+        <div className="mt-6 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">Accueil</button>
+          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">Rejouer</button>
         </div>
       </main>
     );

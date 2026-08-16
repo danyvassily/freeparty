@@ -93,17 +93,17 @@ export function SettingsPage() {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim transition-colors hover:text-white">
+        <button type="button" onClick={() => router.push("/")} className="text-xs font-semibold text-neutral-400 transition-colors hover:text-white">
           ← {t("config.back")}
         </button>
-        <h1 className="font-display text-xl font-bold">⚙️ {isFR ? "Réglages" : "Settings"}</h1>
+        <h1 className="font-sans text-base font-bold text-white">{isFR ? "Paramètres" : "Settings"}</h1>
         <span className="w-10" aria-hidden="true" />
       </div>
 
       {/* Quiz */}
       <section className="mt-6">
-        <h2 className="font-display text-sm font-bold uppercase tracking-widest text-fp-primary">
-          🎯 {isFR ? "Quiz" : "Quiz"}
+        <h2 className="font-sans text-xs font-bold uppercase tracking-widest text-violet-400">
+          {isFR ? "Quiz & Compétition" : "Quiz & Competition"}
         </h2>
         <div className="mt-3 grid gap-3">
           <TimePill
@@ -140,8 +140,8 @@ export function SettingsPage() {
 
       {/* Débat */}
       <section className="mt-8">
-        <h2 className="font-display text-sm font-bold uppercase tracking-widest text-fp-primary-2">
-          💬 {isFR ? "Débat" : "Debate"}
+        <h2 className="font-sans text-xs font-bold uppercase tracking-widest text-cyan-400">
+          {isFR ? "Débat & Réflexion" : "Debate & Arguments"}
         </h2>
         <div className="mt-3 grid gap-3">
           <TimePill
@@ -163,8 +163,8 @@ export function SettingsPage() {
 
       {/* Modes sociaux */}
       <section className="mt-8">
-        <h2 className="font-display text-sm font-bold uppercase tracking-widest text-fp-accent">
-          🎉 {isFR ? "Modes sociaux" : "Social modes"}
+        <h2 className="font-sans text-xs font-bold uppercase tracking-widest text-amber-400">
+          {isFR ? "Autres Modes" : "Other modes"}
         </h2>
         <div className="mt-3 grid gap-3">
           <NumberStepper

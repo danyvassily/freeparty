@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { BRAND } from "@/lib/brand";
-import { ModeCard } from "@/components/ui/primitives";
+import { ModeCard, SegmentControl } from "@/components/ui/primitives";
+import { AppIcon } from "@/components/ui/icons";
 import { getSupabaseBrowser } from "@/lib/supabase/client";
 import { useGameStore, type GameConfig, type Player } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
@@ -11,48 +12,63 @@ import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
 import { DEBATE_CATEGORIES } from "@/lib/debate/schema";
 import { SPECIALTIES, getSpecialtyById, DEFAULT_USER_PROFILE } from "@/lib/game/profile-specialty";
 import { getLeagueProgress, getCurrentSeason } from "@/lib/game/leagues";
+import {
+  Zap,
+  Lock,
+  Globe,
+  Settings,
+  User,
+  Clock,
+  ChevronRight,
+  ArrowRight,
+  Sparkles,
+  Layers,
+  Copy,
+  Check,
+  X,
+} from "lucide-react";
 
 type Step = "home" | "config" | "specialty-modal" | "private-modal";
 
 const THEMATIC_SALONS = [
-  { id: "mixed", name: "Culture Générale Complète", emoji: "🌐", desc: "Toutes les disciplines confondues" },
-  { id: "cinema", name: "Cinéma & Séries uniquement", emoji: "🎬", desc: "Réalisateurs, plans cultes, chefs-d'œuvre" },
-  { id: "philosophie", name: "Philosophie & Sciences Humaines", emoji: "🏛️", desc: "Concepts majeurs, Bourdieu, Deleuze, éthique" },
-  { id: "art", name: "Art & Grands Musées", emoji: "🎨", desc: "Met, Rijksmuseum, Art Institute of Chicago" },
-  { id: "litterature", name: "Littérature Universelle", emoji: "📚", desc: "Romans majeurs, poésie, auteurs classiques" },
-  { id: "histoire", name: "Histoire & Guerres mondiales", emoji: "⚔️", desc: "Grandes batailles, traités et tournants" },
-  { id: "science", name: "Sciences & Astrophysique", emoji: "🔬", desc: "Physique quantique, mathématiques, découvertes" },
-  { id: "geographie", name: "Géographie & Capitales", emoji: "🌍", desc: "Capitales du monde, monnaies et territoires" },
+  { id: "mixed", name: "Culture Générale Complète", icon: "globe", desc: "Toutes les disciplines confondues" },
+  { id: "cinema", name: "Cinéma & Séries", icon: "cinema", desc: "Réalisateurs, plans cultes, chefs-d'œuvre" },
+  { id: "philosophie", name: "Philosophie & Idées", icon: "philosophie", desc: "Concepts majeurs, éthique et métaphysique" },
+  { id: "art", name: "Art & Grands Musées", icon: "art", desc: "Met, Rijksmuseum, Art Institute of Chicago" },
+  { id: "litterature", name: "Littérature Universelle", icon: "litterature", desc: "Romans majeurs, poésie, classiques" },
+  { id: "histoire", name: "Histoire & Tournants", icon: "histoire", desc: "Grandes batailles, traités et empires" },
+  { id: "science", name: "Sciences & Astrophysique", icon: "science", desc: "Physique quantique, mathématiques, tech" },
+  { id: "geographie", name: "Géographie & Territoires", icon: "geographie", desc: "Capitales du monde, monnaies et frontières" },
 ];
 
 const MODE_GROUPS: Array<{
   title: string;
-  emoji: string;
+  icon: string;
   modes: Array<{
     id: GameConfig["mode"];
     title: string;
     subtitle: string;
-    emoji: string;
-    gradient: string;
+    icon: string;
+    featured?: boolean;
   }>;
 }> = [
   {
-    title: "Modes Compétitifs",
-    emoji: "⚡",
+    title: "Expériences Compétitives",
+    icon: "zap",
     modes: [
-      { id: "prism", title: "PRISM (Mode Majeur)", subtitle: "Tour par tour, Buzzer, Le Cut et finale La Ligne", emoji: "🔴", gradient: "bg-gradient-to-br from-violet-600 via-fuchsia-600 to-amber-500" },
-      { id: "classic", title: "Classic Quiz", subtitle: "Questions directes, 4 choix, tout le monde joue", emoji: "🎯", gradient: "bg-gradient-to-br from-fp-primary to-fp-primary-2" },
-      { id: "rapidfire", title: "Rapid Fire", subtitle: "20 questions en 6 secondes chacune", emoji: "🔥", gradient: "bg-gradient-to-br from-fp-accent to-fp-danger" },
-      { id: "timeline", title: "Timeline", subtitle: "Replace les événements dans l’ordre", emoji: "🕰️", gradient: "bg-gradient-to-br from-fp-accent-2 to-fp-success" },
+      { id: "prism", title: "PRISM", subtitle: "Tour par tour, Buzzer, Le Cut et finale La Ligne", icon: "prism", featured: true },
+      { id: "classic", title: "Classic Quiz", subtitle: "Questions directes, 4 propositions, chrono standard", icon: "classic" },
+      { id: "rapidfire", title: "Rapid Fire", subtitle: "20 questions avec 6 secondes de réaction", icon: "rapidfire" },
+      { id: "timeline", title: "Timeline", subtitle: "Remets les événements historiques dans l'ordre chronologique", icon: "timeline" },
     ],
   },
   {
     title: "Débat & Réflexion",
-    emoji: "💬",
+    icon: "debate",
     modes: [
-      { id: "debate", title: "Debate Mode", subtitle: "Philosophie, politique, éthique — avec temps de parole équitable", emoji: "💬", gradient: "bg-gradient-to-br from-fp-primary to-fp-accent" },
-      { id: "wyr", title: "Would You Rather", subtitle: "Les choix impossibles qui font débattre", emoji: "🤔", gradient: "bg-gradient-to-br from-fp-warning to-fp-accent" },
-      { id: "guess", title: "Guess & Indices", subtitle: "Devine avec des indices progressifs", emoji: "🕵️", gradient: "bg-gradient-to-br from-fp-success to-fp-accent-2" },
+      { id: "debate", title: "Débat Structuré", subtitle: "Philosophie, éthique et politique avec temps de parole équitable", icon: "debate" },
+      { id: "wyr", title: "Dilemmes & Choix", subtitle: "Les dilemmes radicaux qui forcent l'argumentation", icon: "wyr" },
+      { id: "guess", title: "Indices & Déduction", subtitle: "Devine les concepts avec des indices progressifs", icon: "guess" },
     ],
   },
 ];
@@ -65,13 +81,13 @@ export function HomeClient() {
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [step, setStep] = useState<Step>("home");
   const [selectedMode, setSelectedMode] = useState<GameConfig["mode"]>("prism");
-  const [selectedDuration] = useState<"express" | "classic">("express");
+  const [selectedDuration, setSelectedDuration] = useState<"express" | "classic">("express");
   const [thematicSalon, setThematicSalon] = useState<string>("mixed");
   const [category, setCategory] = useState<QuestionCategory | "mixed">("mixed");
-  const [difficulty] = useState("mixed");
   const [userSpecialty, setUserSpecialty] = useState<string>(DEFAULT_USER_PROFILE.specialtyId);
   const [userPoints] = useState<number>(DEFAULT_USER_PROFILE.seasonPoints);
   const [privateCode, setPrivateCode] = useState<string>("");
+  const [copied, setCopied] = useState(false);
   const [players] = useState<Player[]>(() => [
     { id: "p1", name: "Dany", color: 0, specialtyId: DEFAULT_USER_PROFILE.specialtyId, score: 0, correct: 0, wrong: 0 },
     { id: "p2", name: "Anna", color: 1, specialtyId: "litterature", score: 0, correct: 0, wrong: 0 },
@@ -102,7 +118,7 @@ export function HomeClient() {
     setStep("config");
   }
 
-  function launchQuickGame(dur: "express" | "classic" = "express") {
+  function launchQuickGame(dur: "express" | "classic" = selectedDuration) {
     const cfg: GameConfig = {
       mode: "prism",
       duration: dur,
@@ -126,7 +142,7 @@ export function HomeClient() {
       mode: selectedMode,
       duration: selectedDuration,
       category,
-      difficulty,
+      difficulty: "mixed",
       players,
       questionCount: selectedDuration === "express" ? 10 : 20,
       timePerQuestion:
@@ -149,45 +165,45 @@ export function HomeClient() {
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col px-4 pb-24 pt-6">
-      {/* Header : Logo PRISM, Badge Ligue, Profil */}
-      <header className="flex items-center justify-between border-b border-white/10 pb-4">
-        <div className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-violet-600 via-fuchsia-600 to-amber-400 text-base font-black text-white shadow-lg shadow-violet-500/20">
-            ⚡
+    <main className="mx-auto flex min-h-dvh w-full max-w-3xl flex-col px-4 pb-28 pt-6">
+      {/* Navigation Header Apple Pro */}
+      <header className="flex items-center justify-between border-b border-white/[0.08] pb-4">
+        <div className="flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 via-fuchsia-600 to-amber-400 text-white shadow-md shadow-violet-600/20">
+            <Zap className="h-4 w-4 fill-white" />
           </div>
           <div className="flex flex-col">
-            <span className="font-display text-lg font-black tracking-tight text-white leading-none">
+            <span className="font-sans text-base font-bold tracking-tight text-white leading-none">
               {BRAND.name}
             </span>
-            <span className="text-[11px] font-medium text-fp-text-dim mt-0.5">
+            <span className="text-[11px] font-medium text-neutral-400 mt-0.5 tracking-wide">
               {BRAND.tagline}
             </span>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Badge Ligue du joueur */}
-          <div className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs">
-            <span>{leagueProg.currentTier.emoji}</span>
-            <span className={`font-mono font-bold ${leagueProg.currentTier.textColor}`}>
+          {/* Badge Ligue avec icône vectorielle */}
+          <div className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs backdrop-blur-md">
+            <AppIcon name={leagueProg.currentTier.icon} className={`h-3.5 w-3.5 ${leagueProg.currentTier.textColor}`} />
+            <span className={`font-semibold ${leagueProg.currentTier.textColor}`}>
               {leagueProg.currentTier.name}
             </span>
-            <span className="font-mono text-white/50 text-[11px]">{userPoints} pts</span>
+            <span className="font-mono text-neutral-400 text-[11px] font-normal">{userPoints} pts</span>
           </div>
 
           <button
             type="button"
             onClick={() => router.push("/auth")}
             aria-label="Profil"
-            className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-fp-text-dim hover:text-white"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-neutral-300 transition-all hover:bg-white/[0.08] hover:text-white"
           >
             {userEmail ? (
               <span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500 text-[10px] font-bold text-white">
                 {userEmail.charAt(0).toUpperCase()}
               </span>
             ) : (
-              "👤"
+              <User className="h-3.5 w-3.5" />
             )}
           </button>
 
@@ -195,54 +211,66 @@ export function HomeClient() {
             type="button"
             onClick={() => router.push("/settings")}
             aria-label="Paramètres"
-            className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-fp-text-dim hover:text-white"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-neutral-300 transition-all hover:bg-white/[0.08] hover:text-white"
           >
-            ⚙️
+            <Settings className="h-3.5 w-3.5" />
           </button>
         </div>
       </header>
 
-      {/* Bannière Saison & Spécialité Déclarée */}
-      <section className="my-5 flex flex-col sm:flex-row items-stretch gap-3">
-        {/* Carte Spécialité Publique */}
+      {/* Dashboard : Spécialité Déclarée & Progression Saisonnière */}
+      <section className="my-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {/* Carte Spécialité */}
         <div
           onClick={() => setStep("specialty-modal")}
-          className="flex-1 fp-card p-4 border border-violet-500/30 bg-gradient-to-r from-violet-950/40 to-white/[0.02] cursor-pointer hover:border-violet-400 transition-all flex items-center justify-between"
+          className="glass-panel group relative flex cursor-pointer items-center justify-between rounded-2xl p-4 transition-all duration-200 hover:border-violet-500/40 hover:bg-white/[0.05]"
         >
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">{specialtyObj.emoji}</span>
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-violet-500/30 bg-violet-500/10 text-violet-300">
+              <AppIcon name={specialtyObj.icon} className="h-5 w-5" />
+            </div>
             <div className="flex flex-col">
-              <span className="text-[10px] font-mono uppercase tracking-wider text-violet-300 font-bold">
-                MA SPÉCIALITÉ (NIVEAU 4)
-              </span>
-              <span className="font-display text-base font-bold text-white">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-violet-400">
+                  SPÉCIALITÉ DÉCLARÉE
+                </span>
+                <span className="rounded-sm bg-violet-500/20 px-1 py-0.2 text-[9px] font-mono font-bold text-violet-300">
+                  NIV. 4
+                </span>
+              </div>
+              <span className="font-sans text-sm font-bold text-white mt-0.5">
                 {specialtyObj.name}
               </span>
             </div>
           </div>
-          <span className="text-xs text-violet-400 font-semibold underline underline-offset-2">
-            Modifier
-          </span>
+
+          <div className="flex items-center gap-1 text-xs font-medium text-neutral-400 group-hover:text-violet-300 transition-colors">
+            <span>Modifier</span>
+            <ChevronRight className="h-3.5 w-3.5" />
+          </div>
         </div>
 
         {/* Carte Saison & Ligue */}
-        <div className="flex-1 fp-card p-4 border border-white/10 bg-white/[0.02] flex flex-col justify-between">
-          <div className="flex items-center justify-between text-xs mb-2">
-            <span className="font-display font-bold text-white/80">{season.name}</span>
-            <span className="font-mono text-[11px] text-fp-text-dim">
-              ⏳ {season.daysRemaining}j restants
+        <div className="glass-panel flex flex-col justify-between rounded-2xl p-4">
+          <div className="flex items-center justify-between text-xs">
+            <span className="font-sans font-semibold text-white/90">{season.name}</span>
+            <span className="flex items-center gap-1 text-[11px] font-medium text-neutral-400">
+              <Clock className="h-3 w-3" />
+              <span>{season.daysRemaining} jours restants</span>
             </span>
           </div>
-          <div className="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+
+          <div className="my-2.5 h-1.5 w-full overflow-hidden rounded-full bg-white/[0.06]">
             <div
-              className="bg-gradient-to-r from-amber-400 to-yellow-300 h-full rounded-full transition-all"
+              className="h-full rounded-full bg-gradient-to-r from-amber-400 to-yellow-200 transition-all duration-500"
               style={{ width: `${leagueProg.progressPercent}%` }}
             />
           </div>
-          <div className="flex justify-between text-[10px] font-mono text-white/40 mt-1.5">
+
+          <div className="flex justify-between text-[10px] font-mono text-neutral-400">
             <span>{leagueProg.currentTier.name}</span>
             <span>
-              {leagueProg.pointsToNext > 0 ? `+${leagueProg.pointsToNext} pts pour ${leagueProg.nextTier?.name}` : "Rang Maximum"}
+              {leagueProg.pointsToNext > 0 ? `+${leagueProg.pointsToNext} pts pour ${leagueProg.nextTier?.name}` : "Rang Maître"}
             </span>
           </div>
         </div>
@@ -250,93 +278,105 @@ export function HomeClient() {
 
       {step === "home" ? (
         <>
-          {/* Action Principale : Bouton JOUER & Choix de Durée */}
-          <section className="my-4 text-center">
-            <div className="fp-card p-6 border border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent shadow-2xl">
-              <span className="inline-block rounded-full bg-amber-400/10 border border-amber-400/30 px-3 py-1 text-[11px] font-mono font-extrabold uppercase tracking-widest text-amber-300 mb-3">
-                🔴 EXPÉRIENCE COMPÉTITIVE PRISM
-              </span>
+          {/* Main Hero Card : Lancement Rapide PRISM */}
+          <section className="my-3">
+            <div className="glass-panel relative overflow-hidden rounded-3xl p-6 sm:p-8 text-center border-white/[0.12] shadow-2xl">
+              <div className="absolute -top-24 left-1/2 -translate-x-1/2 h-48 w-72 rounded-full bg-violet-600/15 blur-3xl" />
 
-              <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Le grand jeu de culture pour adultes
+              <div className="inline-flex items-center gap-1.5 rounded-full border border-violet-400/20 bg-violet-500/10 px-3 py-1 text-[11px] font-mono font-bold uppercase tracking-widest text-violet-300 mb-4">
+                <Sparkles className="h-3 w-3" />
+                <span>EXPÉRIENCE COMPÉTITIVE MAJEURE</span>
+              </div>
+
+              <h1 className="font-sans text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                Culture compétitive pour adultes
               </h1>
-              <p className="mt-2 text-xs sm:text-sm text-fp-text-dim max-w-md mx-auto">
-                Tour par tour tactique, Buzzer électrique avec indices, Le Cut et la finale signature La Ligne.
+              <p className="mt-2 text-xs sm:text-sm text-neutral-400 max-w-lg mx-auto leading-relaxed">
+                Tour par tour tactique, Buzzer électrique avec indices progressifs, Le Cut et la finale signature La Ligne.
               </p>
 
-              {/* Sélection du Salon Thématique */}
-              <div className="my-5 text-left max-w-md mx-auto">
-                <label className="text-xs font-mono font-bold text-white/60 uppercase block mb-1.5">
-                  Salon Thématique
-                </label>
-                <select
-                  value={thematicSalon}
-                  onChange={(e) => setThematicSalon(e.target.value)}
-                  className="w-full rounded-2xl border border-white/15 bg-fp-bg px-3.5 py-3 text-sm font-semibold text-white outline-none focus:border-violet-400"
-                >
-                  {THEMATIC_SALONS.map((s) => (
-                    <option key={s.id} value={s.id}>
-                      {s.emoji} {s.name}
-                    </option>
-                  ))}
-                </select>
+              {/* Sélection Format & Durée */}
+              <div className="mt-6 max-w-md mx-auto flex flex-col gap-3">
+                <SegmentControl
+                  options={[
+                    { value: "express", label: "Express (~10 min)", icon: "zap" },
+                    { value: "classic", label: "Classique (~20 min)", icon: "clock" },
+                  ]}
+                  value={selectedDuration}
+                  onChange={(val) => setSelectedDuration(val)}
+                />
+
+                {/* Sélecteur de Salon Thématique */}
+                <div className="text-left">
+                  <label className="text-[11px] font-mono font-bold uppercase tracking-wider text-neutral-400 block mb-1.5">
+                    Discipline du match
+                  </label>
+                  <select
+                    value={thematicSalon}
+                    onChange={(e) => setThematicSalon(e.target.value)}
+                    aria-label="Discipline du match"
+                    className="w-full rounded-xl border border-white/[0.1] bg-black/40 px-3.5 py-2.5 text-xs font-semibold text-white outline-none transition-colors focus:border-violet-400"
+                  >
+                    {THEMATIC_SALONS.map((s) => (
+                      <option key={s.id} value={s.id} className="bg-[#0e0e14] text-white">
+                        {s.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
-              {/* Choix Durée Express vs Classique */}
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-4">
+              {/* Bouton de Lancement Principal */}
+              <div className="mt-6 max-w-md mx-auto">
                 <button
                   type="button"
-                  onClick={() => launchQuickGame("express")}
-                  className="flex-1 fp-btn-primary flex flex-col items-center py-3.5"
+                  onClick={() => launchQuickGame(selectedDuration)}
+                  className="glass-primary flex w-full items-center justify-center gap-2 rounded-xl py-4 text-sm font-bold text-white shadow-lg shadow-violet-600/30 transition-all hover:shadow-violet-600/50 active:scale-[0.98]"
                 >
-                  <span className="text-base font-black">⚡ EXPRESS (~10 min)</span>
-                  <span className="text-[11px] opacity-80 font-normal">3 manches + Cut + La Ligne</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => launchQuickGame("classic")}
-                  className="flex-1 fp-btn-ghost flex flex-col items-center py-3.5 hover:border-violet-400"
-                >
-                  <span className="text-base font-bold text-white">🏛️ CLASSIQUE (~20 min)</span>
-                  <span className="text-[11px] text-fp-text-dim">5 manches + Cut + La Ligne</span>
+                  <span>LANCER LE MATCH PRISM</span>
+                  <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
 
-              {/* Actions Rapides Secondaires */}
-              <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {/* Actions Secondaires */}
+              <div className="mt-5 flex flex-wrap justify-center gap-2.5">
                 <button
                   type="button"
                   onClick={createPrivateSalon}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white hover:bg-white/10"
+                  className="glass-button inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold text-neutral-300 hover:text-white"
                 >
-                  🔒 Créer une partie privée
+                  <Lock className="h-3 w-3 text-neutral-400" />
+                  <span>Créer un salon privé</span>
                 </button>
                 <button
                   type="button"
                   onClick={() => router.push("/play/online")}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold text-white hover:bg-white/10"
+                  className="glass-button inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold text-neutral-300 hover:text-white"
                 >
-                  🌍 Matchmaking en ligne
+                  <Globe className="h-3 w-3 text-neutral-400" />
+                  <span>Matchmaking en ligne</span>
                 </button>
               </div>
             </div>
           </section>
 
-          {/* Autres Modes de Jeu */}
+          {/* Catalogue des Modes de Jeu */}
           {MODE_GROUPS.map((group) => (
             <section key={group.title} className="mt-8">
-              <h2 className="flex items-center gap-2 font-display text-xs font-bold uppercase tracking-widest text-fp-text-dim">
-                <span>{group.emoji}</span> {group.title}
-              </h2>
-              <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="flex items-center gap-2 mb-3">
+                <AppIcon name={group.icon} className="h-4 w-4 text-neutral-400" />
+                <h2 className="font-sans text-xs font-bold uppercase tracking-wider text-neutral-400">
+                  {group.title}
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {group.modes.map((m) => (
                   <ModeCard
                     key={m.id}
                     title={m.title}
                     subtitle={m.subtitle}
-                    emoji={m.emoji}
-                    gradient={m.gradient}
+                    icon={m.icon}
+                    featured={m.featured}
                     onClick={() => pickMode(m.id)}
                   />
                 ))}
@@ -345,24 +385,23 @@ export function HomeClient() {
           ))}
         </>
       ) : step === "config" ? (
-        /* Configuration d'une partie spécifique */
-        <section className="mt-6">
+        /* Configuration de Mode Spécifique */
+        <section className="glass-panel mt-6 rounded-3xl p-6 border-white/[0.1]">
           <button
             type="button"
             onClick={() => setStep("home")}
-            className="mb-4 text-xs font-semibold text-fp-text-dim hover:text-white"
+            className="mb-4 inline-flex items-center gap-1 text-xs font-semibold text-neutral-400 hover:text-white transition-colors"
           >
-            ← Retour au menu
+            <span>← Retour au menu principal</span>
           </button>
 
-          <h2 className="font-display text-2xl font-bold text-white">
-            {isDebate ? "Configurer le Débat" : "Configurer la Partie"}
+          <h2 className="font-sans text-xl font-bold text-white">
+            {isDebate ? "Configuration du Débat" : "Configuration de la Partie"}
           </h2>
 
-          {/* Catégories */}
           <div className="mt-5">
-            <h3 className="font-display text-xs font-bold uppercase tracking-widest text-fp-text-dim mb-2">
-              Discipline
+            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 mb-2.5">
+              Sélection de la discipline
             </h3>
             <div className="flex flex-wrap gap-2">
               {(isDebate ? DEBATE_CATEGORIES : ["mixed", ...CATEGORIES]).map((c) => (
@@ -370,10 +409,10 @@ export function HomeClient() {
                   key={c}
                   type="button"
                   onClick={() => setCategory(c as QuestionCategory | "mixed")}
-                  className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all ${
+                  className={`rounded-xl px-3.5 py-2 text-xs font-semibold transition-all ${
                     category === c
-                      ? "bg-violet-600 text-white shadow-lg shadow-violet-500/30"
-                      : "border border-white/10 bg-white/5 text-fp-text-dim hover:text-white"
+                      ? "glass-primary text-white"
+                      : "border border-white/[0.08] bg-white/[0.03] text-neutral-400 hover:text-white hover:border-white/[0.15]"
                   }`}
                 >
                   {c}
@@ -385,72 +424,92 @@ export function HomeClient() {
           <button
             type="button"
             onClick={startCustomGame}
-            className="fp-btn-primary mt-8 w-full text-base font-bold"
+            className="glass-primary mt-8 flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white shadow-lg shadow-violet-600/30"
           >
-            Lancer la partie
+            <span>Lancer la session</span>
+            <ArrowRight className="h-4 w-4" />
           </button>
         </section>
       ) : step === "specialty-modal" ? (
-        /* Modal Sélection Spécialité */
-        <section className="mt-6 fp-card p-6 border border-white/20 animate-pop">
-          <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        /* Modal Sélection de Spécialité Apple Pro */
+        <section className="glass-panel mt-6 rounded-3xl p-6 border-white/[0.15] animate-pop">
+          <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
             <div>
-              <h2 className="font-display text-xl font-bold text-white">Choisis ta Spécialité</h2>
-              <p className="text-xs text-fp-text-dim mt-0.5">
-                Les questions de ta spécialité passeront en Niveau 4 (Expert) pour tester ton domaine !
+              <div className="flex items-center gap-2">
+                <Layers className="h-4 w-4 text-violet-400" />
+                <h2 className="font-sans text-lg font-bold text-white">Choisir sa Spécialité</h2>
+              </div>
+              <p className="text-xs text-neutral-400 mt-1">
+                Toutes les questions tirées dans ta spécialité passeront en Niveau 4 (Expert).
               </p>
             </div>
             <button
               type="button"
               onClick={() => setStep("home")}
-              className="text-xs font-semibold text-fp-text-dim hover:text-white"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-neutral-400 hover:text-white"
             >
-              ✕ Fermer
+              <X className="h-4 w-4" />
             </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {SPECIALTIES.map((spec) => (
-              <button
-                key={spec.id}
-                type="button"
-                onClick={() => {
-                  setUserSpecialty(spec.id);
-                  setStep("home");
-                }}
-                className={`flex items-start gap-3 p-3.5 rounded-2xl border text-left transition-all ${
-                  userSpecialty === spec.id
-                    ? "border-violet-500 bg-violet-950/40 text-white shadow-lg shadow-violet-500/10"
-                    : "border-white/10 bg-white/5 hover:border-white/25 text-white/80"
-                }`}
-              >
-                <span className="text-2xl shrink-0 mt-0.5">{spec.emoji}</span>
-                <div className="flex flex-col">
-                  <span className="font-display text-sm font-bold">{spec.name}</span>
-                  <span className="text-[11px] text-fp-text-dim leading-snug mt-1">
-                    {spec.description}
-                  </span>
-                </div>
-              </button>
-            ))}
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[60vh] overflow-y-auto pr-1">
+            {SPECIALTIES.map((spec) => {
+              const selected = userSpecialty === spec.id;
+              return (
+                <button
+                  key={spec.id}
+                  type="button"
+                  onClick={() => {
+                    setUserSpecialty(spec.id);
+                    setStep("home");
+                  }}
+                  className={`group relative flex items-start gap-3.5 rounded-2xl p-4 text-left transition-all duration-200 ${
+                    selected
+                      ? "border border-violet-500/60 bg-violet-600/15 shadow-md shadow-violet-600/20 text-white"
+                      : "border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.06] hover:border-white/[0.14] text-neutral-300"
+                  }`}
+                >
+                  <div
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-colors ${
+                      selected
+                        ? "bg-violet-600 text-white"
+                        : "border border-white/[0.08] bg-white/[0.04] text-neutral-400 group-hover:text-white"
+                    }`}
+                  >
+                    <AppIcon name={spec.icon} className="h-5 w-5" />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <span className="font-sans text-sm font-bold text-white leading-tight">
+                      {spec.name}
+                    </span>
+                    <span className="text-xs text-neutral-400 mt-1 leading-snug line-clamp-2">
+                      {spec.description}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </section>
       ) : step === "private-modal" ? (
-        /* Modal Salon Privé Créé */
-        <section className="mt-6 fp-card p-6 border border-white/20 text-center animate-pop">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-amber-300">
-            SALON PRIVÉ PRÊT
-          </span>
-          <h2 className="font-display text-3xl font-extrabold text-white mt-2">Code d&apos;invitation</h2>
+        /* Modal Salon Privé */
+        <section className="glass-panel mt-6 rounded-3xl p-8 border-white/[0.15] text-center animate-pop">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-amber-300">
+            <Lock className="h-3 w-3" />
+            <span>SALON PRIVÉ PRÊT</span>
+          </div>
 
-          <div className="my-6 inline-flex items-center justify-center rounded-2xl border-2 border-amber-400/60 bg-amber-400/10 px-8 py-4">
-            <span className="font-mono text-4xl font-black tracking-[0.3em] text-white">
+          <h2 className="font-sans text-2xl font-extrabold text-white mt-3">Code de Connexion</h2>
+
+          <div className="my-6 inline-flex items-center justify-center rounded-2xl border border-white/[0.12] bg-white/[0.04] px-8 py-4 backdrop-blur-xl">
+            <span className="font-mono text-3xl font-extrabold tracking-[0.25em] text-white">
               {privateCode}
             </span>
           </div>
 
-          <p className="text-xs text-fp-text-dim max-w-sm mx-auto mb-6">
-            Partage ce code à tes amis. Ils peuvent rejoindre instantanément depuis l&apos;accueil sans création de compte.
+          <p className="text-xs text-neutral-400 max-w-sm mx-auto mb-6 leading-relaxed">
+            Transmets ce code à tes invités. Ils peuvent rejoindre instantanément sans téléchargement ni mot de passe.
           </p>
 
           <div className="flex gap-3 max-w-sm mx-auto">
@@ -458,25 +517,29 @@ export function HomeClient() {
               type="button"
               onClick={() => {
                 navigator.clipboard?.writeText(window.location.origin + `?room=${privateCode}`);
-                alert("Lien d'invitation copié !");
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
               }}
-              className="fp-btn-ghost flex-1 text-xs"
+              className="glass-button flex-1 inline-flex items-center justify-center gap-2 rounded-xl py-3 text-xs font-semibold text-white"
             >
-              📋 Copier le lien
+              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+              <span>{copied ? "Copié !" : "Copier le lien"}</span>
             </button>
             <button
               type="button"
               onClick={() => launchQuickGame("express")}
-              className="fp-btn-primary flex-1 text-sm font-bold"
+              className="glass-primary flex-1 inline-flex items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
             >
-              🚀 Lancer
+              <span>Lancer le match</span>
+              <ArrowRight className="h-3.5 w-3.5" />
             </button>
           </div>
         </section>
       ) : null}
 
-      <footer className="mt-16 text-center text-xs text-fp-text-dim/60">
-        {BRAND.fullName} · {BRAND.tagline} · PWA Installable · Zéro API externe en jeu
+      <footer className="mt-16 text-center text-xs text-neutral-400">
+        <p className="font-medium">{BRAND.fullName} · {BRAND.tagline}</p>
+        <p className="mt-1 text-[11px] text-neutral-400">PWA Installable · Moteur Déterministe · Zero ELO Caché</p>
       </footer>
     </main>
   );

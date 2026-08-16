@@ -12,7 +12,8 @@ export interface SpecialtyDefinition {
   id: string;
   name: string;
   nameEn: string;
-  emoji: string;
+  icon: string;
+  emoji?: string;
   description: string;
   descriptionEn: string;
   matchedCategories: QuestionCategory[];
@@ -24,6 +25,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "cinema",
     name: "Cinéma & Séries",
     nameEn: "Cinema & TV Shows",
+    icon: "cinema",
     emoji: "🎬",
     description: "Réalisateurs, plans cultes, chefs-d'œuvre mondiaux et cinéma d'auteur.",
     descriptionEn: "Directors, iconic shots, world masterpieces and auteur cinema.",
@@ -34,6 +36,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "art",
     name: "Art & Peinture",
     nameEn: "Art & Painting",
+    icon: "art",
     emoji: "🎨",
     description: "Grands maîtres, mouvements artistiques, musées mondiaux et toiles emblématiques.",
     descriptionEn: "Old masters, art movements, world museums and iconic canvases.",
@@ -44,6 +47,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "philosophie",
     name: "Philosophie",
     nameEn: "Philosophy",
+    icon: "philosophie",
     emoji: "🏛️",
     description: "Concepts fondamentaux, grands penseurs, éthique, métaphysique et épistémologie.",
     descriptionEn: "Core concepts, great thinkers, ethics, metaphysics and epistemology.",
@@ -54,6 +58,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "litterature",
     name: "Littérature",
     nameEn: "Literature",
+    icon: "litterature",
     emoji: "📚",
     description: "Romans majeurs, poésie, prix Nobel et classiques des lettres universelles.",
     descriptionEn: "Major novels, poetry, Nobel prizes and universal literary classics.",
@@ -64,6 +69,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "sciences-humaines",
     name: "Sciences Humaines",
     nameEn: "Humanities & Social Sciences",
+    icon: "sciences-humaines",
     emoji: "🧠",
     description: "Sociologie, psychologie, anthropologie, économie politique et sciences cognitives.",
     descriptionEn: "Sociology, psychology, anthropology, political economy and cognitive sciences.",
@@ -74,6 +80,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "science",
     name: "Sciences & Technologies",
     nameEn: "Science & Technology",
+    icon: "science",
     emoji: "🔬",
     description: "Physique théorique, astrophysique, biologie, mathématiques et révolutions tech.",
     descriptionEn: "Theoretical physics, astrophysics, biology, mathematics and tech revolutions.",
@@ -84,6 +91,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "geographie",
     name: "Géographie & Capitales",
     nameEn: "Geography & Capitals",
+    icon: "geographie",
     emoji: "🌍",
     description: "Capitales du monde, monnaies, frontières, reliefs et géopolitique spatiale.",
     descriptionEn: "World capitals, currencies, borders, landforms and spatial geopolitics.",
@@ -94,6 +102,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "histoire",
     name: "Histoire & Guerres",
     nameEn: "History & Conflicts",
+    icon: "histoire",
     emoji: "⚔️",
     description: "Grands conflits, traités, civilisations disparues et tournants historiques.",
     descriptionEn: "Major conflicts, treaties, lost civilizations and historical turning points.",
@@ -104,6 +113,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "sport",
     name: "Sport & Légendes",
     nameEn: "Sports & Legends",
+    icon: "sport",
     emoji: "⚽",
     description: "Jeux Olympiques, records d'anthologie, tactique et figures légendaires.",
     descriptionEn: "Olympic Games, all-time records, tactics and legendary figures.",
@@ -114,6 +124,7 @@ export const SPECIALTIES: SpecialtyDefinition[] = [
     id: "musique",
     name: "Musique & Opéra",
     nameEn: "Music & Opera",
+    icon: "musique",
     emoji: "🎵",
     description: "Musique classique, opéra, jazz, révolutions rock et pop culture sonore.",
     descriptionEn: "Classical music, opera, jazz, rock revolutions and acoustic culture.",

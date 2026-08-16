@@ -23,6 +23,7 @@ import {
   type OnlinePlayer,
   type RoomAnswer,
 } from "@/lib/online/room";
+import { Globe, Trophy, Play, Eye, ArrowRight, Home, Zap } from "lucide-react";
 import type { Question } from "@/lib/questions/schema";
 import { TimerBar, Confetti } from "@/components/ui/primitives";
 
@@ -343,12 +344,14 @@ export function OnlineRoom() {
   // ---------- RENDU ----------
   if (view === "auth") {
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="text-5xl" aria-hidden="true">🌍</div>
-        <h1 className="mt-4 font-display text-3xl font-bold">{t("online.title")}</h1>
-        <p className="mt-2 max-w-sm text-fp-text-dim">{t("online.needAuth")}</p>
-        {error && <p className="mt-4 rounded-xl bg-fp-danger/10 px-4 py-2.5 text-sm text-fp-danger">{error}</p>}
-        <button type="button" onClick={() => router.push("/auth")} className="fp-btn-primary mt-8">
+      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-600/20 text-cyan-300 border border-cyan-500/30">
+          <Globe className="h-6 w-6" />
+        </div>
+        <h1 className="mt-4 font-sans text-2xl font-bold text-white">{t("online.title")}</h1>
+        <p className="mt-2 max-w-sm text-xs text-neutral-400">{t("online.needAuth")}</p>
+        {error && <p className="mt-4 rounded-xl bg-rose-500/10 px-4 py-2.5 text-xs text-rose-300">{error}</p>}
+        <button type="button" onClick={() => router.push("/auth")} className="glass-primary mt-6 rounded-xl px-6 py-3 text-xs font-bold text-white shadow-lg">
           {t("auth.login")} / {t("auth.register")}
         </button>
       </main>
@@ -358,21 +361,22 @@ export function OnlineRoom() {
   if (view === "home") {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim">← {t("config.back")}</button>
-        <h1 className="mt-4 font-display text-3xl font-bold">🌍 {t("online.title")}</h1>
-        <p className="mt-1 text-fp-text-dim">
-          {lang === "fr" ? "Crée un salon et partage le code avec tes amis — chacun joue sur son appareil." : "Create a room and share the code — everyone plays on their own device."}
+        <button type="button" onClick={() => router.push("/")} className="text-xs font-semibold text-neutral-400 hover:text-white">← {t("config.back")}</button>
+        <h1 className="mt-4 font-sans text-2xl font-bold text-white">{t("online.title")}</h1>
+        <p className="mt-1 text-xs text-neutral-400">
+          {lang === "fr" ? "Créez un salon et partagez le code d'accès — chaque participant joue sur son propre appareil." : "Create a room and share the code — everyone plays on their own device."}
         </p>
 
-        <div className="fp-card mt-6 p-6">
-          <h2 className="font-display text-lg font-bold">{t("online.create")}</h2>
-          <p className="mt-1 text-sm text-fp-text-dim">
+        <div className="glass-panel mt-6 rounded-3xl p-6 border-white/[0.08]">
+          <h2 className="font-sans text-sm font-bold text-white">{t("online.create")}</h2>
+          <p className="mt-1 text-xs text-neutral-400">
             {config
-              ? lang === "fr" ? `Config actuelle : ${config.mode} · ${config.category}` : `Current config: ${config.mode} · ${config.category}`
-              : lang === "fr" ? "Utilise la configuration de ta dernière partie (ou reviens configurer sur l'accueil)." : "Uses your latest game config (or configure from home)."}
+              ? lang === "fr" ? `Configuration : ${config.mode} · ${config.category}` : `Configuration: ${config.mode} · ${config.category}`
+              : lang === "fr" ? "Utilise les paramètres de votre dernière partie." : "Uses your latest game configuration."}
           </p>
-          <button type="button" onClick={create} className="fp-btn-primary mt-4 w-full">
-            🏠 {t("online.create")}
+          <button type="button" onClick={create} className="glass-primary mt-4 flex w-full items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold text-white shadow-lg">
+            <Home className="h-4 w-4" />
+            <span>{t("online.create")}</span>
           </button>
         </div>
 
@@ -441,13 +445,14 @@ export function OnlineRoom() {
         </div>
 
         {isHost ? (
-          <button type="button" onClick={startGame} disabled={players.length < 2} className="fp-btn-primary mt-6 w-full text-lg disabled:opacity-40">
-            🚀 {t("online.start")} ({players.length}/2+)
+          <button type="button" onClick={startGame} disabled={players.length < 2} className="glass-primary mt-6 flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold text-white shadow-lg disabled:opacity-40">
+            <Play className="h-4 w-4" />
+            <span>{t("online.start")} ({players.length}/2+)</span>
           </button>
         ) : (
-          <p className="mt-6 text-center text-fp-text-dim">{lang === "fr" ? "En attente que l'hôte lance la partie…" : "Waiting for the host to start…"}</p>
+          <p className="mt-6 text-center text-xs text-neutral-400">{lang === "fr" ? "En attente que l'hôte lance la partie…" : "Waiting for the host to start…"}</p>
         )}
-        {error && <p className="mt-4 rounded-xl bg-fp-danger/10 px-4 py-2.5 text-sm text-fp-danger">{error}</p>}
+        {error && <p className="mt-4 rounded-xl bg-rose-500/10 px-4 py-2.5 text-xs text-rose-300">{error}</p>}
       </main>
     );
   }
@@ -457,13 +462,13 @@ export function OnlineRoom() {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
         <div className="flex items-center justify-between">
-          <button type="button" onClick={leave} className="text-sm text-fp-text-dim" aria-label={t("online.leave")}>✕</button>
+          <button type="button" onClick={leave} className="text-xs font-semibold text-neutral-400 hover:text-white" aria-label={t("online.leave")}>✕</button>
           <div className="flex items-center gap-1.5" aria-label={`Question ${qIndex + 1}`}>
             {Array.from({ length: Math.min(questionCount, 10) }).map((_, i) => (
-              <span key={i} className={`h-1.5 rounded-full transition-all ${i < qIndex ? "w-4 bg-fp-success" : i === qIndex ? "w-6 bg-fp-primary" : "w-2 bg-white/15"}`} />
+              <span key={i} className={`h-1.5 rounded-full transition-all ${i < qIndex ? "w-4 bg-emerald-500" : i === qIndex ? "w-6 bg-violet-500" : "w-2 bg-white/15"}`} />
             ))}
           </div>
-          <span className="text-sm font-semibold text-fp-text-dim">{qIndex + 1}/{questionCount}</span>
+          <span className="text-xs font-mono text-neutral-400">{qIndex + 1}/{questionCount}</span>
         </div>
 
         {!isHost && !revealed && <div className="mt-5"><TimerBar seconds={timeLeft} total={timePerQuestion} /></div>}
@@ -471,22 +476,22 @@ export function OnlineRoom() {
         {q ? (
           <section className="mt-6 flex-1">
             <div className="flex items-center justify-between">
-              <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
-                {isHost ? `🎮 ${t("online.host")}` : t("online.answer")}
+              <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-semibold text-neutral-300">
+                {isHost ? t("online.host") : t("online.answer")}
               </span>
-              <span className="text-xs text-fp-text-dim">{answeredCount}/{players.length} ✓</span>
+              <span className="text-xs text-neutral-400 font-mono">{answeredCount}/{players.length} validés</span>
             </div>
-            <h1 key={q.question} className="animate-rise mt-4 font-display text-2xl font-bold leading-snug">{q.question}</h1>
+            <h1 key={q.question} className="animate-rise mt-4 font-sans text-xl sm:text-2xl font-bold leading-snug text-white">{q.question}</h1>
 
-            <div className="mt-6 grid gap-3">
+            <div className="mt-6 grid grid-cols-1 gap-2.5">
               {q.answers.map((answer, i) => {
-                let cls = "border-fp-border bg-fp-surface hover:border-fp-primary";
+                let cls = "border-white/[0.08] bg-white/[0.03] text-neutral-200 hover:bg-white/[0.08]";
                 if (revealed) {
-                  if (i === correctAnswer) cls = "animate-pop border-fp-success bg-fp-success/15 text-fp-success";
-                  else if (i === selected) cls = "animate-shake border-fp-danger bg-fp-danger/15 text-fp-danger";
-                  else cls = "border-fp-border bg-fp-surface opacity-40";
+                  if (i === correctAnswer) cls = "border-emerald-500 bg-emerald-500/20 text-emerald-300 font-bold";
+                  else if (i === selected && i !== correctAnswer) cls = "border-rose-500 bg-rose-500/20 text-rose-300";
+                  else cls = "opacity-30 border-transparent bg-transparent";
                 } else if (answered && !isHost) {
-                  cls = i === selected ? "border-fp-primary bg-fp-primary/15" : "border-fp-border bg-fp-surface opacity-40";
+                  cls = i === selected ? "border-violet-500 bg-violet-500/20 text-violet-300" : "border-white/[0.08] bg-white/[0.03] opacity-40";
                 }
                 return (
                   <button
@@ -494,25 +499,28 @@ export function OnlineRoom() {
                     type="button"
                     disabled={revealed || (answered && !isHost) || isHost}
                     onClick={() => sendAnswer(i)}
-                    className={`flex items-center gap-3 rounded-2xl border-2 px-4 py-3.5 text-left font-semibold transition-all active:scale-[0.98] ${cls}`}
+                    className={`flex items-center gap-3 rounded-2xl border p-4 text-left text-xs sm:text-sm font-semibold transition-all active:scale-[0.98] ${cls}`}
                   >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-bold">{["A", "B", "C", "D"][i]}</span>
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-white/[0.06] text-xs font-mono font-bold text-neutral-300">{["A", "B", "C", "D"][i]}</span>
                     <span className="flex-1">{answer}</span>
-                    {revealed && i === correctAnswer && <span aria-hidden="true">✓</span>}
-                    {revealed && i === selected && i !== correctAnswer && <span aria-hidden="true">✗</span>}
                   </button>
                 );
               })}
             </div>
 
             {revealed && q.explanation && (
-              <p className="animate-rise mt-4 rounded-2xl border border-fp-border bg-fp-surface/60 px-4 py-3 text-sm text-fp-text-dim">💡 {q.explanation}</p>
+              <p className="animate-rise mt-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] px-4 py-3 text-xs text-neutral-300">
+                <span className="font-bold text-violet-300 mr-1">Éclairage :</span>
+                {q.explanation}
+              </p>
             )}
           </section>
         ) : (
           <div className="flex flex-1 flex-col items-center justify-center text-center">
-            <div className="animate-pulse text-5xl">🎲</div>
-            <p className="mt-4 text-fp-text-dim">{t("loading.prep")}</p>
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 animate-pulse">
+              <Zap className="h-6 w-6" />
+            </div>
+            <p className="mt-4 text-xs text-neutral-400">{t("loading.prep")}</p>
           </div>
         )}
 
@@ -520,19 +528,21 @@ export function OnlineRoom() {
         {isHost && (
           <div className="mt-6 flex gap-3">
             {!revealed ? (
-              <button type="button" onClick={reveal} disabled={!q} className="fp-btn-primary flex-1">
-                👁️ {t("online.reveal")}
+              <button type="button" onClick={reveal} disabled={!q} className="glass-primary flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold text-white shadow-lg">
+                <Eye className="h-4 w-4" />
+                <span>{t("online.reveal")}</span>
               </button>
             ) : (
-              <button type="button" onClick={nextQuestion} className="fp-btn-primary flex-1">
-                {index() >= questions.length - 1 ? "🏁 " + t("online.results") : "➡️ " + t("online.next")}
+              <button type="button" onClick={nextQuestion} className="glass-primary flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold text-white shadow-lg">
+                <span>{index() >= questions.length - 1 ? t("online.results") : t("online.next")}</span>
+                <ArrowRight className="h-4 w-4" />
               </button>
             )}
           </div>
         )}
         {!isHost && answered && !revealed && (
-          <p className="mt-6 animate-pulse text-center text-sm text-fp-text-dim">
-            {lang === "fr" ? "Réponse envoyée — en attente du hôte…" : "Answer sent — waiting for the host…"}
+          <p className="mt-6 animate-pulse text-center text-xs text-neutral-400">
+            {lang === "fr" ? "Réponse envoyée — en attente du salon…" : "Answer sent — waiting for the host…"}
           </p>
         )}
       </main>
@@ -545,27 +555,29 @@ export function OnlineRoom() {
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-8">
         <Confetti />
         <div className="text-center">
-          <div className="animate-pop text-6xl">🏆</div>
-          <h1 className="mt-3 font-display text-3xl font-bold">{t("online.finished")}</h1>
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+            <Trophy className="h-7 w-7" />
+          </div>
+          <h1 className="mt-1 font-sans text-2xl sm:text-3xl font-extrabold text-white">{t("online.finished")}</h1>
         </div>
-        <div className="fp-card mt-8 p-5">
-          <h2 className="font-display text-sm font-bold uppercase tracking-widest text-fp-text-dim">{t("online.players")}</h2>
+        <div className="glass-panel mt-8 rounded-3xl p-5 border-white/[0.08]">
+          <h2 className="font-sans text-xs font-bold uppercase tracking-widest text-neutral-400">{t("online.players")}</h2>
           <div className="mt-3 space-y-2">
             {sorted.map((p, i) => (
-              <div key={p.id} className="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
-                <span className="font-semibold">
-                  {i === 0 ? "🥇 " : i === 1 ? "🥈 " : i === 2 ? "🥉 " : ""}
-                  {p.name} {p.user_id === myPlayer?.user_id && <span className="text-fp-accent-2">{t("online.you")}</span>}
+              <div key={p.id} className="flex items-center justify-between rounded-xl bg-white/[0.03] px-4 py-3 border border-white/[0.04]">
+                <span className="text-xs font-semibold text-white">
+                  <span className="font-mono text-neutral-400 mr-2">#{i + 1}</span>
+                  {p.name} {p.user_id === myPlayer?.user_id && <span className="text-violet-400 ml-1">({t("online.you")})</span>}
                 </span>
-                <span className="font-bold text-fp-accent">{p.score} {t("game.score")}</span>
+                <span className="font-mono text-xs font-bold text-amber-300">{p.score} {t("game.score")}</span>
               </div>
             ))}
           </div>
         </div>
         <div className="mt-6 flex w-full gap-3">
-          <button type="button" onClick={leave} className="fp-btn-ghost flex-1">{t("config.back")}</button>
+          <button type="button" onClick={leave} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">{t("config.back")}</button>
           {isHost && (
-            <button type="button" onClick={startGame} className="fp-btn-primary flex-1">{t("online.again")}</button>
+            <button type="button" onClick={startGame} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">{t("online.again")}</button>
           )}
         </div>
       </main>
