@@ -44,9 +44,15 @@ sql.push(`insert into debate_topics (id, label_fr) values
   on conflict (id) do nothing;`);
 
 for (const q of dataset.questions) {
-  sql.push(`insert into questions (id, concept_id, family_id, type, question, answers, correct_answer, category, subcategory, difficulty, language, tags, source_provider, source_id, source_url, source_license, verification_status, verified_at, confidence, quality_score, state, version, explanation, as_of)
-values (${esc(q.id)}, ${esc(q.conceptId)}, ${esc(q.familyId)}, ${esc(q.type)}, ${esc(q.question)}, ${escJson(q.answers)}, ${q.correctAnswer}, ${esc(q.category)}, ${esc(q.subcategory)}, ${esc(q.difficulty)}, ${esc(q.language)}, ${escArr(q.tags)}, ${esc(q.source.provider)}, ${esc(q.source.sourceId)}, ${esc(q.source.url)}, ${esc(q.source.license)}, ${esc(q.verification.status)}, ${esc(q.verification.verifiedAt)}, ${q.confidence}, ${q.qualityScore}, ${esc(q.verification.status === "verified" ? "verified" : "review")}, ${q.version}, ${esc(q.explanation)}, ${esc(q.asOf)})
-on conflict (id) do update set question = excluded.question, answers = excluded.answers, correct_answer = excluded.correct_answer, category = excluded.category, state = excluded.state, confidence = excluded.confidence, quality_score = excluded.quality_score;`);
+  if (q.artwork) {
+    sql.push(`insert into artwork_catalog (id, title, artist, artist_birth, artist_death, year_start, year_end, movement, country, museum, image_url, image_license, source_url)
+values (${esc(q.id)}, ${esc(q.artwork.title)}, ${esc(q.artwork.artist)}, ${q.artwork.artistBirth ?? "NULL"}, ${q.artwork.artistDeath ?? "NULL"}, ${q.artwork.yearStart ?? "NULL"}, ${q.artwork.yearEnd ?? "NULL"}, ${esc(q.artwork.movement)}, ${esc(q.artwork.country)}, ${esc(q.artwork.museum)}, ${esc(q.artwork.imageUrl)}, ${esc(q.artwork.imageLicense)}, ${esc(q.artwork.sourceUrl)})
+on conflict (id) do update set title = excluded.title, artist = excluded.artist, museum = excluded.museum, image_url = excluded.image_url;`);
+  }
+
+  sql.push(`insert into questions (id, concept_id, family_id, type, input_mode, question, answers, correct_answer, accepted_typed_answers, progressive_clues, artwork, category, subcategory, difficulty, language, tags, source_provider, source_id, source_url, source_license, verification_status, verified_at, confidence, quality_score, state, version, explanation, as_of)
+values (${esc(q.id)}, ${esc(q.conceptId)}, ${esc(q.familyId)}, ${esc(q.type)}, ${esc(q.inputMode ?? "mcq")}, ${esc(q.question)}, ${escJson(q.answers)}, ${q.correctAnswer}, ${escJson(q.acceptedTypedAnswers ?? [])}, ${escJson(q.progressiveClues ?? [])}, ${escJson(q.artwork ?? null)}, ${esc(q.category)}, ${esc(q.subcategory)}, ${esc(q.difficulty)}, ${esc(q.language)}, ${escArr(q.tags)}, ${esc(q.source.provider)}, ${esc(q.source.sourceId)}, ${esc(q.source.url)}, ${esc(q.source.license)}, ${esc(q.verification.status)}, ${esc(q.verification.verifiedAt)}, ${q.confidence}, ${q.qualityScore}, ${esc(q.verification.status === "verified" ? "verified" : "review")}, ${q.version}, ${esc(q.explanation)}, ${esc(q.asOf)})
+on conflict (id) do update set question = excluded.question, answers = excluded.answers, correct_answer = excluded.correct_answer, category = excluded.category, state = excluded.state, confidence = excluded.confidence, quality_score = excluded.quality_score, input_mode = excluded.input_mode, accepted_typed_answers = excluded.accepted_typed_answers, progressive_clues = excluded.progressive_clues, artwork = excluded.artwork;`);
 }
 
 for (const d of debates.prompts) {
@@ -54,6 +60,16 @@ for (const d of debates.prompts) {
 values (${esc(d.id)}, ${esc(d.category)}, ${esc(d.topic)}, ${esc(d.prompt)}, ${esc(d.context)}, ${escJson(d.perspectives)}, ${escJson(d.followUps)}, ${escJson(d.sources)}, ${esc(d.difficulty)}, ${esc(d.sensitivity)}, ${escJson(d.assignedPositions ?? [])}, ${esc(d.lastVerifiedAt)}, ${esc(d.validUntil)}, ${esc(d.jurisdiction)}, ${esc(d.language)}, 'verified', ${d.version})
 on conflict (id) do update set context = excluded.context, perspectives = excluded.perspectives, follow_ups = excluded.follow_ups, state = 'verified';`);
 }
+
+// Saisons 2026
+sql.push(`insert into seasons (season_number, name, starts_at, ends_at, active) values
+  (1, 'Saison des Pionniers', '2026-01-01 00:00:00+00', '2026-02-28 23:59:59+00', false),
+  (2, 'Saison des Stratèges', '2026-03-01 00:00:00+00', '2026-04-30 23:59:59+00', false),
+  (3, 'Saison des Grands Esprits', '2026-05-01 00:00:00+00', '2026-06-30 23:59:59+00', false),
+  (4, 'Saison des Maîtres', '2026-07-01 00:00:00+00', '2026-08-31 23:59:59+00', true),
+  (5, 'Saison d''Or & Lumières', '2026-09-01 00:00:00+00', '2026-10-31 23:59:59+00', false),
+  (6, 'Saison Élite Universelle', '2026-11-01 00:00:00+00', '2026-12-31 23:59:59+00', false)
+on conflict (season_number) do update set name = excluded.name, active = excluded.active;`);
 
 // Découpage en lots de ~400 INSERT pour éviter les timeouts
 const CHUNK = 400;
