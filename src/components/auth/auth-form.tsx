@@ -53,6 +53,15 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
             .select("username, avatar_color, language")
             .eq("id", data.user!.id)
             .single();
+          // Upsert profil manquant (comptes créés pendant confirmation email)
+          if (!profile) {
+            await sb.from("profiles").upsert({
+              id: data.user!.id,
+              username: name || email.split("@")[0],
+              avatar_color: 0,
+              language: lang,
+            });
+          }
           if (profile?.language) setLanguage(profile.language as UILanguage);
           // Connecté → direction le salon en ligne (créer ou rejoindre)
           router.push("/play/online");
@@ -77,13 +86,9 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
           setUser({ id: data.user!.id, email: data.user!.email ?? undefined });
           router.push("/play/online");
         } else if (data.user) {
-          // Confirmation email activée : le compte existe mais il faut confirmer
-          await sb.from("profiles").insert({
-            id: data.user.id,
-            username: name || email.split("@")[0],
-            avatar_color: 0,
-            language: lang,
-          });
+          // Confirmation email activée : le compte existe mais il faut confirmer.
+          // PAS d'insert profil ici (pas de session → RLS refuserait) — il sera
+          // créé au premier login (upsert ci-dessous).
           setError(
             lang === "fr"
               ? `✅ Compte créé ! Un email de confirmation a été envoyé à ${email}. Clique le lien puis reconnecte-toi — ta session restera ensuite active.`

@@ -17,6 +17,7 @@ import {
   hostMarkAnswers,
   submitAnswer,
   finishRoom,
+  leaveRoom,
   refreshAnswers,
   type OnlineSession,
   type OnlinePlayer,
@@ -51,12 +52,16 @@ export function OnlineRoom() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const sessionRef = useRef<OnlineSession | null>(null);
   const myPlayerRef = useRef<OnlinePlayer | null>(null);
+  const startRef = useRef(0);
+  const joiningRef = useRef(false);
 
   const t = (k: string) => translate(lang, k);
   const isHost = myPlayer?.is_host === true;
-  const currentQuestion: Question | null = questions[index()] ?? null;
+  const currentQuestion: Question | null =
+    questions[index()] ?? (session?.current_question as Question | null) ?? null;
   const revealed = session?.answers_revealed ?? false;
   const timePerQuestion = config?.timePerQuestion ?? 15;
+  const questionCount = session?.question_count ?? questions.length ?? 10;
 
   function index() {
     return session?.question_index ?? 0;
@@ -106,6 +111,19 @@ export function OnlineRoom() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session?.id]);
 
+  // CRITIQUE (audit) : synchronise la vue avec la phase serveur —
+  // le joiner doit quitter le lobby quand le host lance, et voir les résultats
+  useEffect(() => {
+    if (!session) return;
+    const phase = session.phase;
+    const id = setTimeout(() => {
+      if (phase === "playing") setView((v) => (v === "lobby" ? "playing" : v));
+      else if (phase === "finished") setView("results");
+    }, 0);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session?.phase]);
+
   // Timer du joueur quand la question est poussée
   useEffect(() => {
     if (view !== "playing" || revealed || !session?.current_question || isHost) return;
@@ -114,6 +132,7 @@ export function OnlineRoom() {
       setAnswered(false);
       setSelected(null);
       setTimeLeft(timePerQuestion);
+      startRef.current = Date.now();
       timerRef.current = setInterval(() => {
         setTimeLeft((tl) => {
           if (tl <= 1) {
@@ -144,6 +163,8 @@ export function OnlineRoom() {
   }, [session?.question_index, session?.answers_revealed, view]);
 
   async function create() {
+    if (joiningRef.current) return;
+    joiningRef.current = true;
     setError(null);
     try {
       const res = await createRoom({
@@ -155,13 +176,18 @@ export function OnlineRoom() {
       setSession(res.session);
       myPlayerRef.current = res.player;
       setMyPlayer(res.player);
+      localStorage.setItem("freeparty-last-room", JSON.stringify({ sessionId: res.session.id, playerId: res.player.id }));
       setView("lobby");
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      joiningRef.current = false;
     }
   }
 
   async function join() {
+    if (joiningRef.current) return;
+    joiningRef.current = true;
     setError(null);
     try {
       const res = await joinRoom(joinCode);
@@ -169,9 +195,12 @@ export function OnlineRoom() {
       setSession(res.session);
       myPlayerRef.current = res.player;
       setMyPlayer(res.player);
+      localStorage.setItem("freeparty-last-room", JSON.stringify({ sessionId: res.session.id, playerId: res.player.id }));
       setView("lobby");
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      joiningRef.current = false;
     }
   }
 
@@ -196,9 +225,15 @@ export function OnlineRoom() {
         qs = data.questions ?? [];
         questionsRef.current = qs;
         setQuestions(qs);
+        // Persiste pour une reprise après refresh (audit)
+        try {
+          localStorage.setItem(`freeparty-questions-${session.id}`, JSON.stringify(qs));
+        } catch {
+          // quota localStorage — non bloquant
+        }
       }
       if (qs.length === 0) throw new Error("Aucune question disponible");
-      await hostPushQuestion(session.id, qs[0], 0, false);
+      await hostPushQuestion(session.id, qs[0], 0, false, session.state_version ?? 0);
       setView("playing");
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
@@ -210,16 +245,23 @@ export function OnlineRoom() {
     if (answered || revealed || !session || !myPlayer || isHost) return;
     setSelected(i);
     setAnswered(true);
-    const elapsed = Math.round((timePerQuestion - timeLeft) * 1000);
-    await submitAnswer(session.id, myPlayer.id, index(), i, elapsed);
+    const elapsed = Math.max(0, Date.now() - startRef.current);
+    try {
+      await submitAnswer(session.id, myPlayer.id, index(), i, elapsed);
+    } catch {
+      // idempotent : déjà répondu (23505) ou réseau — on garde la réponse locale
+    }
     if (timerRef.current) clearInterval(timerRef.current);
   }
 
   // Le host révèle la bonne réponse et marque les scores
   async function reveal() {
     if (!session || !isHost || !currentQuestion) return;
-    await hostMarkAnswers(session.id, currentQuestion, answersRef.current);
-    await hostPushQuestion(session.id, currentQuestion, index(), true);
+    // Audit : rafraîchit les réponses AVANT de marquer (course au clic)
+    const fresh = await refreshAnswers(session.id, index());
+    answersRef.current = fresh;
+    await hostMarkAnswers(session.id, currentQuestion, fresh);
+    await hostPushQuestion(session.id, currentQuestion, index(), true, session.state_version ?? 0);
   }
 
   async function nextQuestion() {
@@ -241,8 +283,56 @@ export function OnlineRoom() {
     setTimeout(() => setCopied(false), 1500);
   }
 
+  // Restauration après refresh (audit) : dernier salon actif + questions du host
+  useEffect(() => {
+    if (view !== "home") return;
+    try {
+      const raw = localStorage.getItem("freeparty-last-room");
+      if (!raw) return;
+      const { sessionId, playerId } = JSON.parse(raw) as { sessionId: string; playerId: string };
+      const sb = getSupabaseBrowser();
+      if (!sb) return;
+      void (async () => {
+        const { data: sess } = await sb.from("game_sessions").select("*").eq("id", sessionId).single();
+        if (!sess || sess.phase === "finished") {
+          localStorage.removeItem("freeparty-last-room");
+          return;
+        }
+        const { data: pl } = await sb.from("game_players").select("*").eq("id", playerId).maybeSingle();
+        if (!pl) return;
+        // Questions du host restaurées
+        const rawQ = localStorage.getItem(`freeparty-questions-${sessionId}`);
+        if (rawQ) {
+          try {
+            const qs = JSON.parse(rawQ) as Question[];
+            questionsRef.current = qs;
+            setQuestions(qs);
+          } catch {
+            // ignore
+          }
+        }
+        sessionRef.current = sess as OnlineSession;
+        setSession(sess as OnlineSession);
+        myPlayerRef.current = pl as OnlinePlayer;
+        setMyPlayer(pl as OnlinePlayer);
+        setView(sess.phase === "playing" ? "playing" : "lobby");
+      })();
+    } catch {
+      // pas de salon en cache
+    }
+  }, [view]);
+
   async function leave() {
     if (timerRef.current) clearInterval(timerRef.current);
+    if (session && myPlayer && !isHost) {
+      try {
+        await leaveRoom(session.id, myPlayer.id);
+      } catch {
+        // best effort
+      }
+    }
+    localStorage.removeItem("freeparty-last-room");
+    localStorage.removeItem(`freeparty-questions-${session?.id ?? ""}`);
     router.push("/");
   }
 
@@ -257,6 +347,7 @@ export function OnlineRoom() {
         <div className="text-5xl" aria-hidden="true">🌍</div>
         <h1 className="mt-4 font-display text-3xl font-bold">{t("online.title")}</h1>
         <p className="mt-2 max-w-sm text-fp-text-dim">{t("online.needAuth")}</p>
+        {error && <p className="mt-4 rounded-xl bg-fp-danger/10 px-4 py-2.5 text-sm text-fp-danger">{error}</p>}
         <button type="button" onClick={() => router.push("/auth")} className="fp-btn-primary mt-8">
           {t("auth.login")} / {t("auth.register")}
         </button>
@@ -368,11 +459,11 @@ export function OnlineRoom() {
         <div className="flex items-center justify-between">
           <button type="button" onClick={leave} className="text-sm text-fp-text-dim" aria-label={t("online.leave")}>✕</button>
           <div className="flex items-center gap-1.5" aria-label={`Question ${qIndex + 1}`}>
-            {questions.slice(0, Math.min(10, session.question_count ?? 10)).map((_, i) => (
+            {Array.from({ length: Math.min(questionCount, 10) }).map((_, i) => (
               <span key={i} className={`h-1.5 rounded-full transition-all ${i < qIndex ? "w-4 bg-fp-success" : i === qIndex ? "w-6 bg-fp-primary" : "w-2 bg-white/15"}`} />
             ))}
           </div>
-          <span className="text-sm font-semibold text-fp-text-dim">{qIndex + 1}/{session.question_count ?? questions.length}</span>
+          <span className="text-sm font-semibold text-fp-text-dim">{qIndex + 1}/{questionCount}</span>
         </div>
 
         {!isHost && !revealed && <div className="mt-5"><TimerBar seconds={timeLeft} total={timePerQuestion} /></div>}

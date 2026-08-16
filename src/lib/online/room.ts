@@ -102,7 +102,7 @@ export async function createRoom(opts: { mode: string; category: string; questio
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
 
-/** Rejoint un salon par code */
+/** Rejoint un salon par code — idempotent (anti double-clic, audit) */
 export async function joinRoom(code: string): Promise<{ session: OnlineSession; player: OnlinePlayer }> {
   const sb = getSupabaseBrowser();
   if (!sb) throw new Error("Supabase non configuré");
@@ -117,6 +117,17 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
     .maybeSingle();
   if (error) throw error;
   if (!session) throw new Error("Room not found");
+
+  // Idempotence : si le joueur est déjà dans le salon, on le réutilise
+  const { data: existing } = await sb
+    .from("game_players")
+    .select("*")
+    .eq("session_id", session.id)
+    .eq("user_id", user.user.id)
+    .maybeSingle();
+  if (existing) {
+    return { session: session as OnlineSession, player: existing as OnlinePlayer };
+  }
 
   const { error: err2 } = await sb
     .from("game_players")
@@ -250,12 +261,16 @@ export async function refreshAnswers(sessionId: string, questionIndex?: number):
   return (data ?? []) as RoomAnswer[];
 }
 
-/** Le host pousse la question courante (sans la bonne réponse) */
+/** Le host pousse la question courante (sans la bonne réponse)
+ *  - passe phase à 'playing' au premier push (audit : le joiner lit la phase)
+ *  - state_version monotone (évite les collisions de ms)
+ */
 export async function hostPushQuestion(
   sessionId: string,
   question: Question,
   index: number,
   revealed: boolean,
+  currentStateVersion: number = 0,
 ): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;
@@ -267,15 +282,17 @@ export async function hostPushQuestion(
         explanation: question.explanation,
       }
     : { question: question.question, answers: question.answers };
-  await sb
+  const { error } = await sb
     .from("game_sessions")
     .update({
+      phase: index === 0 && !revealed ? "playing" : undefined,
       current_question: payload,
       question_index: index,
       answers_revealed: revealed,
-      state_version: new Date().getTime(),
+      state_version: currentStateVersion + 1,
     })
     .eq("id", sessionId);
+  if (error) throw new Error(`Push question: ${error.message}`);
 }
 
 /** Le host met à jour les réponses (correct/wrong) et les scores */
@@ -298,7 +315,7 @@ export async function hostMarkAnswers(
   }
 }
 
-/** Le joueur envoie sa réponse */
+/** Le joueur envoie sa réponse — idempotent (audit : 23505 = déjà répondu) */
 export async function submitAnswer(
   sessionId: string,
   playerId: string,
@@ -308,20 +325,31 @@ export async function submitAnswer(
 ): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;
-  await sb.from("room_answers").insert({
+  const { error } = await sb.from("room_answers").insert({
     session_id: sessionId,
     player_id: playerId,
     question_index: questionIndex,
     answer_index: answerIndex,
     response_time_ms: responseTimeMs,
   });
+  if (error && error.code !== "23505") {
+    throw new Error(`Réponse: ${error.message}`);
+  }
 }
 
 /** Fin de partie */
 export async function finishRoom(sessionId: string): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;
-  await sb.from("game_sessions").update({ phase: "finished" }).eq("id", sessionId);
+  const { error } = await sb.from("game_sessions").update({ phase: "finished" }).eq("id", sessionId);
+  if (error) throw new Error(`Fin de partie: ${error.message}`);
+}
+
+/** Quitte le salon : supprime la ligne joueur (best effort, audit) */
+export async function leaveRoom(sessionId: string, playerId: string): Promise<void> {
+  const sb = getSupabaseBrowser();
+  if (!sb) return;
+  await sb.from("game_players").delete().eq("id", playerId).eq("session_id", sessionId);
 }
 
 export { isSupabaseConfigured };
