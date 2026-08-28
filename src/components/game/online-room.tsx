@@ -272,6 +272,23 @@ export function OnlineRoom() {
     if (!session || !isHost || !currentQuestion) return;
     // Audit : rafraîchit les réponses AVANT de marquer (course au clic)
     const fresh = await refreshAnswers(session.id, index());
+    // Blinder (review) : si le host vient de répondre et que sa réponse
+    // n'est pas encore persistée (clic réponse → révéler très rapide),
+    // on l'ajoute localement pour qu'elle soit notée quand même.
+    if (answered && selected !== null && myPlayer) {
+      const already = fresh.some((a) => a.player_id === myPlayer.id);
+      if (!already) {
+        fresh.push({
+          id: `local-${myPlayer.id}-${index()}`,
+          session_id: session.id,
+          player_id: myPlayer.id,
+          question_index: index(),
+          answer_index: selected,
+          correct: null,
+          response_time_ms: null,
+        } as RoomAnswer);
+      }
+    }
     answersRef.current = fresh;
     await hostMarkAnswers(session.id, currentQuestion, fresh);
     await hostPushQuestion(session.id, currentQuestion, index(), true, session.state_version ?? 0);
@@ -563,7 +580,11 @@ export function OnlineRoom() {
         )}
         {answered && !revealed && (
           <p className="mt-6 animate-pulse text-center text-xs text-neutral-400">
-            {lang === "fr" ? "Réponse envoyée — en attente du salon…" : "Answer sent — waiting for the host…"}
+            {lang === "fr"
+              ? isHost
+                ? "Réponse envoyée — en attente des autres joueurs, puis révèle quand tu veux"
+                : "Réponse envoyée — en attente du salon…"
+              : "Answer sent — waiting…"}
           </p>
         )}
       </main>
