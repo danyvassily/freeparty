@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { getSupabaseBrowser } from "@/lib/supabase/client";
 import { useLanguageStore } from "@/lib/store/language";
 import { translate } from "@/lib/i18n";
@@ -47,6 +47,8 @@ export function OnlineRoom() {
   const [answered, setAnswered] = useState(false);
   const [selected, setSelected] = useState<number | null>(null);
   const [copied, setCopied] = useState(false);
+  const searchParams = useSearchParams();
+  const roomFromUrl = searchParams.get("room");
 
   const questionsRef = useRef<Question[]>([]);
   const answersRef = useRef<RoomAnswer[]>([]);
@@ -55,6 +57,7 @@ export function OnlineRoom() {
   const myPlayerRef = useRef<OnlinePlayer | null>(null);
   const startRef = useRef(0);
   const joiningRef = useRef(false);
+  const autoJoinedRef = useRef(false);
 
   const t = (k: string) => translate(lang, k);
   const isHost = myPlayer?.is_host === true;
@@ -127,7 +130,7 @@ export function OnlineRoom() {
 
   // Timer du joueur quand la question est poussée
   useEffect(() => {
-    if (view !== "playing" || revealed || !session?.current_question || isHost) return;
+    if (view !== "playing" || revealed || !session?.current_question) return;
     // Reset asynchrone pour éviter les cascades de rendu
     const id = setTimeout(() => {
       setAnswered(false);
@@ -186,12 +189,12 @@ export function OnlineRoom() {
     }
   }
 
-  async function join() {
+  async function join(code?: string) {
     if (joiningRef.current) return;
     joiningRef.current = true;
     setError(null);
     try {
-      const res = await joinRoom(joinCode);
+      const res = await joinRoom((code ?? joinCode).trim().toUpperCase());
       sessionRef.current = res.session;
       setSession(res.session);
       myPlayerRef.current = res.player;
@@ -204,6 +207,15 @@ export function OnlineRoom() {
       joiningRef.current = false;
     }
   }
+
+  // Auto-rejoint le salon passé en paramètre d'URL (?room=CODE)
+  useEffect(() => {
+    if (view !== "home" || !roomFromUrl || autoJoinedRef.current) return;
+    autoJoinedRef.current = true;
+    setJoinCode(roomFromUrl.toUpperCase());
+    void join(roomFromUrl.toUpperCase());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view, roomFromUrl]);
 
   // Le host lance la partie : charge les questions, pousse la première
   async function startGame() {
@@ -243,7 +255,7 @@ export function OnlineRoom() {
 
   // Le joueur répond
   async function sendAnswer(i: number) {
-    if (answered || revealed || !session || !myPlayer || isHost) return;
+    if (answered || revealed || !session || !myPlayer) return;
     setSelected(i);
     setAnswered(true);
     const elapsed = Math.max(0, Date.now() - startRef.current);
@@ -391,7 +403,7 @@ export function OnlineRoom() {
               className="flex-1 rounded-full border border-fp-border bg-fp-surface px-4 py-3 text-center font-mono text-lg font-bold uppercase tracking-widest outline-none focus:border-fp-primary"
               aria-label={t("online.code")}
             />
-            <button type="button" onClick={join} disabled={joinCode.length < 4} className="fp-btn-primary disabled:opacity-40">
+            <button type="button" onClick={() => join()} disabled={joinCode.length < 4} className="fp-btn-primary disabled:opacity-40">
               {t("online.enterCode")}
             </button>
           </div>
@@ -471,13 +483,13 @@ export function OnlineRoom() {
           <span className="text-xs font-mono text-neutral-400">{qIndex + 1}/{questionCount}</span>
         </div>
 
-        {!isHost && !revealed && <div className="mt-5"><TimerBar seconds={timeLeft} total={timePerQuestion} /></div>}
+        {!revealed && <div className="mt-5"><TimerBar seconds={timeLeft} total={timePerQuestion} /></div>}
 
         {q ? (
           <section className="mt-6 flex-1">
             <div className="flex items-center justify-between">
               <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-semibold text-neutral-300">
-                {isHost ? t("online.host") : t("online.answer")}
+                {isHost ? `${t("online.host")} · ${t("online.answer")}` : t("online.answer")}
               </span>
               <span className="text-xs text-neutral-400 font-mono">{answeredCount}/{players.length} validés</span>
             </div>
@@ -490,14 +502,14 @@ export function OnlineRoom() {
                   if (i === correctAnswer) cls = "border-emerald-500 bg-emerald-500/20 text-emerald-300 font-bold";
                   else if (i === selected && i !== correctAnswer) cls = "border-rose-500 bg-rose-500/20 text-rose-300";
                   else cls = "opacity-30 border-transparent bg-transparent";
-                } else if (answered && !isHost) {
+                } else if (answered) {
                   cls = i === selected ? "border-violet-500 bg-violet-500/20 text-violet-300" : "border-white/[0.08] bg-white/[0.03] opacity-40";
                 }
                 return (
                   <button
                     key={i}
                     type="button"
-                    disabled={revealed || (answered && !isHost) || isHost}
+                    disabled={revealed || answered}
                     onClick={() => sendAnswer(i)}
                     className={`flex items-center gap-3 rounded-2xl border p-4 text-left text-xs sm:text-sm font-semibold transition-all active:scale-[0.98] ${cls}`}
                   >
@@ -540,7 +552,7 @@ export function OnlineRoom() {
             )}
           </div>
         )}
-        {!isHost && answered && !revealed && (
+        {answered && !revealed && (
           <p className="mt-6 animate-pulse text-center text-xs text-neutral-400">
             {lang === "fr" ? "Réponse envoyée — en attente du salon…" : "Answer sent — waiting for the host…"}
           </p>
