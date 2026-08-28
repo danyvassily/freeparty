@@ -323,8 +323,10 @@ export function OnlineRoom() {
   }
 
   // Restauration après refresh (audit) : dernier salon actif + questions du host
+  // NB (review) : si un code de salon est passé en URL, l'auto-join prime —
+  // on ignore le cache pour éviter la course entre les deux écritures async.
   useEffect(() => {
-    if (view !== "home") return;
+    if (view !== "home" || roomFromUrl) return;
     try {
       const raw = localStorage.getItem("freeparty-last-room");
       if (!raw) return;
@@ -359,7 +361,7 @@ export function OnlineRoom() {
     } catch {
       // pas de salon en cache
     }
-  }, [view]);
+  }, [view, roomFromUrl]);
 
   async function leave() {
     if (timerRef.current) clearInterval(timerRef.current);
