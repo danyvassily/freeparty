@@ -60,24 +60,35 @@ export async function createRoom(opts: { mode: string; category: string; questio
   const { data: user } = await sb.auth.getUser();
   if (!user.user) throw new Error("Not authenticated");
 
-  let code = generateRoomCode();
-  // Évite la collision (rare)
-  const { data: existing } = await sb.from("game_sessions").select("id").eq("room_code", code).maybeSingle();
-  if (existing) code = generateRoomCode();
-
-  const { data: session, error } = await sb
-    .from("game_sessions")
-    .insert({
-      room_code: code,
-      host_id: user.user.id,
-      phase: "lobby",
-      mode: opts.mode,
-      category: opts.category,
-      question_count: opts.questionCount,
-    })
-    .select()
-    .single();
-  if (error) throw error;
+  // Génère un code libre : plusieurs tentatives (collision très rare mais
+  // possible quand beaucoup de salons s'accumulent — jamais de doublon).
+  let code = "";
+  let session: { id: string } | null = null;
+  for (let attempt = 0; attempt < 5; attempt++) {
+    code = generateRoomCode();
+    const { data: existing } = await sb.from("game_sessions").select("id").eq("room_code", code).maybeSingle();
+    if (existing) continue;
+    const { data: inserted, error } = await sb
+      .from("game_sessions")
+      .insert({
+        room_code: code,
+        host_id: user.user.id,
+        phase: "lobby",
+        mode: opts.mode,
+        category: opts.category,
+        question_count: opts.questionCount,
+      })
+      .select()
+      .single();
+    if (error) {
+      // 23505 = contrainte unique sur room_code (course entre deux hôtes)
+      if (error.code === "23505") continue;
+      throw error;
+    }
+    session = inserted;
+    break;
+  }
+  if (!session) throw new Error("Impossible de générer un code de salon libre, réessaie");
 
   const { error: err2 } = await sb
     .from("game_players")
@@ -116,7 +127,7 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
     .eq("phase", "lobby")
     .maybeSingle();
   if (error) throw error;
-  if (!session) throw new Error("Room not found");
+  if (!session) throw new Error("Salon introuvable : vérifie le code — ou la partie a peut-être déjà commencé");
 
   // Idempotence : si le joueur est déjà dans le salon, on le réutilise
   const { data: existing } = await sb

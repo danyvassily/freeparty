@@ -33,7 +33,7 @@ export function OnlineRoom() {
   const router = useRouter();
   const lang = useLanguageStore((s) => s.language);
   const config = useGameStore((s) => s.config);
-  const { entries } = useHistoryStore();
+  const { entries, addEntry } = useHistoryStore();
 
   const [view, setView] = useState<View>("auth");
   const [joinCode, setJoinCode] = useState("");
@@ -275,6 +275,15 @@ export function OnlineRoom() {
     answersRef.current = fresh;
     await hostMarkAnswers(session.id, currentQuestion, fresh);
     await hostPushQuestion(session.id, currentQuestion, index(), true, session.state_version ?? 0);
+    // Anti-répétition inter-parties : enregistre la question révélée dans
+    // l'historique local (le host joue aussi, sa réponse fait référence).
+    const mine = fresh.find((a) => a.player_id === myPlayer?.id);
+    const mineCorrect = mine ? mine.answer_index === currentQuestion.correctAnswer : false;
+    addEntry({
+      questionId: currentQuestion.id,
+      familyId: currentQuestion.familyId,
+      answeredCorrectly: mineCorrect,
+    });
   }
 
   async function nextQuestion() {
