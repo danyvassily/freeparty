@@ -228,7 +228,7 @@ export function TeamBattleGame() {
           {current.question}
         </h1>
 
-        <div className="mt-6 grid gap-2">
+        <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
           {current.answers.map((answer, i) => {
             let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
             if (phase === "answer") {

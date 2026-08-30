@@ -19,18 +19,18 @@ function TimeRow({
   onChange: (v: number) => void;
 }) {
   return (
-    <div className="px-4 py-3">
+    <div className="px-4 py-3.5">
       <p className="text-[15px] font-medium text-fp-text">{label}</p>
-      <div className="mt-2 flex flex-wrap gap-1.5">
+      <div className="mt-2.5 flex flex-wrap gap-2">
         {options.map((opt) => (
           <button
             key={opt}
             type="button"
             onClick={() => onChange(opt)}
-            className={`rounded-full px-3.5 py-1.5 text-[13px] font-semibold transition-colors ${
+            className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors active:scale-95 ${
               value === opt
-                ? "bg-fp-blue text-white"
-                : "bg-fp-gray-6 text-fp-text-secondary hover:bg-fp-gray-5"
+                ? "bg-fp-primary text-white shadow-xs"
+                : "bg-black/[0.04] text-fp-text hover:bg-black/[0.08]"
             }`}
           >
             {opt} {unit}
@@ -57,14 +57,14 @@ function StepperRow({
   onChange: (v: number) => void;
 }) {
   return (
-    <div className="flex items-center justify-between px-4 py-3">
+    <div className="flex items-center justify-between px-4 py-3.5">
       <p className="text-[15px] font-medium text-fp-text">{label}</p>
       <div className="flex items-center gap-3">
         <button
           type="button"
           onClick={() => onChange(Math.max(min, value - step))}
           disabled={value <= min}
-          className="flex h-8 w-8 items-center justify-center rounded-full bg-fp-gray-6 text-lg font-semibold text-fp-blue transition-opacity disabled:opacity-30"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-lg font-semibold text-fp-primary transition active:scale-95 disabled:opacity-30"
           aria-label="−"
         >
           −
@@ -74,7 +74,7 @@ function StepperRow({
           type="button"
           onClick={() => onChange(Math.min(max, value + step))}
           disabled={value >= max}
-          className="flex h-8 w-8 items-center justify-center rounded-full bg-fp-gray-6 text-lg font-semibold text-fp-blue transition-opacity disabled:opacity-30"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-lg font-semibold text-fp-primary transition active:scale-95 disabled:opacity-30"
           aria-label="+"
         >
           +
@@ -91,13 +91,13 @@ export function SettingsPage() {
   const isFR = lang === "fr";
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4 pb-12 pt-4">
-      {/* Barre de navigation style iOS */}
+    <main className="mx-auto flex min-h-dvh w-full max-w-xl sm:max-w-2xl flex-col px-4 sm:px-6 pb-16 pt-4 animate-rise">
+      {/* Barre de navigation style Apple */}
       <div className="relative flex h-11 items-center justify-center">
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="absolute left-0 flex items-center gap-0.5 text-[17px] text-fp-blue"
+          className="absolute left-0 flex items-center gap-0.5 text-[17px] font-medium text-fp-primary active:opacity-70"
         >
           <ChevronLeft className="h-5 w-5" />
           {isFR ? "Accueil" : "Home"}
@@ -189,7 +189,7 @@ export function SettingsPage() {
       <button
         type="button"
         onClick={() => s.reset()}
-        className="fp-btn-secondary mt-8 flex w-full items-center justify-center gap-2"
+        className="fp-btn-secondary mt-8 flex w-full items-center justify-center gap-2 py-3.5 text-[15px]"
       >
         <RotateCcw className="h-4 w-4" />
         {isFR ? "Rétablir les valeurs par défaut" : "Reset to defaults"}

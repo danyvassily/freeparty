@@ -1,11 +1,11 @@
 {
-  "name": "PRISM — Free Party",
-  "short_name": "PRISM",
-  "description": "Jeu de culture compétitif pour adultes. Tour par tour, Buzzer, Le Cut et la finale signature La Ligne.",
+  "name": "JOUXTA",
+  "short_name": "JOUXTA",
+  "description": "Le jeu de quiz, débats et party game entre amis.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0a12",
-  "theme_color": "#0b0a12",
+  "background_color": "#f2f2f7",
+  "theme_color": "#f2f2f7",
   "orientation": "portrait-primary",
   "categories": ["games", "entertainment", "education"],
   "icons": [

@@ -146,7 +146,7 @@ export function TimelineGame() {
       </div>
 
       {/* Événements */}
-      <div className="mt-4 grid gap-2">
+      <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
         {events.map((ev, i) => {
           const isUsed = order.includes(i);
           const isWrong = checked === false && order.indexOf(i) !== correctOrder.findIndex((c) => c.id === ev.id);

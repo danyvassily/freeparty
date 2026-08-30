@@ -1,8 +1,9 @@
 "use client";
 
 /**
- * Free Party — Mode Débat
+ * JOUXTA — Mode Débat (Apple HIG & Mascottes Kawaii)
  * Pas de gagnant : temps de parole équitable, relances, vote avant/après.
+ * Mascotte Conférence en cours de débat et Mascotte qui a eu très chaud à la fin !
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -20,16 +21,17 @@ import {
 } from "@/lib/debate/engine";
 import { useGameStore } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
-import { ProgressRing, PillBadge } from "@/components/ui/primitives";
+import { ProgressRing, PillBadge, TimerBar, PlayerDot } from "@/components/ui/primitives";
+import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import {
   MessageSquareQuote,
   RefreshCw,
   Vote,
-  Brain,
   AlertCircle,
   BookOpen,
   Mic,
   ChevronLeft,
+  Flame,
 } from "lucide-react";
 
 type LocalPhase = "loading" | "setup" | DebateState["phase"];
@@ -43,8 +45,9 @@ export function DebateGame() {
   const [phase, setPhase] = useState<LocalPhase>("loading");
   const [prompt, setPrompt] = useState<DebatePrompt | null>(null);
   const [debate, setDebate] = useState<DebateState | null>(null);
-  const [countdown, setCountdown] = useState(0);
+  const [countdown, setCountdown] = useState(30);
   const [speechSeconds, setSpeechSeconds] = useState(0);
+  const [globalDebateTime, setGlobalDebateTime] = useState(300);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ReturnType<typeof buildResult> | null>(null);
   const [vote, setVote] = useState<DebateVote["position"] | null>(null);
@@ -53,6 +56,7 @@ export function DebateGame() {
   const [reloadKey, setReloadKey] = useState(0);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const globalTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const stateRef = useRef<DebateState | null>(null);
   const speechStartRef = useRef(0);
 
@@ -73,6 +77,7 @@ export function DebateGame() {
         setMetrics({ points: 0, arguments: 0, questions: 0 });
         setDebate(null);
         stateRef.current = null;
+        setGlobalDebateTime(durationSeconds);
         const cat = config?.category && config.category !== "mixed" ? config.category : "all";
         const res = await fetch(`/api/debates?category=${encodeURIComponent(cat)}`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -80,7 +85,7 @@ export function DebateGame() {
         if (cancelled) return;
         const list = (data.prompts ?? []) as DebatePrompt[];
         if (list.length === 0) {
-          setError("Aucun débat disponible pour ce thème.");
+          setError("Aucun sujet de débat disponible.");
           return;
         }
         setPrompt(list[Math.floor(Math.random() * list.length)]);
@@ -93,9 +98,9 @@ export function DebateGame() {
     return () => {
       cancelled = true;
       if (timerRef.current) clearInterval(timerRef.current);
+      if (globalTimerRef.current) clearInterval(globalTimerRef.current);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [reloadKey]);
+  }, [reloadKey, durationSeconds, config?.category]);
 
   const clearTimer = () => {
     if (timerRef.current) {
@@ -104,38 +109,22 @@ export function DebateGame() {
     }
   };
 
-  function startDebate() {
-    if (!prompt) return;
-    const p =
-      players.length >= 2
-        ? players
-        : [
-            { id: "p1", name: players[0]?.name ?? "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 },
-            { id: "p2", name: "Joueur 2", color: 1, score: 0, correct: 0, wrong: 0 },
-          ];
-    const state = createDebate(
-      prompt,
-      p.map((pl) => ({ id: pl.id, name: pl.name })),
-      { mode: debateMode, durationSeconds, preparationSeconds: settings.debatePreparation },
-    );
-    stateRef.current = state;
-    setDebate(state);
-    setPhase("presentation");
-    setCountdown(10);
-  }
-
   const go = useCallback((nextPhase: DebateState["phase"]) => {
     const current = stateRef.current;
     if (!current) return;
     const res = transition(current, nextPhase);
-    if (!res.ok) return;
+    if (!res.ok) {
+      // Forcer la phase si la transition stricte n'est pas prévue
+      setPhase(nextPhase);
+      return;
+    }
     stateRef.current = res.state;
     setDebate(res.state);
     setPhase(nextPhase);
 
     clearTimer();
     if (nextPhase === "reflection") {
-      setCountdown(30);
+      setCountdown(settings.debatePreparation || 30);
       timerRef.current = setInterval(() => {
         setCountdown((c) => {
           if (c <= 1) {
@@ -160,8 +149,44 @@ export function DebateGame() {
       timerRef.current = setInterval(() => setSpeechSeconds((s) => s + 1), 1000);
     } else if (nextPhase === "results") {
       setResult(buildResult(stateRef.current));
+      if (globalTimerRef.current) clearInterval(globalTimerRef.current);
     }
-  }, []);
+  }, [settings.debatePreparation]);
+
+  function startDebate() {
+    if (!prompt) return;
+    const p =
+      players.length >= 2
+        ? players
+        : [
+            { id: "p1", name: players[0]?.name ?? "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 },
+            { id: "p2", name: "Joueur 2", color: 1, score: 0, correct: 0, wrong: 0 },
+          ];
+    const state = createDebate(
+      prompt,
+      p.map((pl) => ({ id: pl.id, name: pl.name })),
+      { mode: debateMode, durationSeconds, preparationSeconds: settings.debatePreparation },
+    );
+    stateRef.current = state;
+    setDebate(state);
+
+    // Lancer le chrono global du débat
+    setGlobalDebateTime(durationSeconds);
+    if (globalTimerRef.current) clearInterval(globalTimerRef.current);
+    globalTimerRef.current = setInterval(() => {
+      setGlobalDebateTime((t) => {
+        if (t <= 1) {
+          if (globalTimerRef.current) clearInterval(globalTimerRef.current);
+          go("voting");
+          return 0;
+        }
+        return t - 1;
+      });
+    }, 1000);
+
+    // Commencer directement par la phase de réflexion
+    go("reflection");
+  }
 
   function finishTurn() {
     const st = stateRef.current;
@@ -236,7 +261,9 @@ export function DebateGame() {
         </div>
         <h1 className="mt-4 text-[20px] font-semibold text-fp-text">Une erreur est survenue</h1>
         <p className="mt-2 text-[14px] text-fp-text-dim">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-6 px-6 py-2.5 text-[15px]">Retour</button>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-6 px-6 py-2.5 text-[15px]">
+          Retour
+        </button>
       </main>
     );
   }
@@ -245,34 +272,57 @@ export function DebateGame() {
   if (phase === "loading") {
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-black/10 border-t-fp-primary" />
-        <p className="mt-4 text-[14px] text-fp-text-dim">Préparation du débat…</p>
+        <div className="h-9 w-9 animate-spin rounded-full border-[3px] border-black/10 border-t-fp-primary" />
+        <p className="mt-4 text-[14px] text-fp-text-dim">Préparation du sujet de débat…</p>
       </main>
     );
   }
 
-  // ---------- Présentation ----------
+  // ---------- Écran 1 : Présentation du sujet ----------
   if (phase === "setup" && prompt) {
     return (
-      <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost inline-flex w-fit items-center gap-0.5 px-2 py-1 text-[15px]">
-          <ChevronLeft className="h-5 w-5" />
-          Retour
-        </button>
-        <div className="mt-5">
-          <PillBadge>{prompt.category} · {prompt.difficulty}</PillBadge>
+      <main className="mx-auto flex min-h-dvh w-full max-w-2xl sm:max-w-3xl flex-col px-4 sm:px-6 pb-12 pt-3 animate-rise">
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            onClick={() => router.push("/")}
+            className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[15px]"
+          >
+            <ChevronLeft className="h-5 w-5" />
+            <span>Accueil</span>
+          </button>
+          <PillBadge colorClass="bg-fp-primary/10 text-fp-primary">
+            Sujet de débat
+          </PillBadge>
+          <span className="text-[13px] text-fp-text-dim tabular-nums">
+            {Math.round(durationSeconds / 60)} min
+          </span>
         </div>
-        <h1 className="mt-3 text-[24px] font-bold leading-snug text-fp-text sm:text-[28px]">{prompt.prompt}</h1>
+
+        {/* Mascotte Conférence en grand */}
+        <div className="mt-6 flex flex-col items-center text-center">
+          <KawaiiMascot theme="conference" size={100} animation="float" className="shadow-md" />
+          <h1 className="mt-4 text-[24px] sm:text-[30px] font-bold leading-snug text-fp-text">
+            {prompt.prompt}
+          </h1>
+        </div>
 
         {/* Contexte factuel */}
-        <div className="fp-card mt-6 p-5">
-          <h2 className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">Contexte</h2>
-          <p className="mt-2 text-[14px] leading-relaxed text-fp-text">{prompt.context}</p>
+        <div className="fp-card mt-6 p-5 border border-black/[0.04]">
+          <h2 className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
+            Contexte & Enjeux
+          </h2>
+          <p className="mt-2 text-[15px] leading-relaxed text-fp-text">
+            {prompt.context}
+          </p>
           {prompt.sources.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap gap-2">
               {prompt.sources.map((s) => (
-                <span key={s.label} className="inline-flex items-center gap-1 rounded-full bg-black/[0.04] px-2.5 py-1 text-[12px] text-fp-text-dim">
-                  <BookOpen className="h-3 w-3" />
+                <span
+                  key={s.label}
+                  className="inline-flex items-center gap-1 rounded-full bg-black/[0.04] px-3 py-1 text-[12px] text-fp-text-dim"
+                >
+                  <BookOpen className="h-3.5 w-3.5" />
                   {s.label}
                 </span>
               ))}
@@ -282,70 +332,83 @@ export function DebateGame() {
 
         {isCMM && (
           <div className="mt-4 rounded-2xl bg-fp-warning/10 p-4 text-[13px] text-fp-text">
-            <strong>Mode Change My Mind :</strong> des positions seront assignées pour le jeu.
-            Elles ne reflètent pas vos opinions réelles.
+            <strong>Mode Change My Mind :</strong> des positions vous seront assignées pour le jeu.
           </div>
         )}
         {isEthics && (
           <div className="mt-4 rounded-2xl bg-[#af52de]/10 p-4 text-[13px] text-fp-text">
-            <strong>Dilemme éthique :</strong> 30 s de réflexion, puis position, contre-argument et discussion.
+            <strong>Dilemme éthique :</strong> Réflexion, argumentation puis vote final.
           </div>
         )}
 
-        <div className="mt-6">
-          <h3 className="px-1 text-[13px] font-normal uppercase tracking-wide text-fp-text-dim">Règles du débat</h3>
-          <div className="fp-list mt-1.5">
-            {["Critique les arguments, pas les personnes.", "Laisse les autres terminer.", "Tu peux changer d'avis."].map((r) => (
-              <div key={r} className="px-4 py-3 text-[14px] text-fp-text">{r}</div>
-            ))}
-          </div>
-        </div>
-
-        <button type="button" onClick={startDebate} className="fp-btn-primary mt-8 flex w-full items-center justify-center gap-2 py-3.5 text-[16px]">
-          <MessageSquareQuote className="h-4.5 w-4.5" />
-          Lancer le débat ({durationSeconds / 60} min)
+        <button
+          type="button"
+          onClick={startDebate}
+          className="fp-btn-primary mt-8 flex w-full items-center justify-center gap-2 py-4 text-[16px]"
+        >
+          <MessageSquareQuote className="h-5 w-5" />
+          <span>Lancer le débat ({Math.round(durationSeconds / 60)} min)</span>
         </button>
       </main>
     );
   }
 
-  // ---------- Bilan ----------
+  // ---------- Écran Fin / Bilan (Mascotte qui a eu très chaud) ----------
   if (phase === "results" && result) {
     return (
-      <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-16 pt-10">
+      <main className="mx-auto flex min-h-dvh w-full max-w-2xl sm:max-w-3xl flex-col px-4 sm:px-6 pb-16 pt-10 animate-rise">
         <div className="text-center">
-          <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-primary/10 text-fp-primary">
-            <Brain className="h-7 w-7" />
+          {/* Mascotte qui a eu très chaud */}
+          <div className="mx-auto mb-3 flex justify-center">
+            <KawaiiMascot theme="sweating" size={105} animation="pop" className="shadow-md" />
           </div>
-          <h1 className="mt-3 text-[26px] font-bold text-fp-text">Débat terminé</h1>
-          <p className="mt-1 text-[14px] text-fp-text-dim">Pas de gagnant — une confrontation d&apos;idées réussie.</p>
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-fp-danger/10 px-3 py-1 text-[12px] font-semibold text-fp-danger mb-2">
+            <Flame className="h-3.5 w-3.5" />
+            Débat intense terminé !
+          </div>
+          <h1 className="text-[28px] sm:text-[34px] font-bold text-fp-text">Ouf, quel débat !</h1>
+          <p className="mt-1 text-[15px] text-fp-text-dim">
+            Pas de perdant : les idées ont chauffé et la discussion fut riche !
+          </p>
         </div>
 
-        <div className="fp-card mt-8 p-5">
-          <h2 className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">Bilan</h2>
-          <div className="mt-4 grid grid-cols-2 gap-2.5">
+        <div className="fp-card mt-8 p-5 border border-black/[0.04]">
+          <h2 className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
+            Bilan de la séance
+          </h2>
+          <div className="mt-4 grid grid-cols-2 gap-3">
             {[
               { v: metrics.points, l: "Points discutés" },
               { v: metrics.arguments, l: "Arguments explorés" },
-              { v: metrics.questions, l: "Questions restantes" },
-              { v: result.positionChanges, l: "Changements de position" },
+              { v: metrics.questions, l: "Questions ouvertes" },
+              { v: result.positionChanges, l: "Avis qui ont évolué" },
             ].map((s) => (
-              <div key={s.l} className="rounded-xl bg-black/[0.03] p-4 text-center">
-                <div className="text-[28px] font-bold tabular-nums text-fp-text">{s.v}</div>
+              <div key={s.l} className="rounded-2xl bg-black/[0.03] p-4 text-center">
+                <div className="text-[30px] font-bold tabular-nums text-fp-text">{s.v}</div>
                 <div className="mt-0.5 text-[12px] text-fp-text-dim">{s.l}</div>
               </div>
             ))}
           </div>
 
-          <h3 className="mt-5 text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">Temps de parole</h3>
-          <div className="mt-2 space-y-1.5">
-            {debate?.players.map((p) => {
+          <h3 className="mt-6 text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
+            Temps de parole par joueur
+          </h3>
+          <div className="mt-2.5 space-y-2">
+            {debate?.players.map((p, i) => {
               const ms = result.speakingTimeMs[p.id] ?? 0;
               const secs = Math.round(ms / 1000);
               return (
-                <div key={p.id} className="flex items-center justify-between rounded-xl bg-black/[0.03] px-4 py-2.5 text-[14px]">
-                  <span className="font-medium text-fp-text">{p.name}</span>
-                  <span className="text-fp-text-dim tabular-nums">{Math.floor(secs / 60)} min {secs % 60} s</span>
+                <div
+                  key={p.id}
+                  className="flex items-center justify-between rounded-xl bg-black/[0.03] px-4 py-3 text-[14px]"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <PlayerDot name={p.name} colorIndex={i} size={28} />
+                    <span className="font-semibold text-fp-text">{p.name}</span>
+                  </div>
+                  <span className="font-bold text-fp-text tabular-nums">
+                    {Math.floor(secs / 60)}m {String(secs % 60).padStart(2, "0")}s
+                  </span>
                 </div>
               );
             })}
@@ -353,8 +416,20 @@ export function DebateGame() {
         </div>
 
         <div className="mt-8 flex w-full gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>
-          <button type="button" onClick={() => setReloadKey((k) => k + 1)} className="fp-btn-primary flex-1 py-3 text-[15px]">Nouveau débat</button>
+          <button
+            type="button"
+            onClick={() => router.push("/")}
+            className="fp-btn-secondary flex-1 py-4 text-[16px]"
+          >
+            Accueil
+          </button>
+          <button
+            type="button"
+            onClick={() => setReloadKey((k) => k + 1)}
+            className="fp-btn-primary flex-1 py-4 text-[16px]"
+          >
+            Nouveau débat
+          </button>
         </div>
       </main>
     );
@@ -367,175 +442,275 @@ export function DebateGame() {
 
   const phaseLabel =
     phase === "reflection"
-      ? "Réflexion"
+      ? "Temps de réflexion"
       : phase === "player-turn"
-        ? `Tour de ${currentPlayer?.name ?? "…"}`
+        ? `Parole à ${currentPlayer?.name ?? "…"}`
         : phase === "open-discussion"
           ? "Discussion libre"
           : phase === "follow-up"
             ? "Relance"
-            : "Débat";
+            : "Vote final";
+
+  const mins = Math.floor(globalDebateTime / 60);
+  const secs = String(globalDebateTime % 60).padStart(2, "0");
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl sm:max-w-3xl flex-col px-4 sm:px-6 pb-12 pt-3 animate-rise">
+      {/* Barre de navigation avec chrono global qui défile */}
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]" aria-label="Quitter">
+        <button
+          type="button"
+          onClick={() => router.push("/")}
+          className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[15px]"
+          aria-label="Quitter"
+        >
           <ChevronLeft className="h-5 w-5" />
-          Quitter
+          <span>Quitter</span>
         </button>
-        <PillBadge>{phaseLabel}</PillBadge>
-        <span className="w-10 text-right text-[13px] text-fp-text-dim tabular-nums">{Math.round(durationSeconds / 60)} min</span>
+
+        <PillBadge colorClass="bg-fp-primary/10 text-fp-primary">
+          {phaseLabel}
+        </PillBadge>
+
+        {/* Chronomètre global du débat qui défile */}
+        <div className="flex items-center gap-1.5 rounded-full bg-black/[0.05] px-3 py-1 text-[14px] font-bold tabular-nums text-fp-text">
+          <span className="inline-block h-2 w-2 rounded-full bg-[#34c759] animate-pulse" />
+          <span>{mins}:{secs}</span>
+        </div>
       </div>
 
+      {/* Barre de progression du temps global */}
+      <div className="mt-3">
+        <TimerBar seconds={globalDebateTime} total={durationSeconds} />
+      </div>
+
+      {/* 1. Phase Réflexion */}
       {phase === "reflection" && (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
+        <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
+          <KawaiiMascot theme="thinking" size={90} animation="float" className="mb-4" />
           <ProgressRing seconds={countdown} total={30} size={110} stroke={8} danger={countdown <= 5} />
-          <h2 className="mt-6 text-[22px] font-bold text-fp-text">Prends 30 secondes pour réfléchir</h2>
-          <p className="mt-2 max-w-sm text-[14px] text-fp-text-dim">
-            {isEthics ? "Quelle est ta position face à ce dilemme ?" : "Prépare tes arguments."}
+          <h2 className="mt-6 text-[24px] font-bold text-fp-text">30 secondes de réflexion</h2>
+          <p className="mt-2 max-w-md text-[15px] text-fp-text-dim">
+            Préparez vos arguments face à l&apos;assemblée.
           </p>
-          {isCMM && (
-            <div className="mt-4 max-w-sm rounded-2xl bg-fp-warning/10 p-4">
-              <p className="text-[14px] text-fp-text">
-                <strong>Position assignée pour le jeu :</strong>{" "}
-                {prompt.assignedPositions?.[0] ?? "à annoncer au premier tour"}
-              </p>
-              <p className="mt-1 text-[12px] text-fp-text-dim">Ce n&apos;est pas ton opinion personnelle.</p>
-            </div>
-          )}
-        </div>
-      )}
 
-      {phase === "player-turn" && (
-        <div className="flex flex-1 flex-col">
-          <div className="mt-4 flex items-center justify-between">
-            <h2 className="flex items-center gap-2 text-[20px] font-bold text-fp-text">
-              <Mic className="h-5 w-5 text-fp-primary" />
-              À toi, {currentPlayer?.name}
-            </h2>
-            <div className="text-right">
-              <div className="text-[24px] font-bold tabular-nums text-fp-text">
-                {Math.floor(speechSeconds / 60)}:{String(speechSeconds % 60).padStart(2, "0")}
-              </div>
-              <div className="text-[11px] text-fp-text-dim">temps de parole</div>
-            </div>
+          <div className="fp-card mt-6 p-4 max-w-md w-full border border-black/[0.04] text-left">
+            <p className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">Sujet</p>
+            <p className="mt-1 text-[16px] font-bold text-fp-text">{prompt.prompt}</p>
           </div>
 
-          {isCMM && (
-            <div className="mt-4 rounded-2xl bg-fp-warning/10 p-4 text-[13px] text-fp-text">
-              <strong>Position assignée :</strong>{" "}
-              {prompt.assignedPositions?.[
-                debate.turns.filter((t) => t.phase === "speech").length % Math.max(1, prompt.assignedPositions?.length ?? 1)
-              ] ?? "défends cette position comme si elle était la tienne"}
-            </div>
-          )}
-
-          <p className="mt-5 text-[12px] font-medium uppercase tracking-wide text-fp-text-dim">Question du débat</p>
-          <p className="mt-1 text-[17px] font-semibold leading-snug text-fp-text sm:text-[19px]">{prompt.prompt}</p>
-
-          {isDA && showDevil && (
-            <div className="animate-pop mt-4 rounded-2xl bg-fp-danger/10 p-4">
-              <p className="text-[13px] font-semibold text-fp-danger">Perspective contradictoire</p>
-              <p className="mt-1 text-[13px] text-fp-text">
-                {prompt.perspectives[prompt.perspectives.length - 1] ??
-                  "Qu'en dirait une personne de bonne foi qui pense l'inverse ?"}
-              </p>
-            </div>
-          )}
-
-          <div className="mt-6 flex gap-3">
-            <button type="button" onClick={finishTurn} className="fp-btn-primary flex-1 py-3 text-[15px]">
-              Passer la parole
-            </button>
-            <button type="button" onClick={moveToDiscussion} className="fp-btn-secondary flex-1 py-3 text-[15px]">
-              Discussion libre
-            </button>
-          </div>
           <button
             type="button"
-            onClick={() => addMetric("points")}
-            className="mt-3 w-full rounded-2xl border border-dashed border-black/[0.12] py-2.5 text-[13px] font-medium text-fp-text-dim transition-colors hover:border-fp-primary hover:text-fp-primary"
+            onClick={() => {
+              clearTimer();
+              const s = stateRef.current;
+              if (s) {
+                const t = nextPlayer(s);
+                stateRef.current = t;
+                setDebate(t);
+                setPhase("player-turn");
+                setSpeechSeconds(0);
+                speechStartRef.current = Date.now();
+                timerRef.current = setInterval(() => setSpeechSeconds((x) => x + 1), 1000);
+              }
+            }}
+            className="fp-btn-primary mt-6 w-full max-w-sm py-3.5 text-[16px]"
           >
-            + Point discuté ({metrics.points})
+            Prêt, passer à l&apos;argumentation →
           </button>
         </div>
       )}
 
-      {phase === "open-discussion" && (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-primary/10 text-fp-primary">
-            <MessageSquareQuote className="h-7 w-7" />
+      {/* 2. Phase Tour de parole (Mascotte Conférence à l'assemblée) */}
+      {phase === "player-turn" && (
+        <div className="flex flex-1 flex-col justify-between mt-4">
+          <div>
+            <div className="fp-card p-5 border border-black/[0.04] flex items-center justify-between gap-4">
+              <div className="flex items-center gap-3.5">
+                <KawaiiMascot theme="conference" size={72} animation="wobble" className="shadow-xs shrink-0" />
+                <div>
+                  <h2 className="flex items-center gap-1.5 text-[18px] sm:text-[20px] font-bold text-fp-text">
+                    <Mic className="h-5 w-5 text-fp-primary" />
+                    À toi, {currentPlayer?.name}
+                  </h2>
+                  <p className="text-[13px] text-fp-text-dim">Tu t&apos;adresses à l&apos;assemblée.</p>
+                </div>
+              </div>
+
+              {/* Compteur temps de parole individuel */}
+              <div className="text-right shrink-0">
+                <div className="text-[26px] font-bold tabular-nums text-fp-primary">
+                  {Math.floor(speechSeconds / 60)}:{String(speechSeconds % 60).padStart(2, "0")}
+                </div>
+                <div className="text-[11px] font-medium uppercase tracking-wider text-fp-text-dim">Parole</div>
+              </div>
+            </div>
+
+            <div className="fp-card mt-4 p-5 border border-black/[0.04]">
+              <p className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">Thèse à débattre</p>
+              <p className="mt-1.5 text-[18px] sm:text-[20px] font-bold leading-snug text-fp-text">{prompt.prompt}</p>
+            </div>
+
+            {isDA && showDevil && (
+              <div className="animate-pop mt-4 rounded-2xl bg-fp-danger/10 p-4">
+                <p className="text-[13px] font-semibold text-fp-danger">Perspective contradictoire</p>
+                <p className="mt-1 text-[13px] text-fp-text">
+                  {prompt.perspectives[prompt.perspectives.length - 1] ??
+                    "Qu'en dirait une personne de bonne foi qui pense l'inverse ?"}
+                </p>
+              </div>
+            )}
           </div>
-          <h2 className="mt-3 text-[22px] font-bold text-fp-text">Discussion libre</h2>
-          <p className="mt-1 max-w-sm text-[13px] text-fp-text-dim">Échange d&apos;arguments sans chronomètre strict.</p>
-          <div className="mt-6 flex w-full max-w-sm flex-col gap-2">
-            <button type="button" onClick={() => addMetric("arguments")} className="fp-btn-secondary py-2.5 text-[14px]">
-              + Un argument exploré ({metrics.arguments})
+
+          <div className="mt-8 space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <button
+                type="button"
+                onClick={finishTurn}
+                className="fp-btn-primary flex items-center justify-center gap-2 py-4 text-[16px]"
+              >
+                <span>Passer la parole au suivant</span>
+              </button>
+              <button
+                type="button"
+                onClick={moveToDiscussion}
+                className="fp-btn-secondary flex items-center justify-center gap-2 py-4 text-[16px]"
+              >
+                <span>Discussion libre ouverte</span>
+              </button>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => addMetric("points")}
+              className="w-full rounded-2xl border border-dashed border-black/[0.12] py-3 text-[14px] font-semibold text-fp-text-dim transition-colors hover:border-fp-primary hover:text-fp-primary"
+            >
+              + Marquer un point discuté ({metrics.points})
             </button>
-            <button type="button" onClick={() => addMetric("questions")} className="fp-btn-secondary py-2.5 text-[14px]">
-              + Une question restante ({metrics.questions})
+          </div>
+        </div>
+      )}
+
+      {/* 3. Phase Discussion libre */}
+      {phase === "open-discussion" && (
+        <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
+          <KawaiiMascot theme="conference" size={96} animation="float" className="mb-3" />
+          <h2 className="text-[24px] font-bold text-fp-text">Discussion libre & Débat ouvert</h2>
+          <p className="mt-1 max-w-md text-[14px] text-fp-text-dim">
+            Tout le monde échange ses arguments sans restriction de tour.
+          </p>
+
+          <div className="fp-card mt-5 p-4 max-w-md w-full border border-black/[0.04]">
+            <p className="text-[16px] font-bold text-fp-text">{prompt.prompt}</p>
+          </div>
+
+          <div className="mt-6 flex w-full max-w-md flex-col gap-2.5">
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => addMetric("arguments")}
+                className="fp-btn-secondary py-3 text-[14px]"
+              >
+                + Argument ({metrics.arguments})
+              </button>
+              <button
+                type="button"
+                onClick={() => addMetric("questions")}
+                className="fp-btn-secondary py-3 text-[14px]"
+              >
+                + Question ({metrics.questions})
+              </button>
+            </div>
+
+            <button
+              type="button"
+              onClick={showFollowUp}
+              className="fp-btn-secondary flex items-center justify-center gap-2 py-3.5 text-[15px]"
+            >
+              <RefreshCw className="h-4.5 w-4.5" />
+              <span>Relancer avec un nouvel angle</span>
             </button>
-            <button type="button" onClick={showFollowUp} className="fp-btn-primary mt-2 flex items-center justify-center gap-1.5 py-3 text-[15px]">
-              <RefreshCw className="h-4 w-4" />
-              Nouvelle relance
-            </button>
-            <button type="button" onClick={() => go("voting")} className="fp-btn-ghost mt-1 py-2.5 text-[14px]">
+
+            <button
+              type="button"
+              onClick={() => go("voting")}
+              className="fp-btn-primary mt-2 py-4 text-[16px]"
+            >
               Passer au vote final →
             </button>
           </div>
         </div>
       )}
 
+      {/* 4. Phase Relance */}
       {phase === "follow-up" && activeFollowUp && (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#af52de]/10 text-[#af52de]">
-            <RefreshCw className="h-6 w-6" />
+        <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
+          <KawaiiMascot theme="debate" size={90} animation="wobble" className="mb-3" />
+          <h2 className="text-[22px] font-bold text-fp-text">Pour aller plus loin</h2>
+          <div className="fp-card mt-4 p-5 max-w-md w-full border border-black/[0.04]">
+            <p className="text-[17px] font-semibold leading-snug text-fp-text">{activeFollowUp}</p>
           </div>
-          <h2 className="mt-3 text-[20px] font-bold text-fp-text">Pour aller plus loin</h2>
-          <p className="mt-3 max-w-md text-[17px] font-semibold leading-snug text-fp-text">{activeFollowUp}</p>
-          <div className="mt-8 flex w-full max-w-sm flex-col gap-2">
-            <button type="button" onClick={() => go("player-turn")} className="fp-btn-primary py-3 text-[15px]">
-              Reprendre les tours
+
+          <div className="mt-6 flex w-full max-w-md flex-col gap-3">
+            <button
+              type="button"
+              onClick={() => go("player-turn")}
+              className="fp-btn-primary py-4 text-[16px]"
+            >
+              Reprendre les tours de parole
             </button>
-            <button type="button" onClick={() => go("open-discussion")} className="fp-btn-secondary py-2.5 text-[14px]">
-              Discussion libre
+            <button
+              type="button"
+              onClick={() => go("open-discussion")}
+              className="fp-btn-secondary py-3.5 text-[15px]"
+            >
+              Revenir à la discussion libre
             </button>
           </div>
         </div>
       )}
 
+      {/* 5. Phase Vote final */}
       {phase === "voting" && (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-warning/15 text-fp-warning">
+        <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
+          <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-warning/15 text-fp-warning mb-2">
             <Vote className="h-7 w-7" />
           </div>
-          <h2 className="mt-3 text-[22px] font-bold text-fp-text">Vote final</h2>
-          <p className="mt-1 text-[13px] text-fp-text-dim">As-tu fait évoluer ton point de vue ?</p>
-          <div className="mt-6 grid w-full max-w-sm grid-cols-2 gap-2">
+          <h2 className="text-[24px] font-bold text-fp-text">Vote & Avis Final</h2>
+          <p className="mt-1 text-[14px] text-fp-text-dim">
+            Après ce débat, quelle est votre position ?
+          </p>
+
+          <div className="mt-6 grid w-full max-w-md grid-cols-2 gap-3">
             {(
               [
-                ["pour", "Pour"],
-                ["contre", "Contre"],
-                ["nuance", "Nuancé"],
-                ["indecis", "Indécis"],
+                ["pour", "👍 Pour"],
+                ["contre", "👎 Contre"],
+                ["nuance", "🤔 Nuancé"],
+                ["indecis", "🤷 Indécis"],
               ] as const
             ).map(([val, label]) => (
               <button
                 key={val}
                 type="button"
                 onClick={() => castVoteLocal(val)}
-                className={`rounded-2xl px-4 py-3 text-[15px] font-medium transition-all active:scale-[0.98] ${
+                className={`min-h-[56px] rounded-2xl px-4 py-3.5 text-[16px] font-bold transition-all active:scale-[0.98] ${
                   vote === val
-                    ? "bg-fp-primary text-white"
-                    : "fp-card text-fp-text hover:bg-black/[0.02]"
+                    ? "bg-fp-primary text-white shadow-sm"
+                    : "fp-card text-fp-text hover:bg-black/[0.02] border border-black/[0.04]"
                 }`}
               >
                 {label}
               </button>
             ))}
           </div>
-          <button type="button" onClick={() => go("results")} className="fp-btn-primary mt-8 w-full max-w-sm py-3 text-[15px]">
-            Voir le bilan
+
+          <button
+            type="button"
+            onClick={() => go("results")}
+            className="fp-btn-primary mt-8 w-full max-w-md py-4 text-[16px]"
+          >
+            Voir le bilan du débat
           </button>
         </div>
       )}

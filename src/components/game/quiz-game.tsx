@@ -15,6 +15,7 @@ import { useLanguageStore } from "@/lib/store/language";
 import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
+import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import { AlertCircle, Flag, Trophy, ChevronLeft, HandMetal } from "lucide-react";
 
 interface QuizGameProps {
@@ -233,8 +234,8 @@ export function QuizGame({ mode }: QuizGameProps) {
       <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4 pb-16 pt-10 animate-rise">
         {winner && winner.score > 0 && <Confetti />}
         <div className="text-center">
-          <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-warning/15 text-fp-warning">
-            <Trophy className="h-7 w-7" />
+          <div className="mx-auto mb-2 flex justify-center">
+            <KawaiiMascot theme="party" size={88} className="border border-black/[0.05] shadow-sm" />
           </div>
           <h1 className="mt-3 text-[28px] font-bold text-fp-text">
             {solo ? "Partie terminée" : `${winner.player.name} gagne !`}
@@ -279,23 +280,38 @@ export function QuizGame({ mode }: QuizGameProps) {
   // ---------- Passage de relais (multi-joueurs, un appareil) ----------
   if (phase === "handoff" && activePlayer) {
     return (
-      <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col items-center justify-center px-6 text-center animate-fade">
-        <p className="text-[13px] font-medium uppercase tracking-wide text-fp-text-dim">
+      <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
+        <p className="text-[13px] font-semibold uppercase tracking-wider text-fp-text-dim">
           Question {index + 1} sur {questions.length}
         </p>
-        <div className="mt-6">
-          <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={84} />
+
+        {/* Mascotte Arbitre Animée */}
+        <div className="mt-6 flex flex-col items-center">
+          <KawaiiMascot theme="referee" size={110} animation="wobble" className="shadow-md" />
+          <div className="mt-4 flex items-center gap-2 rounded-full bg-black/[0.04] px-3.5 py-1.5">
+            <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={28} />
+            <span className="text-[15px] font-bold text-fp-text">{activePlayer.name}</span>
+          </div>
         </div>
-        <h1 className="mt-5 text-[26px] font-bold text-fp-text">À toi, {activePlayer.name}</h1>
+
+        <h1 className="mt-4 text-[26px] sm:text-[30px] font-bold text-fp-text">
+          À toi de jouer, {activePlayer.name} !
+        </h1>
         <p className="mt-2 flex items-center justify-center gap-1.5 text-[14px] text-fp-text-dim">
           <HandMetal className="h-4 w-4" />
           Passe l&apos;appareil au bon joueur
         </p>
+
         <div className="mt-3">
           <PillBadge>{scores[activePlayer.id]?.score ?? 0} pts</PillBadge>
         </div>
-        <button type="button" onClick={startTurn} className="fp-btn-primary mt-8 w-full max-w-xs py-3.5 text-[17px]">
-          C&apos;est moi
+
+        <button
+          type="button"
+          onClick={startTurn}
+          className="fp-btn-primary mt-8 w-full max-w-xs py-4 text-[17px]"
+        >
+          C&apos;est parti !
         </button>
       </main>
     );
@@ -303,27 +319,30 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   if (!current) return null;
 
+  const isCorrect = phase === "answer" && selected === current.correctAnswer;
+  const isWrong = phase === "answer" && selected !== current.correctAnswer;
+
   // ---------- Jeu ----------
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl sm:max-w-3xl flex-col px-4 sm:px-6 pb-12 pt-3 animate-rise">
       {/* Barre de navigation */}
       <div className="flex items-center justify-between">
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]"
+          className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[15px]"
           aria-label="Quitter la partie"
         >
           <ChevronLeft className="h-5 w-5" />
           <span>Quitter</span>
         </button>
-        <span className="text-[13px] font-medium text-fp-text-dim tabular-nums">
+        <span className="text-[14px] font-semibold text-fp-text-dim tabular-nums">
           {index + 1}/{questions.length}
         </span>
         {!solo && activePlayer ? (
           <span className="flex items-center gap-1.5">
-            <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={24} />
-            <span className="text-[13px] font-semibold text-fp-text">{activePlayer.name}</span>
+            <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={26} />
+            <span className="text-[14px] font-bold text-fp-text">{activePlayer.name}</span>
           </span>
         ) : (
           <span className="w-16" aria-hidden="true" />
@@ -347,11 +366,43 @@ export function QuizGame({ mode }: QuizGameProps) {
             <ProgressRing seconds={timeLeft} total={timePerQuestion} size={48} danger={timeLeft <= 2} />
           )}
         </div>
-        <h1 key={current.id} className="animate-rise mt-4 text-[22px] font-semibold leading-snug text-fp-text sm:text-[26px]">
+
+        {/* Mascotte interactive selon l'état de réflexion / résultat */}
+        <div className="mt-4 flex items-center gap-3.5 rounded-2xl bg-white p-3.5 border border-black/[0.04] shadow-xs">
+          {phase === "playing" && (
+            <>
+              <KawaiiMascot theme="thinking" size={62} animation="float" />
+              <div>
+                <p className="text-[14px] font-bold text-fp-text">Prends le temps de réfléchir 🤔</p>
+                <p className="text-[12px] text-fp-text-dim">Sélectionne la réponse qui te semble exacte.</p>
+              </div>
+            </>
+          )}
+          {isCorrect && (
+            <>
+              <KawaiiMascot theme="happy" size={62} animation="pop" />
+              <div>
+                <p className="text-[14px] font-bold text-fp-success">Excellent ! Bonne réponse 🎉</p>
+                <p className="text-[12px] text-fp-text-dim">+1 point pour votre score !</p>
+              </div>
+            </>
+          )}
+          {isWrong && (
+            <>
+              <KawaiiMascot theme="sad" size={62} animation="pop" />
+              <div>
+                <p className="text-[14px] font-bold text-fp-danger">Aïe… Mauvaise réponse 😢</p>
+                <p className="text-[12px] text-fp-text-dim">Regarde l&apos;explication ci-dessous.</p>
+              </div>
+            </>
+          )}
+        </div>
+
+        <h1 key={current.id} className="animate-rise mt-4 text-[22px] sm:text-[28px] font-bold leading-snug text-fp-text">
           {current.question}
         </h1>
 
-        <div className="mt-6 grid gap-2">
+        <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
           {current.answers.map((answer, i) => {
             let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
             let disabled = false;
@@ -371,17 +422,17 @@ export function QuizGame({ mode }: QuizGameProps) {
                 type="button"
                 disabled={disabled}
                 onClick={() => handleAnswer(i)}
-                className={`flex items-center gap-3 rounded-2xl px-4 py-3.5 text-left text-[15px] font-medium transition-all active:scale-[0.98] ${cls}`}
+                className={`flex min-h-[64px] items-center gap-3.5 rounded-2xl px-5 py-4 text-left text-[16px] font-medium transition-all active:scale-[0.98] ${cls}`}
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[13px] font-semibold text-fp-text-dim">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[14px] font-bold text-fp-text-dim">
                   {["A", "B", "C", "D"][i]}
                 </span>
-                <span className="flex-1">{answer}</span>
+                <span className="flex-1 leading-snug">{answer}</span>
                 {phase === "answer" && i === current.correctAnswer && (
-                  <span className="font-bold text-fp-success" aria-hidden="true">✓</span>
+                  <span className="font-bold text-fp-success text-lg" aria-hidden="true">✓</span>
                 )}
                 {phase === "answer" && i === selected && i !== current.correctAnswer && (
-                  <span className="font-bold text-fp-danger" aria-hidden="true">✗</span>
+                  <span className="font-bold text-fp-danger text-lg" aria-hidden="true">✗</span>
                 )}
               </button>
             );

@@ -90,31 +90,41 @@ export function WyrGame() {
         <h1 className="text-[20px] font-semibold text-fp-text">Tu préfères…</h1>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-3">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 relative items-stretch">
         <button
           type="button"
           onClick={() => choose("A")}
           disabled={chosen !== null}
-          className={`fp-card min-h-32 p-6 text-left transition-all active:scale-[0.98] ${
-            chosen === "A" ? "ring-2 ring-fp-primary" : chosen === "B" ? "opacity-40" : "hover:bg-black/[0.02]"
+          className={`fp-card flex flex-col justify-between min-h-[140px] p-6 text-left transition-all active:scale-[0.98] ${
+            chosen === "A"
+              ? "ring-2 ring-fp-primary shadow-md"
+              : chosen === "B"
+                ? "opacity-35"
+                : "hover:bg-black/[0.02]"
           }`}
         >
-          <span className="text-[12px] font-semibold uppercase tracking-wide text-fp-primary">Option A</span>
-          <p className="mt-2 text-[18px] font-semibold leading-snug text-fp-text">{pair.optionA}</p>
+          <span className="text-[12px] font-semibold uppercase tracking-wider text-fp-primary">Option A</span>
+          <p className="mt-3 text-[17px] sm:text-[19px] font-semibold leading-snug text-fp-text">{pair.optionA}</p>
         </button>
 
-        <div className="text-center text-[15px] font-medium text-fp-text-dim" aria-hidden="true">ou</div>
+        <div className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 h-9 w-9 items-center justify-center rounded-full bg-white shadow-md text-[13px] font-bold text-fp-text-dim border border-black/5" aria-hidden="true">
+          OU
+        </div>
 
         <button
           type="button"
           onClick={() => choose("B")}
           disabled={chosen !== null}
-          className={`fp-card min-h-32 p-6 text-left transition-all active:scale-[0.98] ${
-            chosen === "B" ? "ring-2 ring-fp-primary" : chosen === "A" ? "opacity-40" : "hover:bg-black/[0.02]"
+          className={`fp-card flex flex-col justify-between min-h-[140px] p-6 text-left transition-all active:scale-[0.98] ${
+            chosen === "B"
+              ? "ring-2 ring-fp-primary shadow-md"
+              : chosen === "A"
+                ? "opacity-35"
+                : "hover:bg-black/[0.02]"
           }`}
         >
-          <span className="text-[12px] font-semibold uppercase tracking-wide text-fp-primary">Option B</span>
-          <p className="mt-2 text-[18px] font-semibold leading-snug text-fp-text">{pair.optionB}</p>
+          <span className="text-[12px] font-semibold uppercase tracking-wider text-fp-primary">Option B</span>
+          <p className="mt-3 text-[17px] sm:text-[19px] font-semibold leading-snug text-fp-text">{pair.optionB}</p>
         </button>
       </div>
 

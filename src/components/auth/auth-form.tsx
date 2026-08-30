@@ -111,25 +111,25 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
 
   if (user) {
     return (
-      <div className="fp-card w-full p-6 text-center">
+      <div className="fp-card w-full p-6 text-center animate-rise">
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="mb-4 flex items-center gap-0.5 text-[15px] text-fp-blue"
+          className="mb-4 flex items-center gap-0.5 text-[15px] font-medium text-fp-primary active:opacity-70"
         >
-          <ChevronLeft className="h-4 w-4" />
+          <ChevronLeft className="h-5 w-5" />
           {t("config.back")}
         </button>
-        <CheckCircle2 className="mx-auto h-12 w-12 text-fp-green" />
+        <CheckCircle2 className="mx-auto h-12 w-12 text-fp-success" />
         <h2 className="mt-3 text-xl font-bold text-fp-text">{t("auth.welcome")}</h2>
-        <p className="mt-1 text-sm text-fp-text-secondary">{user.email}</p>
+        <p className="mt-1 text-sm text-fp-text-dim">{user.email}</p>
 
         {/* Langue de l'interface */}
         <div className="mt-6 text-left">
-          <p className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-secondary">
+          <p className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">
             {t("profile.language")}
           </p>
-          <div className="mt-2 flex flex-wrap gap-1.5">
+          <div className="mt-2 flex flex-wrap gap-2">
             {SUPPORTED_LANGUAGES.map((l) => (
               <button
                 key={l}
@@ -139,10 +139,10 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
                   const sb = getSupabaseBrowser();
                   sb?.from("profiles").update({ language: l }).eq("id", user.id);
                 }}
-                className={`rounded-full px-3.5 py-1.5 text-[13px] font-semibold transition-colors ${
+                className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors active:scale-95 ${
                   lang === l
-                    ? "bg-fp-blue text-white"
-                    : "bg-fp-gray-6 text-fp-text-secondary hover:bg-fp-gray-5"
+                    ? "bg-fp-primary text-white shadow-xs"
+                    : "bg-black/[0.04] text-fp-text hover:bg-black/[0.08]"
                 }`}
               >
                 {LANGUAGE_NAMES[l]}
@@ -155,7 +155,7 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
           {lang === "fr" ? "Réglages (temps de jeu)" : "Settings (game timers)"}
         </button>
 
-        <button type="button" onClick={logout} className="mt-3 w-full text-[15px] font-medium text-fp-red">
+        <button type="button" onClick={logout} className="mt-4 w-full text-[15px] font-medium text-fp-danger">
           {t("auth.logout")}
         </button>
       </div>
@@ -163,23 +163,23 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
   }
 
   return (
-    <form onSubmit={submit} className="fp-card w-full p-6">
+    <form onSubmit={submit} className="fp-card w-full p-6 animate-rise">
       <h2 className="text-xl font-bold text-fp-text">
         {mode === "login" ? t("auth.login") : t("auth.register")}
       </h2>
-      <p className="mt-1 text-sm text-fp-text-secondary">
+      <p className="mt-1 text-sm text-fp-text-dim">
         {mode === "login"
           ? lang === "fr" ? "Optionnel — le jeu en ligne marche aussi avec un simple pseudo." : "Optional — online play also works with a simple nickname."
-          : lang === "fr" ? "Gratuit, 30 secondes. Tes préférences sont sauvegardées." : "Free, 30 seconds. Your preferences are saved."}
+          : lang === "fr" ? "Gratuit, 30 secondes. Vos préférences sont sauvegardées." : "Free, 30 seconds. Your preferences are saved."}
       </p>
 
       {mode === "register" && (
         <label className="mt-5 block">
-          <span className="text-[13px] font-semibold text-fp-text-secondary">{t("auth.name")}</span>
+          <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.name")}</span>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="fp-input mt-1.5"
+            className="fp-input mt-1.5 w-full px-4"
             placeholder="Dany"
             maxLength={24}
           />
@@ -187,27 +187,27 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
       )}
 
       <label className="mt-4 block">
-        <span className="text-[13px] font-semibold text-fp-text-secondary">{t("auth.email")}</span>
+        <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.email")}</span>
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="fp-input mt-1.5"
+          className="fp-input mt-1.5 w-full px-4"
           placeholder="toi@exemple.fr"
           autoComplete="email"
         />
       </label>
 
       <label className="mt-4 block">
-        <span className="text-[13px] font-semibold text-fp-text-secondary">{t("auth.password")}</span>
+        <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.password")}</span>
         <input
           type="password"
           required
           minLength={6}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="fp-input mt-1.5"
+          className="fp-input mt-1.5 w-full px-4"
           placeholder="••••••••"
           autoComplete={mode === "login" ? "current-password" : "new-password"}
         />
@@ -215,7 +215,7 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
 
       {mode === "register" && (
         <div className="mt-4">
-          <span className="text-[13px] font-semibold text-fp-text-secondary">
+          <span className="text-[13px] font-semibold text-fp-text-dim">
             {lang === "fr" ? "Ta langue" : "Your language"}
           </span>
           <div className="mt-1.5 flex gap-2">
@@ -225,33 +225,33 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
                 type="button"
                 onClick={() => setLanguage(l)}
                 className={`flex-1 rounded-xl py-2.5 text-[15px] font-semibold transition-colors ${
-                  lang === l ? "bg-fp-blue text-white" : "bg-fp-gray-6 text-fp-text-secondary hover:bg-fp-gray-5"
+                  lang === l ? "bg-fp-primary text-white" : "bg-black/[0.04] text-fp-text-dim hover:bg-black/[0.07]"
                 }`}
               >
                 {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
               </button>
             ))}
           </div>
-          <p className="mt-1.5 text-[12px] text-fp-text-secondary">
+          <p className="mt-1.5 text-[12px] text-fp-text-dim">
             {lang === "fr"
-              ? "Interface et questions affichées dans ta langue, y compris dans les salons en ligne."
+              ? "Interface et questions affichées dans votre langue, y compris dans les salons en ligne."
               : "Interface and questions shown in your language, including online rooms."}
           </p>
         </div>
       )}
 
       {error && (
-        <p className="mt-4 rounded-xl bg-fp-red/10 px-3.5 py-2.5 text-sm font-medium text-fp-red">{error}</p>
+        <p className="mt-4 rounded-xl bg-fp-danger/10 px-3.5 py-2.5 text-sm font-medium text-fp-danger">{error}</p>
       )}
 
-      <button type="submit" disabled={loading || !email || password.length < 6} className="fp-btn-primary mt-5 w-full disabled:opacity-40">
+      <button type="submit" disabled={loading || !email || password.length < 6} className="fp-btn-primary mt-6 w-full disabled:opacity-40">
         {loading ? "…" : mode === "login" ? t("auth.signIn") : t("auth.signUp")}
       </button>
 
       <button
         type="button"
         onClick={() => setMode(mode === "login" ? "register" : "login")}
-        className="mt-3 w-full text-[15px] font-medium text-fp-blue"
+        className="mt-3 w-full text-[15px] font-medium text-fp-primary active:opacity-70"
       >
         {mode === "login"
           ? lang === "fr" ? "Pas de compte ? Crée-en un" : "No account? Create one"
