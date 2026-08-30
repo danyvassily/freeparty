@@ -12,7 +12,7 @@
  *      celles dont la réponse indiquée est fausse ou ambiguë → éliminées
  *   4. L'appelant retombe sur le catalogue local si le lot est insuffisant
  */
-import { QuestionSchema, type Question, type QuestionCategory } from "./schema";
+import { QuestionSchema, QuestionTranslationSchema, type Question, type QuestionCategory } from "./schema";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 
 const DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
@@ -23,6 +23,12 @@ export function isDeepSeekEnabled(): boolean {
   return Boolean(process.env.DEEPSEEK_API_KEY);
 }
 
+interface AiRawTranslation {
+  question: string;
+  answers?: string[];
+  explanation?: string;
+}
+
 interface AiRawQuestion {
   question: string;
   answers: string[];
@@ -30,6 +36,8 @@ interface AiRawQuestion {
   explanation?: string;
   subcategory?: string;
   difficulty?: "easy" | "medium" | "hard";
+  /** Traduction anglaise de la même question (même index de bonne réponse) */
+  en?: AiRawTranslation;
 }
 
 function slugify(text: string): string {
@@ -79,8 +87,10 @@ RÈGLES ABSOLUES :
 - La question ne contient JAMAIS sa propre réponse.
 - Chaque question a une explication courte (1 phrase) confirmant le fait.
 - Varie les sujets : pas deux questions sur le même fait ni le même sous-thème.
-- Réponds UNIQUEMENT en JSON : {"questions":[{"question":"...","answers":["...","...","...","..."],"correctIndex":0,"explanation":"...","subcategory":"...","difficulty":"easy|medium|hard"}]}
-- answers contient exactement 4 chaînes distinctes ; correctIndex (0-3) pointe la bonne réponse ; varie la position de la bonne réponse.`;
+- Réponds UNIQUEMENT en JSON : {"questions":[{"question":"...","answers":["...","...","...","..."],"correctIndex":0,"explanation":"...","subcategory":"...","difficulty":"easy|medium|hard","en":{"question":"...","answers":["...","...","...","..."],"explanation":"..."}}]}
+- answers contient exactement 4 chaînes distinctes ; correctIndex (0-3) pointe la bonne réponse ; varie la position de la bonne réponse.
+- "en" est OBLIGATOIRE : traduction anglaise fidèle de la question et des 4 réponses DANS LE MÊME ORDRE (correctIndex reste valide), en anglais naturel.`;
+
 
 /**
  * Passe de vérification : le modèle relit le lot et renvoie les indices des
@@ -145,6 +155,14 @@ export async function generateQuestionsWithDeepSeek(
   for (const [i, q] of kept.entries()) {
     const slug = slugify(q.question ?? "");
     if (!slug) continue;
+    // Traduction anglaise : validée par le sous-schéma ; absente si invalide
+    // (le jeu retombe alors sur le français pour cette question)
+    const enParsed = q.en ? QuestionTranslationSchema.safeParse(q.en) : null;
+    const translations =
+      enParsed?.success && enParsed.data.answers
+        ? { en: { question: enParsed.data.question, answers: enParsed.data.answers, explanation: enParsed.data.explanation } }
+        : undefined;
+
     const candidate = {
       id: `ai-${stamp}-${i}-${slug.slice(0, 24)}`,
       conceptId: `ai-${slug}`,
@@ -158,6 +176,7 @@ export async function generateQuestionsWithDeepSeek(
       subcategory: (q.subcategory ?? "général").slice(0, 60),
       difficulty: q.difficulty ?? "medium",
       language: "fr",
+      translations,
       tags: ["ia"],
       source: { provider: "deepseek", license: "AI-generated" },
       explanation: q.explanation?.slice(0, 300),

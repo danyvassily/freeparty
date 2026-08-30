@@ -213,6 +213,33 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
         />
       </label>
 
+      {mode === "register" && (
+        <div className="mt-4">
+          <span className="text-[13px] font-semibold text-fp-text-secondary">
+            {lang === "fr" ? "Ta langue" : "Your language"}
+          </span>
+          <div className="mt-1.5 flex gap-2">
+            {(["fr", "en"] as const).map((l) => (
+              <button
+                key={l}
+                type="button"
+                onClick={() => setLanguage(l)}
+                className={`flex-1 rounded-xl py-2.5 text-[15px] font-semibold transition-colors ${
+                  lang === l ? "bg-fp-blue text-white" : "bg-fp-gray-6 text-fp-text-secondary hover:bg-fp-gray-5"
+                }`}
+              >
+                {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
+              </button>
+            ))}
+          </div>
+          <p className="mt-1.5 text-[12px] text-fp-text-secondary">
+            {lang === "fr"
+              ? "Interface et questions affichées dans ta langue, y compris dans les salons en ligne."
+              : "Interface and questions shown in your language, including online rooms."}
+          </p>
+        </div>
+      )}
+
       {error && (
         <p className="mt-4 rounded-xl bg-fp-red/10 px-3.5 py-2.5 text-sm font-medium text-fp-red">{error}</p>
       )}

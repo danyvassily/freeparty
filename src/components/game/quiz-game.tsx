@@ -5,12 +5,14 @@
  * Multi-joueurs sur un seul appareil : tour par tour avec écran
  * "passe l'appareil" entre chaque question, scores individuels.
  */
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/lib/questions/schema";
 import { REPORT_REASONS } from "@/lib/questions/schema";
 import { useGameStore, type Player } from "@/lib/store/game";
 import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
+import { useLanguageStore } from "@/lib/store/language";
+import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
 import { AlertCircle, Flag, Trophy, ChevronLeft, HandMetal } from "lucide-react";
@@ -55,7 +57,14 @@ export function QuizGame({ mode }: QuizGameProps) {
   const handleAnswerRef = useRef<(i: number) => void>(() => {});
 
   const timePerQuestion = config?.timePerQuestion ?? 15;
-  const current = questions[index];
+  const lang = useLanguageStore((s) => s.language);
+  const currentRaw = questions[index];
+  // Question affichée dans la langue choisie (repli français) ; l'index de
+  // bonne réponse est identique dans toutes les langues.
+  const current = useMemo(
+    () => (currentRaw ? { ...currentRaw, ...localizeQuestion(currentRaw, lang) } : undefined),
+    [currentRaw, lang],
+  );
   const isLast = index >= questions.length - 1;
   const activePlayer = players[index % players.length];
 

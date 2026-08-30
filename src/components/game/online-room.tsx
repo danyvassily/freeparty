@@ -27,6 +27,8 @@ import {
   type RoomAnswer,
 } from "@/lib/online/room";
 import { MODE_META, CATEGORY_LABELS, QUESTION_COUNT_OPTIONS } from "@/lib/game/modes";
+import { localizeQuestion } from "@/lib/questions/localize";
+import { useLanguageStore } from "@/lib/store/language";
 import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
 import type { Question } from "@/lib/questions/schema";
 import type { GameMode } from "@/lib/store/game";
@@ -357,6 +359,10 @@ export function OnlineRoom() {
   }
 
   const q = session?.current_question;
+  // Chaque joueur voit la question dans SA langue (repli français)
+  const lang = useLanguageStore((s) => s.language);
+  const setLanguage = useLanguageStore((s) => s.setLanguage);
+  const qLocal = q ? localizeQuestion(q, lang) : null;
   const correctAnswer = revealed ? q?.correctAnswer : undefined;
   const answeredCount = answers.filter((a) => a.question_index === index()).length;
   const pseudoValid = pseudo.trim().length >= 2;
@@ -388,6 +394,25 @@ export function OnlineRoom() {
             className="fp-input w-full px-4 py-3 text-[16px] font-medium"
           />
         </div>
+
+        <SectionTitle>Langue des questions</SectionTitle>
+        <div className="fp-card flex gap-2 p-3">
+          {(["fr", "en"] as const).map((l) => (
+            <button
+              key={l}
+              type="button"
+              onClick={() => setLanguage(l)}
+              className={`flex-1 rounded-xl py-2.5 text-[15px] font-semibold transition-colors ${
+                lang === l ? "bg-fp-primary text-white" : "bg-black/[0.04] text-fp-text-dim hover:bg-black/[0.07]"
+              }`}
+            >
+              {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
+            </button>
+          ))}
+        </div>
+        <p className="mt-2 px-1 text-[12px] text-fp-text-dim">
+          Chaque joueur du salon voit les questions dans sa propre langue.
+        </p>
 
         <div className="mt-6 grid gap-3">
           <button
@@ -649,12 +674,12 @@ export function OnlineRoom() {
                 {answeredCount}/{players.length} réponses
               </span>
             </div>
-            <h1 key={q.question} className="animate-rise mt-4 text-[20px] font-semibold leading-snug text-fp-text sm:text-[24px]">
-              {q.question}
+            <h1 key={qLocal!.question} className="animate-rise mt-4 text-[20px] font-semibold leading-snug text-fp-text sm:text-[24px]">
+              {qLocal!.question}
             </h1>
 
             <div className="mt-6 grid grid-cols-1 gap-2">
-              {q.answers.map((answer, i) => {
+              {qLocal!.answers.map((answer, i) => {
                 let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
                 if (revealed) {
                   if (i === correctAnswer) cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text font-semibold";
@@ -680,9 +705,9 @@ export function OnlineRoom() {
               })}
             </div>
 
-            {revealed && q.explanation && (
+            {revealed && qLocal?.explanation && (
               <p className="animate-rise mt-4 rounded-2xl bg-black/[0.03] px-4 py-3 text-[13px] leading-relaxed text-fp-text-dim">
-                {q.explanation}
+                {qLocal.explanation}
               </p>
             )}
           </section>

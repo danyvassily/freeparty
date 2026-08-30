@@ -11,6 +11,11 @@ const GOOD_Q = {
   explanation: "Mercure orbite à ~58 Mkm du Soleil.",
   subcategory: "astronomie",
   difficulty: "easy",
+  en: {
+    question: "Which planet is closest to the Sun?",
+    answers: ["Venus", "Mercury", "Mars", "Earth"],
+    explanation: "Mercury orbits at ~58M km from the Sun.",
+  },
 };
 const BAD_Q = {
   question: "Capitale de l'Australie ?",
@@ -57,6 +62,9 @@ describe("deepseek — génération de questions", () => {
     expect(qs[0].category).toBe("science");
     expect(qs[0].source.provider).toBe("deepseek");
     expect(qs[0].explanation).toContain("Mercure");
+    // Traduction anglaise embarquée, même index de bonne réponse
+    expect(qs[0].translations?.en?.question).toBe("Which planet is closest to the Sun?");
+    expect(qs[0].translations?.en?.answers?.[qs[0].correctAnswer]).toBe("Mercury");
   });
 
   it("rejette les questions invalides (réponses dupliquées)", async () => {

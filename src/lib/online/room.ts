@@ -21,6 +21,8 @@ export interface OnlineSession {
     answers: string[];
     correctAnswer?: number; // présent uniquement quand answers_revealed
     explanation?: string;
+    /** Traductions (en) — chaque joueur affiche sa langue */
+    translations?: Partial<Record<string, { question: string; answers?: string[]; explanation?: string }>>;
   } | null;
   answers_revealed: boolean;
   state_version: number;
@@ -353,8 +355,9 @@ export async function hostPushQuestion(
         answers: question.answers,
         correctAnswer: question.correctAnswer,
         explanation: question.explanation,
+        translations: question.translations,
       }
-    : { question: question.question, answers: question.answers };
+    : { question: question.question, answers: question.answers, translations: question.translations };
   const { error } = await sb
     .from("game_sessions")
     .update({
