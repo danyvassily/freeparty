@@ -1,12 +1,16 @@
 "use client";
 
+/**
+ * Free Party — Le Cut (élimination avant la finale PRISM)
+ * Les 2 premiers sont pré-qualifiés ; les suivants jouent une
+ * question de sauvetage pour dérober la seconde place.
+ */
 import { useState } from "react";
 import type { PrismPlayer } from "@/lib/game/prism-engine";
 import type { Question } from "@/lib/questions/schema";
 import { sound } from "@/lib/audio/sound-engine";
-import { getSpecialtyById } from "@/lib/game/profile-specialty";
-import { AppIcon } from "@/components/ui/icons";
-import { Swords, Check, ArrowRight, Sparkles, AlertTriangle } from "lucide-react";
+import { PlayerDot } from "@/components/ui/primitives";
+import { Swords, Check, ArrowRight, Scissors } from "lucide-react";
 
 interface LeCutModalProps {
   players: PrismPlayer[];
@@ -49,9 +53,7 @@ export function LeCutModal({
       setSauvetageWinner(null);
     }
 
-    setTimeout(() => {
-      setPhase("qualification-revealed");
-    }, 1500);
+    setTimeout(() => setPhase("qualification-revealed"), 1500);
   }
 
   function proceed() {
@@ -60,90 +62,77 @@ export function LeCutModal({
   }
 
   return (
-    <div className="w-full max-w-xl mx-auto my-auto p-6 sm:p-8 glass-panel rounded-3xl border-white/[0.12] shadow-2xl animate-pop">
-      {/* Header Le Cut */}
-      <div className="text-center pb-4 border-b border-white/[0.08]">
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-rose-500/30 bg-rose-500/10 px-3 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-rose-300 mb-2">
-          <AlertTriangle className="h-3 w-3" />
-          <span>ÉLIMINATION HYBRIDE</span>
+    <div className="fp-card mx-auto my-auto w-full max-w-xl p-6 animate-pop sm:p-8">
+      {/* Header */}
+      <div className="pb-4 text-center">
+        <div className="mx-auto mb-2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-fp-danger/10 text-fp-danger">
+          <Scissors className="h-5 w-5" />
         </div>
-        <h2 className="font-sans text-2xl sm:text-3xl font-extrabold text-white">LE CUT</h2>
-        <p className="text-xs text-neutral-400 mt-1 max-w-md mx-auto">
+        <h2 className="text-[24px] font-bold text-fp-text">Le Cut</h2>
+        <p className="mx-auto mt-1 max-w-md text-[13px] text-fp-text-dim">
           {phase === "ranking"
-            ? "Les 2 premiers sont pré-qualifiés pour La Ligne. Les autres disposent d'une ultime question de sauvetage."
+            ? "Les 2 premiers sont qualifiés pour la finale. Les autres ont une question de sauvetage."
             : phase === "sauvetage-duel"
-            ? "Question de sauvetage : une bonne réponse permet de dérober la seconde place de finaliste."
-            : "Les deux finalistes sont officiellement désignés."}
+              ? "Une bonne réponse vole la seconde place de finaliste."
+              : "Les deux finalistes sont désignés."}
         </p>
       </div>
 
       {phase === "ranking" && (
-        <div className="my-6 space-y-2.5">
+        <div className="my-4 space-y-2">
           {sorted.map((p, i) => {
-            const spec = getSpecialtyById(p.specialtyId);
             const isQualified = i < 2;
-
             return (
               <div key={p.id}>
                 {i === 2 && (
                   <div className="my-3 flex items-center gap-2">
-                    <div className="h-px flex-1 bg-rose-500/40" />
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-rose-400 bg-rose-500/10 border border-rose-500/30 px-2.5 py-0.5 rounded-full">
-                      LIGNE DU CUT
+                    <div className="h-px flex-1 bg-fp-danger/30" />
+                    <span className="rounded-full bg-fp-danger/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-fp-danger">
+                      Ligne du cut
                     </span>
-                    <div className="h-px flex-1 bg-rose-500/40" />
+                    <div className="h-px flex-1 bg-fp-danger/30" />
                   </div>
                 )}
 
                 <div
-                  className={`flex items-center justify-between p-3.5 rounded-2xl border transition-all ${
-                    isQualified
-                      ? "border-emerald-500/40 bg-emerald-500/10 text-white"
-                      : "border-white/[0.06] bg-white/[0.02] text-neutral-400"
+                  className={`flex items-center gap-3 rounded-xl p-3 ${
+                    isQualified ? "bg-fp-success/10" : "bg-black/[0.02] opacity-70"
                   }`}
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-bold text-neutral-400 w-4">{i + 1}</span>
-                    <div className="flex flex-col">
-                      <div className="flex items-center gap-2">
-                        <span className="font-sans text-sm font-bold text-white">{p.name}</span>
-                        {isQualified && (
-                          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.2 text-[9px] uppercase font-mono font-bold">
-                            <Check className="h-2.5 w-2.5" />
-                            <span>Qualifié</span>
-                          </span>
-                        )}
-                      </div>
-                      <span className="flex items-center gap-1 text-[11px] text-neutral-400 mt-0.5">
-                        <AppIcon name={spec.icon} className="h-3 w-3" />
-                        <span>{spec.name}</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <span className="font-mono text-sm font-bold text-white">{p.score} pts</span>
+                  <span className="w-4 text-center text-[13px] font-semibold text-fp-text-dim tabular-nums">
+                    {i + 1}
+                  </span>
+                  <PlayerDot name={p.name} colorIndex={p.avatarColor} size={30} />
+                  <span className="flex-1 text-[14px] font-medium text-fp-text">{p.name}</span>
+                  {isQualified && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-fp-success/15 px-2 py-0.5 text-[11px] font-semibold text-fp-success">
+                      <Check className="h-3 w-3" />
+                      Qualifié
+                    </span>
+                  )}
+                  <span className="text-[14px] font-semibold text-fp-text tabular-nums">{p.score} pts</span>
                 </div>
               </div>
             );
           })}
 
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6">
             {hasSauvetage ? (
               <button
                 type="button"
                 onClick={startSauvetage}
-                className="glass-primary flex-1 flex items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
+                className="fp-btn-primary flex w-full items-center justify-center gap-2 py-3.5 text-[15px]"
               >
                 <Swords className="h-4 w-4" />
-                <span>Lancer la Question de Sauvetage ({p3?.name} vs {p4?.name ?? "..."})</span>
+                <span>Question de sauvetage — {p3?.name}{p4 ? ` vs ${p4.name}` : ""}</span>
               </button>
             ) : (
               <button
                 type="button"
                 onClick={proceed}
-                className="glass-primary flex-1 flex items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
+                className="fp-btn-primary flex w-full items-center justify-center gap-2 py-3.5 text-[15px]"
               >
-                <span>Accéder à La Ligne</span>
+                <span>Accéder à la finale</span>
                 <ArrowRight className="h-4 w-4" />
               </button>
             )}
@@ -152,31 +141,31 @@ export function LeCutModal({
       )}
 
       {phase === "sauvetage-duel" && sauvetageQuestion && (
-        <div className="my-6 animate-rise">
-          <div className="glass-panel-subtle rounded-2xl p-5 border border-amber-400/30 mb-5">
-            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-amber-300 block mb-1">
-              QUESTION DÉCISIVE DE SAUVETAGE
+        <div className="my-4 animate-rise">
+          <div className="mb-4 rounded-xl bg-fp-warning/10 p-4">
+            <span className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-fp-warning">
+              Question de sauvetage
             </span>
-            <h3 className="font-sans text-base font-bold text-white leading-snug">
+            <h3 className="text-[15px] font-semibold leading-snug text-fp-text">
               {sauvetageQuestion.question}
             </h3>
           </div>
 
-          {/* Boutons pour P3 et P4 */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             {[p3, p4].filter(Boolean).map((player) => (
-              <div key={player.id} className="glass-panel rounded-2xl p-4 border-white/[0.08]">
-                <span className="text-xs font-bold text-neutral-300 block mb-2.5">
-                  Réponse de {player.name} :
+              <div key={player!.id} className="rounded-xl bg-black/[0.02] p-3.5">
+                <span className="mb-2 flex items-center gap-2 text-[13px] font-semibold text-fp-text">
+                  <PlayerDot name={player!.name} colorIndex={player!.avatarColor} size={22} />
+                  {player!.name}
                 </span>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-1.5">
                   {sauvetageQuestion.answers.map((ans, idx) => (
                     <button
                       key={idx}
                       type="button"
                       disabled={answeredIndex !== null}
-                      onClick={() => handleSauvetageAnswer(player, idx)}
-                      className="glass-button rounded-xl p-2.5 text-left text-xs font-medium text-neutral-200 hover:text-white"
+                      onClick={() => handleSauvetageAnswer(player!, idx)}
+                      className="rounded-lg bg-white px-2.5 py-2 text-left text-[13px] font-medium text-fp-text shadow-sm transition hover:bg-black/[0.03] active:scale-[0.98] disabled:opacity-50"
                     >
                       {ans}
                     </button>
@@ -189,30 +178,26 @@ export function LeCutModal({
       )}
 
       {phase === "qualification-revealed" && (
-        <div className="my-6 text-center animate-pop">
-          <div className="inline-flex items-center justify-center h-12 w-12 rounded-xl bg-violet-600/20 text-violet-300 border border-violet-500/30 mb-3">
-            <Sparkles className="h-6 w-6" />
-          </div>
-
-          <h3 className="font-sans text-lg font-bold text-white">
+        <div className="my-4 text-center animate-pop">
+          <h3 className="text-[17px] font-semibold text-fp-text">
             {sauvetageWinner
-              ? `${sauvetageWinner.name} réussit son sauvetage et se qualifie !`
-              : "Le classement initial est maintenu pour la finale."}
+              ? `${sauvetageWinner.name} réussit son sauvetage !`
+              : "Le classement est maintenu."}
           </h3>
 
-          <div className="my-4 flex justify-center gap-3">
-            <span className="rounded-full bg-cyan-500/15 border border-cyan-500/30 px-4 py-1.5 text-xs font-bold text-cyan-300">
-              Finaliste 1 : {top1.name}
-            </span>
-            <span className="rounded-full bg-rose-500/15 border border-rose-500/30 px-4 py-1.5 text-xs font-bold text-rose-300">
-              Finaliste 2 : {(sauvetageWinner ?? top2).name}
-            </span>
+          <div className="my-4 flex flex-wrap justify-center gap-2">
+            {[top1, sauvetageWinner ?? top2].map((f) => (
+              <span key={f.id} className="inline-flex items-center gap-2 rounded-full bg-fp-primary/10 px-3.5 py-1.5 text-[13px] font-semibold text-fp-primary">
+                <PlayerDot name={f.name} colorIndex={f.avatarColor} size={20} />
+                {f.name}
+              </span>
+            ))}
           </div>
 
           <button
             type="button"
             onClick={proceed}
-            className="glass-primary mt-4 inline-flex items-center gap-2 rounded-xl px-6 py-3 text-xs font-bold text-white shadow-lg shadow-violet-600/30"
+            className="fp-btn-primary mt-2 inline-flex items-center gap-2 px-6 py-3 text-[15px]"
           >
             <span>Entrer dans La Ligne</span>
             <ArrowRight className="h-4 w-4" />

@@ -4,17 +4,15 @@
  */
 
 export const BRAND = {
-  name: "PRISM",
-  fullName: "Free Party — PRISM",
-  tagline: "Culture compétitive pour adultes",
-  shortName: "PRISM",
-  /** Slogan secondaire pour les écrans de chargement */
+  name: "Free Party",
+  fullName: "Free Party",
+  tagline: "Joue. Connais. Débats.",
+  shortName: "Free Party",
+  /** Messages d'attente légers pour les écrans de chargement */
   loadingMessages: [
-    "Alignement du prisme…",
-    "Calibrage des questions d'élite…",
-    "Préparation du Buzzer…",
-    "Tracé de La Ligne…",
-    "Synchronisation des finalistes…",
+    "Préparation des questions…",
+    "Mélange des catégories…",
+    "Dernière vérification…",
   ],
 } as const;
 

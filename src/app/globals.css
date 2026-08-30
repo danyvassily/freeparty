@@ -1,80 +1,54 @@
 @import "tailwindcss";
 
 /* ============================================================
-   PRISM — APPLE PRO DESIGN SYSTEM
-   Élégance · Précision · Matériaux Nobles · Contrastes Raffinés
+   FREE PARTY — DESIGN SYSTEM "APPLE LIGHT"
+   Inspiré de l'app Réglages iOS : fond gris groupé, cartes
+   blanches, une seule couleur d'accent, typographie système.
    ============================================================ */
 
 @theme {
-  /* Palette Obsidian & Titane */
-  --color-fp-bg: #070709;
-  --color-fp-surface: #0e0e14;
-  --color-fp-surface-2: #161520;
-  --color-fp-border: rgba(255, 255, 255, 0.08);
-  --color-fp-border-hover: rgba(255, 255, 255, 0.16);
-  --color-fp-text: #f5f5f7;
-  --color-fp-text-dim: #86868b;
-  --color-fp-primary: #7c3aed;
-  --color-fp-primary-2: #a855f7;
-  --color-fp-accent: #f59e0b;
-  --color-fp-accent-2: #06b6d4;
-  --color-fp-success: #10b981;
-  --color-fp-danger: #f43f5e;
-  --color-fp-warning: #f59e0b;
+  /* Palette claire */
+  --color-fp-bg: #f2f2f7;        /* gris groupé iOS */
+  --color-fp-card: #ffffff;      /* cartes */
+  --color-fp-fill: #e9e9ee;      /* remplissage secondaire (segments, puces) */
+  --color-fp-border: rgba(0, 0, 0, 0.06);
+  --color-fp-text: #1c1c1e;      /* label primaire */
+  --color-fp-text-dim: #8e8e93;  /* label secondaire */
+  --color-fp-primary: #007aff;   /* bleu iOS */
+  --color-fp-primary-press: #0062cc;
+  --color-fp-success: #34c759;   /* vert iOS */
+  --color-fp-danger: #ff3b30;    /* rouge iOS */
+  --color-fp-warning: #ff9500;   /* orange iOS */
 
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter",
+    "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter",
+    "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
 
-  --radius-fp-lg: 1rem;
-  --radius-fp-xl: 1.5rem;
-  --radius-fp-2xl: 2rem;
+  --radius-fp-lg: 0.875rem;   /* 14px — lignes iOS */
+  --radius-fp-xl: 1.25rem;    /* 20px — cartes */
+  --radius-fp-2xl: 1.75rem;   /* 28px — grandes cartes */
 
-  --animate-pop: pop 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
-  --animate-rise: rise 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
-  --animate-fade: fade 0.3s ease both;
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-shimmer: shimmer 2.5s linear infinite;
-  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
-  --animate-pulse-subtle: pulse-subtle 3s ease-in-out infinite;
-  --animate-glow: glow 3s ease-in-out infinite alternate;
+  --animate-pop: pop 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-rise: rise 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade: fade 0.25s ease both;
 }
 
 @keyframes pop {
-  0% { transform: scale(0.92); opacity: 0; }
+  0% { transform: scale(0.96); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
 @keyframes rise {
-  0% { transform: translateY(12px); opacity: 0; }
+  0% { transform: translateY(10px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
 @keyframes fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-@keyframes pulse-ring {
-  0% { transform: scale(0.95); opacity: 0.6; }
-  70% { transform: scale(1.25); opacity: 0; }
-  100% { transform: scale(1.25); opacity: 0; }
-}
-@keyframes pulse-subtle {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-@keyframes glow {
-  0% { box-shadow: 0 0 20px -4px rgba(124, 58, 237, 0.25); }
-  100% { box-shadow: 0 0 35px 2px rgba(168, 85, 247, 0.4); }
-}
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -85,146 +59,87 @@ html {
 }
 
 body {
-  background-color: #070709;
-  background-image: 
-    radial-gradient(circle at 50% -20%, rgba(124, 58, 237, 0.12) 0%, transparent 60%),
-    radial-gradient(circle at 100% 40%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 0% 80%, rgba(244, 63, 94, 0.04) 0%, transparent 50%);
-  background-attachment: fixed;
+  background-color: var(--color-fp-bg);
   color: var(--color-fp-text);
   font-family: var(--font-sans);
   min-height: 100dvh;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.011em;
 }
 
-/* Verre Dépoli Apple Glass */
-.glass-panel {
-  background: rgba(22, 21, 32, 0.55);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 12px 32px -4px rgba(0, 0, 0, 0.5);
-}
+/* ---------- Cartes & listes groupées (style Réglages) ---------- */
 
-.glass-panel-subtle {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
-}
-
-.glass-pill {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-}
-
-.glass-button {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.12), 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.glass-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
-}
-.glass-button:active {
-  transform: scale(0.98);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.glass-primary {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.85), rgba(168, 85, 247, 0.75));
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.35), 0 8px 24px -4px rgba(124, 58, 237, 0.4);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.glass-primary:hover {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(168, 85, 247, 0.9));
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.45), 0 12px 30px -4px rgba(124, 58, 237, 0.6);
-  transform: translateY(-1px);
-}
-.glass-primary:active {
-  transform: scale(0.98);
-}
-
-/* Fond décoratif : halos de couleur */
-.fp-aurora {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 60% 45% at 15% -5%, rgba(139, 92, 246, 0.28), transparent 60%),
-    radial-gradient(ellipse 55% 40% at 90% 5%, rgba(217, 70, 239, 0.2), transparent 60%),
-    radial-gradient(ellipse 60% 45% at 50% 110%, rgba(245, 158, 11, 0.14), transparent 60%),
-    var(--color-fp-bg);
-}
-
-/* Texte dégradé signature */
-.fp-gradient-text {
-  background: linear-gradient(100deg, var(--color-fp-primary), var(--color-fp-primary-2) 55%, var(--color-fp-accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Carte premium */
 .fp-card {
-  background: linear-gradient(160deg, rgba(28, 26, 44, 0.9), rgba(20, 18, 31, 0.92));
-  border: 1px solid var(--color-fp-border);
+  background: var(--color-fp-card);
   border-radius: var(--radius-fp-xl);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-.fp-card:active {
-  transform: scale(0.985);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-/* Boutons */
+/* Liste groupée iOS : conteneur blanc, séparateurs fins */
+.fp-list {
+  background: var(--color-fp-card);
+  border-radius: var(--radius-fp-lg);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.fp-list > * + * {
+  border-top: 0.5px solid var(--color-fp-border);
+}
+
+/* ---------- Boutons ---------- */
+
 .fp-btn-primary {
-  background: linear-gradient(110deg, var(--color-fp-primary), var(--color-fp-primary-2));
-  color: white;
-  font-weight: 700;
-  border-radius: 9999px;
-  padding: 0.9rem 1.75rem;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
-  box-shadow: 0 8px 24px -8px rgba(139, 92, 246, 0.55);
+  background: var(--color-fp-primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--radius-fp-lg);
+  transition: transform 0.12s ease, background 0.15s ease, opacity 0.15s ease;
 }
-.fp-btn-primary:active {
-  transform: scale(0.97);
+.fp-btn-primary:hover { background: var(--color-fp-primary-press); }
+.fp-btn-primary:active { transform: scale(0.97); }
+.fp-btn-primary:disabled { opacity: 0.35; }
+
+.fp-btn-secondary {
+  background: var(--color-fp-card);
+  color: var(--color-fp-primary);
+  font-weight: 600;
+  border-radius: var(--radius-fp-lg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.12s ease, background 0.15s ease, opacity 0.15s ease;
 }
-.fp-btn-primary:hover {
-  filter: brightness(1.08);
-}
+.fp-btn-secondary:hover { background: #fafafc; }
+.fp-btn-secondary:active { transform: scale(0.97); }
+.fp-btn-secondary:disabled { opacity: 0.4; }
 
 .fp-btn-ghost {
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--color-fp-text);
-  font-weight: 600;
-  border-radius: 9999px;
-  padding: 0.85rem 1.5rem;
-  border: 1px solid var(--color-fp-border);
-  transition: background 0.2s ease, transform 0.15s ease;
+  color: var(--color-fp-primary);
+  font-weight: 500;
+  border-radius: var(--radius-fp-lg);
+  transition: background 0.15s ease, transform 0.12s ease;
 }
-.fp-btn-ghost:active {
-  transform: scale(0.97);
-  background: rgba(255, 255, 255, 0.1);
-}
+.fp-btn-ghost:hover { background: rgba(0, 122, 255, 0.08); }
+.fp-btn-ghost:active { transform: scale(0.97); }
 
-/* Focus visible accessible (WCAG) */
+/* ---------- Champs ---------- */
+
+.fp-input {
+  background: var(--color-fp-card);
+  border: 0.5px solid var(--color-fp-border);
+  border-radius: var(--radius-fp-lg);
+  color: var(--color-fp-text);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.fp-input:focus {
+  border-color: var(--color-fp-primary);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+}
+.fp-input::placeholder { color: var(--color-fp-text-dim); }
+
+/* ---------- Focus visible accessible (WCAG) ---------- */
 :focus-visible {
-  outline: 2px solid var(--color-fp-accent-2);
+  outline: 2px solid var(--color-fp-primary);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 /* Respect prefers-reduced-motion (spec §86) */
@@ -239,15 +154,15 @@ body {
 
 /* Scrollbar discrète */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-thumb { background: var(--color-fp-border); border-radius: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.15); border-radius: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 
-/* Confettis simples (victoire) */
+/* Confettis sobres (victoire) */
 .fp-confetti-piece {
   position: fixed;
   top: -12px;
-  width: 10px;
-  height: 14px;
+  width: 9px;
+  height: 13px;
   border-radius: 2px;
   animation: confetti-fall linear both;
   pointer-events: none;
@@ -255,5 +170,5 @@ body {
 }
 @keyframes confetti-fall {
   0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(105vh) rotate(720deg); opacity: 0.6; }
+  100% { transform: translateY(105vh) rotate(540deg); opacity: 0.4; }
 }

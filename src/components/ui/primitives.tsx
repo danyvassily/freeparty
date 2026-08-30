@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { AppIcon, type IconName } from "./icons";
 import { ChevronRight } from "lucide-react";
 
-/** Minuteur circulaire avec dégradé Apple (spec §87 : timer animations) */
+/** Minuteur circulaire sobre (style iOS) */
 export function ProgressRing({
   seconds,
   total,
@@ -31,7 +31,7 @@ export function ProgressRing({
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke="rgba(255,255,255,0.06)"
+          stroke="rgba(0,0,0,0.07)"
           strokeWidth={stroke}
         />
         <circle
@@ -39,22 +39,16 @@ export function ProgressRing({
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke={danger ? "#f43f5e" : "url(#prism-ring-gradient)"}
+          stroke={danger ? "#ff3b30" : "#007aff"}
           strokeWidth={stroke}
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           style={{ transition: "stroke-dashoffset 0.3s linear, stroke 0.2s ease" }}
         />
-        <defs>
-          <linearGradient id="prism-ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#7c3aed" />
-            <stop offset="100%" stopColor="#06b6d4" />
-          </linearGradient>
-        </defs>
       </svg>
       <span
-        className={`absolute font-mono font-bold tabular-nums tracking-tight ${danger ? "text-rose-400" : "text-white"}`}
+        className={`absolute font-mono font-semibold tabular-nums tracking-tight ${danger ? "text-fp-danger" : "text-fp-text"}`}
         style={{ fontSize: size * 0.32 }}
       >
         {Math.max(0, Math.ceil(seconds))}
@@ -63,21 +57,17 @@ export function ProgressRing({
   );
 }
 
-/** Timer linéaire Apple (barre de progression millimétrée) */
+/** Barre de timer linéaire sobre */
 export function TimerBar({ seconds, total }: { seconds: number; total: number }) {
   const ratio = Math.max(0, Math.min(1, seconds / total));
   const isDanger = ratio < 0.25;
   const isWarning = ratio < 0.5;
 
   return (
-    <div className="h-1 w-full overflow-hidden rounded-full bg-white/[0.06]">
+    <div className="h-1.5 w-full overflow-hidden rounded-full bg-black/[0.06]">
       <div
         className={`h-full rounded-full transition-[width] duration-300 ease-linear ${
-          isDanger
-            ? "bg-rose-500 shadow-[0_0_8px_rgba(244,63,94,0.6)]"
-            : isWarning
-              ? "bg-amber-400 shadow-[0_0_8px_rgba(245,158,11,0.5)]"
-              : "bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-400"
+          isDanger ? "bg-fp-danger" : isWarning ? "bg-fp-warning" : "bg-fp-primary"
         }`}
         style={{ width: `${ratio * 100}%` }}
       />
@@ -85,7 +75,7 @@ export function TimerBar({ seconds, total }: { seconds: number; total: number })
   );
 }
 
-/** Contrôle segmenté style Apple iOS */
+/** Contrôle segmenté iOS */
 export function SegmentControl<T extends string>({
   options,
   value,
@@ -96,7 +86,7 @@ export function SegmentControl<T extends string>({
   onChange: (val: T) => void;
 }) {
   return (
-    <div className="flex w-full items-center gap-1 rounded-xl border border-white/[0.08] bg-white/[0.03] p-1 backdrop-blur-md">
+    <div className="flex w-full items-center gap-0.5 rounded-[10px] bg-black/[0.06] p-0.5">
       {options.map((opt) => {
         const selected = opt.value === value;
         return (
@@ -104,10 +94,10 @@ export function SegmentControl<T extends string>({
             key={opt.value}
             type="button"
             onClick={() => onChange(opt.value)}
-            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2 text-xs font-semibold tracking-wide transition-all ${
+            className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg py-1.5 text-[13px] font-medium transition-all ${
               selected
-                ? "bg-white/[0.12] text-white shadow-sm shadow-black/40 border border-white/[0.12]"
-                : "text-neutral-400 hover:text-neutral-200"
+                ? "bg-white text-fp-text shadow-sm"
+                : "text-fp-text-dim hover:text-fp-text"
             }`}
           >
             {opt.icon && <AppIcon name={opt.icon} className="h-3.5 w-3.5" />}
@@ -119,7 +109,7 @@ export function SegmentControl<T extends string>({
   );
 }
 
-/** Confettis de victoire discrets et nobles */
+/** Confettis sobres */
 export function Confetti({ count = 60 }: { count?: number }) {
   const [pieces, setPieces] = useState<Array<{ id: number; left: number; delay: number; duration: number; color: string; rotate: number }>>([]);
   const fired = useRef(false);
@@ -127,7 +117,7 @@ export function Confetti({ count = 60 }: { count?: number }) {
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
-    const colors = ["#7c3aed", "#a855f7", "#06b6d4", "#f59e0b", "#10b981", "#f5f5f7"];
+    const colors = ["#007aff", "#34c759", "#ff9500", "#ff2d55", "#af52de", "#5ac8fa"];
     setPieces(
       Array.from({ length: count }, (_, i) => ({
         id: i,
@@ -159,83 +149,76 @@ export function Confetti({ count = 60 }: { count?: number }) {
   );
 }
 
-/** Carte de mode de jeu Apple Pro */
+/** Ligne de liste iOS : icône carrée colorée + titre + sous-titre + chevron */
 export function ModeCard({
   title,
   subtitle,
   icon,
+  iconBg = "bg-fp-primary",
   onClick,
   disabled,
-  featured,
 }: {
   title: string;
   subtitle: string;
   icon: IconName | string;
+  iconBg?: string;
   onClick?: () => void;
   disabled?: boolean;
-  featured?: boolean;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className={`group relative w-full overflow-hidden rounded-2xl p-5 text-left transition-all duration-300 disabled:opacity-40 active:scale-[0.98] ${
-        featured
-          ? "glass-panel border-violet-500/30 hover:border-violet-500/60 shadow-[0_8px_32px_-8px_rgba(124,58,237,0.3)]"
-          : "glass-panel-subtle hover:bg-white/[0.06] hover:border-white/[0.14]"
-      }`}
+      className="group flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-black/[0.02] active:bg-black/[0.05] disabled:opacity-40"
     >
-      {featured && (
-        <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-violet-600/15 blur-2xl transition-all group-hover:bg-violet-600/25" />
-      )}
-
-      <div className="relative flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3.5">
-          <div
-            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-all ${
-              featured
-                ? "bg-gradient-to-tr from-violet-600 to-fuchsia-600 text-white shadow-lg shadow-violet-500/30"
-                : "border border-white/[0.08] bg-white/[0.04] text-neutral-300 group-hover:border-white/[0.15] group-hover:text-white"
-            }`}
-          >
-            <AppIcon name={icon} className="h-5 w-5" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <h3 className="font-sans text-sm font-semibold tracking-tight text-white">{title}</h3>
-              {featured && (
-                <span className="rounded-full border border-violet-400/30 bg-violet-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-300">
-                  Majeur
-                </span>
-              )}
-            </div>
-            <p className="mt-0.5 text-xs text-neutral-400 leading-relaxed line-clamp-1">{subtitle}</p>
-          </div>
-        </div>
-
-        <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.02] text-neutral-400 transition-transform group-hover:translate-x-0.5 group-hover:text-white">
-          <ChevronRight className="h-3.5 w-3.5" />
-        </div>
+      <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] text-white ${iconBg}`}>
+        <AppIcon name={icon} className="h-4.5 w-4.5" />
       </div>
+      <div className="min-w-0 flex-1">
+        <h3 className="text-[15px] font-medium text-fp-text leading-tight">{title}</h3>
+        <p className="mt-0.5 truncate text-[13px] text-fp-text-dim">{subtitle}</p>
+      </div>
+      <ChevronRight className="h-4 w-4 shrink-0 text-fp-text-dim/60" />
     </button>
   );
 }
 
-/** Badge de statut ou de ligue */
+/** Titre de section style Réglages (petites capitales grises) */
+export function SectionTitle({ children }: { children: ReactNode }) {
+  return (
+    <h2 className="px-4 pb-1.5 text-[13px] font-normal uppercase tracking-wide text-fp-text-dim">
+      {children}
+    </h2>
+  );
+}
+
+/** Badge discret */
 export function PillBadge({
   children,
-  icon,
-  colorClass = "border-white/[0.1] bg-white/[0.05] text-neutral-300",
+  colorClass = "bg-black/[0.05] text-fp-text-dim",
 }: {
   children: ReactNode;
-  icon?: IconName;
   colorClass?: string;
 }) {
   return (
-    <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[11px] font-medium tracking-wide ${colorClass}`}>
-      {icon && <AppIcon name={icon} className="h-3 w-3" />}
-      <span>{children}</span>
+    <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[12px] font-medium ${colorClass}`}>
+      {children}
+    </span>
+  );
+}
+
+/** Pastille couleur joueur (initiale) */
+export function PlayerDot({ name, colorIndex, size = 36 }: { name: string; colorIndex: number; size?: number }) {
+  const COLORS = ["#007aff", "#34c759", "#ff9500", "#ff2d55", "#af52de", "#5ac8fa", "#ffcc00", "#5856d6"];
+  const bg = COLORS[((colorIndex % COLORS.length) + COLORS.length) % COLORS.length];
+  return (
+    <span
+      className="inline-flex shrink-0 items-center justify-center rounded-full font-semibold text-white"
+      style={{ width: size, height: size, background: bg, fontSize: size * 0.42 }}
+      aria-hidden="true"
+    >
+      {name.trim().charAt(0).toUpperCase() || "?"}
     </span>
   );
 }

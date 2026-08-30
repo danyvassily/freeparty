@@ -10,8 +10,8 @@ interface ArtworkViewerProps {
 export function ArtworkViewer({ artwork }: ArtworkViewerProps) {
   return (
     <div className="w-full flex flex-col items-center my-4 animate-rise">
-      {/* Cadre de Galerie Muséale Apple Pro */}
-      <div className="relative w-full max-h-[340px] sm:max-h-[400px] overflow-hidden rounded-3xl border border-white/[0.1] bg-black/60 shadow-2xl flex items-center justify-center">
+      {/* Cadre de galerie */}
+      <div className="relative w-full max-h-[340px] sm:max-h-[400px] overflow-hidden rounded-2xl bg-neutral-900 shadow-md flex items-center justify-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={artwork.imageUrl}

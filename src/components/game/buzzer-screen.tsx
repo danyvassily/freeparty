@@ -1,11 +1,17 @@
 "use client";
 
+/**
+ * Free Party — Buzzer (manche 3 PRISM)
+ * Sur un appareil : chaque joueur a son propre bouton de buzz.
+ * Mauvaise réponse = -50 pts et exclusion de la question.
+ */
 import { useState, useEffect } from "react";
 import type { Question } from "@/lib/questions/schema";
 import type { PrismPlayer } from "@/lib/game/prism-engine";
 import { sound } from "@/lib/audio/sound-engine";
 import { checkTypedAnswer } from "@/lib/game/prism-engine";
-import { Zap, Clock, Lock, AlertCircle, Sparkles } from "lucide-react";
+import { PlayerDot } from "@/components/ui/primitives";
+import { Zap, Clock, Ban, Sparkles } from "lucide-react";
 
 interface BuzzerScreenProps {
   question: Question;
@@ -36,6 +42,7 @@ export function BuzzerScreen({
   const isAnswering = lockedPlayerId !== null;
   const isProgressive = !!question.progressiveClues && question.progressiveClues.length === 3;
   const isTypedMode = question.inputMode === "typed";
+  const activePlayers = players.filter((p) => !lockouts.includes(p.id));
 
   // Chrono 8s pour le joueur qui a buzzé
   useEffect(() => {
@@ -45,7 +52,6 @@ export function BuzzerScreen({
       setAnswerTimeLeft((tl) => {
         if (tl <= 1) {
           clearInterval(timer);
-          // Timeout = mauvaise réponse (-50 pts)
           sound.playWrong();
           onSubmitAnswer(lockedPlayerId, false);
           return 0;
@@ -94,28 +100,22 @@ export function BuzzerScreen({
   }
 
   return (
-    <div className="flex flex-col items-center justify-between min-h-[70vh] w-full max-w-xl mx-auto px-4">
-      {/* Header : Points en jeu & modalité */}
-      <div className="w-full flex items-center justify-between border-b border-white/[0.08] pb-3">
-        <div className="flex items-center gap-2">
-          <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30">
-            <Zap className="h-3.5 w-3.5" />
-          </div>
-          <span className="text-xs font-bold uppercase tracking-wider text-neutral-300">
-            {isProgressive ? "INDICES PROGRESSIFS" : "MANCHE BUZZER"}
-          </span>
-        </div>
-
-        <div className="flex items-center gap-1.5 rounded-full border border-amber-400/30 bg-amber-500/10 px-3 py-1 font-mono text-xs font-extrabold text-amber-300">
-          <Sparkles className="h-3 w-3" />
-          <span>+{pointsValue} PTS</span>
-        </div>
+    <div className="mx-auto flex min-h-[70vh] w-full max-w-xl flex-col items-center justify-between px-4">
+      {/* Header */}
+      <div className="flex w-full items-center justify-between pb-2">
+        <span className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">
+          {isProgressive ? "Indices progressifs" : "Manche buzzer"}
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-full bg-fp-warning/15 px-3 py-1 text-[13px] font-bold text-fp-warning tabular-nums">
+          <Sparkles className="h-3.5 w-3.5" />
+          +{pointsValue} pts
+        </span>
       </div>
 
-      {/* Affichage des indices progressifs ou de la question */}
-      <div className="w-full my-6 text-center">
+      {/* Indices progressifs ou question */}
+      <div className="my-5 w-full text-center">
         {isProgressive ? (
-          <div className="space-y-3 text-left">
+          <div className="space-y-2.5 text-left">
             {question.progressiveClues?.map((clue, i) => {
               const isRevealed = i <= currentClueIndex;
               const isCurrent = i === currentClueIndex;
@@ -124,88 +124,77 @@ export function BuzzerScreen({
               return (
                 <div
                   key={i}
-                  className={`glass-panel rounded-2xl p-4 transition-all duration-300 border ${
+                  className={`fp-card p-4 transition-all duration-300 ${
                     isRevealed
                       ? isCurrent
-                        ? "border-amber-400/50 bg-amber-500/10 text-white shadow-lg shadow-amber-500/10 animate-rise"
-                        : "border-white/[0.08] bg-white/[0.03] text-neutral-300"
-                      : "border-white/[0.04] bg-white/[0.01] text-transparent select-none blur-sm"
+                        ? "ring-2 ring-fp-warning animate-rise"
+                        : ""
+                      : "select-none opacity-40"
                   }`}
                 >
-                  <div className="flex items-center justify-between text-[11px] font-mono mb-1 text-neutral-400">
-                    <span className="font-bold uppercase">Indice {i + 1}</span>
-                    <span className="text-amber-300">{pts} pts</span>
+                  <div className="mb-1 flex items-center justify-between text-[11px] font-semibold text-fp-text-dim">
+                    <span className="uppercase tracking-wide">Indice {i + 1}</span>
+                    <span className="tabular-nums">{pts} pts</span>
                   </div>
-                  <p className="font-sans text-sm sm:text-base font-semibold leading-relaxed">
-                    {isRevealed ? clue : "••••••••••••••••••••••••••••••••••••••••••••••••"}
+                  <p className="text-[14px] font-medium leading-relaxed text-fp-text sm:text-[15px]">
+                    {isRevealed ? clue : "••••••••••••••••••••"}
                   </p>
                 </div>
               );
             })}
           </div>
         ) : (
-          <div className="glass-panel rounded-3xl p-6 border-white/[0.1] shadow-xl">
-            <h2 className="font-sans text-xl sm:text-2xl font-bold text-white leading-snug animate-rise">
+          <div className="fp-card p-6">
+            <h2 className="animate-rise text-[19px] font-semibold leading-snug text-fp-text sm:text-[22px]">
               {question.question}
             </h2>
           </div>
         )}
       </div>
 
-      {/* Zone Buzzer Tactile ou Zone de Réponse Active */}
+      {/* Zone buzzer ou réponse */}
       {!isAnswering ? (
-        <div className="w-full flex flex-col items-center my-4">
-          {/* Bouton Buzzer Apple Titanium & Neon */}
-          <button
-            type="button"
-            onClick={() => handleBuzzerClick(players[0]?.id || "p1")}
-            className="group relative flex h-40 w-40 sm:h-44 sm:w-44 items-center justify-center rounded-full border border-amber-400/40 bg-gradient-to-b from-amber-500/20 via-neutral-900 to-black shadow-[0_0_40px_rgba(245,158,11,0.25)] transition-all duration-200 active:scale-95 hover:shadow-[0_0_60px_rgba(245,158,11,0.45)] hover:border-amber-400/70"
-          >
-            {/* Halo pulsant */}
-            <div className="absolute inset-1 rounded-full border border-amber-400/20 bg-amber-500/5 animate-pulse-ring pointer-events-none" />
-
-            <div className="flex flex-col items-center pointer-events-none">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-400 text-black shadow-lg shadow-amber-400/40 group-hover:scale-110 transition-transform">
-                <Zap className="h-6 w-6 fill-black" />
-              </div>
-              <span className="font-sans text-sm font-black uppercase tracking-widest text-white mt-3">
-                BUZZER
-              </span>
-            </div>
-          </button>
-
-          {/* Joueurs verrouillés / exclus sur cette question */}
-          {lockouts.length > 0 && (
-            <div className="mt-4 flex flex-wrap justify-center gap-2">
-              {lockouts.map((pid) => {
-                const p = players.find((pl) => pl.id === pid);
-                return (
-                  <span key={pid} className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/15 border border-rose-500/30 px-3 py-1 text-xs text-rose-300 font-semibold">
-                    <Lock className="h-3 w-3" />
-                    <span>{p?.name ?? "Joueur"} (-50 pts)</span>
-                  </span>
-                );
-              })}
-            </div>
-          )}
-
-          <div className="mt-4 flex items-center gap-1.5 text-xs text-neutral-400 text-center">
-            <AlertCircle className="h-3.5 w-3.5 text-amber-400 shrink-0" />
-            <span>Premier à buzzer. Toute mauvaise réponse coûte <strong>50 points</strong>.</span>
+        <div className="my-4 flex w-full flex-col items-center">
+          <p className="mb-3 text-[13px] font-medium text-fp-text-dim">Qui a buzzé ?</p>
+          <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
+            {players.map((p) => {
+              const locked = lockouts.includes(p.id);
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  disabled={locked}
+                  onClick={() => handleBuzzerClick(p.id)}
+                  className={`flex items-center justify-center gap-2 rounded-2xl py-4 transition-all active:scale-95 ${
+                    locked
+                      ? "bg-black/[0.03] text-fp-text-dim opacity-50"
+                      : "bg-fp-primary text-white shadow-md shadow-fp-primary/30 hover:bg-fp-primary-press"
+                  }`}
+                >
+                  {locked ? <Ban className="h-4 w-4" /> : <Zap className="h-4 w-4 fill-current" />}
+                  <span className="max-w-[90px] truncate text-[14px] font-semibold">{p.name}</span>
+                </button>
+              );
+            })}
           </div>
+
+          <p className="mt-4 text-center text-[12px] text-fp-text-dim">
+            Premier à buzzer. Toute mauvaise réponse coûte <strong>50 points</strong>.
+            {activePlayers.length === 0 && " Tout le monde est verrouillé — question suivante…"}
+          </p>
         </div>
       ) : (
-        /* Formulaire de réponse pour le joueur ayant buzzé */
-        <div className="w-full glass-panel rounded-3xl p-6 border-amber-400/40 bg-white/[0.04] animate-pop shadow-2xl">
-          <div className="flex items-center justify-between border-b border-white/[0.08] pb-3 mb-4">
-            <div className="flex items-center gap-2 text-sm font-bold text-amber-300">
-              <Zap className="h-4 w-4" />
+        /* Réponse du joueur ayant buzzé */
+        <div className="fp-card w-full p-5 ring-2 ring-fp-warning animate-pop">
+          <div className="mb-4 flex items-center justify-between">
+            <div className="flex items-center gap-2 text-[14px] font-semibold text-fp-text">
+              <PlayerDot name={lockedPlayer?.name ?? "?"} colorIndex={lockedPlayer?.avatarColor ?? 0} size={26} />
               <span>{lockedPlayer?.name} a la main</span>
             </div>
-            <div className="flex items-center gap-1 font-mono text-xs font-bold text-rose-400 animate-pulse bg-rose-500/10 border border-rose-500/20 px-2.5 py-0.5 rounded-full">
+            <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-bold tabular-nums ${answerTimeLeft <= 3 ? "bg-fp-danger/15 text-fp-danger" : "bg-black/[0.05] text-fp-text"}`}>
               <Clock className="h-3 w-3" />
-              <span>{answerTimeLeft}s</span>
-            </div>
+              {answerTimeLeft}s
+            </span>
           </div>
 
           {isTypedMode ? (
@@ -215,21 +204,21 @@ export function BuzzerScreen({
                 type="text"
                 value={typedInput}
                 onChange={(e) => setTypedInput(e.target.value)}
-                placeholder="Tapez votre réponse…"
-                className="w-full rounded-xl border border-white/[0.12] bg-black/50 px-4 py-3.5 text-sm font-semibold text-white outline-none focus:border-amber-400 transition-colors"
+                placeholder="Ta réponse…"
+                className="fp-input w-full px-4 py-3 text-[15px] font-medium"
               />
-              <button type="submit" className="glass-primary w-full py-3 rounded-xl text-sm font-bold text-white shadow-lg">
-                Valider la réponse
+              <button type="submit" className="fp-btn-primary w-full py-3 text-[15px]">
+                Valider
               </button>
             </form>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {question.answers.map((ans, i) => {
-                let btnCls = "border-white/[0.08] bg-white/[0.03] text-neutral-200 hover:bg-white/[0.08] hover:border-white/[0.16]";
+                let btnCls = "bg-black/[0.03] text-fp-text hover:bg-black/[0.06]";
                 if (answeredIndex !== null) {
-                  if (i === question.correctAnswer) btnCls = "border-emerald-500 bg-emerald-500/20 text-emerald-300 font-bold";
-                  else if (i === answeredIndex) btnCls = "border-rose-500 bg-rose-500/20 text-rose-300";
-                  else btnCls = "opacity-30 border-transparent";
+                  if (i === question.correctAnswer) btnCls = "bg-fp-success/15 font-semibold ring-2 ring-fp-success";
+                  else if (i === answeredIndex) btnCls = "bg-fp-danger/15 ring-2 ring-fp-danger";
+                  else btnCls = "opacity-35";
                 }
 
                 return (
@@ -238,9 +227,9 @@ export function BuzzerScreen({
                     type="button"
                     disabled={answeredIndex !== null}
                     onClick={() => handleChoiceQCM(i)}
-                    className={`flex items-center gap-3 rounded-xl border p-3.5 text-left text-xs sm:text-sm font-medium transition-all ${btnCls}`}
+                    className={`flex items-center gap-3 rounded-xl px-3.5 py-3 text-left text-[14px] font-medium text-fp-text transition-all active:scale-[0.98] ${btnCls}`}
                   >
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-white/[0.06] text-xs font-mono font-bold text-neutral-300">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[12px] font-semibold text-fp-text-dim">
                       {["A", "B", "C", "D"][i]}
                     </span>
                     <span className="flex-1 leading-snug">{ans}</span>

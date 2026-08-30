@@ -23,8 +23,8 @@ export default function PlayPage() {
   if (!config) {
     return (
       <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center">
-        <div className="animate-spin-slow text-5xl">⚡</div>
-        <p className="mt-4 animate-pulse text-fp-text-dim">Redirection…</p>
+        <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-fp-gray-5 border-t-fp-blue" />
+        <p className="mt-4 text-[15px] text-fp-text-secondary">Redirection…</p>
       </main>
     );
   }

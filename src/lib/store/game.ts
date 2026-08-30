@@ -19,12 +19,14 @@ export const GAME_MODES = [
 ] as const;
 export type GameMode = (typeof GAME_MODES)[number];
 
+export const MIN_PLAYERS = 1;
+export const MAX_PLAYERS = 8;
+
 export interface Player {
   id: string;
   name: string;
-  /** 0..5 : couleur d'avatar (index palette) */
+  /** 0..7 : couleur d'avatar (index palette) */
   color: number;
-  specialtyId?: string;
   score: number;
   correct: number;
   wrong: number;
@@ -35,8 +37,6 @@ export interface Player {
 export interface GameConfig {
   mode: GameMode;
   category: QuestionCategory | "mixed";
-  thematicTheme?: string;
-  duration?: "express" | "classic"; // express = 10 min, classic = 20 min
   difficulty: string; // "mixed" | easy | medium | hard | expert
   players: Player[];
   questionCount: number;
@@ -44,10 +44,12 @@ export interface GameConfig {
   timePerQuestion: number;
   debateMinutes: number;
   debateMode: string;
-  spectatorsAllowed?: boolean;
 }
 
 export interface GameState {
+  /** Joueurs mémorisés entre les parties (noms éditables) */
+  players: Player[];
+  setPlayers: (players: Player[]) => void;
   config: GameConfig | null;
   setConfig: (config: GameConfig) => void;
   reset: () => void;
@@ -56,15 +58,41 @@ export interface GameState {
 }
 
 export const PLAYER_COLORS = [
-  "#8b5cf6", "#22d3ee", "#f59e0b", "#34d399", "#fb7185", "#d946ef",
+  "#007aff", "#34c759", "#ff9500", "#ff2d55",
+  "#af52de", "#5ac8fa", "#ffcc00", "#5856d6",
 ];
 
+/** Crée un joueur avec un nom et une couleur par défaut. */
+export function makePlayer(index: number, name?: string): Player {
+  return {
+    id: `p-${Date.now().toString(36)}-${index}-${Math.random().toString(36).slice(2, 6)}`,
+    name: name?.trim() || `Joueur ${index + 1}`,
+    color: index % PLAYER_COLORS.length,
+    score: 0,
+    correct: 0,
+    wrong: 0,
+  };
+}
+
+/** Construit une liste de `count` joueurs en préservant les noms existants. */
+export function resizePlayers(current: Player[], count: number): Player[] {
+  const target = Math.max(MIN_PLAYERS, Math.min(MAX_PLAYERS, count));
+  const out: Player[] = [];
+  for (let i = 0; i < target; i++) {
+    if (current[i]) {
+      out.push({ ...current[i], color: i % PLAYER_COLORS.length, score: 0, correct: 0, wrong: 0 });
+    } else {
+      out.push(makePlayer(i));
+    }
+  }
+  return out;
+}
+
 export const DEFAULT_CONFIG: GameConfig = {
-  mode: "prism",
+  mode: "classic",
   category: "mixed",
-  duration: "express",
   difficulty: "mixed",
-  players: [{ id: "p1", name: "Dany", color: 0, specialtyId: "cinema", score: 0, correct: 0, wrong: 0 }],
+  players: [makePlayer(0)],
   questionCount: 10,
   timePerQuestion: 15,
   debateMinutes: 5,
@@ -74,6 +102,8 @@ export const DEFAULT_CONFIG: GameConfig = {
 export const useGameStore = create<GameState>()(
   persist(
     (set) => ({
+      players: [makePlayer(0, "Joueur 1"), makePlayer(1, "Joueur 2")],
+      setPlayers: (players) => set({ players }),
       config: null,
       setConfig: (config) => set({ config }),
       reset: () => set({ config: null }),
@@ -106,16 +136,3 @@ export const useGameStore = create<GameState>()(
     { name: "freeparty-game" },
   ),
 );
-
-let playerCounter = 2;
-export function newPlayer(name?: string): Player {
-  const id = `p${Date.now().toString(36)}`;
-  return {
-    id,
-    name: name || `Joueur ${playerCounter++}`,
-    color: (playerCounter - 2) % PLAYER_COLORS.length,
-    score: 0,
-    correct: 0,
-    wrong: 0,
-  };
-}

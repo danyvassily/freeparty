@@ -1,12 +1,18 @@
 "use client";
 
+/**
+ * Free Party — Bataille d'équipes
+ * Les joueurs sont répartis automatiquement en deux équipes
+ * qui répondent à tour de rôle.
+ */
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/lib/questions/schema";
 import { useGameStore } from "@/lib/store/game";
 import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
-import { TimerBar, Confetti } from "@/components/ui/primitives";
-import { Trophy, Swords, AlertCircle } from "lucide-react";
+import { CATEGORY_LABELS } from "@/lib/game/modes";
+import { TimerBar, Confetti, PillBadge } from "@/components/ui/primitives";
+import { Trophy, Swords, AlertCircle, ChevronLeft } from "lucide-react";
 
 export function TeamBattleGame() {
   const router = useRouter();
@@ -22,19 +28,29 @@ export function TeamBattleGame() {
   const [scoreB, setScoreB] = useState(0);
   const [currentTeam, setCurrentTeam] = useState<"A" | "B">("A");
   const [error, setError] = useState<string | null>(null);
+  const [reloadKey, setReloadKey] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const answeredRef = useRef(false);
 
+  // Répartition automatique : un joueur sur deux dans chaque équipe
   const players = config?.players ?? [];
-  const teamA = players.filter((p) => p.team !== "B");
-  const teamB = players.filter((p) => p.team === "B");
+  const teamA = players.filter((_, i) => i % 2 === 0);
+  const teamB = players.filter((_, i) => i % 2 === 1);
   const currentName =
-    currentTeam === "A" ? teamA.map((p) => p.name).join(" & ") || "Équipe A" : teamB.map((p) => p.name).join(" & ") || "Équipe B";
+    currentTeam === "A"
+      ? teamA.map((p) => p.name).join(" · ") || "Équipe A"
+      : teamB.map((p) => p.name).join(" · ") || "Équipe B";
 
   useEffect(() => {
     let cancelled = false;
     async function load() {
       try {
+        setPhase("loading");
+        setIndex(0);
+        setSelected(null);
+        setScoreA(0);
+        setScoreB(0);
+        setCurrentTeam("A");
         const res = await fetch("/api/questions", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -66,7 +82,7 @@ export function TeamBattleGame() {
       if (timerRef.current) clearInterval(timerRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [reloadKey]);
 
   const current = questions[index];
   const isLast = index >= questions.length - 1;
@@ -125,12 +141,12 @@ export function TeamBattleGame() {
   if (error) {
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-fp-danger/10 text-fp-danger">
           <AlertCircle className="h-6 w-6" />
         </div>
-        <h1 className="mt-4 font-sans text-xl font-bold text-white">Une erreur est survenue</h1>
-        <p className="mt-2 text-xs text-neutral-400">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-6 rounded-xl px-6 py-2.5 text-xs font-bold text-white">Retour</button>
+        <h1 className="mt-4 text-[20px] font-semibold text-fp-text">Une erreur est survenue</h1>
+        <p className="mt-2 text-[14px] text-fp-text-dim">{error}</p>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-6 px-6 py-2.5 text-[15px]">Retour</button>
       </main>
     );
   }
@@ -138,39 +154,38 @@ export function TeamBattleGame() {
   if (phase === "loading") {
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 animate-pulse">
-          <Swords className="h-6 w-6" />
-        </div>
-        <p className="mt-4 text-xs text-neutral-400">Préparation du combat…</p>
+        <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-black/10 border-t-fp-primary" />
+        <p className="mt-4 text-[14px] text-fp-text-dim">Préparation du match…</p>
       </main>
     );
   }
 
   if (phase === "results") {
-    const winner = scoreA === scoreB ? "Égalité parfaite" : scoreA > scoreB ? "Victoire de l'Équipe A" : "Victoire de l'Équipe B";
+    const winner =
+      scoreA === scoreB ? "Égalité parfaite !" : scoreA > scoreB ? "L'équipe A gagne !" : "L'équipe B gagne !";
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
         <Confetti />
-        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+        <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-warning/15 text-fp-warning">
           <Trophy className="h-7 w-7" />
         </div>
-        <h1 className="mt-2 font-sans text-3xl font-extrabold text-white">{winner}</h1>
-        <div className="glass-panel mt-6 w-full max-w-sm rounded-3xl p-6 border-white/[0.08]">
+        <h1 className="mt-3 text-[26px] font-bold text-fp-text">{winner}</h1>
+        <div className="fp-card mt-6 w-full max-w-sm p-6">
           <div className="flex items-center justify-around">
             <div>
-              <div className="font-mono text-4xl font-black text-violet-400">{scoreA}</div>
-              <div className="text-xs text-neutral-400 mt-1">Équipe A</div>
+              <div className="text-[40px] font-bold tabular-nums text-fp-primary">{scoreA}</div>
+              <div className="mt-1 text-[13px] text-fp-text-dim">Équipe A</div>
             </div>
-            <div className="font-mono text-xl text-neutral-600">—</div>
+            <div className="text-[20px] text-fp-text-dim">—</div>
             <div>
-              <div className="font-mono text-4xl font-black text-fuchsia-400">{scoreB}</div>
-              <div className="text-xs text-neutral-400 mt-1">Équipe B</div>
+              <div className="text-[40px] font-bold tabular-nums text-[#ff2d55]">{scoreB}</div>
+              <div className="mt-1 text-[13px] text-fp-text-dim">Équipe B</div>
             </div>
           </div>
         </div>
-        <div className="mt-6 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">Rejouer</button>
+        <div className="mt-8 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>
+          <button type="button" onClick={() => setReloadKey((k) => k + 1)} className="fp-btn-primary flex-1 py-3 text-[15px]">Rejouer</button>
         </div>
       </main>
     );
@@ -179,45 +194,47 @@ export function TeamBattleGame() {
   if (!current) return null;
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim" aria-label="Quitter">✕</button>
-        <div className="flex items-center gap-2 rounded-full border border-fp-border bg-fp-surface px-4 py-1.5 text-sm font-bold">
-          <span className="text-fp-primary">A {scoreA}</span>
-          <span className="text-fp-text-dim">·</span>
-          <span className="text-fp-primary-2">{scoreB} B</span>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]" aria-label="Quitter">
+          <ChevronLeft className="h-5 w-5" />
+          Quitter
+        </button>
+        <div className="flex items-center gap-2 rounded-full bg-black/[0.05] px-4 py-1.5 text-[14px] font-semibold tabular-nums">
+          <span className="text-fp-primary">A · {scoreA}</span>
+          <span className="text-fp-text-dim">|</span>
+          <span className="text-[#ff2d55]">{scoreB} · B</span>
         </div>
-        <span className="text-sm text-fp-text-dim">{index + 1}/{questions.length}</span>
+        <span className="text-[13px] text-fp-text-dim tabular-nums">{index + 1}/{questions.length}</span>
       </div>
 
-      <div className="mt-5">
+      <div className="mt-4">
         <TimerBar seconds={timeLeft} total={15} />
       </div>
 
-      <section className="mt-6 flex-1">
-        <div className="flex items-center justify-between">
+      <section className="mt-5 flex-1">
+        <div className="flex items-center justify-between gap-2">
           <span
-            className={`animate-pop rounded-full px-3 py-1 text-xs font-bold text-white ${
-              currentTeam === "A" ? "bg-fp-primary" : "bg-fp-primary-2"
+            className={`inline-flex animate-pop items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-semibold text-white ${
+              currentTeam === "A" ? "bg-fp-primary" : "bg-[#ff2d55]"
             }`}
           >
-            {currentTeam === "A" ? "⚔️ Équipe A" : "⚔️ Équipe B"} — {currentName}
+            <Swords className="h-3.5 w-3.5" />
+            Équipe {currentTeam} — {currentName}
           </span>
-          <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs text-fp-text-dim">
-            {current.category}
-          </span>
+          <PillBadge>{CATEGORY_LABELS[current.category]}</PillBadge>
         </div>
-        <h1 key={current.id} className="animate-rise mt-4 font-display text-2xl font-bold leading-snug">
+        <h1 key={current.id} className="animate-rise mt-4 text-[22px] font-semibold leading-snug text-fp-text sm:text-[26px]">
           {current.question}
         </h1>
 
-        <div className="mt-6 grid gap-3">
+        <div className="mt-6 grid gap-2">
           {current.answers.map((answer, i) => {
-            let cls = "border-fp-border bg-fp-surface hover:border-fp-primary";
+            let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
             if (phase === "answer") {
-              if (i === current.correctAnswer) cls = "animate-pop border-fp-success bg-fp-success/15 text-fp-success";
-              else if (i === selected) cls = "animate-shake border-fp-danger bg-fp-danger/15 text-fp-danger";
-              else cls = "border-fp-border bg-fp-surface opacity-40";
+              if (i === current.correctAnswer) cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text animate-pop";
+              else if (i === selected) cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
+              else cls = "fp-card opacity-40";
             }
             return (
               <button
@@ -225,9 +242,9 @@ export function TeamBattleGame() {
                 type="button"
                 disabled={phase === "answer"}
                 onClick={() => handleAnswer(i)}
-                className={`flex items-center gap-3 rounded-2xl border-2 px-4 py-3.5 text-left font-semibold transition-all active:scale-[0.98] ${cls}`}
+                className={`flex items-center gap-3 rounded-2xl px-4 py-3.5 text-left text-[15px] font-medium transition-all active:scale-[0.98] ${cls}`}
               >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-bold">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[13px] font-semibold text-fp-text-dim">
                   {["A", "B", "C", "D"][i]}
                 </span>
                 <span className="flex-1">{answer}</span>

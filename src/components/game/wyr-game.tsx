@@ -1,12 +1,16 @@
 "use client";
 
+/**
+ * Free Party — Dilemmes (Would You Rather)
+ * Les joueurs tranchent à tour de rôle, puis le groupe discute.
+ */
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickWyrPair, WYR_CATEGORY_LABELS, type WouldYouRatherPair } from "@/lib/game/wyr-data";
 import { useGameStore } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
-
-import { Scale } from "lucide-react";
+import { PlayerDot, PillBadge } from "@/components/ui/primitives";
+import { Scale, ChevronLeft } from "lucide-react";
 
 export function WyrGame() {
   const router = useRouter();
@@ -17,16 +21,15 @@ export function WyrGame() {
   const [activePlayer, setActivePlayer] = useState(0);
   const [chosen, setChosen] = useState<"A" | "B" | null>(null);
   const [history, setHistory] = useState<string[]>([]);
-  const [currentVotes, setCurrentVotes] = useState<{ A: number; B: number }>({ A: 0, B: 0 });
-  const [allVotes, setAllVotes] = useState<Record<string, { A: number; B: number }>>({});
   const [finished, setFinished] = useState(false);
+  const [sessionKey, setSessionKey] = useState(0);
 
   const totalRounds = Math.max(settings.wyrRounds, players.length * 2);
+  const active = players[activePlayer];
 
   function choose(opt: "A" | "B") {
     if (chosen) return;
     setChosen(opt);
-    setCurrentVotes((v) => ({ ...v, [opt]: v[opt] + 1 }));
     setHistory((h) => [...h, pair.id]);
 
     setTimeout(() => {
@@ -34,85 +37,92 @@ export function WyrGame() {
         setFinished(true);
         return;
       }
-      const next = pickWyrPair(history);
-      setAllVotes((v) => ({ ...v, [pair.id]: currentVotes[opt] >= 0 ? { ...currentVotes, [opt]: currentVotes[opt] + 1 } : currentVotes }));
-      setPair(next);
+      setPair(pickWyrPair([...history, pair.id]));
       setChosen(null);
-      setCurrentVotes({ A: 0, B: 0 });
       setRound((r) => r + 1);
       setActivePlayer((p) => (p + 1) % Math.max(1, players.length));
-    }, 1800);
+    }, 2200);
+  }
+
+  function replay() {
+    setPair(pickWyrPair([]));
+    setRound(1);
+    setActivePlayer(0);
+    setChosen(null);
+    setHistory([]);
+    setFinished(false);
+    setSessionKey((k) => k + 1);
   }
 
   if (finished) {
-    const totalVotes = Object.values(allVotes).reduce((sum, v) => sum + v.A + v.B, 0);
     return (
-      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
-        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
+      <main key={sessionKey} className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
+        <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-primary/10 text-fp-primary">
           <Scale className="h-7 w-7" />
         </div>
-        <h1 className="mt-2 font-sans text-3xl font-extrabold text-white">Dilemmes Clôturés</h1>
-        <p className="mt-1 text-xs text-neutral-400">{round - 1} dilemmes tranchés · {totalVotes} arbitrages</p>
-        <div className="mt-6 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">Rejouer</button>
+        <h1 className="mt-3 text-[26px] font-bold text-fp-text">Dilemmes terminés</h1>
+        <p className="mt-1 text-[14px] text-fp-text-dim">{totalRounds} dilemmes tranchés — belle discussion !</p>
+        <div className="mt-8 flex w-full max-w-sm gap-3">
+          <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>
+          <button type="button" onClick={replay} className="fp-btn-primary flex-1 py-3 text-[15px]">Rejouer</button>
         </div>
       </main>
     );
   }
 
-  const activeName = players[activePlayer]?.name ?? "Toi";
-
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="text-sm text-fp-text-dim" aria-label="Quitter">✕</button>
-        <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
-          {round}/{totalRounds} · {WYR_CATEGORY_LABELS[pair.category]}
-        </span>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]" aria-label="Quitter">
+          <ChevronLeft className="h-5 w-5" />
+          Quitter
+        </button>
+        <PillBadge>{round}/{totalRounds} · {WYR_CATEGORY_LABELS[pair.category]}</PillBadge>
       </div>
 
-      <p className="mt-8 text-center font-display text-lg text-fp-text-dim">
-        {activeName}, choisis :
-      </p>
+      <div className="mt-10 text-center">
+        {active && (
+          <p className="mb-2 inline-flex items-center gap-2 text-[15px] font-medium text-fp-text">
+            <PlayerDot name={active.name} colorIndex={active.color} size={26} />
+            À toi, {active.name}
+          </p>
+        )}
+        <h1 className="text-[20px] font-semibold text-fp-text">Tu préfères…</h1>
+      </div>
 
-      <div className="mt-4 grid grid-cols-1 gap-4">
+      <div className="mt-6 grid grid-cols-1 gap-3">
         <button
           type="button"
           onClick={() => choose("A")}
           disabled={chosen !== null}
-          className={`fp-card min-h-36 p-6 text-left transition-all ${
-            chosen === "A" ? "border-fp-primary shadow-lg shadow-fp-primary/30" : chosen === "B" ? "opacity-40" : "hover:border-fp-primary"
+          className={`fp-card min-h-32 p-6 text-left transition-all active:scale-[0.98] ${
+            chosen === "A" ? "ring-2 ring-fp-primary" : chosen === "B" ? "opacity-40" : "hover:bg-black/[0.02]"
           }`}
         >
-          <span className="font-display text-sm font-bold uppercase tracking-widest text-fp-primary">Option A</span>
-          <p className="mt-2 font-display text-xl font-bold leading-snug">{pair.optionA}</p>
-          {chosen && (
-            <p className="mt-3 text-xs text-fp-text-dim">
-              {currentVotes.A} vote{currentVotes.A > 1 ? "s" : ""}
-            </p>
-          )}
+          <span className="text-[12px] font-semibold uppercase tracking-wide text-fp-primary">Option A</span>
+          <p className="mt-2 text-[18px] font-semibold leading-snug text-fp-text">{pair.optionA}</p>
         </button>
 
-        <div className="text-center font-display text-2xl font-bold text-fp-text-dim" aria-hidden="true">ou</div>
+        <div className="text-center text-[15px] font-medium text-fp-text-dim" aria-hidden="true">ou</div>
 
         <button
           type="button"
           onClick={() => choose("B")}
           disabled={chosen !== null}
-          className={`fp-card min-h-36 p-6 text-left transition-all ${
-            chosen === "B" ? "border-fp-primary-2 shadow-lg shadow-fp-primary-2/30" : chosen === "A" ? "opacity-40" : "hover:border-fp-primary-2"
+          className={`fp-card min-h-32 p-6 text-left transition-all active:scale-[0.98] ${
+            chosen === "B" ? "ring-2 ring-fp-primary" : chosen === "A" ? "opacity-40" : "hover:bg-black/[0.02]"
           }`}
         >
-          <span className="font-display text-sm font-bold uppercase tracking-widest text-fp-primary-2">Option B</span>
-          <p className="mt-2 font-display text-xl font-bold leading-snug">{pair.optionB}</p>
-          {chosen && (
-            <p className="mt-3 text-xs text-fp-text-dim">
-              {currentVotes.B} vote{currentVotes.B > 1 ? "s" : ""}
-            </p>
-          )}
+          <span className="text-[12px] font-semibold uppercase tracking-wide text-fp-primary">Option B</span>
+          <p className="mt-2 text-[18px] font-semibold leading-snug text-fp-text">{pair.optionB}</p>
         </button>
       </div>
+
+      {chosen && (
+        <p className="animate-pop mt-5 text-center text-[14px] text-fp-text-dim">
+          {active?.name ?? "Le joueur"} a choisi l&apos;option {chosen} — à vous de débattre !
+        </p>
+      )}
     </main>
   );
 }

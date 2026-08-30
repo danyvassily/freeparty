@@ -2,9 +2,13 @@
  * Free Party — Online room helpers (multijoueur en ligne)
  * Host-authoritative : le créateur du salon pilote la partie via Supabase
  * Realtime. Chaque joueur agit sur son appareil.
+ *
+ * Pas de compte requis : connexion anonyme Supabase + pseudo
+ * (nécessite "Anonymous sign-ins" activé dans le dashboard Supabase).
  */
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
 import type { Question } from "@/lib/questions/schema";
+import { MAX_PLAYERS } from "@/lib/store/game";
 
 export interface OnlineSession {
   id: string;
@@ -23,6 +27,7 @@ export interface OnlineSession {
   mode: string | null;
   category: string | null;
   question_count: number;
+  max_players: number;
 }
 
 export interface OnlinePlayer {
@@ -44,6 +49,13 @@ export interface RoomAnswer {
   response_time_ms: number | null;
 }
 
+export interface RoomOptions {
+  mode: string;
+  category: string;
+  questionCount: number;
+  maxPlayers: number;
+}
+
 const CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // sans O/0/I/1
 export function generateRoomCode(): string {
   let code = "";
@@ -53,12 +65,49 @@ export function generateRoomCode(): string {
   return code;
 }
 
-/** Crée un salon et y inscrit le host */
-export async function createRoom(opts: { mode: string; category: string; questionCount: number }): Promise<{ session: OnlineSession; player: OnlinePlayer }> {
+/**
+ * Garantit une session authentifiée (anonyme si besoin) et enregistre
+ * le pseudo dans les métadonnées. Renvoie l'id utilisateur.
+ */
+export async function ensureOnlineIdentity(pseudo: string): Promise<{ userId: string; name: string }> {
   const sb = getSupabaseBrowser();
   if (!sb) throw new Error("Supabase non configuré");
-  const { data: user } = await sb.auth.getUser();
-  if (!user.user) throw new Error("Not authenticated");
+
+  const name = pseudo.trim().slice(0, 20) || "Joueur";
+
+  const { data: existing } = await sb.auth.getUser();
+  if (!existing.user) {
+    const { data, error } = await sb.auth.signInAnonymously({
+      options: { data: { username: name } },
+    });
+    if (error) {
+      if (error.message.toLowerCase().includes("anonymous")) {
+        throw new Error(
+          "La connexion anonyme n'est pas activée sur le projet Supabase (Authentication → Sign In / Providers → Anonymous).",
+        );
+      }
+      throw error;
+    }
+    if (!data.user) throw new Error("Impossible de créer la session invité");
+    return { userId: data.user.id, name };
+  }
+
+  // Session existante : met à jour le pseudo si changé
+  const current = existing.user.user_metadata?.username as string | undefined;
+  if (current !== name) {
+    await sb.auth.updateUser({ data: { username: name } });
+  }
+  return { userId: existing.user.id, name };
+}
+
+/** Crée un salon et y inscrit le host */
+export async function createRoom(
+  pseudo: string,
+  opts: RoomOptions,
+): Promise<{ session: OnlineSession; player: OnlinePlayer }> {
+  const sb = getSupabaseBrowser();
+  if (!sb) throw new Error("Supabase non configuré");
+  const identity = await ensureOnlineIdentity(pseudo);
 
   // Génère un code libre : plusieurs tentatives (collision très rare mais
   // possible quand beaucoup de salons s'accumulent — jamais de doublon).
@@ -72,11 +121,12 @@ export async function createRoom(opts: { mode: string; category: string; questio
       .from("game_sessions")
       .insert({
         room_code: code,
-        host_id: user.user.id,
+        host_id: identity.userId,
         phase: "lobby",
         mode: opts.mode,
         category: opts.category,
         question_count: opts.questionCount,
+        max_players: Math.max(2, Math.min(MAX_PLAYERS, opts.maxPlayers)),
       })
       .select()
       .single();
@@ -94,8 +144,8 @@ export async function createRoom(opts: { mode: string; category: string; questio
     .from("game_players")
     .insert({
       session_id: session.id,
-      user_id: user.user.id,
-      name: (user.user.user_metadata?.username as string) ?? "Hôte",
+      user_id: identity.userId,
+      name: identity.name,
       is_host: true,
     });
   if (err2) throw err2;
@@ -106,19 +156,21 @@ export async function createRoom(opts: { mode: string; category: string; questio
     .from("game_players")
     .select("*")
     .eq("session_id", session.id)
-    .eq("user_id", user.user.id)
+    .eq("user_id", identity.userId)
     .single();
   if (err3) throw err3;
 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
 
-/** Rejoint un salon par code — idempotent (anti double-clic, audit) */
-export async function joinRoom(code: string): Promise<{ session: OnlineSession; player: OnlinePlayer }> {
+/** Rejoint un salon par code — idempotent (anti double-clic) */
+export async function joinRoom(
+  code: string,
+  pseudo: string,
+): Promise<{ session: OnlineSession; player: OnlinePlayer }> {
   const sb = getSupabaseBrowser();
   if (!sb) throw new Error("Supabase non configuré");
-  const { data: user } = await sb.auth.getUser();
-  if (!user.user) throw new Error("Not authenticated");
+  const identity = await ensureOnlineIdentity(pseudo);
 
   const { data: session, error } = await sb
     .from("game_sessions")
@@ -130,22 +182,32 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
   if (!session) throw new Error("Salon introuvable : vérifie le code — ou la partie a peut-être déjà commencé");
 
   // Idempotence : si le joueur est déjà dans le salon, on le réutilise
-  const { data: existing } = await sb
+  const { data: existingPlayer } = await sb
     .from("game_players")
     .select("*")
     .eq("session_id", session.id)
-    .eq("user_id", user.user.id)
+    .eq("user_id", identity.userId)
     .maybeSingle();
-  if (existing) {
-    return { session: session as OnlineSession, player: existing as OnlinePlayer };
+  if (existingPlayer) {
+    return { session: session as OnlineSession, player: existingPlayer as OnlinePlayer };
+  }
+
+  // Capacité maximale du salon
+  const { count } = await sb
+    .from("game_players")
+    .select("id", { count: "exact", head: true })
+    .eq("session_id", session.id);
+  const maxPlayers = (session.max_players as number | null) ?? MAX_PLAYERS;
+  if ((count ?? 0) >= maxPlayers) {
+    throw new Error(`Ce salon est complet (${maxPlayers} joueurs maximum)`);
   }
 
   const { error: err2 } = await sb
     .from("game_players")
     .insert({
       session_id: session.id,
-      user_id: user.user.id,
-      name: (user.user.user_metadata?.username as string) ?? "Joueur",
+      user_id: identity.userId,
+      name: identity.name,
       is_host: false,
     });
   if (err2) throw err2;
@@ -155,7 +217,7 @@ export async function joinRoom(code: string): Promise<{ session: OnlineSession; 
     .from("game_players")
     .select("*")
     .eq("session_id", session.id)
-    .eq("user_id", user.user.id)
+    .eq("user_id", identity.userId)
     .single();
   if (err3) throw err3;
 
@@ -273,7 +335,7 @@ export async function refreshAnswers(sessionId: string, questionIndex?: number):
 }
 
 /** Le host pousse la question courante (sans la bonne réponse)
- *  - passe phase à 'playing' au premier push (audit : le joiner lit la phase)
+ *  - passe phase à 'playing' au premier push
  *  - state_version monotone (évite les collisions de ms)
  */
 export async function hostPushQuestion(
@@ -306,7 +368,7 @@ export async function hostPushQuestion(
   if (error) throw new Error(`Push question: ${error.message}`);
 }
 
-/** Le host met à jour les réponses (correct/wrong) et les scores */
+/** Le host met à jour les réponses (correct/wrong) et les scores — en parallèle */
 export async function hostMarkAnswers(
   sessionId: string,
   question: Question,
@@ -314,19 +376,18 @@ export async function hostMarkAnswers(
 ): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;
-  for (const a of answers) {
-    const correct = a.answer_index === question.correctAnswer;
-    await sb
-      .from("room_answers")
-      .update({ correct })
-      .eq("id", a.id);
-    if (correct) {
-      await sb.rpc("increment_player_score", { p_player_id: a.player_id, p_points: 10 });
-    }
-  }
+  await Promise.all(
+    answers.map(async (a) => {
+      const correct = a.answer_index === question.correctAnswer;
+      await sb.from("room_answers").update({ correct }).eq("id", a.id);
+      if (correct) {
+        await sb.rpc("increment_player_score", { p_player_id: a.player_id, p_points: 10 });
+      }
+    }),
+  );
 }
 
-/** Le joueur envoie sa réponse — idempotent (audit : 23505 = déjà répondu) */
+/** Le joueur envoie sa réponse — idempotent (23505 = déjà répondu) */
 export async function submitAnswer(
   sessionId: string,
   playerId: string,
@@ -356,7 +417,7 @@ export async function finishRoom(sessionId: string): Promise<void> {
   if (error) throw new Error(`Fin de partie: ${error.message}`);
 }
 
-/** Quitte le salon : supprime la ligne joueur (best effort, audit) */
+/** Quitte le salon : supprime la ligne joueur (best effort) */
 export async function leaveRoom(sessionId: string, playerId: string): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;

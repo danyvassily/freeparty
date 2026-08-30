@@ -1,49 +1,73 @@
 "use client";
 
+/**
+ * Free Party — Quiz Classique / Vrai-Faux / Rapid Fire
+ * Multi-joueurs sur un seul appareil : tour par tour avec écran
+ * "passe l'appareil" entre chaque question, scores individuels.
+ */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/lib/questions/schema";
 import { REPORT_REASONS } from "@/lib/questions/schema";
-import { useGameStore } from "@/lib/store/game";
+import { useGameStore, type Player } from "@/lib/store/game";
 import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
-import { ProgressRing, TimerBar, Confetti } from "@/components/ui/primitives";
-import { AlertCircle, Zap, Trophy } from "lucide-react";
+import { CATEGORY_LABELS } from "@/lib/game/modes";
+import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
+import { AlertCircle, Flag, Trophy, ChevronLeft, HandMetal } from "lucide-react";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";
 }
 
-type Phase = "loading" | "playing" | "answer" | "results";
+type Phase = "loading" | "handoff" | "playing" | "answer" | "results";
+
+const DIFFICULTY_LABELS: Record<string, string> = {
+  easy: "Facile",
+  medium: "Moyen",
+  hard: "Difficile",
+  expert: "Expert",
+};
 
 export function QuizGame({ mode }: QuizGameProps) {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
-  const addScore = useGameStore((s) => s.addScore);
   const { entries, addEntry, addReport } = useHistoryStore();
+
+  const players: Player[] = config?.players?.length
+    ? config.players
+    : [{ id: "p1", name: "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 }];
+  const solo = players.length === 1;
 
   const [phase, setPhase] = useState<Phase>("loading");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState(0);
-  const [roundScores, setRoundScores] = useState<Record<string, number>>({});
-  const [correctCount, setCorrectCount] = useState(0);
-  const [showConfetti, setShowConfetti] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [reportOpen, setReportOpen] = useState(false);
   const [reportDone, setReportDone] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  /** Scores locaux par joueur : { [playerId]: { score, correct } } */
+  const [scores, setScores] = useState<Record<string, { score: number; correct: number }>>({});
+  const [reloadKey, setReloadKey] = useState(0);
+
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const answeredRef = useRef(false);
   const handleAnswerRef = useRef<(i: number) => void>(() => {});
 
   const timePerQuestion = config?.timePerQuestion ?? 15;
-  const players = config?.players ?? [];
+  const current = questions[index];
+  const isLast = index >= questions.length - 1;
+  const activePlayer = players[index % players.length];
 
   // Chargement initial via l'API interne (anti-répétition serveur)
   useEffect(() => {
     let cancelled = false;
     async function load() {
       try {
+        setPhase("loading");
+        setIndex(0);
+        setSelected(null);
+        setScores({});
         const res = await fetch("/api/questions", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -60,7 +84,7 @@ export function QuizGame({ mode }: QuizGameProps) {
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
         if (pool.length === 0) {
-          setError("Aucune question disponible pour cette configuration. Essayez une catégorie différente.");
+          setError("Aucune question disponible pour cette configuration. Essaie une autre catégorie.");
           return;
         }
         const qs =
@@ -70,8 +94,9 @@ export function QuizGame({ mode }: QuizGameProps) {
               ? pool.slice(0, Math.min(20, pool.length))
               : pool;
         setQuestions(qs);
-        setPhase("playing");
-        setTimeLeft(timePerQuestion);
+        // En solo on joue direct ; en multi, écran de passage de relais
+        setPhase(solo ? "playing" : "handoff");
+        if (solo) setTimeLeft(timePerQuestion);
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : "Erreur de chargement");
       }
@@ -82,22 +107,23 @@ export function QuizGame({ mode }: QuizGameProps) {
       if (timerRef.current) clearInterval(timerRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [reloadKey]);
 
-  const current = questions[index];
-  const isLast = index >= questions.length - 1;
-
-  function next() {
+  const goNext = useCallback(() => {
     answeredRef.current = false;
     setSelected(null);
     if (isLast) {
       setPhase("results");
     } else {
       setIndex((i) => i + 1);
-      setPhase("playing");
-      setTimeLeft(timePerQuestion);
+      if (solo) {
+        setPhase("playing");
+        setTimeLeft(timePerQuestion);
+      } else {
+        setPhase("handoff");
+      }
     }
-  }
+  }, [isLast, solo, timePerQuestion]);
 
   const handleAnswer = useCallback(
     (answerIndex: number) => {
@@ -106,16 +132,14 @@ export function QuizGame({ mode }: QuizGameProps) {
       setSelected(answerIndex);
 
       const correct = answerIndex === current.correctAnswer;
-      const points = correct ? (mode === "rapidfire" ? 1 : 10) : 0;
-      if (correct) {
-        setCorrectCount((c) => c + 1);
-        setShowConfetti(true);
-        setTimeout(() => setShowConfetti(false), 1200);
-        // Score pour le joueur actif
-        const active = players[0] ?? { id: "p1", name: "J1" };
-        addScore(active.id, points);
-        setRoundScores((s) => ({ ...s, [active.id]: (s[active.id] ?? 0) + points }));
-      }
+      const points = correct ? (mode === "rapidfire" ? 10 : 10) : 0;
+      setScores((s) => ({
+        ...s,
+        [activePlayer.id]: {
+          score: (s[activePlayer.id]?.score ?? 0) + points,
+          correct: (s[activePlayer.id]?.correct ?? 0) + (correct ? 1 : 0),
+        },
+      }));
 
       addEntry({
         questionId: current.id,
@@ -125,10 +149,9 @@ export function QuizGame({ mode }: QuizGameProps) {
       });
 
       setPhase("answer");
-      setTimeout(next, 1800);
+      setTimeout(goNext, 1800);
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [current, players, addScore, addEntry, timePerQuestion, timeLeft, mode],
+    [current, activePlayer, addEntry, timePerQuestion, timeLeft, mode, goNext],
   );
 
   // Référence toujours fraîche pour le timer
@@ -143,11 +166,9 @@ export function QuizGame({ mode }: QuizGameProps) {
       setTimeLeft((t) => {
         if (t <= 1) {
           if (timerRef.current) clearInterval(timerRef.current);
-          // Timeout → mauvaise réponse
           if (!answeredRef.current) {
             answeredRef.current = true;
             setSelected(-1);
-            setPhase("answer");
             handleAnswerRef.current(-1);
           }
           return 0;
@@ -160,62 +181,85 @@ export function QuizGame({ mode }: QuizGameProps) {
     };
   }, [phase, index, current]);
 
-  const reportReasons = REPORT_REASONS;
+  function startTurn() {
+    setTimeLeft(timePerQuestion);
+    setPhase("playing");
+  }
 
+  // ---------- Erreur ----------
   if (error) {
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-fp-danger/10 text-fp-danger">
           <AlertCircle className="h-6 w-6" />
         </div>
-        <h1 className="mt-4 font-sans text-xl font-bold text-white">Une erreur est survenue</h1>
-        <p className="mt-2 text-xs text-neutral-400">{error}</p>
-        <button type="button" onClick={() => router.push("/")} className="glass-primary mt-6 rounded-xl px-6 py-2.5 text-xs font-bold text-white">
-          Retour au menu
+        <h1 className="mt-4 text-[20px] font-semibold text-fp-text">Une erreur est survenue</h1>
+        <p className="mt-2 text-[14px] text-fp-text-dim">{error}</p>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-primary mt-6 px-6 py-2.5 text-[15px]">
+          Retour à l&apos;accueil
         </button>
       </main>
     );
   }
 
+  // ---------- Chargement ----------
   if (phase === "loading") {
     return (
       <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-600/20 text-violet-300 border border-violet-500/30 animate-pulse">
-          <Zap className="h-6 w-6" />
-        </div>
-        <p className="mt-4 text-xs text-neutral-400">Préparation des questions…</p>
+        <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-black/10 border-t-fp-primary" />
+        <p className="mt-4 text-[14px] text-fp-text-dim">Préparation des questions…</p>
       </main>
     );
   }
 
+  // ---------- Résultats ----------
   if (phase === "results") {
+    const ranking = players
+      .map((p) => ({ player: p, score: scores[p.id]?.score ?? 0, correct: scores[p.id]?.correct ?? 0 }))
+      .sort((a, b) => b.score - a.score || b.correct - a.correct);
     const total = questions.length;
-    const pct = Math.round((correctCount / total) * 100);
-    const grade = pct >= 90 ? "Score Parfait" : pct >= 70 ? "Excellente Performance" : pct >= 50 ? "Bonne Maîtrise" : "Entraînement Requis";
+    const winner = ranking[0];
+
     return (
-      <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center px-6 text-center animate-rise">
-        {pct >= 70 && <Confetti />}
-        <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-tr from-violet-600 to-fuchsia-600 text-white shadow-xl mb-4">
-          <Trophy className="h-7 w-7" />
-        </div>
-        <h1 className="font-sans text-3xl font-extrabold text-white">{grade}</h1>
-        <div className="glass-panel mt-6 w-full max-w-sm rounded-3xl p-6 border-white/[0.1]">
-          <div className="font-mono text-5xl font-black text-white">
-            {correctCount}<span className="text-xl text-neutral-400 font-normal">/{total}</span>
+      <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4 pb-16 pt-10 animate-rise">
+        {winner && winner.score > 0 && <Confetti />}
+        <div className="text-center">
+          <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-warning/15 text-fp-warning">
+            <Trophy className="h-7 w-7" />
           </div>
-          <p className="mt-1 text-xs text-neutral-400">{pct}% de réussite</p>
-          {players.map((p) => (
-            <div key={p.id} className="mt-3 flex items-center justify-between rounded-xl bg-white/[0.04] px-4 py-2 text-xs">
-              <span className="font-semibold text-white">{p.name}</span>
-              <span className="font-mono font-bold text-amber-300">{roundScores[p.id] ?? 0} pts</span>
+          <h1 className="mt-3 text-[28px] font-bold text-fp-text">
+            {solo ? "Partie terminée" : `${winner.player.name} gagne !`}
+          </h1>
+          {solo && (
+            <p className="mt-1 text-[15px] text-fp-text-dim">
+              {winner.correct}/{total} bonnes réponses
+            </p>
+          )}
+        </div>
+
+        <div className="fp-list mt-8">
+          {ranking.map((r, i) => (
+            <div key={r.player.id} className="flex items-center gap-3 px-4 py-3">
+              <span className="w-5 text-center text-[15px] font-semibold text-fp-text-dim tabular-nums">
+                {i + 1}
+              </span>
+              <PlayerDot name={r.player.name} colorIndex={r.player.color} size={32} />
+              <span className="flex-1 text-[15px] font-medium text-fp-text">{r.player.name}</span>
+              <span className="text-[13px] text-fp-text-dim tabular-nums">
+                {r.correct}/{Math.ceil(total / players.length)} ✓
+              </span>
+              <span className="w-14 text-right text-[15px] font-semibold text-fp-text tabular-nums">
+                {r.score} pts
+              </span>
             </div>
           ))}
         </div>
-        <div className="mt-6 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="glass-button flex-1 rounded-xl py-3 text-xs font-semibold text-neutral-300">
+
+        <div className="mt-8 flex w-full gap-3">
+          <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">
             Accueil
           </button>
-          <button type="button" onClick={() => window.location.reload()} className="glass-primary flex-1 rounded-xl py-3 text-xs font-bold text-white shadow-lg">
+          <button type="button" onClick={() => setReloadKey((k) => k + 1)} className="fp-btn-primary flex-1 py-3 text-[15px]">
             Rejouer
           </button>
         </div>
@@ -223,71 +267,93 @@ export function QuizGame({ mode }: QuizGameProps) {
     );
   }
 
+  // ---------- Passage de relais (multi-joueurs, un appareil) ----------
+  if (phase === "handoff" && activePlayer) {
+    return (
+      <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col items-center justify-center px-6 text-center animate-fade">
+        <p className="text-[13px] font-medium uppercase tracking-wide text-fp-text-dim">
+          Question {index + 1} sur {questions.length}
+        </p>
+        <div className="mt-6">
+          <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={84} />
+        </div>
+        <h1 className="mt-5 text-[26px] font-bold text-fp-text">À toi, {activePlayer.name}</h1>
+        <p className="mt-2 flex items-center justify-center gap-1.5 text-[14px] text-fp-text-dim">
+          <HandMetal className="h-4 w-4" />
+          Passe l&apos;appareil au bon joueur
+        </p>
+        <div className="mt-3">
+          <PillBadge>{scores[activePlayer.id]?.score ?? 0} pts</PillBadge>
+        </div>
+        <button type="button" onClick={startTurn} className="fp-btn-primary mt-8 w-full max-w-xs py-3.5 text-[17px]">
+          C&apos;est moi
+        </button>
+      </main>
+    );
+  }
+
   if (!current) return null;
 
+  // ---------- Jeu ----------
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
-      {/* Header partie */}
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
+      {/* Barre de navigation */}
       <div className="flex items-center justify-between">
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="text-sm text-fp-text-dim transition-colors hover:text-white"
+          className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]"
           aria-label="Quitter la partie"
         >
-          ✕
+          <ChevronLeft className="h-5 w-5" />
+          <span>Quitter</span>
         </button>
-        <div className="flex items-center gap-1.5" aria-label={`Question ${index + 1} sur ${questions.length}`}>
-          {questions.map((_, i) => (
-            <span
-              key={i}
-              className={`h-1.5 rounded-full transition-all ${
-                i < index ? "w-4 bg-fp-success" : i === index ? "w-6 bg-fp-primary" : "w-2 bg-white/15"
-              }`}
-            />
-          ))}
-        </div>
-        <span className="text-sm font-semibold text-fp-text-dim">
-          {players[0]?.name ?? "Joueur"} · {roundScores[players[0]?.id ?? ""] ?? 0} pts
+        <span className="text-[13px] font-medium text-fp-text-dim tabular-nums">
+          {index + 1}/{questions.length}
         </span>
+        {!solo && activePlayer ? (
+          <span className="flex items-center gap-1.5">
+            <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={24} />
+            <span className="text-[13px] font-semibold text-fp-text">{activePlayer.name}</span>
+          </span>
+        ) : (
+          <span className="w-16" aria-hidden="true" />
+        )}
       </div>
 
       {/* Timer */}
       {mode !== "rapidfire" && (
-        <div className="mt-5">
+        <div className="mt-4">
           <TimerBar seconds={timeLeft} total={timePerQuestion} />
         </div>
       )}
 
       {/* Question */}
-      <section className="mt-6 flex-1">
+      <section className="mt-5 flex-1">
         <div className="flex items-center justify-between">
-          <span className="rounded-full border border-fp-border bg-fp-surface px-3 py-1 text-xs font-semibold text-fp-text-dim">
-            {current.category} · {current.difficulty}
-          </span>
+          <PillBadge>
+            {CATEGORY_LABELS[current.category]} · {DIFFICULTY_LABELS[current.difficulty] ?? current.difficulty}
+          </PillBadge>
           {mode === "rapidfire" && (
-            <ProgressRing seconds={timeLeft} total={timePerQuestion} size={52} danger={timeLeft <= 2} />
+            <ProgressRing seconds={timeLeft} total={timePerQuestion} size={48} danger={timeLeft <= 2} />
           )}
         </div>
-        <h1
-          key={current.id}
-          className="animate-rise mt-4 font-display text-2xl font-bold leading-snug sm:text-3xl"
-        >
+        <h1 key={current.id} className="animate-rise mt-4 text-[22px] font-semibold leading-snug text-fp-text sm:text-[26px]">
           {current.question}
         </h1>
 
-        <div className="mt-6 grid gap-3">
+        <div className="mt-6 grid gap-2">
           {current.answers.map((answer, i) => {
-            let cls = "border-fp-border bg-fp-surface text-fp-text hover:border-fp-primary";
+            let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
             let disabled = false;
             if (phase === "answer") {
               disabled = true;
               if (i === current.correctAnswer) {
-                cls = "border-fp-success bg-fp-success/15 text-fp-success animate-pop";
+                cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text animate-pop";
               } else if (i === selected) {
-                cls = "border-fp-danger bg-fp-danger/15 text-fp-danger animate-shake";
+                cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
               } else {
-                cls = "border-fp-border bg-fp-surface opacity-40";
+                cls = "fp-card opacity-40";
               }
             }
             return (
@@ -296,15 +362,17 @@ export function QuizGame({ mode }: QuizGameProps) {
                 type="button"
                 disabled={disabled}
                 onClick={() => handleAnswer(i)}
-                className={`flex items-center gap-3 rounded-2xl border-2 px-4 py-3.5 text-left font-semibold transition-all active:scale-[0.98] ${cls}`}
+                className={`flex items-center gap-3 rounded-2xl px-4 py-3.5 text-left text-[15px] font-medium transition-all active:scale-[0.98] ${cls}`}
               >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-bold">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[13px] font-semibold text-fp-text-dim">
                   {["A", "B", "C", "D"][i]}
                 </span>
                 <span className="flex-1">{answer}</span>
-                {phase === "answer" && i === current.correctAnswer && <span aria-hidden="true">✓</span>}
+                {phase === "answer" && i === current.correctAnswer && (
+                  <span className="font-bold text-fp-success" aria-hidden="true">✓</span>
+                )}
                 {phase === "answer" && i === selected && i !== current.correctAnswer && (
-                  <span aria-hidden="true">✗</span>
+                  <span className="font-bold text-fp-danger" aria-hidden="true">✗</span>
                 )}
               </button>
             );
@@ -313,8 +381,7 @@ export function QuizGame({ mode }: QuizGameProps) {
 
         {/* Explication */}
         {phase === "answer" && current.explanation && (
-          <p className="animate-rise mt-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] px-4 py-3 text-xs text-neutral-300">
-            <span className="font-bold text-violet-300 mr-1.5">Éclairage :</span>
+          <p className="animate-rise mt-4 rounded-2xl bg-black/[0.03] px-4 py-3 text-[13px] leading-relaxed text-fp-text-dim">
             {current.explanation}
           </p>
         )}
@@ -322,22 +389,23 @@ export function QuizGame({ mode }: QuizGameProps) {
 
       {/* Signaler */}
       {phase === "answer" && !reportDone && (
-        <div className="mt-4 flex items-center justify-between">
+        <div className="mt-4 text-center">
           <button
             type="button"
             onClick={() => setReportOpen(true)}
-            className="text-xs text-fp-text-dim/70 underline-offset-2 hover:underline"
+            className="inline-flex items-center gap-1 text-[13px] text-fp-text-dim underline-offset-2 hover:underline"
           >
+            <Flag className="h-3 w-3" />
             Signaler cette question
           </button>
         </div>
       )}
       {reportOpen && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 p-4 sm:items-center" role="dialog" aria-modal="true" aria-label="Signaler la question">
-          <div className="fp-card w-full max-w-md p-6">
-            <h3 className="font-display text-lg font-bold">Signaler cette question</h3>
-            <div className="mt-4 grid grid-cols-1 gap-2">
-              {reportReasons.map((r) => (
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/30 p-4 sm:items-center" role="dialog" aria-modal="true" aria-label="Signaler la question">
+          <div className="fp-card w-full max-w-md p-5 animate-pop">
+            <h3 className="text-[17px] font-semibold text-fp-text">Signaler cette question</h3>
+            <div className="mt-4 grid grid-cols-1 gap-1.5">
+              {REPORT_REASONS.map((r) => (
                 <button
                   key={r}
                   type="button"
@@ -346,20 +414,18 @@ export function QuizGame({ mode }: QuizGameProps) {
                     setReportOpen(false);
                     setReportDone(true);
                   }}
-                  className="rounded-xl border border-fp-border bg-fp-surface px-4 py-2.5 text-left text-sm font-medium transition-colors hover:border-fp-primary"
+                  className="rounded-xl bg-black/[0.03] px-4 py-2.5 text-left text-[14px] font-medium text-fp-text transition-colors hover:bg-black/[0.06]"
                 >
                   {r.replace(/-/g, " ")}
                 </button>
               ))}
             </div>
-            <button type="button" onClick={() => setReportOpen(false)} className="fp-btn-ghost mt-4 w-full">
+            <button type="button" onClick={() => setReportOpen(false)} className="fp-btn-ghost mt-3 w-full py-2.5 text-[15px]">
               Annuler
             </button>
           </div>
         </div>
       )}
-
-      {showConfetti && <Confetti count={40} />}
     </main>
   );
 }

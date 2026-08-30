@@ -1,22 +1,35 @@
 "use client";
 
+/**
+ * Free Party — Timeline
+ * Replace les événements dans l'ordre chronologique.
+ * Multi-joueurs : une manche chacun à son tour.
+ */
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { pickTimelineSet } from "@/lib/game/timeline-data";
 import { useSettingsStore } from "@/lib/store/settings";
+import { useGameStore } from "@/lib/store/game";
+import { PlayerDot, PillBadge } from "@/components/ui/primitives";
+import { ChevronLeft, Clock } from "lucide-react";
 
 export function TimelineGame() {
   const router = useRouter();
   const settings = useSettingsStore();
+  const players = useGameStore((s) => s.config?.players) ?? [];
+  const solo = players.length <= 1;
+
   const [round, setRound] = useState(0);
   const [setId, setSetId] = useState<string | null>(null);
   const [events, setEvents] = useState(() => pickTimelineSet(null).events);
-  const [order, setOrder] = useState<number[]>([]); // indices dans l'ordre choisi
-  const [score, setScore] = useState(0);
+  const [order, setOrder] = useState<number[]>([]);
   const [checked, setChecked] = useState<boolean | null>(null);
+  const [scores, setScores] = useState<Record<string, number>>({});
   const [finished, setFinished] = useState(false);
 
   const correctOrder = useMemo(() => [...events].sort((a, b) => a.year - b.year), [events]);
+  const activeIdx = round % Math.max(1, players.length);
+  const active = players[activeIdx];
 
   function pick(i: number) {
     if (checked !== null || order.includes(i)) return;
@@ -32,9 +45,11 @@ export function TimelineGame() {
     if (order.length !== events.length) return;
     const ok = order.every((idx, pos) => events[idx].id === correctOrder[pos].id);
     setChecked(ok);
-    if (ok) setScore((s) => s + 10);
+    if (ok && active) {
+      setScores((s) => ({ ...s, [active.id]: (s[active.id] ?? 0) + 10 }));
+    }
     setTimeout(() => {
-      if (ok && round >= settings.timelineRounds - 1) {
+      if (round >= settings.timelineRounds - 1) {
         setFinished(true);
         return;
       }
@@ -44,54 +59,89 @@ export function TimelineGame() {
       setOrder([]);
       setChecked(null);
       setRound((r) => r + 1);
-      if (!ok) setFinished(true);
     }, 2200);
   }
 
+  function replay() {
+    const first = pickTimelineSet(null);
+    setRound(0);
+    setSetId(first.setId);
+    setEvents(first.events);
+    setOrder([]);
+    setChecked(null);
+    setScores({});
+    setFinished(false);
+  }
+
   if (finished) {
+    const ranking = players
+      .map((p) => ({ player: p, score: scores[p.id] ?? 0 }))
+      .sort((a, b) => b.score - a.score);
+
     return (
-      <main className="mx-auto flex min-h-dvh max-w-2xl flex-col items-center justify-center px-6 text-center">
-        <div className="animate-pop text-6xl" aria-hidden="true">⏳</div>
-        <h1 className="mt-4 font-display text-4xl font-bold">
-          {score >= 20 ? "Maître du temps !" : "Fin de partie"}
+      <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4 pb-16 pt-10 text-center animate-rise">
+        <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#5ac8fa]/15 text-[#5ac8fa]">
+          <Clock className="h-7 w-7" />
+        </div>
+        <h1 className="mt-3 text-[26px] font-bold text-fp-text">
+          {solo ? "Fin de partie" : `${ranking[0]?.player.name ?? ""} gagne !`}
         </h1>
-        <p className="mt-2 text-fp-text-dim">
-          {score} points sur {round + 1} manches
-        </p>
-        <div className="mt-8 flex w-full max-w-sm gap-3">
-          <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost flex-1">Accueil</button>
-          <button type="button" onClick={() => window.location.reload()} className="fp-btn-primary flex-1">Rejouer</button>
+        {solo ? (
+          <p className="mt-1 text-[14px] text-fp-text-dim">{ranking[0]?.score ?? 0} points</p>
+        ) : (
+          <div className="fp-list mt-6 text-left">
+            {ranking.map((r, i) => (
+              <div key={r.player.id} className="flex items-center gap-3 px-4 py-3">
+                <span className="w-5 text-center text-[15px] font-semibold text-fp-text-dim tabular-nums">{i + 1}</span>
+                <PlayerDot name={r.player.name} colorIndex={r.player.color} size={30} />
+                <span className="flex-1 text-[15px] font-medium text-fp-text">{r.player.name}</span>
+                <span className="text-[15px] font-semibold text-fp-text tabular-nums">{r.score} pts</span>
+              </div>
+            ))}
+          </div>
+        )}
+        <div className="mt-8 flex w-full gap-3">
+          <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>
+          <button type="button" onClick={replay} className="fp-btn-primary flex-1 py-3 text-[15px]">Rejouer</button>
         </div>
       </main>
     );
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-6">
+    <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 pb-10 pt-3">
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => router.push("/")} className="text-xs font-semibold text-neutral-400 hover:text-white" aria-label="Quitter">✕ Quitter</button>
-        <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs font-semibold text-neutral-300">
-          Manche {round + 1} · {score} pts
-        </span>
+        <button type="button" onClick={() => router.push("/")} className="fp-btn-ghost inline-flex items-center gap-0.5 px-2 py-1 text-[15px]" aria-label="Quitter">
+          <ChevronLeft className="h-5 w-5" />
+          Quitter
+        </button>
+        <PillBadge>Manche {round + 1}/{settings.timelineRounds}</PillBadge>
       </div>
 
-      <h1 className="mt-6 font-sans text-2xl sm:text-3xl font-extrabold text-white">Chronologie & Repères</h1>
-      <p className="mt-2 text-xs text-neutral-400">Sélectionnez les événements dans l&apos;ordre chronologique exact (du plus ancien au plus récent).</p>
+      <div className="mt-6">
+        <h1 className="text-[22px] font-bold text-fp-text">Du plus ancien au plus récent</h1>
+        {!solo && active && (
+          <p className="mt-1.5 inline-flex items-center gap-2 text-[14px] text-fp-text-dim">
+            <PlayerDot name={active.name} colorIndex={active.color} size={22} />
+            Au tour de {active.name} · {scores[active.id] ?? 0} pts
+          </p>
+        )}
+      </div>
 
       {/* Ordre choisi */}
-      <div className="mt-6 min-h-24 rounded-2xl border-2 border-dashed border-fp-border bg-fp-surface/40 p-3">
+      <div className="mt-5 min-h-24 rounded-2xl border-2 border-dashed border-black/[0.1] bg-white/50 p-3">
         <div className="flex flex-wrap gap-2">
           {order.map((idx, pos) => (
             <button
               key={pos}
               type="button"
               onClick={() => unselect(pos)}
-              className="animate-pop rounded-xl border border-fp-primary bg-fp-primary/15 px-3 py-2 text-sm font-semibold text-white"
+              className="fp-card animate-pop px-3 py-2 text-[14px] font-semibold text-fp-text ring-1 ring-fp-primary/40"
             >
               {pos + 1}. {events[idx].label}
             </button>
           ))}
-          {order.length === 0 && <span className="text-sm text-fp-text-dim/60">Sélectionne les événements ci-dessous…</span>}
+          {order.length === 0 && <span className="text-[14px] text-fp-text-dim">Touche les événements ci-dessous dans l&apos;ordre…</span>}
         </div>
       </div>
 
@@ -106,14 +156,14 @@ export function TimelineGame() {
               type="button"
               onClick={() => pick(i)}
               disabled={isUsed || checked !== null}
-              className={`rounded-2xl border-2 px-4 py-3 text-left font-semibold transition-all active:scale-[0.98] ${
+              className={`rounded-2xl px-4 py-3 text-left text-[15px] font-medium transition-all active:scale-[0.98] ${
                 isUsed
                   ? isWrong
-                    ? "border-fp-danger bg-fp-danger/10 opacity-60"
-                    : "border-fp-border bg-fp-surface opacity-40"
+                    ? "bg-fp-danger/10 text-fp-text ring-2 ring-fp-danger opacity-70"
+                    : "bg-black/[0.03] text-fp-text opacity-40"
                   : checked === true
-                    ? "border-fp-success bg-fp-success/10"
-                    : "border-fp-border bg-fp-surface hover:border-fp-primary"
+                    ? "bg-fp-success/10 text-fp-text ring-2 ring-fp-success"
+                    : "fp-card text-fp-text hover:bg-black/[0.02]"
               }`}
             >
               {ev.label}
@@ -123,8 +173,13 @@ export function TimelineGame() {
       </div>
 
       {checked !== null && (
-        <p className={`animate-pop mt-4 text-center font-bold ${checked ? "text-fp-success" : "text-fp-danger"}`}>
-          {checked ? "✓ Parfait !" : "✗ Pas tout à fait…"}
+        <p className={`animate-pop mt-4 text-center text-[15px] font-semibold ${checked ? "text-fp-success" : "text-fp-danger"}`}>
+          {checked ? "Parfait, ordre exact !" : "Pas tout à fait… regarde la bonne chronologie."}
+        </p>
+      )}
+      {checked === false && (
+        <p className="mt-2 text-center text-[13px] text-fp-text-dim">
+          {correctOrder.map((e) => e.label).join(" → ")}
         </p>
       )}
 
@@ -132,7 +187,7 @@ export function TimelineGame() {
         type="button"
         onClick={check}
         disabled={order.length !== events.length || checked !== null}
-        className="fp-btn-primary mt-6 w-full disabled:opacity-40"
+        className="fp-btn-primary mt-6 w-full py-3.5 text-[16px]"
       >
         Valider ({order.length}/{events.length})
       </button>
