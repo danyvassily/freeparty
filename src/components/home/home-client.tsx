@@ -238,32 +238,41 @@ export function HomeClient() {
             Chaque ami joue sur son iPhone, iPad ou ordinateur en temps réel.
           </p>
 
-          <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="mt-5 space-y-3">
             <button
               type="button"
               onClick={() => router.push("/play/online")}
-              className="fp-btn-primary flex items-center justify-center gap-2 py-3.5 text-[15px]"
+              className="fp-btn-primary flex w-full items-center justify-center gap-2 py-4 text-[16px]"
             >
-              <Plus className="h-4.5 w-4.5" />
+              <Plus className="h-5 w-5" />
               <span>Créer un salon</span>
             </button>
 
-            <div className="flex gap-2">
+            <div className="relative my-3 text-center">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-black/[0.06]" />
+              </div>
+              <span className="relative bg-white px-3 text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
+                ou rejoindre un ami
+              </span>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
                 value={quickJoinCode}
                 onChange={(e) => setQuickJoinCode(e.target.value.toUpperCase())}
-                placeholder="CODE PIN"
+                placeholder="ENTREZ LE CODE PIN"
                 maxLength={6}
-                className="fp-input flex-1 px-3 text-center font-mono text-[16px] font-bold uppercase tracking-widest"
+                className="fp-input flex-1 px-4 py-3.5 text-center font-mono text-[16px] font-bold uppercase tracking-widest"
                 aria-label="Code salon"
               />
               <button
                 type="button"
                 onClick={() => router.push(`/play/online?room=${quickJoinCode}`)}
                 disabled={quickJoinCode.trim().length < 4}
-                className="fp-btn-secondary px-4 text-[14px]"
+                className="fp-btn-secondary flex items-center justify-center py-3.5 px-6 text-[15px] shrink-0"
               >
-                Rejoindre
+                Rejoindre le salon
               </button>
             </div>
           </div>

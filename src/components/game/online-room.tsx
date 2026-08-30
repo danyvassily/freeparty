@@ -415,37 +415,44 @@ export function OnlineRoom() {
           Chaque joueur du salon verra les questions dans sa langue préférée.
         </p>
 
-        <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="mt-7 space-y-3">
           <button
             type="button"
             onClick={() => setView("create")}
             disabled={!pseudoValid}
-            className="fp-btn-primary flex items-center justify-center gap-2 py-4 text-[16px]"
+            className="fp-btn-primary flex w-full items-center justify-center gap-2 py-4 text-[16px]"
           >
             <Plus className="h-5 w-5" />
             <span>Créer un salon</span>
           </button>
 
-          <div className="fp-card p-3.5 flex flex-col justify-between">
-            <div className="flex gap-2">
-              <input
-                id="join-code"
-                value={joinCode}
-                onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
-                placeholder="CODE PIN"
-                maxLength={6}
-                className="fp-input min-w-0 flex-1 px-3 text-center font-mono text-[17px] font-bold uppercase tracking-widest"
-                aria-label="Code du salon"
-              />
-              <button
-                type="button"
-                onClick={() => join()}
-                disabled={joinCode.trim().length < 4 || !pseudoValid || busy}
-                className="fp-btn-secondary px-5 text-[15px]"
-              >
-                Entrer
-              </button>
+          <div className="relative my-3 text-center">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-black/[0.06]" />
             </div>
+            <span className="relative bg-white px-3 text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
+              ou rejoindre avec un code
+            </span>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-2">
+            <input
+              id="join-code"
+              value={joinCode}
+              onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
+              placeholder="CODE PIN"
+              maxLength={6}
+              className="fp-input flex-1 px-4 py-3.5 text-center font-mono text-[17px] font-bold uppercase tracking-widest"
+              aria-label="Code du salon"
+            />
+            <button
+              type="button"
+              onClick={() => join()}
+              disabled={joinCode.trim().length < 4 || !pseudoValid || busy}
+              className="fp-btn-secondary flex items-center justify-center py-3.5 px-6 text-[15px] shrink-0"
+            >
+              Rejoindre
+            </button>
           </div>
         </div>
 
