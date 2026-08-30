@@ -95,7 +95,7 @@ try {
 
   // 4. Capacité : le salon de 2 places — on vérifie juste la logique de comptage
   const { count } = await alex.from("game_players").select("id", { count: "exact", head: true }).eq("session_id", sessionId);
-  count === 2 ? ok(`comptage joueurs = 2/4`) : ko("comptage joueurs", `attendu 2, obtenu ${count}`);
+  if (count === 2) ok(`comptage joueurs = 2/4`); else ko("comptage joueurs", `attendu 2, obtenu ${count}`);
 
   // 5. Alex s'abonne au salon (Realtime)
   console.log("\n4. Synchronisation temps réel");
@@ -123,7 +123,8 @@ try {
   await sleep(2500);
   if (received && received.current_question?.question === QUESTION.question) {
     const leaked = received.current_question.correctAnswer !== undefined;
-    leaked ? ko("question reçue par Alex en temps réel", "correctAnswer a fuité !") : ok(`Alex a reçu la question en temps réel (sans fuite de la réponse)`);
+    if (leaked) ko("question reçue par Alex en temps réel", "correctAnswer a fuité !");
+    else ok(`Alex a reçu la question en temps réel (sans fuite de la réponse)`);
   } else {
     ko("réception Realtime par Alex", received ? "contenu inattendu" : "aucun événement reçu en 2,5 s");
   }
@@ -158,20 +159,20 @@ try {
     answers_revealed: true,
     state_version: 2,
   }).eq("id", sessionId);
-  e8 ? ko("révélation", e8) : ok("bonne réponse révélée à tous");
+  if (e8) ko("révélation", e8); else ok("bonne réponse révélée à tous");
 
   // 11. Fin de partie + vérification des scores
   console.log("\n7. Fin de partie et scores");
   const { error: e9 } = await dany.from("game_sessions").update({ phase: "finished" }).eq("id", sessionId);
-  e9 ? ko("fin de partie", e9) : ok("salon passé en phase finished");
+  if (e9) ko("fin de partie", e9); else ok("salon passé en phase finished");
 
   const { data: players } = await dany.from("game_players").select("name, score, is_host").eq("session_id", sessionId).order("score", { ascending: false });
   console.log("\n  🏆 Classement final :");
   for (const [i, p] of (players ?? []).entries()) console.log(`     ${i + 1}. ${p.name}${p.is_host ? " (hôte)" : ""} — ${p.score} pts`);
   const alexScore = players?.find((p) => p.name === "Alex")?.score;
   const danyScore = players?.find((p) => p.name === "Dany")?.score;
-  alexScore === 10 ? ok("Alex a bien 10 pts (bonne réponse)") : ko("score Alex", `attendu 10, obtenu ${alexScore}`);
-  danyScore === 0 ? ok("Dany a bien 0 pt (mauvaise réponse)") : ko("score Dany", `attendu 0, obtenu ${danyScore}`);
+  if (alexScore === 10) ok("Alex a bien 10 pts (bonne réponse)"); else ko("score Alex", `attendu 10, obtenu ${alexScore}`);
+  if (danyScore === 0) ok("Dany a bien 0 pt (mauvaise réponse)"); else ko("score Dany", `attendu 0, obtenu ${danyScore}`);
 
   alex.removeChannel(channel);
 } catch (e) {
