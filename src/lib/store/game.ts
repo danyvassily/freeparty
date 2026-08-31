@@ -30,6 +30,7 @@ export interface Player {
   score: number;
   correct: number;
   wrong: number;
+  avatarUrl?: string;
   /** Team A/B pour Team Battle */
   team?: "A" | "B";
 }

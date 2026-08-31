@@ -119,7 +119,12 @@ export function SettingsPage() {
           className="flex w-full items-center justify-between px-4 py-3.5 text-left transition hover:bg-black/[0.02]"
         >
           <div className="flex items-center gap-3">
-            <PlayerDot name={user?.name || "Joueur"} colorIndex={0} size={38} />
+            <PlayerDot
+              name={user?.name || "Joueur"}
+              avatarUrl={user?.avatarUrl}
+              colorIndex={0}
+              size={38}
+            />
             <div>
               <p className="text-[15px] font-semibold text-fp-text">
                 {isLoggedIn && user ? user.name : isFR ? "Créer un compte / Se connecter" : "Create account / Sign in"}

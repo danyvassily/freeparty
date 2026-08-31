@@ -97,14 +97,18 @@ export function HomeClient() {
           <button
             type="button"
             onClick={() => router.push("/auth")}
-            className={`flex h-9 items-center gap-1.5 rounded-full px-3 text-[13px] font-semibold transition active:scale-95 ${
+            className={`flex h-9 items-center gap-1.5 rounded-full pl-1.5 pr-3 text-[13px] font-semibold transition active:scale-95 ${
               isLoggedIn
                 ? "bg-fp-primary/10 text-fp-primary hover:bg-fp-primary/20"
                 : "bg-fp-primary text-white shadow-xs hover:bg-fp-primary-dark"
             }`}
             aria-label="Profil et compte"
           >
-            <User className="h-4 w-4" />
+            {isLoggedIn && user ? (
+              <PlayerDot name={user.name} avatarUrl={user.avatarUrl} colorIndex={0} size={24} />
+            ) : (
+              <User className="h-4 w-4 ml-1" />
+            )}
             <span className="max-w-[100px] truncate">{isLoggedIn && user ? user.name : "Mon compte"}</span>
           </button>
 

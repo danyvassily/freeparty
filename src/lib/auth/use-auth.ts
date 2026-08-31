@@ -4,8 +4,8 @@
  * Free Party — Unified Auth & Profile Management
  * Gère l'authentification (Création de compte, Connexion, Déconnexion),
  * la synchronisation avec Supabase Auth (si configuré) et le mode Local-First.
- * Effectue automatiquement la fusion d'historique anti-répétition entre
- * le profil anonyme de l'appareil et le nouveau compte créé.
+ * Supporte la photo de profil personnalisée (upload, compression square WebP/JPEG,
+ * stockage persistant local et Supabase).
  */
 import { useEffect, useState, useCallback } from "react";
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
@@ -24,10 +24,55 @@ export interface AuthUser {
   name: string;
   isAnonymous: boolean;
   avatarColor: number;
+  avatarUrl?: string | null;
   createdAt?: string;
 }
 
 const LOCAL_AUTH_KEY = "freeparty_auth_user";
+
+/**
+ * Compresse et recadre en carré une image sélectionnée par l'utilisateur
+ * (format WebP 256x256 léger < 35 Ko)
+ */
+export async function compressProfilePhoto(file: File, maxSize = 256): Promise<string> {
+  return new Promise((resolve, reject) => {
+    if (!file.type.startsWith("image/")) {
+      reject(new Error("Le fichier doit être une image."));
+      return;
+    }
+    const reader = new FileReader();
+    reader.onerror = reject;
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onerror = reject;
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        const minDim = Math.min(img.width, img.height);
+        const sx = (img.width - minDim) / 2;
+        const sy = (img.height - minDim) / 2;
+
+        const targetDim = Math.min(maxSize, minDim);
+        canvas.width = targetDim;
+        canvas.height = targetDim;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) {
+          resolve(e.target?.result as string);
+          return;
+        }
+        ctx.drawImage(img, sx, sy, minDim, minDim, 0, 0, targetDim, targetDim);
+        try {
+          const webp = canvas.toDataURL("image/webp", 0.85);
+          resolve(webp);
+        } catch {
+          const jpeg = canvas.toDataURL("image/jpeg", 0.85);
+          resolve(jpeg);
+        }
+      };
+      img.src = e.target?.result as string;
+    };
+    reader.readAsDataURL(file);
+  });
+}
 
 export function useAuth() {
   const [user, setUser] = useState<AuthUser | null>(null);
@@ -57,6 +102,7 @@ export function useAuth() {
 
           const name = prof?.nickname || metadata.username || metadata.name || email?.split("@")[0] || "Joueur";
           const avatarColor = prof?.avatar_color ?? 0;
+          const avatarUrl = metadata.avatar_url || prof?.avatar_url || null;
 
           const activeUser: AuthUser = {
             id: prof?.id || authUserId,
@@ -64,6 +110,7 @@ export function useAuth() {
             name,
             isAnonymous: false,
             avatarColor,
+            avatarUrl,
             createdAt: data.user.created_at,
           };
 
@@ -93,12 +140,14 @@ export function useAuth() {
       const deviceToken = getOrCreateClientDeviceToken();
       const cachedProfId = getCachedProfileId();
       const currentName = players[0]?.name || "Joueur";
+      const currentAvatar = players[0]?.avatarUrl || null;
 
       setUser({
         id: cachedProfId || `anon_${deviceToken.slice(0, 12)}`,
         name: currentName,
         isAnonymous: true,
         avatarColor: 0,
+        avatarUrl: currentAvatar,
       });
     } catch (err) {
       console.error("[useAuth] Erreur lors du chargement:", err);
@@ -140,9 +189,10 @@ export function useAuth() {
     email: string;
     password: string;
     name: string;
+    avatarUrl?: string | null;
     language?: UILanguage;
   }): Promise<{ user: AuthUser; message?: string }> => {
-    const { email, password, name, language = "fr" } = params;
+    const { email, password, name, avatarUrl, language = "fr" } = params;
     const cleanName = name.trim().slice(0, 24) || email.split("@")[0];
     const previousAnonymousProfileId = getCachedProfileId();
     const deviceToken = getOrCreateClientDeviceToken();
@@ -156,6 +206,7 @@ export function useAuth() {
           data: {
             username: cleanName,
             language,
+            avatar_url: avatarUrl ?? undefined,
           },
         },
       });
@@ -193,6 +244,7 @@ export function useAuth() {
           name: cleanName,
           isAnonymous: false,
           avatarColor: 0,
+          avatarUrl: avatarUrl ?? null,
           createdAt: data.user.created_at,
         };
 
@@ -201,8 +253,10 @@ export function useAuth() {
           localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(newUser));
         }
 
-        // Met à jour le nom dans le jeu
-        const updatedPlayers = players.map((p, i) => (i === 0 ? { ...p, name: cleanName } : p));
+        // Met à jour le nom et l'avatar dans le store de jeu
+        const updatedPlayers = players.map((p, i) =>
+          i === 0 ? { ...p, name: cleanName, avatarUrl: avatarUrl || undefined } : p,
+        );
         setPlayers(updatedPlayers);
         if (language) setLanguage(language);
 
@@ -225,6 +279,7 @@ export function useAuth() {
       name: cleanName,
       isAnonymous: false,
       avatarColor: 0,
+      avatarUrl: avatarUrl ?? null,
       createdAt: new Date().toISOString(),
     };
 
@@ -249,7 +304,9 @@ export function useAuth() {
     localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(newUser));
     localStorage.setItem(`freeparty_device_${deviceToken}`, localUserId);
 
-    const updatedPlayers = players.map((p, i) => (i === 0 ? { ...p, name: cleanName } : p));
+    const updatedPlayers = players.map((p, i) =>
+      i === 0 ? { ...p, name: cleanName, avatarUrl: avatarUrl || undefined } : p,
+    );
     setPlayers(updatedPlayers);
     if (language) setLanguage(language);
 
@@ -272,6 +329,7 @@ export function useAuth() {
       const userId = data.user.id;
       const metadata = data.user.user_metadata ?? {};
       const name = metadata.username || metadata.name || email.split("@")[0];
+      const avatarUrl = metadata.avatar_url || null;
 
       // Fusionne l'historique de l'appareil avec le compte connecté
       try {
@@ -295,6 +353,7 @@ export function useAuth() {
         name,
         isAnonymous: false,
         avatarColor: 0,
+        avatarUrl,
         createdAt: data.user.created_at,
       };
 
@@ -302,7 +361,9 @@ export function useAuth() {
       setCachedProfileId(userId);
       localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
 
-      const updatedPlayers = players.map((p, i) => (i === 0 ? { ...p, name } : p));
+      const updatedPlayers = players.map((p, i) =>
+        i === 0 ? { ...p, name, avatarUrl: avatarUrl || undefined } : p,
+      );
       setPlayers(updatedPlayers);
 
       return activeUser;
@@ -321,6 +382,7 @@ export function useAuth() {
         name: email.split("@")[0],
         isAnonymous: false,
         avatarColor: 0,
+        avatarUrl: null,
         createdAt: new Date().toISOString(),
       };
     }
@@ -350,6 +412,7 @@ export function useAuth() {
       name: "Joueur",
       isAnonymous: true,
       avatarColor: 0,
+      avatarUrl: null,
     });
   };
 
@@ -374,6 +437,28 @@ export function useAuth() {
     setPlayers(updatedPlayers);
   };
 
+  /**
+   * Mise à jour de la photo de profil (upload/dataURL)
+   */
+  const updateAvatar = async (avatarUrl: string | null): Promise<void> => {
+    if (!user) return;
+
+    const sb = getSupabaseBrowser();
+    if (sb && isSupabaseConfigured && !user.isAnonymous) {
+      await sb.auth.updateUser({ data: { avatar_url: avatarUrl } });
+      await sb.from("player_profiles").update({ avatar_url: avatarUrl }).eq("id", user.id);
+    }
+
+    const updatedUser = { ...user, avatarUrl };
+    setUser(updatedUser);
+    localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(updatedUser));
+
+    const updatedPlayers = players.map((p, i) =>
+      i === 0 ? { ...p, avatarUrl: avatarUrl || undefined } : p,
+    );
+    setPlayers(updatedPlayers);
+  };
+
   return {
     user,
     loading,
@@ -382,6 +467,7 @@ export function useAuth() {
     signIn,
     signOut,
     updateName,
+    updateAvatar,
     refreshUser,
   };
 }

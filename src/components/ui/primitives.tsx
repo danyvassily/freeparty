@@ -210,8 +210,35 @@ export function PillBadge({
   );
 }
 
-/** Pastille couleur joueur (initiale) */
-export function PlayerDot({ name, colorIndex, size = 36 }: { name: string; colorIndex: number; size?: number }) {
+/** Pastille / Photo de profil joueur */
+export function PlayerDot({
+  name,
+  colorIndex = 0,
+  size = 36,
+  avatarUrl,
+}: {
+  name: string;
+  colorIndex?: number;
+  size?: number;
+  avatarUrl?: string | null;
+}) {
+  if (avatarUrl) {
+    return (
+      <span
+        className="relative inline-flex shrink-0 items-center justify-center rounded-full overflow-hidden shadow-xs border border-black/10 bg-black/[0.04]"
+        style={{ width: size, height: size }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={avatarUrl}
+          alt={name}
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+      </span>
+    );
+  }
+
   const COLORS = ["#0071e3", "#34c759", "#ff9500", "#ff3b30", "#af52de", "#5ac8fa", "#5856d6", "#8e8e93"];
   const bg = COLORS[((colorIndex % COLORS.length) + COLORS.length) % COLORS.length];
   return (

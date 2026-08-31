@@ -12,6 +12,7 @@ create table if not exists public.player_profiles (
   is_anonymous boolean not null default true,
   nickname text not null default 'Joueur',
   avatar_color int not null default 0,
+  avatar_url text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -88,6 +89,7 @@ create table if not exists public.lobby_members (
   ready boolean not null default false,
   nickname text not null default 'Joueur',
   avatar_color int not null default 0,
+  avatar_url text,
   joined_at timestamptz not null default now(),
   left_at timestamptz,
   last_seen_at timestamptz not null default now(),

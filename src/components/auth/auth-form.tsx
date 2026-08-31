@@ -1,9 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronLeft, CheckCircle2, User, Mail, Lock, Sparkles, LogOut, ArrowRight, ShieldCheck } from "lucide-react";
-import { useAuth } from "@/lib/auth/use-auth";
+import {
+  ChevronLeft,
+  CheckCircle2,
+  User,
+  Mail,
+  Lock,
+  Sparkles,
+  LogOut,
+  ArrowRight,
+  ShieldCheck,
+  Camera,
+  Trash2,
+  UploadCloud,
+} from "lucide-react";
+import { useAuth, compressProfilePhoto } from "@/lib/auth/use-auth";
 import { useLanguageStore } from "@/lib/store/language";
 import { translate, SUPPORTED_LANGUAGES, LANGUAGE_NAMES } from "@/lib/i18n";
 import { PlayerDot } from "@/components/ui/primitives";
@@ -13,7 +26,7 @@ type AuthView = "register" | "login";
 
 export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }) {
   const router = useRouter();
-  const { user, isLoggedIn, loading, signUp, signIn, signOut, updateName } = useAuth();
+  const { user, isLoggedIn, loading, signUp, signIn, signOut, updateName, updateAvatar } = useAuth();
   const lang = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
 
@@ -21,13 +34,39 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [avatarPreview, setAvatarPreview] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [uploadingAvatar, setUploadingAvatar] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [editedName, setEditedName] = useState("");
 
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const editFileInputRef = useRef<HTMLInputElement>(null);
+
   const t = (k: string) => translate(lang, k);
+
+  async function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>, isProfileEdit = false) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setError(null);
+    setUploadingAvatar(true);
+    try {
+      const compressed = await compressProfilePhoto(file, 256);
+      if (isProfileEdit) {
+        await updateAvatar(compressed);
+        setSuccessMessage(lang === "fr" ? "Photo de profil mise à jour !" : "Profile picture updated!");
+      } else {
+        setAvatarPreview(compressed);
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur lors du traitement de l'image.");
+    } finally {
+      setUploadingAvatar(false);
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -41,12 +80,17 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
           email,
           password,
           name: name.trim() || email.split("@")[0],
+          avatarUrl: avatarPreview,
           language: lang,
         });
         if (res.message) {
           setSuccessMessage(res.message);
         } else {
-          setSuccessMessage(lang === "fr" ? "Compte créé avec succès ! Vos parties et statistiques sont sauvegardées." : "Account created successfully! Your games and stats are saved.");
+          setSuccessMessage(
+            lang === "fr"
+              ? "Compte créé avec succès ! Vos parties et statistiques sont sauvegardées."
+              : "Account created successfully! Your games and stats are saved.",
+          );
           setTimeout(() => {
             router.push("/play/online");
           }, 1200);
@@ -86,7 +130,7 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
         </button>
 
         <div className="mx-auto flex justify-center mb-2">
-          <KawaiiMascot theme="party" size={80} className="border border-black/[0.04] shadow-xs" />
+          <KawaiiMascot theme="party" size={72} className="border border-black/[0.04] shadow-xs" />
         </div>
 
         <div className="inline-flex items-center gap-1.5 rounded-full bg-fp-success/15 px-3.5 py-1 text-[13px] font-semibold text-fp-success">
@@ -94,52 +138,111 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
           <span>{lang === "fr" ? "Compte actif & synchronisé" : "Account active & synced"}</span>
         </div>
 
-        <div className="mt-4 flex items-center justify-center gap-3">
-          <PlayerDot name={user.name} colorIndex={0} size={42} />
-          <div className="text-left">
-            {editingName ? (
-              <div className="flex items-center gap-2">
-                <input
-                  value={editedName}
-                  onChange={(e) => setEditedName(e.target.value)}
-                  className="fp-input px-2.5 py-1 text-[16px] font-bold"
-                  maxLength={24}
-                  autoFocus
-                />
-                <button
-                  type="button"
-                  onClick={async () => {
-                    if (editedName.trim()) await updateName(editedName);
-                    setEditingName(false);
-                  }}
-                  className="fp-btn-primary px-3 py-1 text-[13px]"
-                >
-                  OK
-                </button>
-              </div>
-            ) : (
-              <div>
-                <p className="text-[18px] font-bold text-fp-text flex items-center gap-2">
-                  {user.name}
+        {/* Section Photo de profil & Pseudo */}
+        <div className="mt-5 p-4 rounded-2xl bg-black/[0.02] border border-black/[0.04]">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Avatar interactif avec bouton upload */}
+            <div className="relative group">
+              <PlayerDot
+                name={user.name}
+                avatarUrl={user.avatarUrl}
+                colorIndex={0}
+                size={74}
+              />
+              <button
+                type="button"
+                onClick={() => editFileInputRef.current?.click()}
+                disabled={uploadingAvatar}
+                className="absolute bottom-0 right-0 flex h-7 w-7 items-center justify-center rounded-full bg-fp-primary text-white shadow-md transition hover:scale-105 active:scale-95"
+                title="Changer la photo"
+                aria-label="Changer la photo de profil"
+              >
+                <Camera className="h-3.5 w-3.5" />
+              </button>
+              <input
+                ref={editFileInputRef}
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={(e) => handleFileSelect(e, true)}
+              />
+            </div>
+
+            <div className="text-center sm:text-left">
+              {editingName ? (
+                <div className="flex items-center gap-2">
+                  <input
+                    value={editedName}
+                    onChange={(e) => setEditedName(e.target.value)}
+                    className="fp-input px-2.5 py-1 text-[16px] font-bold"
+                    maxLength={24}
+                    autoFocus
+                  />
                   <button
                     type="button"
-                    onClick={() => {
-                      setEditedName(user.name);
-                      setEditingName(true);
+                    onClick={async () => {
+                      if (editedName.trim()) await updateName(editedName);
+                      setEditingName(false);
                     }}
-                    className="text-[12px] font-normal text-fp-primary hover:underline"
+                    className="fp-btn-primary px-3 py-1 text-[13px]"
                   >
-                    (modifier)
+                    OK
                   </button>
-                </p>
-                <p className="text-[13px] text-fp-text-dim">{user.email || "Compte local persistant"}</p>
+                </div>
+              ) : (
+                <div>
+                  <p className="text-[19px] font-bold text-fp-text flex items-center justify-center sm:justify-start gap-2">
+                    {user.name}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setEditedName(user.name);
+                        setEditingName(true);
+                      }}
+                      className="text-[12px] font-normal text-fp-primary hover:underline"
+                    >
+                      (modifier)
+                    </button>
+                  </p>
+                  <p className="text-[13px] text-fp-text-dim">{user.email || "Compte local persistant"}</p>
+                </div>
+              )}
+
+              {/* Boutons photo profil */}
+              <div className="mt-2 flex items-center justify-center sm:justify-start gap-2">
+                <button
+                  type="button"
+                  onClick={() => editFileInputRef.current?.click()}
+                  disabled={uploadingAvatar}
+                  className="text-[12px] font-semibold text-fp-primary hover:underline flex items-center gap-1"
+                >
+                  <UploadCloud className="h-3.5 w-3.5" />
+                  <span>{uploadingAvatar ? "Chargement…" : "Changer la photo"}</span>
+                </button>
+                {user.avatarUrl && (
+                  <button
+                    type="button"
+                    onClick={() => updateAvatar(null)}
+                    className="text-[12px] font-medium text-fp-danger hover:underline flex items-center gap-1 ml-2"
+                  >
+                    <Trash2 className="h-3 w-3" />
+                    <span>Supprimer</span>
+                  </button>
+                )}
               </div>
-            )}
+            </div>
           </div>
         </div>
 
+        {/* Message de succès */}
+        {successMessage && (
+          <p className="mt-4 rounded-xl bg-fp-success/10 p-3 text-[13px] font-semibold text-fp-success animate-rise">
+            {successMessage}
+          </p>
+        )}
+
         {/* Avantages du compte actif */}
-        <div className="mt-6 rounded-2xl bg-black/[0.02] p-4 text-left border border-black/[0.04]">
+        <div className="mt-4 rounded-2xl bg-black/[0.02] p-4 text-left border border-black/[0.04]">
           <div className="flex items-center gap-2 text-[13px] font-semibold text-fp-text">
             <ShieldCheck className="h-4 w-4 text-fp-success" />
             <span>Historique Anti-Répétition protégé</span>
@@ -247,7 +350,7 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
         </h2>
         <p className="mt-1 text-[13px] text-fp-text-dim">
           {mode === "register"
-            ? "Conservez vos questions inédites, retrouvez vos amis et sauvegardez vos victoires."
+            ? "Ajoutez une photo, conservez vos questions inédites et retrouvez vos amis."
             : "Connectez-vous pour reprendre vos salons et votre historique."}
         </p>
       </header>
@@ -255,6 +358,56 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
       <form onSubmit={handleSubmit} className="space-y-4">
         {mode === "register" && (
           <div>
+            {/* Upload de photo lors de l'inscription */}
+            <div className="flex items-center gap-3.5 mb-3 p-3 rounded-2xl bg-black/[0.02] border border-black/[0.04]">
+              <div className="relative group shrink-0">
+                <PlayerDot
+                  name={name || "J"}
+                  avatarUrl={avatarPreview}
+                  colorIndex={0}
+                  size={54}
+                />
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="absolute bottom-0 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-fp-primary text-white shadow-sm"
+                  aria-label="Télécharger une photo de profil"
+                >
+                  <Camera className="h-3 w-3" />
+                </button>
+              </div>
+
+              <div className="flex-1 min-w-0">
+                <p className="text-[13px] font-bold text-fp-text">Photo de profil (optionnel)</p>
+                <div className="mt-0.5 flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="text-[12px] font-semibold text-fp-primary hover:underline"
+                  >
+                    {avatarPreview ? "Changer la photo" : "Télécharger une photo"}
+                  </button>
+                  {avatarPreview && (
+                    <button
+                      type="button"
+                      onClick={() => setAvatarPreview(null)}
+                      className="text-[12px] font-medium text-fp-danger hover:underline"
+                    >
+                      Retirer
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={(e) => handleFileSelect(e, false)}
+              />
+            </div>
+
             <label className="block text-[13px] font-semibold text-fp-text-dim mb-1">
               {t("auth.name")} / Pseudo
             </label>
@@ -321,7 +474,9 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
                   type="button"
                   onClick={() => setLanguage(l)}
                   className={`flex-1 rounded-xl py-2.5 text-[13px] font-semibold transition ${
-                    lang === l ? "bg-fp-primary text-white shadow-xs" : "bg-black/[0.04] text-fp-text hover:bg-black/[0.07]"
+                    lang === l
+                      ? "bg-fp-primary text-white shadow-xs"
+                      : "bg-black/[0.04] text-fp-text hover:bg-black/[0.07]"
                   }`}
                 >
                   {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}

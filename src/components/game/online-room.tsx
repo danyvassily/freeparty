@@ -446,7 +446,7 @@ export function OnlineRoom() {
 
         <SectionTitle>Votre pseudo</SectionTitle>
         <div className="fp-card p-4 flex items-center gap-3">
-          <PlayerDot name={pseudo || "?"} colorIndex={0} size={38} />
+          <PlayerDot name={pseudo || "?"} avatarUrl={user?.avatarUrl} colorIndex={0} size={38} />
           <input
             value={pseudo}
             onChange={(e) => setPseudo(e.target.value)}
