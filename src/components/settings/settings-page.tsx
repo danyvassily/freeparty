@@ -1,9 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ChevronLeft, RotateCcw } from "lucide-react";
+import { ChevronLeft, RotateCcw, ShieldCheck, ChevronRight } from "lucide-react";
 import { useSettingsStore, TIME_OPTIONS } from "@/lib/store/settings";
 import { useLanguageStore } from "@/lib/store/language";
+import { useAuth } from "@/lib/auth/use-auth";
+import { PlayerDot } from "@/components/ui/primitives";
 
 function TimeRow({
   label,
@@ -88,6 +90,7 @@ export function SettingsPage() {
   const router = useRouter();
   const lang = useLanguageStore((s) => s.language);
   const s = useSettingsStore();
+  const { user, isLoggedIn } = useAuth();
   const isFR = lang === "fr";
 
   return (
@@ -105,6 +108,36 @@ export function SettingsPage() {
         <h1 className="text-[17px] font-semibold text-fp-text">
           {isFR ? "Réglages" : "Settings"}
         </h1>
+      </div>
+
+      {/* Carte Profil / Compte */}
+      <p className="fp-group-title">{isFR ? "Profil & Compte" : "Profile & Account"}</p>
+      <div className="fp-list">
+        <button
+          type="button"
+          onClick={() => router.push("/auth")}
+          className="flex w-full items-center justify-between px-4 py-3.5 text-left transition hover:bg-black/[0.02]"
+        >
+          <div className="flex items-center gap-3">
+            <PlayerDot name={user?.name || "Joueur"} colorIndex={0} size={38} />
+            <div>
+              <p className="text-[15px] font-semibold text-fp-text">
+                {isLoggedIn && user ? user.name : isFR ? "Créer un compte / Se connecter" : "Create account / Sign in"}
+              </p>
+              <p className="text-[12px] text-fp-text-dim flex items-center gap-1">
+                {isLoggedIn ? (
+                  <>
+                    <ShieldCheck className="h-3.5 w-3.5 text-fp-success" />
+                    <span>{user?.email || "Compte synchronisé"}</span>
+                  </>
+                ) : (
+                  <span>{isFR ? "Sauvegardez vos parties et historique" : "Save your games & history"}</span>
+                )}
+              </p>
+            </div>
+          </div>
+          <ChevronRight className="h-5 w-5 text-fp-text-dim" />
+        </button>
       </div>
 
       {/* Quiz */}

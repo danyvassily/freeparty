@@ -1,17 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronLeft, CheckCircle2 } from "lucide-react";
-import { getSupabaseBrowser } from "@/lib/supabase/client";
+import { ChevronLeft, CheckCircle2, User, Mail, Lock, Sparkles, LogOut, ArrowRight, ShieldCheck } from "lucide-react";
+import { useAuth } from "@/lib/auth/use-auth";
 import { useLanguageStore } from "@/lib/store/language";
 import { translate, SUPPORTED_LANGUAGES, LANGUAGE_NAMES } from "@/lib/i18n";
-import type { UILanguage } from "@/lib/i18n";
+import { PlayerDot } from "@/components/ui/primitives";
+import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 
-type AuthView = "login" | "register";
+type AuthView = "register" | "login";
 
-export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
+export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }) {
   const router = useRouter();
+  const { user, isLoggedIn, loading, signUp, signIn, signOut, updateName } = useAuth();
   const lang = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
 
@@ -20,129 +22,148 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [user, setUser] = useState<{ id: string; email?: string } | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [editingName, setEditingName] = useState(false);
+  const [editedName, setEditedName] = useState("");
 
   const t = (k: string) => translate(lang, k);
 
-  useEffect(() => {
-    const sb = getSupabaseBrowser();
-    if (!sb) return;
-    sb.auth.getUser().then(({ data }) => {
-      if (data.user) setUser({ id: data.user.id, email: data.user.email ?? undefined });
-    });
-  }, []);
-
-  async function submit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
-    const sb = getSupabaseBrowser();
-    if (!sb) {
-      setError("Supabase non configuré");
-      return;
-    }
-    setLoading(true);
+    setSuccessMessage(null);
+    setSubmitting(true);
+
     try {
-      if (mode === "login") {
-        const { data, error: err } = await sb.auth.signInWithPassword({ email, password });
-        if (err) throw err;
-        if (data.session) {
-          setUser({ id: data.user!.id, email: data.user!.email ?? undefined });
-          const { data: profile } = await sb
-            .from("profiles")
-            .select("username, avatar_color, language")
-            .eq("id", data.user!.id)
-            .single();
-          if (!profile) {
-            await sb.from("profiles").upsert({
-              id: data.user!.id,
-              username: name || email.split("@")[0],
-              avatar_color: 0,
-              language: lang,
-            });
-          }
-          if (profile?.language) setLanguage(profile.language as UILanguage);
-          router.push("/play/online");
-        } else {
-          setError(lang === "fr" ? "Session non établie. Vérifie ton email de confirmation." : "No session. Check your confirmation email.");
-        }
-      } else {
-        const { data, error: err } = await sb.auth.signUp({
+      if (mode === "register") {
+        const res = await signUp({
           email,
           password,
-          options: { data: { username: name || email.split("@")[0] } },
+          name: name.trim() || email.split("@")[0],
+          language: lang,
         });
-        if (err) throw err;
-        if (data.session) {
-          await sb.from("profiles").insert({
-            id: data.user!.id,
-            username: name || email.split("@")[0],
-            avatar_color: 0,
-            language: lang,
-          });
-          setUser({ id: data.user!.id, email: data.user!.email ?? undefined });
-          router.push("/play/online");
-        } else if (data.user) {
-          setError(
-            lang === "fr"
-              ? `Compte créé ! Un email de confirmation a été envoyé à ${email}. Clique le lien puis reconnecte-toi.`
-              : `Account created! A confirmation email was sent to ${email}. Click the link, then sign in.`,
-          );
+        if (res.message) {
+          setSuccessMessage(res.message);
+        } else {
+          setSuccessMessage(lang === "fr" ? "Compte créé avec succès ! Vos parties et statistiques sont sauvegardées." : "Account created successfully! Your games and stats are saved.");
+          setTimeout(() => {
+            router.push("/play/online");
+          }, 1200);
         }
+      } else {
+        await signIn({ email, password });
+        setSuccessMessage(lang === "fr" ? "Connexion réussie !" : "Signed in successfully!");
+        setTimeout(() => {
+          router.push("/play/online");
+        }, 800);
       }
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      setError(msg.includes("Invalid login") || msg.includes("invalid_credentials")
-        ? t("auth.error.invalid")
-        : msg.includes("already") || msg.includes("already_registered")
-          ? t("auth.error.exists")
-          : msg);
+      if (msg.includes("Invalid login") || msg.includes("invalid_credentials")) {
+        setError(t("auth.error.invalid"));
+      } else if (msg.includes("already") || msg.includes("already_registered")) {
+        setError(t("auth.error.exists"));
+      } else {
+        setError(msg);
+      }
     } finally {
-      setLoading(false);
+      setSubmitting(false);
     }
   }
 
-  async function logout() {
-    const sb = getSupabaseBrowser();
-    await sb?.auth.signOut();
-    setUser(null);
-    router.push("/");
-  }
-
-  if (user) {
+  // Si l'utilisateur est déjà connecté avec un compte
+  if (!loading && isLoggedIn && user) {
     return (
-      <div className="fp-card w-full p-6 text-center animate-rise">
+      <div className="fp-card w-full p-6 text-center animate-rise shadow-md border border-black/[0.04]">
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="mb-4 flex items-center gap-0.5 text-[15px] font-medium text-fp-primary active:opacity-70"
+          className="mb-4 flex items-center gap-1 text-[15px] font-medium text-fp-primary hover:underline"
         >
           <ChevronLeft className="h-5 w-5" />
-          {t("config.back")}
+          <span>{t("config.back")}</span>
         </button>
-        <CheckCircle2 className="mx-auto h-12 w-12 text-fp-success" />
-        <h2 className="mt-3 text-xl font-bold text-fp-text">{t("auth.welcome")}</h2>
-        <p className="mt-1 text-sm text-fp-text-dim">{user.email}</p>
 
-        {/* Langue de l'interface */}
-        <div className="mt-6 text-left">
-          <p className="text-[13px] font-semibold uppercase tracking-wide text-fp-text-dim">
+        <div className="mx-auto flex justify-center mb-2">
+          <KawaiiMascot theme="party" size={80} className="border border-black/[0.04] shadow-xs" />
+        </div>
+
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-fp-success/15 px-3.5 py-1 text-[13px] font-semibold text-fp-success">
+          <CheckCircle2 className="h-4 w-4" />
+          <span>{lang === "fr" ? "Compte actif & synchronisé" : "Account active & synced"}</span>
+        </div>
+
+        <div className="mt-4 flex items-center justify-center gap-3">
+          <PlayerDot name={user.name} colorIndex={0} size={42} />
+          <div className="text-left">
+            {editingName ? (
+              <div className="flex items-center gap-2">
+                <input
+                  value={editedName}
+                  onChange={(e) => setEditedName(e.target.value)}
+                  className="fp-input px-2.5 py-1 text-[16px] font-bold"
+                  maxLength={24}
+                  autoFocus
+                />
+                <button
+                  type="button"
+                  onClick={async () => {
+                    if (editedName.trim()) await updateName(editedName);
+                    setEditingName(false);
+                  }}
+                  className="fp-btn-primary px-3 py-1 text-[13px]"
+                >
+                  OK
+                </button>
+              </div>
+            ) : (
+              <div>
+                <p className="text-[18px] font-bold text-fp-text flex items-center gap-2">
+                  {user.name}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setEditedName(user.name);
+                      setEditingName(true);
+                    }}
+                    className="text-[12px] font-normal text-fp-primary hover:underline"
+                  >
+                    (modifier)
+                  </button>
+                </p>
+                <p className="text-[13px] text-fp-text-dim">{user.email || "Compte local persistant"}</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Avantages du compte actif */}
+        <div className="mt-6 rounded-2xl bg-black/[0.02] p-4 text-left border border-black/[0.04]">
+          <div className="flex items-center gap-2 text-[13px] font-semibold text-fp-text">
+            <ShieldCheck className="h-4 w-4 text-fp-success" />
+            <span>Historique Anti-Répétition protégé</span>
+          </div>
+          <p className="mt-1 text-[12px] text-fp-text-dim">
+            Toutes vos parties, questions déjà vues et victoires sont conservées sur votre profil et partagées dans les salons multijoueurs.
+          </p>
+        </div>
+
+        {/* Choix de langue */}
+        <div className="mt-5 text-left">
+          <p className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
             {t("profile.language")}
           </p>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <div className="mt-2 flex gap-2">
             {SUPPORTED_LANGUAGES.map((l) => (
               <button
                 key={l}
                 type="button"
-                onClick={() => {
-                  setLanguage(l);
-                  const sb = getSupabaseBrowser();
-                  sb?.from("profiles").update({ language: l }).eq("id", user.id);
-                }}
-                className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors active:scale-95 ${
+                onClick={() => setLanguage(l)}
+                className={`flex-1 rounded-xl py-2.5 text-[13px] font-semibold transition ${
                   lang === l
                     ? "bg-fp-primary text-white shadow-xs"
-                    : "bg-black/[0.04] text-fp-text hover:bg-black/[0.08]"
+                    : "bg-black/[0.04] text-fp-text hover:bg-black/[0.07]"
                 }`}
               >
                 {LANGUAGE_NAMES[l]}
@@ -151,112 +172,199 @@ export function AuthForm({ mode: initialMode = "login" }: { mode?: AuthView }) {
           </div>
         </div>
 
-        <button type="button" onClick={() => router.push("/settings")} className="fp-btn-secondary mt-6 w-full">
-          {lang === "fr" ? "Réglages (temps de jeu)" : "Settings (game timers)"}
-        </button>
+        <div className="mt-6 space-y-2">
+          <button
+            type="button"
+            onClick={() => router.push("/play/online")}
+            className="fp-btn-primary w-full py-3.5 flex items-center justify-center gap-2 text-[15px]"
+          >
+            <span>Jouer en ligne dans un salon</span>
+            <ArrowRight className="h-4 w-4" />
+          </button>
 
-        <button type="button" onClick={logout} className="mt-4 w-full text-[15px] font-medium text-fp-danger">
-          {t("auth.logout")}
-        </button>
+          <button
+            type="button"
+            onClick={signOut}
+            className="fp-btn-ghost w-full py-2.5 text-[14px] text-fp-danger flex items-center justify-center gap-1.5"
+          >
+            <LogOut className="h-4 w-4" />
+            <span>{t("auth.logout")}</span>
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
-    <form onSubmit={submit} className="fp-card w-full p-6 animate-rise">
-      <h2 className="text-xl font-bold text-fp-text">
-        {mode === "login" ? t("auth.login") : t("auth.register")}
-      </h2>
-      <p className="mt-1 text-sm text-fp-text-dim">
-        {mode === "login"
-          ? lang === "fr" ? "Optionnel — le jeu en ligne marche aussi avec un simple pseudo." : "Optional — online play also works with a simple nickname."
-          : lang === "fr" ? "Gratuit, 30 secondes. Vos préférences sont sauvegardées." : "Free, 30 seconds. Your preferences are saved."}
-      </p>
-
-      {mode === "register" && (
-        <label className="mt-5 block">
-          <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.name")}</span>
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="fp-input mt-1.5 w-full px-4"
-            placeholder="Dany"
-            maxLength={24}
-          />
-        </label>
-      )}
-
-      <label className="mt-4 block">
-        <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.email")}</span>
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="fp-input mt-1.5 w-full px-4"
-          placeholder="toi@exemple.fr"
-          autoComplete="email"
-        />
-      </label>
-
-      <label className="mt-4 block">
-        <span className="text-[13px] font-semibold text-fp-text-dim">{t("auth.password")}</span>
-        <input
-          type="password"
-          required
-          minLength={6}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="fp-input mt-1.5 w-full px-4"
-          placeholder="••••••••"
-          autoComplete={mode === "login" ? "current-password" : "new-password"}
-        />
-      </label>
-
-      {mode === "register" && (
-        <div className="mt-4">
-          <span className="text-[13px] font-semibold text-fp-text-dim">
-            {lang === "fr" ? "Ta langue" : "Your language"}
-          </span>
-          <div className="mt-1.5 flex gap-2">
-            {(["fr", "en"] as const).map((l) => (
-              <button
-                key={l}
-                type="button"
-                onClick={() => setLanguage(l)}
-                className={`flex-1 rounded-xl py-2.5 text-[15px] font-semibold transition-colors ${
-                  lang === l ? "bg-fp-primary text-white" : "bg-black/[0.04] text-fp-text-dim hover:bg-black/[0.07]"
-                }`}
-              >
-                {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
-              </button>
-            ))}
-          </div>
-          <p className="mt-1.5 text-[12px] text-fp-text-dim">
-            {lang === "fr"
-              ? "Interface et questions affichées dans votre langue, y compris dans les salons en ligne."
-              : "Interface and questions shown in your language, including online rooms."}
-          </p>
-        </div>
-      )}
-
-      {error && (
-        <p className="mt-4 rounded-xl bg-fp-danger/10 px-3.5 py-2.5 text-sm font-medium text-fp-danger">{error}</p>
-      )}
-
-      <button type="submit" disabled={loading || !email || password.length < 6} className="fp-btn-primary mt-6 w-full disabled:opacity-40">
-        {loading ? "…" : mode === "login" ? t("auth.signIn") : t("auth.signUp")}
-      </button>
-
+    <div className="fp-card w-full p-6 animate-rise shadow-lg border border-black/[0.04]">
+      {/* Navigation de retour */}
       <button
         type="button"
-        onClick={() => setMode(mode === "login" ? "register" : "login")}
-        className="mt-3 w-full text-[15px] font-medium text-fp-primary active:opacity-70"
+        onClick={() => router.push("/")}
+        className="mb-3 flex items-center gap-0.5 text-[14px] font-medium text-fp-primary hover:underline"
       >
-        {mode === "login"
-          ? lang === "fr" ? "Pas de compte ? Crée-en un" : "No account? Create one"
-          : lang === "fr" ? "Déjà un compte ? Connecte-toi" : "Already have an account? Sign in"}
+        <ChevronLeft className="h-4.5 w-4.5" />
+        <span>Accueil</span>
       </button>
-    </form>
+
+      {/* Onglets Création de compte / Connexion */}
+      <div className="flex rounded-2xl bg-black/[0.05] p-1 mb-5">
+        <button
+          type="button"
+          onClick={() => {
+            setMode("register");
+            setError(null);
+            setSuccessMessage(null);
+          }}
+          className={`flex-1 rounded-xl py-2.5 text-[14px] font-bold transition-all ${
+            mode === "register"
+              ? "bg-white text-fp-text shadow-xs"
+              : "text-fp-text-dim hover:text-fp-text"
+          }`}
+        >
+          Créer un compte
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setMode("login");
+            setError(null);
+            setSuccessMessage(null);
+          }}
+          className={`flex-1 rounded-xl py-2.5 text-[14px] font-bold transition-all ${
+            mode === "login"
+              ? "bg-white text-fp-text shadow-xs"
+              : "text-fp-text-dim hover:text-fp-text"
+          }`}
+        >
+          Se connecter
+        </button>
+      </div>
+
+      <header className="mb-4">
+        <h2 className="text-[22px] font-bold tracking-tight text-fp-text">
+          {mode === "register" ? "Créez votre profil joueur" : "Bon retour parmi nous"}
+        </h2>
+        <p className="mt-1 text-[13px] text-fp-text-dim">
+          {mode === "register"
+            ? "Conservez vos questions inédites, retrouvez vos amis et sauvegardez vos victoires."
+            : "Connectez-vous pour reprendre vos salons et votre historique."}
+        </p>
+      </header>
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {mode === "register" && (
+          <div>
+            <label className="block text-[13px] font-semibold text-fp-text-dim mb-1">
+              {t("auth.name")} / Pseudo
+            </label>
+            <div className="relative flex items-center">
+              <User className="absolute left-3.5 h-4.5 w-4.5 text-fp-text-dim" />
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="fp-input w-full pl-10 pr-4 py-3 text-[15px]"
+                placeholder="Ex : Dany"
+                maxLength={24}
+                required
+              />
+            </div>
+          </div>
+        )}
+
+        <div>
+          <label className="block text-[13px] font-semibold text-fp-text-dim mb-1">
+            {t("auth.email")}
+          </label>
+          <div className="relative flex items-center">
+            <Mail className="absolute left-3.5 h-4.5 w-4.5 text-fp-text-dim" />
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="fp-input w-full pl-10 pr-4 py-3 text-[15px]"
+              placeholder="toi@exemple.fr"
+              autoComplete="email"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label className="block text-[13px] font-semibold text-fp-text-dim mb-1">
+            {t("auth.password")} (6 caractères minimum)
+          </label>
+          <div className="relative flex items-center">
+            <Lock className="absolute left-3.5 h-4.5 w-4.5 text-fp-text-dim" />
+            <input
+              type="password"
+              required
+              minLength={6}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="fp-input w-full pl-10 pr-4 py-3 text-[15px]"
+              placeholder="••••••••"
+              autoComplete={mode === "login" ? "current-password" : "new-password"}
+            />
+          </div>
+        </div>
+
+        {mode === "register" && (
+          <div>
+            <span className="block text-[13px] font-semibold text-fp-text-dim mb-1">
+              Langue préférée
+            </span>
+            <div className="flex gap-2">
+              {(["fr", "en"] as const).map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => setLanguage(l)}
+                  className={`flex-1 rounded-xl py-2.5 text-[13px] font-semibold transition ${
+                    lang === l ? "bg-fp-primary text-white shadow-xs" : "bg-black/[0.04] text-fp-text hover:bg-black/[0.07]"
+                  }`}
+                >
+                  {l === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <p className="rounded-xl bg-fp-danger/10 p-3 text-[13px] font-semibold text-fp-danger animate-shake">
+            {error}
+          </p>
+        )}
+
+        {successMessage && (
+          <p className="rounded-xl bg-fp-success/10 p-3 text-[13px] font-semibold text-fp-success animate-rise">
+            {successMessage}
+          </p>
+        )}
+
+        <button
+          type="submit"
+          disabled={submitting || !email || password.length < 6 || (mode === "register" && !name.trim())}
+          className="fp-btn-primary mt-3 w-full py-4 text-[16px] font-bold flex items-center justify-center gap-2 disabled:opacity-40"
+        >
+          <Sparkles className="h-4.5 w-4.5" />
+          <span>
+            {submitting
+              ? "Patientez…"
+              : mode === "register"
+                ? "Créer mon compte joueur"
+                : "Se connecter"}
+          </span>
+        </button>
+      </form>
+
+      {/* Rassurance / Bénéfices */}
+      <div className="mt-6 border-t border-black/[0.05] pt-4 text-center">
+        <p className="text-[12px] text-fp-text-dim">
+          ✨ 100% gratuit et sans publicité. Vos questions déjà vues sont exclues automatiquement.
+        </p>
+      </div>
+    </div>
   );
 }

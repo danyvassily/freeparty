@@ -52,8 +52,11 @@ import {
   Check,
   Crown,
   RotateCcw,
+  User,
+  ShieldCheck,
 } from "lucide-react";
 import { getOrCreateClientDeviceToken, setCachedProfileId } from "@/lib/anti-repetition/client-identity";
+import { useAuth } from "@/lib/auth/use-auth";
 
 type View = "entry" | "create" | "lobby" | "playing" | "results";
 
@@ -67,9 +70,10 @@ export function OnlineRoom() {
   const router = useRouter();
   const { entries, addEntry } = useHistoryStore();
   const savedPlayers = useGameStore((s) => s.players);
+  const { user, isLoggedIn } = useAuth();
 
   const [view, setView] = useState<View>("entry");
-  const [pseudo, setPseudo] = useState(savedPlayers[0]?.name ?? "");
+  const [pseudo, setPseudo] = useState(user?.name ?? savedPlayers[0]?.name ?? "");
   const [joinCode, setJoinCode] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -414,6 +418,31 @@ export function OnlineRoom() {
             Jouez plusieurs parties successives sans jamais recréer le groupe d&apos;amis.
           </p>
         </header>
+
+        {/* Bannière Compte / Connexion */}
+        <div className="mb-4 fp-card p-3.5 flex items-center justify-between gap-3 border border-black/[0.04] bg-black/[0.01]">
+          <div className="flex items-center gap-2.5">
+            <div className={`h-8 w-8 rounded-full flex items-center justify-center ${isLoggedIn ? "bg-fp-success/15 text-fp-success" : "bg-fp-primary/10 text-fp-primary"}`}>
+              {isLoggedIn ? <ShieldCheck className="h-4.5 w-4.5" /> : <User className="h-4.5 w-4.5" />}
+            </div>
+            <div>
+              <p className="text-[13px] font-bold text-fp-text">
+                {isLoggedIn && user ? `Connecté : ${user.name}` : "Joueur invité (sans compte)"}
+              </p>
+              <p className="text-[11px] text-fp-text-dim">
+                {isLoggedIn ? "Historique et stats sauvegardés sur votre profil" : "Créez un compte pour synchroniser votre historique"}
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => router.push("/auth")}
+            className="fp-btn-secondary px-3 py-1.5 text-[12px] font-semibold shrink-0"
+          >
+            {isLoggedIn ? "Mon compte" : "Créer un compte"}
+          </button>
+        </div>
 
         <SectionTitle>Votre pseudo</SectionTitle>
         <div className="fp-card p-4 flex items-center gap-3">

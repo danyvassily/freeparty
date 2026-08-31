@@ -6,12 +6,13 @@
  */
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Settings, Globe, Smartphone, Sparkles, Users, ArrowRight, Play, Plus, Minus } from "lucide-react";
+import { Settings, Globe, Smartphone, Sparkles, Users, ArrowRight, Play, Plus, Minus, User } from "lucide-react";
 import { BRAND } from "@/lib/brand";
 import { GameSetup } from "@/components/home/game-setup";
 import { MODE_META, MODE_SECTIONS } from "@/lib/game/modes";
 import { useGameStore, resizePlayers, MAX_PLAYERS, type GameMode } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
+import { useAuth } from "@/lib/auth/use-auth";
 import { PlayerDot } from "@/components/ui/primitives";
 import { AppIcon } from "@/components/ui/icons";
 import { KawaiiMascot, type KawaiiTheme } from "@/components/ui/kawaii-mascot";
@@ -30,6 +31,7 @@ const MODE_MASCOTS: Record<GameMode, KawaiiTheme> = {
 
 export function HomeClient() {
   const router = useRouter();
+  const { user, isLoggedIn } = useAuth();
   const setConfig = useGameStore((s) => s.setConfig);
   const players = useGameStore((s) => s.players);
   const setPlayers = useGameStore((s) => s.setPlayers);
@@ -91,6 +93,21 @@ export function HomeClient() {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Bouton Compte / Connexion */}
+          <button
+            type="button"
+            onClick={() => router.push("/auth")}
+            className={`flex h-9 items-center gap-1.5 rounded-full px-3 text-[13px] font-semibold transition active:scale-95 ${
+              isLoggedIn
+                ? "bg-fp-primary/10 text-fp-primary hover:bg-fp-primary/20"
+                : "bg-fp-primary text-white shadow-xs hover:bg-fp-primary-dark"
+            }`}
+            aria-label="Profil et compte"
+          >
+            <User className="h-4 w-4" />
+            <span className="max-w-[100px] truncate">{isLoggedIn && user ? user.name : "Mon compte"}</span>
+          </button>
+
           {/* Sélecteur de langue rapide */}
           <button
             type="button"
