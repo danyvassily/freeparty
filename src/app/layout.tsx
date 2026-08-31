@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon.svg", type: "image/svg+xml" },
     ],
     apple: [
       { url: "/apple-icon.svg", sizes: "180x180", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.svg",
+    shortcut: "/favicon.ico",
   },
   appleWebApp: {
     capable: true,

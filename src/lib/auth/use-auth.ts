@@ -4,8 +4,7 @@
  * Free Party — Unified Auth & Profile Management
  * Gère l'authentification (Création de compte, Connexion, Déconnexion),
  * la synchronisation avec Supabase Auth (si configuré) et le mode Local-First.
- * Supporte la photo de profil personnalisée (upload, compression square WebP/JPEG,
- * stockage persistant local et Supabase).
+ * 100% sûr pour le rendu SSR / Serverless Vercel (protection contre ReferenceError sur localStorage).
  */
 import { useEffect, useState, useCallback } from "react";
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
@@ -29,6 +28,33 @@ export interface AuthUser {
 }
 
 const LOCAL_AUTH_KEY = "freeparty_auth_user";
+
+function safeGetStorage(key: string): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function safeSetStorage(key: string, val: string): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(key, val);
+  } catch {
+    // ignore
+  }
+}
+
+function safeRemoveStorage(key: string): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.removeItem(key);
+  } catch {
+    // ignore
+  }
+}
 
 /**
  * Compresse et recadre en carré une image sélectionnée par l'utilisateur
@@ -83,6 +109,11 @@ export function useAuth() {
 
   // Initialisation et écoute de l'état d'authentification
   const refreshUser = useCallback(async () => {
+    if (typeof window === "undefined") {
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
     try {
       const sb = getSupabaseBrowser();
@@ -116,14 +147,14 @@ export function useAuth() {
 
           setUser(activeUser);
           setCachedProfileId(activeUser.id);
-          localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
+          safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
           setLoading(false);
           return;
         }
       }
 
       // Mode Local-First / Hors-ligne
-      const cached = localStorage.getItem(LOCAL_AUTH_KEY);
+      const cached = safeGetStorage(LOCAL_AUTH_KEY);
       if (cached) {
         try {
           const parsed = JSON.parse(cached) as AuthUser;
@@ -250,7 +281,7 @@ export function useAuth() {
 
         if (data.session) {
           setUser(newUser);
-          localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(newUser));
+          safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(newUser));
         }
 
         // Met à jour le nom et l'avatar dans le store de jeu
@@ -301,8 +332,8 @@ export function useAuth() {
 
     setUser(newUser);
     setCachedProfileId(localUserId);
-    localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(newUser));
-    localStorage.setItem(`freeparty_device_${deviceToken}`, localUserId);
+    safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(newUser));
+    safeSetStorage(`freeparty_device_${deviceToken}`, localUserId);
 
     const updatedPlayers = players.map((p, i) =>
       i === 0 ? { ...p, name: cleanName, avatarUrl: avatarUrl || undefined } : p,
@@ -359,7 +390,7 @@ export function useAuth() {
 
       setUser(activeUser);
       setCachedProfileId(userId);
-      localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
+      safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
 
       const updatedPlayers = players.map((p, i) =>
         i === 0 ? { ...p, name, avatarUrl: avatarUrl || undefined } : p,
@@ -370,7 +401,7 @@ export function useAuth() {
     }
 
     // Connexion locale
-    const cached = localStorage.getItem(LOCAL_AUTH_KEY);
+    const cached = safeGetStorage(LOCAL_AUTH_KEY);
     let activeUser: AuthUser;
     if (cached) {
       activeUser = JSON.parse(cached);
@@ -389,7 +420,7 @@ export function useAuth() {
 
     setUser(activeUser);
     setCachedProfileId(activeUser.id);
-    localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
+    safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
     return activeUser;
   };
 
@@ -402,7 +433,7 @@ export function useAuth() {
       await sb.auth.signOut();
     }
 
-    localStorage.removeItem(LOCAL_AUTH_KEY);
+    safeRemoveStorage(LOCAL_AUTH_KEY);
     const deviceToken = getOrCreateClientDeviceToken();
     const anonId = `anon_${deviceToken.slice(0, 12)}`;
     setCachedProfileId(anonId);
@@ -431,7 +462,7 @@ export function useAuth() {
 
     const updatedUser = { ...user, name: clean };
     setUser(updatedUser);
-    localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(updatedUser));
+    safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(updatedUser));
 
     const updatedPlayers = players.map((p, i) => (i === 0 ? { ...p, name: clean } : p));
     setPlayers(updatedPlayers);
@@ -451,7 +482,7 @@ export function useAuth() {
 
     const updatedUser = { ...user, avatarUrl };
     setUser(updatedUser);
-    localStorage.setItem(LOCAL_AUTH_KEY, JSON.stringify(updatedUser));
+    safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(updatedUser));
 
     const updatedPlayers = players.map((p, i) =>
       i === 0 ? { ...p, avatarUrl: avatarUrl || undefined } : p,
