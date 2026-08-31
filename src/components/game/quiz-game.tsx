@@ -16,7 +16,7 @@ import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
-import { AlertCircle, Flag, Trophy, ChevronLeft, HandMetal } from "lucide-react";
+import { AlertCircle, Flag, ChevronLeft, HandMetal } from "lucide-react";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";

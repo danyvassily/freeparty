@@ -1,31 +1,43 @@
 /**
- * POST /api/questions — sélection de questions (spec §37)
- * Si DEEPSEEK_API_KEY est configurée : génération IA (vérifiée) en priorité,
- * avec complément/bascule sur le catalogue local si le lot est insuffisant.
- * Sinon : Selection Engine (anti-répétition) sur les datasets versionnés.
+ * POST /api/questions — Sélection de questions avec moteur anti-répétition avancé
+ * Supporte :
+ *   - L'exclusion des QuestionFamily déjà vues par n'importe lequel des participants (UNION multijoueur)
+ *   - L'identification par playerProfileIds ou deviceToken
+ *   - La réservation anti-collision concurrentielle
+ *   - La cascade de fallback et la génération IA avec déduplication stricte
+ *   - La rétro-compatibilité avec l'ancien format d'historique localStorage
  */
 import { NextResponse } from "next/server";
-import { loadQuestions } from "@/lib/questions/load";
-import { selectQuestions, type SelectionHistoryEntry } from "@/lib/questions/selection";
-import { generateQuestionsWithDeepSeek, isDeepSeekEnabled } from "@/lib/questions/deepseek";
-import type { Question, QuestionCategory } from "@/lib/questions/schema";
 import { z } from "zod";
+import {
+  getQuestions,
+  getOrCreateDeviceProfile,
+  markQuestionSeen,
+  type GetQuestionsParams,
+} from "@/lib/anti-repetition";
+import type { QuestionCategory, QuestionDifficulty } from "@/lib/questions/schema";
 
 const RequestSchema = z.object({
   count: z.number().int().min(1).max(60).default(10),
   category: z.string().optional(),
   difficulties: z.array(z.enum(["easy", "medium", "hard", "expert"])).optional(),
+  difficulty: z.enum(["easy", "medium", "hard", "expert", "mixed"]).optional(),
   ai: z.boolean().default(true),
+  sessionId: z.string().optional(),
+  language: z.string().default("fr"),
+  deviceToken: z.string().optional(),
+  playerProfileIds: z.array(z.string()).optional(),
+  // Rétro-compatibilité historique direct
   history: z
     .array(
       z.object({
         questionId: z.string(),
         familyId: z.string(),
-        servedAt: z.number(),
-        answeredCorrectly: z.boolean(),
+        servedAt: z.number().optional(),
+        answeredCorrectly: z.boolean().optional(),
       }),
     )
-    .default([]),
+    .optional(),
 });
 
 export async function POST(request: Request) {
@@ -43,38 +55,78 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
-  const { count, category, difficulties, ai, history } = parsed.data;
-  const cat = (category ?? "mixed") as QuestionCategory | "mixed";
 
-  let questions: Question[] = [];
-  let aiGenerated = false;
+  const {
+    count,
+    category,
+    difficulties,
+    difficulty,
+    ai,
+    sessionId = `sess_${Date.now()}`,
+    language,
+    deviceToken,
+    playerProfileIds: explicitProfileIds,
+    history,
+  } = parsed.data;
 
-  // 1. Génération IA (vérifiée) si configurée
-  if (ai && isDeepSeekEnabled()) {
-    try {
-      const generated = await generateQuestionsWithDeepSeek(Math.min(count, 30), cat);
-      questions = generated.slice(0, count);
-      aiGenerated = questions.length > 0;
-    } catch (e) {
-      console.error("[api/questions] DeepSeek a échoué, bascule catalogue:", e);
+  // Résolution des profile IDs
+  let profileIds: string[] = explicitProfileIds ?? [];
+
+  if (profileIds.length === 0) {
+    if (deviceToken) {
+      const { profile } = await getOrCreateDeviceProfile(deviceToken);
+      profileIds = [profile.id];
+    } else {
+      const { profile } = await getOrCreateDeviceProfile(`anon_${Date.now()}`);
+      profileIds = [profile.id];
     }
   }
 
-  // 2. Complément ou bascule sur le catalogue local (anti-répétition)
-  if (questions.length < count) {
-    const dataset = loadQuestions("fr");
-    const pool =
-      cat !== "mixed" ? dataset.questions.filter((q) => q.category === cat) : dataset.questions;
-    const result = selectQuestions(pool, history as SelectionHistoryEntry[], {
-      count: count - questions.length,
-      categories: cat !== "mixed" ? [cat] : undefined,
-      difficulties,
-      maxPerFamily: 1,
-      jitter: 0.15,
-    });
-    questions = [...questions, ...result.questions];
+  // Si un historique rétro-compatible est fourni dans la requête, on enregistre ces vues
+  if (history && history.length > 0) {
+    for (const h of history) {
+      if (h.familyId) {
+        await markQuestionSeen({
+          profileIds,
+          questionId: h.questionId,
+          familyId: h.familyId,
+        });
+      }
+    }
   }
 
-  // On ne renvoie jamais la bonne réponse à l'avance : le client la déchiffre au moment de répondre.
-  return NextResponse.json({ questions, aiGenerated });
+  const cat = category && category !== "mixed" ? (category as QuestionCategory) : undefined;
+  const targetDiff = difficulty && difficulty !== "mixed" ? (difficulty as QuestionDifficulty) : undefined;
+
+  const selectionParams: GetQuestionsParams = {
+    playerProfileIds: profileIds,
+    count,
+    language,
+    categories: cat ? [cat] : undefined,
+    difficulties,
+    difficulty: targetDiff,
+    sessionId,
+    allowAiFallback: ai,
+  };
+
+  try {
+    const result = await getQuestions(selectionParams);
+
+    return NextResponse.json({
+      questions: result.questions,
+      requested: result.requested,
+      available: result.available,
+      returned: result.returned,
+      poolExhausted: result.poolExhausted,
+      reason: result.reason,
+      aiGenerated: result.reason === "AI_GENERATED",
+      logs: result.logs,
+    });
+  } catch (error) {
+    console.error("[api/questions] Erreur de sélection:", error);
+    return NextResponse.json(
+      { error: "Erreur lors de la sélection des questions", details: String(error) },
+      { status: 500 },
+    );
+  }
 }
