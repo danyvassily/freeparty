@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   description:
     "Le jeu de quiz et de débats entre amis. Tour par tour, buzzer, dilemmes et discussions — sur un appareil ou en ligne.",
   manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.svg", sizes: "180x180", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
