@@ -4,7 +4,8 @@
  * Free Party — Unified Auth & Profile Management
  * Gère l'authentification (Création de compte, Connexion, Déconnexion),
  * la synchronisation avec Supabase Auth (si configuré) et le mode Local-First.
- * 100% sûr pour le rendu SSR / Serverless Vercel (protection contre ReferenceError sur localStorage).
+ * 100% sûr pour Vercel : ne stocke JAMAIS de base64/image dans les métadonnées Auth/cookies JWT
+ * pour éviter l'erreur 494 REQUEST_HEADER_TOO_LARGE.
  */
 import { useEffect, useState, useCallback } from "react";
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
@@ -56,9 +57,29 @@ function safeRemoveStorage(key: string): void {
   }
 }
 
+/** Nettoie tout cookie surdimensionné qui pourrait provoquer une erreur 494 */
+export function sanitizeBrowserCookies(): void {
+  if (typeof document === "undefined") return;
+  try {
+    if (document.cookie && document.cookie.length > 2500) {
+      const cookies = document.cookie.split(";");
+      for (const cookie of cookies) {
+        const trimmed = cookie.trim();
+        const eqPos = trimmed.indexOf("=");
+        const name = eqPos > -1 ? trimmed.substring(0, eqPos) : trimmed;
+        if (trimmed.includes("data:image") || (name.startsWith("sb-") && trimmed.length > 1800)) {
+          document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        }
+      }
+    }
+  } catch {
+    // ignore
+  }
+}
+
 /**
  * Compresse et recadre en carré une image sélectionnée par l'utilisateur
- * (format WebP 256x256 léger < 35 Ko)
+ * (format WebP 256x256 léger < 30 Ko)
  */
 export async function compressProfilePhoto(file: File, maxSize = 256): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -114,7 +135,9 @@ export function useAuth() {
       return;
     }
 
+    sanitizeBrowserCookies();
     setLoading(true);
+
     try {
       const sb = getSupabaseBrowser();
       if (sb && isSupabaseConfigured) {
@@ -123,6 +146,11 @@ export function useAuth() {
           const authUserId = data.user.id;
           const email = data.user.email;
           const metadata = data.user.user_metadata ?? {};
+
+          // Auto-nettoyage des anciennes métadonnées volumineuses pour alléger le cookie JWT
+          if (metadata.avatar_url && String(metadata.avatar_url).startsWith("data:")) {
+            sb.auth.updateUser({ data: { avatar_url: null } }).catch(() => {});
+          }
 
           // Récupérer le profil Supabase
           const { data: prof } = await sb
@@ -133,7 +161,7 @@ export function useAuth() {
 
           const name = prof?.nickname || metadata.username || metadata.name || email?.split("@")[0] || "Joueur";
           const avatarColor = prof?.avatar_color ?? 0;
-          const avatarUrl = metadata.avatar_url || prof?.avatar_url || null;
+          const avatarUrl = prof?.avatar_url || null;
 
           const activeUser: AuthUser = {
             id: prof?.id || authUserId,
@@ -230,6 +258,8 @@ export function useAuth() {
 
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured) {
+      // NOTE IMPORTANTE : Ne JAMAIS mettre avatarUrl en base64 dans metadata.
+      // Cela fait exploser la taille du cookie JWT et provoque 494 REQUEST_HEADER_TOO_LARGE sur Vercel.
       const { data, error } = await sb.auth.signUp({
         email,
         password,
@@ -237,7 +267,6 @@ export function useAuth() {
           data: {
             username: cleanName,
             language,
-            avatar_url: avatarUrl ?? undefined,
           },
         },
       });
@@ -246,6 +275,15 @@ export function useAuth() {
 
       if (data.user) {
         const userId = data.user.id;
+
+        // Sauvegarde de la photo de profil dans la base de données SQL
+        if (avatarUrl) {
+          try {
+            await sb.from("player_profiles").update({ avatar_url: avatarUrl }).eq("user_id", userId);
+          } catch {
+            // best-effort
+          }
+        }
 
         // Liaison du profil et fusion d'historique via l'API
         try {
@@ -360,7 +398,19 @@ export function useAuth() {
       const userId = data.user.id;
       const metadata = data.user.user_metadata ?? {};
       const name = metadata.username || metadata.name || email.split("@")[0];
-      const avatarUrl = metadata.avatar_url || null;
+
+      // Nettoyer avatar_url des métadonnées auth si présent
+      if (metadata.avatar_url) {
+        sb.auth.updateUser({ data: { avatar_url: null } }).catch(() => {});
+      }
+
+      // Récupérer avatar_url depuis player_profiles
+      const { data: prof } = await sb
+        .from("player_profiles")
+        .select("avatar_url")
+        .eq("user_id", userId)
+        .single();
+      const avatarUrl = prof?.avatar_url || null;
 
       // Fusionne l'historique de l'appareil avec le compte connecté
       try {
@@ -470,14 +520,21 @@ export function useAuth() {
 
   /**
    * Mise à jour de la photo de profil (upload/dataURL)
+   * Stocke dans player_profiles et localStorage, JAMAIS dans les cookies JWT.
    */
   const updateAvatar = async (avatarUrl: string | null): Promise<void> => {
     if (!user) return;
 
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured && !user.isAnonymous) {
-      await sb.auth.updateUser({ data: { avatar_url: avatarUrl } });
-      await sb.from("player_profiles").update({ avatar_url: avatarUrl }).eq("id", user.id);
+      // Nettoyer metadata auth
+      await sb.auth.updateUser({ data: { avatar_url: null } }).catch(() => {});
+      // Persister dans la table player_profiles
+      try {
+        await sb.from("player_profiles").update({ avatar_url: avatarUrl }).eq("id", user.id);
+      } catch {
+        // best-effort
+      }
     }
 
     const updatedUser = { ...user, avatarUrl };
