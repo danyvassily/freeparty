@@ -8,7 +8,12 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useGameStore, makePlayer } from "@/lib/store/game";
-import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
+import { useHistoryStore } from "@/lib/store/history";
+import {
+  loadGameQuestions,
+  markQuestionAnswered,
+  markQuestionDisplayed,
+} from "@/lib/questions/question-client";
 import type { Question } from "@/lib/questions/schema";
 import { REPORT_REASONS } from "@/lib/questions/schema";
 import {
@@ -39,7 +44,7 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 export function PrismGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
-  const { entries, addEntry, addReport } = useHistoryStore();
+  const { entries, addReport } = useHistoryStore();
 
   const [gameState, setGameState] = useState<PrismGameState | null>(null);
   const [questionsPool, setQuestionsPool] = useState<Question[]>([]);
@@ -80,18 +85,13 @@ export function PrismGame() {
           })),
         });
 
-        const res = await fetch("/api/questions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            count: 35,
-            category: config?.category,
-            history: toSelectionHistory(entries),
-          }),
+        const data = await loadGameQuestions({
+          count: 35,
+          category: config?.category,
+          players: playersConfig,
+          history: entries,
+          sessionId: config?.sessionId ?? crypto.randomUUID(),
         });
-
-        if (!res.ok) throw new Error("Erreur de chargement des questions");
-        const data = await res.json();
         if (cancelled) return;
 
         const pool = (data.questions ?? []) as Question[];
@@ -120,6 +120,15 @@ export function PrismGame() {
   }, [reloadKey]);
 
   const currentPhase = gameState?.phase;
+
+  useEffect(() => {
+    if (!gameState?.currentQuestion || !config?.players?.length) return;
+    void markQuestionDisplayed({
+      question: gameState.currentQuestion,
+      players: config.players,
+      sessionId: config.sessionId,
+    });
+  }, [gameState?.currentQuestion, config?.players, config?.sessionId]);
 
   // Chronomètre du Tour Actif (15s)
   useEffect(() => {
@@ -227,6 +236,17 @@ export function PrismGame() {
 
       const q = gameState.currentQuestion;
       const correct = index === q.correctAnswer;
+      const activeId = gameState.players[gameState.activePlayerIndex]?.id;
+      const activePlayer = config?.players?.find((player) => player.id === activeId);
+      if (activePlayer) {
+        void markQuestionAnswered({
+          question: q,
+          player: activePlayer,
+          sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+          correct,
+          responseTimeMs: (15 - gameState.questionTimeLeft) * 1000,
+        });
+      }
 
       if (correct) {
         sound.playCorrect();
@@ -250,13 +270,6 @@ export function PrismGame() {
           };
         });
 
-        addEntry({
-          questionId: q.id,
-          familyId: q.familyId,
-          answeredCorrectly: true,
-          responseTimeMs: (15 - gameState.questionTimeLeft) * 1000,
-        });
-
         setShowExplanation(true);
         setTimeout(advanceToNextQuestion, 2000);
       } else {
@@ -276,7 +289,7 @@ export function PrismGame() {
         });
       }
     },
-    [gameState, answeredIndex, addEntry, advanceToNextQuestion],
+    [gameState, answeredIndex, config?.players, config?.sessionId, advanceToNextQuestion],
   );
 
   // Réponse d'un voleur (Steal)
@@ -285,6 +298,15 @@ export function PrismGame() {
     if (stealTimerRef.current) clearInterval(stealTimerRef.current);
 
     const correct = choiceIndex === gameState.currentQuestion.correctAnswer;
+    const stealer = config?.players?.find((player) => player.id === stealerPlayer.id);
+    if (stealer) {
+      void markQuestionAnswered({
+        question: gameState.currentQuestion,
+        player: stealer,
+        sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+        correct,
+      });
+    }
     if (correct) {
       sound.playCorrect();
       setGameState((prev) => {

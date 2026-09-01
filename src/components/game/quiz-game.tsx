@@ -9,8 +9,13 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/lib/questions/schema";
 import { REPORT_REASONS } from "@/lib/questions/schema";
-import { useGameStore, type Player } from "@/lib/store/game";
-import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
+import { makePlayer, useGameStore, type Player } from "@/lib/store/game";
+import { useHistoryStore } from "@/lib/store/history";
+import {
+  loadGameQuestions,
+  markQuestionAnswered,
+  markQuestionDisplayed,
+} from "@/lib/questions/question-client";
 import { useLanguageStore } from "@/lib/store/language";
 import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
@@ -34,11 +39,12 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 export function QuizGame({ mode }: QuizGameProps) {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
-  const { entries, addEntry, addReport } = useHistoryStore();
+  const { entries, addReport } = useHistoryStore();
 
-  const players: Player[] = config?.players?.length
-    ? config.players
-    : [{ id: "p1", name: "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 }];
+  const players: Player[] = useMemo(
+    () => (config?.players?.length ? config.players : [makePlayer(0, "Joueur 1")]),
+    [config],
+  );
   const solo = players.length === 1;
 
   const [phase, setPhase] = useState<Phase>("loading");
@@ -78,19 +84,14 @@ export function QuizGame({ mode }: QuizGameProps) {
         setIndex(0);
         setSelected(null);
         setScores({});
-        const res = await fetch("/api/questions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            count: config?.questionCount ?? 10,
-            category: config?.category,
-            difficulties:
-              config?.difficulty && config.difficulty !== "mixed" ? [config.difficulty] : undefined,
-            history: toSelectionHistory(entries),
-          }),
+        const data = await loadGameQuestions({
+          count: config?.questionCount ?? 10,
+          category: config?.category,
+          difficulties: config?.difficulty && config.difficulty !== "mixed" ? [config.difficulty] : undefined,
+          players,
+          history: entries,
+          sessionId: config?.sessionId ?? crypto.randomUUID(),
         });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
         if (pool.length === 0) {
@@ -135,6 +136,15 @@ export function QuizGame({ mode }: QuizGameProps) {
     }
   }, [isLast, solo, timePerQuestion]);
 
+  useEffect(() => {
+    if (phase !== "playing" || !currentRaw) return;
+    void markQuestionDisplayed({
+      question: currentRaw,
+      players,
+      sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+    });
+  }, [phase, currentRaw, players, config?.sessionId]);
+
   const handleAnswer = useCallback(
     (answerIndex: number) => {
       if (answeredRef.current || !current) return;
@@ -151,17 +161,18 @@ export function QuizGame({ mode }: QuizGameProps) {
         },
       }));
 
-      addEntry({
-        questionId: current.id,
-        familyId: current.familyId,
-        answeredCorrectly: correct,
+      void markQuestionAnswered({
+        question: current,
+        player: activePlayer,
+        sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+        correct,
         responseTimeMs: Math.round((timePerQuestion - timeLeft) * 1000),
       });
 
       setPhase("answer");
       setTimeout(goNext, 1800);
     },
-    [current, activePlayer, addEntry, timePerQuestion, timeLeft, mode, goNext],
+    [current, activePlayer, config?.sessionId, timePerQuestion, timeLeft, mode, goNext],
   );
 
   // Référence toujours fraîche pour le timer

@@ -1,22 +1,15 @@
 /**
  * Free Party — Internationalisation (spec §40)
- * Sélecteur de langue : fr, en, es, de, it, pt.
- * Dictionnaires complets : fr, en. Autres langues → repli EN puis FR.
- * Le contenu des questions reste en français pour l'instant (documenté) ;
- * l'interface et les labels sont traduits.
+ * Langues réellement prises en charge de bout en bout : français et anglais.
+ * Le schéma des questions accepte davantage de langues pour une extension
+ * future, mais l'interface ne les propose pas tant qu'elles sont incomplètes.
  */
-import { QUESTION_LANGUAGES } from "@/lib/questions/schema";
-
-export const SUPPORTED_LANGUAGES = [...QUESTION_LANGUAGES] as const;
+export const SUPPORTED_LANGUAGES = ["fr", "en"] as const;
 export type UILanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 export const LANGUAGE_NAMES: Record<UILanguage, string> = {
   fr: "Français",
   en: "English",
-  es: "Español",
-  de: "Deutsch",
-  it: "Italiano",
-  pt: "Português",
 };
 
 type Dict = Record<string, string>;
@@ -197,7 +190,7 @@ const en: Dict = {
   "game.score": "pts",
 };
 
-const DICTS: Record<UILanguage, Dict> = { fr, en, es: en, de: en, it: en, pt: en };
+const DICTS: Record<UILanguage, Dict> = { fr, en };
 
 export function translate(lang: UILanguage, key: string): string {
   return DICTS[lang]?.[key] ?? DICTS.en[key] ?? DICTS.fr[key] ?? key;

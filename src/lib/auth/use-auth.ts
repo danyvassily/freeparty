@@ -10,10 +10,11 @@
 import { useEffect, useState, useCallback } from "react";
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
 import {
-  getOrCreateClientDeviceToken,
+  getOrCreateDeviceToken,
   getCachedProfileId,
+  resolvePlayerProfiles,
   setCachedProfileId,
-} from "@/lib/anti-repetition/client-identity";
+} from "@/lib/identity/identity-service";
 import { useGameStore } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
 import type { UILanguage } from "@/lib/i18n";
@@ -142,7 +143,7 @@ export function useAuth() {
       const sb = getSupabaseBrowser();
       if (sb && isSupabaseConfigured) {
         const { data } = await sb.auth.getUser();
-        if (data.user) {
+        if (data.user && !data.user.is_anonymous) {
           const authUserId = data.user.id;
           const email = data.user.email;
           const metadata = data.user.user_metadata ?? {};
@@ -152,12 +153,12 @@ export function useAuth() {
             sb.auth.updateUser({ data: { avatar_url: null } }).catch(() => {});
           }
 
-          // Récupérer le profil Supabase
-          const { data: prof } = await sb
-            .from("player_profiles")
-            .select("*")
-            .eq("user_id", authUserId)
-            .single();
+          const resolved = await resolvePlayerProfiles([await getOrCreateDeviceToken()]);
+          const resolvedProfileId = resolved[0]?.profile_id;
+          const profileQuery = sb.from("player_profiles").select("*");
+          const { data: prof } = resolvedProfileId
+            ? await profileQuery.eq("id", resolvedProfileId).maybeSingle()
+            : await profileQuery.eq("user_id", authUserId).maybeSingle();
 
           const name = prof?.nickname || metadata.username || metadata.name || email?.split("@")[0] || "Joueur";
           const avatarColor = prof?.avatar_color ?? 0;
@@ -179,6 +180,24 @@ export function useAuth() {
           setLoading(false);
           return;
         }
+
+        const resolved = await resolvePlayerProfiles([await getOrCreateDeviceToken()]);
+        if (resolved[0]?.profile_id) {
+          const currentName = players[0]?.name || "Joueur";
+          const currentAvatar = players[0]?.avatarUrl || null;
+          const anonymousUser: AuthUser = {
+            id: resolved[0].profile_id,
+            name: currentName,
+            isAnonymous: true,
+            avatarColor: 0,
+            avatarUrl: currentAvatar,
+          };
+          setUser(anonymousUser);
+          setCachedProfileId(anonymousUser.id);
+          safeRemoveStorage(LOCAL_AUTH_KEY);
+          setLoading(false);
+          return;
+        }
       }
 
       // Mode Local-First / Hors-ligne
@@ -196,7 +215,7 @@ export function useAuth() {
       }
 
       // Utilisateur Anonyme par défaut
-      const deviceToken = getOrCreateClientDeviceToken();
+      const deviceToken = await getOrCreateDeviceToken();
       const cachedProfId = getCachedProfileId();
       const currentName = players[0]?.name || "Joueur";
       const currentAvatar = players[0]?.avatarUrl || null;
@@ -253,11 +272,14 @@ export function useAuth() {
   }): Promise<{ user: AuthUser; message?: string }> => {
     const { email, password, name, avatarUrl, language = "fr" } = params;
     const cleanName = name.trim().slice(0, 24) || email.split("@")[0];
-    const previousAnonymousProfileId = getCachedProfileId();
-    const deviceToken = getOrCreateClientDeviceToken();
+    const deviceToken = await getOrCreateDeviceToken();
 
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured) {
+      const { data: currentIdentity } = await sb.auth.getUser();
+      if (currentIdentity.user?.is_anonymous) {
+        await sb.auth.signOut({ scope: "local" });
+      }
       // NOTE IMPORTANTE : Ne JAMAIS mettre avatarUrl en base64 dans metadata.
       // Cela fait exploser la taille du cookie JWT et provoque 494 REQUEST_HEADER_TOO_LARGE sur Vercel.
       const { data, error } = await sb.auth.signUp({
@@ -275,40 +297,23 @@ export function useAuth() {
 
       if (data.user) {
         const userId = data.user.id;
+        const resolved = data.session ? await resolvePlayerProfiles([deviceToken]) : [];
+        const profileId = resolved[0]?.profile_id ?? userId;
 
-        // Sauvegarde de la photo de profil dans la base de données SQL
-        if (avatarUrl) {
+        // Le profil SQL est l'autorité pour le pseudo et l'avatar léger.
+        if (data.session) {
           try {
-            await sb.from("player_profiles").update({ avatar_url: avatarUrl }).eq("user_id", userId);
+            await sb
+              .from("player_profiles")
+              .update({ nickname: cleanName, ...(avatarUrl ? { avatar_url: avatarUrl } : {}) })
+              .eq("id", profileId);
           } catch {
             // best-effort
           }
         }
 
-        // Liaison du profil et fusion d'historique via l'API
-        try {
-          const res = await fetch("/api/identity", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              action: "link_user",
-              userId,
-              currentAnonymousProfileId: previousAnonymousProfileId ?? undefined,
-              nickname: cleanName,
-            }),
-          });
-          if (res.ok) {
-            const result = await res.json();
-            if (result.profile?.id) {
-              setCachedProfileId(result.profile.id);
-            }
-          }
-        } catch {
-          // best-effort
-        }
-
         const newUser: AuthUser = {
-          id: userId,
+          id: profileId,
           email,
           name: cleanName,
           isAnonymous: false,
@@ -352,22 +357,6 @@ export function useAuth() {
       createdAt: new Date().toISOString(),
     };
 
-    // Fusion de l'historique anti-répétition en local
-    try {
-      await fetch("/api/identity", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "link_user",
-          userId: localUserId,
-          currentAnonymousProfileId: previousAnonymousProfileId ?? undefined,
-          nickname: cleanName,
-        }),
-      });
-    } catch {
-      // local fallback
-    }
-
     setUser(newUser);
     setCachedProfileId(localUserId);
     safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(newUser));
@@ -387,15 +376,21 @@ export function useAuth() {
    */
   const signIn = async (params: { email: string; password: string }): Promise<AuthUser> => {
     const { email, password } = params;
-    const previousAnonymousProfileId = getCachedProfileId();
+    const deviceToken = await getOrCreateDeviceToken();
 
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured) {
+      const { data: currentIdentity } = await sb.auth.getUser();
+      if (currentIdentity.user?.is_anonymous) {
+        await sb.auth.signOut({ scope: "local" });
+      }
       const { data, error } = await sb.auth.signInWithPassword({ email, password });
       if (error) throw error;
       if (!data.user) throw new Error("Erreur de connexion");
 
       const userId = data.user.id;
+      const resolved = await resolvePlayerProfiles([deviceToken]);
+      const profileId = resolved[0]?.profile_id ?? userId;
       const metadata = data.user.user_metadata ?? {};
       const name = metadata.username || metadata.name || email.split("@")[0];
 
@@ -404,34 +399,20 @@ export function useAuth() {
         sb.auth.updateUser({ data: { avatar_url: null } }).catch(() => {});
       }
 
+      await sb.from("player_profiles").update({ nickname: name }).eq("id", profileId);
+
       // Récupérer avatar_url depuis player_profiles
       const { data: prof } = await sb
         .from("player_profiles")
-        .select("avatar_url")
-        .eq("user_id", userId)
-        .single();
+        .select("avatar_url, nickname")
+        .eq("id", profileId)
+        .maybeSingle();
       const avatarUrl = prof?.avatar_url || null;
 
-      // Fusionne l'historique de l'appareil avec le compte connecté
-      try {
-        await fetch("/api/identity", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            action: "link_user",
-            userId,
-            currentAnonymousProfileId: previousAnonymousProfileId ?? undefined,
-            nickname: name,
-          }),
-        });
-      } catch {
-        // best effort
-      }
-
       const activeUser: AuthUser = {
-        id: userId,
+        id: profileId,
         email,
-        name,
+        name: prof?.nickname || name,
         isAnonymous: false,
         avatarColor: 0,
         avatarUrl,
@@ -484,8 +465,9 @@ export function useAuth() {
     }
 
     safeRemoveStorage(LOCAL_AUTH_KEY);
-    const deviceToken = getOrCreateClientDeviceToken();
-    const anonId = `anon_${deviceToken.slice(0, 12)}`;
+    const deviceToken = await getOrCreateDeviceToken();
+    const resolved = sb && isSupabaseConfigured ? await resolvePlayerProfiles([deviceToken]) : [];
+    const anonId = resolved[0]?.profile_id ?? `anon_${deviceToken.slice(0, 12)}`;
     setCachedProfileId(anonId);
 
     setUser({

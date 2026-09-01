@@ -8,12 +8,13 @@
  * Le moteur est pur et testable : aucune dépendance DOM/réseau.
  */
 import type { Question, QuestionDifficulty } from "./schema";
+import { canonicalKey, canonicalizeKnowledgeKey } from "./dedupe";
 
 export interface SelectionHistoryEntry {
   questionId: string;
   familyId: string;
   servedAt: number; // timestamp ms
-  answeredCorrectly: boolean;
+  answeredCorrectly: boolean | null;
 }
 
 export interface SelectionOptions {
@@ -32,6 +33,8 @@ export interface SelectionOptions {
   jitter?: number;
   now?: number;
   seed?: number;
+  /** Familles déjà réservées par une requête concurrente. */
+  reservedFamilyIds?: Iterable<string>;
 }
 
 const DIFFICULTY_ORDER: QuestionDifficulty[] = ["easy", "medium", "hard", "expert"];
@@ -56,12 +59,15 @@ export interface SelectionResult {
   questions: Question[];
   /** Score détaillé de chaque question sélectionnée (utile pour logs/tests) */
   scores: Array<{ id: string; score: number; penalty: number }>;
+  requested: number;
+  available: number;
+  poolExhausted: boolean;
+  reason?: "INSUFFICIENT_UNSEEN_QUESTIONS";
 }
 
 /**
- * Sélectionne `count` questions en minimisant les répétitions de questions
- * et de familles, en équilibrant catégories et difficultés, et en favorisant
- * la fraîcheur (last_seen).
+ * Sélectionne `count` questions inédites. Une famille déjà vue est interdite,
+ * même si une autre formulation de cette connaissance existe dans le pool.
  */
 export function selectQuestions(
   pool: Question[],
@@ -71,23 +77,28 @@ export function selectQuestions(
   const { count, jitter = 0.45, maxPerFamily = 1, now = Date.now() } = options;
   const rng = mulberry32(options.seed ?? (now % 2147483647));
 
-  if (pool.length === 0) return { questions: [], scores: [] };
-  const n = Math.min(count, pool.length);
+  if (pool.length === 0) {
+    return { questions: [], scores: [], requested: count, available: 0, poolExhausted: count > 0, reason: count > 0 ? "INSUFFICIENT_UNSEEN_QUESTIONS" : undefined };
+  }
 
   // Index de l'historique
-  const seenCount = new Map<string, number>();
-  const familySeen = new Map<string, number>();
-  const lastSeen = new Map<string, number>();
-  const familyLastSeen = new Map<string, number>();
+  const seenQuestions = new Set<string>();
+  const seenFamilies = new Set<string>();
   for (const h of history) {
     const qk = historyKey(h.questionId);
     const fk = historyKey(h.familyId);
-    seenCount.set(qk, (seenCount.get(qk) ?? 0) + 1);
-    familySeen.set(fk, (familySeen.get(fk) ?? 0) + 1);
-    const prev = lastSeen.get(qk) ?? 0;
-    if (h.servedAt > prev) lastSeen.set(qk, h.servedAt);
-    const fp = familyLastSeen.get(fk) ?? 0;
-    if (h.servedAt > fp) familyLastSeen.set(fk, h.servedAt);
+    seenQuestions.add(qk);
+    seenFamilies.add(fk);
+  }
+  const reservedFamilies = new Set(
+    Array.from(options.reservedFamilyIds ?? [], (familyId) => historyKey(familyId)),
+  );
+  const seenContent = new Set<string>();
+  const seenKnowledge = new Set<string>();
+  for (const question of pool) {
+    if (!seenQuestions.has(historyKey(question.id)) && !seenFamilies.has(historyKey(question.familyId))) continue;
+    seenContent.add(question.contentHash ?? canonicalKey(question));
+    seenKnowledge.add(canonicalizeKnowledgeKey(question.knowledgeKey ?? question.familyId));
   }
 
   // Équilibrage : difficulté cible pour compenser les stats du pool
@@ -97,30 +108,41 @@ export function selectQuestions(
   const catCounts: Record<string, number> = {};
   for (const q of pool) catCounts[q.category] = (catCounts[q.category] ?? 0) + 1;
 
+  const candidateContent = new Set<string>();
+  const candidateKnowledge = new Set<string>();
   const candidates = pool.filter((q) => {
     if (options.categories?.length && !options.categories.includes(q.category)) return false;
     if (options.difficulties?.length && !options.difficulties.includes(q.difficulty)) return false;
+    if (seenQuestions.has(historyKey(q.id))) return false;
+    if (seenFamilies.has(historyKey(q.familyId))) return false;
+    const content = q.contentHash ?? canonicalKey(q);
+    const knowledge = canonicalizeKnowledgeKey(q.knowledgeKey ?? q.familyId);
+    if (seenContent.has(content) || candidateContent.has(content)) return false;
+    if (seenKnowledge.has(knowledge) || candidateKnowledge.has(knowledge)) return false;
+    if (reservedFamilies.has(historyKey(q.familyId))) return false;
+    candidateContent.add(content);
+    candidateKnowledge.add(knowledge);
     return true;
   });
 
-  if (candidates.length === 0) return { questions: [], scores: [] };
+  if (candidates.length === 0) {
+    return {
+      questions: [],
+      scores: [],
+      requested: count,
+      available: 0,
+      poolExhausted: count > 0,
+      reason: count > 0 ? "INSUFFICIENT_UNSEEN_QUESTIONS" : undefined,
+    };
+  }
+
+  const uniqueAvailableFamilies = new Set(candidates.map((q) => historyKey(q.familyId))).size;
+  const n = Math.min(count, uniqueAvailableFamilies * maxPerFamily);
 
   // Tri stable par score décroissant avec hasard contrôlé
   const scored = candidates.map((q) => {
     const qk = historyKey(q.id);
     const fk = historyKey(q.familyId);
-
-    // Pénalité de répétition (exponentielle, domine tout)
-    const qSeen = seenCount.get(qk) ?? 0;
-    const fSeen = familySeen.get(fk) ?? 0;
-    const qPenalty = qSeen > 0 ? 10 * qSeen : 0;
-    const fPenalty = fSeen > 0 ? 4 * fSeen : 0;
-
-    // Fraîcheur : recency décroissante (facteur de fraîcheur)
-    const lastQ = lastSeen.get(qk) ?? 0;
-    const lastF = familyLastSeen.get(fk) ?? 0;
-    const ageDays = (now - Math.max(lastQ, lastF)) / 86_400_000;
-    const freshness = Math.min(ageDays / 30, 1); // 0 → vue récemment, 1 → > 30 jours
 
     // Équilibre de difficulté : sur-représentée → pénalisée
     const diffTarget = 1 / Math.max(1, Object.keys(diffCounts).length);
@@ -132,20 +154,17 @@ export function selectQuestions(
     const catShare = (catCounts[q.category] ?? 0) / Math.max(1, pool.length);
     const categoryBalance = catTarget / Math.max(0.01, catShare);
 
-    const novelty = 1 - qSeen * 0.3; // jamais complètement 0 pour une question valide
-
     const randomFactor = 0.3 + rng() * 1.4; // jitter large : ±40% autour de la moyenne
+    const usagePenalty = Math.log2(1 + (q.usageCount ?? 0));
 
     const score =
-      (novelty * 2 +
+      (4 +
         categoryBalance * 1.5 +
         difficultyBalance * 1.2 +
-        freshness * 2 -
-        qPenalty -
-        fPenalty) *
+        1.5 - usagePenalty) *
       (1 - jitter + jitter * randomFactor);
 
-    return { q, score, penalty: qPenalty + fPenalty };
+    return { q, score, penalty: usagePenalty, qk, fk };
   });
 
   scored.sort((a, b) => b.score - a.score);
@@ -153,18 +172,43 @@ export function selectQuestions(
   // Contrainte maxPerFamily par partie
   const pickedFamilies = new Map<string, number>();
   const selected: typeof scored = [];
-  for (const item of scored) {
-    if (selected.length >= n) break;
-    const fk = historyKey(item.q.familyId);
-    const used = pickedFamilies.get(fk) ?? 0;
-    if (used >= maxPerFamily) continue;
-    pickedFamilies.set(fk, used + 1);
-    selected.push(item);
+  const selectedCategories = new Map<string, number>();
+  const selectedTopics = new Map<string, number>();
+  while (selected.length < n) {
+    let bestIndex = -1;
+    let bestScore = Number.NEGATIVE_INFINITY;
+    for (let i = 0; i < scored.length; i++) {
+      const item = scored[i];
+      if (selected.includes(item)) continue;
+      const used = pickedFamilies.get(item.fk) ?? 0;
+      if (used >= maxPerFamily) continue;
+      const topic = item.q.subcategory || item.q.category;
+      const diversityPenalty =
+        (selectedCategories.get(item.q.category) ?? 0) * 0.8 +
+        (selectedTopics.get(topic) ?? 0) * 1.25;
+      const dynamicScore = item.score - diversityPenalty;
+      if (dynamicScore > bestScore) {
+        bestIndex = i;
+        bestScore = dynamicScore;
+      }
+    }
+    if (bestIndex < 0) break;
+    const picked = scored[bestIndex];
+    pickedFamilies.set(picked.fk, (pickedFamilies.get(picked.fk) ?? 0) + 1);
+    selectedCategories.set(picked.q.category, (selectedCategories.get(picked.q.category) ?? 0) + 1);
+    const topic = picked.q.subcategory || picked.q.category;
+    selectedTopics.set(topic, (selectedTopics.get(topic) ?? 0) + 1);
+    selected.push(picked);
   }
 
+  const poolExhausted = selected.length < count;
   return {
     questions: selected.map((s) => s.q),
     scores: selected.map((s) => ({ id: s.q.id, score: s.score, penalty: s.penalty })),
+    requested: count,
+    available: uniqueAvailableFamilies,
+    poolExhausted,
+    reason: poolExhausted ? "INSUFFICIENT_UNSEEN_QUESTIONS" : undefined,
   };
 }
 

@@ -88,17 +88,23 @@ if (!danyId || !emmaId) { console.error("\n⚠️  Impossible de continuer sans 
 // Relecture des profils (comme au login)
 const { data: profDany } = await dany.from("profiles").select("language").eq("id", danyId).single();
 const { data: profEmma } = await emma.from("profiles").select("language").eq("id", emmaId).single();
-profDany?.language === "fr" ? ok("profil Dany relu : fr") : ko("profil Dany", JSON.stringify(profDany));
-profEmma?.language === "en" ? ok("profil Emma relu : en") : ko("profil Emma", JSON.stringify(profEmma));
+if (profDany?.language === "fr") ok("profil Dany relu : fr");
+else ko("profil Dany", JSON.stringify(profDany));
+if (profEmma?.language === "en") ok("profil Emma relu : en");
+else ko("profil Emma", JSON.stringify(profEmma));
 
 // ─── 2. Questions bilingues via le vrai endpoint de l'app ───
 console.log("\n2. Génération des questions bilingues (/api/questions → DeepSeek)");
 let questions = [];
 try {
+  const { data: danyAuth } = await dany.auth.getSession();
   const res = await fetch(`${DEV}/api/questions`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ count: 3, category: "culture-generale" }),
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${danyAuth.session?.access_token ?? ""}`,
+    },
+    body: JSON.stringify({ count: 3, category: "culture-generale", ai: true }),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} — le serveur de dev tourne-t-il ? (npm run dev -- --port 7100)`);
   const data = await res.json();
@@ -108,9 +114,11 @@ try {
 } catch (e) { ko("génération questions", e); }
 
 const bilingual = questions.filter((q) => q.translations?.en?.answers?.length === 4);
-bilingual.length === questions.length && questions.length > 0
-  ? ok(`${bilingual.length}/${questions.length} questions ont une traduction anglaise complète`)
-  : ko("traductions", `${bilingual.length}/${questions.length} questions bilingues`);
+if (bilingual.length === questions.length && questions.length > 0) {
+  ok(`${bilingual.length}/${questions.length} questions ont une traduction anglaise complète`);
+} else {
+  ko("traductions", `${bilingual.length}/${questions.length} questions bilingues`);
+}
 if (questions.length === 0) { console.error("\n⚠️  Sans questions, arrêt.\n"); process.exit(1); }
 
 const Q = questions[0];
@@ -129,9 +137,7 @@ try {
   if (e1) throw e1;
   ok(`Dany a créé le salon ${code}`);
 
-  const { data: found } = await emma.from("game_sessions").select("*").eq("room_code", code).eq("phase", "lobby").maybeSingle();
-  if (!found) throw new Error("salon introuvable par code");
-  const { error: e2 } = await emma.from("game_players").insert({ session_id: sessionId, user_id: emmaId, name: "Emma", is_host: false });
+  const { error: e2 } = await emma.rpc("join_game_session", { p_room_code: code, p_player_name: "Emma" });
   if (e2) throw e2;
   ok("Emma a rejoint avec le code");
 
@@ -166,21 +172,19 @@ try {
     console.log(`\n  📱 Écran de Dany (fr) : « ${vueDany.question} »`);
     console.log(`  📱 Écran d'Emma (en) : « ${vueEmma.question} »\n`);
 
-    vueDany.lang === "fr" && vueDany.question === Q.question
-      ? ok("Dany voit la question en FRANÇAIS")
-      : ko("vue Dany", vueDany.question);
-    vueEmma.lang === "en" && vueEmma.question !== Q.question
-      ? ok("Emma voit la MÊME question en ANGLAIS")
-      : ko("vue Emma", vueEmma.question);
-    cq.correctAnswer === undefined
-      ? ok("bonne réponse non divulguée avant révélation")
-      : ko("fuite", "correctAnswer visible avant révélation");
+    if (vueDany.lang === "fr" && vueDany.question === Q.question) ok("Dany voit la question en FRANÇAIS");
+    else ko("vue Dany", vueDany.question);
+    if (vueEmma.lang === "en" && vueEmma.question !== Q.question) ok("Emma voit la MÊME question en ANGLAIS");
+    else ko("vue Emma", vueEmma.question);
+    if (cq.correctAnswer === undefined) ok("bonne réponse non divulguée avant révélation");
+    else ko("fuite", "correctAnswer visible avant révélation");
 
     // Même partie : les réponses d'Emma sont dans l'ordre anglais = même index
-    vueDany.answers[vueDany.correctAnswer ?? Q.correctAnswer] !== undefined &&
-    vueEmma.answers.length === 4
-      ? ok("les 4 réponses d'Emma sont traduites (même ordre, même index)")
-      : ko("réponses Emma", "traduction incomplète");
+    if (
+      vueDany.answers[vueDany.correctAnswer ?? Q.correctAnswer] !== undefined &&
+      vueEmma.answers.length === 4
+    ) ok("les 4 réponses d'Emma sont traduites (même ordre, même index)");
+    else ko("réponses Emma", "traduction incomplète");
 
     // ─── 6. Les deux répondent (bonne réponse, index partagé) ───
     console.log("\n5. Réponses et scores");
@@ -209,7 +213,8 @@ try {
     console.log("\n  🏆 Classement :");
     for (const [i, p] of (finalPlayers ?? []).entries()) console.log(`     ${i + 1}. ${p.name} — ${p.score} pts`);
     const allScored = (finalPlayers ?? []).every((p) => p.score === 10);
-    allScored ? ok("les deux joueurs ont marqué (l'index partagé FR/EN fonctionne)") : ko("scores", JSON.stringify(finalPlayers));
+    if (allScored) ok("les deux joueurs ont marqué (l'index partagé FR/EN fonctionne)");
+    else ko("scores", JSON.stringify(finalPlayers));
   }
   await emma.removeChannel(channel);
 } catch (e) {

@@ -9,6 +9,7 @@
 import { getSupabaseBrowser, isSupabaseConfigured } from "@/lib/supabase/client";
 import type { Question } from "@/lib/questions/schema";
 import { MAX_PLAYERS } from "@/lib/store/game";
+import { getOrCreateDeviceToken, resolvePlayerProfiles } from "@/lib/identity/identity-service";
 
 export interface OnlineSession {
   id: string;
@@ -17,6 +18,14 @@ export interface OnlineSession {
   phase: "lobby" | "playing" | "finished";
   question_index: number;
   current_question: {
+    id?: string;
+    familyId?: string;
+    knowledgeKey?: string;
+    category?: string;
+    subcategory?: string;
+    difficulty?: string;
+    type?: string;
+    language?: string;
     question: string;
     answers: string[];
     correctAnswer?: number; // présent uniquement quand answers_revealed
@@ -36,6 +45,7 @@ export interface OnlinePlayer {
   id: string;
   session_id: string;
   user_id: string | null;
+  profile_id: string | null;
   name: string;
   is_host: boolean;
   score: number;
@@ -71,14 +81,15 @@ export function generateRoomCode(): string {
  * Garantit une session authentifiée (anonyme si besoin) et enregistre
  * le pseudo dans les métadonnées. Renvoie l'id utilisateur.
  */
-export async function ensureOnlineIdentity(pseudo: string): Promise<{ userId: string; name: string }> {
+export async function ensureOnlineIdentity(pseudo: string): Promise<{ userId: string; profileId: string | null; deviceToken: string; name: string }> {
   const sb = getSupabaseBrowser();
   if (!sb) throw new Error("Supabase non configuré");
 
   const name = pseudo.trim().slice(0, 20) || "Joueur";
 
   const { data: existing } = await sb.auth.getUser();
-  if (!existing.user) {
+  let user = existing.user;
+  if (!user) {
     const { data, error } = await sb.auth.signInAnonymously({
       options: { data: { username: name } },
     });
@@ -91,15 +102,17 @@ export async function ensureOnlineIdentity(pseudo: string): Promise<{ userId: st
       throw error;
     }
     if (!data.user) throw new Error("Impossible de créer la session invité");
-    return { userId: data.user.id, name };
+    user = data.user;
   }
 
   // Session existante : met à jour le pseudo si changé
-  const current = existing.user.user_metadata?.username as string | undefined;
+  const current = user.user_metadata?.username as string | undefined;
   if (current !== name) {
     await sb.auth.updateUser({ data: { username: name } });
   }
-  return { userId: existing.user.id, name };
+  const deviceToken = await getOrCreateDeviceToken();
+  const profiles = await resolvePlayerProfiles([deviceToken]);
+  return { userId: user.id, profileId: profiles[0]?.profile_id ?? null, deviceToken, name };
 }
 
 /** Crée un salon et y inscrit le host */
@@ -147,8 +160,9 @@ export async function createRoom(
     .insert({
       session_id: session.id,
       user_id: identity.userId,
-      name: identity.name,
-      is_host: true,
+        name: identity.name,
+        is_host: true,
+        profile_id: identity.profileId,
     });
   if (err2) throw err2;
 
@@ -161,6 +175,13 @@ export async function createRoom(
     .eq("user_id", identity.userId)
     .single();
   if (err3) throw err3;
+  if (identity.profileId) {
+    const { error: attachError } = await sb.rpc("attach_game_player_profile", {
+      p_player_id: player.id,
+      p_device_token: identity.deviceToken,
+    });
+    if (attachError) throw attachError;
+  }
 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
@@ -174,54 +195,45 @@ export async function joinRoom(
   if (!sb) throw new Error("Supabase non configuré");
   const identity = await ensureOnlineIdentity(pseudo);
 
-  const { data: session, error } = await sb
-    .from("game_sessions")
-    .select("*")
-    .eq("room_code", code.trim().toUpperCase())
-    .eq("phase", "lobby")
-    .maybeSingle();
-  if (error) throw error;
-  if (!session) throw new Error("Salon introuvable : vérifie le code — ou la partie a peut-être déjà commencé");
-
-  // Idempotence : si le joueur est déjà dans le salon, on le réutilise
-  const { data: existingPlayer } = await sb
-    .from("game_players")
-    .select("*")
-    .eq("session_id", session.id)
-    .eq("user_id", identity.userId)
-    .maybeSingle();
-  if (existingPlayer) {
-    return { session: session as OnlineSession, player: existingPlayer as OnlinePlayer };
+  // La fonction SQL verrouille le salon : vérification de capacité + insertion
+  // forment une seule opération, y compris lors d'arrivées simultanées.
+  const { data: membership, error } = await sb.rpc("join_game_session", {
+    p_room_code: code.trim().toUpperCase(),
+    p_player_name: identity.name,
+  });
+  if (error) {
+    if (error.message.includes("room_capacity_reached")) {
+      throw new Error("Ce salon est complet");
+    }
+    if (error.message.includes("room_not_found")) {
+      throw new Error("Salon introuvable : vérifie le code — ou la partie a peut-être déjà commencé");
+    }
+    throw error;
   }
 
-  // Capacité maximale du salon
-  const { count } = await sb
-    .from("game_players")
-    .select("id", { count: "exact", head: true })
-    .eq("session_id", session.id);
-  const maxPlayers = (session.max_players as number | null) ?? MAX_PLAYERS;
-  if ((count ?? 0) >= maxPlayers) {
-    throw new Error(`Ce salon est complet (${maxPlayers} joueurs maximum)`);
+  const joined = Array.isArray(membership) ? membership[0] : membership;
+  if (!joined?.session_id || !joined?.player_id) {
+    throw new Error("Impossible de rejoindre ce salon");
   }
 
-  const { error: err2 } = await sb
-    .from("game_players")
-    .insert({
-      session_id: session.id,
-      user_id: identity.userId,
-      name: identity.name,
-      is_host: false,
+  if (identity.profileId) {
+    const { error: profileError } = await sb.rpc("attach_game_player_profile", {
+      p_player_id: joined.player_id,
+      p_device_token: identity.deviceToken,
     });
-  if (err2) throw err2;
+    if (profileError) throw profileError;
+  }
 
-  // Relit le joueur (même raison que createRoom : pas de RETURNING en RLS)
-  const { data: player, error: err3 } = await sb
+  const [{ data: session, error: sessionError }, { data: player, error: playerError }] = await Promise.all([
+    sb.from("game_sessions").select("*").eq("id", joined.session_id).single(),
+    sb
     .from("game_players")
     .select("*")
-    .eq("session_id", session.id)
-    .eq("user_id", identity.userId)
-    .single();
-  if (err3) throw err3;
+      .eq("id", joined.player_id)
+      .single(),
+  ]);
+  if (sessionError) throw sessionError;
+  if (playerError) throw playerError;
 
   return { session: session as OnlineSession, player: player as OnlinePlayer };
 }
@@ -351,13 +363,33 @@ export async function hostPushQuestion(
   if (!sb) return;
   const payload = revealed
     ? {
+        id: question.id,
+        familyId: question.familyId,
+        knowledgeKey: question.knowledgeKey,
+        category: question.category,
+        subcategory: question.subcategory,
+        difficulty: question.difficulty,
+        type: question.type,
+        language: question.language,
         question: question.question,
         answers: question.answers,
         correctAnswer: question.correctAnswer,
         explanation: question.explanation,
         translations: question.translations,
       }
-    : { question: question.question, answers: question.answers, translations: question.translations };
+    : {
+        id: question.id,
+        familyId: question.familyId,
+        knowledgeKey: question.knowledgeKey,
+        category: question.category,
+        subcategory: question.subcategory,
+        difficulty: question.difficulty,
+        type: question.type,
+        language: question.language,
+        question: question.question,
+        answers: question.answers,
+        translations: question.translations,
+      };
   const { error } = await sb
     .from("game_sessions")
     .update({
@@ -424,7 +456,8 @@ export async function finishRoom(sessionId: string): Promise<void> {
 export async function leaveRoom(sessionId: string, playerId: string): Promise<void> {
   const sb = getSupabaseBrowser();
   if (!sb) return;
-  await sb.from("game_players").delete().eq("id", playerId).eq("session_id", sessionId);
+  const { error } = await sb.from("game_players").delete().eq("id", playerId).eq("session_id", sessionId);
+  if (error) throw new Error(`Impossible de quitter le salon : ${error.message}`);
 }
 
 export { isSupabaseConfigured };

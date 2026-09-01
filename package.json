@@ -10,6 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:rooms:local": "node scripts/smoke-local-room-security.mjs",
+    "test:questions:local": "node scripts/smoke-question-anti-repeat.mjs",
     "questions:validate": "tsx scripts/questions/validate.ts",
     "questions:dedupe": "tsx scripts/questions/dedupe.ts",
     "questions:stats": "tsx scripts/questions/stats.ts",
@@ -24,7 +26,7 @@
     "@supabase/supabase-js": "^2.45.4",
     "lucide-react": "^1.31.0",
     "motion": "^11.15.0",
-    "next": "16.3.1",
+    "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "zod": "^3.23.8",
@@ -36,10 +38,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.3.1",
+    "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
     "tsx": "^4.19.2",
     "typescript": "^5",
-    "vitest": "^2.1.8"
+    "vitest": "^4.1.11"
   }
 }

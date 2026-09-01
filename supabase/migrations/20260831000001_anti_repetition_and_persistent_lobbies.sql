@@ -38,6 +38,23 @@ create table if not exists public.question_families (
   created_at timestamptz not null default now()
 );
 
+-- question_families existe déjà dans le schéma initial. CREATE TABLE IF NOT
+-- EXISTS n'ajoute pas les nouvelles colonnes : la migration doit les enrichir
+-- explicitement avant de créer ses index et ses historiques.
+alter table public.question_families
+  add column if not exists knowledge_key text,
+  add column if not exists category text,
+  add column if not exists topic text not null default '',
+  add column if not exists subcategory text,
+  add column if not exists usage_count int not null default 0;
+
+update public.question_families
+set knowledge_key = id
+where knowledge_key is null;
+
+alter table public.question_families
+  alter column knowledge_key set not null;
+
 -- Table centrale des questions vues par profil
 create table if not exists public.question_seen (
   id text primary key,

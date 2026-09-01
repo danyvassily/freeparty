@@ -25,47 +25,47 @@ interface KawaiiMascotProps {
 
 const MASCOT_SOURCES: Record<KawaiiTheme, { src: string; alt: string }> = {
   conference: {
-    src: "/images/kawaii/conference.jpg",
+    src: "/images/kawaii/conference.webp",
     alt: "Mascotte Débat Conférence à l'Assemblée Kawaii",
   },
   sweating: {
-    src: "/images/kawaii/sad.jpg", // fallback image with sweating badge
+    src: "/images/kawaii/sad.webp", // fallback image with sweating badge
     alt: "Mascotte Débat Éprouvant - Ouf c'était chaud !",
   },
   referee: {
-    src: "/images/kawaii/referee.jpg",
+    src: "/images/kawaii/referee.webp",
     alt: "Mascotte Arbitre Kawaii - Prêt pour le départ !",
   },
   thinking: {
-    src: "/images/kawaii/thinking.jpg",
+    src: "/images/kawaii/thinking.webp",
     alt: "Mascotte Qui Réfléchit Kawaii",
   },
   waiting: {
-    src: "/images/kawaii/waiting-phone.jpg",
+    src: "/images/kawaii/waiting-phone.webp",
     alt: "Mascotte En Attente sur son smartphone Kawaii",
   },
   happy: {
-    src: "/images/kawaii/happy.jpg",
+    src: "/images/kawaii/happy.webp",
     alt: "Mascotte Joyeuse - Bonne Réponse !",
   },
   sad: {
-    src: "/images/kawaii/sad.jpg",
+    src: "/images/kawaii/sad.webp",
     alt: "Mascotte Triste - Mauvaise Réponse",
   },
   quiz: {
-    src: "/images/kawaii/quiz-brain.jpg",
+    src: "/images/kawaii/quiz-brain.webp",
     alt: "Mascotte Quiz Érudit Kawaii",
   },
   debate: {
-    src: "/images/kawaii/debate-chat.jpg",
+    src: "/images/kawaii/debate-chat.webp",
     alt: "Mascottes Duo Débat Kawaii",
   },
   party: {
-    src: "/images/kawaii/party-trophy.jpg",
+    src: "/images/kawaii/party-trophy.webp",
     alt: "Mascotte Victoire & Soirée Kawaii",
   },
   speed: {
-    src: "/images/kawaii/speed-buzzer.jpg",
+    src: "/images/kawaii/speed-buzzer.webp",
     alt: "Mascotte Rapidité & Buzzer Kawaii",
   },
 };

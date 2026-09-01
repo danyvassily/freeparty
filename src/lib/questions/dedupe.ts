@@ -16,6 +16,67 @@ export function normalizeText(input: string): string {
     .trim();
 }
 
+const KNOWLEDGE_ALIASES: Record<string, string> = {
+  geography: "geo",
+  geographie: "geo",
+  countries: "country",
+  pays: "country",
+  capitales: "capital",
+};
+
+const COUNTRY_CODES: Record<string, string> = {
+  france: "fr",
+  japan: "jp",
+  japon: "jp",
+  spain: "es",
+  espagne: "es",
+  germany: "de",
+  allemagne: "de",
+  italy: "it",
+  italie: "it",
+  portugal: "pt",
+  china: "cn",
+  chine: "cn",
+  canada: "ca",
+  australia: "au",
+  australie: "au",
+  brazil: "br",
+  bresil: "br",
+};
+
+/** Normalise les variations de forme d'une knowledge key sans dépendre de la langue. */
+export function canonicalizeKnowledgeKey(input: string): string {
+  const parts = normalizeText(input)
+    .split(" ")
+    .filter(Boolean)
+    .map((part) => KNOWLEDGE_ALIASES[part] ?? part);
+  if (parts.includes("capital")) {
+    const entity = parts.find((part) => !["geo", "country", "capital"].includes(part));
+    if (entity) return `geo.country.${COUNTRY_CODES[entity] ?? entity}.capital`;
+  }
+  return parts.join(".");
+}
+
+/** Signature sémantique légère prête à être remplacée par des embeddings. */
+export function semanticKnowledgeSignature(
+  q: Pick<Question, "category" | "subcategory" | "answers" | "correctAnswer">,
+): string {
+  return [
+    canonicalizeKnowledgeKey(q.category),
+    canonicalizeKnowledgeKey(q.subcategory),
+    normalizeText(q.answers[q.correctAnswer] ?? ""),
+  ].join("|");
+}
+
+export function isKnowledgeDuplicate(candidate: Question, existing: Question[]): boolean {
+  const candidateKey = canonicalizeKnowledgeKey(candidate.knowledgeKey ?? candidate.familyId);
+  const candidateSignature = semanticKnowledgeSignature(candidate);
+  return existing.some((question) =>
+    canonicalizeKnowledgeKey(question.knowledgeKey ?? question.familyId) === candidateKey ||
+    semanticKnowledgeSignature(question) === candidateSignature,
+  );
+}
+
 /** Clé canonique d'une question (question + bonne réponse normalisées) */
 export function canonicalKey(q: Pick<Question, "question" | "correctAnswer" | "answers">): string {
   return `${normalizeText(q.question)}|${normalizeText(q.answers[q.correctAnswer])}`;

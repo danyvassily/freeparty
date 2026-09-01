@@ -14,7 +14,12 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getSupabaseBrowser } from "@/lib/supabase/client";
 import { useGameStore, MAX_PLAYERS } from "@/lib/store/game";
-import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
+import { useHistoryStore } from "@/lib/store/history";
+import {
+  loadGameQuestions,
+  markQuestionAnswered,
+  markQuestionDisplayed,
+} from "@/lib/questions/question-client";
 import {
   createRoom,
   joinRoom,
@@ -55,7 +60,6 @@ import {
   User,
   ShieldCheck,
 } from "lucide-react";
-import { getOrCreateClientDeviceToken, setCachedProfileId } from "@/lib/anti-repetition/client-identity";
 import { useAuth } from "@/lib/auth/use-auth";
 
 type View = "entry" | "create" | "lobby" | "playing" | "results";
@@ -68,7 +72,7 @@ const AVAILABLE_ONLINE_MODES: GameMode[] = ["classic", "rapidfire", "truefalse",
 
 export function OnlineRoom() {
   const router = useRouter();
-  const { entries, addEntry } = useHistoryStore();
+  const { entries } = useHistoryStore();
   const savedPlayers = useGameStore((s) => s.players);
   const { user, isLoggedIn } = useAuth();
 
@@ -90,6 +94,9 @@ export function OnlineRoom() {
   const [showModeModal, setShowModeModal] = useState(false);
   const searchParams = useSearchParams();
   const roomFromUrl = searchParams.get("room");
+  const sessionId = session?.id;
+  const sessionPhase = session?.phase;
+  const hasCurrentQuestion = Boolean(session?.current_question);
 
   // Options de création & configuration
   const [currentMode, setCurrentMode] = useState<GameMode>("classic");
@@ -126,13 +133,13 @@ export function OnlineRoom() {
 
   // Abonnements Realtime quand un salon est actif
   useEffect(() => {
-    if (!session) return;
-    const unsubSession = subscribeSession(session.id, (s) => {
+    if (!sessionId) return;
+    const unsubSession = subscribeSession(sessionId, (s) => {
       sessionRef.current = s;
       setSession(s);
       if (s.mode) setCurrentMode(s.mode as GameMode);
     });
-    const unsubPlayers = subscribePlayers(session.id, (pl) => {
+    const unsubPlayers = subscribePlayers(sessionId, (pl) => {
       setPlayers(pl);
       const cached = myPlayerRef.current;
       if (cached) {
@@ -141,18 +148,18 @@ export function OnlineRoom() {
         setMyPlayer(updated);
       }
     });
-    const unsubAnswers = subscribeAnswers(session.id, setAnswers);
+    const unsubAnswers = subscribeAnswers(sessionId, setAnswers);
     return () => {
       unsubSession();
       unsubPlayers();
       unsubAnswers();
     };
-  }, [session]);
+  }, [sessionId]);
 
   // Synchronise la vue avec la phase serveur
   useEffect(() => {
-    if (!session) return;
-    const phase = session.phase;
+    if (!sessionPhase) return;
+    const phase = sessionPhase;
     const id = setTimeout(() => {
       if (phase === "playing") {
         setView((v) => (v === "lobby" || v === "create" ? "playing" : v));
@@ -163,11 +170,11 @@ export function OnlineRoom() {
       }
     }, 0);
     return () => clearTimeout(id);
-  }, [session]);
+  }, [sessionPhase]);
 
   // Timer du joueur quand la question est poussée
   useEffect(() => {
-    if (view !== "playing" || revealed || !session?.current_question) return;
+    if (view !== "playing" || revealed || !hasCurrentQuestion) return;
     const id = setTimeout(() => {
       setAnswered(false);
       setSelected(null);
@@ -188,7 +195,7 @@ export function OnlineRoom() {
       clearTimeout(id);
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [session, view, revealed, timePerQuestion]);
+  }, [session?.state_version, view, revealed, hasCurrentQuestion, timePerQuestion]);
 
   async function create() {
     if (joiningRef.current) return;
@@ -206,7 +213,6 @@ export function OnlineRoom() {
       setSession(res.session);
       myPlayerRef.current = res.player;
       setMyPlayer(res.player);
-      setCachedProfileId(res.player.id);
       localStorage.setItem("freeparty-last-room", JSON.stringify({ sessionId: res.session.id, playerId: res.player.id }));
       setView("lobby");
     } catch (e) {
@@ -228,7 +234,6 @@ export function OnlineRoom() {
       setSession(res.session);
       myPlayerRef.current = res.player;
       setMyPlayer(res.player);
-      setCachedProfileId(res.player.id);
       localStorage.setItem("freeparty-last-room", JSON.stringify({ sessionId: res.session.id, playerId: res.player.id }));
       setView("lobby");
     } catch (e) {
@@ -250,28 +255,24 @@ export function OnlineRoom() {
     setError(null);
     try {
       let qs = questionsRef.current;
-      // Sélection via le moteur Anti-Répétition
-      const playerProfileIds = players.map((p) => p.user_id || p.id);
-      const res = await fetch("/api/questions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      if (qs.length === 0) {
+        const data = await loadGameQuestions({
           count: session.question_count ?? 10,
-          category: session.category,
-          playerProfileIds,
-          deviceToken: getOrCreateClientDeviceToken(),
-          history: toSelectionHistory(entries),
-        }),
-      });
-      if (!res.ok) throw new Error("Impossible de charger les questions");
-      const data = await res.json();
-      qs = data.questions ?? [];
-      questionsRef.current = qs;
-      setQuestions(qs);
-      try {
-        localStorage.setItem(`freeparty-questions-${session.id}`, JSON.stringify(qs));
-      } catch {
-        // non bloquant
+          category: session.category ?? undefined,
+          players: savedPlayers.slice(0, 1),
+          history: entries,
+          sessionId: session.id,
+          onlineSessionId: session.id,
+          ai: true,
+        });
+        qs = data.questions ?? [];
+        questionsRef.current = qs;
+        setQuestions(qs);
+        try {
+          localStorage.setItem(`freeparty-questions-${session.id}`, JSON.stringify(qs));
+        } catch {
+          // localStorage non bloquant
+        }
       }
 
       if (qs.length === 0) throw new Error("Aucune question disponible");
@@ -295,6 +296,17 @@ export function OnlineRoom() {
     if (timerRef.current) clearInterval(timerRef.current);
   }
 
+  useEffect(() => {
+    const displayed = session?.current_question;
+    if (view !== "playing" || !displayed?.id || !displayed.familyId || savedPlayers.length === 0 || !session) return;
+    void markQuestionDisplayed({
+      question: { id: displayed.id, familyId: displayed.familyId },
+      players: savedPlayers.slice(0, 1),
+      sessionId: session.id,
+      onlineSessionId: session.id,
+    });
+  }, [view, session?.id, session?.state_version, session?.current_question, savedPlayers, session]);
+
   async function reveal() {
     if (!session || !isHost || !currentQuestion) return;
     const fresh = await refreshAnswers(session.id, index());
@@ -315,11 +327,14 @@ export function OnlineRoom() {
     await hostMarkAnswers(session.id, currentQuestion, fresh);
     await hostPushQuestion(session.id, currentQuestion, index(), true, session.state_version ?? 0);
     const mine = fresh.find((a) => a.player_id === myPlayer?.id);
-    addEntry({
-      questionId: currentQuestion.id,
-      familyId: currentQuestion.familyId,
-      answeredCorrectly: mine ? mine.answer_index === currentQuestion.correctAnswer : false,
-    });
+    if (savedPlayers[0] && mine) {
+      void markQuestionAnswered({
+        question: currentQuestion,
+        player: savedPlayers[0],
+        sessionId: session.id,
+        correct: mine.answer_index === currentQuestion.correctAnswer,
+      });
+    }
   }
 
   async function nextQuestion() {

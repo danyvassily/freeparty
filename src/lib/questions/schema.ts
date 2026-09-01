@@ -100,6 +100,14 @@ export const QuestionSchema = z
     conceptId: z.string().min(3),
     /** Famille anti-répétition (ex: capital-spain) */
     familyId: z.string().min(2),
+    /** Clé métier stable, indépendante de la formulation et de la langue. */
+    knowledgeKey: z.string().min(3).max(160).optional(),
+    /** SHA-256 du texte normalisé, calculé à l'ingestion. */
+    contentHash: z.string().regex(/^[a-f0-9]{64}$/).optional(),
+    /** Compteur global utilisé pour favoriser le contenu sous-utilisé. */
+    usageCount: z.number().int().min(0).optional(),
+    /** Les migrations prudentes marquent les familles incertaines pour revue. */
+    needsFamilyReview: z.boolean().optional(),
     type: z.enum(QUESTION_TYPES).default("mcq"),
     inputMode: z.enum(INPUT_MODES).default("mcq"),
     question: z.string().min(10, "Question trop courte").max(500),
@@ -183,11 +191,16 @@ export type Question = z.infer<typeof QuestionSchema>;
 export const QuestionHistorySchema = z.object({
   questionId: z.string(),
   familyId: z.string(),
+  /** Profil logique local/serveur exposé à la connaissance. */
+  profileId: z.string().optional(),
+  sessionId: z.string().optional(),
   gameId: z.string().optional(),
   userId: z.string().optional(),
   groupId: z.string().optional(),
   servedAt: z.string(),
-  answeredCorrectly: z.boolean(),
+  /** null tant que la question a seulement été affichée. */
+  answeredCorrectly: z.boolean().nullable(),
+  answeredAt: z.string().optional(),
   responseTimeMs: z.number().int().min(0).optional(),
 });
 export type QuestionHistory = z.infer<typeof QuestionHistorySchema>;

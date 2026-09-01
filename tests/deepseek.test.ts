@@ -11,6 +11,10 @@ const GOOD_Q = {
   explanation: "Mercure orbite à ~58 Mkm du Soleil.",
   subcategory: "astronomie",
   difficulty: "easy",
+  category: "science",
+  topic: "astronomy",
+  language: "fr",
+  knowledgeKey: "science.astronomy.mercury.closest-to-sun",
   en: {
     question: "Which planet is closest to the Sun?",
     answers: ["Venus", "Mercury", "Mars", "Earth"],
@@ -61,6 +65,8 @@ describe("deepseek — génération de questions", () => {
     expect(qs[0].answers[qs[0].correctAnswer]).toBe("Mercure");
     expect(qs[0].category).toBe("science");
     expect(qs[0].source.provider).toBe("deepseek");
+    expect(qs[0].knowledgeKey).toBe("science.astronomy.mercury.closest.to.sun");
+    expect(qs[0].contentHash).toMatch(/^[a-f0-9]{64}$/);
     expect(qs[0].explanation).toContain("Mercure");
     // Traduction anglaise embarquée, même index de bonne réponse
     expect(qs[0].translations?.en?.question).toBe("Which planet is closest to the Sun?");
@@ -85,5 +91,22 @@ describe("deepseek — génération de questions", () => {
     vi.stubGlobal("fetch", vi.fn(async () => new Response("Insufficient Balance", { status: 402 })));
     const { generateQuestionsWithDeepSeek } = await import("@/lib/questions/deepseek");
     expect(await generateQuestionsWithDeepSeek(5, "histoire")).toEqual([]);
+  });
+
+  it("rejette tout le lot si la vérification factuelle échoue", async () => {
+    let call = 0;
+    vi.stubGlobal("fetch", vi.fn(async () => {
+      call += 1;
+      if (call === 1) {
+        return new Response(
+          JSON.stringify({ choices: [{ message: { content: JSON.stringify({ questions: [GOOD_Q] }) } }] }),
+          { status: 200, headers: { "Content-Type": "application/json" } },
+        );
+      }
+      return new Response("Verifier unavailable", { status: 503 });
+    }));
+
+    const { generateQuestionsWithDeepSeek } = await import("@/lib/questions/deepseek");
+    expect(await generateQuestionsWithDeepSeek(1, "science")).toEqual([]);
   });
 });

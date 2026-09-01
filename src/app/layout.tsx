@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { BRAND } from "@/lib/brand";
+import { LanguageHydrator } from "@/components/providers/language-hydrator";
 
 export const metadata: Metadata = {
   title: `${BRAND.name} — ${BRAND.tagline}`,
@@ -67,7 +68,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <LanguageHydrator />
+        {children}
+      </body>
     </html>
   );
 }

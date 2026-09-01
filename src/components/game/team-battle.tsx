@@ -5,11 +5,16 @@
  * Les joueurs sont répartis automatiquement en deux équipes
  * qui répondent à tour de rôle.
  */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/lib/questions/schema";
 import { useGameStore } from "@/lib/store/game";
-import { useHistoryStore, toSelectionHistory } from "@/lib/store/history";
+import { useHistoryStore } from "@/lib/store/history";
+import {
+  loadGameQuestions,
+  markQuestionAnswered,
+  markQuestionDisplayed,
+} from "@/lib/questions/question-client";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { TimerBar, Confetti, PillBadge } from "@/components/ui/primitives";
 import { Trophy, Swords, AlertCircle, ChevronLeft } from "lucide-react";
@@ -17,7 +22,7 @@ import { Trophy, Swords, AlertCircle, ChevronLeft } from "lucide-react";
 export function TeamBattleGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
-  const { entries, addEntry } = useHistoryStore();
+  const { entries } = useHistoryStore();
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -33,9 +38,10 @@ export function TeamBattleGame() {
   const answeredRef = useRef(false);
 
   // Répartition automatique : un joueur sur deux dans chaque équipe
-  const players = config?.players ?? [];
+  const players = useMemo(() => config?.players ?? [], [config?.players]);
   const teamA = players.filter((_, i) => i % 2 === 0);
   const teamB = players.filter((_, i) => i % 2 === 1);
+  const currentTeamPlayers = currentTeam === "A" ? teamA : teamB;
   const currentName =
     currentTeam === "A"
       ? teamA.map((p) => p.name).join(" · ") || "Équipe A"
@@ -51,18 +57,14 @@ export function TeamBattleGame() {
         setScoreA(0);
         setScoreB(0);
         setCurrentTeam("A");
-        const res = await fetch("/api/questions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            count: config?.questionCount ?? 10,
-            category: config?.category,
-            difficulties: config?.difficulty && config.difficulty !== "mixed" ? [config.difficulty] : undefined,
-            history: toSelectionHistory(entries),
-          }),
+        const data = await loadGameQuestions({
+          count: config?.questionCount ?? 10,
+          category: config?.category,
+          difficulties: config?.difficulty && config.difficulty !== "mixed" ? [config.difficulty] : undefined,
+          players,
+          history: entries,
+          sessionId: config?.sessionId ?? crypto.randomUUID(),
         });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
         if (pool.length === 0) {
@@ -87,6 +89,15 @@ export function TeamBattleGame() {
   const current = questions[index];
   const isLast = index >= questions.length - 1;
 
+  useEffect(() => {
+    if (phase !== "playing" || !current) return;
+    void markQuestionDisplayed({
+      question: current,
+      players,
+      sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+    });
+  }, [phase, current, players, config?.sessionId]);
+
   function next() {
     answeredRef.current = false;
     setSelected(null);
@@ -110,7 +121,14 @@ export function TeamBattleGame() {
             answeredRef.current = true;
             setSelected(-1);
             setPhase("answer");
-            addEntry({ questionId: current.id, familyId: current.familyId, answeredCorrectly: false });
+            for (const player of currentTeamPlayers) {
+              void markQuestionAnswered({
+                question: current,
+                player,
+                sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+                correct: false,
+              });
+            }
             setTimeout(next, 1800);
           }
           return 0;
@@ -133,7 +151,14 @@ export function TeamBattleGame() {
       if (currentTeam === "A") setScoreA((s) => s + 10);
       else setScoreB((s) => s + 10);
     }
-    addEntry({ questionId: current.id, familyId: current.familyId, answeredCorrectly: ok });
+    for (const player of currentTeamPlayers) {
+      void markQuestionAnswered({
+        question: current,
+        player,
+        sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+        correct: ok,
+      });
+    }
     setPhase("answer");
     setTimeout(next, 1800);
   }

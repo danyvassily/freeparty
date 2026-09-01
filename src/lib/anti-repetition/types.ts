@@ -5,24 +5,6 @@
  */
 import type { Question, QuestionCategory, QuestionDifficulty, QuestionType } from "@/lib/questions/schema";
 
-export interface PlayerProfile {
-  id: string;
-  userId?: string | null;
-  createdAt: string;
-  updatedAt: string;
-  isAnonymous: boolean;
-  nickname?: string;
-  avatarColor?: number;
-}
-
-export interface PlayerDevice {
-  id: string;
-  profileId: string;
-  deviceToken: string;
-  createdAt: string;
-  lastSeenAt: string;
-}
-
 export interface QuestionFamily {
   id: string;
   knowledgeKey: string;

@@ -14,6 +14,8 @@
  */
 import { QuestionSchema, QuestionTranslationSchema, type Question, type QuestionCategory } from "./schema";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
+import { createHash } from "node:crypto";
+import { canonicalizeKnowledgeKey, normalizeText } from "./dedupe";
 
 const DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
 const MODEL = "deepseek-chat";
@@ -36,6 +38,10 @@ interface AiRawQuestion {
   explanation?: string;
   subcategory?: string;
   difficulty?: "easy" | "medium" | "hard";
+  category?: string;
+  topic?: string;
+  language?: string;
+  knowledgeKey?: string;
   /** Traduction anglaise de la même question (même index de bonne réponse) */
   en?: AiRawTranslation;
 }
@@ -87,8 +93,9 @@ RÈGLES ABSOLUES :
 - La question ne contient JAMAIS sa propre réponse.
 - Chaque question a une explication courte (1 phrase) confirmant le fait.
 - Varie les sujets : pas deux questions sur le même fait ni le même sous-thème.
-- Réponds UNIQUEMENT en JSON : {"questions":[{"question":"...","answers":["...","...","...","..."],"correctIndex":0,"explanation":"...","subcategory":"...","difficulty":"easy|medium|hard","en":{"question":"...","answers":["...","...","...","..."],"explanation":"..."}}]}
+- Réponds UNIQUEMENT en JSON : {"questions":[{"question":"...","answers":["...","...","...","..."],"correctIndex":0,"explanation":"...","category":"geography","topic":"countries","subcategory":"capitals","difficulty":"easy|medium|hard","language":"fr","knowledgeKey":"geo.country.JP.capital","en":{"question":"...","answers":["...","...","...","..."],"explanation":"..."}}]}
 - answers contient exactement 4 chaînes distinctes ; correctIndex (0-3) pointe la bonne réponse ; varie la position de la bonne réponse.
+- knowledgeKey est OBLIGATOIRE, stable, déterministe, indépendante de la formulation et de la langue. Deux questions testant le même fait ont exactement la même knowledgeKey.
 - "en" est OBLIGATOIRE : traduction anglaise fidèle de la question et des 4 réponses DANS LE MÊME ORDRE (correctIndex reste valide), en anglais naturel.`;
 
 
@@ -111,9 +118,10 @@ async function verifyBatch(raw: AiRawQuestion[]): Promise<Set<number>> {
     );
     const parsed = JSON.parse(content) as { bad?: number[] };
     return new Set((parsed.bad ?? []).filter((n) => Number.isInteger(n)));
-  } catch {
-    // La vérification échoue → on ne filtre rien (le schéma Zod protège déjà)
-    return new Set();
+  } catch (error) {
+    // Échec fermé : sans validation factuelle, aucune question IA n'est servie.
+    console.error("[deepseek] vérification factuelle échouée:", error);
+    return new Set(raw.map((_, index) => index));
   }
 }
 
@@ -155,6 +163,8 @@ export async function generateQuestionsWithDeepSeek(
   for (const [i, q] of kept.entries()) {
     const slug = slugify(q.question ?? "");
     if (!slug) continue;
+    const knowledgeKey = canonicalizeKnowledgeKey(q.knowledgeKey ?? "");
+    if (knowledgeKey.length < 3) continue;
     // Traduction anglaise : validée par le sous-schéma ; absente si invalide
     // (le jeu retombe alors sur le français pour cette question)
     const enParsed = q.en ? QuestionTranslationSchema.safeParse(q.en) : null;
@@ -165,8 +175,10 @@ export async function generateQuestionsWithDeepSeek(
 
     const candidate = {
       id: `ai-${stamp}-${i}-${slug.slice(0, 24)}`,
-      conceptId: `ai-${slug}`,
-      familyId: `ai-${slug}`,
+      conceptId: knowledgeKey,
+      familyId: knowledgeKey,
+      knowledgeKey,
+      contentHash: createHash("sha256").update(normalizeText(q.question)).digest("hex"),
       type: "mcq",
       inputMode: "mcq",
       question: q.question,

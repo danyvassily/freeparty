@@ -12,6 +12,7 @@ import {
   MAX_PLAYERS,
   type GameConfig,
   type GameMode,
+  newGameSessionId,
 } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
 import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
@@ -57,6 +58,7 @@ export function GameSetup({ mode, onBack, onLaunch }: GameSetupProps) {
     setPlayers(finalPlayers);
 
     const cfg: GameConfig = {
+      sessionId: newGameSessionId(),
       mode,
       category,
       difficulty: "mixed",

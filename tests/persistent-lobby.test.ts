@@ -25,7 +25,7 @@ import {
   joinParty,
   type RealtimeEventPayload,
 } from "@/lib/social";
-import { inMemoryIdentity, questionHistoryStore, reservationStore } from "@/lib/anti-repetition";
+import { questionHistoryStore, reservationStore } from "@/lib/anti-repetition";
 
 // Mock questions for test
 const testQuestions: Question[] = [
@@ -158,7 +158,6 @@ describe("Salons Persistants & Système Social — Tests Spécification", () => 
     presenceStore.clear();
     friendStore.clear();
     partyStore.clear();
-    inMemoryIdentity.clear();
     questionHistoryStore.clear();
     reservationStore.clear();
   });

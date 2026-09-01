@@ -5,7 +5,7 @@
  */
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { detectBrowserLanguage, type UILanguage } from "@/lib/i18n";
+import type { UILanguage } from "@/lib/i18n";
 
 interface LanguageState {
   language: UILanguage;
@@ -15,9 +15,11 @@ interface LanguageState {
 export const useLanguageStore = create<LanguageState>()(
   persist(
     (set) => ({
-      language: detectBrowserLanguage(),
+      // Le rendu serveur et le premier rendu client doivent être identiques.
+      // La préférence locale est restaurée par LanguageHydrator après montage.
+      language: "fr",
       setLanguage: (language) => set({ language }),
     }),
-    { name: "freeparty-language" },
+    { name: "freeparty-language", skipHydration: true },
   ),
 );

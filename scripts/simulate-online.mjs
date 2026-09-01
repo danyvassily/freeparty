@@ -84,16 +84,13 @@ try {
 
   // 3. Alex rejoint par code
   console.log("\n3. Alex rejoint avec le code");
-  const { data: found, error: e4 } = await alex.from("game_sessions").select("*").eq("room_code", code).eq("phase", "lobby").maybeSingle();
-  if (e4 || !found) { ko("recherche du salon par code", e4 ?? "introuvable"); throw new Error("stop"); }
-  ok("salon trouvé par code (phase lobby)");
-  const { error: e5 } = await alex.from("game_players").insert({ session_id: sessionId, user_id: alexId, name: "Alex", is_host: false });
-  if (e5) { ko("INSERT game_players (Alex)", e5); throw new Error("stop"); }
+  const { error: e5 } = await alex.rpc("join_game_session", { p_room_code: code, p_player_name: "Alex" });
+  if (e5) { ko("join_game_session (Alex)", e5); throw new Error("stop"); }
   const { data: alexPlayer, error: e6 } = await alex.from("game_players").select("*").eq("session_id", sessionId).eq("user_id", alexId).single();
   if (e6) { ko("relecture joueur Alex", e6); throw new Error("stop"); }
   ok(`Alex inscrit (${alexPlayer.name})`);
 
-  // 4. Capacité : le salon de 2 places — on vérifie juste la logique de comptage
+  // 4. Capacité : l'adhésion est passée par la fonction atomique
   const { count } = await alex.from("game_players").select("id", { count: "exact", head: true }).eq("session_id", sessionId);
   if (count === 2) ok(`comptage joueurs = 2/4`); else ko("comptage joueurs", `attendu 2, obtenu ${count}`);
 

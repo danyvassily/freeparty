@@ -10,7 +10,7 @@ import { Settings, Globe, Smartphone, Sparkles, Users, ArrowRight, Play, Plus, M
 import { BRAND } from "@/lib/brand";
 import { GameSetup } from "@/components/home/game-setup";
 import { MODE_META, MODE_SECTIONS } from "@/lib/game/modes";
-import { useGameStore, resizePlayers, MAX_PLAYERS, type GameMode } from "@/lib/store/game";
+import { useGameStore, resizePlayers, MAX_PLAYERS, makePlayer, newGameSessionId, type GameMode } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
 import { useAuth } from "@/lib/auth/use-auth";
 import { PlayerDot } from "@/components/ui/primitives";
@@ -42,7 +42,7 @@ export function HomeClient() {
   const [setupMode, setSetupMode] = useState<GameMode | null>(null);
   const [quickJoinCode, setQuickJoinCode] = useState("");
 
-  const effectivePlayers = players.length >= 1 ? players : [{ id: "p1", name: "Joueur 1", color: 0, score: 0, correct: 0, wrong: 0 }];
+  const effectivePlayers = players.length >= 1 ? players : [makePlayer(0, "Joueur 1")];
 
   function handlePlayerCount(delta: number) {
     const nextCount = Math.max(1, Math.min(MAX_PLAYERS, effectivePlayers.length + delta));
@@ -51,6 +51,7 @@ export function HomeClient() {
 
   function launchQuickGame() {
     setConfig({
+      sessionId: newGameSessionId(),
       mode: "classic",
       category: "mixed",
       difficulty: "mixed",

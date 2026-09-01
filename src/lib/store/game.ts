@@ -24,6 +24,8 @@ export const MAX_PLAYERS = 8;
 
 export interface Player {
   id: string;
+  /** Identité anti-répétition stable, distincte du nom affiché. */
+  profileToken: string;
   name: string;
   /** 0..7 : couleur d'avatar (index palette) */
   color: number;
@@ -36,6 +38,8 @@ export interface Player {
 }
 
 export interface GameConfig {
+  /** Identifiant stable du lot et de ses réservations. */
+  sessionId: string;
   mode: GameMode;
   category: QuestionCategory | "mixed";
   difficulty: string; // "mixed" | easy | medium | hard | expert
@@ -63,10 +67,18 @@ export const PLAYER_COLORS = [
   "#af52de", "#5ac8fa", "#ffcc00", "#5856d6",
 ];
 
+function randomId(): string {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) return crypto.randomUUID();
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+}
+
+export const newGameSessionId = randomId;
+
 /** Crée un joueur avec un nom et une couleur par défaut. */
 export function makePlayer(index: number, name?: string): Player {
   return {
-    id: `p-${Date.now().toString(36)}-${index}-${Math.random().toString(36).slice(2, 6)}`,
+    id: `p-${randomId()}`,
+    profileToken: randomId(),
     name: name?.trim() || `Joueur ${index + 1}`,
     color: index % PLAYER_COLORS.length,
     score: 0,
@@ -81,7 +93,14 @@ export function resizePlayers(current: Player[], count: number): Player[] {
   const out: Player[] = [];
   for (let i = 0; i < target; i++) {
     if (current[i]) {
-      out.push({ ...current[i], color: i % PLAYER_COLORS.length, score: 0, correct: 0, wrong: 0 });
+      out.push({
+        ...current[i],
+        profileToken: current[i].profileToken || randomId(),
+        color: i % PLAYER_COLORS.length,
+        score: 0,
+        correct: 0,
+        wrong: 0,
+      });
     } else {
       out.push(makePlayer(i));
     }
@@ -90,6 +109,7 @@ export function resizePlayers(current: Player[], count: number): Player[] {
 }
 
 export const DEFAULT_CONFIG: GameConfig = {
+  sessionId: randomId(),
   mode: "classic",
   category: "mixed",
   difficulty: "mixed",
