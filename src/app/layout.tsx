@@ -47,27 +47,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (document.cookie && document.cookie.length > 2500) {
-                  var cs = document.cookie.split(";");
-                  for (var i = 0; i < cs.length; i++) {
-                    var c = cs[i].trim();
-                    var eq = c.indexOf("=");
-                    var n = eq > -1 ? c.substring(0, eq) : c;
-                    if (c.indexOf("data:image") > -1 || (n.indexOf("sb-") === 0 && c.length > 1800)) {
-                      document.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                    }
-                  }
-                }
-              } catch (e) {}
-            `,
-          }}
-        />
-      </head>
       <body className="antialiased">
         <LanguageHydrator />
         {children}

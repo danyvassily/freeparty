@@ -18,6 +18,10 @@ import {
 import { useGameStore } from "@/lib/store/game";
 import { useLanguageStore } from "@/lib/store/language";
 import type { UILanguage } from "@/lib/i18n";
+import {
+  MIN_ACCOUNT_PASSWORD_LENGTH,
+  passwordRecoveryRedirect,
+} from "@/lib/auth/password";
 
 export interface AuthUser {
   id: string;
@@ -30,6 +34,8 @@ export interface AuthUser {
 }
 
 const LOCAL_AUTH_KEY = "freeparty_auth_user";
+const PASSWORD_RECOVERY_SESSION_KEY = "freeparty_password_recovery_started_at";
+const PASSWORD_RECOVERY_MAX_AGE_MS = 30 * 60 * 1000;
 
 function safeGetStorage(key: string): string | null {
   if (typeof window === "undefined") return null;
@@ -58,21 +64,33 @@ function safeRemoveStorage(key: string): void {
   }
 }
 
-/** Nettoie tout cookie surdimensionné qui pourrait provoquer une erreur 494 */
-export function sanitizeBrowserCookies(): void {
-  if (typeof document === "undefined") return;
+function markPasswordRecoveryStarted(): void {
+  if (typeof window === "undefined") return;
   try {
-    if (document.cookie && document.cookie.length > 2500) {
-      const cookies = document.cookie.split(";");
-      for (const cookie of cookies) {
-        const trimmed = cookie.trim();
-        const eqPos = trimmed.indexOf("=");
-        const name = eqPos > -1 ? trimmed.substring(0, eqPos) : trimmed;
-        if (trimmed.includes("data:image") || (name.startsWith("sb-") && trimmed.length > 1800)) {
-          document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
-        }
-      }
-    }
+    sessionStorage.setItem(PASSWORD_RECOVERY_SESSION_KEY, String(Date.now()));
+  } catch {
+    // La session Supabase reste l'autorité si le stockage navigateur est indisponible.
+  }
+}
+
+function hasFreshPasswordRecoveryIntent(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    const startedAt = Number(sessionStorage.getItem(PASSWORD_RECOVERY_SESSION_KEY));
+    return (
+      Number.isFinite(startedAt) &&
+      startedAt > 0 &&
+      Date.now() - startedAt <= PASSWORD_RECOVERY_MAX_AGE_MS
+    );
+  } catch {
+    return false;
+  }
+}
+
+function clearPasswordRecoveryIntent(): void {
+  if (typeof window === "undefined") return;
+  try {
+    sessionStorage.removeItem(PASSWORD_RECOVERY_SESSION_KEY);
   } catch {
     // ignore
   }
@@ -136,7 +154,6 @@ export function useAuth() {
       return;
     }
 
-    sanitizeBrowserCookies();
     setLoading(true);
 
     try {
@@ -245,7 +262,15 @@ export function useAuth() {
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured) {
       const { data: sub } = sb.auth.onAuthStateChange((event) => {
-        if (event === "SIGNED_IN" || event === "SIGNED_OUT" || event === "USER_UPDATED") {
+        if (event === "PASSWORD_RECOVERY" && typeof window !== "undefined") {
+          markPasswordRecoveryStarted();
+        }
+        if (
+          event === "SIGNED_IN" ||
+          event === "SIGNED_OUT" ||
+          event === "USER_UPDATED" ||
+          event === "PASSWORD_RECOVERY"
+        ) {
           refreshUser();
         }
       });
@@ -271,6 +296,11 @@ export function useAuth() {
     language?: UILanguage;
   }): Promise<{ user: AuthUser; message?: string }> => {
     const { email, password, name, avatarUrl, language = "fr" } = params;
+    if (password.length < MIN_ACCOUNT_PASSWORD_LENGTH) {
+      throw new Error(
+        `Le mot de passe doit contenir au moins ${MIN_ACCOUNT_PASSWORD_LENGTH} caractères.`,
+      );
+    }
     const cleanName = name.trim().slice(0, 24) || email.split("@")[0];
     const deviceToken = await getOrCreateDeviceToken();
 
@@ -286,6 +316,8 @@ export function useAuth() {
         email,
         password,
         options: {
+          emailRedirectTo:
+            typeof window !== "undefined" ? `${window.location.origin}/auth` : undefined,
           data: {
             username: cleanName,
             language,
@@ -420,7 +452,7 @@ export function useAuth() {
       };
 
       setUser(activeUser);
-      setCachedProfileId(userId);
+      setCachedProfileId(profileId);
       safeSetStorage(LOCAL_AUTH_KEY, JSON.stringify(activeUser));
 
       const updatedPlayers = players.map((p, i) =>
@@ -461,7 +493,8 @@ export function useAuth() {
   const signOut = async (): Promise<void> => {
     const sb = getSupabaseBrowser();
     if (sb && isSupabaseConfigured) {
-      await sb.auth.signOut();
+      const { error } = await sb.auth.signOut({ scope: "local" });
+      if (error) throw error;
     }
 
     safeRemoveStorage(LOCAL_AUTH_KEY);
@@ -477,6 +510,78 @@ export function useAuth() {
       avatarColor: 0,
       avatarUrl: null,
     });
+  };
+
+  /** Envoie un lien sécurisé sans révéler si l'adresse possède un compte. */
+  const requestPasswordReset = async (email: string): Promise<void> => {
+    const sb = getSupabaseBrowser();
+    if (!sb || !isSupabaseConfigured) {
+      throw new Error("La récupération du mot de passe nécessite la connexion à Supabase.");
+    }
+
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail) throw new Error("Saisissez votre adresse email.");
+
+    const { error } = await sb.auth.resetPasswordForEmail(cleanEmail, {
+      redirectTo: passwordRecoveryRedirect(window.location.origin),
+    });
+    if (error) throw error;
+  };
+
+  /** Change le mot de passe après avoir vérifié le mot de passe actuel. */
+  const changePassword = async (params: {
+    currentPassword: string;
+    newPassword: string;
+  }): Promise<void> => {
+    if (params.newPassword.length < MIN_ACCOUNT_PASSWORD_LENGTH) {
+      throw new Error(
+        `Le nouveau mot de passe doit contenir au moins ${MIN_ACCOUNT_PASSWORD_LENGTH} caractères.`,
+      );
+    }
+    if (!user?.email || user.isAnonymous) {
+      throw new Error("Connectez-vous à votre compte pour modifier le mot de passe.");
+    }
+
+    const sb = getSupabaseBrowser();
+    if (!sb || !isSupabaseConfigured) {
+      throw new Error("La modification du mot de passe nécessite la connexion à Supabase.");
+    }
+
+    const { error: verificationError } = await sb.auth.signInWithPassword({
+      email: user.email,
+      password: params.currentPassword,
+    });
+    if (verificationError) throw new Error("Le mot de passe actuel est incorrect.");
+
+    const { error } = await sb.auth.updateUser({ password: params.newPassword });
+    if (error) throw error;
+  };
+
+  /** Termine le parcours ouvert depuis l'email « mot de passe oublié ». */
+  const completePasswordRecovery = async (newPassword: string): Promise<void> => {
+    if (newPassword.length < MIN_ACCOUNT_PASSWORD_LENGTH) {
+      throw new Error(
+        `Le nouveau mot de passe doit contenir au moins ${MIN_ACCOUNT_PASSWORD_LENGTH} caractères.`,
+      );
+    }
+
+    const sb = getSupabaseBrowser();
+    if (!sb || !isSupabaseConfigured) {
+      throw new Error("Le lien de récupération ne peut pas être validé hors ligne.");
+    }
+
+    const { data: sessionData } = await sb.auth.getSession();
+    if (
+      !sessionData.session ||
+      sessionData.session.user.is_anonymous ||
+      !hasFreshPasswordRecoveryIntent()
+    ) {
+      throw new Error("Ce lien a expiré. Demandez un nouveau lien de récupération.");
+    }
+
+    const { error } = await sb.auth.updateUser({ password: newPassword });
+    if (error) throw error;
+    clearPasswordRecoveryIntent();
   };
 
   /**
@@ -536,6 +641,9 @@ export function useAuth() {
     signUp,
     signIn,
     signOut,
+    requestPasswordReset,
+    changePassword,
+    completePasswordRecovery,
     updateName,
     updateAvatar,
     refreshUser,

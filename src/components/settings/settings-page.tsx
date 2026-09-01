@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ChevronLeft, RotateCcw, ShieldCheck, ChevronRight } from "lucide-react";
+import { ChevronLeft, RotateCcw, ShieldCheck, ChevronRight, KeyRound, LogOut } from "lucide-react";
 import { useSettingsStore, TIME_OPTIONS } from "@/lib/store/settings";
 import { useLanguageStore } from "@/lib/store/language";
 import { useAuth } from "@/lib/auth/use-auth";
@@ -90,7 +90,7 @@ export function SettingsPage() {
   const router = useRouter();
   const lang = useLanguageStore((s) => s.language);
   const s = useSettingsStore();
-  const { user, isLoggedIn } = useAuth();
+  const { user, isLoggedIn, signOut } = useAuth();
   const isFR = lang === "fr";
 
   return (
@@ -143,6 +143,36 @@ export function SettingsPage() {
           </div>
           <ChevronRight className="h-5 w-5 text-fp-text-dim" />
         </button>
+        {isLoggedIn && (
+          <>
+            <button
+              type="button"
+              onClick={() => router.push("/auth")}
+              className="flex w-full items-center justify-between border-t border-black/[0.05] px-4 py-3.5 text-left transition hover:bg-black/[0.02]"
+            >
+              <span className="flex items-center gap-3 text-[14px] font-medium text-fp-text">
+                <KeyRound className="h-4.5 w-4.5 text-fp-primary" />
+                {isFR ? "Modifier le mot de passe" : "Change password"}
+              </span>
+              <ChevronRight className="h-5 w-5 text-fp-text-dim" />
+            </button>
+            <button
+              type="button"
+              onClick={async () => {
+                try {
+                  await signOut();
+                  router.push("/");
+                } catch (error) {
+                  console.error("[settings] Sign out failed", error);
+                }
+              }}
+              className="flex w-full items-center gap-3 border-t border-black/[0.05] px-4 py-3.5 text-left text-[14px] font-semibold text-fp-danger transition hover:bg-black/[0.02]"
+            >
+              <LogOut className="h-4.5 w-4.5" />
+              {isFR ? "Se déconnecter" : "Sign out"}
+            </button>
+          </>
+        )}
       </div>
 
       {/* Quiz */}
