@@ -49,7 +49,7 @@
       "L'orang-outan",
       "Le koala"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "animal-facts",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/koala"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-octopus-blue-blood",
@@ -125,7 +125,7 @@
       "Il est externe",
       "Il est en os creux"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "animal-facts",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Il_est_cartilagineux"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-flamingo-pink",
@@ -201,7 +201,7 @@
       "24 heures",
       "Plusieurs mois"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "animal-facts",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Plusieurs_mois"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-snail-teeth",
@@ -277,7 +277,7 @@
       "La poule",
       "Le canard"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "animal-facts",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/vache"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-cat-sleep",
@@ -353,7 +353,7 @@
       "1910",
       "1889"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "records",
     "difficulty": "easy",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1889"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-eiffel-grows",
@@ -429,7 +429,7 @@
       "Un an",
       "Dix ans"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "food-facts",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/milliers_d'ann%C3%A9es"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-banana-k40",
@@ -505,7 +505,7 @@
       "Elles n'ont pas de graines",
       "Leurs « graines » sont à l'extérieur"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "food-facts",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Leurs_%C2%AB_graines_%C2%BB_sont_%C3%A0_l'ext%C3%A9rieur"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-everest-grows",
@@ -581,7 +581,7 @@
       "Environ 20 %",
       "Environ 50 %"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "space-ocean-facts",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Environ_80_%25"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-astronauts-grow",
@@ -657,7 +657,7 @@
       "400 km/h",
       "160 km/h"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "human-body-facts",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/160_km%2Fh"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-heartbeat-lifetime",
@@ -733,7 +733,7 @@
       "2 jours",
       "6 mois"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "records",
     "difficulty": "expert",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/68_ans"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-penguin-pebble",
@@ -809,7 +809,7 @@
       "De l'air",
       "De la graisse"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "animal-facts",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/la_graisse"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-elephant-trunk",
@@ -885,7 +885,7 @@
       "1 fois",
       "1 000 fois"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "nature-facts",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Environ_100_fois"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-space-silence",
@@ -961,7 +961,7 @@
       "1 million d'années",
       "100 000 ans"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "space-ocean-facts",
     "difficulty": "hard",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/100_000_ans"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-dice-7",
@@ -1113,7 +1113,7 @@
       "Dans un sous-marin",
       "Dans un garage"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "insolite",
     "subcategory": "insolite",
     "difficulty": "medium",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dans_un_garage"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

@@ -49,7 +49,7 @@
       "1924",
       "1896"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "jeux-olympiques",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1896"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-coubertin",
@@ -125,7 +125,7 @@
       "4",
       "6"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "jeux-olympiques",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/5"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-olympic-flame",
@@ -201,7 +201,7 @@
       "Unis dans la victoire",
       "Plus vite, plus haut, plus fort"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "jeux-olympiques",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Plus_vite%2C_plus_haut%2C_plus_fort"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-100m-bolt",
@@ -277,7 +277,7 @@
       "9 s 69",
       "9 s 72"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "records",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/9_s_58"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-marathon-distance",
@@ -353,7 +353,7 @@
       "Thémistocle",
       "Phidippidès"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "sports",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Phidippid%C3%A8s"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-grand-slam",
@@ -429,7 +429,7 @@
       "Le gazon",
       "Le dur"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "sports",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/terre_battue"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-djokovic-record",
@@ -581,7 +581,7 @@
       "L'athlétisme",
       "Le cyclisme"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "legendes",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/natation"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-tour-de-france",
@@ -657,7 +657,7 @@
       "Rose",
       "Jaune"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "sports",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jaune"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-merckx-tours",
@@ -733,7 +733,7 @@
       "Le Canada",
       "L'Espagne"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "sports",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%89tats-Unis"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-jordan-bulls",
@@ -809,7 +809,7 @@
       "8",
       "23"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "legendes",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/23"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-naismith",
@@ -885,7 +885,7 @@
       "James Naismith",
       "Pierre de Coubertin"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "sports",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/William_Morgan"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-hamilton-7",
@@ -961,7 +961,7 @@
       "McLaren",
       "Ferrari"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "legendes",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ferrari"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-six-nations",
@@ -1037,7 +1037,7 @@
       "2 fois",
       "5 fois"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "records",
     "difficulty": "hard",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/3_fois"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-mma",
@@ -1113,7 +1113,7 @@
       "Toujours plus haut",
       "Flotte comme un papillon, pique comme une abeille"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "legendes",
     "difficulty": "medium",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Flotte_comme_un_papillon%2C_pique_comme_une_abeille"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-ali-heavyweight",
@@ -1189,7 +1189,7 @@
       "2",
       "4"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "sport",
     "subcategory": "jeux-olympiques",
     "difficulty": "hard",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/3"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-kipchoge",
@@ -1265,7 +1265,7 @@
       "Fanny Blankers-Koen",
       "Alice Milliat"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "jeux-olympiques",
     "difficulty": "expert",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alice_Milliat"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-judo-japan",

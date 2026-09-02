@@ -125,7 +125,7 @@
       "Antoine Courtois",
       "Théobald Boehm"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "instruments",
     "difficulty": "hard",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Adolphe_Sax"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-turntable",
@@ -201,7 +201,7 @@
       "Queens",
       "Le Bronx"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "genres",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bronx"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-jazz-origin",
@@ -277,7 +277,7 @@
       "Cuba",
       "Le Brésil"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "genres",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jama%C3%AFque"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-bob-marley",
@@ -353,7 +353,7 @@
       "La Grèce",
       "Le Portugal"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "genres",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Portugal"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-flamenco-country",
@@ -429,7 +429,7 @@
       "Le Chili",
       "Le Pérou"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "genres",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Argentine"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-opera-country",
@@ -505,7 +505,7 @@
       "Enrico Caruso",
       "Luciano Pavarotti"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "classique",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Luciano_Pavarotti"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-three-tenors",
@@ -581,7 +581,7 @@
       "Paris",
       "Lyon"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Marseille"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-ntm-origin",
@@ -657,7 +657,7 @@
       "Passi",
       "MC Solaar"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/MC_Solaar"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-stromae-formidable",
@@ -733,7 +733,7 @@
       "Tal",
       "Shy'm"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Indila"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-zaz-je-veux",
@@ -809,7 +809,7 @@
       "Rohff",
       "Maître Gims"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ma%C3%AEtre_Gims"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-booba-92i",
@@ -885,7 +885,7 @@
       "Kendji Girac",
       "Louane"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vianney"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-louane-avenir",
@@ -961,7 +961,7 @@
       "Slimane",
       "Kendji Girac"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Kendji_Girac"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-mika-grace-kelly",
@@ -1037,7 +1037,7 @@
       "Amy Winehouse",
       "Duffy"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Adele"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-taylor-swift-country",
@@ -1113,7 +1113,7 @@
       "Taïwan",
       "La Corée du Sud"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "easy",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Cor%C3%A9e_du_Sud"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-psy-gangnam",
@@ -1189,7 +1189,7 @@
       "La France",
       "La Suède"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "records",
     "difficulty": "hard",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Irlande"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-white-christmas",
@@ -1265,7 +1265,7 @@
       "Paul McCartney",
       "Elton John"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Elton_John"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-nina-simone",
@@ -1341,7 +1341,7 @@
       "Tina Turner",
       "Diana Ross"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Aretha_Franklin"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-tina-turner-country",
@@ -1417,7 +1417,7 @@
       "Kris Kristofferson",
       "Johnny Cash"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Johnny_Cash"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-dolly-parton",
@@ -1493,7 +1493,7 @@
       "Leonard Cohen",
       "Bruce Springsteen"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "records",
     "difficulty": "hard",
@@ -1509,15 +1509,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bob_Dylan"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-springsteen-boss",
@@ -1569,7 +1569,7 @@
       "Robert Smith",
       "Bono"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -1585,15 +1585,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bono"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-coldplay-yellow",
@@ -1645,7 +1645,7 @@
       "The Offspring",
       "Blink-182"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -1661,15 +1661,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Green_Day"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-ed-sheeran-shape",

@@ -49,7 +49,7 @@
       "Grégoire XVI",
       "Pie VII"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pie_VII"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-trafalgar",
@@ -125,7 +125,7 @@
       "Iéna",
       "Wagram"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Austerlitz"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-austerlitz-annee",
@@ -201,7 +201,7 @@
       "Le traité de Fontainebleau",
       "Le traité de Tilsit"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "hard",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/trait%C3%A9_de_Tilsit"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-blocus",
@@ -277,7 +277,7 @@
       "1805",
       "1814"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1812"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-moscova",
@@ -353,7 +353,7 @@
       "Le Rhin",
       "La Bérézina"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/B%C3%A9r%C3%A9zina"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-leipzig",
@@ -429,7 +429,7 @@
       "1813",
       "1815"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1814"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-elbe",
@@ -505,7 +505,7 @@
       "1816",
       "1815"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1815"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-cent-jours",
@@ -581,7 +581,7 @@
       "Ligny",
       "Wavre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Waterloo"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-wellington",
@@ -657,7 +657,7 @@
       "La Jamaïque",
       "Sainte-Hélène"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Sainte-H%C3%A9l%C3%A8ne"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-mort-1821",
@@ -733,7 +733,7 @@
       "Le Code pénal",
       "La Charte constitutionnelle"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-napoleoniennes",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Code_civil"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-nap-iena",

@@ -49,7 +49,7 @@
       "L'Homme qui rit",
       "Les Misérables"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Mis%C3%A9rables"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-hugo-javert",
@@ -125,7 +125,7 @@
       "Jules Verne",
       "Victor Hugo"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alexandre_Dumas"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-dumas-monte-cristo",
@@ -201,7 +201,7 @@
       "Aramis",
       "d'Artagnan"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Artagnan"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-verne-80-jours",
@@ -277,7 +277,7 @@
       "Le Titanic",
       "Le Beagle"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Nautilus"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-verne-bet",
@@ -353,7 +353,7 @@
       "Michel Strogoff",
       "Vingt mille lieues sous les mers"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vingt_mille_lieues_sous_les_mers"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-maupassant",
@@ -429,7 +429,7 @@
       "Honoré de Balzac",
       "Stendhal"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Gustave_Flaubert"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-zola-rougon",
@@ -505,7 +505,7 @@
       "La Bête humaine",
       "Germinal"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Germinal"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-balzac",
@@ -581,7 +581,7 @@
       "Les Faux-monnayeurs",
       "Le Grand Meaulnes"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%80_la_recherche_du_temps_perdu"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-camus-etranger",
@@ -657,7 +657,7 @@
       "François Mauriac",
       "Albert Camus"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "prix",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Albert_Camus"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-sartre-refus",
@@ -733,7 +733,7 @@
       "Boris Vian",
       "Jean Giono"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-petit-prince-record",
@@ -809,7 +809,7 @@
       "Frédéric Mistral",
       "Marcel Pagnol"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Marcel_Pagnol"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-baudelaire",
@@ -885,7 +885,7 @@
       "12 ans",
       "20 ans"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "poesie",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/16_ans"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-moliere-name",
@@ -961,7 +961,7 @@
       "Les Fourberies de Scapin",
       "L'Avare"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "theatre",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Avare"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-tartuffe",
@@ -1037,7 +1037,7 @@
       "Voltaire",
       "Jean Racine"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jean_de_La_Fontaine"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-goethe-werther",
@@ -1113,7 +1113,7 @@
       "Ivan Tourgueniev",
       "Léon Tolstoï"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/L%C3%A9on_Tolsto%C3%AF"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

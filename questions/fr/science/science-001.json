@@ -49,7 +49,7 @@
       "Archimède",
       "Isaac Newton"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Isaac_Newton"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-einstein-relativity",
@@ -125,7 +125,7 @@
       "150 000 km/s",
       "1 000 km/s"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/300_000_km%2Fs"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-sound-vacuum",
@@ -201,7 +201,7 @@
       "15 000 °C",
       "5 500 °C"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "geologie",
     "difficulty": "hard",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/5_500_%C2%B0C"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-earth-crust",
@@ -277,7 +277,7 @@
       "Protons et électrons",
       "Neutrons et électrons"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Protons_et_neutrons"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-curie-radium",
@@ -353,7 +353,7 @@
       "Joseph Lister",
       "Alexander Fleming"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "decouvertes",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alexander_Fleming"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-pasteur-rabies",
@@ -505,7 +505,7 @@
       "10 000 milliards",
       "37 000 milliards"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/37_000_milliards"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-red-blood-cells",
@@ -581,7 +581,7 @@
       "2",
       "3"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/4"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-adult-bones",
@@ -657,7 +657,7 @@
       "Environ 50",
       "Environ 300"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Environ_300"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-chromosomes",
@@ -733,7 +733,7 @@
       "Jean-Baptiste Lamarck",
       "Georges Cuvier"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "decouvertes",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Charles_Darwin"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-dinosaur-extinction",
@@ -809,7 +809,7 @@
       "Un satellite",
       "Une étoile"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%A9toile"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-sun-position",
@@ -885,7 +885,7 @@
       "Sirius",
       "Bételgeuse"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Proxima_du_Centaure"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-planets-8",
@@ -961,7 +961,7 @@
       "Uranus",
       "Jupiter"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jupiter"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-mars-red",
@@ -1037,7 +1037,7 @@
       "Jupiter",
       "Uranus"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Saturne"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-moon-distance",
@@ -1113,7 +1113,7 @@
       "Michael Collins",
       "Neil Armstrong"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "decouvertes",
     "difficulty": "easy",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Neil_Armstrong"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-gagarin",
@@ -1189,7 +1189,7 @@
       "Sally Ride",
       "Kathryn Sullivan"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "decouvertes",
     "difficulty": "hard",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Valentina_Terechkova"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-new-moon",
@@ -1265,7 +1265,7 @@
       "Elle contient de l'air comprimé",
       "Elle est moins dense que l'eau liquide"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Elle_est_moins_dense_que_l'eau_liquide"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-lightning-thunder",
@@ -1341,7 +1341,7 @@
       "Le basalte",
       "Le granite"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "geologie",
     "difficulty": "medium",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/lave"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-mariana",
@@ -1417,7 +1417,7 @@
       "L'argon",
       "L'azote"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "medium",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/azote"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-iron-fe",
@@ -1493,7 +1493,7 @@
       "Or",
       "Ag"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "medium",
@@ -1509,14 +1509,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Au"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

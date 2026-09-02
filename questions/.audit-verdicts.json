@@ -1,0 +1,2687 @@
+[
+  {
+    "id": "film-forrest-gump-actor",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Forrest_Gump"
+  },
+  {
+    "id": "film-star-wars-year",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1977"
+  },
+  {
+    "id": "film-millennium-falcon",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Faucon_Millenium"
+  },
+  {
+    "id": "film-harry-potter-actor",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Daniel_Radcliffe"
+  },
+  {
+    "id": "film-bond-dr-no",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Sean_Connery"
+  },
+  {
+    "id": "film-godfather-vito",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Marlon_Brando"
+  },
+  {
+    "id": "film-jaws-shark",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dents_de_la_mer"
+  },
+  {
+    "id": "film-pulp-fiction-director",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Quentin_Tarantino"
+  },
+  {
+    "id": "film-chevre-depardieu-richard",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ch%C3%A8vre"
+  },
+  {
+    "id": "film-bronzes-saga",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Bronz%C3%A9s"
+  },
+  {
+    "id": "film-gendarme-st-tropez",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Gendarme_de_Saint-Tropez"
+  },
+  {
+    "id": "film-amelie-director",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jean-Pierre_Jeunet"
+  },
+  {
+    "id": "film-walle-eve",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%88ve"
+  },
+  {
+    "id": "film-shrek-studio",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/DreamWorks"
+  },
+  {
+    "id": "film-toy-story-woody-voice",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Tom_Hanks"
+  },
+  {
+    "id": "film-reine-neiges-soeurs",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Reine_des_neiges"
+  },
+  {
+    "id": "film-inception-nolan",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Inception"
+  },
+  {
+    "id": "film-joker-ledger",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Heath_Ledger"
+  },
+  {
+    "id": "film-lotr-ring-bearer",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Frodon"
+  },
+  {
+    "id": "film-harry-potter-studio",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Warner_Bros"
+  },
+  {
+    "id": "film-iron-man-actor",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Robert_Downey_Jr."
+  },
+  {
+    "id": "film-matrix-neo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/N%C3%A9o"
+  },
+  {
+    "id": "film-titanic-famous-line",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Je_suis_le_roi_du_monde"
+  },
+  {
+    "id": "film-scarface-quote",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dis_bonjour_%C3%A0_mon_petit_ami"
+  },
+  {
+    "id": "film-taxi-driver-quote",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Tu_me_parles%2C_%C3%A0_moi_%3F"
+  },
+  {
+    "id": "film-oscars-record-11",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ben-Hur"
+  },
+  {
+    "id": "film-oscars-actress-4",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Katharine_Hepburn"
+  },
+  {
+    "id": "film-oscars-will-smith",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/2022"
+  },
+  {
+    "id": "film-goodfellas-director",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Martin_Scorsese"
+  },
+  {
+    "id": "film-blade-runner-director",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ridley_Scott"
+  },
+  {
+    "id": "film-citizen-kane",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Citizen_Kane"
+  },
+  {
+    "id": "film-avatar-pandora",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Pandora"
+  },
+  {
+    "id": "film-jurassic-park-director",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Steven_Spielberg"
+  },
+  {
+    "id": "film-gladiator-maximus",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Russell_Crowe"
+  },
+  {
+    "id": "film-amelie-arrondissement",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Montmartre"
+  },
+  {
+    "id": "film-intouchables-actor",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Omar_Sy"
+  },
+  {
+    "id": "film-bienvenue-chtis-record",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Bienvenue_chez_les_Ch'tis"
+  },
+  {
+    "id": "film-leon-besson",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/L%C3%A9on"
+  },
+  {
+    "id": "film-la-la-land-director",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Damien_Chazelle"
+  },
+  {
+    "id": "film-inception-totem",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/toupie"
+  },
+  {
+    "id": "film-ghibli-studio-prod",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Studio_Ghibli"
+  },
+  {
+    "id": "film-artist-best-picture",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/The_Artist"
+  },
+  {
+    "id": "film-bttf-director",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Robert_Zemeckis"
+  },
+  {
+    "id": "film-oscars-meryl",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Meryl_Streep"
+  },
+  {
+    "id": "cg-inv-dynamite",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Alfred_Nobel"
+  },
+  {
+    "id": "cg-inv-edison",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Thomas_Edison"
+  },
+  {
+    "id": "cg-inv-diesel",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Rudolf_Diesel"
+  },
+  {
+    "id": "cg-inv-radium",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Marie_Curie"
+  },
+  {
+    "id": "cg-inv-aspirine",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Felix_Hoffmann"
+  },
+  {
+    "id": "cg-mon-eiffel-annee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1889"
+  },
+  {
+    "id": "cg-mon-kheops",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/pyramide_de_Kh%C3%A9ops"
+  },
+  {
+    "id": "cg-mon-versailles",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Louis_XIV"
+  },
+  {
+    "id": "cg-mon-nimes",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/N%C3%AEmes"
+  },
+  {
+    "id": "cg-mon-vatican",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Vatican"
+  },
+  {
+    "id": "cg-flag-canada",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Canada"
+  },
+  {
+    "id": "cg-flag-suisse",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Suisse"
+  },
+  {
+    "id": "cg-flag-usa-etoiles",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/50"
+  },
+  {
+    "id": "cg-flag-union-jack",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Royaume-Uni"
+  },
+  {
+    "id": "cg-flag-italie",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Italie"
+  },
+  {
+    "id": "cg-ani-plus-rapide",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/gu%C3%A9pard"
+  },
+  {
+    "id": "cg-ani-poulpe",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Trois"
+  },
+  {
+    "id": "cg-ani-ornithorynque",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/ornithorynque"
+  },
+  {
+    "id": "cg-ani-araignee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Huit"
+  },
+  {
+    "id": "cg-ani-colombe",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/colombe"
+  },
+  {
+    "id": "cg-corps-organe",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/peau"
+  },
+  {
+    "id": "cg-corps-bebe",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Environ_300"
+  },
+  {
+    "id": "cg-corps-coeur",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/c%C5%93ur"
+  },
+  {
+    "id": "cg-corps-abo",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Quatre"
+  },
+  {
+    "id": "cg-corps-donneur",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/O_n%C3%A9gatif"
+  },
+  {
+    "id": "cg-alim-pomme",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/pomme"
+  },
+  {
+    "id": "cg-alim-guacamole",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/avocat"
+  },
+  {
+    "id": "cg-alim-emmental",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/emmental"
+  },
+  {
+    "id": "cg-alim-vin",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/vin"
+  },
+  {
+    "id": "cg-alim-banane",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/banane"
+  },
+  {
+    "id": "cg-alim-yaourt",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/yaourt"
+  },
+  {
+    "id": "cg-cap-canada",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ottawa"
+  },
+  {
+    "id": "cg-cap-bresil",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Brasilia"
+  },
+  {
+    "id": "cg-cap-turquie",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ankara"
+  },
+  {
+    "id": "cg-cap-afrique-sud",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Pretoria"
+  },
+  {
+    "id": "cg-cap-inde",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/New_Delhi"
+  },
+  {
+    "id": "cg-xx-titanic-bateau",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Titanic"
+  },
+  {
+    "id": "cg-xx-concorde",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Concorde"
+  },
+  {
+    "id": "cg-xx-spoutnik-annee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1957"
+  },
+  {
+    "id": "cg-xx-1969-tv",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/premier_pas_de_l'homme_sur_la_Lune"
+  },
+  {
+    "id": "cg-xx-mur-1961",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1961"
+  },
+  {
+    "id": "cg-ins-fuseaux",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/France"
+  },
+  {
+    "id": "cg-ins-soleil",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/8_minutes"
+  },
+  {
+    "id": "cg-ins-mandarin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/mandarin"
+  },
+  {
+    "id": "cg-ins-asie",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Asie"
+  },
+  {
+    "id": "cg-geo-seychelles",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Seychelles"
+  },
+  {
+    "id": "cg-geo-gibraltar",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/d%C3%A9troit_de_Gibraltar"
+  },
+  {
+    "id": "cg-geo-nigeria",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Nigeria"
+  },
+  {
+    "id": "cg-sci-azote",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/azote"
+  },
+  {
+    "id": "cg-sci-einstein",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Albert_Einstein"
+  },
+  {
+    "id": "cg-sci-mars",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Mars"
+  },
+  {
+    "id": "cg-art-velasquez",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Diego_V%C3%A9lasquez"
+  },
+  {
+    "id": "cg-art-hugo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Victor_Hugo"
+  },
+  {
+    "id": "cg-art-petit-prince",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry"
+  },
+  {
+    "id": "cg-sport-hiver",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Norv%C3%A8ge"
+  },
+  {
+    "id": "cg-sport-foot",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/football"
+  },
+  {
+    "id": "cg-sport-phelps",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Michael_Phelps"
+  },
+  {
+    "id": "cg-ins-etoile-mer",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%A9toile_de_mer"
+  },
+  {
+    "id": "cg-ins-journee-venus",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/243_jours_terrestres"
+  },
+  {
+    "id": "cg-ins-saturne",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Saturne"
+  },
+  {
+    "id": "cg-exp-31",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/S'habiller_avec_%C3%A9l%C3%A9gance"
+  },
+  {
+    "id": "cg-exp-chair-poule",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Avoir_la_peau_qui_se_h%C3%A9risse_de_froid_ou_d'%C3%A9motion"
+  },
+  {
+    "id": "cg-exp-yeux-tete",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%8Atre_tr%C3%A8s_cher"
+  },
+  {
+    "id": "cg-exp-fromage",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Exag%C3%A9rer_l'importance_d'une_chose"
+  },
+  {
+    "id": "cg-exp-taureau",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Affronter_un_probl%C3%A8me_avec_courage"
+  },
+  {
+    "id": "cg-exp-sellette",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%8Atre_interrog%C3%A9_ou_critiqu%C3%A9"
+  },
+  {
+    "id": "cg-exp-cafard",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%8Atre_triste%2C_d%C3%A9prim%C3%A9"
+  },
+  {
+    "id": "cg-exp-mouron",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Se_faire_du_souci"
+  },
+  {
+    "id": "cg-exp-pommes",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/S'%C3%A9vanouir"
+  },
+  {
+    "id": "cg-exp-coup-main",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Aider_quelqu'un"
+  },
+  {
+    "id": "cg-exp-chaussettes",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%8Atre_d%C3%A9prim%C3%A9"
+  },
+  {
+    "id": "cg-exp-grasse-matinee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Rester_au_lit_tard_le_matin"
+  },
+  {
+    "id": "cg-exp-pain-planche",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Avoir_beaucoup_de_travail"
+  },
+  {
+    "id": "cg-exp-temps-chien",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/tr%C3%A8s_mauvais_temps"
+  },
+  {
+    "id": "cg-exp-vache",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Parler_mal_une_langue"
+  },
+  {
+    "id": "cg-rec-russie",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Russie"
+  },
+  {
+    "id": "cg-rec-mariannes",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/fosse_des_Mariannes"
+  },
+  {
+    "id": "cg-rec-faucon",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/faucon_p%C3%A8lerin"
+  },
+  {
+    "id": "cg-rec-frontiere",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Entre_le_Canada_et_les_%C3%89tats-Unis"
+  },
+  {
+    "id": "cg-rec-groenland",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Groenland"
+  },
+  {
+    "id": "cg-rec-baikal",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/lac_Ba%C3%AFkal"
+  },
+  {
+    "id": "cg-rec-jo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%89tats-Unis"
+  },
+  {
+    "id": "cg-rec-bolt-annee",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/2009"
+  },
+  {
+    "id": "cg-rec-bresil-5",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Cinq"
+  },
+  {
+    "id": "cg-rec-bible",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Bible"
+  },
+  {
+    "id": "cg-rec-journee-terre",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/24_heures"
+  },
+  {
+    "id": "cg-rec-musulmans",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Indon%C3%A9sie"
+  },
+  {
+    "id": "cg-rec-tokyo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Tokyo"
+  },
+  {
+    "id": "cg-rec-araignee-web",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/n%C3%A9phile"
+  },
+  {
+    "id": "food-margherita-colors",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Rouge%2C_blanc%2C_vert"
+  },
+  {
+    "id": "food-tacos",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Mexique"
+  },
+  {
+    "id": "food-foie-gras",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/France"
+  },
+  {
+    "id": "food-cassoulet",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Sud-Ouest"
+  },
+  {
+    "id": "food-baguette-unesco",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/UNESCO"
+  },
+  {
+    "id": "food-champagne",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Champagne"
+  },
+  {
+    "id": "food-pastis",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/pastis"
+  },
+  {
+    "id": "food-macaron",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/macaron"
+  },
+  {
+    "id": "food-hamburger",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Hambourg"
+  },
+  {
+    "id": "food-sushi-rice",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/riz_vinaigr%C3%A9"
+  },
+  {
+    "id": "food-truffle",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/champignon"
+  },
+  {
+    "id": "food-vanilla-orchid",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/orchid%C3%A9es"
+  },
+  {
+    "id": "food-cocoa-origin",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Am%C3%A9rique"
+  },
+  {
+    "id": "food-dijon",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dijon"
+  },
+  {
+    "id": "food-camembert",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Normandie"
+  },
+  {
+    "id": "food-comte",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/comt%C3%A9"
+  },
+  {
+    "id": "food-tapas",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/tapas"
+  },
+  {
+    "id": "food-bagel",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Pologne"
+  },
+  {
+    "id": "foot-france-1998",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Br%C3%A9sil"
+  },
+  {
+    "id": "foot-wc-2022",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Argentine"
+  },
+  {
+    "id": "foot-ronaldo-record",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Cristiano_Ronaldo"
+  },
+  {
+    "id": "foot-pele-titles",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/3"
+  },
+  {
+    "id": "foot-ucl",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ligue_des_champions"
+  },
+  {
+    "id": "foot-psg-stadium",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Parc_des_Princes"
+  },
+  {
+    "id": "foot-france-euros",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/2_fois"
+  },
+  {
+    "id": "foot-zidane-clubs",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/FC_Barcelone"
+  },
+  {
+    "id": "foot-bayern",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Bayern_Munich"
+  },
+  {
+    "id": "foot-klose",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Miroslav_Klose"
+  },
+  {
+    "id": "game-mario-brother",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Luigi"
+  },
+  {
+    "id": "game-mario-company",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Nintendo"
+  },
+  {
+    "id": "game-zelda-princess",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/princesse_d'Hyrule"
+  },
+  {
+    "id": "game-pokemon-creator",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Satoshi_Tajiri"
+  },
+  {
+    "id": "game-pokemon-gen1",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/151"
+  },
+  {
+    "id": "game-minecraft-creator",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Markus_Persson"
+  },
+  {
+    "id": "game-minecraft-ender-dragon",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ender_Dragon"
+  },
+  {
+    "id": "game-sonic-speed",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Sa_vitesse_supersonique"
+  },
+  {
+    "id": "game-tetris-origin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Union_sovi%C3%A9tique"
+  },
+  {
+    "id": "game-ff7-cloud",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Cloud_Strife"
+  },
+  {
+    "id": "game-gta-vice-city",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Vice_City"
+  },
+  {
+    "id": "game-minecraft-best-seller",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Minecraft"
+  },
+  {
+    "id": "game-cs-bomb",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Counter-Strike"
+  },
+  {
+    "id": "game-skyrim-dovahkiin",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Dovahkiin"
+  },
+  {
+    "id": "game-mario-first",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Donkey_Kong"
+  },
+  {
+    "id": "game-witcher-author",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Andrzej_Sapkowski"
+  },
+  {
+    "id": "game-zelda-ocarina",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/ocarina"
+  },
+  {
+    "id": "game-halo-chief",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Master_Chief"
+  },
+  {
+    "id": "game-lara-croft",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Arch%C3%A9ologue"
+  },
+  {
+    "id": "game-resident-evil-city",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Raccoon_City"
+  },
+  {
+    "id": "game-ryu-hadoken",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Hadoken"
+  },
+  {
+    "id": "game-tetris-pieces",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/t%C3%A9trominos"
+  },
+  {
+    "id": "game-roblox-platform",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/joueurs_cr%C3%A9ent_leurs_propres_jeux"
+  },
+  {
+    "id": "game-sims-creator",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Will_Wright"
+  },
+  {
+    "id": "game-zelda-first",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1986"
+  },
+  {
+    "id": "game-gameboy",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Game_Boy"
+  },
+  {
+    "id": "game-xbox-company",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Microsoft"
+  },
+  {
+    "id": "game-kingdom-hearts",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Disney_et_Final_Fantasy"
+  },
+  {
+    "id": "game-starcraft-rts",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/StarCraft"
+  },
+  {
+    "id": "war-dec-gama",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Vasco_de_Gama"
+  },
+  {
+    "id": "war-dec-pizarro",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
+  },
+  {
+    "id": "war-dec-cook",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/James_Cook"
+  },
+  {
+    "id": "war-indus-rail-1827",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1827"
+  },
+  {
+    "id": "war-indus-bell",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Alexander_Graham_Bell"
+  },
+  {
+    "id": "war-indus-rocket",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/George_Stephenson"
+  },
+  {
+    "id": "war-indus-benz",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Carl_Benz"
+  },
+  {
+    "id": "war-gf-rideau-fer",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Winston_Churchill"
+  },
+  {
+    "id": "war-gf-varsovie",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/pacte_de_Varsovie"
+  },
+  {
+    "id": "war-gf-mur-berlin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/mur_de_Berlin"
+  },
+  {
+    "id": "war-gf-cuba-annee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1962"
+  },
+  {
+    "id": "war-gf-lune-1969",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1969"
+  },
+  {
+    "id": "war-gf-reagan",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ronald_Reagan"
+  },
+  {
+    "id": "war-gf-afghanistan",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Afghanistan"
+  },
+  {
+    "id": "war-coree-parallele",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/38e_parall%C3%A8le"
+  },
+  {
+    "id": "war-coree-chine",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Chine"
+  },
+  {
+    "id": "war-vietnam-giap",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p"
+  },
+  {
+    "id": "war-vietnam-tet",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/offensive_du_T%C3%AAt"
+  },
+  {
+    "id": "war-cs-sud",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%89tats_du_Sud"
+  },
+  {
+    "id": "war-cs-davis",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jefferson_Davis"
+  },
+  {
+    "id": "war-cs-gettysburg",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Gettysburg"
+  },
+  {
+    "id": "war-cs-antietam",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Antietam"
+  },
+  {
+    "id": "war-cs-grant",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ulysses_S._Grant"
+  },
+  {
+    "id": "war-cs-sherman",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/William_Tecumseh_Sherman"
+  },
+  {
+    "id": "war-cs-ford",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Au_th%C3%A9%C3%A2tre_Ford"
+  },
+  {
+    "id": "war-cs-13e",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/13e_amendement"
+  },
+  {
+    "id": "war-marathon-roi-perse",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Darius_Ier"
+  },
+  {
+    "id": "war-thermopyles-300",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Thermopyles"
+  },
+  {
+    "id": "war-thermopyles-roi",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/L%C3%A9onidas"
+  },
+  {
+    "id": "war-salamine-strategie",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Th%C3%A9mistocle"
+  },
+  {
+    "id": "war-xerxes-invasion",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Xerx%C3%A8s_Ier"
+  },
+  {
+    "id": "war-peloponnese-adversaires",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ath%C3%A8nes_et_Sparte"
+  },
+  {
+    "id": "war-peloponnese-fin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/404_av._J.-C."
+  },
+  {
+    "id": "war-peloponnese-sicile",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/exp%C3%A9dition_de_Sicile"
+  },
+  {
+    "id": "war-alexandre-precepteur",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%89picure"
+  },
+  {
+    "id": "war-alexandre-granique",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Granique"
+  },
+  {
+    "id": "war-alexandre-gaugameles",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/331_av._J.-C."
+  },
+  {
+    "id": "war-alexandre-alexandrie",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Alexandrie"
+  },
+  {
+    "id": "war-alexandre-noeud",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/n%C5%93ud_gordien"
+  },
+  {
+    "id": "war-alexandre-age",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/32_ans"
+  },
+  {
+    "id": "war-puniques-1ere-annee",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/264_av._J.-C."
+  },
+  {
+    "id": "war-puniques-alpes",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/218_av._J.-C."
+  },
+  {
+    "id": "war-puniques-zama",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Zama"
+  },
+  {
+    "id": "war-puniques-caton",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Caton_l'Ancien"
+  },
+  {
+    "id": "war-ww1-assassinat",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Celui_de_l'archiduc_Fran%C3%A7ois-Ferdinand"
+  },
+  {
+    "id": "war-ww1-triple-entente",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Triple-Entente"
+  },
+  {
+    "id": "war-ww1-tranchees",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/guerre_de_tranch%C3%A9es"
+  },
+  {
+    "id": "war-ww1-verdun-annee",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1916"
+  },
+  {
+    "id": "war-ww1-somme",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Somme"
+  },
+  {
+    "id": "war-ww1-taxis",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/taxis_de_la_Marne"
+  },
+  {
+    "id": "war-ww1-wilson",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Woodrow_Wilson"
+  },
+  {
+    "id": "war-ww1-brest-litovsk",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/trait%C3%A9_de_Brest-Litovsk"
+  },
+  {
+    "id": "war-ww1-armistice-heure",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%80_11_heures"
+  },
+  {
+    "id": "war-ww1-versailles",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/trait%C3%A9_de_Versailles"
+  },
+  {
+    "id": "war-ww1-gaz",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/gaz_de_combat"
+  },
+  {
+    "id": "war-ww1-tommies",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/tommies"
+  },
+  {
+    "id": "war-ww1-guillaume2",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Guillaume_II"
+  },
+  {
+    "id": "war-ww1-morts-francais",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Environ_1%2C4_million"
+  },
+  {
+    "id": "war-ww1-ypres",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ypres"
+  },
+  {
+    "id": "war-ww1-mutineries",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1917"
+  },
+  {
+    "id": "war-ww2-pologne",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/invasion_de_la_Pologne_par_l'Allemagne"
+  },
+  {
+    "id": "war-ww2-blitzkrieg",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/blitzkrieg"
+  },
+  {
+    "id": "war-ww2-appel-18-juin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Charles_de_Gaulle"
+  },
+  {
+    "id": "war-ww2-bataille-angleterre",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/bataille_d'Angleterre"
+  },
+  {
+    "id": "war-ww2-barbarossa-annee",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1941"
+  },
+  {
+    "id": "war-ww2-stalingrad-fin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1943"
+  },
+  {
+    "id": "war-ww2-el-alamein",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/El-Alamein"
+  },
+  {
+    "id": "war-ww2-overlord",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Overlord"
+  },
+  {
+    "id": "war-ww2-dragoon",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Dragoon"
+  },
+  {
+    "id": "war-ww2-potsdam-truman",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Harry_Truman"
+  },
+  {
+    "id": "war-ww2-8-mai",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/8_mai_1945"
+  },
+  {
+    "id": "war-ww2-annee-atomique",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1945"
+  },
+  {
+    "id": "war-ww2-2-septembre",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/2_septembre_1945"
+  },
+  {
+    "id": "war-ww2-wannsee",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/conf%C3%A9rence_de_Wannsee"
+  },
+  {
+    "id": "war-ww2-dynamo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Dynamo"
+  },
+  {
+    "id": "war-ww2-mussolini",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Benito_Mussolini"
+  },
+  {
+    "id": "war-ww2-torch",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1942"
+  },
+  {
+    "id": "war-nap-pie7",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Pie_VII"
+  },
+  {
+    "id": "war-nap-austerlitz",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Austerlitz"
+  },
+  {
+    "id": "war-nap-tilsit",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/trait%C3%A9_de_Tilsit"
+  },
+  {
+    "id": "war-nap-russie-1812",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1812"
+  },
+  {
+    "id": "war-nap-berezina",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/B%C3%A9r%C3%A9zina"
+  },
+  {
+    "id": "war-nap-abdication-1814",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1814"
+  },
+  {
+    "id": "war-nap-retour-1815",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1815"
+  },
+  {
+    "id": "war-nap-waterloo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Waterloo"
+  },
+  {
+    "id": "war-nap-sainte-helene",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Sainte-H%C3%A9l%C3%A8ne"
+  },
+  {
+    "id": "war-nap-code-civil",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Code_civil"
+  },
+  {
+    "id": "war-croisade-pape",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Urbain_II"
+  },
+  {
+    "id": "war-croisade-godefroy",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Godefroy_de_Bouillon"
+  },
+  {
+    "id": "war-croisade-hattin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Hattin"
+  },
+  {
+    "id": "war-croisade-acre-1291",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/1291"
+  },
+  {
+    "id": "war-croisade-molay",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Jacques_de_Molay"
+  },
+  {
+    "id": "war-cent-ans-adversaires",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/France_et_l'Angleterre"
+  },
+  {
+    "id": "war-cent-ans-plantagenets",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Plantagen%C3%AAts"
+  },
+  {
+    "id": "war-cent-ans-poitiers",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Poitiers"
+  },
+  {
+    "id": "war-cent-ans-henri5",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Henri_V"
+  },
+  {
+    "id": "war-cent-ans-orleans",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Orl%C3%A9ans"
+  },
+  {
+    "id": "war-cent-ans-jeanne-mort",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1431"
+  },
+  {
+    "id": "war-cent-ans-castillon",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Castillon"
+  },
+  {
+    "id": "war-moyen-age-charlemagne",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/800"
+  },
+  {
+    "id": "war-moyen-age-peste",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/peste_noire"
+  },
+  {
+    "id": "war-moyen-age-serre",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/paysan_d%C3%A9pendant_d'un_seigneur"
+  },
+  {
+    "id": "war-moyen-age-adoubement",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/adoubement"
+  },
+  {
+    "id": "war-ren-berceau",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Florence"
+  },
+  {
+    "id": "war-ren-sixtine",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Michel-Ange"
+  },
+  {
+    "id": "war-ren-colomb",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1492"
+  },
+  {
+    "id": "war-ren-chambord",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Chambord"
+  },
+  {
+    "id": "war-ren-imprimerie",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/imprimerie"
+  },
+  {
+    "id": "war-ren-catherine",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Catherine_de_M%C3%A9dicis"
+  },
+  {
+    "id": "war-rev-bastille",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/prise_de_la_Bastille"
+  },
+  {
+    "id": "war-rev-jeu-de-paume",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/ne_pas_se_s%C3%A9parer_avant_d'avoir_donn%C3%A9_une_Constitution_%C3%A0_la_France"
+  },
+  {
+    "id": "war-rev-ddhc",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l'homme_et_du_citoyen"
+  },
+  {
+    "id": "war-rev-10-aout",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/prise_des_Tuileries"
+  },
+  {
+    "id": "war-rev-louis16",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Louis_XVI"
+  },
+  {
+    "id": "war-rev-robespierre",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Robespierre"
+  },
+  {
+    "id": "war-rev-thermidor",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1794"
+  },
+  {
+    "id": "war-rev-brumaire",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Napol%C3%A9on_Bonaparte"
+  },
+  {
+    "id": "war-rev-marseillaise-hymne",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Marseillaise"
+  },
+  {
+    "id": "war-rev-devise",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Libert%C3%A9%2C_%C3%89galit%C3%A9%2C_Fraternit%C3%A9"
+  },
+  {
+    "id": "war-rev-vendee",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Vend%C3%A9e"
+  },
+  {
+    "id": "war-rome-fondation-jumeaux",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Romulus_et_R%C3%A9mus"
+  },
+  {
+    "id": "war-rome-cesar-gaule",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar"
+  },
+  {
+    "id": "war-rome-rubicon",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/49_av._J.-C."
+  },
+  {
+    "id": "war-rome-veni-vidi",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar"
+  },
+  {
+    "id": "war-rome-ides-mars",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/ides_de_mars"
+  },
+  {
+    "id": "war-rome-chute-476",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/476_apr._J.-C."
+  },
+  {
+    "id": "war-rome-constantinople",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Constantin_Ier"
+  },
+  {
+    "id": "war-rome-vesuve",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/79_apr._J.-C."
+  },
+  {
+    "id": "war-rome-spartacus",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Spartacus"
+  },
+  {
+    "id": "war-rome-incendie-64",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/64_apr._J.-C."
+  },
+  {
+    "id": "war-rome-circus",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Circus_Maximus"
+  },
+  {
+    "id": "odd-koala-fingerprints",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/koala"
+  },
+  {
+    "id": "odd-shark-cartilage",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Il_est_cartilagineux"
+  },
+  {
+    "id": "odd-goldfish-memory",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Plusieurs_mois"
+  },
+  {
+    "id": "odd-cow-friends",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/vache"
+  },
+  {
+    "id": "odd-eiffel-year",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1889"
+  },
+  {
+    "id": "odd-honey",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/milliers_d'ann%C3%A9es"
+  },
+  {
+    "id": "odd-strawberry-seeds",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Leurs_%C2%AB_graines_%C2%BB_sont_%C3%A0_l'ext%C3%A9rieur"
+  },
+  {
+    "id": "odd-ocean-unexplored",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Environ_80_%25"
+  },
+  {
+    "id": "odd-sneeze-speed",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/160_km%2Fh"
+  },
+  {
+    "id": "odd-hiccup-record",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/68_ans"
+  },
+  {
+    "id": "odd-camel-humps",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/la_graisse"
+  },
+  {
+    "id": "odd-lightning-frequency",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Environ_100_fois"
+  },
+  {
+    "id": "odd-milky-way-light",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/100_000_ans"
+  },
+  {
+    "id": "odd-google-garage",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dans_un_garage"
+  },
+  {
+    "id": "web-twitter-bird",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/oiseau_bleu"
+  },
+  {
+    "id": "web-snapchat-ghost",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/fant%C3%B4me"
+  },
+  {
+    "id": "web-linkedin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/LinkedIn"
+  },
+  {
+    "id": "web-wikipedia-wales",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jimmy_Wales"
+  },
+  {
+    "id": "web-first-email",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ray_Tomlinson"
+  },
+  {
+    "id": "web-grumpy-cat",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Grumpy_Cat"
+  },
+  {
+    "id": "web-rick-astley",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Rick_Astley"
+  },
+  {
+    "id": "web-emoji-japan",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Japon"
+  },
+  {
+    "id": "web-404",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Page_non_trouv%C3%A9e"
+  },
+  {
+    "id": "web-doodles",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Doodles"
+  },
+  {
+    "id": "web-first-youtube-video",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Me_at_the_zoo"
+  },
+  {
+    "id": "web-deep-web",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/pages_non_index%C3%A9es_par_les_moteurs_de_recherche"
+  },
+  {
+    "id": "web-chrome",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Google_Chrome"
+  },
+  {
+    "id": "book-hugo-miserables",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Mis%C3%A9rables"
+  },
+  {
+    "id": "book-dumas-musketeers",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Alexandre_Dumas"
+  },
+  {
+    "id": "book-dartagnan",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Artagnan"
+  },
+  {
+    "id": "book-verne-nautilus",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Nautilus"
+  },
+  {
+    "id": "book-verne-nemo",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Vingt_mille_lieues_sous_les_mers"
+  },
+  {
+    "id": "book-flaubert",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Gustave_Flaubert"
+  },
+  {
+    "id": "book-zola-germinal",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Germinal"
+  },
+  {
+    "id": "book-proust",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%80_la_recherche_du_temps_perdu"
+  },
+  {
+    "id": "book-camus-nobel",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Albert_Camus"
+  },
+  {
+    "id": "book-saint-exupery",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry"
+  },
+  {
+    "id": "book-pagnol",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Marcel_Pagnol"
+  },
+  {
+    "id": "book-rimbaud-age",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/16_ans"
+  },
+  {
+    "id": "book-moliere-avare",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Avare"
+  },
+  {
+    "id": "book-la-fontaine",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jean_de_La_Fontaine"
+  },
+  {
+    "id": "book-tolstoi",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/L%C3%A9on_Tolsto%C3%AF"
+  },
+  {
+    "id": "book-orwell-1984",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/George_Orwell"
+  },
+  {
+    "id": "book-ministry-of-love",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/minist%C3%A8re_de_l'Amour"
+  },
+  {
+    "id": "book-tolkien",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/J.R.R._Tolkien"
+  },
+  {
+    "id": "book-rowling",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/J.K._Rowling"
+  },
+  {
+    "id": "book-christie-66",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/66"
+  },
+  {
+    "id": "book-miss-marple",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Miss_Marple"
+  },
+  {
+    "id": "book-goncourt",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/prix_Goncourt"
+  },
+  {
+    "id": "book-le-clezio",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/J.M.G._Le_Cl%C3%A9zio"
+  },
+  {
+    "id": "book-ernaux",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Annie_Ernaux"
+  },
+  {
+    "id": "book-apollinaire",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Guillaume_Apollinaire"
+  },
+  {
+    "id": "book-grimm",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Allemagne"
+  },
+  {
+    "id": "book-hemingway",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ernest_Hemingway"
+  },
+  {
+    "id": "book-shakespeare-37",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/37"
+  },
+  {
+    "id": "anime-dbz-kamehameha",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Kamehameha"
+  },
+  {
+    "id": "anime-dbz-author",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Akira_Toriyama"
+  },
+  {
+    "id": "anime-one-piece-fruit",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/fruit_Gomu-Gomu"
+  },
+  {
+    "id": "anime-one-piece-record",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/One_Piece"
+  },
+  {
+    "id": "anime-naruto-kyubi",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ky%C5%ABbi"
+  },
+  {
+    "id": "anime-naruto-author",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Masashi_Kishimoto"
+  },
+  {
+    "id": "anime-akira-kaneda",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Kaneda"
+  },
+  {
+    "id": "anime-totoro",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Totoro"
+  },
+  {
+    "id": "anime-porco-rosso",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Porco_Rosso"
+  },
+  {
+    "id": "anime-attack-on-titan-eren",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Eren_J%C3%A4ger"
+  },
+  {
+    "id": "anime-sailor-moon-usagi",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Usagi"
+  },
+  {
+    "id": "anime-death-note-ryuk",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ryuk"
+  },
+  {
+    "id": "anime-fullmetal-brothers",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Edward_et_Alphonse"
+  },
+  {
+    "id": "anime-one-punch-saitama",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Saitama"
+  },
+  {
+    "id": "anime-demon-slayer-nezuko",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Elle_ne_mange_pas_les_humains"
+  },
+  {
+    "id": "anime-kiki-job",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Livreuse"
+  },
+  {
+    "id": "anime-howls-magic",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Howl"
+  },
+  {
+    "id": "anime-mha-one-for-all",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/One_For_All"
+  },
+  {
+    "id": "anime-hxh-exam",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/examen_Hunter"
+  },
+  {
+    "id": "anime-chihiro-bathhouse",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dans_des_bains_publics"
+  },
+  {
+    "id": "anime-vegeta-prince",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Prince_des_Saiyans"
+  },
+  {
+    "id": "anime-slam-dunk",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/basket-ball"
+  },
+  {
+    "id": "anime-wind-rises",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Vent_se_l%C3%A8ve"
+  },
+  {
+    "id": "music-freddie-mercury",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Freddie_Mercury"
+  },
+  {
+    "id": "music-beatles-members",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Mick_Jagger"
+  },
+  {
+    "id": "music-thriller-album",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Thriller"
+  },
+  {
+    "id": "music-madonna-title",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Reine_de_la_pop"
+  },
+  {
+    "id": "music-elvis-graceland",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Graceland"
+  },
+  {
+    "id": "music-daft-punk-members",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Thomas_Bangalter_et_Guy-Manuel_de_Homem-Christo"
+  },
+  {
+    "id": "music-angele-country",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Belgique"
+  },
+  {
+    "id": "music-comme-dhabitude",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Comme_d'habitude"
+  },
+  {
+    "id": "music-piaf-regrets",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Non%2C_je_ne_regrette_rien"
+  },
+  {
+    "id": "music-aznavour-boheme",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Charles_Aznavour"
+  },
+  {
+    "id": "music-gainsbourg-jane",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Jane"
+  },
+  {
+    "id": "music-kurt-cobain",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Kurt_Cobain"
+  },
+  {
+    "id": "music-oasis-wonderwall",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Oasis"
+  },
+  {
+    "id": "music-stones-paint-it",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Paint_It_Black"
+  },
+  {
+    "id": "music-floyd-dark-side",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
+  },
+  {
+    "id": "music-bowie-ziggy",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ziggy_Stardust"
+  },
+  {
+    "id": "music-prince-purple-rain",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Prince"
+  },
+  {
+    "id": "music-beyonce-destinys",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Destiny's_Child"
+  },
+  {
+    "id": "music-abba-waterloo",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/ABBA"
+  },
+  {
+    "id": "music-mozart-city",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Salzbourg"
+  },
+  {
+    "id": "music-ode-to-joy",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Ode_%C3%A0_la_joie"
+  },
+  {
+    "id": "music-saxophone-inventor",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Adolphe_Sax"
+  },
+  {
+    "id": "music-rap-bronx",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Bronx"
+  },
+  {
+    "id": "music-reggae-origin",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jama%C3%AFque"
+  },
+  {
+    "id": "music-fado-country",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Portugal"
+  },
+  {
+    "id": "music-tango-country",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Argentine"
+  },
+  {
+    "id": "music-pavarotti-nessun",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Luciano_Pavarotti"
+  },
+  {
+    "id": "music-iam-marseille",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Marseille"
+  },
+  {
+    "id": "music-mc-solaar",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/MC_Solaar"
+  },
+  {
+    "id": "music-indila-derniere",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Indila"
+  },
+  {
+    "id": "music-gims-sap",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ma%C3%AEtre_Gims"
+  },
+  {
+    "id": "music-vianney-beau-papa",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Vianney"
+  },
+  {
+    "id": "music-kendji-the-voice",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Kendji_Girac"
+  },
+  {
+    "id": "music-adele-rolling",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Adele"
+  },
+  {
+    "id": "music-bts-country",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Cor%C3%A9e_du_Sud"
+  },
+  {
+    "id": "music-eurovision-record",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Irlande"
+  },
+  {
+    "id": "music-candle-in-the-wind",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Elton_John"
+  },
+  {
+    "id": "music-aretha-soul",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Aretha_Franklin"
+  },
+  {
+    "id": "music-johnny-cash-ring",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Johnny_Cash"
+  },
+  {
+    "id": "music-bob-dylan-nobel",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Bob_Dylan"
+  },
+  {
+    "id": "music-u2-bono",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Bono"
+  },
+  {
+    "id": "music-green-day",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Green_Day"
+  },
+  {
+    "id": "sci-gravity-newton",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Isaac_Newton"
+  },
+  {
+    "id": "sci-light-speed",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/300_000_km%2Fs"
+  },
+  {
+    "id": "sci-earth-core",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/5_500_%C2%B0C"
+  },
+  {
+    "id": "sci-atom-nucleus",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Protons_et_neutrons"
+  },
+  {
+    "id": "sci-penicillin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Alexander_Fleming"
+  },
+  {
+    "id": "sci-human-cells",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/37_000_milliards"
+  },
+  {
+    "id": "sci-heart-chambers",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/4"
+  },
+  {
+    "id": "sci-baby-bones",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Environ_300"
+  },
+  {
+    "id": "sci-darwin-origin",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Charles_Darwin"
+  },
+  {
+    "id": "sci-sun-star",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%A9toile"
+  },
+  {
+    "id": "sci-proxima",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Proxima_du_Centaure"
+  },
+  {
+    "id": "sci-jupiter-largest",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "id": "sci-saturn-rings",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Saturne"
+  },
+  {
+    "id": "sci-armstrong",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Neil_Armstrong"
+  },
+  {
+    "id": "sci-tereshkova",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Valentina_Terechkova"
+  },
+  {
+    "id": "sci-ice-floats",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Elle_est_moins_dense_que_l'eau_liquide"
+  },
+  {
+    "id": "sci-lava",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/lave"
+  },
+  {
+    "id": "sci-nitrogen",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/azote"
+  },
+  {
+    "id": "sci-gold-au",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Au"
+  },
+  {
+    "id": "sci-salt-nacl",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/NaCl"
+  },
+  {
+    "id": "sci-helium-balloons",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/h%C3%A9lium_est_plus_l%C3%A9ger_que_l'air"
+  },
+  {
+    "id": "sci-lavoisier",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Antoine_Lavoisier"
+  },
+  {
+    "id": "sci-photosynthesis-inputs",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/CO2_et_l'eau"
+  },
+  {
+    "id": "sci-stomach-acid",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/acide_chlorhydrique"
+  },
+  {
+    "id": "sci-hummingbird",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/colibri"
+  },
+  {
+    "id": "sci-blue-whale",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/baleine_bleue"
+  },
+  {
+    "id": "sci-giraffe-vertebrae",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/7"
+  },
+  {
+    "id": "sci-kangaroo",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Australie"
+  },
+  {
+    "id": "sci-blood-groups",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/A%2C_B%2C_AB_et_O"
+  },
+  {
+    "id": "sci-black-hole",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/objet_dont_la_gravit%C3%A9_est_si_forte_que_rien_n'en_sort"
+  },
+  {
+    "id": "sci-comet-tail",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Loin_du_Soleil"
+  },
+  {
+    "id": "sci-venus-hottest",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/V%C3%A9nus"
+  },
+  {
+    "id": "sci-emc2",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%89nergie_%3D_masse_%C3%97_vitesse_de_la_lumi%C3%A8re_au_carr%C3%A9"
+  },
+  {
+    "id": "sci-eureka",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Archim%C3%A8de"
+  },
+  {
+    "id": "sci-magnet-poles",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Nord_et_sud"
+  },
+  {
+    "id": "sci-ozone",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/ozone"
+  },
+  {
+    "id": "sci-everest",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Everest"
+  },
+  {
+    "id": "sci-nile",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Nil"
+  },
+  {
+    "id": "sci-leap-year",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Pour_compenser_le_quart_de_jour_exc%C3%A9dentaire_de_l'ann%C3%A9e_solaire"
+  },
+  {
+    "id": "tv-stranger-things-11",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Onze"
+  },
+  {
+    "id": "tv-sherlock-baker-street",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/221B_Baker_Street"
+  },
+  {
+    "id": "tv-doctor-who-species",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Seigneurs_du_Temps"
+  },
+  {
+    "id": "tv-casa-de-papel-cities",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Tokyo%2C_Berlin%2C_Nairobi"
+  },
+  {
+    "id": "tv-squid-game-456",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/456"
+  },
+  {
+    "id": "tv-pokemon-sacha",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Sacha"
+  },
+  {
+    "id": "tv-true-detective-cohle",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Matthew_McConaughey"
+  },
+  {
+    "id": "tv-house-cane",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/n%C3%A9crose_musculaire_%C3%A0_la_jambe"
+  },
+  {
+    "id": "tv-got-dracarys",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dracarys"
+  },
+  {
+    "id": "tv-friends-monica-chef",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Chef_cuisini%C3%A8re"
+  },
+  {
+    "id": "tv-simpsons-maggie",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Maggie"
+  },
+  {
+    "id": "tv-twin-peaks-cooper",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Dale_Cooper"
+  },
+  {
+    "id": "tv-xfiles-mulder",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/David_Duchovny"
+  },
+  {
+    "id": "tv-grey-anatomy-heroine",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Meredith_Grey"
+  },
+  {
+    "id": "tv-himym-barney",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Barney"
+  },
+  {
+    "id": "tv-prison-break-scofield",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Michael_Scofield"
+  },
+  {
+    "id": "tv-mentalist-jane",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Simon_Baker"
+  },
+  {
+    "id": "tv-lost-flight",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/815"
+  },
+  {
+    "id": "tv-community-greendale",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Greendale_Community_College"
+  },
+  {
+    "id": "tv-office-jim-pranks",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Jim"
+  },
+  {
+    "id": "tv-dexter-miami",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Miami"
+  },
+  {
+    "id": "tv-got-hodor",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Hodor"
+  },
+  {
+    "id": "tv-supernatural-brothers",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Dean_et_Sam"
+  },
+  {
+    "id": "sport-olympics-1896",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/1896"
+  },
+  {
+    "id": "sport-olympic-rings",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/5"
+  },
+  {
+    "id": "sport-olympic-motto",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Plus_vite%2C_plus_haut%2C_plus_fort"
+  },
+  {
+    "id": "sport-bolt-time",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/9_s_58"
+  },
+  {
+    "id": "sport-marathon-origin",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Phidippid%C3%A8s"
+  },
+  {
+    "id": "sport-roland-garros",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/terre_battue"
+  },
+  {
+    "id": "sport-phelps-swimming",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/natation"
+  },
+  {
+    "id": "sport-yellow-jersey",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Jaune"
+  },
+  {
+    "id": "sport-nba-usa",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/%C3%89tats-Unis"
+  },
+  {
+    "id": "sport-jordan-23",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/23"
+  },
+  {
+    "id": "sport-volleyball-morgan",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/William_Morgan"
+  },
+  {
+    "id": "sport-schumacher-ferrari",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Ferrari"
+  },
+  {
+    "id": "sport-handball-france",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/3_fois"
+  },
+  {
+    "id": "sport-ali-quote",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Flotte_comme_un_papillon%2C_pique_comme_une_abeille"
+  },
+  {
+    "id": "sport-paris-2024",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/3"
+  },
+  {
+    "id": "sport-milliat",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Alice_Milliat"
+  },
+  {
+    "id": "tech-lightbulb",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Thomas_Edison"
+  },
+  {
+    "id": "tech-arpanet",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/ARPANET"
+  },
+  {
+    "id": "tech-apple-founders",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Steve_Jobs_et_Steve_Wozniak"
+  },
+  {
+    "id": "tech-google-founders",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Larry_Page_et_Sergey_Brin"
+  },
+  {
+    "id": "tech-amazon-founder",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Jeff_Bezos"
+  },
+  {
+    "id": "tech-ibm-simon",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/IBM_Simon"
+  },
+  {
+    "id": "tech-snake-game",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Snake"
+  },
+  {
+    "id": "tech-ibm-pc",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/IBM"
+  },
+  {
+    "id": "tech-mouse-engelbart",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Douglas_Engelbart"
+  },
+  {
+    "id": "tech-bluetooth-king",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Harald_%C3%A0_la_dent_bleue"
+  },
+  {
+    "id": "tech-robot-word",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Karel_%C4%8Capek"
+  },
+  {
+    "id": "tech-turing-father",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Alan_Turing"
+  },
+  {
+    "id": "tech-babbage",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Charles_Babbage"
+  },
+  {
+    "id": "tech-velcro",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/George_de_Mestral"
+  },
+  {
+    "id": "tech-google-googol",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/Googol"
+  },
+  {
+    "id": "tech-netflix-dvd",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/location_de_DVD_par_courrier"
+  },
+  {
+    "id": "tech-ampere-unit",
+    "correct_idx": 3,
+    "evidence": "https://fr.wikipedia.org/wiki/intensit%C3%A9_du_courant_%C3%A9lectrique"
+  },
+  {
+    "id": "tech-qwerty",
+    "correct_idx": 1,
+    "evidence": "https://fr.wikipedia.org/wiki/Pour_%C3%A9viter_que_les_tiges_des_machines_%C3%A0_%C3%A9crire_se_coincent"
+  }
+]

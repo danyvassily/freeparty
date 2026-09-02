@@ -49,7 +49,7 @@
       "Le cheval",
       "Le guépard"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "animaux",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/gu%C3%A9pard"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ani-manchot",
@@ -125,7 +125,7 @@
       "Un",
       "Deux"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "animaux",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Trois"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ani-girafe",
@@ -201,7 +201,7 @@
       "Le castor",
       "L'ornithorynque"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "animaux",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/ornithorynque"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ani-requin",
@@ -277,7 +277,7 @@
       "Six",
       "Dix"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "animaux",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Huit"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ani-felin",
@@ -353,7 +353,7 @@
       "Le hibou",
       "La colombe"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "animaux",
     "difficulty": "easy",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/colombe"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ani-escargot",
@@ -429,7 +429,7 @@
       "Le foie",
       "Le cerveau"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "corps-humain",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/peau"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-corps-os",
@@ -505,7 +505,7 @@
       "Environ 150",
       "Environ 300"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "corps-humain",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Environ_300"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-corps-dents",
@@ -581,7 +581,7 @@
       "Le foie",
       "Les reins"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "corps-humain",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/c%C5%93ur"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-corps-cellule",
@@ -657,7 +657,7 @@
       "Six",
       "Quatre"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "corps-humain",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Quatre"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-corps-croissance",
@@ -733,7 +733,7 @@
       "AB positif",
       "A positif"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "corps-humain",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/O_n%C3%A9gatif"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-corps-sang",
@@ -809,7 +809,7 @@
       "L'orange",
       "La pomme"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/pomme"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-alim-chocolat",
@@ -885,7 +885,7 @@
       "La tomate",
       "Le concombre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/avocat"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-alim-safran",
@@ -961,7 +961,7 @@
       "Le comté",
       "L'emmental"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/emmental"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-alim-houmous",
@@ -1037,7 +1037,7 @@
       "La bière",
       "Le cidre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/vin"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-alim-epinards",
@@ -1113,7 +1113,7 @@
       "La mangue",
       "La banane"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "medium",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/banane"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-alim-curcuma",
@@ -1189,7 +1189,7 @@
       "La crème fraîche",
       "Le beurre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "alimentation",
     "difficulty": "easy",
@@ -1205,14 +1205,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/yaourt"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

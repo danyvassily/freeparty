@@ -49,7 +49,7 @@
       "Le Mangekyō",
       "Le Kamehameha"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Kamehameha"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-dbz-shenron",
@@ -125,7 +125,7 @@
       "Eiichirō Oda",
       "Masashi Kishimoto"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "manga",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Akira_Toriyama"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-one-piece-author",
@@ -201,7 +201,7 @@
       "Le fruit Hito-Hito",
       "Le fruit Gomu-Gomu"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/fruit_Gomu-Gomu"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-one-piece-roger",
@@ -277,7 +277,7 @@
       "Naruto",
       "Dragon Ball"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "records",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/One_Piece"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-naruto-village",
@@ -353,7 +353,7 @@
       "Nibi",
       "Kyūbi"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ky%C5%ABbi"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-naruto-rasengan",
@@ -429,7 +429,7 @@
       "Eiichirō Oda",
       "Akira Toriyama"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "manga",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Masashi_Kishimoto"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-akira-year",
@@ -505,7 +505,7 @@
       "Akira",
       "Kaneda"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Kaneda"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-ghibli-founder",
@@ -581,7 +581,7 @@
       "Pikachu",
       "Kirby"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Totoro"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-ghibli-oscar",
@@ -657,7 +657,7 @@
       "Le Vent se lève",
       "Porco Rosso"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Porco_Rosso"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-attack-on-titan",
@@ -733,7 +733,7 @@
       "Levi Ackerman",
       "Armin Arlert"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Eren_J%C3%A4ger"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-pokemon-pikachu",
@@ -809,7 +809,7 @@
       "Makoto",
       "Usagi"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Usagi"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-death-note-rule",
@@ -885,7 +885,7 @@
       "Rem",
       "Sidoh"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ryuk"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-saint-seiya-pegasus",

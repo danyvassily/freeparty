@@ -49,7 +49,7 @@
       "H.G. Wells",
       "George Orwell"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/George_Orwell"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-big-brother",
@@ -125,7 +125,7 @@
       "Le ministère de la Vérité",
       "Le ministère de la Paix"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "romans",
     "difficulty": "hard",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/minist%C3%A8re_de_l'Amour"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-huxley",
@@ -201,7 +201,7 @@
       "George R.R. Martin",
       "J.R.R. Tolkien"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/J.R.R._Tolkien"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-narnia",
@@ -277,7 +277,7 @@
       "Suzanne Collins",
       "Stephenie Meyer"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/J.K._Rowling"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-collins",
@@ -353,7 +353,7 @@
       "45",
       "66"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "records",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/66"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-poirot",
@@ -429,7 +429,7 @@
       "Miss Fisher",
       "Miss Silver"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "policier",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Miss_Marple"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-conan-doyle",
@@ -505,7 +505,7 @@
       "Le Booker Prize",
       "Le prix Goncourt"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "prix",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/prix_Goncourt"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-goncourt-brothers",
@@ -581,7 +581,7 @@
       "Michel Houellebecq",
       "Patrick Modiano"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "prix",
     "difficulty": "hard",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/J.M.G._Le_Cl%C3%A9zio"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-modiano",
@@ -657,7 +657,7 @@
       "Simone de Beauvoir",
       "Annie Ernaux"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "prix",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Annie_Ernaux"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-verlaine",
@@ -733,7 +733,7 @@
       "Paul Éluard",
       "André Breton"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "poesie",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Guillaume_Apollinaire"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-perrault",
@@ -809,7 +809,7 @@
       "La Suède",
       "L'Allemagne"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Allemagne"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-andersen",
@@ -1037,7 +1037,7 @@
       "John Steinbeck",
       "F. Scott Fitzgerald"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ernest_Hemingway"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-pulitzer",
@@ -1113,7 +1113,7 @@
       "25",
       "37"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "records",
     "difficulty": "hard",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/37"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

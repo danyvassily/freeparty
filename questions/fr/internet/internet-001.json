@@ -49,7 +49,7 @@
       "Un aigle",
       "Un oiseau bleu"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "reseaux-sociaux",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/oiseau_bleu"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-instagram-photos",
@@ -125,7 +125,7 @@
       "Une abeille",
       "Une flamme"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "reseaux-sociaux",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/fant%C3%B4me"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-tiktok-china",
@@ -201,7 +201,7 @@
       "Reddit",
       "LinkedIn"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "reseaux-sociaux",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/LinkedIn"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-wikipedia-english",
@@ -277,7 +277,7 @@
       "Larry Page",
       "Tim Berners-Lee"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jimmy_Wales"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-google-dominant",
@@ -353,7 +353,7 @@
       "Vint Cerf",
       "Ray Tomlinson"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ray_Tomlinson"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-first-website",
@@ -505,7 +505,7 @@
       "Maru",
       "Grumpy Cat"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "memes",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Grumpy_Cat"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-rickroll",
@@ -581,7 +581,7 @@
       "Rick James",
       "Ricky Martin"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "memes",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Rick_Astley"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-hashtag-twitter",
@@ -657,7 +657,7 @@
       "La Chine",
       "Le Japon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Japon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-minitel",
@@ -733,7 +733,7 @@
       "Serveur en panne",
       "Accès refusé"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Page_non_trouv%C3%A9e"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-www",
@@ -809,7 +809,7 @@
       "Les Badges",
       "Les Doodles"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Doodles"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-emoji-2015",
@@ -885,7 +885,7 @@
       "Hello world",
       "First video"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Me_at_the_zoo"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-internet-users",
@@ -1037,7 +1037,7 @@
       "Un réseau pirate illégal",
       "Le tout premier Internet"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/pages_non_index%C3%A9es_par_les_moteurs_de_recherche"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-spam-hormel",
@@ -1113,7 +1113,7 @@
       "Edge",
       "Google Chrome"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "web",
     "difficulty": "easy",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Google_Chrome"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

@@ -49,7 +49,7 @@
       "Blanc, bleu, rouge",
       "Rouge, blanc, vert"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Rouge%2C_blanc%2C_vert"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-margherita-name",
@@ -201,7 +201,7 @@
       "Les États-Unis",
       "Le Mexique"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Mexique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-curry",
@@ -277,7 +277,7 @@
       "L'Espagne",
       "La Hongrie"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/France"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-ratatouille",
@@ -353,7 +353,7 @@
       "Le Centre",
       "Le Sud-Ouest"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Sud-Ouest"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-baguette-ingredients",
@@ -429,7 +429,7 @@
       "L'ONU",
       "L'OMS"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "records",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/UNESCO"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-croissant-vienna",
@@ -505,7 +505,7 @@
       "L'Alsace",
       "La Champagne"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Champagne"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-bordeaux",
@@ -581,7 +581,7 @@
       "Le kir",
       "Le pineau"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/pastis"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-tarte-tatin",
@@ -657,7 +657,7 @@
       "L'éclair",
       "Le macaron"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/macaron"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-kebab-turkey",
@@ -733,7 +733,7 @@
       "Berlin",
       "Francfort"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Hambourg"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-frites-belgium",
@@ -809,7 +809,7 @@
       "Le quinoa",
       "Le riz vinaigré"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/riz_vinaigr%C3%A9"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-wasabi",
@@ -885,7 +885,7 @@
       "Une racine",
       "Un fruit"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "ingredients",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/champignon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-saffron",
@@ -961,7 +961,7 @@
       "Les palmiers",
       "Les orchidées"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "ingredients",
     "difficulty": "hard",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/orchid%C3%A9es"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-chocolate-cocoa",
@@ -1037,7 +1037,7 @@
       "L'Afrique",
       "L'Asie"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "ingredients",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Am%C3%A9rique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-herbes-provence",
@@ -1113,7 +1113,7 @@
       "Toulouse",
       "Dijon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dijon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-escargots",
@@ -1189,7 +1189,7 @@
       "L'Auvergne",
       "Le Jura"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Normandie"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-roquefort",
@@ -1265,7 +1265,7 @@
       "Le chèvre",
       "Le comté"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/comt%C3%A9"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-boeuf-bourguignon",
@@ -1341,7 +1341,7 @@
       "Les antipasti",
       "Les mezze"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/tapas"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-dim-sum",
@@ -1493,7 +1493,7 @@
       "L'Italie",
       "La France"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "hard",
@@ -1509,14 +1509,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pologne"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

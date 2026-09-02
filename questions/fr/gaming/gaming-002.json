@@ -49,7 +49,7 @@
       "Olga Tokarczuk",
       "Andrzej Sapkowski"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Andrzej_Sapkowski"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-mario-kart-blue-shell",
@@ -125,7 +125,7 @@
       "La flûte",
       "La harpe"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/ocarina"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-zelda-botw",
@@ -201,7 +201,7 @@
       "Le Capitaine Keyes",
       "Master Chief"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Master_Chief"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-halo-studio",
@@ -277,7 +277,7 @@
       "Pilote",
       "Espionne"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Arch%C3%A9ologue"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-mgs-kojima",
@@ -353,7 +353,7 @@
       "Sunnydale",
       "Raccoon City"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Raccoon_City"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-silent-hill-fog",
@@ -429,7 +429,7 @@
       "Le Kamehameha",
       "Le Rasengan"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Hadoken"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-mortal-kombat-fatality",
@@ -505,7 +505,7 @@
       "Les cubes",
       "Les tétrominos"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/t%C3%A9trominos"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-fifa-editor",
@@ -657,7 +657,7 @@
       "Il se joue uniquement en solo",
       "Les joueurs créent leurs propres jeux"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/joueurs_cr%C3%A9ent_leurs_propres_jeux"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-fortnite-emotes",
@@ -733,7 +733,7 @@
       "Sid Meier",
       "Peter Molyneux"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Will_Wright"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-simlish",
@@ -809,7 +809,7 @@
       "1994",
       "1986"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1986"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-sega-megadrive",
@@ -885,7 +885,7 @@
       "La Lynx",
       "La Game Gear"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "consoles",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Game_Boy"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-playstation-year",
@@ -961,7 +961,7 @@
       "Apple",
       "Microsoft"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "consoles",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Microsoft"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-wii-motion",
@@ -1037,7 +1037,7 @@
       "Mario et Sonic",
       "DC et Marvel"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Disney_et_Final_Fantasy"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-elden-ring-studio",
@@ -1113,7 +1113,7 @@
       "Street Fighter",
       "StarCraft"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/StarCraft"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

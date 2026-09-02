@@ -49,7 +49,7 @@
       "L'invasion de la France",
       "L'invasion de la Pologne par l'Allemagne"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/invasion_de_la_Pologne_par_l'Allemagne"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-drole-guerre",
@@ -125,7 +125,7 @@
       "La guerre d'usure",
       "La guerre de position"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/blitzkrieg"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-france-1940",
@@ -201,7 +201,7 @@
       "Leclerc",
       "Charles de Gaulle"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Charles_de_Gaulle"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-vichy",
@@ -277,7 +277,7 @@
       "La bataille de France",
       "La bataille de l'Atlantique"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/bataille_d'Angleterre"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-barbarossa",
@@ -353,7 +353,7 @@
       "1943",
       "1941"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1941"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-pearl-harbor",
@@ -505,7 +505,7 @@
       "1945",
       "1943"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1943"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-koursk",
@@ -581,7 +581,7 @@
       "Tobrouk",
       "Benghazi"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/El-Alamein"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-rommel",
@@ -657,7 +657,7 @@
       "Opération Husky",
       "Opération Overlord"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Overlord"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-normandie-1944",
@@ -733,7 +733,7 @@
       "Opération Husky",
       "Opération Torch"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Dragoon"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-yalta",
@@ -809,7 +809,7 @@
       "Dwight Eisenhower",
       "Harry Truman"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "hard",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Harry_Truman"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-hitler-mort",
@@ -885,7 +885,7 @@
       "Le 6 juin 1944",
       "Le 2 septembre 1945"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/8_mai_1945"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-ville-atomique",
@@ -961,7 +961,7 @@
       "1946",
       "1945"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1945"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-manhattan",
@@ -1037,7 +1037,7 @@
       "Le 8 mai 1945",
       "Le 6 août 1945"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/2_septembre_1945"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-shoah",
@@ -1113,7 +1113,7 @@
       "La conférence de Potsdam",
       "La conférence de Wannsee"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "hard",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/conf%C3%A9rence_de_Wannsee"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-moulin",
@@ -1189,7 +1189,7 @@
       "Opération Overlord",
       "Opération Seelöwe"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "hard",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Op%C3%A9ration_Dynamo"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-auschwitz",
@@ -1265,7 +1265,7 @@
       "Miklós Horthy",
       "Benito Mussolini"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "easy",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Benito_Mussolini"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-ww2-axe",
@@ -1341,7 +1341,7 @@
       "1941",
       "1943"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "seconde-guerre-mondiale",
     "difficulty": "hard",
@@ -1357,14 +1357,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1942"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

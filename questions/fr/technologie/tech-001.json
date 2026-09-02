@@ -49,7 +49,7 @@
       "Michael Faraday",
       "Thomas Edison"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Thomas_Edison"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-marconi-nobel",
@@ -125,7 +125,7 @@
       "Minitel",
       "Enigma"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/ARPANET"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-berners-lee",
@@ -201,7 +201,7 @@
       "Jeff Bezos",
       "Steve Jobs et Steve Wozniak"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Steve_Jobs_et_Steve_Wozniak"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-microsoft-founders",
@@ -277,7 +277,7 @@
       "Mark Zuckerberg",
       "Jack Dorsey"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Larry_Page_et_Sergey_Brin"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-facebook-founder",
@@ -353,7 +353,7 @@
       "Pierre Omidyar",
       "Jeff Bezos"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "easy",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jeff_Bezos"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-tesla-cars",
@@ -505,7 +505,7 @@
       "Le Motorola StarTAC",
       "L'IBM Simon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "objets",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/IBM_Simon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-nokia-3310",
@@ -581,7 +581,7 @@
       "Tetris",
       "Pac-Man"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "objets",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Snake"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-sony-playstation",
@@ -657,7 +657,7 @@
       "HP",
       "IBM"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/IBM"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-macintosh-1984",
@@ -733,7 +733,7 @@
       "Alan Turing",
       "John von Neumann"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Douglas_Engelbart"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-wifi",
@@ -809,7 +809,7 @@
       "Canut le Grand",
       "Harald à la dent bleue"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Harald_%C3%A0_la_dent_bleue"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-gps-meaning",
@@ -885,7 +885,7 @@
       "Isaac Asimov",
       "Jules Verne"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "expert",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Karel_%C4%8Capek"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-ai-1956",
@@ -961,7 +961,7 @@
       "John Nash",
       "Alan Turing"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alan_Turing"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-enigma",
@@ -1037,7 +1037,7 @@
       "Alan Turing",
       "Blaise Pascal"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Charles_Babbage"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-ada-lovelace",
@@ -1189,7 +1189,7 @@
       "Léonard de Vinci",
       "Henry Ford"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "expert",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/George_de_Mestral"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-postit",
@@ -1265,7 +1265,7 @@
       "Graphe",
       "Googol"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Googol"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-youtube-2005",
@@ -1341,7 +1341,7 @@
       "Le cinéma",
       "La production télévisée"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "medium",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/location_de_DVD_par_courrier"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-tesla-nikola",
@@ -1417,7 +1417,7 @@
       "La puissance",
       "L'intensité du courant électrique"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "objets",
     "difficulty": "medium",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/intensit%C3%A9_du_courant_%C3%A9lectrique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-volt-unit",
@@ -1493,7 +1493,7 @@
       "Pour accélérer la frappe",
       "Pour les gauchers"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -1509,14 +1509,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pour_%C3%A9viter_que_les_tiges_des_machines_%C3%A0_%C3%A9crire_se_coincent"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

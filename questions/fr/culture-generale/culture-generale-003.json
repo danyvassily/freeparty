@@ -49,7 +49,7 @@
       "Vancouver",
       "Ottawa"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "capitales",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ottawa"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-cap-suisse",
@@ -125,7 +125,7 @@
       "Rio de Janeiro",
       "São Paulo"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "capitales",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Brasilia"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-cap-japon",
@@ -201,7 +201,7 @@
       "Bursa",
       "Ankara"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "capitales",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ankara"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-cap-usa",
@@ -277,7 +277,7 @@
       "Johannesburg",
       "Le Cap"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "capitales",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pretoria"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-cap-nz",
@@ -353,7 +353,7 @@
       "Madras",
       "New Delhi"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "capitales",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/New_Delhi"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-xx-titanic",
@@ -429,7 +429,7 @@
       "Le Lusitania",
       "Le Normandie"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "xxeme-siecle",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Titanic"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-xx-krach",
@@ -505,7 +505,7 @@
       "L'Airbus A380",
       "Le Concorde"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "xxeme-siecle",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Concorde"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-xx-spoutnik",
@@ -581,7 +581,7 @@
       "1961",
       "1955"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "xxeme-siecle",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1957"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-xx-gandhi",
@@ -657,7 +657,7 @@
       "Le premier vol du Concorde",
       "Le premier pas de l'homme sur la Lune"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "xxeme-siecle",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/premier_pas_de_l'homme_sur_la_Lune"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-xx-gagarine-annee",
@@ -733,7 +733,7 @@
       "1955",
       "1963"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "xxeme-siecle",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1961"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ins-coups-coeur",
@@ -809,7 +809,7 @@
       "La Chine",
       "La France"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "insolite",
     "difficulty": "hard",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/France"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ins-venus",
@@ -885,7 +885,7 @@
       "1 seconde",
       "30 minutes"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "insolite",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/8_minutes"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ins-cheval",
@@ -961,7 +961,7 @@
       "L'hindi",
       "Le mandarin"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "insolite",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/mandarin"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-ins-inde",
@@ -1113,7 +1113,7 @@
       "L'Amérique du Nord",
       "L'Asie"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "insolite",
     "difficulty": "easy",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Asie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

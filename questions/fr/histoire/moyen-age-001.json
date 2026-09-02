@@ -49,7 +49,7 @@
       "Léon IX",
       "Urbain II"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "croisades",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Urbain_II"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-croisade-jerusalem-1099",
@@ -125,7 +125,7 @@
       "Baudouin de Boulogne",
       "Raymond de Saint-Gilles"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "croisades",
     "difficulty": "hard",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Godefroy_de_Bouillon"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-croisade-saladin",
@@ -201,7 +201,7 @@
       "Lépante",
       "Hattin"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "croisades",
     "difficulty": "hard",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Hattin"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-croisade-richard",
@@ -277,7 +277,7 @@
       "1187",
       "1204"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "croisades",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1291"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-croisade-templiers",
@@ -353,7 +353,7 @@
       "Gérard Tenque",
       "Jacques de Molay"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "croisades",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jacques_de_Molay"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-croisade-nombre",
@@ -429,7 +429,7 @@
       "La France et l'Espagne",
       "L'Angleterre et l'Écosse"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/France_et_l'Angleterre"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-debut",
@@ -505,7 +505,7 @@
       "Les Lancastre",
       "Les Plantagenêts"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Plantagen%C3%AAts"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-crecy",
@@ -581,7 +581,7 @@
       "Crécy",
       "Azincourt"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "hard",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Poitiers"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-azincourt",
@@ -657,7 +657,7 @@
       "Édouard de Woodstock",
       "Henri V"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Henri_V"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-troyes",
@@ -733,7 +733,7 @@
       "Reims",
       "Paris"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Orl%C3%A9ans"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-domremy",
@@ -809,7 +809,7 @@
       "1453",
       "1431"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1431"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-cent-ans-charles7",
@@ -885,7 +885,7 @@
       "Crécy",
       "Azincourt"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-cent-ans",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Castillon"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-moyen-age-hastings",
@@ -961,7 +961,7 @@
       "962",
       "800"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "moyen-age",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/800"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-moyen-age-verdun",
@@ -1037,7 +1037,7 @@
       "Le choléra",
       "La variole"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "moyen-age",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/peste_noire"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-moyen-age-magna-carta",
@@ -1113,7 +1113,7 @@
       "Un moine vivant en abbaye",
       "Un paysan dépendant d'un seigneur"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "moyen-age",
     "difficulty": "medium",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/paysan_d%C3%A9pendant_d'un_seigneur"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-moyen-age-notre-dame",
@@ -1189,7 +1189,7 @@
       "Le sacre",
       "Le vasselage"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "moyen-age",
     "difficulty": "medium",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/adoubement"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-moyen-age-charles5",

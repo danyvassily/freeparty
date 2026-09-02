@@ -42,14 +42,14 @@
     "conceptId": "tom-hanks-forrest-gump-role",
     "familyId": "tom-hanks-roles",
     "type": "mcq",
-    "question": "Dans quel film Tom Hanks interprète-t-il le personnage de Forrest Gump ?",
+    "question": "Dans quel film de Robert Zemeckis Tom Hanks prononce-t-il la célèbre phrase : « La vie, c'est comme une boîte de chocolats » ?",
     "answers": [
       "Philadelphia",
       "Big",
       "Seul au monde",
       "Forrest Gump"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Forrest_Gump"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-jack-sparrow-actor",
@@ -125,7 +125,7 @@
       "1975",
       "1980"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1977"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-star-wars-director",
@@ -201,7 +201,7 @@
       "Le Galactica",
       "Le Faucon Millenium"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "franchises",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Faucon_Millenium"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-luke-father",
@@ -277,7 +277,7 @@
       "Rupert Grint",
       "Tom Felton"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Daniel_Radcliffe"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-indiana-jones-first",
@@ -353,7 +353,7 @@
       "Daniel Craig",
       "Sean Connery"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Sean_Connery"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-bond-first-name",
@@ -429,7 +429,7 @@
       "Al Pacino",
       "Robert De Niro"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Marlon_Brando"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-godfather-director",
@@ -505,7 +505,7 @@
       "Rencontres du troisième type",
       "Les Dents de la mer"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dents_de_la_mer"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-et-director",
@@ -581,7 +581,7 @@
       "Robert Rodriguez",
       "David Fincher"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Quentin_Tarantino"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-titanic-oscar-1998",
@@ -657,7 +657,7 @@
       "Le Pari",
       "La Chèvre"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ch%C3%A8vre"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-visiteurs-godefroy",
@@ -733,7 +733,7 @@
       "Le Père Noël est une ordure",
       "La Grande Vadrouille"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bronz%C3%A9s"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-grande-vadrouille-director",
@@ -809,7 +809,7 @@
       "L'Aile ou la Cuisse",
       "Le Gendarme de Saint-Tropez"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Gendarme_de_Saint-Tropez"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-diner-de-cons-villeret",
@@ -885,7 +885,7 @@
       "Luc Besson",
       "Cédric Klapisch"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jean-Pierre_Jeunet"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-nemo-pixar",
@@ -961,7 +961,7 @@
       "V.I.C.I.",
       "Ève"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "animation",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%88ve"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-pixar-studio",
@@ -1037,7 +1037,7 @@
       "Pixar",
       "Laika"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "animation",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/DreamWorks"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-toy-story-woody",
@@ -1113,7 +1113,7 @@
       "John Goodman",
       "Tom Hanks"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "animation",
     "difficulty": "hard",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Tom_Hanks"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-roi-lion-mufasa",
@@ -1189,7 +1189,7 @@
       "Raiponce",
       "Vaiana"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "animation",
     "difficulty": "easy",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Reine_des_neiges"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-reine-neiges-olaf",
@@ -1265,7 +1265,7 @@
       "Memento",
       "Inception"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Inception"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-dark-knight-batman",
@@ -1341,7 +1341,7 @@
       "Jack Nicholson",
       "Jared Leto"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "medium",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Heath_Ledger"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-lotr-director",
@@ -1417,7 +1417,7 @@
       "Gandalf",
       "Frodon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "franchises",
     "difficulty": "easy",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Frodon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-gandalf-actor",
@@ -1493,7 +1493,7 @@
       "Universal",
       "Paramount"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "franchises",
     "difficulty": "medium",
@@ -1509,15 +1509,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Warner_Bros"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-avengers-first",
@@ -1569,7 +1569,7 @@
       "Mark Ruffalo",
       "Robert Downey Jr."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "easy",
@@ -1585,15 +1585,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Robert_Downey_Jr."
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-thor-hammer",
@@ -1645,7 +1645,7 @@
       "Morpheus",
       "Trinity"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -1661,15 +1661,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/N%C3%A9o"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-matrix-directors",
@@ -1721,7 +1721,7 @@
       "Je suis le maître du monde",
       "Je suis le roi du monde"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "repliques",
     "difficulty": "easy",
@@ -1737,14 +1737,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Je_suis_le_roi_du_monde"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

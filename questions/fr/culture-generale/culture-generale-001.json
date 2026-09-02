@@ -49,7 +49,7 @@
       "Gustave Eiffel",
       "Alfred Nobel"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alfred_Nobel"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-inv-photo",
@@ -125,7 +125,7 @@
       "Henry Ford",
       "Nikola Tesla"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Thomas_Edison"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-inv-cinema",
@@ -201,7 +201,7 @@
       "Étienne Lenoir",
       "Rudolf Diesel"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Rudolf_Diesel"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-inv-radioactivite",
@@ -277,7 +277,7 @@
       "Irène Joliot-Curie",
       "Lise Meitner"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "inventions",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Marie_Curie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-inv-avion",
@@ -353,7 +353,7 @@
       "Alexander Fleming",
       "Felix Hoffmann"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Felix_Hoffmann"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-mon-eiffel",
@@ -429,7 +429,7 @@
       "1878",
       "1900"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "monuments",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1889"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-mon-colisee",
@@ -505,7 +505,7 @@
       "La pyramide de Djéser",
       "La pyramide de Khéops"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "monuments",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/pyramide_de_Kh%C3%A9ops"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-mon-taj-mahal",
@@ -581,7 +581,7 @@
       "Louis XIII",
       "Louis XV"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "monuments",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Louis_XIV"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-mon-liberte",
@@ -657,7 +657,7 @@
       "Vienne",
       "Nîmes"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "monuments",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/N%C3%AEmes"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-mon-bayeux",
@@ -733,7 +733,7 @@
       "Le palais Pitti",
       "Le palais des Doges"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "monuments",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vatican"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-flag-france",
@@ -809,7 +809,7 @@
       "La Nouvelle-Zélande",
       "Le Canada"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "drapeaux",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Canada"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-flag-japon",
@@ -885,7 +885,7 @@
       "Le Danemark",
       "La Norvège"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "drapeaux",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Suisse"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-flag-ghana",
@@ -961,7 +961,7 @@
       "13",
       "50"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "drapeaux",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/50"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-flag-danemark",
@@ -1037,7 +1037,7 @@
       "Les États-Unis",
       "La France"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "drapeaux",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Royaume-Uni"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-flag-angleterre",
@@ -1113,7 +1113,7 @@
       "La Hongrie",
       "L'Italie"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "drapeaux",
     "difficulty": "medium",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Italie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

@@ -49,7 +49,7 @@
       "H2SO4",
       "NaCl"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/NaCl"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-elements-118",
@@ -125,7 +125,7 @@
       "L'hélium est chaud",
       "L'hélium est magnétique"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/h%C3%A9lium_est_plus_l%C3%A9ger_que_l'air"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-mendeleev",
@@ -201,7 +201,7 @@
       "Claude Bernard",
       "Antoine Lavoisier"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Antoine_Lavoisier"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-chlorophyll",
@@ -277,7 +277,7 @@
       "L'oxygène et l'azote",
       "Le sucre et l'azote"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/CO2_et_l'eau"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-skin-organ",
@@ -353,7 +353,7 @@
       "L'acide nitrique",
       "L'acide chlorhydrique"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/acide_chlorhydrique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-heart-pump",
@@ -429,7 +429,7 @@
       "Le martinet",
       "L'hirondelle"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/colibri"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-cheetah",
@@ -505,7 +505,7 @@
       "Le requin blanc",
       "La baleine bleue"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/baleine_bleue"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-octopus-hearts",
@@ -581,7 +581,7 @@
       "14",
       "21"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "hard",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/7"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-panda-bamboo",
@@ -657,7 +657,7 @@
       "Le Brésil",
       "L'Australie"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Australie"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-human-genes",
@@ -733,7 +733,7 @@
       "A, B, C et D",
       "1, 2, 3 et 4"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/A%2C_B%2C_AB_et_O"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-neutron-star",
@@ -809,7 +809,7 @@
       "Une étoile éteinte",
       "Un objet dont la gravité est si forte que rien n'en sort"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/objet_dont_la_gravit%C3%A9_est_si_forte_que_rien_n'en_sort"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-milky-way",
@@ -885,7 +885,7 @@
       "Vers le Soleil",
       "Vers la Terre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Loin_du_Soleil"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-pluto",
@@ -961,7 +961,7 @@
       "Jupiter",
       "Vénus"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "hard",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/V%C3%A9nus"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-einstein-nobel",
@@ -1037,7 +1037,7 @@
       "Énergie = matière × chaleur",
       "Force = masse × accélération"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%89nergie_%3D_masse_%C3%97_vitesse_de_la_lumi%C3%A8re_au_carr%C3%A9"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-newton-apple",
@@ -1113,7 +1113,7 @@
       "Euclide",
       "Archimède"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "medium",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Archim%C3%A8de"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-lever-quote",
@@ -1189,7 +1189,7 @@
       "Est et ouest",
       "Positif et négatif"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "physique",
     "difficulty": "easy",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Nord_et_sud"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-rainbow",
@@ -1265,7 +1265,7 @@
       "L'hélium",
       "L'ozone"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "chimie",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/ozone"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-greenhouse-co2",
@@ -1341,7 +1341,7 @@
       "Le K2",
       "Le Mont Blanc"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "geographie",
     "difficulty": "easy",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Everest"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-sahara",
@@ -1417,7 +1417,7 @@
       "Le Zambèze",
       "Le Nil"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "science",
     "subcategory": "geographie",
     "difficulty": "medium",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Nil"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-earth-rotation",
@@ -1493,7 +1493,7 @@
       "Pour les saisons",
       "Pour les marées"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "astronomie",
     "difficulty": "medium",
@@ -1509,14 +1509,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pour_compenser_le_quart_de_jour_exc%C3%A9dentaire_de_l'ann%C3%A9e_solaire"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

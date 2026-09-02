@@ -49,7 +49,7 @@
       "Fernand de Magellan",
       "Vasco de Gama"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "grandes-decouvertes",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vasco_de_Gama"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-dec-cortes",
@@ -125,7 +125,7 @@
       "Hernán Cortés",
       "Vasco Núñez de Balboa"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "grandes-decouvertes",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-dec-magellan",
@@ -201,7 +201,7 @@
       "John Cabot",
       "James Cook"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "grandes-decouvertes",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/James_Cook"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-indus-vapeur",
@@ -277,7 +277,7 @@
       "1804",
       "1848"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "revolution-industrielle",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/1827"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-indus-telephone-annee",
@@ -353,7 +353,7 @@
       "Guglielmo Marconi",
       "Alexander Graham Bell"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "revolution-industrielle",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alexander_Graham_Bell"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-indus-ampoule",
@@ -429,7 +429,7 @@
       "Isambard Kingdom Brunel",
       "Richard Trevithick"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "revolution-industrielle",
     "difficulty": "hard",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/George_Stephenson"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-indus-expo-1889",
@@ -505,7 +505,7 @@
       "Ferdinand Porsche",
       "Carl Benz"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "revolution-industrielle",
     "difficulty": "hard",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Carl_Benz"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-indus-seconde",

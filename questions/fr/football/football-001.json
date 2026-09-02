@@ -125,7 +125,7 @@
       "L'Italie",
       "La Croatie"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "coupe-du-monde",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Br%C3%A9sil"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-france-2018",
@@ -201,7 +201,7 @@
       "Le Maroc",
       "L'Argentine"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "coupe-du-monde",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Argentine"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-messi-ballons",
@@ -353,7 +353,7 @@
       "Robert Lewandowski",
       "Cristiano Ronaldo"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "records",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Cristiano_Ronaldo"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-maradona-hand",
@@ -429,7 +429,7 @@
       "2",
       "4"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "legendes",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/3"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-real-ucl",
@@ -505,7 +505,7 @@
       "La Coupe intercontinentale",
       "La Ligue des champions"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "clubs",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ligue_des_champions"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-psg-1970",
@@ -581,7 +581,7 @@
       "Le Stade de France",
       "Le Vélodrome"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "clubs",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Parc_des_Princes"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-marseille-1993",
@@ -657,7 +657,7 @@
       "4 fois",
       "2 fois"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "records",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/2_fois"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-zidane-1998",
@@ -733,7 +733,7 @@
       "La Juventus",
       "Le Real Madrid"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "legendes",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/FC_Barcelone"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-england-record",
@@ -809,7 +809,7 @@
       "Le Bayer Leverkusen",
       "Le Bayern Munich"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "clubs",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bayern_Munich"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-juventus",
@@ -885,7 +885,7 @@
       "Ronaldo (Brésil)",
       "Gerd Müller"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "records",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Miroslav_Klose"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-stade-de-france",

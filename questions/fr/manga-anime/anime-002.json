@@ -49,7 +49,7 @@
       "Van et Trisha",
       "Edward et Alphonse"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Edward_et_Alphonse"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-bleach-zangetsu",
@@ -125,7 +125,7 @@
       "Genos",
       "Garou"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Saitama"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-jjk-sukuna",
@@ -201,7 +201,7 @@
       "Elle parle le langage des animaux",
       "Elle ne mange pas les humains"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Elle_ne_mange_pas_les_humains"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-demon-slayer-water",
@@ -353,7 +353,7 @@
       "Fleuriste",
       "Livreuse"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Livreuse"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-ponyo",
@@ -429,7 +429,7 @@
       "Calcifer",
       "Turnip Head"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Howl"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-tokyo-ghoul-kaneki",
@@ -505,7 +505,7 @@
       "Gel",
       "One For All"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/One_For_All"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-jojo-stands",
@@ -581,7 +581,7 @@
       "L'examen Chūnin",
       "Le tournoi du Cell Games"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/examen_Hunter"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-mononoke-san",
@@ -657,7 +657,7 @@
       "Dans une école",
       "Dans des bains publics"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dans_des_bains_publics"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-no-face",
@@ -733,7 +733,7 @@
       "Roi des Nameks",
       "Dieu de la destruction"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Prince_des_Saiyans"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-freezer-forms",
@@ -809,7 +809,7 @@
       "Le baseball",
       "Le basket-ball"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "manga-anime",
     "subcategory": "anime",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/basket-ball"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-tsubasa",
@@ -885,7 +885,7 @@
       "Porco Rosso",
       "Kiki la petite sorcière"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "studio-ghibli",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vent_se_l%C3%A8ve"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-gear5",

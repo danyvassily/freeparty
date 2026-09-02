@@ -49,7 +49,7 @@
       "Artaxerxès Ier",
       "Darius Ier"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-mediques",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Darius_Ier"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-marathon-general",
@@ -125,7 +125,7 @@
       "Marathon",
       "Salamine"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-mediques",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Thermopyles"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-thermopyles-annee",
@@ -201,7 +201,7 @@
       "Pausanias",
       "Léonidas"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-mediques",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/L%C3%A9onidas"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-salamine-nature",
@@ -277,7 +277,7 @@
       "Miltiade",
       "Aristide"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-mediques",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Th%C3%A9mistocle"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-platees-fin",
@@ -353,7 +353,7 @@
       "Cyrus le Grand",
       "Xerxès Ier"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-mediques",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Xerx%C3%A8s_Ier"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-marathon-distance",
@@ -429,7 +429,7 @@
       "Athènes et Thèbes",
       "Sparte et Corinthe"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-peloponnese",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ath%C3%A8nes_et_Sparte"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-peloponnese-debut",
@@ -505,7 +505,7 @@
       "359 av. J.-C.",
       "404 av. J.-C."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerre-peloponnese",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/404_av._J.-C."
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-peloponnese-pericles",
@@ -581,7 +581,7 @@
       "L'expédition d'Égypte",
       "L'expédition de Chypre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerre-peloponnese",
     "difficulty": "hard",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/exp%C3%A9dition_de_Sicile"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-peloponnese-lysandre",
@@ -657,7 +657,7 @@
       "Socrate",
       "Épicure"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%89picure"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-alexandre-trone",
@@ -733,7 +733,7 @@
       "Issos",
       "Gaugamèles"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Granique"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-alexandre-issos",
@@ -809,7 +809,7 @@
       "323 av. J.-C.",
       "331 av. J.-C."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/331_av._J.-C."
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-alexandre-darius",
@@ -885,7 +885,7 @@
       "Le Caire",
       "Memphis"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Alexandrie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-alexandre-cheval",
@@ -961,7 +961,7 @@
       "Le nœud de marin",
       "Le nœud gordien"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/n%C5%93ud_gordien"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-alexandre-mort",
@@ -1037,7 +1037,7 @@
       "28 ans",
       "40 ans"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "alexandre-le-grand",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/32_ans"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-puniques-adversaire",
@@ -1113,7 +1113,7 @@
       "202 av. J.-C.",
       "264 av. J.-C."
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-puniques",
     "difficulty": "hard",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/264_av._J.-C."
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-puniques-hannibal",
@@ -1189,7 +1189,7 @@
       "216 av. J.-C.",
       "264 av. J.-C."
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-puniques",
     "difficulty": "medium",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/218_av._J.-C."
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-puniques-cannes",
@@ -1265,7 +1265,7 @@
       "L'Ebre",
       "Zama"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "histoire",
     "subcategory": "guerres-puniques",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Zama"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-puniques-scipion",
@@ -1341,7 +1341,7 @@
       "Cicéron",
       "Sénèque"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "histoire",
     "subcategory": "guerres-puniques",
     "difficulty": "hard",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Caton_l'Ancien"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "war-puniques-destruction",

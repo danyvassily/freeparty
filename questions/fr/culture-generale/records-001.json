@@ -125,7 +125,7 @@
       "Le Canada",
       "La Chine"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Russie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-vatican",
@@ -201,7 +201,7 @@
       "La fosse de Porto Rico",
       "La fosse des Mariannes"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/fosse_des_Mariannes"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-baleine",
@@ -277,7 +277,7 @@
       "L'aigle royal",
       "Le martinet noir"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/faucon_p%C3%A8lerin"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-antarctique",
@@ -353,7 +353,7 @@
       "Entre l'Inde et la Chine",
       "Entre le Canada et les États-Unis"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Entre_le_Canada_et_les_%C3%89tats-Unis"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-burj",
@@ -429,7 +429,7 @@
       "Madagascar",
       "Bornéo"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Groenland"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-caspienne",
@@ -505,7 +505,7 @@
       "Le lac Victoria",
       "Le lac Baïkal"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/lac_Ba%C3%AFkal"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-angel",
@@ -581,7 +581,7 @@
       "La Chine",
       "La Russie"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%89tats-Unis"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-bolt",
@@ -657,7 +657,7 @@
       "2016",
       "2009"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/2009"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-bresil",
@@ -733,7 +733,7 @@
       "Trois",
       "Quatre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Cinq"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-jo-ete",
@@ -809,7 +809,7 @@
       "Le Petit Prince",
       "La Bible"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bible"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-calment",
@@ -885,7 +885,7 @@
       "12 heures",
       "36 heures"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/24_heures"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-chaleur",
@@ -961,7 +961,7 @@
       "L'Égypte",
       "L'Indonésie"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "hard",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Indon%C3%A9sie"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-dollar",
@@ -1037,7 +1037,7 @@
       "New York",
       "Paris"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Tokyo"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-rec-indonesie",
@@ -1113,7 +1113,7 @@
       "L'araignée sauteuse",
       "La néphile"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "records",
     "difficulty": "hard",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/n%C3%A9phile"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

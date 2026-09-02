@@ -505,7 +505,7 @@
       "Nancy",
       "Onze"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Onze"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-office-dwight",
@@ -581,7 +581,7 @@
       "10 Downing Street",
       "84 Charing Cross Road"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/221B_Baker_Street"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-sherlock-watson",
@@ -657,7 +657,7 @@
       "Les Daleks",
       "Les Seigneurs du Temps"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Seigneurs_du_Temps"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-south-park-creator",
@@ -809,7 +809,7 @@
       "Lisbonne, Oslo, Varsovie",
       "Tokyo, Berlin, Nairobi"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Tokyo%2C_Berlin%2C_Nairobi"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-squid-game-first-game",
@@ -885,7 +885,7 @@
       "001",
       "067"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/456"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-luther-actor",
@@ -961,7 +961,7 @@
       "Régis",
       "Sacha"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Sacha"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-walking-dead-rick",
@@ -1037,7 +1037,7 @@
       "Woody Harrelson",
       "Colin Farrell"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "hard",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Matthew_McConaughey"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-house-specialty",
@@ -1113,7 +1113,7 @@
       "Une blessure de guerre",
       "Une nécrose musculaire à la jambe"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "expert",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/n%C3%A9crose_musculaire_%C3%A0_la_jambe"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

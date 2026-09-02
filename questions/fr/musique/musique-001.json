@@ -49,7 +49,7 @@
       "Mick Jagger",
       "Freddie Mercury"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Freddie_Mercury"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-beatles-city",
@@ -125,7 +125,7 @@
       "John Lennon",
       "Paul McCartney"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Mick_Jagger"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-yesterday-most-covered",
@@ -201,7 +201,7 @@
       "Off the Wall",
       "Thriller"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "albums",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Thriller"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-mj-title",
@@ -277,7 +277,7 @@
       "La Reine du rock",
       "La Princesse de la soul"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Reine_de_la_pop"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-elvis-title",
@@ -353,7 +353,7 @@
       "Heartbreak Hotel",
       "Graceland"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Graceland"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-daft-punk-country",
@@ -429,7 +429,7 @@
       "Thomas et William",
       "Pierre et Jacques"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "hard",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Thomas_Bangalter_et_Guy-Manuel_de_Homem-Christo"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-stromae-papaoutai",
@@ -505,7 +505,7 @@
       "La Suisse",
       "La Belgique"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Belgique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-johnny-hallyday",
@@ -581,7 +581,7 @@
       "Alexandrie Alexandra",
       "Le téléphone pleure"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "chansons",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Comme_d'habitude"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-piaf-milord",
@@ -657,7 +657,7 @@
       "Padam Padam",
       "Non, je ne regrette rien"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "chansons",
     "difficulty": "easy",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Non%2C_je_ne_regrette_rien"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-dassin-champs-elysees",
@@ -733,7 +733,7 @@
       "Georges Brassens",
       "Serge Gainsbourg"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Charles_Aznavour"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-brel-country",
@@ -809,7 +809,7 @@
       "Catherine",
       "Jane"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jane"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-nirvana-smells",
@@ -885,7 +885,7 @@
       "Eddie Vedder",
       "Chris Cornell"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Kurt_Cobain"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-radiohead-creep",
@@ -961,7 +961,7 @@
       "Pulp",
       "Oasis"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Oasis"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-stones-satisfaction",
@@ -1037,7 +1037,7 @@
       "Angie",
       "Start Me Up"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "chansons",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Paint_It_Black"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-zeppelin-stairway",
@@ -1113,7 +1113,7 @@
       "Animals",
       "The Dark Side of the Moon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "albums",
     "difficulty": "medium",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-floyd-another-brick",
@@ -1189,7 +1189,7 @@
       "Major Tom",
       "Aladdin Sane"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1205,15 +1205,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ziggy_Stardust"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-bowie-space-oddity",
@@ -1265,7 +1265,7 @@
       "Rick James",
       "Prince"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1281,15 +1281,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Prince"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-whitney-i-will",
@@ -1417,7 +1417,7 @@
       "Spice Girls",
       "Destiny's Child"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "medium",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Destiny's_Child"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-spice-girls-posh",
@@ -1493,7 +1493,7 @@
       "Roxette",
       "Ace of Base"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "groupes",
     "difficulty": "medium",
@@ -1509,15 +1509,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/ABBA"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-abba-country",
@@ -1569,7 +1569,7 @@
       "Graz",
       "Salzbourg"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "musique",
     "subcategory": "classique",
     "difficulty": "medium",
@@ -1585,15 +1585,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Salzbourg"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-beethoven-fifth",
@@ -1645,7 +1645,7 @@
       "La Lettre à Élise",
       "La Marche turque"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "classique",
     "difficulty": "medium",
@@ -1661,15 +1661,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ode_%C3%A0_la_joie"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-ravel-bolero",

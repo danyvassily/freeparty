@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-02T17:02:13.146Z",
+  "generatedAt": "2026-09-02T18:15:43.695Z",
   "total": 2081,
   "correctAnswerDistribution": {
     "0": 912,
-    "1": 402,
+    "1": 382,
     "2": 386,
-    "3": 381
+    "3": 401
   },
   "skew": [
     [
@@ -134,29 +134,29 @@
     [
       "l'antilope|le cheval|le guépard|le lion",
       [
-        "cg-ani-plus-rapide@1",
+        "cg-ani-plus-rapide@3",
         "sci-cheetah@0"
       ]
     ],
     [
       "dix|huit|quatre|six",
       [
-        "cg-ani-araignee@3",
+        "cg-ani-araignee@1",
         "egyptian-ogdoad-eight-deities@3"
       ]
     ],
     [
       "la rate|le cœur|le foie|les reins",
       [
-        "cg-corps-coeur@3",
+        "cg-corps-coeur@1",
         "sci-heart-pump@2"
       ]
     ],
     [
       "cinq|quatre|six|trois",
       [
-        "cg-corps-abo@1",
-        "cg-rec-bresil-5@3"
+        "cg-corps-abo@3",
+        "cg-rec-bresil-5@1"
       ]
     ],
     [
@@ -183,18 +183,18 @@
     [
       "l'argon|l'azote|l'oxygène|le dioxyde de carbone",
       [
-        "cg-sci-azote@3",
-        "sci-nitrogen@1",
+        "cg-sci-azote@1",
+        "sci-nitrogen@3",
         "sci-greenhouse-co2@2"
       ]
     ],
     [
       "jupiter|mars|mercure|vénus",
       [
-        "cg-sci-mars@3",
+        "cg-sci-mars@1",
         "odd-venus-day@0",
         "sci-mars-red@2",
-        "sci-venus-hottest@1"
+        "sci-venus-hottest@3"
       ]
     ],
     [
@@ -214,16 +214,16 @@
     [
       "jupiter|neptune|saturne|uranus",
       [
-        "cg-ins-saturne@1",
-        "sci-jupiter-largest@1",
-        "sci-saturn-rings@3"
+        "cg-ins-saturne@3",
+        "sci-jupiter-largest@3",
+        "sci-saturn-rings@1"
       ]
     ],
     [
       "le congo|le niger|le nil|le zambèze",
       [
         "cg-rec-nil@2",
-        "sci-nile@1"
+        "sci-nile@3"
       ]
     ],
     [
@@ -236,7 +236,7 @@
     [
       "la chine|la corée|la thaïlande|le japon",
       [
-        "food-sushi-japan@3",
+        "food-sushi-japan@1",
         "sport-judo-japan@2"
       ]
     ],
@@ -251,15 +251,15 @@
     [
       "1|2|3|4",
       [
-        "foot-pele-titles@3",
+        "foot-pele-titles@1",
         "sci-octopus-hearts@2",
-        "sport-paris-2024@3"
+        "sport-paris-2024@1"
       ]
     ],
     [
       "alexander graham bell|guglielmo marconi|nikola tesla|thomas edison",
       [
-        "war-indus-bell@1",
+        "war-indus-bell@3",
         "tech-telephone-bell@0"
       ]
     ],
@@ -273,21 +273,21 @@
     [
       "gaugamèles|issos|l'hydaspe|le granique",
       [
-        "war-alexandre-granique@3",
+        "war-alexandre-granique@1",
         "war-alexandre-issos@0"
       ]
     ],
     [
       "1914|1916|1917|1918",
       [
-        "war-ww1-verdun-annee@3",
+        "war-ww1-verdun-annee@1",
         "war-ww1-usa-1917@0"
       ]
     ],
     [
       "1942|1943|1944|1945",
       [
-        "war-ww2-stalingrad-fin@1",
+        "war-ww2-stalingrad-fin@3",
         "war-ww2-normandie-1944@2"
       ]
     ],
@@ -295,7 +295,7 @@
       "1943|1944|1945|1946",
       [
         "war-ww2-hitler-mort@2",
-        "war-ww2-annee-atomique@1"
+        "war-ww2-annee-atomique@3"
       ]
     ],
     [
@@ -309,7 +309,7 @@
       "la chine|la corée du sud|le japon|les états-unis",
       [
         "web-tiktok-china@0",
-        "web-emoji-japan@1"
+        "web-emoji-japan@3"
       ]
     ],
     [
@@ -322,8 +322,8 @@
     [
       "4|5|6|7",
       [
-        "music-guitar-strings@1",
-        "sport-olympic-rings@3"
+        "music-guitar-strings@3",
+        "sport-olympic-rings@1"
       ]
     ],
     [
@@ -402,12 +402,12 @@
     [
       "001|067|218|456",
       [
-        "tv-squid-game-456@3",
+        "tv-squid-game-456@1",
         "tv-squid-game-number-gi-hun@0"
       ]
     ]
   ],
-  "lengthOutlierCount": 102,
+  "lengthOutlierCount": 123,
   "lengthOutliers": [
     {
       "id": "art-seurat-grandejatte-technique",
@@ -420,44 +420,24 @@
       "correctIdx": 0
     },
     {
-      "id": "film-amelie-arrondissement",
+      "id": "film-reine-neiges-soeurs",
       "answers": [
-        "Belleville",
-        "Montmartre",
-        "Le Marais",
-        "Saint-Germain-des-Prés"
-      ],
-      "correctIdx": 3
-    },
-    {
-      "id": "film-bienvenue-chtis-record",
-      "answers": [
-        "Le Corniaud",
-        "Bienvenue chez les Ch'tis",
-        "Intouchables",
-        "Astérix et Obélix : Mission Cléopâtre"
-      ],
-      "correctIdx": 3
-    },
-    {
-      "id": "cg-sci-azote",
-      "answers": [
-        "L'argon",
-        "L'azote",
-        "L'oxygène",
-        "Le dioxyde de carbone"
-      ],
-      "correctIdx": 3
-    },
-    {
-      "id": "cg-sport-foot",
-      "answers": [
-        "Le rugby",
-        "Le hockey sur gazon",
-        "Le baseball",
-        "Le football"
+        "Rebelle",
+        "La Reine des neiges",
+        "Raiponce",
+        "Vaiana"
       ],
       "correctIdx": 1
+    },
+    {
+      "id": "cg-art-petit-prince",
+      "answers": [
+        "Jules Verne",
+        "Marcel Pagnol",
+        "Albert Camus",
+        "Antoine de Saint-Exupéry"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "cg-exp-lapin",
@@ -468,6 +448,36 @@
         "Offrir un cadeau"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "cg-exp-chair-poule",
+      "answers": [
+        "Avoir sommeil",
+        "Avoir la peau qui se hérisse de froid ou d'émotion",
+        "Avoir très faim",
+        "Être en colère"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "cg-exp-fromage",
+      "answers": [
+        "Se régaler",
+        "Exagérer l'importance d'une chose",
+        "Fabriquer du fromage",
+        "Bien cuisiner"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "cg-exp-taureau",
+      "answers": [
+        "Fuir un danger",
+        "Chasser des animaux",
+        "Faire une sieste",
+        "Affronter un problème avec courage"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "cg-exp-plat",
@@ -500,6 +510,26 @@
       "correctIdx": 0
     },
     {
+      "id": "cg-exp-grasse-matinee",
+      "answers": [
+        "Se lever tôt",
+        "Rester au lit tard le matin",
+        "Manger beaucoup",
+        "Dormir peu"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "cg-exp-pain-planche",
+      "answers": [
+        "Avoir faim",
+        "Être riche",
+        "Être en retard",
+        "Avoir beaucoup de travail"
+      ],
+      "correctIdx": 3
+    },
+    {
       "id": "cg-rec-dollar",
       "answers": [
         "Le yen",
@@ -510,24 +540,14 @@
       "correctIdx": 2
     },
     {
-      "id": "food-macaron",
+      "id": "food-sushi-rice",
       "answers": [
-        "Le cannelé",
-        "Le chou à la crème",
-        "L'éclair",
-        "Le macaron"
+        "Les pâtes",
+        "Le blé",
+        "Le quinoa",
+        "Le riz vinaigré"
       ],
-      "correctIdx": 1
-    },
-    {
-      "id": "food-couscous",
-      "answers": [
-        "Le Moyen-Orient",
-        "L'Afrique de l'Ouest",
-        "L'Inde",
-        "Le Maghreb"
-      ],
-      "correctIdx": 1
+      "correctIdx": 3
     },
     {
       "id": "foot-england-record",
@@ -538,6 +558,26 @@
         "Chelsea"
       ],
       "correctIdx": 0
+    },
+    {
+      "id": "game-minecraft-creator",
+      "answers": [
+        "Gabe Newell",
+        "Markus Persson (Notch)",
+        "Hideo Kojima",
+        "Todd Howard"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "game-tetris-origin",
+      "answers": [
+        "Le Japon",
+        "Les États-Unis",
+        "Le Royaume-Uni",
+        "L'Union soviétique (Russie)"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "game-ff-company",
@@ -800,12 +840,12 @@
       "correctIdx": 0
     },
     {
-      "id": "war-cs-sud",
+      "id": "war-gf-varsovie",
       "answers": [
-        "Les États de l'Ouest",
-        "Les États de Nouvelle-Angleterre",
-        "Les États du Nord",
-        "Les États du Sud"
+        "Le Comecon",
+        "Le pacte de Varsovie",
+        "L'OTAN",
+        "Le Kominform"
       ],
       "correctIdx": 1
     },
@@ -818,6 +858,16 @@
         "Fabius Cunctator"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "war-ww1-assassinat",
+      "answers": [
+        "Celui de Jean Jaurès",
+        "Celui de Raspoutine",
+        "Celui du tsar Nicolas II",
+        "Celui de l'archiduc François-Ferdinand"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "war-ww1-petain",
@@ -840,6 +890,36 @@
       "correctIdx": 2
     },
     {
+      "id": "war-rev-jeu-de-paume",
+      "answers": [
+        "De guillotiner le roi",
+        "De ne pas se séparer avant d'avoir donné une Constitution à la France",
+        "De conquérir l'Europe",
+        "D'abolir immédiatement la monarchie"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "war-rev-ddhc",
+      "answers": [
+        "La Constitution de 1791",
+        "Le Code civil",
+        "La Charte de 1814",
+        "La Déclaration des droits de l'homme et du citoyen"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "war-rev-brumaire",
+      "answers": [
+        "Jourdan",
+        "Napoléon Bonaparte",
+        "Moreau",
+        "Hoche"
+      ],
+      "correctIdx": 1
+    },
+    {
       "id": "war-rev-rouget",
       "answers": [
         "Méhul",
@@ -848,6 +928,16 @@
         "Gossec"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "odd-honey",
+      "answers": [
+        "Cinquante ans",
+        "Des milliers d'années",
+        "Un an",
+        "Dix ans"
+      ],
+      "correctIdx": 1
     },
     {
       "id": "odd-astronauts-grow",
@@ -870,6 +960,16 @@
       "correctIdx": 2
     },
     {
+      "id": "web-deep-web",
+      "answers": [
+        "Une version chiffrée de Google",
+        "Les pages non indexées par les moteurs de recherche",
+        "Un réseau pirate illégal",
+        "Le tout premier Internet"
+      ],
+      "correctIdx": 1
+    },
+    {
       "id": "web-spam-hormel",
       "answers": [
         "De jambon en boîte",
@@ -878,6 +978,26 @@
         "De fromage"
       ],
       "correctIdx": 0
+    },
+    {
+      "id": "web-chrome",
+      "answers": [
+        "Safari",
+        "Firefox",
+        "Edge",
+        "Google Chrome"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "book-saint-exupery",
+      "answers": [
+        "Marcel Pagnol",
+        "Antoine de Saint-Exupéry",
+        "Boris Vian",
+        "Jean Giono"
+      ],
+      "correctIdx": 1
     },
     {
       "id": "book-goethe-werther",
@@ -940,6 +1060,16 @@
       "correctIdx": 0
     },
     {
+      "id": "music-daft-punk-members",
+      "answers": [
+        "Guy-Manuel et Pedro",
+        "Thomas Bangalter et Guy-Manuel de Homem-Christo",
+        "Thomas et William",
+        "Pierre et Jacques"
+      ],
+      "correctIdx": 1
+    },
+    {
       "id": "music-stones-satisfaction",
       "answers": [
         "The Kinks",
@@ -950,6 +1080,16 @@
       "correctIdx": 2
     },
     {
+      "id": "music-floyd-dark-side",
+      "answers": [
+        "The Wall",
+        "Wish You Were Here",
+        "Animals",
+        "The Dark Side of the Moon"
+      ],
+      "correctIdx": 3
+    },
+    {
       "id": "music-floyd-another-brick",
       "answers": [
         "Money",
@@ -958,6 +1098,16 @@
         "Comfortably Numb"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "music-beyonce-destinys",
+      "answers": [
+        "TLC",
+        "En Vogue",
+        "Spice Girls",
+        "Destiny's Child"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "music-jazz-origin",
@@ -978,6 +1128,16 @@
         "De Bordeaux"
       ],
       "correctIdx": 0
+    },
+    {
+      "id": "music-bts-country",
+      "answers": [
+        "Le Japon",
+        "La Chine",
+        "Taïwan",
+        "La Corée du Sud"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "egyptian-ra-crosses-the-duat-at-night",
@@ -1350,14 +1510,24 @@
       "correctIdx": 0
     },
     {
-      "id": "sci-nitrogen",
+      "id": "sci-proxima",
       "answers": [
-        "L'oxygène",
-        "Le dioxyde de carbone",
-        "L'argon",
-        "L'azote"
+        "Véga",
+        "Proxima du Centaure",
+        "Sirius",
+        "Bételgeuse"
       ],
       "correctIdx": 1
+    },
+    {
+      "id": "sci-black-hole",
+      "answers": [
+        "Un trou vers une autre galaxie",
+        "Une planète sombre",
+        "Une étoile éteinte",
+        "Un objet dont la gravité est si forte que rien n'en sort"
+      ],
+      "correctIdx": 3
     },
     {
       "id": "sci-greenhouse-co2",
@@ -1368,6 +1538,16 @@
         "L'oxygène"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "sci-leap-year",
+      "answers": [
+        "Pour la Lune",
+        "Pour compenser le quart de jour excédentaire de l'année solaire",
+        "Pour les saisons",
+        "Pour les marées"
+      ],
+      "correctIdx": 1
     },
     {
       "id": "tv-stranger-things-upside-down",
@@ -1420,6 +1600,26 @@
       "correctIdx": 2
     },
     {
+      "id": "tech-google-founders",
+      "answers": [
+        "Kevin Systrom",
+        "Larry Page et Sergey Brin",
+        "Mark Zuckerberg",
+        "Jack Dorsey"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "tech-ampere-unit",
+      "answers": [
+        "La tension",
+        "La résistance",
+        "La puissance",
+        "L'intensité du courant électrique"
+      ],
+      "correctIdx": 3
+    },
+    {
       "id": "tech-volt-unit",
       "answers": [
         "La fréquence",
@@ -1428,6 +1628,16 @@
         "L'intensité"
       ],
       "correctIdx": 2
+    },
+    {
+      "id": "tech-qwerty",
+      "answers": [
+        "Pour économiser l'encre",
+        "Pour éviter que les tiges des machines à écrire se coincent",
+        "Pour accélérer la frappe",
+        "Pour les gauchers"
+      ],
+      "correctIdx": 1
     }
   ],
   "singleItemSubcategories": [

@@ -49,7 +49,7 @@
       "Se mettre en colère",
       "S'habiller avec élégance"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/S'habiller_avec_%C3%A9l%C3%A9gance"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-lapin",
@@ -125,7 +125,7 @@
       "Avoir très faim",
       "Être en colère"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Avoir_la_peau_qui_se_h%C3%A9risse_de_froid_ou_d'%C3%A9motion"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-chat",
@@ -201,7 +201,7 @@
       "Être gratuit",
       "Être très cher"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%8Atre_tr%C3%A8s_cher"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-lune",
@@ -277,7 +277,7 @@
       "Fabriquer du fromage",
       "Bien cuisiner"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Exag%C3%A9rer_l'importance_d'une_chose"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-poil-main",
@@ -353,7 +353,7 @@
       "Faire une sieste",
       "Affronter un problème avec courage"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Affronter_un_probl%C3%A8me_avec_courage"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-plat",
@@ -429,7 +429,7 @@
       "Être confortablement installé",
       "Avoir gagné"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "hard",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%8Atre_interrog%C3%A9_ou_critiqu%C3%A9"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-pot",
@@ -505,7 +505,7 @@
       "Être joyeux",
       "Être triste, déprimé"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%8Atre_triste%2C_d%C3%A9prim%C3%A9"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-canard",
@@ -581,7 +581,7 @@
       "Se faire coiffer",
       "Prendre du poids"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Se_faire_du_souci"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-chat-gorge",
@@ -657,7 +657,7 @@
       "Échouer",
       "S'évanouir"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/S'%C3%A9vanouir"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-7e-ciel",
@@ -733,7 +733,7 @@
       "Donner un coup de poing",
       "Frapper"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Aider_quelqu'un"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-pate",
@@ -809,7 +809,7 @@
       "Être joyeux",
       "Être déprimé"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/%C3%8Atre_d%C3%A9prim%C3%A9"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-cordon-bleu",
@@ -885,7 +885,7 @@
       "Manger beaucoup",
       "Dormir peu"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Rester_au_lit_tard_le_matin"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-pipe",
@@ -961,7 +961,7 @@
       "Être en retard",
       "Avoir beaucoup de travail"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Avoir_beaucoup_de_travail"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-singe",
@@ -1037,7 +1037,7 @@
       "Un très beau temps",
       "Un temps doux"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/tr%C3%A8s_mauvais_temps"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "cg-exp-chien-chat",
@@ -1113,7 +1113,7 @@
       "Garder le silence",
       "Parler mal une langue"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "culture-generale",
     "subcategory": "expressions",
     "difficulty": "medium",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Parler_mal_une_langue"
       ]
     },
     "confidence": 0.98,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

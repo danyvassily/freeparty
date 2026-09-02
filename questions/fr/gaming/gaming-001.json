@@ -49,7 +49,7 @@
       "Toad",
       "Luigi"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Luigi"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-mario-princess",
@@ -125,7 +125,7 @@
       "Sega",
       "Sony"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Nintendo"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-zelda-hero",
@@ -201,7 +201,7 @@
       "La déesse du temps",
       "La princesse d'Hyrule"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/princesse_d'Hyrule"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-zelda-sword",
@@ -277,7 +277,7 @@
       "Shigeru Miyamoto",
       "Gunpei Yokoi"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Satoshi_Tajiri"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-pokemon-starters",
@@ -353,7 +353,7 @@
       "721",
       "151"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/151"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-fortnite-mode",
@@ -429,7 +429,7 @@
       "Hideo Kojima",
       "Todd Howard"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Markus_Persson"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-minecraft-creeper",
@@ -505,7 +505,7 @@
       "Herobrine",
       "L'Ender Dragon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ender_Dragon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-sonic-rival",
@@ -581,7 +581,7 @@
       "Sa force surhumaine",
       "Son vol"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Sa_vitesse_supersonique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-pacman-ghosts",
@@ -657,7 +657,7 @@
       "Le Royaume-Uni",
       "L'Union soviétique (Russie)"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Union_sovi%C3%A9tique"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-ff-company",
@@ -733,7 +733,7 @@
       "Squall Leonhart",
       "Zidane Tribal"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Cloud_Strife"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-ff7-buster",
@@ -802,14 +802,14 @@
     "conceptId": "gta-vice-city",
     "familyId": "gta",
     "type": "mcq",
-    "question": "Quelle ville fictive est au cœur de GTA: Vice City ?",
+    "question": "Quelle ville fictive inspirée de Miami sert de décor à l'opus de GTA sorti en 2002 ?",
     "answers": [
       "Liberty City",
       "Los Santos",
       "San Fierro",
       "Vice City"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Vice_City"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-gta-studio",
@@ -885,7 +885,7 @@
       "Tetris",
       "GTA V"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "records",
     "difficulty": "hard",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Minecraft"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-wow-arthas",
@@ -961,7 +961,7 @@
       "Overwatch",
       "Counter-Strike"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Counter-Strike"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-cod-price",
@@ -1037,7 +1037,7 @@
       "Nérévarine",
       "L'Élu"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dovahkiin"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-uncharted-nathan",
@@ -1113,7 +1113,7 @@
       "Pac-Man",
       "Donkey Kong"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "hard",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Donkey_Kong"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

@@ -49,7 +49,7 @@
       "Hodor",
       "Dracarys"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "medium",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dracarys"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-friends-ross-paleo",
@@ -125,7 +125,7 @@
       "Coiffeuse",
       "Fleuriste"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Chef_cuisini%C3%A8re"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-friends-smelly-cat",
@@ -201,7 +201,7 @@
       "Patty",
       "Maggie"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Maggie"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-simpsons-voix-fr",
@@ -277,7 +277,7 @@
       "Fox Mulder",
       "Dana Scully"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dale_Cooper"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-xfiles-motto",
@@ -353,7 +353,7 @@
       "Charlie Sheen",
       "David Duchovny"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/David_Duchovny"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-grey-anatomy-city",
@@ -429,7 +429,7 @@
       "Miranda Bailey",
       "Cristina Yang"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Meredith_Grey"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-seinfeld-larry-david",
@@ -505,7 +505,7 @@
       "Robin",
       "Barney"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Barney"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-himym-ted-horn",
@@ -581,7 +581,7 @@
       "Sara Tancredi",
       "T-Bag"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Michael_Scofield"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-prison-break-tattoo",
@@ -657,7 +657,7 @@
       "Hugh Laurie",
       "Simon Baker"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "hard",
@@ -673,15 +673,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Simon_Baker"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-mentalist-red-john",
@@ -733,7 +733,7 @@
       "747",
       "246"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "hard",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/815"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-lost-numbers",
@@ -809,7 +809,7 @@
       "Lincoln University",
       "Greendale Community College"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "hard",
@@ -825,15 +825,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Greendale_Community_College"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-office-pam",
@@ -885,7 +885,7 @@
       "Ryan",
       "Oscar"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Jim"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-malcolm-hal",
@@ -961,7 +961,7 @@
       "La Nouvelle-Orléans",
       "Miami"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Miami"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-hannibal-actor",
@@ -1030,14 +1030,14 @@
     "conceptId": "hodor-name",
     "familyId": "game-of-thrones",
     "type": "mcq",
-    "question": "Dans Game of Thrones, quel est le seul mot que prononce Hodor ?",
+    "question": "Dans Game of Thrones, quel est l'unique mot prononcé par le serviteur géant et dévoué des Stark ?",
     "answers": [
       "Dracarys",
       "Hodor",
       "Wun Wun",
       "Valar"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Hodor"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-south-park-kenny",
@@ -1113,7 +1113,7 @@
       "Max et Charlie",
       "Dean et Sam"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "easy",
@@ -1129,14 +1129,14 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dean_et_Sam"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   }
 ]

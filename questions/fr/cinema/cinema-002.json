@@ -125,44 +125,6 @@
       "Houston, on a un problème",
       "Dis bonjour à mon petit ami"
     ],
-    "correctAnswer": 1,
-    "category": "cinema",
-    "subcategory": "repliques",
-    "difficulty": "medium",
-    "language": "fr",
-    "tags": [
-      "repliques",
-      "films"
-    ],
-    "source": {
-      "provider": "wikidata",
-      "sourceId": "",
-      "url": "",
-      "license": "CC0"
-    },
-    "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
-      "sources": [
-        "wikidata"
-      ]
-    },
-    "confidence": 0.97,
-    "qualityScore": 0.95,
-    "version": 1
-  },
-  {
-    "id": "film-taxi-driver-quote",
-    "conceptId": "you-talking-to-me",
-    "familyId": "taxi-driver",
-    "type": "mcq",
-    "question": "Dans Taxi Driver, quelle réplique Robert De Niro répète-t-il devant son miroir ?",
-    "answers": [
-      "Bonne nuit, et bonne chance",
-      "Tu me parles, à moi ?",
-      "Je reviendrai",
-      "Qui va là ?"
-    ],
     "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "repliques",
@@ -179,15 +141,53 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Dis_bonjour_%C3%A0_mon_petit_ami"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
+  },
+  {
+    "id": "film-taxi-driver-quote",
+    "conceptId": "you-talking-to-me",
+    "familyId": "taxi-driver",
+    "type": "mcq",
+    "question": "Dans Taxi Driver, quelle réplique Robert De Niro répète-t-il devant son miroir ?",
+    "answers": [
+      "Bonne nuit, et bonne chance",
+      "Tu me parles, à moi ?",
+      "Je reviendrai",
+      "Qui va là ?"
+    ],
+    "correctAnswer": 1,
+    "category": "cinema",
+    "subcategory": "repliques",
+    "difficulty": "medium",
+    "language": "fr",
+    "tags": [
+      "repliques",
+      "films"
+    ],
+    "source": {
+      "provider": "wikidata",
+      "sourceId": "",
+      "url": "",
+      "license": "CC0"
+    },
+    "verification": {
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
+      "sources": [
+        "https://fr.wikipedia.org/wiki/Tu_me_parles%2C_%C3%A0_moi_%3F"
+      ]
+    },
+    "confidence": 0.97,
+    "qualityScore": 0.95,
+    "version": 2
   },
   {
     "id": "film-wizard-of-oz-quote",
@@ -239,7 +239,7 @@
       "Autant en emporte le vent",
       "Ben-Hur"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "oscars",
     "difficulty": "hard",
@@ -255,15 +255,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ben-Hur"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-oscars-actor-3",
@@ -315,7 +315,7 @@
       "Meryl Streep",
       "Bette Davis"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "oscars",
     "difficulty": "expert",
@@ -331,15 +331,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Katharine_Hepburn"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-oscars-parasite",
@@ -391,7 +391,7 @@
       "2024",
       "2022"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "oscars",
     "difficulty": "medium",
@@ -407,15 +407,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/2022"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-se7en-director",
@@ -467,7 +467,7 @@
       "Francis Ford Coppola",
       "Quentin Tarantino"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "medium",
@@ -483,15 +483,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Martin_Scorsese"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-2001-director",
@@ -543,7 +543,7 @@
       "David Cronenberg",
       "Ridley Scott"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "medium",
@@ -559,15 +559,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Ridley_Scott"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-psycho-director",
@@ -619,7 +619,7 @@
       "Le Parrain",
       "Casablanca"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "hard",
@@ -635,15 +635,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Citizen_Kane"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-kill-bill-bride",
@@ -695,7 +695,7 @@
       "Arrakis",
       "Pandora"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -711,15 +711,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Pandora"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-avatar-species",
@@ -771,7 +771,7 @@
       "James Cameron",
       "Roland Emmerich"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "easy",
@@ -787,15 +787,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Steven_Spielberg"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-interstellar-planet",
@@ -847,7 +847,7 @@
       "Hugh Jackman",
       "Russell Crowe"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "easy",
@@ -863,15 +863,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Russell_Crowe"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-fight-club-rule",
@@ -923,7 +923,7 @@
       "Le Marais",
       "Saint-Germain-des-Prés"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "medium",
@@ -939,15 +939,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Montmartre"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-asterix-depardieu",
@@ -999,7 +999,7 @@
       "Romain Duris",
       "Omar Sy"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "easy",
@@ -1015,15 +1015,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Omar_Sy"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-taxi-marseille",
@@ -1075,7 +1075,7 @@
       "Intouchables",
       "Astérix et Obélix : Mission Cléopâtre"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "medium",
@@ -1091,15 +1091,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Bienvenue_chez_les_Ch'tis"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-cotillard-oscar",
@@ -1151,7 +1151,7 @@
       "Le Cinquième Élément",
       "Léon"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "easy",
@@ -1167,15 +1167,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/L%C3%A9on"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-5th-element-leeloo",
@@ -1303,7 +1303,7 @@
       "Rob Marshall",
       "Damien Chazelle"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "hard",
@@ -1319,15 +1319,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Damien_Chazelle"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-mad-max-fury-road",
@@ -1379,7 +1379,7 @@
       "Une montre",
       "Une clé"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "films",
     "difficulty": "hard",
@@ -1395,15 +1395,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/toupie"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-coco-mexico",
@@ -1455,7 +1455,7 @@
       "Production I.G.",
       "Studio Ghibli"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "animation",
     "difficulty": "medium",
@@ -1471,15 +1471,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Studio_Ghibli"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-dujardin-oscar",
@@ -1531,7 +1531,7 @@
       "Hugo",
       "Minuit à Paris"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "oscars",
     "difficulty": "hard",
@@ -1547,15 +1547,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/The_Artist"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-delorean-time-machine",
@@ -1607,7 +1607,7 @@
       "Ivan Reitman",
       "Robert Zemeckis"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "hard",
@@ -1623,15 +1623,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Robert_Zemeckis"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-gremlins-rule",
@@ -1683,7 +1683,7 @@
       "Katharine Hepburn",
       "Cate Blanchett"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "oscars",
     "difficulty": "hard",
@@ -1699,15 +1699,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "https://fr.wikipedia.org/wiki/Meryl_Streep"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-eiffel-1900",
