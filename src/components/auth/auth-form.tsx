@@ -353,15 +353,6 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
   if (!loading && isLoggedIn && user) {
     return (
       <div className="fp-card w-full p-6 text-center animate-rise shadow-md border border-black/[0.04]">
-        <button
-          type="button"
-          onClick={() => router.push("/")}
-          className="mb-4 flex items-center gap-1 text-[15px] font-medium text-fp-primary hover:underline"
-        >
-          <ChevronLeft className="h-5 w-5" />
-          <span>{t("config.back")}</span>
-        </button>
-
         <div className="mx-auto flex justify-center mb-2">
           <KawaiiMascot theme="party" size={72} className="border border-black/[0.04] shadow-xs" />
         </div>
@@ -597,16 +588,6 @@ export function AuthForm({ mode: initialMode = "register" }: { mode?: AuthView }
 
   return (
     <div className="fp-card w-full p-6 animate-rise shadow-lg border border-black/[0.04]">
-      {/* Navigation de retour */}
-      <button
-        type="button"
-        onClick={() => router.push("/")}
-        className="mb-3 flex items-center gap-0.5 text-[14px] font-medium text-fp-primary hover:underline"
-      >
-        <ChevronLeft className="h-4.5 w-4.5" />
-        <span>Accueil</span>
-      </button>
-
       {/* Onglets Création de compte / Connexion */}
       <div className="flex rounded-2xl bg-black/[0.05] p-1 mb-5">
         <button

@@ -671,7 +671,7 @@ export function PrismGame() {
                       if (gameState.phase === "turn-active") handleActivePlayerAnswer(i);
                       else if (gameState.phase === "turn-steal") handleStealAnswer(otherPlayers[0], i);
                     }}
-                    className={`flex items-center gap-3 rounded-xl px-3.5 py-3 text-left text-[14px] font-medium transition-all active:scale-[0.98] ${cls}`}
+                    className={`fp-answer flex items-center gap-3 px-3.5 py-3 text-left text-[14px] font-medium ${cls}`}
                   >
                     <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[12px] font-semibold text-fp-text-dim">
                       {["A", "B", "C", "D"][i]}

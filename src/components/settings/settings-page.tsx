@@ -1,11 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ChevronLeft, RotateCcw, ShieldCheck, ChevronRight, KeyRound, LogOut } from "lucide-react";
+import { RotateCcw, ShieldCheck, ChevronRight, KeyRound, LogOut, SlidersHorizontal } from "lucide-react";
 import { useSettingsStore, TIME_OPTIONS } from "@/lib/store/settings";
 import { useLanguageStore } from "@/lib/store/language";
 import { useAuth } from "@/lib/auth/use-auth";
 import { PlayerDot } from "@/components/ui/primitives";
+import { AppNavigation } from "@/components/ui/app-navigation";
 
 function TimeRow({
   label,
@@ -94,21 +95,17 @@ export function SettingsPage() {
   const isFR = lang === "fr";
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-xl sm:max-w-2xl flex-col px-4 sm:px-6 pb-16 pt-4 animate-rise">
-      {/* Barre de navigation style Apple */}
-      <div className="relative flex h-11 items-center justify-center">
-        <button
-          type="button"
-          onClick={() => router.push("/")}
-          className="absolute left-0 flex items-center gap-0.5 text-[17px] font-medium text-fp-primary active:opacity-70"
-        >
-          <ChevronLeft className="h-5 w-5" />
-          {isFR ? "Accueil" : "Home"}
-        </button>
-        <h1 className="text-[17px] font-semibold text-fp-text">
-          {isFR ? "Réglages" : "Settings"}
-        </h1>
-      </div>
+    <>
+      <AppNavigation />
+      <main className="fp-narrow-page animate-rise">
+      <header className="mb-2 flex items-start gap-4">
+        <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-fp-primary/10 text-fp-primary"><SlidersHorizontal className="h-5 w-5" /></span>
+        <div>
+          <p className="fp-eyebrow">Personnalisation</p>
+          <h1 className="mt-1 text-3xl font-black tracking-[-0.04em] text-fp-text">{isFR ? "Réglages" : "Settings"}</h1>
+          <p className="mt-1 text-sm text-fp-text-dim">{isFR ? "Adaptez le rythme des parties à votre groupe." : "Adjust the pace of each game for your group."}</p>
+        </div>
+      </header>
 
       {/* Carte Profil / Compte */}
       <p className="fp-group-title">{isFR ? "Profil & Compte" : "Profile & Account"}</p>
@@ -262,6 +259,7 @@ export function SettingsPage() {
         <RotateCcw className="h-4 w-4" />
         {isFR ? "Rétablir les valeurs par défaut" : "Reset to defaults"}
       </button>
-    </main>
+      </main>
+    </>
   );
 }

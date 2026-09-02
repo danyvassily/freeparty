@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { AppIcon, type IconName } from "./icons";
 import { ChevronRight } from "lucide-react";
 
-/** Minuteur circulaire sobre (style Apple HIG) */
+/** Minuteur circulaire lisible sur mobile comme sur grand écran. */
 export function ProgressRing({
   seconds,
   total,
@@ -31,7 +31,7 @@ export function ProgressRing({
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke="rgba(0,0,0,0.06)"
+          stroke="rgba(23,24,41,0.08)"
           strokeWidth={stroke}
         />
         <circle
@@ -39,7 +39,7 @@ export function ProgressRing({
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke={danger ? "#ff3b30" : "#0071e3"}
+          stroke={danger ? "#dc2626" : "#635bff"}
           strokeWidth={stroke}
           strokeLinecap="round"
           strokeDasharray={circumference}
@@ -59,14 +59,14 @@ export function ProgressRing({
   );
 }
 
-/** Barre de timer linéaire Apple sobre */
+/** Barre de progression du temps. */
 export function TimerBar({ seconds, total }: { seconds: number; total: number }) {
   const ratio = Math.max(0, Math.min(1, seconds / total));
   const isDanger = ratio < 0.25;
   const isWarning = ratio < 0.5;
 
   return (
-    <div className="h-1.5 w-full overflow-hidden rounded-full bg-black/[0.06]">
+    <div className="h-2 w-full overflow-hidden rounded-full bg-fp-fill">
       <div
         className={`h-full rounded-full transition-[width] duration-300 ease-linear ${
           isDanger ? "bg-fp-danger" : isWarning ? "bg-fp-warning" : "bg-fp-primary"
@@ -77,7 +77,7 @@ export function TimerBar({ seconds, total }: { seconds: number; total: number })
   );
 }
 
-/** Contrôle segmenté iOS / iPadOS */
+/** Contrôle segmenté familier. */
 export function SegmentControl<T extends string>({
   options,
   value,
@@ -88,7 +88,7 @@ export function SegmentControl<T extends string>({
   onChange: (val: T) => void;
 }) {
   return (
-    <div className="flex w-full items-center gap-1 rounded-xl bg-black/[0.06] p-1">
+    <div className="flex w-full items-center gap-1 rounded-xl border border-fp-border bg-fp-fill p-1">
       {options.map((opt) => {
         const selected = opt.value === value;
         return (
@@ -96,9 +96,9 @@ export function SegmentControl<T extends string>({
             key={opt.value}
             type="button"
             onClick={() => onChange(opt.value)}
-            className={`flex min-h-[36px] flex-1 items-center justify-center gap-1.5 rounded-lg px-2 py-1.5 text-[13px] font-semibold transition-all active:scale-[0.98] ${
+            className={`flex min-h-11 flex-1 items-center justify-center gap-1.5 rounded-lg px-2 py-1.5 text-[13px] font-bold transition-all active:scale-[0.98] ${
               selected
-                ? "bg-white text-fp-text shadow-sm"
+                ? "bg-white text-fp-primary shadow-sm"
                 : "text-fp-text-dim hover:text-fp-text"
             }`}
           >
@@ -119,7 +119,7 @@ export function Confetti({ count = 50 }: { count?: number }) {
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
-    const colors = ["#0071e3", "#34c759", "#ff9500", "#ff3b30", "#af52de", "#5ac8fa"];
+    const colors = ["#635bff", "#15803d", "#f59e0b", "#dc2626", "#c026d3", "#0ea5e9"];
     setPieces(
       Array.from({ length: count }, (_, i) => ({
         id: i,
@@ -151,7 +151,7 @@ export function Confetti({ count = 50 }: { count?: number }) {
   );
 }
 
-/** Ligne de mode / salon style Réglages Apple */
+/** Ligne de sélection standard. */
 export function ModeCard({
   title,
   subtitle,
@@ -172,7 +172,7 @@ export function ModeCard({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="group flex min-h-[56px] w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors hover:bg-black/[0.02] active:bg-black/[0.05] active:scale-[0.99] disabled:opacity-40"
+      className="group flex min-h-[64px] w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors hover:bg-fp-primary/[0.035] active:bg-fp-primary/[0.07] active:scale-[0.99] disabled:opacity-40"
     >
       <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white ${iconBg} shadow-xs`}>
         <AppIcon name={icon} className="h-5 w-5" />
@@ -186,10 +186,10 @@ export function ModeCard({
   );
 }
 
-/** Titre de section style Réglages iOS (petites capitales grises) */
+/** Titre de groupe. */
 export function SectionTitle({ children }: { children: ReactNode }) {
   return (
-    <h2 className="px-4 pb-1.5 pt-5 text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim first:pt-0">
+    <h2 className="px-1 pb-2 pt-5 text-[12px] font-bold uppercase tracking-[0.09em] text-fp-text-dim first:pt-0">
       {children}
     </h2>
   );
@@ -239,7 +239,7 @@ export function PlayerDot({
     );
   }
 
-  const COLORS = ["#0071e3", "#34c759", "#ff9500", "#ff3b30", "#af52de", "#5ac8fa", "#5856d6", "#8e8e93"];
+  const COLORS = ["#635bff", "#15803d", "#f59e0b", "#dc2626", "#c026d3", "#0ea5e9", "#4338ca", "#6b7280"];
   const bg = COLORS[((colorIndex % COLORS.length) + COLORS.length) % COLORS.length];
   return (
     <span

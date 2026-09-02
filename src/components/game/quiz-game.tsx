@@ -415,7 +415,7 @@ export function QuizGame({ mode }: QuizGameProps) {
 
         <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
           {current.answers.map((answer, i) => {
-            let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
+            let cls = "text-fp-text";
             let disabled = false;
             if (phase === "answer") {
               disabled = true;
@@ -424,7 +424,7 @@ export function QuizGame({ mode }: QuizGameProps) {
               } else if (i === selected) {
                 cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
               } else {
-                cls = "fp-card opacity-40";
+                cls = "opacity-40";
               }
             }
             return (
@@ -433,7 +433,7 @@ export function QuizGame({ mode }: QuizGameProps) {
                 type="button"
                 disabled={disabled}
                 onClick={() => handleAnswer(i)}
-                className={`flex min-h-[64px] items-center gap-3.5 rounded-2xl px-5 py-4 text-left text-[16px] font-medium transition-all active:scale-[0.98] ${cls}`}
+                className={`fp-answer flex min-h-[64px] items-center gap-3.5 px-5 py-4 text-left text-[16px] font-medium ${cls}`}
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[14px] font-bold text-fp-text-dim">
                   {["A", "B", "C", "D"][i]}

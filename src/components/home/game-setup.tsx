@@ -1,23 +1,21 @@
 "use client";
 
-/**
- * Free Party — Écran de configuration d'une partie (style Réglages Apple)
- * Mode choisi → joueurs (1 à 8, noms éditables) → catégorie → questions → jouer.
- */
 import { useMemo, useState } from "react";
-import { Minus, Plus, Play, ChevronLeft } from "lucide-react";
+import { ChevronLeft, Minus, Play, Plus, UsersRound } from "lucide-react";
 import {
-  useGameStore,
-  resizePlayers,
   MAX_PLAYERS,
+  newGameSessionId,
+  resizePlayers,
   type GameConfig,
   type GameMode,
-  newGameSessionId,
+  useGameStore,
 } from "@/lib/store/game";
 import { useSettingsStore } from "@/lib/store/settings";
 import { CATEGORIES, type QuestionCategory } from "@/lib/questions/schema";
 import { CATEGORY_LABELS, MODE_META, QUESTION_COUNT_OPTIONS } from "@/lib/game/modes";
-import { SegmentControl, SectionTitle, PlayerDot } from "@/components/ui/primitives";
+import { PlayerDot, SegmentControl } from "@/components/ui/primitives";
+import { AppIcon } from "@/components/ui/icons";
+import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 
 interface GameSetupProps {
   mode: GameMode;
@@ -28,36 +26,31 @@ interface GameSetupProps {
 export function GameSetup({ mode, onBack, onLaunch }: GameSetupProps) {
   const meta = MODE_META[mode];
   const settings = useSettingsStore();
-  const players = useGameStore((s) => s.players);
-  const setPlayers = useGameStore((s) => s.setPlayers);
-
+  const players = useGameStore((state) => state.players);
+  const setPlayers = useGameStore((state) => state.setPlayers);
   const [category, setCategory] = useState<QuestionCategory | "mixed">("mixed");
-  const [questionCount, setQuestionCount] = useState<number>(settings.defaultQuestionCount);
+  const [questionCount, setQuestionCount] = useState(settings.defaultQuestionCount);
 
-  const minPlayers = meta.minPlayers;
-  const effective = useMemo(
-    () => (players.length < minPlayers ? resizePlayers(players, minPlayers) : players),
-    [players, minPlayers],
+  const effectivePlayers = useMemo(
+    () => (players.length < meta.minPlayers ? resizePlayers(players, meta.minPlayers) : players),
+    [players, meta.minPlayers],
   );
-  const count = effective.length;
 
-  function setCount(next: number) {
-    setPlayers(resizePlayers(effective, Math.max(minPlayers, Math.min(MAX_PLAYERS, next))));
+  function setPlayerCount(next: number) {
+    setPlayers(resizePlayers(effectivePlayers, Math.max(meta.minPlayers, Math.min(MAX_PLAYERS, next))));
   }
 
   function renamePlayer(index: number, name: string) {
-    const next = effective.map((p, i) => (i === index ? { ...p, name } : p));
-    setPlayers(next);
+    setPlayers(effectivePlayers.map((player, playerIndex) => (playerIndex === index ? { ...player, name } : player)));
   }
 
   function launch() {
-    const finalPlayers = effective.map((p, i) => ({
-      ...p,
-      name: p.name.trim() || `Joueur ${i + 1}`,
+    const finalPlayers = effectivePlayers.map((player, index) => ({
+      ...player,
+      name: player.name.trim() || `Joueur ${index + 1}`,
     }));
     setPlayers(finalPlayers);
-
-    const cfg: GameConfig = {
+    onLaunch({
       sessionId: newGameSessionId(),
       mode,
       category,
@@ -72,128 +65,93 @@ export function GameSetup({ mode, onBack, onLaunch }: GameSetupProps) {
             : settings.classicTime,
       debateMinutes: settings.debateMinutes,
       debateMode: "standard",
-    };
-    onLaunch(cfg);
+    });
   }
+
+  const showQuestionCount = meta.usesQuestionCatalog && !["prism", "rapidfire", "truefalse"].includes(mode);
 
   return (
     <div className="animate-rise">
-      {/* Navigation */}
-      <div className="flex items-center justify-between px-1 py-2">
-        <button
-          type="button"
-          onClick={onBack}
-          className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[16px]"
-        >
-          <ChevronLeft className="h-5 w-5" />
-          <span>Retour</span>
-        </button>
-        <h1 className="text-[17px] font-semibold text-fp-text">{meta.name}</h1>
-        <span className="w-16" aria-hidden="true" />
-      </div>
+      <button type="button" onClick={onBack} className="fp-btn-ghost -ml-2 gap-1">
+        <ChevronLeft className="h-5 w-5" />Tous les modes
+      </button>
 
-      {/* Joueurs */}
-      <div className="mt-4">
-        <SectionTitle>Joueurs</SectionTitle>
-        <div className="fp-list">
-          <div className="flex items-center justify-between px-4 py-3.5">
-            <span className="text-[15px] font-medium text-fp-text">Nombre de joueurs</span>
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                onClick={() => setCount(count - 1)}
-                disabled={count <= minPlayers}
-                aria-label="Retirer un joueur"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-fp-text transition active:scale-95 disabled:opacity-30"
-              >
-                <Minus className="h-4.5 w-4.5" />
-              </button>
-              <span className="w-7 text-center text-[17px] font-semibold tabular-nums text-fp-text">{count}</span>
-              <button
-                type="button"
-                onClick={() => setCount(count + 1)}
-                disabled={count >= MAX_PLAYERS}
-                aria-label="Ajouter un joueur"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-black/[0.05] text-fp-text transition active:scale-95 disabled:opacity-30"
-              >
-                <Plus className="h-4.5 w-4.5" />
-              </button>
-            </div>
-          </div>
-          {effective.map((p, i) => (
-            <div key={p.id} className="flex items-center gap-3 px-4 py-2.5">
-              <PlayerDot name={p.name} colorIndex={p.color} size={32} />
-              <input
-                value={p.name}
-                onChange={(e) => renamePlayer(i, e.target.value)}
-                maxLength={20}
-                placeholder={`Joueur ${i + 1}`}
-                aria-label={`Nom du joueur ${i + 1}`}
-                className="min-w-0 flex-1 bg-transparent py-2 text-[15px] font-medium text-fp-text outline-none placeholder:text-fp-text-dim"
-              />
-            </div>
-          ))}
+      <header className="mt-5 flex items-center gap-4">
+        <span className={`grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-white ${meta.iconBg}`}>
+          <AppIcon name={meta.icon} className="h-6 w-6" />
+        </span>
+        <div>
+          <p className="fp-eyebrow">Configurer la partie</p>
+          <h1 className="mt-1 text-3xl font-black tracking-[-0.04em] text-fp-text">{meta.name}</h1>
+          <p className="mt-1 text-sm text-fp-text-dim">{meta.subtitle}</p>
         </div>
-        {count === 1 && meta.passAndPlay && (
-          <p className="px-4 pt-2 text-[13px] text-fp-text-dim">
-            Ajoute des joueurs pour jouer à tour de rôle sur cet appareil.
-          </p>
-        )}
-        {minPlayers > 1 && (
-          <p className="px-4 pt-2 text-[13px] text-fp-text-dim">
-            {meta.name} se joue à {minPlayers} joueurs minimum.
-          </p>
-        )}
-      </div>
+      </header>
 
-      {/* Catégorie */}
-      {meta.usesQuestionCatalog && (
-        <div className="mt-6">
-          <SectionTitle>Catégorie</SectionTitle>
-          <div className="fp-card p-3">
-            <div className="flex flex-wrap gap-2">
-              {(["mixed", ...CATEGORIES] as const).map((c) => (
-                <button
-                  key={c}
-                  type="button"
-                  onClick={() => setCategory(c)}
-                  className={`rounded-full px-3.5 py-2 text-[13px] font-medium transition active:scale-95 ${
-                    category === c
-                      ? "bg-fp-primary text-white shadow-xs"
-                      : "bg-black/[0.04] text-fp-text hover:bg-black/[0.08]"
-                  }`}
-                >
-                  {CATEGORY_LABELS[c]}
-                </button>
+      <div className="mt-8 grid items-start gap-6 lg:grid-cols-[1fr_17rem]">
+        <div className="space-y-5">
+          <section className="fp-card p-5 sm:p-6">
+            <div className="flex flex-col gap-4 border-b border-fp-border pb-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-lg font-extrabold text-fp-text">1. Ajoutez les joueurs</h2>
+                <p className="mt-1 text-sm text-fp-text-dim">Ils joueront à tour de rôle sur cet appareil.</p>
+              </div>
+              <div className="flex items-center gap-2 self-start sm:self-auto">
+                <button type="button" onClick={() => setPlayerCount(effectivePlayers.length - 1)} disabled={effectivePlayers.length <= meta.minPlayers} className="grid h-11 w-11 place-items-center rounded-xl border border-fp-border bg-white disabled:opacity-35" aria-label="Retirer un joueur"><Minus className="h-4 w-4" /></button>
+                <span className="w-10 text-center text-xl font-black tabular-nums">{effectivePlayers.length}</span>
+                <button type="button" onClick={() => setPlayerCount(effectivePlayers.length + 1)} disabled={effectivePlayers.length >= MAX_PLAYERS} className="grid h-11 w-11 place-items-center rounded-xl border border-fp-border bg-white disabled:opacity-35" aria-label="Ajouter un joueur"><Plus className="h-4 w-4" /></button>
+              </div>
+            </div>
+
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {effectivePlayers.map((player, index) => (
+                <label key={player.id} className="flex items-center gap-3 rounded-xl border border-fp-border bg-fp-bg/55 p-2.5">
+                  <PlayerDot name={player.name} colorIndex={player.color} size={34} />
+                  <span className="sr-only">Nom du joueur {index + 1}</span>
+                  <input value={player.name} onChange={(event) => renamePlayer(index, event.target.value)} maxLength={20} placeholder={`Joueur ${index + 1}`} className="min-w-0 flex-1 bg-transparent py-2 text-sm font-semibold text-fp-text outline-none" />
+                </label>
               ))}
             </div>
-          </div>
-        </div>
-      )}
+          </section>
 
-      {/* Nombre de questions */}
-      {meta.usesQuestionCatalog && mode !== "prism" && mode !== "rapidfire" && mode !== "truefalse" && (
-        <div className="mt-6">
-          <SectionTitle>Nombre de questions</SectionTitle>
-          <div className="px-1">
-            <SegmentControl
-              options={QUESTION_COUNT_OPTIONS.map((n) => ({ value: String(n), label: String(n) }))}
-              value={String(questionCount)}
-              onChange={(v) => setQuestionCount(Number(v))}
-            />
-          </div>
-        </div>
-      )}
+          {meta.usesQuestionCatalog && (
+            <section className="fp-card p-5 sm:p-6">
+              <h2 className="text-lg font-extrabold text-fp-text">2. Choisissez les questions</h2>
+              <p className="mt-1 text-sm text-fp-text-dim">Mélangez tout ou sélectionnez un thème précis.</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {(["mixed", ...CATEGORIES] as const).map((value) => (
+                  <button key={value} type="button" onClick={() => setCategory(value)} className={`min-h-10 rounded-full px-3.5 text-sm font-semibold transition ${category === value ? "bg-fp-primary text-white shadow-sm" : "border border-fp-border bg-white text-fp-text hover:border-fp-primary/40"}`}>
+                    {CATEGORY_LABELS[value]}
+                  </button>
+                ))}
+              </div>
 
-      {/* Bouton Jouer */}
-      <button
-        type="button"
-        onClick={launch}
-        className="fp-btn-primary mt-8 flex w-full items-center justify-center gap-2 py-4 text-[17px]"
-      >
-        <Play className="h-5 w-5 fill-white" />
-        <span>Jouer</span>
-      </button>
+              {showQuestionCount && (
+                <div className="mt-6 border-t border-fp-border pt-5">
+                  <label className="mb-3 block text-sm font-bold text-fp-text">Nombre de questions</label>
+                  <SegmentControl options={QUESTION_COUNT_OPTIONS.map((count) => ({ value: String(count), label: `${count}` }))} value={String(questionCount)} onChange={(value) => setQuestionCount(Number(value))} />
+                </div>
+              )}
+            </section>
+          )}
+        </div>
+
+        <aside className="fp-card p-5 lg:sticky lg:top-24">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-fp-text-dim">Votre partie</p>
+              <p className="mt-1 text-lg font-extrabold text-fp-text">{meta.name}</p>
+            </div>
+            <KawaiiMascot theme={mode === "debate" || mode === "wyr" ? "debate" : mode === "rapidfire" ? "speed" : "quiz"} size={62} />
+          </div>
+          <dl className="mt-5 space-y-3 border-y border-fp-border py-4 text-sm">
+            <div className="flex items-center justify-between gap-3"><dt className="inline-flex items-center gap-2 text-fp-text-dim"><UsersRound className="h-4 w-4" />Joueurs</dt><dd className="font-bold text-fp-text">{effectivePlayers.length}</dd></div>
+            {meta.usesQuestionCatalog && <div className="flex items-center justify-between gap-3"><dt className="text-fp-text-dim">Catégorie</dt><dd className="max-w-32 truncate font-bold text-fp-text">{CATEGORY_LABELS[category]}</dd></div>}
+            {showQuestionCount && <div className="flex items-center justify-between gap-3"><dt className="text-fp-text-dim">Questions</dt><dd className="font-bold text-fp-text">{questionCount}</dd></div>}
+          </dl>
+          <button type="button" onClick={launch} className="fp-btn-primary mt-5 w-full gap-2"><Play className="h-4.5 w-4.5 fill-current" />Lancer la partie</button>
+          <p className="mt-3 text-center text-xs leading-5 text-fp-text-dim">Vous pourrez revenir à l’accueil à tout moment.</p>
+        </aside>
+      </div>
     </div>
   );
 }

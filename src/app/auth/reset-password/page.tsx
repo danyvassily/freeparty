@@ -1,18 +1,28 @@
+import Link from "next/link";
+import { ArrowLeft, KeyRound } from "lucide-react";
 import { AuthForm } from "@/components/auth/auth-form";
-import { BRAND } from "@/lib/brand";
-import { KeyRound } from "lucide-react";
+import { BrandMark } from "@/components/ui/app-navigation";
+import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 
 export default function ResetPasswordPage() {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col items-center justify-center px-5 py-10">
-      <div className="mb-8 text-center">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-fp-blue text-white shadow-sm">
-          <KeyRound className="h-7 w-7" />
-        </div>
-        <h1 className="mt-4 text-2xl font-bold tracking-tight text-fp-text">{BRAND.name}</h1>
-        <p className="mt-1 text-sm text-fp-text-secondary">Choisissez un nouveau mot de passe</p>
+    <main className="mx-auto min-h-dvh w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
+      <div className="flex items-center justify-between">
+        <BrandMark />
+        <Link href="/auth?mode=login" className="fp-btn-ghost gap-2"><ArrowLeft className="h-4 w-4" />Connexion</Link>
       </div>
-      <AuthForm mode="recovery" />
+
+      <div className="mx-auto mt-12 w-full max-w-md">
+        <div className="mb-6 text-center">
+          <div className="relative mx-auto w-fit">
+            <KawaiiMascot theme="thinking" size={82} />
+            <span className="absolute -bottom-1 -right-2 grid h-9 w-9 place-items-center rounded-xl border-4 border-fp-bg bg-fp-primary text-white"><KeyRound className="h-4 w-4" /></span>
+          </div>
+          <h1 className="mt-5 text-3xl font-black tracking-[-0.04em] text-fp-text">Nouveau mot de passe</h1>
+          <p className="mt-2 text-sm leading-6 text-fp-text-dim">Choisissez un mot de passe sûr pour retrouver votre compte.</p>
+        </div>
+        <AuthForm mode="recovery" />
+      </div>
     </main>
   );
 }

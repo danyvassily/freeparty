@@ -255,11 +255,11 @@ export function TeamBattleGame() {
 
         <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
           {current.answers.map((answer, i) => {
-            let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
+            let cls = "text-fp-text";
             if (phase === "answer") {
               if (i === current.correctAnswer) cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text animate-pop";
               else if (i === selected) cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
-              else cls = "fp-card opacity-40";
+              else cls = "opacity-40";
             }
             return (
               <button
@@ -267,7 +267,7 @@ export function TeamBattleGame() {
                 type="button"
                 disabled={phase === "answer"}
                 onClick={() => handleAnswer(i)}
-                className={`flex items-center gap-3 rounded-2xl px-4 py-3.5 text-left text-[15px] font-medium transition-all active:scale-[0.98] ${cls}`}
+                className={`fp-answer flex items-center gap-3 px-4 py-3.5 text-left text-[15px] font-medium ${cls}`}
               >
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[13px] font-semibold text-fp-text-dim">
                   {["A", "B", "C", "D"][i]}

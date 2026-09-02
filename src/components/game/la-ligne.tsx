@@ -199,7 +199,7 @@ export function LaLigneGame({
                   type="button"
                   onClick={() => handleChoice(idx)}
                   disabled={answeredIndex !== null}
-                  className={`flex items-center justify-between rounded-xl px-3.5 py-3 text-left text-[14px] font-medium transition-all active:scale-[0.98] ${btnStyle}`}
+                  className={`fp-answer flex items-center justify-between px-3.5 py-3 text-left text-[14px] font-medium ${btnStyle}`}
                 >
                   <span className="mr-2 flex-1">{ans}</span>
                   {answeredIndex !== null && isCorrect && <Check className="h-4 w-4 shrink-0 text-fp-success" />}

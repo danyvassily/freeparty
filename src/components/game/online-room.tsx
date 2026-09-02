@@ -45,6 +45,7 @@ import type { GameMode } from "@/lib/store/game";
 import { TimerBar, Confetti, PlayerDot, SegmentControl, SectionTitle, PillBadge } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import { AppIcon } from "@/components/ui/icons";
+import { AppNavigation } from "@/components/ui/app-navigation";
 import {
   Globe,
   Play,
@@ -411,26 +412,19 @@ export function OnlineRoom() {
   // ---------- Vue 1 : Entrée ----------
   if (view === "entry") {
     return (
-      <main className="mx-auto w-full max-w-xl sm:max-w-2xl px-4 sm:px-6 pb-20 pt-4 animate-rise">
-        <button
-          type="button"
-          onClick={() => router.push("/")}
-          className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[16px]"
-        >
-          <ChevronLeft className="h-5 w-5" />
-          <span>Accueil</span>
-        </button>
-
-        <header className="px-1 pb-6 pt-4">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-[#34c759]/10 px-3 py-1 text-[12px] font-semibold text-[#34c759]">
+      <>
+        <AppNavigation />
+        <main className="fp-narrow-page animate-rise">
+        <header className="pb-7">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3 py-1 text-[12px] font-bold text-emerald-700">
             <Globe className="h-3.5 w-3.5" />
-            Multijoueur Connecté Persistant
+            Multijoueur en ligne
           </div>
           <h1 className="mt-2 text-[30px] sm:text-[36px] font-bold leading-tight tracking-tight text-fp-text">
             Salons en ligne
           </h1>
           <p className="mt-1 text-[15px] text-fp-text-dim">
-            Jouez plusieurs parties successives sans jamais recréer le groupe d&apos;amis.
+            Créez un salon privé ou rejoignez vos amis avec leur code.
           </p>
         </header>
 
@@ -532,14 +526,17 @@ export function OnlineRoom() {
         </div>
 
         {error && <p className="mt-4 rounded-xl bg-fp-danger/10 px-4 py-3 text-[13px] text-fp-danger">{error}</p>}
-      </main>
+        </main>
+      </>
     );
   }
 
   // ---------- Vue 2 : Options de création de salon ----------
   if (view === "create") {
     return (
-      <main className="mx-auto w-full max-w-xl sm:max-w-2xl px-4 sm:px-6 pb-20 pt-4 animate-rise">
+      <>
+        <AppNavigation />
+        <main className="fp-narrow-page animate-rise">
         <div className="flex items-center justify-between px-1 py-2">
           <button
             type="button"
@@ -653,7 +650,8 @@ export function OnlineRoom() {
           <span>{busy ? "Création du salon…" : "Créer et ouvrir le salon"}</span>
         </button>
         {error && <p className="mt-4 rounded-xl bg-fp-danger/10 px-4 py-3 text-[13px] text-fp-danger">{error}</p>}
-      </main>
+        </main>
+      </>
     );
   }
 
@@ -977,19 +975,19 @@ export function OnlineRoom() {
               {/* 4 Cartes de réponses */}
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {qLocal!.answers.map((answer, i) => {
-                  let cls = "fp-card text-fp-text hover:bg-black/[0.02]";
+                  let cls = "text-fp-text";
                   if (revealed) {
                     if (i === correctAnswer) {
                       cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text font-semibold shadow-xs";
                     } else if (i === selected && i !== correctAnswer) {
                       cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
                     } else {
-                      cls = "fp-card opacity-35";
+                      cls = "opacity-35";
                     }
                   } else if (answered) {
                     cls = i === selected
                       ? "border-2 border-fp-primary bg-fp-primary/10 text-fp-text font-semibold shadow-xs"
-                      : "fp-card opacity-40";
+                      : "opacity-40";
                   }
 
                   return (
@@ -998,7 +996,7 @@ export function OnlineRoom() {
                       type="button"
                       disabled={revealed || answered}
                       onClick={() => sendAnswer(i)}
-                      className={`flex min-h-[64px] items-center gap-3.5 rounded-2xl px-5 py-4 text-left text-[16px] font-medium transition-all active:scale-[0.98] ${cls}`}
+                      className={`fp-answer flex min-h-[64px] items-center gap-3.5 px-5 py-4 text-left text-[16px] font-medium ${cls}`}
                     >
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[14px] font-bold text-fp-text-dim">
                         {["A", "B", "C", "D"][i]}
