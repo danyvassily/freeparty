@@ -1341,7 +1341,7 @@
       "Lara Fabian",
       "Mylène Farmer"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "musique",
     "subcategory": "artistes",
     "difficulty": "easy",
@@ -1357,15 +1357,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: My Heart Will Go On = Céline Dion"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "music-titanic-song",

@@ -277,7 +277,7 @@
       "Asuka",
       "Rei"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "manga-anime",
     "subcategory": "personnages",
     "difficulty": "medium",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Shinji Ikari pilote Evangelion-01"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "anime-cowboy-bebop-ship",

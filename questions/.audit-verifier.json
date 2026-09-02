@@ -1,0 +1,522 @@
+{
+  "generatedAt": "2026-09-02T17:09:39.605Z",
+  "total": 2081,
+  "seeds": 29,
+  "corrected": 6,
+  "corrections": [
+    {
+      "id": "tv-breaking-bad-actor",
+      "from": 1,
+      "to": 3,
+      "text": "Bryan Cranston"
+    },
+    {
+      "id": "tv-got-valar",
+      "from": 3,
+      "to": 1,
+      "text": "Valar morghulis"
+    },
+    {
+      "id": "tv-friends-city",
+      "from": 1,
+      "to": 3,
+      "text": "New York"
+    },
+    {
+      "id": "tv-simpsons-homer",
+      "from": 3,
+      "to": 1,
+      "text": "Homer"
+    },
+    {
+      "id": "tv-simpsons-creator",
+      "from": 1,
+      "to": 3,
+      "text": "Matt Groening"
+    },
+    {
+      "id": "tv-stranger-things-town",
+      "from": 3,
+      "to": 1,
+      "text": "Hawkins"
+    }
+  ],
+  "notFound": [],
+  "riskyCount": 912,
+  "highRiskCount": 43,
+  "highRisk": [
+    {
+      "id": "film-forrest-gump-actor",
+      "category": "cinema",
+      "markedIdx": 1,
+      "marked": "Big",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "film-amelie-arrondissement",
+      "category": "cinema",
+      "markedIdx": 3,
+      "marked": "Saint-Germain-des-Prés",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "film-bienvenue-chtis-record",
+      "category": "cinema",
+      "markedIdx": 3,
+      "marked": "Astérix et Obélix : Mission Cléopâtre",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "cg-sci-azote",
+      "category": "culture-generale",
+      "markedIdx": 3,
+      "marked": "Le dioxyde de carbone",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "cg-sport-foot",
+      "category": "culture-generale",
+      "markedIdx": 1,
+      "marked": "Le hockey sur gazon",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "cg-rec-groenland",
+      "category": "culture-generale",
+      "markedIdx": 3,
+      "marked": "Bornéo",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "food-macaron",
+      "category": "food",
+      "markedIdx": 1,
+      "marked": "Le chou à la crème",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "foot-ronaldo-record",
+      "category": "football",
+      "markedIdx": 1,
+      "marked": "Neymar",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "game-sonic-speed",
+      "category": "gaming",
+      "markedIdx": 3,
+      "marked": "Son vol",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "war-cs-sud",
+      "category": "histoire",
+      "markedIdx": 1,
+      "marked": "Les États de Nouvelle-Angleterre",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "war-ww2-mussolini",
+      "category": "histoire",
+      "markedIdx": 1,
+      "marked": "António de Oliveira Salazar",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "war-nap-code-civil",
+      "category": "histoire",
+      "markedIdx": 3,
+      "marked": "La Charte constitutionnelle",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "war-rev-ddhc",
+      "category": "histoire",
+      "markedIdx": 1,
+      "marked": "Le Code civil",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "music-candle-in-the-wind",
+      "category": "musique",
+      "markedIdx": 1,
+      "marked": "Sting",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-osiris-god-of-vegetation",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 1,
+      "marked": "À la végétation et à la renaissance des récoltes",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-seth-unknown-animal",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 3,
+      "marked": "Un animal imaginaire non identifié",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-ptah-patron-of-artisans",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 3,
+      "marked": "Les artisans et les forgerons",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-ba-the-bird-soul",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 1,
+      "marked": "Un oiseau à tête humaine",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-mummification-seventy-days",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 3,
+      "marked": "Soixante-dix jours",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "egyptian-heart-scarab",
+      "category": "mythologie-egyptienne",
+      "markedIdx": 3,
+      "marked": "Le scarabée du cœur",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-cerberus-snake-tail",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "Elle se termine par une tête de serpent",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-sirens-enchanting-song",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "Leur chant ensorcelle et fait échouer les navires",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-tantalus-eternal-hunger",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "Une faim et une soif éternelles au milieu de fruits et d'eau qui se dérobent",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-heracles-known-for-strength",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "Sa force prodigieuse",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-heracles-death-nessus-tunic",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "En revêtant une tunique empoisonnée offerte par sa femme",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-aegeus-throws-himself-into-sea",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "Parce qu'Égée, croyant son fils mort, s'y est jeté",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-icarus-wax-wings",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "Il s'approche trop du Soleil et ses ailes de cire fondent",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-mount-olympus-location",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "En Grèce, à la frontière entre la Thessalie et la Macédoine",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-rhea-saves-zeus",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "En donnant à Cronos une pierre emmaillotée à la place du bébé",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-atlas-heracles-hesperides",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "Il lui propose de porter lui-même les pommes pendant qu'Héraclès tient le ciel",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-heracles-strangles-nemean-lion",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "En l'étranglant à mains nues",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-achilles-drags-hector-body",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "Il le traîne derrière son char autour de Troie",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-telemachus-son-of-odysseus",
+      "category": "mythologie-grecque",
+      "markedIdx": 3,
+      "marked": "Le fils d'Ulysse et de Pénélope",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "greek-troy-location-asia-minor",
+      "category": "mythologie-grecque",
+      "markedIdx": 1,
+      "marked": "En Asie Mineure, sur la côte de l'actuelle Turquie",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-socrates-maiutics-method",
+      "category": "philosophie",
+      "markedIdx": 1,
+      "marked": "À l'art de la sage-femme qui accouche les esprits",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-aristotle-tutor-of-alexander",
+      "category": "philosophie",
+      "markedIdx": 3,
+      "marked": "Alexandre le Grand",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-sartre-refused-nobel-prize",
+      "category": "philosophie",
+      "markedIdx": 3,
+      "marked": "Le prix Nobel de littérature",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-wittgenstein-tractatus-final-proposition",
+      "category": "philosophie",
+      "markedIdx": 3,
+      "marked": "« Ce dont on ne peut parler, il faut le taire »",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-spinoza-deus-sive-natura",
+      "category": "philosophie",
+      "markedIdx": 3,
+      "marked": "« Dieu, c'est-à-dire la Nature »",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-kant-sapere-aude",
+      "category": "philosophie",
+      "markedIdx": 1,
+      "marked": "« Sapere aude » : ose te servir de ton propre entendement",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "phil-stoics-live-in-accordance-with-nature",
+      "category": "philosophie",
+      "markedIdx": 3,
+      "marked": "Vivre conformément à la nature et à la raison",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "sci-nitrogen",
+      "category": "science",
+      "markedIdx": 1,
+      "marked": "Le dioxyde de carbone",
+      "risks": [
+        "reponse-trop-longue",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    },
+    {
+      "id": "tv-prison-break-scofield",
+      "category": "series",
+      "markedIdx": 3,
+      "marked": "T-Bag",
+      "risks": [
+        "reponse-trop-courte",
+        "position-1ou3"
+      ],
+      "riskScore": 0.5
+    }
+  ]
+}

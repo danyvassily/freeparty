@@ -581,7 +581,7 @@
       "FIFA World",
       "PES 24"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "gaming",
     "subcategory": "jeux-video",
     "difficulty": "medium",
@@ -597,15 +597,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: EA Sports FC remplace FIFA"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "game-roblox-year",

@@ -1,0 +1,919 @@
+id;categorie;marked_idx;marked;detection;action
+film-forrest-gump-actor;cinema;1;Big;reponse-trop-courte position-1ou3;A_RECONFIRMER
+film-amelie-arrondissement;cinema;3;Saint-Germain-des-Prés;reponse-trop-longue position-1ou3;A_RECONFIRMER
+film-bienvenue-chtis-record;cinema;3;Astérix et Obélix : Mission Cléopâtre;reponse-trop-longue position-1ou3;A_RECONFIRMER
+cg-sci-azote;culture-generale;3;Le dioxyde de carbone;reponse-trop-longue position-1ou3;A_RECONFIRMER
+cg-sport-foot;culture-generale;1;Le hockey sur gazon;reponse-trop-longue position-1ou3;A_RECONFIRMER
+cg-rec-groenland;culture-generale;3;Bornéo;reponse-trop-courte position-1ou3;A_RECONFIRMER
+food-macaron;food;1;Le chou à la crème;reponse-trop-longue position-1ou3;A_RECONFIRMER
+foot-ronaldo-record;football;1;Neymar;reponse-trop-courte position-1ou3;A_RECONFIRMER
+game-sonic-speed;gaming;3;Son vol;reponse-trop-courte position-1ou3;A_RECONFIRMER
+war-cs-sud;histoire;1;Les États de Nouvelle-Angleterre;reponse-trop-longue position-1ou3;A_RECONFIRMER
+war-ww2-mussolini;histoire;1;António de Oliveira Salazar;reponse-trop-longue position-1ou3;A_RECONFIRMER
+war-nap-code-civil;histoire;3;La Charte constitutionnelle;reponse-trop-longue position-1ou3;A_RECONFIRMER
+war-rev-ddhc;histoire;1;Le Code civil;reponse-trop-courte position-1ou3;A_RECONFIRMER
+music-candle-in-the-wind;musique;1;Sting;reponse-trop-courte position-1ou3;A_RECONFIRMER
+egyptian-osiris-god-of-vegetation;mythologie-egyptienne;1;À la végétation et à la renaissance des récoltes;reponse-trop-longue position-1ou3;A_RECONFIRMER
+egyptian-seth-unknown-animal;mythologie-egyptienne;3;Un animal imaginaire non identifié;reponse-trop-longue position-1ou3;A_RECONFIRMER
+egyptian-ptah-patron-of-artisans;mythologie-egyptienne;3;Les artisans et les forgerons;reponse-trop-longue position-1ou3;A_RECONFIRMER
+egyptian-ba-the-bird-soul;mythologie-egyptienne;1;Un oiseau à tête humaine;reponse-trop-longue position-1ou3;A_RECONFIRMER
+egyptian-mummification-seventy-days;mythologie-egyptienne;3;Soixante-dix jours;reponse-trop-longue position-1ou3;A_RECONFIRMER
+egyptian-heart-scarab;mythologie-egyptienne;3;Le scarabée du cœur;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-cerberus-snake-tail;mythologie-grecque;1;Elle se termine par une tête de serpent;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-sirens-enchanting-song;mythologie-grecque;3;Leur chant ensorcelle et fait échouer les navires;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-tantalus-eternal-hunger;mythologie-grecque;1;Une faim et une soif éternelles au milieu de fruits et d'eau qui se dérobent;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-heracles-known-for-strength;mythologie-grecque;3;Sa force prodigieuse;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-heracles-death-nessus-tunic;mythologie-grecque;3;En revêtant une tunique empoisonnée offerte par sa femme;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-aegeus-throws-himself-into-sea;mythologie-grecque;1;Parce qu'Égée, croyant son fils mort, s'y est jeté;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-icarus-wax-wings;mythologie-grecque;3;Il s'approche trop du Soleil et ses ailes de cire fondent;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-mount-olympus-location;mythologie-grecque;3;En Grèce, à la frontière entre la Thessalie et la Macédoine;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-rhea-saves-zeus;mythologie-grecque;1;En donnant à Cronos une pierre emmaillotée à la place du bébé;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-atlas-heracles-hesperides;mythologie-grecque;3;Il lui propose de porter lui-même les pommes pendant qu'Héraclès tient le ciel;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-heracles-strangles-nemean-lion;mythologie-grecque;3;En l'étranglant à mains nues;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-achilles-drags-hector-body;mythologie-grecque;1;Il le traîne derrière son char autour de Troie;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-telemachus-son-of-odysseus;mythologie-grecque;3;Le fils d'Ulysse et de Pénélope;reponse-trop-longue position-1ou3;A_RECONFIRMER
+greek-troy-location-asia-minor;mythologie-grecque;1;En Asie Mineure, sur la côte de l'actuelle Turquie;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-socrates-maiutics-method;philosophie;1;À l'art de la sage-femme qui accouche les esprits;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-aristotle-tutor-of-alexander;philosophie;3;Alexandre le Grand;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-sartre-refused-nobel-prize;philosophie;3;Le prix Nobel de littérature;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-wittgenstein-tractatus-final-proposition;philosophie;3;« Ce dont on ne peut parler, il faut le taire »;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-spinoza-deus-sive-natura;philosophie;3;« Dieu, c'est-à-dire la Nature »;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-kant-sapere-aude;philosophie;1;« Sapere aude » : ose te servir de ton propre entendement;reponse-trop-longue position-1ou3;A_RECONFIRMER
+phil-stoics-live-in-accordance-with-nature;philosophie;3;Vivre conformément à la nature et à la raison;reponse-trop-longue position-1ou3;A_RECONFIRMER
+sci-nitrogen;science;1;Le dioxyde de carbone;reponse-trop-longue position-1ou3;A_RECONFIRMER
+tv-prison-break-scofield;series;3;T-Bag;reponse-trop-courte position-1ou3;A_RECONFIRMER
+art-seurat-grandejatte-technique;art;0;Le Pointillisme (Divisionnisme);reponse-trop-longue;A_RECONFIRMER
+film-star-wars-year;cinema;3;1980;position-1ou3;A_RECONFIRMER
+film-millennium-falcon;cinema;1;Serenity;position-1ou3;A_RECONFIRMER
+film-harry-potter-actor;cinema;3;Tom Felton;position-1ou3;A_RECONFIRMER
+film-bond-dr-no;cinema;1;Pierce Brosnan;position-1ou3;A_RECONFIRMER
+film-godfather-vito;cinema;3;Robert De Niro;position-1ou3;A_RECONFIRMER
+film-jaws-shark;cinema;1;E.T. l'extra-terrestre;position-1ou3;A_RECONFIRMER
+film-pulp-fiction-director;cinema;3;David Fincher;position-1ou3;A_RECONFIRMER
+film-titanic-oscar-1998;cinema;0;Titanic;reponse-trop-courte;A_RECONFIRMER
+film-chevre-depardieu-richard;cinema;1;Les Fugitifs;position-1ou3;A_RECONFIRMER
+film-bronzes-saga;cinema;3;La Grande Vadrouille;position-1ou3;A_RECONFIRMER
+film-gendarme-st-tropez;cinema;1;La Folie des grandeurs;position-1ou3;A_RECONFIRMER
+film-amelie-director;cinema;3;Cédric Klapisch;position-1ou3;A_RECONFIRMER
+film-walle-eve;cinema;1;Dot;position-1ou3;A_RECONFIRMER
+film-shrek-studio;cinema;3;Laika;position-1ou3;A_RECONFIRMER
+film-toy-story-woody-voice;cinema;1;Billy Crystal;position-1ou3;A_RECONFIRMER
+film-reine-neiges-soeurs;cinema;3;Vaiana;position-1ou3;A_RECONFIRMER
+film-inception-nolan;cinema;1;Tenet;position-1ou3;A_RECONFIRMER
+film-joker-ledger;cinema;3;Jared Leto;position-1ou3;A_RECONFIRMER
+film-lotr-ring-bearer;cinema;1;Bilbon;position-1ou3;A_RECONFIRMER
+film-harry-potter-studio;cinema;3;Paramount;position-1ou3;A_RECONFIRMER
+film-iron-man-actor;cinema;1;Chris Hemsworth;position-1ou3;A_RECONFIRMER
+film-matrix-neo;cinema;3;Trinity;position-1ou3;A_RECONFIRMER
+film-titanic-famous-line;cinema;1;Vive la vie;position-1ou3;A_RECONFIRMER
+film-scarface-quote;cinema;1;Tu me parles, à moi ?;position-1ou3;A_RECONFIRMER
+film-taxi-driver-quote;cinema;3;Qui va là ?;position-1ou3;A_RECONFIRMER
+film-oscars-record-11;cinema;1;Lawrence d'Arabie;position-1ou3;A_RECONFIRMER
+film-oscars-actress-4;cinema;3;Bette Davis;position-1ou3;A_RECONFIRMER
+film-oscars-will-smith;cinema;1;2020;position-1ou3;A_RECONFIRMER
+film-goodfellas-director;cinema;3;Quentin Tarantino;position-1ou3;A_RECONFIRMER
+film-blade-runner-director;cinema;1;John Carpenter;position-1ou3;A_RECONFIRMER
+film-citizen-kane;cinema;3;Casablanca;position-1ou3;A_RECONFIRMER
+film-avatar-pandora;cinema;1;Tatooine;position-1ou3;A_RECONFIRMER
+film-jurassic-park-director;cinema;3;Roland Emmerich;position-1ou3;A_RECONFIRMER
+film-gladiator-maximus;cinema;1;Mel Gibson;position-1ou3;A_RECONFIRMER
+film-intouchables-actor;cinema;1;Jamel Debbouze;position-1ou3;A_RECONFIRMER
+film-leon-besson;cinema;1;Le Grand Bleu;position-1ou3;A_RECONFIRMER
+film-la-la-land-director;cinema;1;Tom Hooper;position-1ou3;A_RECONFIRMER
+film-inception-totem;cinema;3;Une clé;position-1ou3;A_RECONFIRMER
+film-coco-mexico;cinema;0;Coco;reponse-trop-courte;A_RECONFIRMER
+film-ghibli-studio-prod;cinema;1;Madhouse;position-1ou3;A_RECONFIRMER
+film-artist-best-picture;cinema;3;Minuit à Paris;position-1ou3;A_RECONFIRMER
+film-bttf-director;cinema;1;John Landis;position-1ou3;A_RECONFIRMER
+film-oscars-meryl;cinema;3;Cate Blanchett;position-1ou3;A_RECONFIRMER
+cg-inv-dynamite;culture-generale;1;Thomas Edison;position-1ou3;A_RECONFIRMER
+cg-inv-edison;culture-generale;3;Nikola Tesla;position-1ou3;A_RECONFIRMER
+cg-inv-diesel;culture-generale;1;Nikolaus Otto;position-1ou3;A_RECONFIRMER
+cg-inv-radium;culture-generale;3;Lise Meitner;position-1ou3;A_RECONFIRMER
+cg-inv-aspirine;culture-generale;1;Joseph Lister;position-1ou3;A_RECONFIRMER
+cg-mon-eiffel-annee;culture-generale;3;1900;position-1ou3;A_RECONFIRMER
+cg-mon-kheops;culture-generale;1;La pyramide de Mykérinos;position-1ou3;A_RECONFIRMER
+cg-mon-versailles;culture-generale;3;Louis XV;position-1ou3;A_RECONFIRMER
+cg-mon-nimes;culture-generale;1;Orange;position-1ou3;A_RECONFIRMER
+cg-mon-vatican;culture-generale;3;Le palais des Doges;position-1ou3;A_RECONFIRMER
+cg-flag-canada;culture-generale;1;L'Australie;position-1ou3;A_RECONFIRMER
+cg-flag-suisse;culture-generale;3;La Norvège;position-1ou3;A_RECONFIRMER
+cg-flag-usa-etoiles;culture-generale;1;51;position-1ou3;A_RECONFIRMER
+cg-flag-union-jack;culture-generale;3;La France;position-1ou3;A_RECONFIRMER
+cg-flag-italie;culture-generale;1;L'Irlande;position-1ou3;A_RECONFIRMER
+cg-ani-plus-rapide;culture-generale;1;L'antilope;position-1ou3;A_RECONFIRMER
+cg-ani-poulpe;culture-generale;3;Deux;position-1ou3;A_RECONFIRMER
+cg-ani-ornithorynque;culture-generale;1;Le koala;position-1ou3;A_RECONFIRMER
+cg-ani-araignee;culture-generale;3;Dix;position-1ou3;A_RECONFIRMER
+cg-ani-colombe;culture-generale;1;L'aigle;position-1ou3;A_RECONFIRMER
+cg-corps-organe;culture-generale;3;Le cerveau;position-1ou3;A_RECONFIRMER
+cg-corps-bebe;culture-generale;1;Environ 250;position-1ou3;A_RECONFIRMER
+cg-corps-coeur;culture-generale;3;Les reins;position-1ou3;A_RECONFIRMER
+cg-corps-abo;culture-generale;1;Cinq;position-1ou3;A_RECONFIRMER
+cg-corps-donneur;culture-generale;3;A positif;position-1ou3;A_RECONFIRMER
+cg-alim-pomme;culture-generale;1;La grenade;position-1ou3;A_RECONFIRMER
+cg-alim-guacamole;culture-generale;3;Le concombre;position-1ou3;A_RECONFIRMER
+cg-alim-emmental;culture-generale;1;Le roquefort;position-1ou3;A_RECONFIRMER
+cg-alim-vin;culture-generale;3;Le cidre;position-1ou3;A_RECONFIRMER
+cg-alim-banane;culture-generale;1;La pêche;position-1ou3;A_RECONFIRMER
+cg-alim-yaourt;culture-generale;3;Le beurre;position-1ou3;A_RECONFIRMER
+cg-cap-canada;culture-generale;1;Montréal;position-1ou3;A_RECONFIRMER
+cg-cap-bresil;culture-generale;3;São Paulo;position-1ou3;A_RECONFIRMER
+cg-cap-turquie;culture-generale;1;Izmir;position-1ou3;A_RECONFIRMER
+cg-cap-afrique-sud;culture-generale;3;Le Cap;position-1ou3;A_RECONFIRMER
+cg-cap-inde;culture-generale;1;Calcutta;position-1ou3;A_RECONFIRMER
+cg-xx-titanic-bateau;culture-generale;3;Le Normandie;position-1ou3;A_RECONFIRMER
+cg-xx-concorde;culture-generale;1;Le Tupolev Tu-144;position-1ou3;A_RECONFIRMER
+cg-xx-spoutnik-annee;culture-generale;3;1955;position-1ou3;A_RECONFIRMER
+cg-xx-1969-tv;culture-generale;1;La finale de la Coupe du monde 1966;position-1ou3;A_RECONFIRMER
+cg-xx-mur-1961;culture-generale;3;1963;position-1ou3;A_RECONFIRMER
+cg-ins-fuseaux;culture-generale;1;Les États-Unis;position-1ou3;A_RECONFIRMER
+cg-ins-soleil;culture-generale;3;30 minutes;position-1ou3;A_RECONFIRMER
+cg-ins-mandarin;culture-generale;1;L'espagnol;position-1ou3;A_RECONFIRMER
+cg-ins-asie;culture-generale;1;L'Europe;position-1ou3;A_RECONFIRMER
+cg-geo-seychelles;culture-generale;1;Le Rwanda;position-1ou3;A_RECONFIRMER
+cg-geo-gibraltar;culture-generale;3;Le détroit de Magellan;position-1ou3;A_RECONFIRMER
+cg-geo-nigeria;culture-generale;1;L'Éthiopie;position-1ou3;A_RECONFIRMER
+cg-sci-einstein;culture-generale;1;Niels Bohr;position-1ou3;A_RECONFIRMER
+cg-sci-mars;culture-generale;3;Jupiter;position-1ou3;A_RECONFIRMER
+cg-art-velasquez;culture-generale;1;Le Greco;position-1ou3;A_RECONFIRMER
+cg-art-hugo;culture-generale;3;Alexandre Dumas;position-1ou3;A_RECONFIRMER
+cg-art-petit-prince;culture-generale;1;Marcel Pagnol;position-1ou3;A_RECONFIRMER
+cg-sport-hiver;culture-generale;3;Les États-Unis;position-1ou3;A_RECONFIRMER
+cg-sport-phelps;culture-generale;3;Katie Ledecky;position-1ou3;A_RECONFIRMER
+cg-ins-etoile-mer;culture-generale;1;La méduse;position-1ou3;A_RECONFIRMER
+cg-ins-journee-venus;culture-generale;3;365 jours terrestres;position-1ou3;A_RECONFIRMER
+cg-ins-saturne;culture-generale;1;Uranus;position-1ou3;A_RECONFIRMER
+cg-exp-31;culture-generale;1;Se lever très tôt;position-1ou3;A_RECONFIRMER
+cg-exp-lapin;culture-generale;2;Ne pas venir à un rendez-vous;reponse-trop-longue;A_RECONFIRMER
+cg-exp-chair-poule;culture-generale;3;Être en colère;position-1ou3;A_RECONFIRMER
+cg-exp-yeux-tete;culture-generale;1;Être dangereux;position-1ou3;A_RECONFIRMER
+cg-exp-fromage;culture-generale;3;Bien cuisiner;position-1ou3;A_RECONFIRMER
+cg-exp-taureau;culture-generale;1;Chasser des animaux;position-1ou3;A_RECONFIRMER
+cg-exp-plat;culture-generale;2;Aborder un sujet délicat sans détour;reponse-trop-longue;A_RECONFIRMER
+cg-exp-sellette;culture-generale;3;Avoir gagné;position-1ou3;A_RECONFIRMER
+cg-exp-pot;culture-generale;0;Éviter d'aborder le sujet;reponse-trop-longue;A_RECONFIRMER
+cg-exp-cafard;culture-generale;1;Avoir peur des insectes;position-1ou3;A_RECONFIRMER
+cg-exp-mouron;culture-generale;3;Prendre du poids;position-1ou3;A_RECONFIRMER
+cg-exp-chat-gorge;culture-generale;0;Avoir la voix enrouée;reponse-trop-longue;A_RECONFIRMER
+cg-exp-pommes;culture-generale;1;Se blesser;position-1ou3;A_RECONFIRMER
+cg-exp-coup-main;culture-generale;3;Frapper;position-1ou3;A_RECONFIRMER
+cg-exp-pate;culture-generale;0;Participer au travail;reponse-trop-longue;A_RECONFIRMER
+cg-exp-chaussettes;culture-generale;1;Être pressé;position-1ou3;A_RECONFIRMER
+cg-exp-cordon-bleu;culture-generale;2;Être un excellent cuisinier;reponse-trop-longue;A_RECONFIRMER
+cg-exp-grasse-matinee;culture-generale;3;Dormir peu;position-1ou3;A_RECONFIRMER
+cg-exp-pain-planche;culture-generale;1;Être riche;position-1ou3;A_RECONFIRMER
+cg-exp-temps-chien;culture-generale;3;Un temps doux;position-1ou3;A_RECONFIRMER
+cg-exp-vache;culture-generale;1;Parler très vite;position-1ou3;A_RECONFIRMER
+cg-rec-russie;culture-generale;3;La Chine;position-1ou3;A_RECONFIRMER
+cg-rec-mariannes;culture-generale;1;La fosse des Tonga;position-1ou3;A_RECONFIRMER
+cg-rec-faucon;culture-generale;3;Le martinet noir;position-1ou3;A_RECONFIRMER
+cg-rec-frontiere;culture-generale;1;Entre l'Argentine et le Chili;position-1ou3;A_RECONFIRMER
+cg-rec-baikal;culture-generale;1;La mer Caspienne;position-1ou3;A_RECONFIRMER
+cg-rec-jo;culture-generale;3;La Russie;position-1ou3;A_RECONFIRMER
+cg-rec-bolt-annee;culture-generale;1;2012;position-1ou3;A_RECONFIRMER
+cg-rec-bresil-5;culture-generale;3;Quatre;position-1ou3;A_RECONFIRMER
+cg-rec-bible;culture-generale;1;Don Quichotte;position-1ou3;A_RECONFIRMER
+cg-rec-journee-terre;culture-generale;3;36 heures;position-1ou3;A_RECONFIRMER
+cg-rec-musulmans;culture-generale;1;L'Inde;position-1ou3;A_RECONFIRMER
+cg-rec-dollar;culture-generale;2;Le dollar américain;reponse-trop-longue;A_RECONFIRMER
+cg-rec-tokyo;culture-generale;3;Paris;position-1ou3;A_RECONFIRMER
+cg-rec-araignee-web;culture-generale;1;La tarentule;position-1ou3;A_RECONFIRMER
+food-margherita-colors;food;1;Vert, jaune, rouge;position-1ou3;A_RECONFIRMER
+food-tacos;food;1;Le Pérou;position-1ou3;A_RECONFIRMER
+food-foie-gras;food;3;La Hongrie;position-1ou3;A_RECONFIRMER
+food-cassoulet;food;1;L'Est;position-1ou3;A_RECONFIRMER
+food-baguette-unesco;food;3;L'OMS;position-1ou3;A_RECONFIRMER
+food-champagne;food;1;Le Bordelais;position-1ou3;A_RECONFIRMER
+food-pastis;food;3;Le pineau;position-1ou3;A_RECONFIRMER
+food-hamburger;food;3;Francfort;position-1ou3;A_RECONFIRMER
+food-sushi-rice;food;1;Le blé;position-1ou3;A_RECONFIRMER
+food-truffle;food;3;Un fruit;position-1ou3;A_RECONFIRMER
+food-vanilla-orchid;food;1;Les cactus;position-1ou3;A_RECONFIRMER
+food-chocolate-cocoa;food;2;De fèves de cacao;reponse-trop-longue;A_RECONFIRMER
+food-cocoa-origin;food;3;L'Asie;position-1ou3;A_RECONFIRMER
+food-dijon;food;1;Bordeaux;position-1ou3;A_RECONFIRMER
+food-camembert;food;3;Le Jura;position-1ou3;A_RECONFIRMER
+food-comte;food;1;Le camembert;position-1ou3;A_RECONFIRMER
+food-tapas;food;3;Les mezze;position-1ou3;A_RECONFIRMER
+food-bagel;food;3;La France;position-1ou3;A_RECONFIRMER
+foot-france-1998;football;3;La Croatie;position-1ou3;A_RECONFIRMER
+foot-wc-2022;football;1;Le Brésil;position-1ou3;A_RECONFIRMER
+foot-pele-titles;football;3;4;position-1ou3;A_RECONFIRMER
+foot-ucl;football;1;La Supercoupe d'Europe;position-1ou3;A_RECONFIRMER
+foot-psg-stadium;football;3;Le Vélodrome;position-1ou3;A_RECONFIRMER
+foot-marseille-1993;football;0;L'OM (Marseille);reponse-trop-longue;A_RECONFIRMER
+foot-france-euros;football;1;3 fois;position-1ou3;A_RECONFIRMER
+foot-zidane-clubs;football;3;Le Real Madrid;position-1ou3;A_RECONFIRMER
+foot-england-record;football;0;Manchester United;reponse-trop-longue;A_RECONFIRMER
+foot-bayern;football;1;Le RB Leipzig;position-1ou3;A_RECONFIRMER
+foot-klose;football;3;Gerd Müller;position-1ou3;A_RECONFIRMER
+game-mario-brother;gaming;1;Waluigi;position-1ou3;A_RECONFIRMER
+game-mario-company;gaming;3;Sony;position-1ou3;A_RECONFIRMER
+game-zelda-princess;gaming;1;La sorcière;position-1ou3;A_RECONFIRMER
+game-pokemon-creator;gaming;3;Gunpei Yokoi;position-1ou3;A_RECONFIRMER
+game-pokemon-gen1;gaming;1;250;position-1ou3;A_RECONFIRMER
+game-minecraft-creator;gaming;3;Todd Howard;position-1ou3;A_RECONFIRMER
+game-minecraft-ender-dragon;gaming;1;Le Warden;position-1ou3;A_RECONFIRMER
+game-tetris-origin;gaming;1;Les États-Unis;position-1ou3;A_RECONFIRMER
+game-ff-company;gaming;2;Square (Square Enix);reponse-trop-longue;A_RECONFIRMER
+game-ff7-cloud;gaming;3;Zidane Tribal;position-1ou3;A_RECONFIRMER
+game-gta-vice-city;gaming;1;Los Santos;position-1ou3;A_RECONFIRMER
+game-minecraft-best-seller;gaming;3;GTA V;position-1ou3;A_RECONFIRMER
+game-cs-bomb;gaming;1;Battlefield;position-1ou3;A_RECONFIRMER
+game-skyrim-dovahkiin;gaming;3;L'Élu;position-1ou3;A_RECONFIRMER
+game-mario-first;gaming;1;Mario Kart;position-1ou3;A_RECONFIRMER
+game-witcher-geralt;gaming;0;Chasseur de monstres;reponse-trop-longue;A_RECONFIRMER
+game-witcher-author;gaming;1;Henryk Sienkiewicz;position-1ou3;A_RECONFIRMER
+game-zelda-ocarina;gaming;3;La harpe;position-1ou3;A_RECONFIRMER
+game-halo-chief;gaming;1;Cortana;position-1ou3;A_RECONFIRMER
+game-lara-croft;gaming;3;Espionne;position-1ou3;A_RECONFIRMER
+game-resident-evil-city;gaming;1;Twin Peaks;position-1ou3;A_RECONFIRMER
+game-ryu-hadoken;gaming;3;Le Rasengan;position-1ou3;A_RECONFIRMER
+game-tetris-pieces;gaming;1;Les pentominos;position-1ou3;A_RECONFIRMER
+game-fifa-editor;gaming;2;Electronic Arts;reponse-trop-longue;A_RECONFIRMER
+game-roblox-platform;gaming;1;Il n'y a pas de graphismes;position-1ou3;A_RECONFIRMER
+game-sims-creator;gaming;3;Peter Molyneux;position-1ou3;A_RECONFIRMER
+game-zelda-first;gaming;1;1990;position-1ou3;A_RECONFIRMER
+game-gameboy;gaming;3;La Game Gear;position-1ou3;A_RECONFIRMER
+game-xbox-company;gaming;1;Nintendo;position-1ou3;A_RECONFIRMER
+game-kingdom-hearts;gaming;3;DC et Marvel;position-1ou3;A_RECONFIRMER
+game-starcraft-rts;gaming;1;Rocket League;position-1ou3;A_RECONFIRMER
+riyad-12;geographie;0;Arabie saoudite;reponse-trop-longue;A_RECONFIRMER
+azerbaidjan-21;geographie;0;Bakou;reponse-trop-courte;A_RECONFIRMER
+naypyidaw-42;geographie;0;Birmanie (Myanmar);reponse-trop-longue;A_RECONFIRMER
+sarajevo-46;geographie;0;Bosnie-Herzégovine;reponse-trop-longue;A_RECONFIRMER
+brunei-51;geographie;0;Bandar Seri Begawan;reponse-trop-longue;A_RECONFIRMER
+brazzaville-80;geographie;0;Congo (République);reponse-trop-longue;A_RECONFIRMER
+la-havane-92;geographie;0;Cuba;reponse-trop-courte;A_RECONFIRMER
+republique-dominicaine-95;geographie;0;Saint-Domingue;reponse-trop-longue;A_RECONFIRMER
+saint-domingue-96;geographie;0;République dominicaine;reponse-trop-longue;A_RECONFIRMER
+abou-dabi-100;geographie;0;Émirats arabes unis;reponse-trop-longue;A_RECONFIRMER
+etats-unis-111;geographie;0;Washington D.C.;reponse-trop-longue;A_RECONFIRMER
+fidji-115;geographie;0;Suva;reponse-trop-courte;A_RECONFIRMER
+port-au-prince-136;geographie;0;Haïti;reponse-trop-courte;A_RECONFIRMER
+bagdad-146;geographie;0;Irak;reponse-trop-courte;A_RECONFIRMER
+vientiane-170;geographie;0;Laos;reponse-trop-courte;A_RECONFIRMER
+skopje-186;geographie;0;Macédoine du Nord;reponse-trop-longue;A_RECONFIRMER
+norvege-225;geographie;0;Oslo;reponse-trop-courte;A_RECONFIRMER
+wellington-228;geographie;0;Nouvelle-Zélande;reponse-trop-longue;A_RECONFIRMER
+port-moresby-238;geographie;0;Papouasie-Nouvelle-Guinée;reponse-trop-longue;A_RECONFIRMER
+qatar-251;geographie;0;Doha;reponse-trop-courte;A_RECONFIRMER
+doha-252;geographie;0;Qatar;reponse-trop-courte;A_RECONFIRMER
+prague-254;geographie;0;République tchèque;reponse-trop-longue;A_RECONFIRMER
+belgrade-266;geographie;0;Serbie;reponse-trop-courte;A_RECONFIRMER
+sri-lanka-281;geographie;0;Sri Jayawardenapura Kotte;reponse-trop-longue;A_RECONFIRMER
+trinite-et-tobago-301;geographie;0;Port-d'Espagne;reponse-trop-longue;A_RECONFIRMER
+viet-nam-315;geographie;0;Hanoï;reponse-trop-courte;A_RECONFIRMER
+lusaka-320;geographie;0;Zambie;reponse-trop-courte;A_RECONFIRMER
+afrique-du-sud-100000;geographie;0;rand;reponse-trop-courte;A_RECONFIRMER
+albanie-100001;geographie;0;lek;reponse-trop-courte;A_RECONFIRMER
+allemagne-100002;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+andorre-100003;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+angola-100004;geographie;0;kwanza;reponse-trop-courte;A_RECONFIRMER
+arabie-saoudite-100005;geographie;0;riyal saoudien;reponse-trop-longue;A_RECONFIRMER
+armenie-100007;geographie;0;dram;reponse-trop-courte;A_RECONFIRMER
+autriche-100008;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+bangladesh-100009;geographie;0;taka;reponse-trop-courte;A_RECONFIRMER
+belgique-100011;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+birmanie-myanmar--100016;geographie;0;kyat;reponse-trop-courte;A_RECONFIRMER
+botswana-100019;geographie;0;pula;reponse-trop-courte;A_RECONFIRMER
+burkina-faso-100021;geographie;0;franc CFA (BCEAO);reponse-trop-longue;A_RECONFIRMER
+burundi-100022;geographie;0;franc burundais;reponse-trop-longue;A_RECONFIRMER
+cambodge-100023;geographie;0;riel;reponse-trop-courte;A_RECONFIRMER
+chypre-100028;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+congo-republique--100031;geographie;0;franc CFA (BEAC);reponse-trop-longue;A_RECONFIRMER
+costa-rica-100034;geographie;0;colón;reponse-trop-courte;A_RECONFIRMER
+croatie-100036;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+emirats-arabes-unis-100040;geographie;0;dirham des Émirats;reponse-trop-longue;A_RECONFIRMER
+erythree-100042;geographie;0;nakfa;reponse-trop-courte;A_RECONFIRMER
+espagne-100043;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+estonie-100044;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+etats-unis-100046;geographie;0;dollar américain;reponse-trop-longue;A_RECONFIRMER
+ethiopie-100047;geographie;0;birr;reponse-trop-courte;A_RECONFIRMER
+finlande-100048;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+france-100049;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+gabon-100050;geographie;0;franc CFA (BEAC);reponse-trop-longue;A_RECONFIRMER
+georgie-100052;geographie;0;lari;reponse-trop-courte;A_RECONFIRMER
+ghana-100053;geographie;0;cédi;reponse-trop-courte;A_RECONFIRMER
+grece-100054;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+hongrie-100059;geographie;0;forint;reponse-trop-courte;A_RECONFIRMER
+irlande-100061;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+islande-100062;geographie;0;couronne islandaise;reponse-trop-longue;A_RECONFIRMER
+israel-100063;geographie;0;shekel;reponse-trop-courte;A_RECONFIRMER
+italie-100064;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+jamaique-100065;geographie;0;dollar jamaïcain;reponse-trop-longue;A_RECONFIRMER
+japon-100066;geographie;0;yen;reponse-trop-courte;A_RECONFIRMER
+laos-100069;geographie;0;kip;reponse-trop-courte;A_RECONFIRMER
+lituanie-100074;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+luxembourg-100075;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+macedoine-du-nord-100076;geographie;0;denar;reponse-trop-courte;A_RECONFIRMER
+malte-100081;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+mauritanie-100083;geographie;0;ouguiya;reponse-trop-courte;A_RECONFIRMER
+mexique-100084;geographie;0;peso mexicain;reponse-trop-longue;A_RECONFIRMER
+monaco-100086;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+montenegro-100088;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+nigeria-100092;geographie;0;naira;reponse-trop-courte;A_RECONFIRMER
+ouzbekistan-100095;geographie;0;sum;reponse-trop-courte;A_RECONFIRMER
+pologne-100102;geographie;0;złoty;reponse-trop-courte;A_RECONFIRMER
+portugal-100103;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+republique-tcheque-100104;geographie;0;couronne tchèque;reponse-trop-longue;A_RECONFIRMER
+slovaquie-100110;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+slovenie-100111;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+soudan-du-sud-100112;geographie;0;livre sud-soudanaise;reponse-trop-longue;A_RECONFIRMER
+tadjikistan-100115;geographie;0;somoni;reponse-trop-courte;A_RECONFIRMER
+tchad-100116;geographie;0;franc CFA (BEAC);reponse-trop-longue;A_RECONFIRMER
+vanuatu-100123;geographie;0;vatu;reponse-trop-courte;A_RECONFIRMER
+vatican-100124;geographie;0;euro;reponse-trop-courte;A_RECONFIRMER
+war-dec-gama;histoire;1;Pedro Álvares Cabral;position-1ou3;A_RECONFIRMER
+war-dec-pizarro;histoire;3;Vasco Núñez de Balboa;position-1ou3;A_RECONFIRMER
+war-dec-cook;histoire;1;Henry Hudson;position-1ou3;A_RECONFIRMER
+war-indus-rail-1827;histoire;3;1848;position-1ou3;A_RECONFIRMER
+war-indus-bell;histoire;1;Nikola Tesla;position-1ou3;A_RECONFIRMER
+war-indus-rocket;histoire;3;Richard Trevithick;position-1ou3;A_RECONFIRMER
+war-indus-benz;histoire;1;Rudolf Diesel;position-1ou3;A_RECONFIRMER
+war-gf-rideau-fer;histoire;1;Harry Truman;position-1ou3;A_RECONFIRMER
+war-gf-varsovie;histoire;3;Le Kominform;position-1ou3;A_RECONFIRMER
+war-gf-mur-berlin;histoire;1;La ligne Siegfried;position-1ou3;A_RECONFIRMER
+war-gf-cuba-annee;histoire;3;1956;position-1ou3;A_RECONFIRMER
+war-gf-lune-1969;histoire;1;1965;position-1ou3;A_RECONFIRMER
+war-gf-reagan;histoire;3;Richard Nixon;position-1ou3;A_RECONFIRMER
+war-gf-afghanistan;histoire;1;La Hongrie;position-1ou3;A_RECONFIRMER
+war-coree-parallele;histoire;3;Le 45e parallèle;position-1ou3;A_RECONFIRMER
+war-coree-chine;histoire;1;L'Inde;position-1ou3;A_RECONFIRMER
+war-vietnam-giap;histoire;3;Pham Van Dong;position-1ou3;A_RECONFIRMER
+war-vietnam-tet;histoire;1;L'opération Rolling Thunder;position-1ou3;A_RECONFIRMER
+war-cs-davis;histoire;3;Robert E. Lee;position-1ou3;A_RECONFIRMER
+war-cs-gettysburg;histoire;1;Bull Run;position-1ou3;A_RECONFIRMER
+war-cs-antietam;histoire;3;Bull Run;position-1ou3;A_RECONFIRMER
+war-cs-grant;histoire;1;George Meade;position-1ou3;A_RECONFIRMER
+war-cs-sherman;histoire;3;George McClellan;position-1ou3;A_RECONFIRMER
+war-cs-ford;histoire;1;Au Capitole;position-1ou3;A_RECONFIRMER
+war-cs-13e;histoire;3;Le 15e amendement;position-1ou3;A_RECONFIRMER
+war-marathon-roi-perse;histoire;1;Cyrus le Grand;position-1ou3;A_RECONFIRMER
+war-thermopyles-300;histoire;3;Salamine;position-1ou3;A_RECONFIRMER
+war-thermopyles-roi;histoire;1;Cléomène;position-1ou3;A_RECONFIRMER
+war-salamine-strategie;histoire;3;Aristide;position-1ou3;A_RECONFIRMER
+war-xerxes-invasion;histoire;1;Cambyse II;position-1ou3;A_RECONFIRMER
+war-peloponnese-adversaires;histoire;3;Sparte et Corinthe;position-1ou3;A_RECONFIRMER
+war-peloponnese-fin;histoire;1;480 av. J.-C.;position-1ou3;A_RECONFIRMER
+war-peloponnese-sicile;histoire;3;L'expédition de Chypre;position-1ou3;A_RECONFIRMER
+war-alexandre-precepteur;histoire;1;Platon;position-1ou3;A_RECONFIRMER
+war-alexandre-granique;histoire;3;Gaugamèles;position-1ou3;A_RECONFIRMER
+war-alexandre-gaugameles;histoire;1;334 av. J.-C.;position-1ou3;A_RECONFIRMER
+war-alexandre-alexandrie;histoire;3;Memphis;position-1ou3;A_RECONFIRMER
+war-alexandre-noeud;histoire;1;Le nœud de Salomon;position-1ou3;A_RECONFIRMER
+war-alexandre-age;histoire;3;40 ans;position-1ou3;A_RECONFIRMER
+war-puniques-1ere-annee;histoire;1;149 av. J.-C.;position-1ou3;A_RECONFIRMER
+war-puniques-alpes;histoire;3;264 av. J.-C.;position-1ou3;A_RECONFIRMER
+war-puniques-zama;histoire;1;Trébie;position-1ou3;A_RECONFIRMER
+war-puniques-scipion;histoire;2;Scipion l'Africain;reponse-trop-longue;A_RECONFIRMER
+war-puniques-caton;histoire;3;Sénèque;position-1ou3;A_RECONFIRMER
+war-ww1-assassinat;histoire;1;Celui de Raspoutine;position-1ou3;A_RECONFIRMER
+war-ww1-triple-entente;histoire;3;L'Entente cordiale;position-1ou3;A_RECONFIRMER
+war-ww1-tranchees;histoire;1;La guerre de mouvement;position-1ou3;A_RECONFIRMER
+war-ww1-verdun-annee;histoire;3;1917;position-1ou3;A_RECONFIRMER
+war-ww1-petain;histoire;0;Philippe Pétain;reponse-trop-longue;A_RECONFIRMER
+war-ww1-somme;histoire;1;Ypres;position-1ou3;A_RECONFIRMER
+war-ww1-taxis;histoire;3;Les camions de la Somme;position-1ou3;A_RECONFIRMER
+war-ww1-wilson;histoire;1;Franklin D. Roosevelt;position-1ou3;A_RECONFIRMER
+war-ww1-brest-litovsk;histoire;3;Le traité de Tilsit;position-1ou3;A_RECONFIRMER
+war-ww1-armistice-heure;histoire;1;À midi;position-1ou3;A_RECONFIRMER
+war-ww1-wagon;histoire;2;Dans un wagon-restaurant, en forêt de Compiègne;reponse-trop-longue;A_RECONFIRMER
+war-ww1-versailles;histoire;3;Le traité de Trianon;position-1ou3;A_RECONFIRMER
+war-ww1-gaz;histoire;1;La dynamite;position-1ou3;A_RECONFIRMER
+war-ww1-tommies;histoire;3;Les doughboys;position-1ou3;A_RECONFIRMER
+war-ww1-guillaume2;histoire;1;Nicolas II;position-1ou3;A_RECONFIRMER
+war-ww1-morts-francais;histoire;3;Environ 5 millions;position-1ou3;A_RECONFIRMER
+war-ww1-ypres;histoire;1;Anvers;position-1ou3;A_RECONFIRMER
+war-ww1-mutineries;histoire;3;1916;position-1ou3;A_RECONFIRMER
+war-ww2-pologne;histoire;1;L'attaque de Pearl Harbor;position-1ou3;A_RECONFIRMER
+war-ww2-blitzkrieg;histoire;3;La guerre de position;position-1ou3;A_RECONFIRMER
+war-ww2-appel-18-juin;histoire;1;Jean Moulin;position-1ou3;A_RECONFIRMER
+war-ww2-bataille-angleterre;histoire;3;La bataille de l'Atlantique;position-1ou3;A_RECONFIRMER
+war-ww2-barbarossa-annee;histoire;1;1942;position-1ou3;A_RECONFIRMER
+war-ww2-stalingrad-fin;histoire;1;1944;position-1ou3;A_RECONFIRMER
+war-ww2-el-alamein;histoire;3;Benghazi;position-1ou3;A_RECONFIRMER
+war-ww2-overlord;histoire;1;Opération Dynamo;position-1ou3;A_RECONFIRMER
+war-ww2-dragoon;histoire;3;Opération Torch;position-1ou3;A_RECONFIRMER
+war-ww2-potsdam-truman;histoire;1;Woodrow Wilson;position-1ou3;A_RECONFIRMER
+war-ww2-8-mai;histoire;3;Le 2 septembre 1945;position-1ou3;A_RECONFIRMER
+war-ww2-annee-atomique;histoire;1;1943;position-1ou3;A_RECONFIRMER
+war-ww2-2-septembre;histoire;3;Le 6 août 1945;position-1ou3;A_RECONFIRMER
+war-ww2-wannsee;histoire;1;La conférence de Munich;position-1ou3;A_RECONFIRMER
+war-ww2-dynamo;histoire;3;Opération Seelöwe;position-1ou3;A_RECONFIRMER
+war-ww2-torch;histoire;3;1943;position-1ou3;A_RECONFIRMER
+war-nap-pie7;histoire;1;Léon XII;position-1ou3;A_RECONFIRMER
+war-nap-austerlitz;histoire;3;Wagram;position-1ou3;A_RECONFIRMER
+war-nap-tilsit;histoire;1;Le traité de Lunéville;position-1ou3;A_RECONFIRMER
+war-nap-russie-1812;histoire;3;1814;position-1ou3;A_RECONFIRMER
+war-nap-berezina;histoire;1;Le Danube;position-1ou3;A_RECONFIRMER
+war-nap-abdication-1814;histoire;3;1815;position-1ou3;A_RECONFIRMER
+war-nap-retour-1815;histoire;1;1813;position-1ou3;A_RECONFIRMER
+war-nap-waterloo;histoire;3;Wavre;position-1ou3;A_RECONFIRMER
+war-nap-sainte-helene;histoire;1;L'île Maurice;position-1ou3;A_RECONFIRMER
+war-croisade-pape;histoire;1;Innocent III;position-1ou3;A_RECONFIRMER
+war-croisade-godefroy;histoire;3;Raymond de Saint-Gilles;position-1ou3;A_RECONFIRMER
+war-croisade-hattin;histoire;1;Mansourah;position-1ou3;A_RECONFIRMER
+war-croisade-richard;histoire;2;Richard Cœur de Lion;reponse-trop-longue;A_RECONFIRMER
+war-croisade-acre-1291;histoire;3;1204;position-1ou3;A_RECONFIRMER
+war-croisade-molay;histoire;1;Bernard de Clairvaux;position-1ou3;A_RECONFIRMER
+war-cent-ans-adversaires;histoire;3;L'Angleterre et l'Écosse;position-1ou3;A_RECONFIRMER
+war-cent-ans-plantagenets;histoire;1;Les Stuart;position-1ou3;A_RECONFIRMER
+war-cent-ans-poitiers;histoire;3;Azincourt;position-1ou3;A_RECONFIRMER
+war-cent-ans-henri5;histoire;1;Richard III;position-1ou3;A_RECONFIRMER
+war-cent-ans-orleans;histoire;3;Paris;position-1ou3;A_RECONFIRMER
+war-cent-ans-jeanne-mort;histoire;1;1430;position-1ou3;A_RECONFIRMER
+war-cent-ans-castillon;histoire;3;Azincourt;position-1ou3;A_RECONFIRMER
+war-moyen-age-charlemagne;histoire;1;843;position-1ou3;A_RECONFIRMER
+war-moyen-age-peste;histoire;3;La variole;position-1ou3;A_RECONFIRMER
+war-moyen-age-serre;histoire;1;Un artisan membre d'une guilde;position-1ou3;A_RECONFIRMER
+war-moyen-age-adoubement;histoire;3;Le vasselage;position-1ou3;A_RECONFIRMER
+war-ren-berceau;histoire;1;Venise;position-1ou3;A_RECONFIRMER
+war-ren-sixtine;histoire;3;Raphaël;position-1ou3;A_RECONFIRMER
+war-ren-colomb;histoire;1;1498;position-1ou3;A_RECONFIRMER
+war-ren-chambord;histoire;3;Blois;position-1ou3;A_RECONFIRMER
+war-ren-imprimerie;histoire;1;La poudre à canon;position-1ou3;A_RECONFIRMER
+war-ren-catherine;histoire;3;Marie Stuart;position-1ou3;A_RECONFIRMER
+war-rev-bastille;histoire;1;La marche sur Versailles;position-1ou3;A_RECONFIRMER
+war-rev-jeu-de-paume;histoire;3;D'abolir immédiatement la monarchie;position-1ou3;A_RECONFIRMER
+war-rev-10-aout;histoire;3;La fusillade du Champ-de-Mars;position-1ou3;A_RECONFIRMER
+war-rev-louis16;histoire;1;Louis XVIII;position-1ou3;A_RECONFIRMER
+war-rev-robespierre;histoire;3;Marat;position-1ou3;A_RECONFIRMER
+war-rev-thermidor;histoire;1;1795;position-1ou3;A_RECONFIRMER
+war-rev-brumaire;histoire;3;Hoche;position-1ou3;A_RECONFIRMER
+war-rev-marseillaise-hymne;histoire;1;La Carmagnole;position-1ou3;A_RECONFIRMER
+war-rev-rouget;histoire;2;Rouget de Lisle;reponse-trop-longue;A_RECONFIRMER
+war-rev-devise;histoire;3;Travail, Famille, Patrie;position-1ou3;A_RECONFIRMER
+war-rev-vendee;histoire;1;L'Alsace;position-1ou3;A_RECONFIRMER
+war-rome-fondation-jumeaux;histoire;1;Romulus et Tatius;position-1ou3;A_RECONFIRMER
+war-rome-cesar-gaule;histoire;3;Crassus;position-1ou3;A_RECONFIRMER
+war-rome-rubicon;histoire;1;44 av. J.-C.;position-1ou3;A_RECONFIRMER
+war-rome-veni-vidi;histoire;3;Néron;position-1ou3;A_RECONFIRMER
+war-rome-ides-mars;histoire;1;Les nones de mai;position-1ou3;A_RECONFIRMER
+war-rome-chute-476;histoire;3;395 apr. J.-C.;position-1ou3;A_RECONFIRMER
+war-rome-constantinople;histoire;1;Théodose;position-1ou3;A_RECONFIRMER
+war-rome-vesuve;histoire;3;98 apr. J.-C.;position-1ou3;A_RECONFIRMER
+war-rome-spartacus;histoire;1;Sertorius;position-1ou3;A_RECONFIRMER
+war-rome-incendie-64;histoire;3;68 apr. J.-C.;position-1ou3;A_RECONFIRMER
+war-rome-circus;histoire;1;Le Panthéon;position-1ou3;A_RECONFIRMER
+odd-koala-fingerprints;insolite;1;Le singe capucin;position-1ou3;A_RECONFIRMER
+odd-shark-cartilage;insolite;3;Il est en os creux;position-1ou3;A_RECONFIRMER
+odd-goldfish-memory;insolite;1;1 minute;position-1ou3;A_RECONFIRMER
+odd-cow-friends;insolite;3;Le canard;position-1ou3;A_RECONFIRMER
+odd-eiffel-year;insolite;1;1875;position-1ou3;A_RECONFIRMER
+odd-honey;insolite;3;Dix ans;position-1ou3;A_RECONFIRMER
+odd-strawberry-seeds;insolite;1;Elles sont toxiques crues;position-1ou3;A_RECONFIRMER
+odd-ocean-unexplored;insolite;3;Environ 50 %;position-1ou3;A_RECONFIRMER
+odd-astronauts-grow;insolite;0;La colonne vertébrale se détend sans gravité;reponse-trop-longue;A_RECONFIRMER
+odd-sneeze-speed;insolite;1;50 km/h;position-1ou3;A_RECONFIRMER
+odd-hiccup-record;insolite;3;6 mois;position-1ou3;A_RECONFIRMER
+odd-camel-humps;insolite;1;De la nourriture;position-1ou3;A_RECONFIRMER
+odd-elephant-trunk;insolite;2;Environ 10 litres;reponse-trop-longue;A_RECONFIRMER
+odd-lightning-frequency;insolite;3;1 000 fois;position-1ou3;A_RECONFIRMER
+odd-milky-way-light;insolite;1;1 000 ans;position-1ou3;A_RECONFIRMER
+odd-google-garage;insolite;1;Dans une cabane;position-1ou3;A_RECONFIRMER
+web-twitter-bird;internet;1;Une colombe;position-1ou3;A_RECONFIRMER
+web-snapchat-ghost;internet;3;Une flamme;position-1ou3;A_RECONFIRMER
+web-linkedin;internet;1;Twitch;position-1ou3;A_RECONFIRMER
+web-wikipedia-wales;internet;3;Tim Berners-Lee;position-1ou3;A_RECONFIRMER
+web-first-email;internet;1;Steve Jobs;position-1ou3;A_RECONFIRMER
+web-grumpy-cat;internet;1;Keyboard Cat;position-1ou3;A_RECONFIRMER
+web-rick-astley;internet;3;Ricky Martin;position-1ou3;A_RECONFIRMER
+web-emoji-japan;internet;1;La Corée du Sud;position-1ou3;A_RECONFIRMER
+web-404;internet;3;Accès refusé;position-1ou3;A_RECONFIRMER
+web-doodles;internet;1;Les Skins;position-1ou3;A_RECONFIRMER
+web-first-youtube-video;internet;3;First video;position-1ou3;A_RECONFIRMER
+web-deep-web;internet;3;Le tout premier Internet;position-1ou3;A_RECONFIRMER
+web-spam-hormel;internet;0;De jambon en boîte;reponse-trop-longue;A_RECONFIRMER
+web-chrome;internet;1;Firefox;position-1ou3;A_RECONFIRMER
+book-hugo-miserables;litterature;1;Quatrevingt-treize;position-1ou3;A_RECONFIRMER
+book-dumas-musketeers;litterature;3;Victor Hugo;position-1ou3;A_RECONFIRMER
+book-dartagnan;litterature;1;Athos;position-1ou3;A_RECONFIRMER
+book-verne-nautilus;litterature;3;Le Beagle;position-1ou3;A_RECONFIRMER
+book-verne-nemo;litterature;1;Robur le conquérant;position-1ou3;A_RECONFIRMER
+book-flaubert;litterature;3;Stendhal;position-1ou3;A_RECONFIRMER
+book-zola-germinal;litterature;1;L'Assommoir;position-1ou3;A_RECONFIRMER
+book-proust;litterature;3;Le Grand Meaulnes;position-1ou3;A_RECONFIRMER
+book-camus-nobel;litterature;1;André Gide;position-1ou3;A_RECONFIRMER
+book-saint-exupery;litterature;3;Jean Giono;position-1ou3;A_RECONFIRMER
+book-petit-prince-record;litterature;0;C'est le livre français le plus traduit au monde;reponse-trop-longue;A_RECONFIRMER
+book-pagnol;litterature;1;Alphonse Daudet;position-1ou3;A_RECONFIRMER
+book-rimbaud-age;litterature;3;20 ans;position-1ou3;A_RECONFIRMER
+book-moliere-avare;litterature;1;Tartuffe;position-1ou3;A_RECONFIRMER
+book-la-fontaine;litterature;3;Jean Racine;position-1ou3;A_RECONFIRMER
+book-goethe-werther;litterature;0;Johann Wolfgang von Goethe;reponse-trop-longue;A_RECONFIRMER
+book-tolstoi;litterature;1;Anton Tchekhov;position-1ou3;A_RECONFIRMER
+book-orwell-1984;litterature;1;Ray Bradbury;position-1ou3;A_RECONFIRMER
+book-ministry-of-love;litterature;3;Le ministère de la Paix;position-1ou3;A_RECONFIRMER
+book-tolkien;litterature;1;Terry Pratchett;position-1ou3;A_RECONFIRMER
+book-rowling;litterature;3;Stephenie Meyer;position-1ou3;A_RECONFIRMER
+book-christie-66;litterature;1;100;position-1ou3;A_RECONFIRMER
+book-miss-marple;litterature;3;Miss Silver;position-1ou3;A_RECONFIRMER
+book-goncourt;litterature;1;Le prix Pulitzer;position-1ou3;A_RECONFIRMER
+book-le-clezio;litterature;3;Patrick Modiano;position-1ou3;A_RECONFIRMER
+book-ernaux;litterature;1;Marguerite Duras;position-1ou3;A_RECONFIRMER
+book-apollinaire;litterature;3;André Breton;position-1ou3;A_RECONFIRMER
+book-grimm;litterature;1;Le Danemark;position-1ou3;A_RECONFIRMER
+book-hemingway;litterature;3;F. Scott Fitzgerald;position-1ou3;A_RECONFIRMER
+book-shakespeare-37;litterature;1;50;position-1ou3;A_RECONFIRMER
+anime-dbz-kamehameha;manga-anime;1;Le Getsuga Tensho;position-1ou3;A_RECONFIRMER
+anime-dbz-author;manga-anime;3;Masashi Kishimoto;position-1ou3;A_RECONFIRMER
+anime-one-piece-fruit;manga-anime;1;Le fruit Yami-Yami;position-1ou3;A_RECONFIRMER
+anime-one-piece-record;manga-anime;3;Dragon Ball;position-1ou3;A_RECONFIRMER
+anime-naruto-kyubi;manga-anime;1;Ichibi;position-1ou3;A_RECONFIRMER
+anime-naruto-author;manga-anime;3;Akira Toriyama;position-1ou3;A_RECONFIRMER
+anime-akira-kaneda;manga-anime;1;Kei;position-1ou3;A_RECONFIRMER
+anime-totoro;manga-anime;3;Kirby;position-1ou3;A_RECONFIRMER
+anime-porco-rosso;manga-anime;1;Nausicaä;position-1ou3;A_RECONFIRMER
+anime-attack-on-titan-eren;manga-anime;3;Armin Arlert;position-1ou3;A_RECONFIRMER
+anime-sailor-moon-usagi;manga-anime;1;Rei;position-1ou3;A_RECONFIRMER
+anime-death-note-ryuk;manga-anime;3;Sidoh;position-1ou3;A_RECONFIRMER
+anime-fullmetal-brothers;manga-anime;1;Alex et Olivier;position-1ou3;A_RECONFIRMER
+anime-one-punch-saitama;manga-anime;3;Garou;position-1ou3;A_RECONFIRMER
+anime-jjk-sukuna;manga-anime;0;Ryomen Sukuna;reponse-trop-longue;A_RECONFIRMER
+anime-demon-slayer-nezuko;manga-anime;1;Elle est immortelle;position-1ou3;A_RECONFIRMER
+anime-kiki-job;manga-anime;1;Bibliothécaire;position-1ou3;A_RECONFIRMER
+anime-howls-magic;manga-anime;3;Turnip Head;position-1ou3;A_RECONFIRMER
+anime-mha-one-for-all;manga-anime;1;Explosion;position-1ou3;A_RECONFIRMER
+anime-hxh-exam;manga-anime;3;Le tournoi du Cell Games;position-1ou3;A_RECONFIRMER
+anime-chihiro-bathhouse;manga-anime;1;Dans un théâtre;position-1ou3;A_RECONFIRMER
+anime-vegeta-prince;manga-anime;3;Dieu de la destruction;position-1ou3;A_RECONFIRMER
+anime-slam-dunk;manga-anime;1;Le volley-ball;position-1ou3;A_RECONFIRMER
+anime-wind-rises;manga-anime;3;Kiki la petite sorcière;position-1ou3;A_RECONFIRMER
+anime-op-zoro-enma-blade;manga-anime;0;Enma;reponse-trop-courte;A_RECONFIRMER
+anime-naruto-pain-real-leader;manga-anime;0;Nagato Uzumaki;reponse-trop-longue;A_RECONFIRMER
+anime-naruto-minato-technique-hiraishin;manga-anime;0;Le Vol du Dieu de la Foudre (Hiraishin no Jutsu);reponse-trop-longue;A_RECONFIRMER
+anime-snk-rumbling-eren;manga-anime;0;Le Grand Terrassement (The Rumbling);reponse-trop-longue;A_RECONFIRMER
+anime-solo-leveling-arise-phrase;manga-anime;0;Debout ! (Arise / Il-eonala);reponse-trop-longue;A_RECONFIRMER
+anime-berserk-guts-dragonslayer;manga-anime;0;La Dragon Slayer (Pourfendeuse de Dragons);reponse-trop-longue;A_RECONFIRMER
+music-queen-bohemian;musique;0;Queen;reponse-trop-courte;A_RECONFIRMER
+music-freddie-mercury;musique;1;Elton John;position-1ou3;A_RECONFIRMER
+music-beatles-members;musique;3;Paul McCartney;position-1ou3;A_RECONFIRMER
+music-thriller-album;musique;1;Dangerous;position-1ou3;A_RECONFIRMER
+music-madonna-title;musique;3;La Princesse de la soul;position-1ou3;A_RECONFIRMER
+music-elvis-graceland;musique;1;Sunset Ranch;position-1ou3;A_RECONFIRMER
+music-daft-punk-members;musique;3;Pierre et Jacques;position-1ou3;A_RECONFIRMER
+music-angele-country;musique;1;Le Canada;position-1ou3;A_RECONFIRMER
+music-comme-dhabitude;musique;3;Le téléphone pleure;position-1ou3;A_RECONFIRMER
+music-piaf-regrets;musique;1;Mon légionnaire;position-1ou3;A_RECONFIRMER
+music-aznavour-boheme;musique;3;Serge Gainsbourg;position-1ou3;A_RECONFIRMER
+music-gainsbourg-jane;musique;1;Françoise;position-1ou3;A_RECONFIRMER
+music-kurt-cobain;musique;3;Chris Cornell;position-1ou3;A_RECONFIRMER
+music-oasis-wonderwall;musique;1;The Verve;position-1ou3;A_RECONFIRMER
+music-stones-satisfaction;musique;2;The Rolling Stones;reponse-trop-longue;A_RECONFIRMER
+music-stones-paint-it;musique;3;Start Me Up;position-1ou3;A_RECONFIRMER
+music-floyd-dark-side;musique;1;Wish You Were Here;position-1ou3;A_RECONFIRMER
+music-floyd-another-brick;musique;2;Another Brick in the Wall;reponse-trop-longue;A_RECONFIRMER
+music-bowie-ziggy;musique;3;Aladdin Sane;position-1ou3;A_RECONFIRMER
+music-prince-purple-rain;musique;1;Stevie Wonder;position-1ou3;A_RECONFIRMER
+music-beyonce-destinys;musique;1;En Vogue;position-1ou3;A_RECONFIRMER
+music-abba-waterloo;musique;3;Ace of Base;position-1ou3;A_RECONFIRMER
+music-mozart-city;musique;1;Innsbruck;position-1ou3;A_RECONFIRMER
+music-ode-to-joy;musique;3;La Marche turque;position-1ou3;A_RECONFIRMER
+music-saxophone-inventor;musique;3;Théobald Boehm;position-1ou3;A_RECONFIRMER
+music-rap-bronx;musique;1;Brooklyn;position-1ou3;A_RECONFIRMER
+music-jazz-origin;musique;2;La Nouvelle-Orléans;reponse-trop-longue;A_RECONFIRMER
+music-reggae-origin;musique;3;Le Brésil;position-1ou3;A_RECONFIRMER
+music-fado-country;musique;1;L'Italie;position-1ou3;A_RECONFIRMER
+music-tango-country;musique;3;Le Pérou;position-1ou3;A_RECONFIRMER
+music-pavarotti-nessun;musique;1;José Carreras;position-1ou3;A_RECONFIRMER
+music-iam-marseille;musique;3;Lyon;position-1ou3;A_RECONFIRMER
+music-ntm-origin;musique;0;De Seine-Saint-Denis;reponse-trop-longue;A_RECONFIRMER
+music-mc-solaar;musique;1;Doc Gynéco;position-1ou3;A_RECONFIRMER
+music-indila-derniere;musique;3;Shy'm;position-1ou3;A_RECONFIRMER
+music-gims-sap;musique;1;La Fouine;position-1ou3;A_RECONFIRMER
+music-vianney-beau-papa;musique;3;Louane;position-1ou3;A_RECONFIRMER
+music-kendji-the-voice;musique;1;Louane;position-1ou3;A_RECONFIRMER
+music-mika-grace-kelly;musique;2;Mika;reponse-trop-courte;A_RECONFIRMER
+music-adele-rolling;musique;3;Duffy;position-1ou3;A_RECONFIRMER
+music-bts-country;musique;1;La Chine;position-1ou3;A_RECONFIRMER
+music-eurovision-record;musique;3;La Suède;position-1ou3;A_RECONFIRMER
+music-aretha-soul;musique;3;Diana Ross;position-1ou3;A_RECONFIRMER
+music-johnny-cash-ring;musique;1;Dolly Parton;position-1ou3;A_RECONFIRMER
+music-bob-dylan-nobel;musique;3;Bruce Springsteen;position-1ou3;A_RECONFIRMER
+music-u2-bono;musique;1;Bryan Ferry;position-1ou3;A_RECONFIRMER
+music-green-day;musique;3;Blink-182;position-1ou3;A_RECONFIRMER
+egyptian-primeval-mound;mythologie-egyptienne;3;La butte primordiale;position-1ou3;A_RECONFIRMER
+egyptian-ennead-nine-gods;mythologie-egyptienne;1;Neuf;position-1ou3;A_RECONFIRMER
+egyptian-ogdoad-eight-deities;mythologie-egyptienne;3;Huit;position-1ou3;A_RECONFIRMER
+egyptian-cosmic-egg-of-hermopolis;mythologie-egyptienne;1;L'œuf d'où naît le soleil;position-1ou3;A_RECONFIRMER
+egyptian-ra-sun-god;mythologie-egyptienne;2;Râ;reponse-trop-courte;A_RECONFIRMER
+egyptian-ra-travels-in-solar-barge;mythologie-egyptienne;3;Dans une barque solaire;position-1ou3;A_RECONFIRMER
+egyptian-ra-crosses-the-duat-at-night;mythologie-egyptienne;0;La Douat, le monde souterrain;reponse-trop-longue;A_RECONFIRMER
+egyptian-khepri-scarab-morning-form;mythologie-egyptienne;1;Khépri, le scarabée;position-1ou3;A_RECONFIRMER
+egyptian-atum-self-created-creator;mythologie-egyptienne;3;Atoum;position-1ou3;A_RECONFIRMER
+egyptian-seth-kills-osiris;mythologie-egyptienne;1;Seth;position-1ou3;A_RECONFIRMER
+egyptian-isis-revives-osiris;mythologie-egyptienne;3;Isis;position-1ou3;A_RECONFIRMER
+egyptian-osiris-judge-of-the-dead;mythologie-egyptienne;0;Il préside le jugement de l'âme;reponse-trop-longue;A_RECONFIRMER
+egyptian-isis-sister-wife-of-osiris;mythologie-egyptienne;3;Ils sont frère et sœur et époux;position-1ou3;A_RECONFIRMER
+egyptian-isis-protective-mother-goddess;mythologie-egyptienne;1;Isis;position-1ou3;A_RECONFIRMER
+egyptian-isis-hieroglyph-throne;mythologie-egyptienne;3;Un trône;position-1ou3;A_RECONFIRMER
+egyptian-horus-falcon-god;mythologie-egyptienne;1;Le faucon;position-1ou3;A_RECONFIRMER
+egyptian-eye-of-horus-oudjat;mythologie-egyptienne;3;Il est arraché puis restauré;position-1ou3;A_RECONFIRMER
+egyptian-pharaoh-horus-the-living;mythologie-egyptienne;1;Horus vivant;position-1ou3;A_RECONFIRMER
+egyptian-seth-wife-nephthys;mythologie-egyptienne;1;Nephtys;position-1ou3;A_RECONFIRMER
+egyptian-anubis-god-of-mummification;mythologie-egyptienne;3;Anubis;position-1ou3;A_RECONFIRMER
+egyptian-anubis-father-osiris;mythologie-egyptienne;1;Osiris;position-1ou3;A_RECONFIRMER
+egyptian-osiris-green-skin;mythologie-egyptienne;3;Verte;position-1ou3;A_RECONFIRMER
+egyptian-osiris-mummiform-representation;mythologie-egyptienne;1;Osiris;position-1ou3;A_RECONFIRMER
+egyptian-thoth-ibis-headed;mythologie-egyptienne;3;L'ibis;position-1ou3;A_RECONFIRMER
+egyptian-thot-moon-god;mythologie-egyptienne;1;À la Lune;position-1ou3;A_RECONFIRMER
+egyptian-hathor-celestial-cow;mythologie-egyptienne;3;Une vache;position-1ou3;A_RECONFIRMER
+egyptian-hathor-protector-of-women;mythologie-egyptienne;0;Les femmes et les nouveau-nés;reponse-trop-longue;A_RECONFIRMER
+egyptian-hathor-sistrum-instrument;mythologie-egyptienne;1;Le sistre;position-1ou3;A_RECONFIRMER
+egyptian-maat-ostrich-feather;mythologie-egyptienne;3;La plume d'autruche;position-1ou3;A_RECONFIRMER
+egyptian-sekhmet-lioness-goddess;mythologie-egyptienne;1;Sekhmet;position-1ou3;A_RECONFIRMER
+egyptian-sekhmet-eye-of-ra;mythologie-egyptienne;3;L'Œil de Râ;position-1ou3;A_RECONFIRMER
+egyptian-bastet-protector-of-the-home;mythologie-egyptienne;1;Bastet;position-1ou3;A_RECONFIRMER
+egyptian-amun-god-of-thebes;mythologie-egyptienne;3;Amon;position-1ou3;A_RECONFIRMER
+egyptian-amun-the-hidden-one;mythologie-egyptienne;1;Le caché;position-1ou3;A_RECONFIRMER
+egyptian-nephthys-funerary-goddess;mythologie-egyptienne;1;Nephtys;position-1ou3;A_RECONFIRMER
+egyptian-nephthys-sister-of-isis;mythologie-egyptienne;2;La sœur d'Isis, d'Osiris et de Seth;reponse-trop-longue;A_RECONFIRMER
+egyptian-nephthys-isis-canopic-jars;mythologie-egyptienne;3;Isis;position-1ou3;A_RECONFIRMER
+egyptian-nut-goddess-of-the-sky;mythologie-egyptienne;1;Nout;position-1ou3;A_RECONFIRMER
+egyptian-apep-serpent-enemy-of-ra;mythologie-egyptienne;3;Apopis;position-1ou3;A_RECONFIRMER
+egyptian-khnum-ram-headed-potter;mythologie-egyptienne;1;Khnoum;position-1ou3;A_RECONFIRMER
+egyptian-weighing-of-the-heart;mythologie-egyptienne;3;La plume de Maât;position-1ou3;A_RECONFIRMER
+egyptian-ammit-the-devourer;mythologie-egyptienne;1;Il est dévoré par la créature Ammit;position-1ou3;A_RECONFIRMER
+egyptian-forty-two-assessors;mythologie-egyptienne;2;Quarante-deux;reponse-trop-longue;A_RECONFIRMER
+egyptian-fields-of-ialu;mythologie-egyptienne;3;Les champs d'Ialou;position-1ou3;A_RECONFIRMER
+egyptian-four-sons-of-horus-guardians;mythologie-egyptienne;1;Les quatre fils d'Horus;position-1ou3;A_RECONFIRMER
+egyptian-ushabti-funerary-figurines;mythologie-egyptienne;2;À remplacer le défunt dans les travaux des champs de l'au-delà;reponse-trop-longue;A_RECONFIRMER
+egyptian-khufu-great-pyramid;mythologie-egyptienne;1;Khéops;position-1ou3;A_RECONFIRMER
+egyptian-khafre-great-sphinx;mythologie-egyptienne;3;Khéphren;position-1ou3;A_RECONFIRMER
+egyptian-tutankhamun-child-king;mythologie-egyptienne;1;Il est monté sur le trône très jeune;position-1ou3;A_RECONFIRMER
+egyptian-ramses-ii-battle-of-qadesh;mythologie-egyptienne;3;Les Hittites;position-1ou3;A_RECONFIRMER
+egyptian-cleopatra-alliances-caesar-antony;mythologie-egyptienne;1;Jules César puis Marc Antoine;position-1ou3;A_RECONFIRMER
+egyptian-nefertiti-wife-of-akhenaten;mythologie-egyptienne;3;L'épouse d'Akhenaton;position-1ou3;A_RECONFIRMER
+egyptian-imhotep-step-pyramid-architect;mythologie-egyptienne;1;Imhotep;position-1ou3;A_RECONFIRMER
+egyptian-djoser-first-step-pyramid;mythologie-egyptienne;2;La pyramide à degrés de Djéser à Saqqarah;reponse-trop-longue;A_RECONFIRMER
+egyptian-pharaoh-son-of-ra;mythologie-egyptienne;3;Fils de Râ;position-1ou3;A_RECONFIRMER
+egyptian-oudjat-eye-of-horus;mythologie-egyptienne;3;L'œil d'Horus, symbole de protection et de santé;position-1ou3;A_RECONFIRMER
+egyptian-djed-pillar-stability;mythologie-egyptienne;1;La stabilité, associé à Osiris;position-1ou3;A_RECONFIRMER
+egyptian-sistrum-sacred-rattle;mythologie-egyptienne;3;Le sistre;position-1ou3;A_RECONFIRMER
+egyptian-papyrus-lower-egypt-emblem;mythologie-egyptienne;1;Le papyrus;position-1ou3;A_RECONFIRMER
+egyptian-karnak-largest-temple-complex;mythologie-egyptienne;1;Karnak;position-1ou3;A_RECONFIRMER
+egyptian-abu-simbel-four-colossi;mythologie-egyptienne;3;Quatre;position-1ou3;A_RECONFIRMER
+egyptian-edfu-best-preserved-temple;mythologie-egyptienne;1;Edfou;position-1ou3;A_RECONFIRMER
+egyptian-abydos-sanctuary-of-osiris;mythologie-egyptienne;3;Abydos;position-1ou3;A_RECONFIRMER
+greek-medusa-only-mortal-gorgon;mythologie-grecque;1;Elle est la seule mortelle;position-1ou3;A_RECONFIRMER
+greek-minotaur-son-of-pasiphae;mythologie-grecque;3;Pasiphaé;position-1ou3;A_RECONFIRMER
+greek-pegasus-winged-horse;mythologie-grecque;3;Pégase;position-1ou3;A_RECONFIRMER
+greek-centaurs-half-horse;mythologie-grecque;1;Mi-homme, mi-cheval;position-1ou3;A_RECONFIRMER
+greek-nemean-lion-invulnerable-hide;mythologie-grecque;1;Sa peau est invulnérable;position-1ou3;A_RECONFIRMER
+greek-odysseus-blinds-polyphemus;mythologie-grecque;3;Polyphème;position-1ou3;A_RECONFIRMER
+greek-satyrs-companions-of-dionysus;mythologie-grecque;1;Les Satyres;position-1ou3;A_RECONFIRMER
+greek-typhon-giant-monster;mythologie-grecque;3;Typhon;position-1ou3;A_RECONFIRMER
+greek-charon-ferryman-of-the-dead;mythologie-grecque;3;Charon;position-1ou3;A_RECONFIRMER
+greek-styx-river-of-the-underworld;mythologie-grecque;1;Le Styx;position-1ou3;A_RECONFIRMER
+greek-minos-rhadamanthus-judges;mythologie-grecque;3;Minos et Rhadamanthe;position-1ou3;A_RECONFIRMER
+greek-elysian-fields-blessed;mythologie-grecque;3;Aux Champs Élysées;position-1ou3;A_RECONFIRMER
+greek-erinyes-vengeance-goddesses;mythologie-grecque;1;Les Érinyes;position-1ou3;A_RECONFIRMER
+greek-asphodel-meadows-ordinary-souls;mythologie-grecque;2;Dans les Champs des Asphodèles;reponse-trop-longue;A_RECONFIRMER
+greek-heracles-son-of-zeus;mythologie-grecque;1;Zeus;position-1ou3;A_RECONFIRMER
+greek-heracles-strangles-snakes;mythologie-grecque;1;Il étrangle deux serpents;position-1ou3;A_RECONFIRMER
+greek-perseus-mirror-shield;mythologie-grecque;1;En utilisant son bouclier poli comme un miroir;position-1ou3;A_RECONFIRMER
+greek-theseus-kills-minotaur;mythologie-grecque;3;Thésée;position-1ou3;A_RECONFIRMER
+greek-medea-helps-jason;mythologie-grecque;3;Médée;position-1ou3;A_RECONFIRMER
+greek-oedipus-sphinx-riddle;mythologie-grecque;1;Œdipe;position-1ou3;A_RECONFIRMER
+greek-orpheus-eurydice;mythologie-grecque;3;Eurydice;position-1ou3;A_RECONFIRMER
+greek-orpheus-turns-around;mythologie-grecque;0;Parce qu'il se retourne pour la regarder avant la sortie des Enfers;reponse-trop-longue;A_RECONFIRMER
+greek-bellerophon-kills-chimera;mythologie-grecque;1;Bellérophon;position-1ou3;A_RECONFIRMER
+greek-achilles-vulnerable-heel;mythologie-grecque;3;Le talon;position-1ou3;A_RECONFIRMER
+greek-achilles-dipped-in-styx;mythologie-grecque;1;Le Styx;position-1ou3;A_RECONFIRMER
+greek-antigone-buries-polyneices;mythologie-grecque;0;Elle enterre son frère malgré l'interdiction du roi;reponse-trop-longue;A_RECONFIRMER
+greek-cadmus-founder-of-thebes;mythologie-grecque;1;Cadmos;position-1ou3;A_RECONFIRMER
+greek-theseus-marathonian-bull;mythologie-grecque;3;Thésée;position-1ou3;A_RECONFIRMER
+greek-pythia-prophetess-of-delphi;mythologie-grecque;1;La Pythie;position-1ou3;A_RECONFIRMER
+greek-atlantis-island-of-plato;mythologie-grecque;3;Platon;position-1ou3;A_RECONFIRMER
+greek-labyrinth-of-cnossos;mythologie-grecque;0;En Crète, à Cnossos;reponse-trop-longue;A_RECONFIRMER
+greek-colchis-golden-fleece;mythologie-grecque;1;En Colchide;position-1ou3;A_RECONFIRMER
+greek-mount-ida-judgment-of-paris;mythologie-grecque;3;Le mont Ida;position-1ou3;A_RECONFIRMER
+greek-sparta-city-of-menelaus;mythologie-grecque;1;Ménélas;position-1ou3;A_RECONFIRMER
+greek-aegean-sea-named-after-aegeus;mythologie-grecque;3;Égée;position-1ou3;A_RECONFIRMER
+greek-zeus-thunderbolt-attribute;mythologie-grecque;1;La foudre;position-1ou3;A_RECONFIRMER
+greek-zeus-son-of-cronos;mythologie-grecque;3;Cronos;position-1ou3;A_RECONFIRMER
+greek-olympus-home-of-gods;mythologie-grecque;1;Sur le mont Olympe;position-1ou3;A_RECONFIRMER
+greek-hera-goddess-of-marriage;mythologie-grecque;2;Protéger le mariage et les femmes mariées;reponse-trop-longue;A_RECONFIRMER
+greek-hera-attribute-peacock;mythologie-grecque;3;Le paon;position-1ou3;A_RECONFIRMER
+greek-poseidon-god-of-the-sea;mythologie-grecque;1;Poséidon;position-1ou3;A_RECONFIRMER
+greek-poseidon-earthquakes-horses;mythologie-grecque;3;Aux séismes et aux chevaux;position-1ou3;A_RECONFIRMER
+greek-hades-wife-persephone;mythologie-grecque;1;Perséphone;position-1ou3;A_RECONFIRMER
+greek-thanatos-personification-of-death;mythologie-grecque;3;Thanatos;position-1ou3;A_RECONFIRMER
+greek-athena-born-from-zeus-head;mythologie-grecque;1;Sortie tout armée de la tête de Zeus;position-1ou3;A_RECONFIRMER
+greek-athena-owl-attribute;mythologie-grecque;3;La chouette;position-1ou3;A_RECONFIRMER
+greek-apollo-oracle-of-delphi;mythologie-grecque;1;Apollon;position-1ou3;A_RECONFIRMER
+greek-apollo-lyre-attribute;mythologie-grecque;3;La lyre;position-1ou3;A_RECONFIRMER
+greek-artemis-moon-goddess;mythologie-grecque;1;À la Lune;position-1ou3;A_RECONFIRMER
+greek-ares-aphrodite-affair;mythologie-grecque;3;Aphrodite;position-1ou3;A_RECONFIRMER
+greek-aphrodite-born-from-sea-foam;mythologie-grecque;1;De l'écume de la mer;position-1ou3;A_RECONFIRMER
+greek-aphrodite-dove-attribute;mythologie-grecque;3;La colombe;position-1ou3;A_RECONFIRMER
+greek-hermes-caduceus-attribute;mythologie-grecque;1;Le caducée;position-1ou3;A_RECONFIRMER
+greek-hephaestus-god-of-forge;mythologie-grecque;3;Héphaïstos;position-1ou3;A_RECONFIRMER
+greek-demeter-goddess-of-agriculture;mythologie-grecque;1;Déméter;position-1ou3;A_RECONFIRMER
+greek-dionysus-born-from-zeus-thigh;mythologie-grecque;3;De sa cuisse;position-1ou3;A_RECONFIRMER
+greek-hestia-goddess-of-hearth;mythologie-grecque;0;Gardienne du foyer et du feu sacré;reponse-trop-longue;A_RECONFIRMER
+greek-persephone-queen-of-underworld;mythologie-grecque;1;Perséphone;position-1ou3;A_RECONFIRMER
+greek-symbol-trident-poseidon;mythologie-grecque;1;Poséidon;position-1ou3;A_RECONFIRMER
+greek-symbol-owl-athena;mythologie-grecque;3;Athéna;position-1ou3;A_RECONFIRMER
+greek-symbol-lyre-apollo;mythologie-grecque;1;Apollon;position-1ou3;A_RECONFIRMER
+greek-symbol-dove-aphrodite;mythologie-grecque;3;Aphrodite;position-1ou3;A_RECONFIRMER
+greek-symbol-wheat-demeter;mythologie-grecque;1;Déméter;position-1ou3;A_RECONFIRMER
+greek-symbol-laurel-apollo;mythologie-grecque;3;Le laurier;position-1ou3;A_RECONFIRMER
+greek-cronos-overthrows-ouranos;mythologie-grecque;3;Cronos;position-1ou3;A_RECONFIRMER
+greek-prometheus-steals-fire;mythologie-grecque;3;Prométhée;position-1ou3;A_RECONFIRMER
+greek-prometheus-freed-by-heracles;mythologie-grecque;1;Héraclès;position-1ou3;A_RECONFIRMER
+greek-pandora-elpis-remains;mythologie-grecque;1;L'Espérance;position-1ou3;A_RECONFIRMER
+greek-ouranos-god-of-sky;mythologie-grecque;3;Du Ciel;position-1ou3;A_RECONFIRMER
+greek-cyclopes-children-of-ouranos;mythologie-grecque;1;Les Cyclopes;position-1ou3;A_RECONFIRMER
+greek-iapetus-father-of-prometheus;mythologie-grecque;3;Japet;position-1ou3;A_RECONFIRMER
+greek-heracles-labors-imposed-by-eurystheus;mythologie-grecque;1;Eurysthée;position-1ou3;A_RECONFIRMER
+greek-heracles-hydra-cauterizes-necks;mythologie-grecque;0;En cautérisant les cous avec des tisons;reponse-trop-longue;A_RECONFIRMER
+greek-heracles-augian-stables;mythologie-grecque;1;En détournant deux fleuves;position-1ou3;A_RECONFIRMER
+greek-heracles-hesperides-apples-atlas;mythologie-grecque;3;Atlas;position-1ou3;A_RECONFIRMER
+greek-heracles-stymphalian-birds;mythologie-grecque;1;Les oiseaux du lac Stymphale;position-1ou3;A_RECONFIRMER
+greek-heracles-cerynitian-hind;mythologie-grecque;3;Ses cornes sont en or;position-1ou3;A_RECONFIRMER
+greek-heracles-diomedes-mares;mythologie-grecque;1;Elles sont carnivores;position-1ou3;A_RECONFIRMER
+greek-helen-wife-of-menelaus;mythologie-grecque;1;Ménélas;position-1ou3;A_RECONFIRMER
+greek-trojan-war-ten-years;mythologie-grecque;3;Dix ans;position-1ou3;A_RECONFIRMER
+greek-iliad-author-homer;mythologie-grecque;1;Homère;position-1ou3;A_RECONFIRMER
+greek-odyssey-odysseus-return;mythologie-grecque;3;L'Odyssée;position-1ou3;A_RECONFIRMER
+greek-agamemnon-commander-of-greeks;mythologie-grecque;3;Agamemnon;position-1ou3;A_RECONFIRMER
+greek-odysseus-tricks-polyphemus-nobody;mythologie-grecque;1;Personne;position-1ou3;A_RECONFIRMER
+greek-odysseus-resists-sirens-mast;mythologie-grecque;3;Il se fait attacher au mât du navire;position-1ou3;A_RECONFIRMER
+greek-calypso-detains-odysseus;mythologie-grecque;1;Calypso;position-1ou3;A_RECONFIRMER
+greek-iphigenia-sacrificed-by-agamemnon;mythologie-grecque;3;Sa fille Iphigénie;position-1ou3;A_RECONFIRMER
+greek-odyssey-ten-years-return;mythologie-grecque;1;Dix ans;position-1ou3;A_RECONFIRMER
+phil-thales-first-philosopher-water;philosophie;1;Thalès;position-1ou3;A_RECONFIRMER
+phil-heraclitus-everything-flows;philosophie;3;Héraclite;position-1ou3;A_RECONFIRMER
+phil-democritus-theory-of-atoms;philosophie;1;Démocrite;position-1ou3;A_RECONFIRMER
+phil-parmenides-being-is-unchanging;philosophie;3;Parménide;position-1ou3;A_RECONFIRMER
+phil-socrates-executed-by-hemlock;philosophie;3;En buvant la ciguë;position-1ou3;A_RECONFIRMER
+phil-socrates-i-know-that-i-know-nothing;philosophie;1;« Je sais que je ne sais rien »;position-1ou3;A_RECONFIRMER
+phil-plato-student-of-socrates;philosophie;3;Platon;position-1ou3;A_RECONFIRMER
+phil-socrates-accused-of-corrupting-youth;philosophie;0;Corrompre la jeunesse et ne pas honorer les dieux de la cité;reponse-trop-longue;A_RECONFIRMER
+phil-socratic-irony;philosophie;1;L'ironie socratique;position-1ou3;A_RECONFIRMER
+phil-plato-allegory-of-the-cave;philosophie;3;La République;position-1ou3;A_RECONFIRMER
+phil-plato-myth-of-atlantis;philosophie;1;Platon;position-1ou3;A_RECONFIRMER
+phil-plato-symposium-on-love;philosophie;3;Le Banquet;position-1ou3;A_RECONFIRMER
+phil-plato-doxa-vs-knowledge;philosophie;1;La doxa;position-1ou3;A_RECONFIRMER
+phil-aristotle-political-animal;philosophie;1;Aristote;position-1ou3;A_RECONFIRMER
+phil-aristotle-student-of-plato;philosophie;3;Platon;position-1ou3;A_RECONFIRMER
+phil-aristotle-final-cause;philosophie;1;La cause finale;position-1ou3;A_RECONFIRMER
+phil-epicurus-the-garden-school;philosophie;3;Le Jardin;position-1ou3;A_RECONFIRMER
+phil-epicurus-pleasure-as-highest-good;philosophie;1;Le plaisir;position-1ou3;A_RECONFIRMER
+phil-sartre-existence-precedes-essence;philosophie;3;« L'existence précède l'essence »;position-1ou3;A_RECONFIRMER
+phil-sartre-hell-is-other-people;philosophie;1;Huis clos;position-1ou3;A_RECONFIRMER
+phil-camus-myth-of-sisyphus-absurd;philosophie;1;Le Mythe de Sisyphe;position-1ou3;A_RECONFIRMER
+phil-camus-the-plague-oran;philosophie;3;La Peste;position-1ou3;A_RECONFIRMER
+phil-beauvoir-one-is-not-born-a-woman;philosophie;1;« On ne naît pas femme, on le devient »;position-1ou3;A_RECONFIRMER
+phil-arendt-banality-of-evil;philosophie;3;La banalité du mal;position-1ou3;A_RECONFIRMER
+phil-arendt-origins-of-totalitarianism;philosophie;1;Les Origines du totalitarisme;position-1ou3;A_RECONFIRMER
+phil-rawls-veil-of-ignorance;philosophie;3;Le voile d'ignorance;position-1ou3;A_RECONFIRMER
+phil-foucault-words-and-things-meninas;philosophie;1;Les Mots et les Choses;position-1ou3;A_RECONFIRMER
+phil-husserl-founder-of-phenomenology;philosophie;3;Husserl;position-1ou3;A_RECONFIRMER
+phil-intentionality-consciousness-of-something;philosophie;1;L'intentionnalité;position-1ou3;A_RECONFIRMER
+phil-popper-falsifiability-criterion;philosophie;1;La falsifiabilité;position-1ou3;A_RECONFIRMER
+phil-kuhn-paradigms;philosophie;3;Thomas Kuhn;position-1ou3;A_RECONFIRMER
+phil-freud-interpretation-of-dreams;philosophie;1;L'Interprétation des rêves;position-1ou3;A_RECONFIRMER
+phil-descartes-cogito-ergo-sum;philosophie;1;Descartes;position-1ou3;A_RECONFIRMER
+phil-descartes-methodical-doubt;philosophie;3;Le doute méthodique;position-1ou3;A_RECONFIRMER
+phil-descartes-dualism-soul-body;philosophie;0;L'âme (pensée) et le corps (étendue);reponse-trop-longue;A_RECONFIRMER
+phil-descartes-meditations-metaphysiques;philosophie;1;Les Méditations métaphysiques;position-1ou3;A_RECONFIRMER
+phil-locke-tabula-rasa;philosophie;1;Locke;position-1ou3;A_RECONFIRMER
+phil-hume-problem-of-induction;philosophie;3;Hume;position-1ou3;A_RECONFIRMER
+phil-pascal-the-wager;philosophie;0;Le pari;reponse-trop-courte;A_RECONFIRMER
+phil-leibniz-monads;philosophie;1;Les monades;position-1ou3;A_RECONFIRMER
+phil-kant-critique-of-pure-reason;philosophie;2;La Critique de la raison pure;reponse-trop-longue;A_RECONFIRMER
+phil-kant-categorical-imperative;philosophie;3;L'impératif catégorique;position-1ou3;A_RECONFIRMER
+phil-hegel-dialectical-method;philosophie;3;La dialectique;position-1ou3;A_RECONFIRMER
+phil-hegel-master-slave-dialectic;philosophie;0;La dialectique du maître et de l'esclave;reponse-trop-longue;A_RECONFIRMER
+phil-nietzsche-god-is-dead;philosophie;1;« Dieu est mort »;position-1ou3;A_RECONFIRMER
+phil-nietzsche-will-to-power;philosophie;3;La volonté de puissance;position-1ou3;A_RECONFIRMER
+phil-kierkegaard-either-or;philosophie;1;Kierkegaard;position-1ou3;A_RECONFIRMER
+phil-kierkegaard-fear-and-trembling;philosophie;3;Crainte et tremblement;position-1ou3;A_RECONFIRMER
+phil-marx-class-struggle;philosophie;1;La lutte des classes;position-1ou3;A_RECONFIRMER
+phil-hobbes-leviathan-state-of-nature;philosophie;3;Hobbes;position-1ou3;A_RECONFIRMER
+phil-machiavelli-the-prince;philosophie;1;Machiavel;position-1ou3;A_RECONFIRMER
+phil-zeno-of-citium-founder-of-stoicism;philosophie;3;Zénon de Cition;position-1ou3;A_RECONFIRMER
+phil-stoics-virtue-is-the-only-good;philosophie;1;La vertu;position-1ou3;A_RECONFIRMER
+phil-epictetus-dichotomy-of-control;philosophie;0;Ce qui dépend de nous et ce qui n'en dépend pas;reponse-trop-longue;A_RECONFIRMER
+phil-epictetus-former-slave;philosophie;1;Il était esclave;position-1ou3;A_RECONFIRMER
+phil-seneca-letters-to-lucilius;philosophie;3;Les Lettres à Lucilius;position-1ou3;A_RECONFIRMER
+phil-seneca-on-the-brevity-of-life;philosophie;1;De la brièveté de la vie;position-1ou3;A_RECONFIRMER
+phil-marcus-aurelius-meditations-title;philosophie;3;Pensées pour moi-même;position-1ou3;A_RECONFIRMER
+phil-stoic-sage-ideal;philosophie;1;Le sage;position-1ou3;A_RECONFIRMER
+phil-stoic-three-parts-of-philosophy;philosophie;3;La logique, la physique et l'éthique;position-1ou3;A_RECONFIRMER
+sci-gravity-newton;science;1;Galilée;position-1ou3;A_RECONFIRMER
+sci-light-speed;science;3;1 000 km/s;position-1ou3;A_RECONFIRMER
+sci-earth-core;science;1;200 °C;position-1ou3;A_RECONFIRMER
+sci-atom-nucleus;science;3;Neutrons et électrons;position-1ou3;A_RECONFIRMER
+sci-penicillin;science;1;Robert Koch;position-1ou3;A_RECONFIRMER
+sci-human-cells;science;1;100 millions;position-1ou3;A_RECONFIRMER
+sci-heart-chambers;science;3;3;position-1ou3;A_RECONFIRMER
+sci-baby-bones;science;1;Environ 500;position-1ou3;A_RECONFIRMER
+sci-darwin-origin;science;3;Georges Cuvier;position-1ou3;A_RECONFIRMER
+sci-sun-star;science;1;Une comète;position-1ou3;A_RECONFIRMER
+sci-sun-position;science;2;Dans un bras spiral, loin du centre;reponse-trop-longue;A_RECONFIRMER
+sci-proxima;science;3;Bételgeuse;position-1ou3;A_RECONFIRMER
+sci-jupiter-largest;science;1;Neptune;position-1ou3;A_RECONFIRMER
+sci-saturn-rings;science;3;Uranus;position-1ou3;A_RECONFIRMER
+sci-armstrong;science;1;John Glenn;position-1ou3;A_RECONFIRMER
+sci-tereshkova;science;3;Kathryn Sullivan;position-1ou3;A_RECONFIRMER
+sci-ice-floats;science;1;Elle est plus chaude;position-1ou3;A_RECONFIRMER
+sci-lava;science;3;Le granite;position-1ou3;A_RECONFIRMER
+sci-gold-au;science;3;Ag;position-1ou3;A_RECONFIRMER
+sci-salt-nacl;science;1;CaCO3;position-1ou3;A_RECONFIRMER
+sci-helium-balloons;science;3;L'hélium est magnétique;position-1ou3;A_RECONFIRMER
+sci-lavoisier;science;1;Pierre Curie;position-1ou3;A_RECONFIRMER
+sci-photosynthesis-inputs;science;3;Le sucre et l'azote;position-1ou3;A_RECONFIRMER
+sci-stomach-acid;science;1;L'acide citrique;position-1ou3;A_RECONFIRMER
+sci-hummingbird;science;3;L'hirondelle;position-1ou3;A_RECONFIRMER
+sci-blue-whale;science;1;Le diplodocus;position-1ou3;A_RECONFIRMER
+sci-giraffe-vertebrae;science;3;21;position-1ou3;A_RECONFIRMER
+sci-kangaroo;science;1;L'Afrique du Sud;position-1ou3;A_RECONFIRMER
+sci-blood-groups;science;3;1, 2, 3 et 4;position-1ou3;A_RECONFIRMER
+sci-black-hole;science;1;Une planète sombre;position-1ou3;A_RECONFIRMER
+sci-comet-tail;science;3;Vers la Terre;position-1ou3;A_RECONFIRMER
+sci-venus-hottest;science;1;Mars;position-1ou3;A_RECONFIRMER
+sci-emc2;science;3;Force = masse × accélération;position-1ou3;A_RECONFIRMER
+sci-eureka;science;1;Aristote;position-1ou3;A_RECONFIRMER
+sci-magnet-poles;science;3;Positif et négatif;position-1ou3;A_RECONFIRMER
+sci-ozone;science;1;Le méthane;position-1ou3;A_RECONFIRMER
+sci-greenhouse-co2;science;2;Le dioxyde de carbone;reponse-trop-longue;A_RECONFIRMER
+sci-everest;science;3;Le Mont Blanc;position-1ou3;A_RECONFIRMER
+sci-nile;science;1;Le Niger;position-1ou3;A_RECONFIRMER
+sci-leap-year;science;3;Pour les marées;position-1ou3;A_RECONFIRMER
+tv-stranger-things-upside-down;series;0;Le Monde à l'envers;reponse-trop-longue;A_RECONFIRMER
+tv-stranger-things-11;series;1;Robin;position-1ou3;A_RECONFIRMER
+tv-office-dwight;series;2;Vendeur;reponse-trop-courte;A_RECONFIRMER
+tv-sherlock-baker-street;series;3;84 Charing Cross Road;position-1ou3;A_RECONFIRMER
+tv-doctor-who-species;series;1;Les Vulcains;position-1ou3;A_RECONFIRMER
+tv-south-park-creator;series;2;Trey Parker et Matt Stone;reponse-trop-longue;A_RECONFIRMER
+tv-casa-de-papel-cities;series;1;Paris, Prague, Madrid;position-1ou3;A_RECONFIRMER
+tv-squid-game-first-game;series;2;Un, deux, trois, soleil;reponse-trop-longue;A_RECONFIRMER
+tv-squid-game-456;series;3;067;position-1ou3;A_RECONFIRMER
+tv-pokemon-sacha;series;1;Ondine;position-1ou3;A_RECONFIRMER
+tv-true-detective-cohle;series;3;Colin Farrell;position-1ou3;A_RECONFIRMER
+tv-house-cane;series;1;Une chute de ski;position-1ou3;A_RECONFIRMER
+tv-got-dracarys;series;1;Khaleesi;position-1ou3;A_RECONFIRMER
+tv-friends-monica-chef;series;3;Fleuriste;position-1ou3;A_RECONFIRMER
+tv-simpsons-maggie;series;1;Marge;position-1ou3;A_RECONFIRMER
+tv-twin-peaks-cooper;series;3;Dana Scully;position-1ou3;A_RECONFIRMER
+tv-xfiles-mulder;series;1;John Krasinski;position-1ou3;A_RECONFIRMER
+tv-grey-anatomy-heroine;series;3;Cristina Yang;position-1ou3;A_RECONFIRMER
+tv-himym-barney;series;1;Marshall;position-1ou3;A_RECONFIRMER
+tv-mentalist-jane;series;1;David Boreanaz;position-1ou3;A_RECONFIRMER
+tv-lost-flight;series;3;246;position-1ou3;A_RECONFIRMER
+tv-community-greendale;series;1;Westbrook College;position-1ou3;A_RECONFIRMER
+tv-office-jim-pranks;series;3;Oscar;position-1ou3;A_RECONFIRMER
+tv-dexter-miami;series;1;New York;position-1ou3;A_RECONFIRMER
+tv-got-hodor;series;3;Valar;position-1ou3;A_RECONFIRMER
+tv-supernatural-brothers;series;1;Jesse et James;position-1ou3;A_RECONFIRMER
+tv-squid-game-first-game;series;0;Mugunghwa kkochi pieotseumnida;reponse-trop-longue;A_RECONFIRMER
+tv-better-call-saul-real-name;series;0;James 'Jimmy' McGill;reponse-trop-longue;A_RECONFIRMER
+sport-olympics-1896;sport;1;1912;position-1ou3;A_RECONFIRMER
+sport-olympic-rings;sport;3;6;position-1ou3;A_RECONFIRMER
+sport-olympic-flame;sport;0;Olympie (Grèce);reponse-trop-longue;A_RECONFIRMER
+sport-olympic-motto;sport;1;Le sport pour tous;position-1ou3;A_RECONFIRMER
+sport-bolt-time;sport;3;9 s 72;position-1ou3;A_RECONFIRMER
+sport-marathon-origin;sport;1;Léonidas;position-1ou3;A_RECONFIRMER
+sport-roland-garros;sport;3;Le dur;position-1ou3;A_RECONFIRMER
+sport-phelps-swimming;sport;3;Le cyclisme;position-1ou3;A_RECONFIRMER
+sport-tour-de-france;sport;0;Le Tour de France;reponse-trop-longue;A_RECONFIRMER
+sport-yellow-jersey;sport;1;Rouge;position-1ou3;A_RECONFIRMER
+sport-nba-usa;sport;3;L'Espagne;position-1ou3;A_RECONFIRMER
+sport-jordan-23;sport;1;11;position-1ou3;A_RECONFIRMER
+sport-volleyball-morgan;sport;3;Pierre de Coubertin;position-1ou3;A_RECONFIRMER
+sport-schumacher-ferrari;sport;1;Williams;position-1ou3;A_RECONFIRMER
+sport-handball-france;sport;3;5 fois;position-1ou3;A_RECONFIRMER
+sport-ali-quote;sport;1;La victoire appartient aux audacieux;position-1ou3;A_RECONFIRMER
+sport-paris-2024;sport;3;4;position-1ou3;A_RECONFIRMER
+sport-milliat;sport;1;Sonja Henie;position-1ou3;A_RECONFIRMER
+tech-lightbulb;technologie;1;James Watt;position-1ou3;A_RECONFIRMER
+tech-arpanet;technologie;3;Enigma;position-1ou3;A_RECONFIRMER
+tech-apple-founders;technologie;1;Larry Page et Sergey Brin;position-1ou3;A_RECONFIRMER
+tech-microsoft-founders;technologie;2;Bill Gates et Paul Allen;reponse-trop-longue;A_RECONFIRMER
+tech-google-founders;technologie;3;Jack Dorsey;position-1ou3;A_RECONFIRMER
+tech-amazon-founder;technologie;1;Jack Ma;position-1ou3;A_RECONFIRMER
+tech-ibm-simon;technologie;1;Le BlackBerry 5810;position-1ou3;A_RECONFIRMER
+tech-snake-game;technologie;3;Pac-Man;position-1ou3;A_RECONFIRMER
+tech-ibm-pc;technologie;1;Commodore;position-1ou3;A_RECONFIRMER
+tech-mouse-engelbart;technologie;3;John von Neumann;position-1ou3;A_RECONFIRMER
+tech-bluetooth-king;technologie;1;Olaf le Saint;position-1ou3;A_RECONFIRMER
+tech-robot-word;technologie;3;Jules Verne;position-1ou3;A_RECONFIRMER
+tech-turing-father;technologie;1;Ada Lovelace;position-1ou3;A_RECONFIRMER
+tech-babbage;technologie;3;Blaise Pascal;position-1ou3;A_RECONFIRMER
+tech-velcro;technologie;3;Henry Ford;position-1ou3;A_RECONFIRMER
+tech-google-googol;technologie;1;Gauss;position-1ou3;A_RECONFIRMER
+tech-netflix-dvd;technologie;3;La production télévisée;position-1ou3;A_RECONFIRMER
+tech-ampere-unit;technologie;1;La résistance;position-1ou3;A_RECONFIRMER
+tech-volt-unit;technologie;2;La tension électrique;reponse-trop-longue;A_RECONFIRMER
+tech-qwerty;technologie;3;Pour les gauchers;position-1ou3;A_RECONFIRMER
+tv-breaking-bad-actor;;1;→3(Bryan Cranston);ground_truth;CORRIGE
+tv-got-valar;;3;→1(Valar morghulis);ground_truth;CORRIGE
+tv-friends-city;;1;→3(New York);ground_truth;CORRIGE
+tv-simpsons-homer;;3;→1(Homer);ground_truth;CORRIGE
+tv-simpsons-creator;;1;→3(Matt Groening);ground_truth;CORRIGE
+tv-stranger-things-town;;3;→1(Hawkins);ground_truth;CORRIGE

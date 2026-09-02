@@ -125,7 +125,7 @@
       "La Chine",
       "La Thaïlande"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: sushi originaire du Japon"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-paella",
@@ -1417,7 +1417,7 @@
       "L'Inde",
       "Le Maghreb"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "food",
     "subcategory": "gastronomie",
     "difficulty": "easy",
@@ -1433,15 +1433,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: couscous du Maghreb (Afrique du Nord)"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "food-chili-con-carne",

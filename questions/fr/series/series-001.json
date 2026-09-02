@@ -49,7 +49,7 @@
       "Kevin Spacey",
       "Bryan Cranston"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "easy",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Bryan Cranston joue Walter White"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-got-targaryen",
@@ -125,7 +125,7 @@
       "Valar dohaeris",
       "Dracarys"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "hard",
@@ -141,15 +141,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Valar morghulis, phrase-clé de GoT"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-friends-coffeehouse",
@@ -201,7 +201,7 @@
       "Boston",
       "New York"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "easy",
@@ -217,15 +217,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Friends se déroule à New York"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-friends-theme",
@@ -277,7 +277,7 @@
       "Ned",
       "Moe"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "personnages",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Homer Simpson, père de la famille"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-simpsons-donut",
@@ -353,7 +353,7 @@
       "Mike Judge",
       "Matt Groening"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -369,15 +369,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Matt Groening crée Les Simpson"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-sopranos-tony",
@@ -429,7 +429,7 @@
       "Derry",
       "Mystic Falls"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "univers",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Hawkins, ville de Stranger Things"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-stranger-things-upside-down",
@@ -733,7 +733,7 @@
       "Matt Groening",
       "Dan Harmon"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "series",
     "subcategory": "series",
     "difficulty": "medium",
@@ -749,15 +749,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Seth MacFarlane crée Family Guy"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tv-casa-de-papel-mint",

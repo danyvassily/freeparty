@@ -429,7 +429,7 @@
       "Tim Berners-Lee",
       "Ray Kurzweil"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "internet",
     "subcategory": "memes",
     "difficulty": "hard",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Dawkins, gène égoïste / mémo"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-doge-shiba",
@@ -961,7 +961,7 @@
       "Viber",
       "WhatsApp"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "internet",
     "subcategory": "reseaux-sociaux",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: messagerie dominant = WhatsApp"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "web-wikipedia-donations",

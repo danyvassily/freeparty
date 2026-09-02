@@ -1,0 +1,1523 @@
+{
+  "generatedAt": "2026-09-02T17:02:13.146Z",
+  "total": 2081,
+  "correctAnswerDistribution": {
+    "0": 912,
+    "1": 402,
+    "2": 386,
+    "3": 381
+  },
+  "skew": [
+    [
+      "0",
+      912
+    ]
+  ],
+  "answerLeakCount": 0,
+  "answerLeaks": [],
+  "substringDistractorCount": 21,
+  "substringDistractors": [
+    {
+      "id": "cg-ani-escargot",
+      "a": "Environ 10",
+      "b": "Environ 100"
+    },
+    {
+      "id": "cg-corps-sang",
+      "a": "2 litres",
+      "b": "12 litres"
+    },
+    {
+      "id": "game-mario-brother",
+      "a": "Luigi",
+      "b": "Waluigi"
+    },
+    {
+      "id": "war-marathon-roi-perse",
+      "a": "Xerxès Ier",
+      "b": "Artaxerxès Ier"
+    },
+    {
+      "id": "war-alexandre-darius",
+      "a": "Darius II",
+      "b": "Darius III"
+    },
+    {
+      "id": "war-nap-pie7",
+      "a": "Pie VI",
+      "b": "Pie VII"
+    },
+    {
+      "id": "war-cent-ans-charles7",
+      "a": "Charles V",
+      "b": "Charles VII"
+    },
+    {
+      "id": "war-cent-ans-charles7",
+      "a": "Charles V",
+      "b": "Charles VI"
+    },
+    {
+      "id": "war-cent-ans-charles7",
+      "a": "Charles VI",
+      "b": "Charles VII"
+    },
+    {
+      "id": "war-moyen-age-charles5",
+      "a": "Charles V",
+      "b": "Charles VI"
+    },
+    {
+      "id": "war-moyen-age-charles5",
+      "a": "Charles V",
+      "b": "Charles VII"
+    },
+    {
+      "id": "war-moyen-age-charles5",
+      "a": "Charles VI",
+      "b": "Charles VII"
+    },
+    {
+      "id": "war-rev-louis16",
+      "a": "Louis XV",
+      "b": "Louis XVIII"
+    },
+    {
+      "id": "war-rev-louis16",
+      "a": "Louis XV",
+      "b": "Louis XVI"
+    },
+    {
+      "id": "war-rev-louis16",
+      "a": "Louis XVI",
+      "b": "Louis XVIII"
+    },
+    {
+      "id": "egyptian-isis-goddess-of-magic",
+      "a": "Nout",
+      "b": "Tefnout"
+    },
+    {
+      "id": "egyptian-seth-wife-nephthys",
+      "a": "Nout",
+      "b": "Tefnout"
+    },
+    {
+      "id": "egyptian-maat-goddess-of-truth",
+      "a": "Nout",
+      "b": "Tefnout"
+    },
+    {
+      "id": "egyptian-nephthys-isis-canopic-jars",
+      "a": "Nout",
+      "b": "Tefnout"
+    },
+    {
+      "id": "egyptian-mummification-seventy-days",
+      "a": "Dix jours",
+      "b": "Soixante-dix jours"
+    },
+    {
+      "id": "sci-baby-bones",
+      "a": "Environ 50",
+      "b": "Environ 500"
+    }
+  ],
+  "duplicateAnswerGroups": [
+    [
+      "le circus maximus|le colisée|le panthéon|les thermes de caracalla",
+      [
+        "cg-mon-colisee@0",
+        "war-rome-colisee@0"
+      ]
+    ],
+    [
+      "l'antilope|le cheval|le guépard|le lion",
+      [
+        "cg-ani-plus-rapide@1",
+        "sci-cheetah@0"
+      ]
+    ],
+    [
+      "dix|huit|quatre|six",
+      [
+        "cg-ani-araignee@3",
+        "egyptian-ogdoad-eight-deities@3"
+      ]
+    ],
+    [
+      "la rate|le cœur|le foie|les reins",
+      [
+        "cg-corps-coeur@3",
+        "sci-heart-pump@2"
+      ]
+    ],
+    [
+      "cinq|quatre|six|trois",
+      [
+        "cg-corps-abo@1",
+        "cg-rec-bresil-5@3"
+      ]
+    ],
+    [
+      "la cannelle|la cardamome|la vanille|le safran",
+      [
+        "cg-alim-safran@0",
+        "food-saffron@0"
+      ]
+    ],
+    [
+      "l'atacama|le gobi|le kalahari|le sahara",
+      [
+        "cg-ins-sahara@0",
+        "sci-sahara@0"
+      ]
+    ],
+    [
+      "co2|h2o|nacl|o2",
+      [
+        "cg-sci-eau@2",
+        "sci-water-formula@0"
+      ]
+    ],
+    [
+      "l'argon|l'azote|l'oxygène|le dioxyde de carbone",
+      [
+        "cg-sci-azote@3",
+        "sci-nitrogen@1",
+        "sci-greenhouse-co2@2"
+      ]
+    ],
+    [
+      "jupiter|mars|mercure|vénus",
+      [
+        "cg-sci-mars@3",
+        "odd-venus-day@0",
+        "sci-mars-red@2",
+        "sci-venus-hottest@1"
+      ]
+    ],
+    [
+      "novak djokovic|pete sampras|rafael nadal|roger federer",
+      [
+        "cg-sport-djokovic@0",
+        "sport-djokovic-record@0"
+      ]
+    ],
+    [
+      "deux|huit|quatre|six",
+      [
+        "cg-ins-papillon@0",
+        "egyptian-abu-simbel-four-colossi@3"
+      ]
+    ],
+    [
+      "jupiter|neptune|saturne|uranus",
+      [
+        "cg-ins-saturne@1",
+        "sci-jupiter-largest@1",
+        "sci-saturn-rings@3"
+      ]
+    ],
+    [
+      "le congo|le niger|le nil|le zambèze",
+      [
+        "cg-rec-nil@2",
+        "sci-nile@1"
+      ]
+    ],
+    [
+      "l'allemagne|l'argentine|l'italie|le brésil",
+      [
+        "cg-rec-bresil@2",
+        "foot-brazil-5@2"
+      ]
+    ],
+    [
+      "la chine|la corée|la thaïlande|le japon",
+      [
+        "food-sushi-japan@3",
+        "sport-judo-japan@2"
+      ]
+    ],
+    [
+      "5|6|7|8",
+      [
+        "foot-messi-ballons@2",
+        "anime-dbz-shenron@2",
+        "sci-rainbow@0"
+      ]
+    ],
+    [
+      "1|2|3|4",
+      [
+        "foot-pele-titles@3",
+        "sci-octopus-hearts@2",
+        "sport-paris-2024@3"
+      ]
+    ],
+    [
+      "alexander graham bell|guglielmo marconi|nikola tesla|thomas edison",
+      [
+        "war-indus-bell@1",
+        "tech-telephone-bell@0"
+      ]
+    ],
+    [
+      "alexeï leonov|neil armstrong|valentina terechkova|youri gagarine",
+      [
+        "war-gf-gagarine@0",
+        "sci-gagarin@2"
+      ]
+    ],
+    [
+      "gaugamèles|issos|l'hydaspe|le granique",
+      [
+        "war-alexandre-granique@3",
+        "war-alexandre-issos@0"
+      ]
+    ],
+    [
+      "1914|1916|1917|1918",
+      [
+        "war-ww1-verdun-annee@3",
+        "war-ww1-usa-1917@0"
+      ]
+    ],
+    [
+      "1942|1943|1944|1945",
+      [
+        "war-ww2-stalingrad-fin@1",
+        "war-ww2-normandie-1944@2"
+      ]
+    ],
+    [
+      "1943|1944|1945|1946",
+      [
+        "war-ww2-hitler-mort@2",
+        "war-ww2-annee-atomique@1"
+      ]
+    ],
+    [
+      "auguste|caligula|néron|trajan",
+      [
+        "war-rome-premier-empereur@2",
+        "phil-seneca-tutor-of-nero@0"
+      ]
+    ],
+    [
+      "la chine|la corée du sud|le japon|les états-unis",
+      [
+        "web-tiktok-china@0",
+        "web-emoji-japan@1"
+      ]
+    ],
+    [
+      "charles perrault|hans christian andersen|les frères grimm|oscar wilde",
+      [
+        "book-perrault@0",
+        "book-andersen@2"
+      ]
+    ],
+    [
+      "4|5|6|7",
+      [
+        "music-guitar-strings@1",
+        "sport-olympic-rings@3"
+      ]
+    ],
+    [
+      "geb|osiris|râ|seth",
+      [
+        "egyptian-horus-father-osiris@2",
+        "egyptian-anubis-father-osiris@1"
+      ]
+    ],
+    [
+      "isis|maât|nout|tefnout",
+      [
+        "egyptian-isis-goddess-of-magic@0",
+        "egyptian-nephthys-isis-canopic-jars@3"
+      ]
+    ],
+    [
+      "abou simbel|edfou|karnak|philae",
+      [
+        "egyptian-amun-karnak-temple@0",
+        "egyptian-karnak-largest-temple-complex@1"
+      ]
+    ],
+    [
+      "héraclès|jason|persée|thésée",
+      [
+        "greek-theseus-kills-minotaur@3",
+        "greek-theseus-marathonian-bull@3"
+      ]
+    ],
+    [
+      "aphrodite|athéna|déméter|héra",
+      [
+        "greek-zeus-wife-hera@2",
+        "greek-symbol-wheat-demeter@1"
+      ]
+    ],
+    [
+      "apollon|arès|hermès|héphaïstos",
+      [
+        "greek-ares-god-of-war@2",
+        "greek-aphrodite-wife-of-hephaestus@2"
+      ]
+    ],
+    [
+      "aphrodite|artémis|athéna|héra",
+      [
+        "greek-ares-aphrodite-affair@3",
+        "greek-symbol-owl-athena@3",
+        "greek-symbol-dove-aphrodite@3",
+        "greek-symbol-silver-bow-artemis@0",
+        "greek-judgment-of-paris-apple@2"
+      ]
+    ],
+    [
+      "apollon|arès|dionysos|hermès",
+      [
+        "greek-hermes-messenger-of-the-gods@0",
+        "greek-symbol-lyre-apollo@1"
+      ]
+    ],
+    [
+      "l'académie|le jardin|le lycée|le portique",
+      [
+        "phil-plato-foundation-of-the-academy@2",
+        "phil-epicurus-the-garden-school@3"
+      ]
+    ],
+    [
+      "diderot|montesquieu|rousseau|voltaire",
+      [
+        "phil-rousseau-social-contract@0",
+        "phil-montesquieu-separation-of-powers@2"
+      ]
+    ],
+    [
+      "001|067|218|456",
+      [
+        "tv-squid-game-456@3",
+        "tv-squid-game-number-gi-hun@0"
+      ]
+    ]
+  ],
+  "lengthOutlierCount": 102,
+  "lengthOutliers": [
+    {
+      "id": "art-seurat-grandejatte-technique",
+      "answers": [
+        "Le Pointillisme (Divisionnisme)",
+        "Le Sfumato",
+        "Le Frottage",
+        "Le Trompe-l'œil"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "film-amelie-arrondissement",
+      "answers": [
+        "Belleville",
+        "Montmartre",
+        "Le Marais",
+        "Saint-Germain-des-Prés"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "film-bienvenue-chtis-record",
+      "answers": [
+        "Le Corniaud",
+        "Bienvenue chez les Ch'tis",
+        "Intouchables",
+        "Astérix et Obélix : Mission Cléopâtre"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "cg-sci-azote",
+      "answers": [
+        "L'argon",
+        "L'azote",
+        "L'oxygène",
+        "Le dioxyde de carbone"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "cg-sport-foot",
+      "answers": [
+        "Le rugby",
+        "Le hockey sur gazon",
+        "Le baseball",
+        "Le football"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "cg-exp-lapin",
+      "answers": [
+        "Inviter à dîner",
+        "Arriver en retard",
+        "Ne pas venir à un rendez-vous",
+        "Offrir un cadeau"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "cg-exp-plat",
+      "answers": [
+        "Bien manger",
+        "Arriver en retard",
+        "Aborder un sujet délicat sans détour",
+        "Marcher sur un plat"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "cg-exp-chat-gorge",
+      "answers": [
+        "Avoir la voix enrouée",
+        "Avoir faim",
+        "Être fâché",
+        "Avoir froid"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "cg-exp-pate",
+      "answers": [
+        "Participer au travail",
+        "Cuisiner",
+        "Voler",
+        "Abandonner"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "cg-rec-dollar",
+      "answers": [
+        "Le yen",
+        "La livre sterling",
+        "Le dollar américain",
+        "L'euro"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "food-macaron",
+      "answers": [
+        "Le cannelé",
+        "Le chou à la crème",
+        "L'éclair",
+        "Le macaron"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "food-couscous",
+      "answers": [
+        "Le Moyen-Orient",
+        "L'Afrique de l'Ouest",
+        "L'Inde",
+        "Le Maghreb"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "foot-england-record",
+      "answers": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Chelsea"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "game-ff-company",
+      "answers": [
+        "Konami",
+        "Atlus",
+        "Square (Square Enix)",
+        "Bandai Namco"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "game-witcher-geralt",
+      "answers": [
+        "Chasseur de monstres",
+        "Chevalier",
+        "Marchand",
+        "Alchimiste"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "game-fifa-editor",
+      "answers": [
+        "Konami",
+        "2K Games",
+        "Electronic Arts",
+        "Ubisoft"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "riyad-12",
+      "answers": [
+        "Arabie saoudite",
+        "Brunéi",
+        "Malaisie",
+        "Guyana"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "naypyidaw-42",
+      "answers": [
+        "Birmanie (Myanmar)",
+        "Royaume-Uni",
+        "Luxembourg",
+        "Djibouti"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "sarajevo-46",
+      "answers": [
+        "Bosnie-Herzégovine",
+        "Suriname",
+        "Thaïlande",
+        "Hongrie"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "brunei-51",
+      "answers": [
+        "Bandar Seri Begawan",
+        "Belgrade",
+        "Astana",
+        "Accra"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "brazzaville-80",
+      "answers": [
+        "Congo (République)",
+        "Haïti",
+        "Luxembourg",
+        "Nicaragua"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "republique-dominicaine-95",
+      "answers": [
+        "Saint-Domingue",
+        "Manama",
+        "Khartoum",
+        "Kiev"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "saint-domingue-96",
+      "answers": [
+        "République dominicaine",
+        "Arménie",
+        "Côte d'Ivoire",
+        "Luxembourg"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "abou-dabi-100",
+      "answers": [
+        "Émirats arabes unis",
+        "Koweït",
+        "Canada",
+        "Turquie"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "etats-unis-111",
+      "answers": [
+        "Washington D.C.",
+        "Kaboul",
+        "Dublin",
+        "Rabat"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "skopje-186",
+      "answers": [
+        "Macédoine du Nord",
+        "France",
+        "Liban",
+        "Pologne"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "port-moresby-238",
+      "answers": [
+        "Papouasie-Nouvelle-Guinée",
+        "Pérou",
+        "Costa Rica",
+        "Thaïlande"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "prague-254",
+      "answers": [
+        "République tchèque",
+        "Égypte",
+        "France",
+        "Angola"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "sri-lanka-281",
+      "answers": [
+        "Sri Jayawardenapura Kotte",
+        "Brasilia",
+        "Niamey",
+        "Washington D.C."
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "trinite-et-tobago-301",
+      "answers": [
+        "Port-d'Espagne",
+        "Quito",
+        "Bamako",
+        "San José"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "burkina-faso-100021",
+      "answers": [
+        "franc CFA (BCEAO)",
+        "rial omanais",
+        "dinar serbe",
+        "złoty"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "burundi-100022",
+      "answers": [
+        "franc burundais",
+        "kwanza",
+        "shilling kényan",
+        "sum"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "congo-republique--100031",
+      "answers": [
+        "franc CFA (BEAC)",
+        "đồng",
+        "lek",
+        "peso mexicain"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "etats-unis-100046",
+      "answers": [
+        "dollar américain",
+        "naira",
+        "kina",
+        "denar"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "gabon-100050",
+      "answers": [
+        "franc CFA (BEAC)",
+        "riyal qatari",
+        "forint",
+        "đồng"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "jamaique-100065",
+      "answers": [
+        "dollar jamaïcain",
+        "mark convertible",
+        "đồng",
+        "leone"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "mexique-100084",
+      "answers": [
+        "peso mexicain",
+        "sum",
+        "tugrik",
+        "afghani"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "republique-tcheque-100104",
+      "answers": [
+        "couronne tchèque",
+        "peso argentin",
+        "kwanza",
+        "đồng"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "tchad-100116",
+      "answers": [
+        "franc CFA (BEAC)",
+        "cédi",
+        "nakfa",
+        "riyal qatari"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "war-cs-sud",
+      "answers": [
+        "Les États de l'Ouest",
+        "Les États de Nouvelle-Angleterre",
+        "Les États du Nord",
+        "Les États du Sud"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "war-puniques-scipion",
+      "answers": [
+        "Marius",
+        "Sylla",
+        "Scipion l'Africain",
+        "Fabius Cunctator"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "war-ww1-petain",
+      "answers": [
+        "Philippe Pétain",
+        "Foch",
+        "Joffre",
+        "Nivelle"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "war-ww1-wagon",
+      "answers": [
+        "Dans une tranchée à Verdun",
+        "À bord d'un cuirassé",
+        "Dans un wagon-restaurant, en forêt de Compiègne",
+        "Au château de Versailles"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "war-rev-rouget",
+      "answers": [
+        "Méhul",
+        "Grétry",
+        "Rouget de Lisle",
+        "Gossec"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "odd-astronauts-grow",
+      "answers": [
+        "La colonne vertébrale se détend sans gravité",
+        "Ils mangent plus",
+        "Leurs os s'étirent",
+        "Ils portent des combinaisons épaisses"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "odd-elephant-trunk",
+      "answers": [
+        "50 litres",
+        "100 litres",
+        "Environ 10 litres",
+        "1 litre"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "web-spam-hormel",
+      "answers": [
+        "De jambon en boîte",
+        "De céréales",
+        "De soda",
+        "De fromage"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "book-goethe-werther",
+      "answers": [
+        "Johann Wolfgang von Goethe",
+        "Friedrich Schiller",
+        "Thomas Mann",
+        "Hermann Hesse"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "anime-jjk-sukuna",
+      "answers": [
+        "Ryomen Sukuna",
+        "Mahito",
+        "Hanami",
+        "Jogo"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "anime-naruto-pain-real-leader",
+      "answers": [
+        "Nagato Uzumaki",
+        "Yahiko",
+        "Konan",
+        "Obito Uchiwa"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "anime-naruto-minato-technique-hiraishin",
+      "answers": [
+        "Le Vol du Dieu de la Foudre (Hiraishin no Jutsu)",
+        "Le Kamui",
+        "La Substitution d'Ombre (Kawarimi)",
+        "Le Déplacement Instantané (Shunshin)"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "anime-solo-leveling-arise-phrase",
+      "answers": [
+        "Debout ! (Arise / Il-eonala)",
+        "À genoux !",
+        "Obéissez !",
+        "Résurrection !"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "anime-berserk-guts-dragonslayer",
+      "answers": [
+        "La Dragon Slayer (Pourfendeuse de Dragons)",
+        "La lame de Behelit",
+        "L'épée de Griffith",
+        "L'Excalibur Maudite"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "music-stones-satisfaction",
+      "answers": [
+        "The Kinks",
+        "The Doors",
+        "The Rolling Stones",
+        "The Who"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "music-floyd-another-brick",
+      "answers": [
+        "Money",
+        "Time",
+        "Another Brick in the Wall",
+        "Comfortably Numb"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "music-jazz-origin",
+      "answers": [
+        "Détroit",
+        "Memphis",
+        "La Nouvelle-Orléans",
+        "Chicago"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "music-ntm-origin",
+      "answers": [
+        "De Seine-Saint-Denis",
+        "De Marseille",
+        "De Lyon",
+        "De Bordeaux"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "egyptian-ra-crosses-the-duat-at-night",
+      "answers": [
+        "La Douat, le monde souterrain",
+        "Le Nil",
+        "Le désert de Libye",
+        "Les champs d'Ialou"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "egyptian-osiris-god-of-vegetation",
+      "answers": [
+        "Aux séismes",
+        "À la végétation et à la renaissance des récoltes",
+        "À la guerre et aux combats",
+        "Aux éclipses"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "egyptian-seth-unknown-animal",
+      "answers": [
+        "Le chat",
+        "L'ibis",
+        "L'hippopotame",
+        "Un animal imaginaire non identifié"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "egyptian-hathor-protector-of-women",
+      "answers": [
+        "Les femmes et les nouveau-nés",
+        "Les soldats",
+        "Les scribes",
+        "Les paysans"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "egyptian-ptah-patron-of-artisans",
+      "answers": [
+        "Les pêcheurs",
+        "Les scribes",
+        "Les médecins",
+        "Les artisans et les forgerons"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "egyptian-nephthys-sister-of-isis",
+      "answers": [
+        "La femme de Thot",
+        "La mère de Bastet",
+        "La sœur d'Isis, d'Osiris et de Seth",
+        "La fille de Râ"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "egyptian-forty-two-assessors",
+      "answers": [
+        "Trente",
+        "Sept",
+        "Quarante-deux",
+        "Douze"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "egyptian-ba-the-bird-soul",
+      "answers": [
+        "Un chat",
+        "Un oiseau à tête humaine",
+        "Un faucon",
+        "Un serpent ailé"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "egyptian-ushabti-funerary-figurines",
+      "answers": [
+        "À nourrir le défunt",
+        "À éclairer le chemin vers l'au-delà",
+        "À remplacer le défunt dans les travaux des champs de l'au-delà",
+        "À garder la tombe"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "egyptian-djoser-first-step-pyramid",
+      "answers": [
+        "La pyramide rhomboïdale",
+        "La pyramide de Meïdoum",
+        "La pyramide à degrés de Djéser à Saqqarah",
+        "La Grande Pyramide"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "greek-cerberus-snake-tail",
+      "answers": [
+        "Elle est couverte de plumes",
+        "Elle se termine par une tête de serpent",
+        "Elle est en bronze",
+        "Elle crache du feu"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "greek-sirens-enchanting-song",
+      "answers": [
+        "Leurs griffes déchirent les voiles",
+        "Leur regard pétrifie",
+        "Elles créent des tempêtes",
+        "Leur chant ensorcelle et fait échouer les navires"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-tantalus-eternal-hunger",
+      "answers": [
+        "Tourner une roue enflammée",
+        "Une faim et une soif éternelles au milieu de fruits et d'eau qui se dérobent",
+        "Pousser un rocher",
+        "Être dévoré par un aigle"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "greek-heracles-known-for-strength",
+      "answers": [
+        "Sa ruse",
+        "Sa vitesse",
+        "Sa sagesse",
+        "Sa force prodigieuse"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-heracles-death-nessus-tunic",
+      "answers": [
+        "Transpercé par une flèche",
+        "Dévoré par le lion de Némée",
+        "Noyé dans la mer",
+        "En revêtant une tunique empoisonnée offerte par sa femme"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-orpheus-turns-around",
+      "answers": [
+        "Parce qu'il se retourne pour la regarder avant la sortie des Enfers",
+        "Parce qu'il chante faux",
+        "Parce qu'il refuse de payer Charon",
+        "Parce qu'il la laisse boire l'eau du Léthé"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "greek-icarus-wax-wings",
+      "answers": [
+        "Il s'endort en volant",
+        "Sa corde se rompt",
+        "Il est frappé par la foudre de Zeus",
+        "Il s'approche trop du Soleil et ses ailes de cire fondent"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-antigone-buries-polyneices",
+      "answers": [
+        "Elle enterre son frère malgré l'interdiction du roi",
+        "Elle trahit Athènes",
+        "Elle vole le feu sacré",
+        "Elle révèle un secret d'État"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "greek-mount-olympus-location",
+      "answers": [
+        "En Crète",
+        "Dans le Péloponnèse",
+        "Sur l'île de Délos",
+        "En Grèce, à la frontière entre la Thessalie et la Macédoine"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-labyrinth-of-cnossos",
+      "answers": [
+        "En Crète, à Cnossos",
+        "À Athènes",
+        "À Thèbes",
+        "À Mycènes"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "greek-hera-goddess-of-marriage",
+      "answers": [
+        "Veiller sur les moissons",
+        "Guider les voyageurs",
+        "Protéger le mariage et les femmes mariées",
+        "Présider la guerre"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "greek-atlas-heracles-hesperides",
+      "answers": [
+        "Il lui offre une potion d'oubli",
+        "Il le fait tomber dans un piège",
+        "Il lui donne des pommes empoisonnées",
+        "Il lui propose de porter lui-même les pommes pendant qu'Héraclès tient le ciel"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-heracles-strangles-nemean-lion",
+      "answers": [
+        "Avec son arc",
+        "Avec son épée",
+        "En le noyant",
+        "En l'étranglant à mains nues"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "greek-heracles-hydra-cauterizes-necks",
+      "answers": [
+        "En cautérisant les cous avec des tisons",
+        "En les coupant plus vite",
+        "En les gelant",
+        "En les enterrant"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "greek-achilles-drags-hector-body",
+      "answers": [
+        "Il le jette dans la mer",
+        "Il le traîne derrière son char autour de Troie",
+        "Il le brûle",
+        "Il le rend à Priam aussitôt"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "greek-troy-location-asia-minor",
+      "answers": [
+        "Dans le Péloponnèse",
+        "En Asie Mineure, sur la côte de l'actuelle Turquie",
+        "En Italie",
+        "En Crète"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "phil-socrates-maiutics-method",
+      "answers": [
+        "À la guerre",
+        "À l'art de la sage-femme qui accouche les esprits",
+        "À la sculpture",
+        "À la navigation"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "phil-socrates-accused-of-corrupting-youth",
+      "answers": [
+        "Corrompre la jeunesse et ne pas honorer les dieux de la cité",
+        "Voler les trésors d'Athènes",
+        "Trahir Athènes pour Sparte",
+        "Détruire les statues des dieux"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "phil-aristotle-tutor-of-alexander",
+      "answers": [
+        "Jules César",
+        "Cyrus",
+        "Hannibal",
+        "Alexandre le Grand"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "phil-sartre-refused-nobel-prize",
+      "answers": [
+        "Le prix Goncourt",
+        "Le prix Pulitzer",
+        "Le prix Goethe",
+        "Le prix Nobel de littérature"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "phil-wittgenstein-tractatus-final-proposition",
+      "answers": [
+        "« Dieu est mort »",
+        "« Tout est nombre »",
+        "« L'existence précède l'essence »",
+        "« Ce dont on ne peut parler, il faut le taire »"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "phil-descartes-dualism-soul-body",
+      "answers": [
+        "L'âme (pensée) et le corps (étendue)",
+        "Le bien et le mal",
+        "L'être et le paraître",
+        "Le fini et l'infini"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "phil-kant-critique-of-pure-reason",
+      "answers": [
+        "L'Éthique",
+        "Le Léviathan",
+        "La Critique de la raison pure",
+        "Le Discours de la méthode"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "phil-kant-sapere-aude",
+      "answers": [
+        "« Rien de trop »",
+        "« Sapere aude » : ose te servir de ton propre entendement",
+        "« Carpe diem »",
+        "« Connais-toi toi-même »"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "phil-hegel-master-slave-dialectic",
+      "answers": [
+        "La dialectique du maître et de l'esclave",
+        "L'allégorie de la caverne",
+        "Le mythe de la caverne",
+        "Le pari de Pascal"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "phil-stoics-live-in-accordance-with-nature",
+      "answers": [
+        "Jouir de l'instant présent",
+        "Fuir la société",
+        "Rechercher la gloire",
+        "Vivre conformément à la nature et à la raison"
+      ],
+      "correctIdx": 3
+    },
+    {
+      "id": "phil-epictetus-dichotomy-of-control",
+      "answers": [
+        "Ce qui dépend de nous et ce qui n'en dépend pas",
+        "Le bien et le mal",
+        "Le vrai et le faux",
+        "L'âme et le corps"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "sci-nitrogen",
+      "answers": [
+        "L'oxygène",
+        "Le dioxyde de carbone",
+        "L'argon",
+        "L'azote"
+      ],
+      "correctIdx": 1
+    },
+    {
+      "id": "sci-greenhouse-co2",
+      "answers": [
+        "L'azote",
+        "L'argon",
+        "Le dioxyde de carbone",
+        "L'oxygène"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "tv-stranger-things-upside-down",
+      "answers": [
+        "Le Monde à l'envers",
+        "La Dimension X",
+        "Le Néant",
+        "La Zone"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "tv-south-park-creator",
+      "answers": [
+        "Seth MacFarlane",
+        "Mike Judge",
+        "Trey Parker et Matt Stone",
+        "Matt Groening"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "tv-squid-game-first-game",
+      "answers": [
+        "La marelle",
+        "Cache-cache",
+        "Un, deux, trois, soleil",
+        "La corde à sauter"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "sport-olympic-flame",
+      "answers": [
+        "Olympie (Grèce)",
+        "Athènes",
+        "Paris",
+        "Rome"
+      ],
+      "correctIdx": 0
+    },
+    {
+      "id": "tech-microsoft-founders",
+      "answers": [
+        "Mark Zuckerberg",
+        "Larry Ellison",
+        "Bill Gates et Paul Allen",
+        "Steve Jobs"
+      ],
+      "correctIdx": 2
+    },
+    {
+      "id": "tech-volt-unit",
+      "answers": [
+        "La fréquence",
+        "La capacité",
+        "La tension électrique",
+        "L'intensité"
+      ],
+      "correctIdx": 2
+    }
+  ],
+  "singleItemSubcategories": [
+    [
+      "philosophie/sociologie",
+      1
+    ],
+    [
+      "science/mathematiques",
+      1
+    ],
+    [
+      "food/records",
+      1
+    ],
+    [
+      "gaming/records",
+      1
+    ],
+    [
+      "insolite/nature-facts",
+      1
+    ],
+    [
+      "manga-anime/records",
+      1
+    ],
+    [
+      "manga-anime/thriller",
+      1
+    ],
+    [
+      "manga-anime/shonen-sombre",
+      1
+    ],
+    [
+      "manga-anime/manhwa-anime",
+      1
+    ],
+    [
+      "manga-anime/comedie-shonen",
+      1
+    ],
+    [
+      "manga-anime/super-heros-shonen",
+      1
+    ],
+    [
+      "manga-anime/shonen-parodie",
+      1
+    ],
+    [
+      "manga-anime/dark-fantasy-seinen",
+      1
+    ],
+    [
+      "manga-anime/sport-shonen",
+      1
+    ],
+    [
+      "science/paleontologie",
+      1
+    ],
+    [
+      "series/post-apocalyptique",
+      1
+    ],
+    [
+      "series/super-heros",
+      1
+    ],
+    [
+      "series/braquage",
+      1
+    ],
+    [
+      "series/drame-judiciaire",
+      1
+    ],
+    [
+      "series/thriller-sci-fi",
+      1
+    ],
+    [
+      "series/policier",
+      1
+    ],
+    [
+      "technologie/web",
+      1
+    ]
+  ]
+}

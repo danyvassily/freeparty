@@ -11,7 +11,7 @@
       "Clark Gable",
       "Humphrey Bogart"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "cinema",
     "subcategory": "acteurs",
     "difficulty": "medium",
@@ -27,15 +27,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Rick Blaine joué par Humphrey Bogart"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-casablanca-quote",
@@ -1227,7 +1227,7 @@
       "Wes Anderson",
       "Terry Gilliam"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "cinema",
     "subcategory": "realisateurs",
     "difficulty": "easy",
@@ -1243,15 +1243,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Tim Burton réal. Beetlejuice/Étrange Noël"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "film-edward-scissors",

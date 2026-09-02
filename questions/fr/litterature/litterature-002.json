@@ -885,7 +885,7 @@
       "Emily Brontë",
       "Jane Austen"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -901,15 +901,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Frankenstein = Mary Shelley"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-austen",
@@ -961,7 +961,7 @@
       "Robert Louis Stevenson",
       "Oscar Wilde"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "litterature",
     "subcategory": "auteurs",
     "difficulty": "medium",
@@ -977,15 +977,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Le Portrait de Dorian Gray = Oscar Wilde"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "book-stoker",

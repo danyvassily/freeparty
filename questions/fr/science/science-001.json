@@ -429,7 +429,7 @@
       "Une spirale plate",
       "Un cercle"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "science",
     "subcategory": "biologie",
     "difficulty": "easy",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: ADN en double hélice"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sci-dna-cytosine",

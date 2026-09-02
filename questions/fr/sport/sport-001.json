@@ -505,7 +505,7 @@
       "Ivan Lendl",
       "Rafael Nadal"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "sport",
     "subcategory": "records",
     "difficulty": "medium",
@@ -521,15 +521,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Nadal record Roland-Garros"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "sport-phelps-gold",

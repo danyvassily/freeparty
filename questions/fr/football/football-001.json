@@ -49,7 +49,7 @@
       "L'Italie",
       "L'Uruguay"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "football",
     "subcategory": "coupe-du-monde",
     "difficulty": "hard",
@@ -65,15 +65,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Uruguay vainqueur Coupe du monde 1930"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-brazil-5",
@@ -277,7 +277,7 @@
       "Le Real Madrid",
       "Manchester City"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "football",
     "subcategory": "legendes",
     "difficulty": "easy",
@@ -293,15 +293,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Messi premiers Ballons d'Or au Barça"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "foot-ronaldo-nationality",

@@ -429,7 +429,7 @@
       "Explorer la Lune",
       "Construire des satellites météo"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "technologie",
     "subcategory": "entreprises",
     "difficulty": "medium",
@@ -445,15 +445,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: mission SpaceX = coloniser Mars"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-iphone-2007",
@@ -1113,7 +1113,7 @@
       "Barbara Liskov",
       "Grace Hopper"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "category": "technologie",
     "subcategory": "inventions",
     "difficulty": "hard",
@@ -1129,15 +1129,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "Wikipedia: Grace Hopper, coobstacle COBOL"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "tech-volta-battery",

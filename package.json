@@ -19,7 +19,9 @@
     "questions:generate": "tsx scripts/questions/generate.ts",
     "questions:review": "tsx scripts/questions/review.ts",
     "questions:verify": "tsx scripts/questions/verify.ts",
-    "questions:fetch": "tsx scripts/questions/fetch.ts"
+    "questions:fetch": "tsx scripts/questions/fetch.ts",
+    "questions:audit:structural": "tsx scripts/questions/audit/structural.ts",
+    "questions:audit:verify": "tsx scripts/questions/audit/verify.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.6.1",

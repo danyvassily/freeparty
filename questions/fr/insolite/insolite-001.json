@@ -1037,7 +1037,7 @@
       "Une boîte de conserve",
       "Un paquet de céréales"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "category": "insolite",
     "subcategory": "object-facts",
     "difficulty": "hard",
@@ -1053,15 +1053,15 @@
       "license": "CC0"
     },
     "verification": {
-      "status": "verified",
-      "verifiedAt": "2026-08-15",
+      "status": "disputed",
+      "verifiedAt": "2026-09-02",
       "sources": [
-        "wikidata"
+        "code-barres 1er scanné = paquet de chewing-gum"
       ]
     },
     "confidence": 0.97,
     "qualityScore": 0.95,
-    "version": 1
+    "version": 2
   },
   {
     "id": "odd-venus-day",
