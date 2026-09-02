@@ -50,3 +50,6 @@ next-env.d.ts
 
 # sous-agent build scripts
 /questions/fr/_build/
+
+# QA audit temp chunks (not part of the dataset)
+.qa-chunks/

@@ -21,7 +21,8 @@
     "questions:verify": "tsx scripts/questions/verify.ts",
     "questions:fetch": "tsx scripts/questions/fetch.ts",
     "questions:audit:structural": "tsx scripts/questions/audit/structural.ts",
-    "questions:audit:verify": "tsx scripts/questions/audit/verify.ts"
+    "questions:audit:verify": "tsx scripts/questions/audit/verify.ts",
+    "questions:audit:apply": "tsx scripts/questions/audit/apply.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.6.1",
