@@ -69,6 +69,7 @@ export type IconName =
   | "wyr"
   | "guess"
   | "teambattle"
+  | "psycho"
   | "zap"
   | "flame"
   | "trophy"
@@ -157,6 +158,8 @@ export function AppIcon({ name, className = "w-4 h-4", size, ...props }: AppIcon
       return <Search {...iconProps} />;
     case "teambattle":
       return <Users {...iconProps} />;
+    case "psycho":
+      return <Brain {...iconProps} />;
 
     // UI
     case "zap":

@@ -10,6 +10,7 @@ import { TeamBattleGame } from "@/components/game/team-battle";
 import { WyrGame } from "@/components/game/wyr-game";
 import { GuessGame } from "@/components/game/guess-game";
 import { DebateGame } from "@/components/game/debate-game";
+import { PsychoGame } from "@/components/game/psycho-game";
 
 const emptySubscribe = () => () => {};
 
@@ -55,6 +56,8 @@ export default function PlayPage() {
       return <GuessGame />;
     case "debate":
       return <DebateGame />;
+    case "psycho":
+      return <PsychoGame />;
     default:
       return <PrismGame />;
   }

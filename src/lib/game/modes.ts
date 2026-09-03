@@ -111,11 +111,21 @@ export const MODE_META: Record<GameMode, ModeMeta> = {
     usesQuestionCatalog: false,
     passAndPlay: true,
   },
+  psycho: {
+    id: "psycho",
+    name: "Profil Psycho",
+    subtitle: "18 dilemmes de soirée pour révéler votre véritable archétype",
+    icon: "psycho",
+    iconBg: "bg-[#8b5cf6]",
+    minPlayers: 1,
+    usesQuestionCatalog: false,
+    passAndPlay: false,
+  },
 };
 
 export const MODE_SECTIONS: Array<{ title: string; modes: GameMode[] }> = [
-  { title: "Quiz", modes: ["prism", "classic", "truefalse", "rapidfire", "timeline", "teambattle"] },
-  { title: "Discussion", modes: ["debate", "wyr", "guess"] },
+  { title: "Quiz & Compétition", modes: ["prism", "classic", "truefalse", "rapidfire", "timeline", "teambattle"] },
+  { title: "Psychologie & Discussion", modes: ["psycho", "debate", "wyr", "guess"] },
 ];
 
 export const CATEGORY_LABELS: Record<QuestionCategory | "mixed", string> = {

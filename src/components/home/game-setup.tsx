@@ -141,7 +141,7 @@ export function GameSetup({ mode, onBack, onLaunch }: GameSetupProps) {
               <p className="text-xs font-bold uppercase tracking-wider text-fp-text-dim">Votre partie</p>
               <p className="mt-1 text-lg font-extrabold text-fp-text">{meta.name}</p>
             </div>
-            <KawaiiMascot theme={mode === "debate" || mode === "wyr" ? "debate" : mode === "rapidfire" ? "speed" : "quiz"} size={62} />
+            <KawaiiMascot theme={mode === "psycho" ? "thinking" : mode === "debate" || mode === "wyr" ? "debate" : mode === "rapidfire" ? "speed" : "quiz"} size={62} />
           </div>
           <dl className="mt-5 space-y-3 border-y border-fp-border py-4 text-sm">
             <div className="flex items-center justify-between gap-3"><dt className="inline-flex items-center gap-2 text-fp-text-dim"><UsersRound className="h-4 w-4" />Joueurs</dt><dd className="font-bold text-fp-text">{effectivePlayers.length}</dd></div>

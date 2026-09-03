@@ -16,6 +16,7 @@ export const GAME_MODES = [
   "wyr",
   "guess",
   "debate",
+  "psycho",
 ] as const;
 export type GameMode = (typeof GAME_MODES)[number];
 
