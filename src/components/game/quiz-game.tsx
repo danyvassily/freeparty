@@ -21,7 +21,8 @@ import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
-import { AlertCircle, Flag, ChevronLeft, HandMetal } from "lucide-react";
+import { AlertCircle, Flag, ChevronLeft, HandMetal, Check, X } from "lucide-react";
+import { sound } from "@/lib/audio/sound-engine";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";
@@ -74,6 +75,27 @@ export function QuizGame({ mode }: QuizGameProps) {
   );
   const isLast = index >= questions.length - 1;
   const activePlayer = players[index % players.length];
+
+  // Dérivation d'assertion binaire pour le mode Vrai ou Faux (50% vrai, 50% distracteur)
+  const tfAssertion = useMemo(() => {
+    if (mode !== "truefalse" || !current) return null;
+    const charSum = current.id.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0) + index;
+    const isTrue = charSum % 2 === 0;
+
+    if (isTrue) {
+      return {
+        proposedAnswer: current.answers[current.correctAnswer],
+        isTrue: true,
+      };
+    } else {
+      const wrongIndices = [0, 1, 2, 3].filter((i) => i !== current.correctAnswer);
+      const chosenWrongIndex = wrongIndices[charSum % wrongIndices.length];
+      return {
+        proposedAnswer: current.answers[chosenWrongIndex],
+        isTrue: false,
+      };
+    }
+  }, [mode, current, index]);
 
   // Chargement initial via l'API interne (anti-répétition serveur)
   useEffect(() => {
@@ -151,8 +173,20 @@ export function QuizGame({ mode }: QuizGameProps) {
       answeredRef.current = true;
       setSelected(answerIndex);
 
-      const correct = answerIndex === current.correctAnswer;
-      const points = correct ? (mode === "rapidfire" ? 10 : 10) : 0;
+      const correct =
+        mode === "truefalse" && tfAssertion
+          ? answerIndex === 0
+            ? tfAssertion.isTrue
+            : !tfAssertion.isTrue
+          : answerIndex === current.correctAnswer;
+
+      if (correct) {
+        sound.playCorrect();
+      } else {
+        sound.playWrong();
+      }
+
+      const points = correct ? 10 : 0;
       setScores((s) => ({
         ...s,
         [activePlayer.id]: {
@@ -172,7 +206,7 @@ export function QuizGame({ mode }: QuizGameProps) {
       setPhase("answer");
       setTimeout(goNext, 1800);
     },
-    [current, activePlayer, config?.sessionId, timePerQuestion, timeLeft, mode, goNext],
+    [current, activePlayer, config?.sessionId, timePerQuestion, timeLeft, mode, tfAssertion, goNext],
   );
 
   // Référence toujours fraîche pour le timer
@@ -330,8 +364,14 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   if (!current) return null;
 
-  const isCorrect = phase === "answer" && selected === current.correctAnswer;
-  const isWrong = phase === "answer" && selected !== current.correctAnswer;
+  const isCorrect =
+    phase === "answer" &&
+    (mode === "truefalse" && tfAssertion
+      ? selected === 0
+        ? tfAssertion.isTrue
+        : !tfAssertion.isTrue
+      : selected === current.correctAnswer);
+  const isWrong = phase === "answer" && !isCorrect;
 
   // ---------- Jeu ----------
   return (
@@ -413,42 +453,100 @@ export function QuizGame({ mode }: QuizGameProps) {
           {current.question}
         </h1>
 
-        <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-          {current.answers.map((answer, i) => {
-            let cls = "text-fp-text";
-            let disabled = false;
-            if (phase === "answer") {
-              disabled = true;
-              if (i === current.correctAnswer) {
-                cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text animate-pop";
-              } else if (i === selected) {
-                cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
-              } else {
-                cls = "opacity-40";
-              }
-            }
-            return (
+        {mode === "truefalse" && tfAssertion ? (
+          <div className="mt-6 space-y-4">
+            {/* Proposition d'assertion */}
+            <div className="rounded-2xl border-2 border-dashed border-fp-primary/30 bg-fp-primary/5 p-4 sm:p-5 text-center">
+              <span className="text-[12px] font-bold uppercase tracking-wider text-fp-primary">Proposition</span>
+              <p className="mt-1 text-[20px] sm:text-[24px] font-extrabold text-fp-text">
+                « {tfAssertion.proposedAnswer} »
+              </p>
+            </div>
+
+            {/* Deux gros boutons Vrai / Faux */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <button
-                key={i}
                 type="button"
-                disabled={disabled}
-                onClick={() => handleAnswer(i)}
-                className={`fp-answer flex min-h-[64px] items-center gap-3.5 px-5 py-4 text-left text-[16px] font-medium ${cls}`}
+                disabled={phase === "answer"}
+                onClick={() => handleAnswer(0)}
+                className={`group flex min-h-[90px] sm:min-h-[100px] flex-col items-center justify-center rounded-2xl border-2 p-3 sm:p-4 font-black transition-all ${
+                  phase === "answer"
+                    ? tfAssertion.isTrue
+                      ? "border-fp-success bg-fp-success text-white shadow-lg animate-pop"
+                      : selected === 0
+                        ? "border-fp-danger bg-fp-danger/10 text-fp-danger"
+                        : "border-fp-border opacity-40 text-fp-text-dim"
+                    : "border-fp-success/40 bg-white text-fp-success shadow-sm hover:border-fp-success hover:bg-fp-success/10 active:scale-[0.98]"
+                }`}
               >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[14px] font-bold text-fp-text-dim">
-                  {["A", "B", "C", "D"][i]}
-                </span>
-                <span className="flex-1 leading-snug">{answer}</span>
-                {phase === "answer" && i === current.correctAnswer && (
-                  <span className="font-bold text-fp-success text-lg" aria-hidden="true">✓</span>
-                )}
-                {phase === "answer" && i === selected && i !== current.correctAnswer && (
-                  <span className="font-bold text-fp-danger text-lg" aria-hidden="true">✗</span>
-                )}
+                <Check className="h-7 w-7 mb-1 transition-transform group-hover:scale-110" strokeWidth={3} />
+                <span className="text-[19px] sm:text-[22px] tracking-wide">VRAI</span>
               </button>
-            );
-          })}
-        </div>
+
+              <button
+                type="button"
+                disabled={phase === "answer"}
+                onClick={() => handleAnswer(1)}
+                className={`group flex min-h-[90px] sm:min-h-[100px] flex-col items-center justify-center rounded-2xl border-2 p-3 sm:p-4 font-black transition-all ${
+                  phase === "answer"
+                    ? !tfAssertion.isTrue
+                      ? "border-fp-success bg-fp-success text-white shadow-lg animate-pop"
+                      : selected === 1
+                        ? "border-fp-danger bg-fp-danger/10 text-fp-danger"
+                        : "border-fp-border opacity-40 text-fp-text-dim"
+                    : "border-fp-danger/40 bg-white text-fp-danger shadow-sm hover:border-fp-danger hover:bg-fp-danger/10 active:scale-[0.98]"
+                }`}
+              >
+                <X className="h-7 w-7 mb-1 transition-transform group-hover:scale-110" strokeWidth={3} />
+                <span className="text-[19px] sm:text-[22px] tracking-wide">FAUX</span>
+              </button>
+            </div>
+
+            {/* Révélation si faux */}
+            {phase === "answer" && !tfAssertion.isTrue && (
+              <p className="animate-rise text-center text-[14px] font-medium text-fp-text-dim">
+                La bonne réponse était : <strong className="text-fp-success font-bold">{current.answers[current.correctAnswer]}</strong>
+              </p>
+            )}
+          </div>
+        ) : (
+          <div className="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+            {current.answers.map((answer, i) => {
+              let cls = "text-fp-text";
+              let disabled = false;
+              if (phase === "answer") {
+                disabled = true;
+                if (i === current.correctAnswer) {
+                  cls = "border-2 border-fp-success bg-fp-success/10 text-fp-text animate-pop";
+                } else if (i === selected) {
+                  cls = "border-2 border-fp-danger bg-fp-danger/10 text-fp-text";
+                } else {
+                  cls = "opacity-40";
+                }
+              }
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  disabled={disabled}
+                  onClick={() => handleAnswer(i)}
+                  className={`fp-answer flex min-h-[64px] items-center gap-3.5 px-5 py-4 text-left text-[16px] font-medium ${cls}`}
+                >
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/[0.05] text-[14px] font-bold text-fp-text-dim">
+                    {["A", "B", "C", "D"][i]}
+                  </span>
+                  <span className="flex-1 leading-snug">{answer}</span>
+                  {phase === "answer" && i === current.correctAnswer && (
+                    <span className="font-bold text-fp-success text-lg" aria-hidden="true">✓</span>
+                  )}
+                  {phase === "answer" && i === selected && i !== current.correctAnswer && (
+                    <span className="font-bold text-fp-danger text-lg" aria-hidden="true">✗</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         {/* Explication */}
         {phase === "answer" && current.explanation && (

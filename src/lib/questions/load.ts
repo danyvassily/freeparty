@@ -42,8 +42,18 @@ export function listLanguages(): string[] {
   }
 }
 
-/** Charge toutes les questions d'une langue (défaut : fr) */
+const datasetCache = new Map<string, LoadedDataset>();
+
+/** Réinitialise le cache mémoire des questions (utile pour tests / scripts) */
+export function clearQuestionsCache(): void {
+  datasetCache.clear();
+}
+
+/** Charge toutes les questions d'une langue (défaut : fr) avec mise en cache mémoire */
 export function loadQuestions(language = "fr"): LoadedDataset {
+  const cached = datasetCache.get(language);
+  if (cached) return cached;
+
   const root = resolveQuestionsRoot();
   const langDir = path.join(root, language);
   const result: LoadedDataset = { questions: [], files: [], errors: [] };
@@ -91,6 +101,11 @@ export function loadQuestions(language = "fr"): LoadedDataset {
       file: langDir,
       message: e instanceof Error ? e.message : String(e),
     });
+  }
+
+  // Met en cache uniquement si aucune erreur critique de chargement global
+  if (result.questions.length > 0) {
+    datasetCache.set(language, result);
   }
 
   return result;

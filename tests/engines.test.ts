@@ -8,6 +8,8 @@ import { auditDebatePrompt, filterPassingPrompts } from "@/lib/debate/quality";
 import { pickTimelineSet } from "@/lib/game/timeline-data";
 import { pickWyrPair } from "@/lib/game/wyr-data";
 import { pickGuessItem } from "@/lib/game/guess-data";
+import { loadQuestions, clearQuestionsCache } from "@/lib/questions/load";
+import { loadDebatePrompts, clearDebateCache } from "@/lib/debate/load";
 import type { Question } from "@/lib/questions/schema";
 import type { DebatePrompt } from "@/lib/debate/schema";
 
@@ -176,5 +178,33 @@ describe("Contenus sociaux (WYR / Guess / Timeline)", () => {
       if (!isSorted) mixed++;
     }
     expect(mixed).toBeGreaterThan(0);
+  });
+});
+
+describe("Cache mémoire des jeux de données", () => {
+  it("loadQuestions met en cache le dataset après le premier appel et clearQuestionsCache le vide", () => {
+    clearQuestionsCache();
+    const d1 = loadQuestions("fr");
+    const d2 = loadQuestions("fr");
+    expect(d1).toBe(d2); // Même référence d'objet en mémoire (cache instantané)
+    expect(d1.questions.length).toBeGreaterThan(2000);
+
+    clearQuestionsCache();
+    const d3 = loadQuestions("fr");
+    expect(d3).not.toBe(d1); // Nouvelle instance après purge
+    expect(d3.questions.length).toBe(d1.questions.length);
+  });
+
+  it("loadDebatePrompts met en cache les prompts de débat et clearDebateCache le vide", () => {
+    clearDebateCache();
+    const p1 = loadDebatePrompts("fr");
+    const p2 = loadDebatePrompts("fr");
+    expect(p1).toBe(p2); // Même référence d'objet en mémoire
+    expect(p1.prompts.length).toBeGreaterThan(50);
+
+    clearDebateCache();
+    const p3 = loadDebatePrompts("fr");
+    expect(p3).not.toBe(p1); // Nouvelle instance après purge
+    expect(p3.prompts.length).toBe(p1.prompts.length);
   });
 });

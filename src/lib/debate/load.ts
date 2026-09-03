@@ -13,7 +13,17 @@ export interface LoadedDebates {
   errors: Array<{ file: string; message: string }>;
 }
 
+const debateCache = new Map<string, LoadedDebates>();
+
+/** Réinitialise le cache mémoire des débats */
+export function clearDebateCache(): void {
+  debateCache.clear();
+}
+
 export function loadDebatePrompts(language = "fr"): LoadedDebates {
+  const cached = debateCache.get(language);
+  if (cached) return cached;
+
   const langDir = path.join(DEBATES_ROOT, language);
   const result: LoadedDebates = { prompts: [], errors: [] };
   if (!fs.existsSync(langDir)) return result;
@@ -46,6 +56,11 @@ export function loadDebatePrompts(language = "fr"): LoadedDebates {
       result.errors.push({ file: filePath, message: e instanceof Error ? e.message : String(e) });
     }
   }
+
+  if (result.prompts.length > 0) {
+    debateCache.set(language, result);
+  }
+
   return result;
 }
 
