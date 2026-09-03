@@ -3,19 +3,19 @@
 /**
  * JOUXTA — Mode Profil Psycho (Analyse Psychologique)
  * Test introspectif et décalé de 18 scénarios pour révéler son archétype de soirée.
+ * Supporte le jeu en Solo et le Pass-and-Play multi-joueurs avec bilan comparatif.
  */
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  PSYCHO_QUESTIONS,
-} from "@/lib/game/psycho-data";
+import { useGameStore, makePlayer, type Player } from "@/lib/store/game";
+import { PSYCHO_QUESTIONS } from "@/lib/game/psycho-data";
 import {
   calculatePsychoProfile,
   generatePsychoShareText,
   type PsychoProfileResult,
 } from "@/lib/game/psycho-engine";
 import { sound } from "@/lib/audio/sound-engine";
-import { PillBadge, Confetti } from "@/components/ui/primitives";
+import { PillBadge, Confetti, PlayerDot } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import {
   ChevronLeft,
@@ -29,9 +29,10 @@ import {
   Heart,
   Flame,
   ArrowRight,
+  Users,
 } from "lucide-react";
 
-type Phase = "intro" | "playing" | "analyzing" | "report";
+type Phase = "playing" | "analyzing" | "report";
 
 const ANALYZING_STEPS = [
   "Analyse de vos réflexes sociaux et de vos dilemmes…",
@@ -42,22 +43,41 @@ const ANALYZING_STEPS = [
 
 export function PsychoGame() {
   const router = useRouter();
+  const config = useGameStore((s) => s.config);
 
-  const [phase, setPhase] = useState<Phase>("intro");
+  const players: Player[] = useMemo(() => {
+    if (config?.players && config.players.length > 0) {
+      return config.players;
+    }
+    return [makePlayer(0, "Joueur 1")];
+  }, [config?.players]);
+
+  const [activePlayerIndex, setActivePlayerIndex] = useState(0);
+  const [completedProfiles, setCompletedProfiles] = useState<Record<string, PsychoProfileResult>>({});
+  const [phase, setPhase] = useState<Phase>("playing");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
   const [analyzingStep, setAnalyzingStep] = useState(0);
   const [copied, setCopied] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  const currentQuestion = PSYCHO_QUESTIONS[currentIndex];
+  const currentPlayer = players[activePlayerIndex] ?? players[0];
+  const nextPlayer = players[activePlayerIndex + 1];
+  const isLastPlayer = activePlayerIndex >= players.length - 1;
+
+  const currentQuestion = PSYCHO_QUESTIONS[currentIndex] ?? PSYCHO_QUESTIONS[0];
   const progressPercent = Math.round(((currentIndex + 1) / PSYCHO_QUESTIONS.length) * 100);
 
-  // Résultat calculé dès que les 18 questions sont répondues
+  // Profil du joueur actif calculé
   const profileResult: PsychoProfileResult | null = useMemo(() => {
-    if (answers.length < PSYCHO_QUESTIONS.length) return null;
-    return calculatePsychoProfile(answers);
-  }, [answers]);
+    if (completedProfiles[currentPlayer.id]) {
+      return completedProfiles[currentPlayer.id];
+    }
+    if (answers.length >= PSYCHO_QUESTIONS.length) {
+      return calculatePsychoProfile(answers);
+    }
+    return null;
+  }, [completedProfiles, currentPlayer.id, answers]);
 
   // Phase d'analyse animée
   useEffect(() => {
@@ -74,7 +94,7 @@ export function PsychoGame() {
         sound.playTick();
         return s + 1;
       });
-    }, 600);
+    }, 550);
 
     return () => clearInterval(interval);
   }, [phase]);
@@ -88,6 +108,8 @@ export function PsychoGame() {
     if (currentIndex < PSYCHO_QUESTIONS.length - 1) {
       setCurrentIndex((i) => i + 1);
     } else {
+      const res = calculatePsychoProfile(nextAnswers);
+      setCompletedProfiles((prev) => ({ ...prev, [currentPlayer.id]: res }));
       setPhase("analyzing");
       setAnalyzingStep(0);
     }
@@ -100,8 +122,28 @@ export function PsychoGame() {
     }
   }
 
-  function handleRestart() {
+  function handleNextPlayerTurn() {
+    if (!nextPlayer) return;
     sound.playLineMove();
+    setActivePlayerIndex((i) => i + 1);
+    setAnswers([]);
+    setCurrentIndex(0);
+    setPhase("playing");
+    setShowConfetti(false);
+  }
+
+  function handleRestartCurrent() {
+    sound.playLineMove();
+    setAnswers([]);
+    setCurrentIndex(0);
+    setPhase("playing");
+    setShowConfetti(false);
+  }
+
+  function handleRestartAll() {
+    sound.playLineMove();
+    setActivePlayerIndex(0);
+    setCompletedProfiles({});
     setAnswers([]);
     setCurrentIndex(0);
     setPhase("playing");
@@ -110,7 +152,7 @@ export function PsychoGame() {
 
   async function handleCopyShare() {
     if (!profileResult) return;
-    const text = generatePsychoShareText(profileResult);
+    const text = generatePsychoShareText(profileResult, currentPlayer.name);
     try {
       if (navigator.clipboard) {
         await navigator.clipboard.writeText(text);
@@ -124,77 +166,13 @@ export function PsychoGame() {
   }
 
   // ==========================================
-  // ÉCRAN 1 : INTRO
-  // ==========================================
-  if (phase === "intro") {
-    return (
-      <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col justify-center px-4 sm:px-6 py-10 animate-rise">
-        <div className="flex items-center justify-between">
-          <button
-            type="button"
-            onClick={() => router.push("/play/local")}
-            className="fp-btn-ghost inline-flex items-center gap-1.5 px-3 py-1.5 text-sm"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            <span>Tous les modes</span>
-          </button>
-          <PillBadge>Psychologie Sociale</PillBadge>
-        </div>
-
-        <section className="mt-8 rounded-[2rem] border border-fp-border bg-white p-6 sm:p-10 shadow-xl text-center">
-          <div className="flex justify-center">
-            <KawaiiMascot theme="thinking" size={110} animation="wobble" />
-          </div>
-
-          <span className="mt-6 inline-block text-xs font-black uppercase tracking-[0.2em] text-fp-primary">
-            Test Introspectif & Piquant
-          </span>
-          <h1 className="mt-2 text-3xl sm:text-4xl font-black tracking-tight text-fp-text">
-            Quel est votre véritable profil psychologique ?
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-fp-text-dim max-w-lg mx-auto">
-            18 scénarios réels et dilemmes sociaux sans langue de bois. Zéro bonne réponse, zéro filtre : découvrez votre archétype dominant, vos jauges de tempérament et votre face cachée en soirée.
-          </p>
-
-          <div className="mt-8 grid grid-cols-3 gap-2 sm:gap-4 text-center">
-            <div className="rounded-xl bg-black/[0.03] p-3">
-              <span className="block text-xl font-black text-fp-primary">18</span>
-              <span className="text-xs font-bold text-fp-text-dim">Dilemmes</span>
-            </div>
-            <div className="rounded-xl bg-black/[0.03] p-3">
-              <span className="block text-xl font-black text-emerald-600">8</span>
-              <span className="text-xs font-bold text-fp-text-dim">Archétypes</span>
-            </div>
-            <div className="rounded-xl bg-black/[0.03] p-3">
-              <span className="block text-xl font-black text-purple-600">100%</span>
-              <span className="text-xs font-bold text-fp-text-dim">Personnel</span>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => {
-              sound.playCorrect();
-              setPhase("playing");
-            }}
-            className="fp-btn-primary mt-8 w-full py-4 text-lg font-bold shadow-lg gap-2"
-          >
-            <span>Démarrer l&apos;Analyse</span>
-            <ArrowRight className="h-5 w-5" />
-          </button>
-        </section>
-      </main>
-    );
-  }
-
-  // ==========================================
-  // ÉCRAN 2 : QUESTIONNAIRE EN COURS
+  // ÉCRAN 1 : QUESTIONNAIRE EN COURS
   // ==========================================
   if (phase === "playing") {
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-4 sm:px-6 py-6 animate-rise">
-        {/* En-tête et barre de progression */}
-        <div className="flex items-center justify-between">
+        {/* En-tête et joueur actif */}
+        <div className="flex items-center justify-between gap-3">
           <button
             type="button"
             onClick={() => router.push("/play/local")}
@@ -203,27 +181,46 @@ export function PsychoGame() {
             <ChevronLeft className="h-4 w-4" />
             <span>Quitter</span>
           </button>
-          <span className="text-sm font-bold text-fp-text-dim tabular-nums">
-            Question {currentIndex + 1} sur {PSYCHO_QUESTIONS.length}
-          </span>
+
+          <div className="flex items-center gap-2 rounded-full border border-fp-border bg-white px-3 py-1 shadow-xs">
+            <PlayerDot name={currentPlayer.name} colorIndex={currentPlayer.color} size={22} />
+            <span className="text-xs font-black text-fp-text truncate max-w-[130px]">
+              {currentPlayer.name}
+            </span>
+          </div>
+
           <PillBadge>{currentQuestion.theme}</PillBadge>
         </div>
 
         {/* Barre de progression */}
-        <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-fp-border/60">
-          <div
-            className="h-full bg-gradient-to-r from-fp-primary to-purple-600 transition-all duration-300 ease-out"
-            style={{ width: `${progressPercent}%` }}
-          />
+        <div className="mt-4">
+          <div className="flex items-center justify-between text-xs font-extrabold text-fp-text-dim mb-1.5">
+            <span>
+              Question {currentIndex + 1} sur {PSYCHO_QUESTIONS.length}
+            </span>
+            <span>{progressPercent}%</span>
+          </div>
+          <div className="h-2 w-full overflow-hidden rounded-full bg-fp-border/60">
+            <div
+              className="h-full bg-gradient-to-r from-fp-primary to-purple-600 transition-all duration-300 ease-out"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
         </div>
 
         {/* Scénario & Question */}
         <section className="mt-6 flex-1 flex flex-col justify-center">
           <div className="rounded-3xl border border-fp-border bg-white p-6 sm:p-8 shadow-sm">
-            <span className="text-xs font-black uppercase tracking-wider text-fp-primary">
-              Scénario #{currentIndex + 1}
-            </span>
-            <h2 className="mt-2 text-xl sm:text-2xl font-bold leading-snug text-fp-text">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-xs font-black uppercase tracking-wider text-fp-primary">
+                Dilemme #{currentIndex + 1}
+              </span>
+              <span className="text-xs font-bold text-fp-text-dim">
+                Choix personnel
+              </span>
+            </div>
+
+            <h2 className="mt-3 text-xl sm:text-2xl font-bold leading-snug text-fp-text">
               {currentQuestion.situation}
             </h2>
 
@@ -279,7 +276,7 @@ export function PsychoGame() {
   }
 
   // ==========================================
-  // ÉCRAN 3 : ANALYSE EN COURS (TRANSITION)
+  // ÉCRAN 2 : ANALYSE EN COURS (TRANSITION)
   // ==========================================
   if (phase === "analyzing") {
     return (
@@ -288,7 +285,7 @@ export function PsychoGame() {
         <div className="mt-8 flex items-center justify-center gap-2">
           <div className="h-4 w-4 animate-spin rounded-full border-2 border-fp-border border-t-fp-primary" />
           <span className="text-sm font-bold uppercase tracking-widest text-fp-primary">
-            Analyse Psychologique
+            Analyse de {currentPlayer.name}
           </span>
         </div>
         <p className="mt-3 text-lg font-bold text-fp-text min-h-[3.5rem] flex items-center justify-center">
@@ -299,11 +296,13 @@ export function PsychoGame() {
   }
 
   // ==========================================
-  // ÉCRAN 4 : RAPPORT ANALYTIQUE COMPLET
+  // ÉCRAN 3 : RAPPORT ANALYTIQUE COMPLET
   // ==========================================
   if (phase === "report" && profileResult) {
     const { primaryArchetype, secondaryArchetype, primaryPercentage, secondaryPercentage, axes } =
       profileResult;
+
+    const completedEntries = Object.entries(completedProfiles);
 
     return (
       <main className="mx-auto min-h-dvh w-full max-w-3xl px-4 sm:px-6 py-8 animate-rise">
@@ -319,7 +318,10 @@ export function PsychoGame() {
             <ChevronLeft className="h-4 w-4" />
             <span>Tous les modes</span>
           </button>
-          <PillBadge>Bilan Psychologique</PillBadge>
+          <div className="flex items-center gap-2">
+            <PlayerDot name={currentPlayer.name} colorIndex={currentPlayer.color} size={20} />
+            <PillBadge>Bilan de {currentPlayer.name}</PillBadge>
+          </div>
         </div>
 
         {/* CARTE MAJEURE : ARCHÉTYPE DOMINANT */}
@@ -358,101 +360,103 @@ export function PsychoGame() {
           </div>
         </section>
 
-        {/* RADIOGRAPHIE COMPORTEMENTALE (3 BLOCS) */}
+        {/* GRILLE D'ANALYSE COMPORTEMENTALE */}
         <section className="mt-6 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-5 shadow-xs">
-            <div className="flex items-center gap-2 text-amber-700 font-bold text-sm">
-              <Zap className="h-4 w-4 shrink-0" />
-              <span>Super-Pouvoir</span>
+          <div className="rounded-3xl border border-emerald-200 bg-emerald-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-2 text-emerald-800 font-extrabold text-sm">
+              <Zap className="h-4 w-4 fill-current" />
+              <span>Superpouvoir</span>
             </div>
-            <p className="mt-2 text-sm text-fp-text leading-snug">
+            <p className="mt-2 text-sm text-emerald-950 font-semibold leading-relaxed">
               {primaryArchetype.superpower}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-rose-200 bg-rose-50/50 p-5 shadow-xs">
-            <div className="flex items-center gap-2 text-rose-700 font-bold text-sm">
-              <ShieldAlert className="h-4 w-4 shrink-0" />
-              <span>Talon d&apos;Achille</span>
+          <div className="rounded-3xl border border-amber-200 bg-amber-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-2 text-amber-800 font-extrabold text-sm">
+              <ShieldAlert className="h-4 w-4 fill-current" />
+              <span>Angle Mort</span>
             </div>
-            <p className="mt-2 text-sm text-fp-text leading-snug">
+            <p className="mt-2 text-sm text-amber-950 font-semibold leading-relaxed">
               {primaryArchetype.blindSpot}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-blue-200 bg-blue-50/50 p-5 shadow-xs">
-            <div className="flex items-center gap-2 text-blue-700 font-bold text-sm">
-              <GlassWater className="h-4 w-4 shrink-0" />
-              <span>Survie en Soirée</span>
+          <div className="rounded-3xl border border-blue-200 bg-blue-50/50 p-5 shadow-xs">
+            <div className="flex items-center gap-2 text-blue-800 font-extrabold text-sm">
+              <GlassWater className="h-4 w-4" />
+              <span>Règle de Survie</span>
             </div>
-            <p className="mt-2 text-sm text-fp-text leading-snug">
+            <p className="mt-2 text-sm text-blue-950 font-semibold leading-relaxed">
               {primaryArchetype.partySurvival}
             </p>
           </div>
         </section>
 
-        {/* JAUGES DE TEMPÉRAMENT (4 AXES) */}
+        {/* SECTION DES 4 JAUGES DE TEMPÉRAMENT */}
         <section className="mt-6 rounded-3xl border border-fp-border bg-white p-6 sm:p-8 shadow-sm">
-          <div className="flex items-center gap-2 font-bold text-base text-fp-text">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-lg font-black text-fp-text">Vos Jauges de Tempérament</h2>
+              <p className="text-xs text-fp-text-dim mt-0.5">
+                Calcul précis basé sur vos 18 choix réels
+              </p>
+            </div>
             <Sparkles className="h-5 w-5 text-fp-primary" />
-            <span>Vos Jauges de Tempérament</span>
           </div>
-          <p className="mt-1 text-xs text-fp-text-dim">
-            Mesure normalisée de vos réflexes décisionnels sur 18 situations clés.
-          </p>
 
           <div className="mt-6 space-y-5">
-            {/* Audace */}
+            {/* Axe Audace */}
             <div>
-              <div className="flex justify-between text-xs font-bold">
+              <div className="flex justify-between text-xs font-bold text-fp-text mb-1.5">
                 <span className="text-fp-text-dim">Prudence ({100 - axes.audace}%)</span>
-                <span className="text-fp-text font-black">Audace ({axes.audace}%)</span>
+                <span className="text-fp-primary font-black">Audace ({axes.audace}%)</span>
               </div>
-              <div className="mt-1.5 h-3 w-full rounded-full bg-black/[0.06] overflow-hidden">
+              <div className="h-3 w-full overflow-hidden rounded-full bg-fp-border/50">
                 <div
-                  className="h-full bg-gradient-to-r from-sky-400 to-indigo-600 rounded-full transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transition-all duration-700"
                   style={{ width: `${axes.audace}%` }}
                 />
               </div>
             </div>
 
-            {/* Empathie */}
+            {/* Axe Empathie */}
             <div>
-              <div className="flex justify-between text-xs font-bold">
+              <div className="flex justify-between text-xs font-bold text-fp-text mb-1.5">
                 <span className="text-fp-text-dim">Calcul ({100 - axes.empathie}%)</span>
-                <span className="text-fp-text font-black">Empathie ({axes.empathie}%)</span>
+                <span className="text-emerald-600 font-black">Empathie ({axes.empathie}%)</span>
               </div>
-              <div className="mt-1.5 h-3 w-full rounded-full bg-black/[0.06] overflow-hidden">
+              <div className="h-3 w-full overflow-hidden rounded-full bg-fp-border/50">
                 <div
-                  className="h-full bg-gradient-to-r from-slate-400 to-emerald-500 rounded-full transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-teal-500 to-emerald-600 rounded-full transition-all duration-700"
                   style={{ width: `${axes.empathie}%` }}
                 />
               </div>
             </div>
 
-            {/* Ordre */}
+            {/* Axe Ordre */}
             <div>
-              <div className="flex justify-between text-xs font-bold">
+              <div className="flex justify-between text-xs font-bold text-fp-text mb-1.5">
                 <span className="text-fp-text-dim">Chaos ({100 - axes.ordre}%)</span>
-                <span className="text-fp-text font-black">Ordre & Méthode ({axes.ordre}%)</span>
+                <span className="text-amber-600 font-black">Ordre & Méthode ({axes.ordre}%)</span>
               </div>
-              <div className="mt-1.5 h-3 w-full rounded-full bg-black/[0.06] overflow-hidden">
+              <div className="h-3 w-full overflow-hidden rounded-full bg-fp-border/50">
                 <div
-                  className="h-full bg-gradient-to-r from-amber-400 to-blue-600 rounded-full transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-amber-500 to-orange-600 rounded-full transition-all duration-700"
                   style={{ width: `${axes.ordre}%` }}
                 />
               </div>
             </div>
 
-            {/* Idéalisme */}
+            {/* Axe Idéalisme */}
             <div>
-              <div className="flex justify-between text-xs font-bold">
+              <div className="flex justify-between text-xs font-bold text-fp-text mb-1.5">
                 <span className="text-fp-text-dim">Réalisme Cynique ({100 - axes.idealisme}%)</span>
-                <span className="text-fp-text font-black">Idéalisme ({axes.idealisme}%)</span>
+                <span className="text-purple-600 font-black">Idéalisme ({axes.idealisme}%)</span>
               </div>
-              <div className="mt-1.5 h-3 w-full rounded-full bg-black/[0.06] overflow-hidden">
+              <div className="h-3 w-full overflow-hidden rounded-full bg-fp-border/50">
                 <div
-                  className="h-full bg-gradient-to-r from-violet-400 to-rose-500 rounded-full transition-all duration-500"
+                  className="h-full bg-gradient-to-r from-violet-500 to-purple-600 rounded-full transition-all duration-700"
                   style={{ width: `${axes.idealisme}%` }}
                 />
               </div>
@@ -460,12 +464,12 @@ export function PsychoGame() {
           </div>
         </section>
 
-        {/* DYNAMIQUES RELATIONNELLES (BINÔME & NÉMÉSIS) */}
+        {/* RELATIONS SOCIALES : ALLIÉ & NÉMÉSIS */}
         <section className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="rounded-3xl border border-emerald-200 bg-emerald-50/40 p-6 shadow-sm">
             <div className="flex items-center gap-2 text-emerald-800 font-extrabold text-sm">
               <Heart className="h-4.5 w-4.5 fill-current" />
-              <span>Binôme Idéal</span>
+              <span>Allié Idéal en Soirée</span>
             </div>
             <h3 className="mt-2 text-lg font-black text-fp-text">
               {primaryArchetype.idealPair.name}
@@ -489,8 +493,54 @@ export function PsychoGame() {
           </div>
         </section>
 
-        {/* ACTIONS & PARTAGE */}
+        {/* SI PLUSIEURS JOUEURS ONT FINI : SYNTHÈSE DU GROUPE */}
+        {completedEntries.length > 1 && (
+          <section className="mt-6 rounded-3xl border border-fp-border bg-white p-6 shadow-sm">
+            <div className="flex items-center gap-2">
+              <Users className="h-5 w-5 text-fp-primary" />
+              <h2 className="text-lg font-black text-fp-text">Profils du groupe ({completedEntries.length})</h2>
+            </div>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {completedEntries.map(([playerId, pResult]) => {
+                const pl = players.find((p) => p.id === playerId);
+                return (
+                  <div
+                    key={playerId}
+                    className="flex items-center justify-between rounded-2xl border border-fp-border bg-fp-bg/40 p-3.5"
+                  >
+                    <div className="flex items-center gap-3">
+                      <PlayerDot name={pl?.name ?? "Joueur"} colorIndex={pl?.color ?? 0} size={28} />
+                      <div>
+                        <p className="text-sm font-black text-fp-text">{pl?.name ?? "Joueur"}</p>
+                        <p className="text-xs text-fp-primary font-extrabold">
+                          {pResult.primaryArchetype.emoji} {pResult.primaryArchetype.name}
+                        </p>
+                      </div>
+                    </div>
+                    <span className="text-xs font-bold text-fp-text-dim">
+                      {pResult.primaryPercentage}%
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* ACTIONS & PASS-AND-PLAY */}
         <section className="mt-8 flex flex-col sm:flex-row gap-3">
+          {/* Passer au joueur suivant si multi-joueurs */}
+          {!isLastPlayer && nextPlayer && (
+            <button
+              type="button"
+              onClick={handleNextPlayerTurn}
+              className="fp-btn-primary flex-1 py-4 text-base font-bold shadow-lg gap-2"
+            >
+              <span>Au tour de {nextPlayer.name}</span>
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          )}
+
           <button
             type="button"
             onClick={handleCopyShare}
@@ -501,28 +551,34 @@ export function PsychoGame() {
             {copied ? (
               <>
                 <Check className="h-5 w-5" />
-                <span>Profil copié dans le presse-papier !</span>
+                <span>Bilan de {currentPlayer.name} copié !</span>
               </>
             ) : (
               <>
                 <Share2 className="h-5 w-5" />
-                <span>Copier ma fiche de profil</span>
+                <span>Partager mon bilan</span>
               </>
             )}
           </button>
 
           <button
             type="button"
-            onClick={handleRestart}
+            onClick={isLastPlayer && completedEntries.length > 1 ? handleRestartAll : handleRestartCurrent}
             className="fp-btn-secondary py-4 px-6 text-base font-bold gap-2"
           >
             <RotateCcw className="h-5 w-5" />
-            <span>Recommencer</span>
+            <span>{isLastPlayer && completedEntries.length > 1 ? "Recommencer tout" : "Recommencer"}</span>
           </button>
         </section>
       </main>
     );
   }
 
-  return null;
+  // Fallback sûr : ne jamais laisser un écran blanc
+  return (
+    <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center px-6 text-center animate-rise">
+      <div className="h-8 w-8 animate-spin rounded-full border-[3px] border-fp-border border-t-fp-primary" />
+      <p className="mt-4 text-sm text-fp-text-dim">Initialisation du test psychologique…</p>
+    </main>
+  );
 }

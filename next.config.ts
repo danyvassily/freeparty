@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     "/api/**/*": ["./questions/**/*", "./debates/**/*"],
     "/**/*": ["./questions/**/*", "./debates/**/*"],
   },
+  images: {
+    unoptimized: true,
+  },
   turbopack: {
     root: projectRoot,
   },

@@ -110,4 +110,23 @@ describe("Psycho Mode — Moteur de Calcul (Engine)", () => {
     expect(text).toContain("Binôme Idéal :");
     expect(text).toContain("Némésis Toxique :");
   });
+
+  it("chaque archétype psycho utilise un thème kawaii valide et existant", () => {
+    const validThemes = [
+      "quiz",
+      "debate",
+      "party",
+      "speed",
+      "referee",
+      "thinking",
+      "waiting",
+      "happy",
+      "sad",
+      "conference",
+      "sweating",
+    ];
+    for (const arch of Object.values(PSYCHO_ARCHETYPES)) {
+      expect(validThemes).toContain(arch.kawaiiTheme);
+    }
+  });
 });
