@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { BRAND } from "@/lib/brand";
 import { LanguageHydrator } from "@/components/providers/language-hydrator";
+import { UpdateChecker } from "@/components/providers/update-checker";
 
 export const metadata: Metadata = {
   title: `${BRAND.name} — ${BRAND.tagline}`,
@@ -48,6 +49,7 @@ export default function RootLayout({
     <html lang="fr" data-scroll-behavior="smooth">
       <body className="antialiased">
         <LanguageHydrator />
+        <UpdateChecker />
         {children}
       </body>
     </html>
