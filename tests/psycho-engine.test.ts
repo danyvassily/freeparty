@@ -6,6 +6,8 @@ import {
 } from "@/lib/game/psycho-data";
 import {
   calculatePsychoProfile,
+  calculatePsychoCompatibility,
+  calculatePsychoGroup,
   generatePsychoShareText,
 } from "@/lib/game/psycho-engine";
 
@@ -57,6 +59,26 @@ describe("Psycho Mode — Datasets & Schemas", () => {
 });
 
 describe("Psycho Mode — Moteur de Calcul (Engine)", () => {
+  it("ne fabrique pas de majorité sans réponses valides", () => {
+    const result = calculatePsychoProfile([-1, 8, NaN]);
+    expect(result.completedQuestions).toBe(0);
+    expect(result.primaryPercentage).toBe(50);
+    expect(result.secondaryPercentage).toBe(50);
+    expect(result.axes.audace).toBe(50);
+  });
+
+  it("calcule une affinité symétrique et une dynamique de groupe bornée", () => {
+    const a = calculatePsychoProfile(new Array(18).fill(0));
+    const b = calculatePsychoProfile(new Array(18).fill(1));
+    expect(calculatePsychoCompatibility(a, b).affinity).toBe(calculatePsychoCompatibility(b, a).affinity);
+    expect(calculatePsychoCompatibility(a, b).affinity).toBeGreaterThanOrEqual(0);
+    expect(calculatePsychoCompatibility(a, b).affinity).toBeLessThanOrEqual(100);
+    const group = calculatePsychoGroup([a, b]);
+    expect(group.diversity).toBeGreaterThanOrEqual(0);
+    expect(group.diversity).toBeLessThanOrEqual(100);
+    expect(Object.values(group.averages).every((value) => value >= 0 && value <= 100)).toBe(true);
+  });
+
   it("calcule un profil valide avec une série de réponses fixes (option 0 partout)", () => {
     const answers = new Array(18).fill(0);
     const profile = calculatePsychoProfile(answers);

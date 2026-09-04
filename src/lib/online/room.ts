@@ -39,6 +39,7 @@ export interface OnlineSession {
   category: string | null;
   question_count: number;
   max_players: number;
+  buzzer_player_id: string | null;
 }
 
 export interface OnlinePlayer {
@@ -398,9 +399,50 @@ export async function hostPushQuestion(
       question_index: index,
       answers_revealed: revealed,
       state_version: currentStateVersion + 1,
+      ...(!revealed ? { buzzer_player_id: null } : {}),
     })
     .eq("id", sessionId);
   if (error) throw new Error(`Push question: ${error.message}`);
+}
+
+/** Nettoie la manche précédente tout en conservant le salon et son code. */
+export async function resetOnlineRound(sessionId: string, mode?: string): Promise<OnlineSession> {
+  const sb = getSupabaseBrowser();
+  if (!sb) throw new Error("Supabase non configuré");
+  const { data, error } = await sb.rpc("reset_online_round", { p_session_id: sessionId, p_mode: mode ?? null });
+  if (error) throw new Error(`Nouvelle manche: ${error.message}`);
+  const session = Array.isArray(data) ? data[0] : data;
+  if (!session) throw new Error("Nouvelle manche: réponse du serveur vide");
+  return session as OnlineSession;
+}
+
+/** Le premier appel transactionnel gagne le buzzer. */
+export async function claimRoomBuzzer(sessionId: string, playerId: string): Promise<boolean> {
+  const sb = getSupabaseBrowser();
+  if (!sb) return false;
+  const { data, error } = await sb.rpc("claim_room_buzzer", { p_session_id: sessionId, p_player_id: playerId });
+  if (error) throw new Error(`Buzzer: ${error.message}`);
+  return data === true;
+}
+
+export async function submitRoomBuzzerAnswer(
+  sessionId: string,
+  playerId: string,
+  questionIndex: number,
+  answerIndex: number,
+  responseTimeMs: number,
+): Promise<boolean> {
+  const sb = getSupabaseBrowser();
+  if (!sb) return false;
+  const { data, error } = await sb.rpc("submit_room_buzzer_answer", {
+    p_session_id: sessionId,
+    p_player_id: playerId,
+    p_question_index: questionIndex,
+    p_answer_index: answerIndex,
+    p_response_time_ms: responseTimeMs,
+  });
+  if (error) throw new Error(`Réponse buzzer: ${error.message}`);
+  return data === true;
 }
 
 /** Le host met à jour les réponses (correct/wrong) et les scores — en parallèle */

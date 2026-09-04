@@ -21,8 +21,10 @@ import { localizeQuestion } from "@/lib/questions/localize";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { ProgressRing, TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
+import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { AlertCircle, Flag, ChevronLeft, HandMetal, Check, X } from "lucide-react";
 import { sound } from "@/lib/audio/sound-engine";
+import { isQuizAnswerCorrect, playerQuestionCount, startQuestionCountdown } from "@/lib/game/quiz-round";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";
@@ -59,8 +61,8 @@ export function QuizGame({ mode }: QuizGameProps) {
   /** Scores locaux par joueur : { [playerId]: { score, correct } } */
   const [scores, setScores] = useState<Record<string, { score: number; correct: number }>>({});
   const [reloadKey, setReloadKey] = useState(0);
+  const [sessionId, setSessionId] = useState(() => config?.sessionId ?? crypto.randomUUID());
 
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const answeredRef = useRef(false);
   const handleAnswerRef = useRef<(i: number) => void>(() => {});
 
@@ -106,13 +108,17 @@ export function QuizGame({ mode }: QuizGameProps) {
         setIndex(0);
         setSelected(null);
         setScores({});
+        setError(null);
+        setReportOpen(false);
+        setReportDone(false);
+        answeredRef.current = false;
         const data = await loadGameQuestions({
-          count: config?.questionCount ?? 10,
+          count: mode === "rapidfire" ? 20 : mode === "truefalse" ? 10 : config?.questionCount ?? 10,
           category: config?.category,
           difficulties: config?.difficulty && config.difficulty !== "mixed" ? [config.difficulty] : undefined,
           players,
           history: entries,
-          sessionId: config?.sessionId ?? crypto.randomUUID(),
+          sessionId,
         });
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
@@ -137,7 +143,6 @@ export function QuizGame({ mode }: QuizGameProps) {
     load();
     return () => {
       cancelled = true;
-      if (timerRef.current) clearInterval(timerRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reloadKey]);
@@ -145,6 +150,7 @@ export function QuizGame({ mode }: QuizGameProps) {
   const goNext = useCallback(() => {
     answeredRef.current = false;
     setSelected(null);
+    setReportDone(false);
     if (isLast) {
       setPhase("results");
     } else {
@@ -163,9 +169,9 @@ export function QuizGame({ mode }: QuizGameProps) {
     void markQuestionDisplayed({
       question: currentRaw,
       players,
-      sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+      sessionId,
     });
-  }, [phase, currentRaw, players, config?.sessionId]);
+  }, [phase, currentRaw, players, sessionId]);
 
   const handleAnswer = useCallback(
     (answerIndex: number) => {
@@ -173,12 +179,7 @@ export function QuizGame({ mode }: QuizGameProps) {
       answeredRef.current = true;
       setSelected(answerIndex);
 
-      const correct =
-        mode === "truefalse" && tfAssertion
-          ? answerIndex === 0
-            ? tfAssertion.isTrue
-            : !tfAssertion.isTrue
-          : answerIndex === current.correctAnswer;
+      const correct = isQuizAnswerCorrect(answerIndex, currentRaw!.correctAnswer, tfAssertion?.isTrue);
 
       if (correct) {
         sound.playCorrect();
@@ -196,17 +197,16 @@ export function QuizGame({ mode }: QuizGameProps) {
       }));
 
       void markQuestionAnswered({
-        question: current,
+        question: currentRaw!,
         player: activePlayer,
-        sessionId: config?.sessionId ?? "00000000-0000-4000-8000-000000000000",
+        sessionId,
         correct,
-        responseTimeMs: Math.round((timePerQuestion - timeLeft) * 1000),
+        responseTimeMs: answerIndex === -1 ? timePerQuestion * 1000 : Math.round((timePerQuestion - timeLeft) * 1000),
       });
 
       setPhase("answer");
-      setTimeout(goNext, 1800);
     },
-    [current, activePlayer, config?.sessionId, timePerQuestion, timeLeft, mode, tfAssertion, goNext],
+    [current, currentRaw, activePlayer, sessionId, timePerQuestion, timeLeft, tfAssertion],
   );
 
   // Référence toujours fraîche pour le timer
@@ -216,25 +216,15 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   // Timer
   useEffect(() => {
-    if (phase !== "playing" || !current) return;
-    timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          if (timerRef.current) clearInterval(timerRef.current);
-          if (!answeredRef.current) {
-            answeredRef.current = true;
-            setSelected(-1);
-            handleAnswerRef.current(-1);
-          }
-          return 0;
-        }
-        return t - 1;
-      });
-    }, 1000);
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [phase, index, current]);
+    if (phase !== "playing" || !currentRaw) return;
+    return startQuestionCountdown(timePerQuestion, setTimeLeft, () => handleAnswerRef.current(-1));
+  }, [phase, currentRaw, timePerQuestion]);
+
+  useEffect(() => {
+    if (phase !== "answer" || reportOpen) return;
+    const timeout = setTimeout(goNext, 1800);
+    return () => clearTimeout(timeout);
+  }, [phase, reportOpen, goNext]);
 
   function startTurn() {
     setTimeLeft(timePerQuestion);
@@ -301,7 +291,7 @@ export function QuizGame({ mode }: QuizGameProps) {
               <PlayerDot name={r.player.name} colorIndex={r.player.color} size={32} />
               <span className="flex-1 text-[15px] font-medium text-fp-text">{r.player.name}</span>
               <span className="text-[13px] text-fp-text-dim tabular-nums">
-                {r.correct}/{Math.ceil(total / players.length)} ✓
+                {r.correct}/{playerQuestionCount(total, players.findIndex((p) => p.id === r.player.id), players.length)} ✓
               </span>
               <span className="w-14 text-right text-[15px] font-semibold text-fp-text tabular-nums">
                 {r.score} pts
@@ -310,11 +300,23 @@ export function QuizGame({ mode }: QuizGameProps) {
           ))}
         </div>
 
+        <RoundRoastPanel
+          seed={sessionId}
+          players={ranking.map((entry) => ({
+            id: entry.player.id,
+            name: entry.player.name,
+            score: entry.score,
+            correct: entry.correct,
+            total: playerQuestionCount(total, players.findIndex((player) => player.id === entry.player.id), players.length),
+            colorIndex: entry.player.color,
+          }))}
+        />
+
         <div className="mt-8 flex w-full gap-3">
           <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">
             Accueil
           </button>
-          <button type="button" onClick={() => setReloadKey((k) => k + 1)} className="fp-btn-primary flex-1 py-3 text-[15px]">
+          <button type="button" onClick={() => { setSessionId(crypto.randomUUID()); setReloadKey((k) => k + 1); }} className="fp-btn-primary flex-1 py-3 text-[15px]">
             Rejouer
           </button>
         </div>
@@ -366,11 +368,7 @@ export function QuizGame({ mode }: QuizGameProps) {
 
   const isCorrect =
     phase === "answer" &&
-    (mode === "truefalse" && tfAssertion
-      ? selected === 0
-        ? tfAssertion.isTrue
-        : !tfAssertion.isTrue
-      : selected === current.correctAnswer);
+    isQuizAnswerCorrect(selected, currentRaw.correctAnswer, tfAssertion?.isTrue);
   const isWrong = phase === "answer" && !isCorrect;
 
   // ---------- Jeu ----------
@@ -434,7 +432,7 @@ export function QuizGame({ mode }: QuizGameProps) {
               <KawaiiMascot theme="happy" size={62} animation="pop" />
               <div>
                 <p className="text-[14px] font-bold text-fp-success">Excellent ! Bonne réponse 🎉</p>
-                <p className="text-[12px] text-fp-text-dim">+1 point pour votre score !</p>
+                <p className="text-[12px] text-fp-text-dim">+10 points pour votre score !</p>
               </div>
             </>
           )}

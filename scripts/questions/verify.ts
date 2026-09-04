@@ -1,32 +1,28 @@
 /**
- * questions:verify — vérification factuelle (spec §20).
- * En local : marque les questions issues de sources fiables comme verified
- * et produit un rapport de vérification exploitable.
+ * questions:verify — contrôle de cohérence des verdicts enregistrés.
+ * Une provenance déclarée ne constitue pas une vérification factuelle.
  */
 import { loadQuestions, logSection, writeJson } from "./lib";
+import verdicts from "../../questions/.audit-verdicts.json";
 
 const dataset = loadQuestions();
-logSection("VÉRIFICATION FACTUELLE");
+logSection("COHÉRENCE DES CORRECTIONS ENREGISTRÉES");
 console.log(`Questions chargées : ${dataset.questions.length}`);
 
-const verified: string[] = [];
-const unverified: string[] = [];
-for (const q of dataset.questions) {
-  if (q.verification.status === "verified" && q.source.provider === "wikidata") {
-    verified.push(q.id);
-  } else {
-    unverified.push(q.id);
-  }
-}
+const byId = new Map(dataset.questions.map((q) => [q.id, q]));
+const failures = verdicts.filter((v) => !Number.isInteger(v.correct_idx) || v.correct_idx < 0 || v.correct_idx > 3 || byId.get(v.id)?.correctAnswer !== v.correct_idx);
+const verdictIds = new Set(verdicts.map((v) => v.id));
+const uncovered = dataset.questions.filter((q) => !verdictIds.has(q.id));
 
 writeJson("questions/.verification-report.json", {
   generatedAt: new Date().toISOString(),
-  verifiedCount: verified.length,
-  unverifiedCount: unverified.length,
-  verified,
-  unverified: unverified.slice(0, 200),
-  note: "Vérification basée sur la provenance (source + licence). En production, la vérification humaine/algo complète les sources externes (spec §20).",
+  checkedVerdicts: verdicts.length,
+  inconsistentVerdicts: failures,
+  withoutRecordedVerdict: uncovered.length,
+  loadErrors: dataset.errors,
+  note: "Contrôle d'index par rapport aux verdicts du dépôt, sans nouvelle vérification des sources. Les questions sans verdict ne sont pas déclarées fausses ou vérifiées par ce contrôle.",
 });
-console.log(`Verified : ${verified.length}`);
-console.log(`Unverified : ${unverified.length}`);
+console.log(`Verdicts contrôlés : ${verdicts.length} | incohérences : ${failures.length}`);
+console.log(`Questions sans verdict enregistré : ${uncovered.length}`);
 console.log("Rapport : questions/.verification-report.json");
+if (failures.length || dataset.errors.length || byId.size !== dataset.questions.length || verdictIds.size !== verdicts.length) process.exitCode = 1;

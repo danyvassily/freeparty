@@ -11,6 +11,8 @@ import { useGameStore, makePlayer, type Player } from "@/lib/store/game";
 import { PSYCHO_QUESTIONS } from "@/lib/game/psycho-data";
 import {
   calculatePsychoProfile,
+  calculatePsychoCompatibility,
+  calculatePsychoGroup,
   generatePsychoShareText,
   type PsychoProfileResult,
 } from "@/lib/game/psycho-engine";
@@ -32,7 +34,14 @@ import {
   Users,
 } from "lucide-react";
 
-type Phase = "playing" | "analyzing" | "report";
+type Phase = "intro" | "playing" | "analyzing" | "report";
+type PsychoExperience = "individual" | "duo" | "group";
+
+const EXPERIENCE_META: Record<PsychoExperience, { name: string; description: string; minPlayers: number; emoji: string }> = {
+  individual: { name: "Portrait individuel", description: "Découvre ton archétype, tes forces et tes contrastes.", minPlayers: 1, emoji: "🪞" },
+  duo: { name: "Affinité duo", description: "Compare deux profils et leurs points d'accord ou de friction.", minPlayers: 2, emoji: "💞" },
+  group: { name: "Dynamique de groupe", description: "Observe l'énergie moyenne et la diversité de toute l'équipe.", minPlayers: 3, emoji: "🫶" },
+};
 
 const ANALYZING_STEPS = [
   "Analyse de vos réflexes sociaux et de vos dilemmes…",
@@ -54,7 +63,8 @@ export function PsychoGame() {
 
   const [activePlayerIndex, setActivePlayerIndex] = useState(0);
   const [completedProfiles, setCompletedProfiles] = useState<Record<string, PsychoProfileResult>>({});
-  const [phase, setPhase] = useState<Phase>("playing");
+  const [phase, setPhase] = useState<Phase>("intro");
+  const [experience, setExperience] = useState<PsychoExperience>("individual");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
   const [analyzingStep, setAnalyzingStep] = useState(0);
@@ -82,18 +92,18 @@ export function PsychoGame() {
   // Phase d'analyse animée
   useEffect(() => {
     if (phase !== "analyzing") return;
+    let step = 0;
     const interval = setInterval(() => {
-      setAnalyzingStep((s) => {
-        if (s >= ANALYZING_STEPS.length - 1) {
-          clearInterval(interval);
-          setPhase("report");
-          setShowConfetti(true);
-          sound.playVictory();
-          return s;
-        }
-        sound.playTick();
-        return s + 1;
-      });
+      if (step >= ANALYZING_STEPS.length - 1) {
+        clearInterval(interval);
+        setPhase("report");
+        setShowConfetti(true);
+        sound.playVictory();
+        return;
+      }
+      step += 1;
+      setAnalyzingStep(step);
+      sound.playTick();
     }, 550);
 
     return () => clearInterval(interval);
@@ -130,6 +140,7 @@ export function PsychoGame() {
     setCurrentIndex(0);
     setPhase("playing");
     setShowConfetti(false);
+    setCopied(false);
   }
 
   function handleRestartCurrent() {
@@ -138,6 +149,12 @@ export function PsychoGame() {
     setCurrentIndex(0);
     setPhase("playing");
     setShowConfetti(false);
+    setCopied(false);
+    setCompletedProfiles((previous) => {
+      const next = { ...previous };
+      delete next[currentPlayer.id];
+      return next;
+    });
   }
 
   function handleRestartAll() {
@@ -148,6 +165,7 @@ export function PsychoGame() {
     setCurrentIndex(0);
     setPhase("playing");
     setShowConfetti(false);
+    setCopied(false);
   }
 
   async function handleCopyShare() {
@@ -163,6 +181,41 @@ export function PsychoGame() {
     } catch {
       // Fallback
     }
+  }
+
+  if (phase === "intro") {
+    return (
+      <main className="mx-auto min-h-dvh w-full max-w-3xl px-4 py-8 sm:px-6 animate-rise">
+        <button type="button" onClick={() => router.push("/play/local")} className="fp-btn-ghost inline-flex items-center gap-1.5 text-sm">
+          <ChevronLeft className="h-4 w-4" /> Tous les modes
+        </button>
+        <div className="mt-7 text-center">
+          <KawaiiMascot theme="thinking" size={105} animation="float" />
+          <p className="mt-4 text-xs font-black uppercase tracking-[0.18em] text-fp-primary">Profil Psycho</p>
+          <h1 className="mt-2 text-3xl font-black text-fp-text sm:text-4xl">Quelle expérience voulez-vous vivre ?</h1>
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-fp-text-dim">Trois lectures ludiques basées sur les mêmes dilemmes. Aucun résultat n&apos;est un diagnostic psychologique.</p>
+        </div>
+        <div className="mt-8 grid gap-3 sm:grid-cols-3">
+          {(Object.entries(EXPERIENCE_META) as Array<[PsychoExperience, (typeof EXPERIENCE_META)[PsychoExperience]]>).map(([id, meta]) => {
+            const available = players.length >= meta.minPlayers;
+            return (
+              <button
+                key={id}
+                type="button"
+                disabled={!available}
+                onClick={() => { setExperience(id); setPhase("playing"); }}
+                className="fp-card min-h-48 p-5 text-left transition hover:-translate-y-0.5 hover:border-fp-primary/35 disabled:cursor-not-allowed disabled:opacity-45"
+              >
+                <span className="text-3xl" aria-hidden="true">{meta.emoji}</span>
+                <span className="mt-5 block text-lg font-black text-fp-text">{meta.name}</span>
+                <span className="mt-2 block text-sm leading-relaxed text-fp-text-dim">{meta.description}</span>
+                <span className="mt-4 block text-xs font-bold text-fp-primary">{available ? `${players.length} joueur${players.length > 1 ? "s" : ""} prêt${players.length > 1 ? "s" : ""}` : `Minimum ${meta.minPlayers} joueurs`}</span>
+              </button>
+            );
+          })}
+        </div>
+      </main>
+    );
   }
 
   // ==========================================
@@ -191,6 +244,8 @@ export function PsychoGame() {
 
           <PillBadge>{currentQuestion.theme}</PillBadge>
         </div>
+
+        <p className="mt-4 text-xs text-fp-text-dim">Un jeu de soirée, pas un test psychologique validé ni un diagnostic.</p>
 
         {/* Barre de progression */}
         <div className="mt-4">
@@ -303,6 +358,14 @@ export function PsychoGame() {
       profileResult;
 
     const completedEntries = Object.entries(completedProfiles);
+    const completedResults = players.map((player) => completedProfiles[player.id]).filter(Boolean);
+    const compatibility = experience === "duo" && completedResults.length >= 2
+      ? calculatePsychoCompatibility(completedResults[0], completedResults[1])
+      : null;
+    const groupResult = experience === "group" && completedResults.length >= 3
+      ? calculatePsychoGroup(completedResults)
+      : null;
+    const axisLabels: Record<string, string> = { audace: "audace", empathie: "empathie", ordre: "organisation", idealisme: "idéalisme" };
 
     return (
       <main className="mx-auto min-h-dvh w-full max-w-3xl px-4 sm:px-6 py-8 animate-rise">
@@ -523,6 +586,24 @@ export function PsychoGame() {
                   </div>
                 );
               })}
+            </div>
+          </section>
+        )}
+
+        {isLastPlayer && compatibility && (
+          <section className="mt-6 rounded-3xl border border-pink-200 bg-pink-50/60 p-6 text-center shadow-sm">
+            <p className="text-sm font-black uppercase tracking-wider text-pink-700">Affinité ludique du duo</p>
+            <p className="mt-2 text-5xl font-black text-fp-text">{compatibility.affinity}%</p>
+          <p className="mt-3 text-sm text-fp-text-dim">Votre terrain commun : <strong>{axisLabels[compatibility.strongestSharedAxis]}</strong>. Votre contraste le plus marqué : <strong>{axisLabels[compatibility.biggestDifferenceAxis]}</strong>.</p>
+          </section>
+        )}
+
+        {isLastPlayer && groupResult && (
+          <section className="mt-6 rounded-3xl border border-violet-200 bg-violet-50/60 p-6 shadow-sm">
+            <div className="flex items-center gap-2"><Users className="h-5 w-5 text-violet-700" /><h2 className="text-lg font-black text-fp-text">Dynamique du groupe</h2></div>
+            <p className="mt-3 text-sm text-fp-text-dim">Énergie dominante : <strong>{axisLabels[groupResult.dominantAxis]}</strong> · indice de diversité : <strong>{groupResult.diversity}/100</strong>.</p>
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {Object.entries(groupResult.averages).map(([axis, value]) => <div key={axis} className="rounded-2xl bg-white p-3"><p className="text-xs font-bold capitalize text-fp-text-dim">{axisLabels[axis]}</p><p className="mt-1 text-xl font-black text-fp-text">{value}%</p></div>)}
             </div>
           </section>
         )}

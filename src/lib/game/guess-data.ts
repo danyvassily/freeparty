@@ -22,7 +22,7 @@ export const GUESS_ITEMS: GuessItem[] = [
   { id: "g9", answer: "Jules Verne", hints: ["C'est un écrivain", "Il est français", "Il a écrit des romans d'aventures", "Il a imaginé Vingt mille lieues sous les mers"], category: "personnage" },
   { id: "g10", answer: "Le cacao", hints: ["C'est un ingrédient", "Il vient d'une fève", "Il pousse sous les tropiques", "Il sert à fabriquer le chocolat"], category: "objet" },
   { id: "g11", answer: "La Grande Muraille de Chine", hints: ["C'est un monument", "Il est en Asie", "Il s'étend sur des milliers de kilomètres", "Il a été construit pour protéger la Chine des invasions"], category: "monument" },
-  { id: "g12", answer: "Le pingouin", hints: ["C'est un animal", "Il vit dans l'hémisphère sud", "Il ne vole pas", "Il marche en se dandinant et plonge très bien"], category: "animal" },
+  { id: "g12", answer: "Le manchot", hints: ["C'est un animal", "Il vit dans l'hémisphère sud", "Il ne vole pas", "Il marche en se dandinant et plonge très bien"], category: "animal" },
   { id: "g13", answer: "Marie Curie", hints: ["C'est une scientifique", "Elle a travaillé sur la radioactivité", "Elle a reçu deux prix Nobel", "Elle a découvert le polonium et le radium"], category: "personnage" },
   { id: "g14", answer: "Le vélo", hints: ["C'est un objet", "Il a deux roues", "Il fonctionne à la force humaine", "Il a été inventé au XIXe siècle et a une chaîne"], category: "objet" },
   { id: "g15", answer: "Le désert du Sahara", hints: ["C'est un lieu", "Il est en Afrique", "C'est un désert de sable", "C'est le plus grand désert chaud du monde"], category: "lieu" },

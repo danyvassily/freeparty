@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [new URL("https://media.giphy.com/media/**")],
   },
   turbopack: {
     root: projectRoot,

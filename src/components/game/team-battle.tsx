@@ -17,6 +17,7 @@ import {
 } from "@/lib/questions/question-client";
 import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { TimerBar, Confetti, PillBadge } from "@/components/ui/primitives";
+import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { Trophy, Swords, AlertCircle, ChevronLeft } from "lucide-react";
 
 export function TeamBattleGame() {
@@ -207,6 +208,15 @@ export function TeamBattleGame() {
               <div className="mt-1 text-[13px] text-fp-text-dim">Équipe B</div>
             </div>
           </div>
+        </div>
+        <div className="w-full max-w-xl">
+          <RoundRoastPanel
+            seed={`${config?.sessionId ?? "team-battle"}-${reloadKey}`}
+            players={[
+              { id: "team-a", name: "Équipe A", score: scoreA, colorIndex: 0 },
+              { id: "team-b", name: "Équipe B", score: scoreB, colorIndex: 3 },
+            ]}
+          />
         </div>
         <div className="mt-8 flex w-full max-w-sm gap-3">
           <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>

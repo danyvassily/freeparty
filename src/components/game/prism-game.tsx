@@ -31,6 +31,7 @@ import { TimerBar, Confetti, PlayerDot, PillBadge } from "@/components/ui/primit
 import { LaLigneGame } from "./la-ligne";
 import { BuzzerScreen } from "./buzzer-screen";
 import { LeCutModal } from "./le-cut-modal";
+import { RoundRoastPanel } from "./round-roast-panel";
 import { ArtworkViewer } from "./artwork-viewer";
 import { Trophy, AlertCircle, ChevronLeft, Zap } from "lucide-react";
 
@@ -497,6 +498,17 @@ export function PrismGame() {
             </div>
           ))}
         </div>
+
+        <RoundRoastPanel
+          seed={`prism-${reloadKey}`}
+          players={ranking.map((player) => ({
+            id: player.id,
+            name: player.name,
+            score: player.score,
+            correct: player.correctAnswers,
+            colorIndex: player.avatarColor,
+          }))}
+        />
 
         <div className="mt-8 flex w-full gap-3">
           <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">

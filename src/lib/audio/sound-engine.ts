@@ -47,6 +47,49 @@ class SoundEngine {
     }
   }
 
+  private playSignal(frequencies: number[], duration = 0.12, volume = 0.12) {
+    if (!this.soundEnabled) return;
+    const ctx = this.getContext();
+    if (!ctx) return;
+    const now = ctx.currentTime;
+    frequencies.forEach((frequency, index) => {
+      const start = now + index * duration * 0.72;
+      const oscillator = ctx.createOscillator();
+      const gain = ctx.createGain();
+      oscillator.type = "sine";
+      oscillator.frequency.setValueAtTime(frequency, start);
+      gain.gain.setValueAtTime(volume, start);
+      gain.gain.exponentialRampToValueAtTime(0.001, start + duration);
+      oscillator.connect(gain);
+      gain.connect(ctx.destination);
+      oscillator.start(start);
+      oscillator.stop(start + duration);
+    });
+  }
+
+  /** Nouvelle question reçue sur tous les appareils. */
+  public playQuestionIncoming() {
+    this.vibrate(15);
+    this.playSignal([440, 660], 0.1, 0.1);
+  }
+
+  /** Réponse envoyée et verrouillée. */
+  public playAnswerLocked() {
+    this.vibrate(18);
+    this.playSignal([620], 0.09, 0.09);
+  }
+
+  /** Tous les participants ont répondu : signal distinct pour l'hôte. */
+  public playAllAnswered() {
+    this.vibrate([18, 35, 18]);
+    this.playSignal([523.25, 659.25, 880], 0.1, 0.13);
+  }
+
+  /** Changement de mode ou retour collectif au salon. */
+  public playModeChanged() {
+    this.playSignal([392, 523.25], 0.12, 0.09);
+  }
+
   /**
    * Pression sur le Buzzer : impact immédiat, tactile et nerveux
    */

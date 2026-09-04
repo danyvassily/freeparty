@@ -11,6 +11,7 @@ import { pickTimelineSet } from "@/lib/game/timeline-data";
 import { useSettingsStore } from "@/lib/store/settings";
 import { useGameStore } from "@/lib/store/game";
 import { PlayerDot, PillBadge } from "@/components/ui/primitives";
+import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { ChevronLeft, Clock } from "lucide-react";
 
 export function TimelineGame() {
@@ -100,6 +101,15 @@ export function TimelineGame() {
             ))}
           </div>
         )}
+        <RoundRoastPanel
+          seed={`timeline-${setId}`}
+          players={ranking.map((entry) => ({
+            id: entry.player.id,
+            name: entry.player.name,
+            score: entry.score,
+            colorIndex: entry.player.color,
+          }))}
+        />
         <div className="mt-8 flex w-full gap-3">
           <button type="button" onClick={() => router.push("/")} className="fp-btn-secondary flex-1 py-3 text-[15px]">Accueil</button>
           <button type="button" onClick={replay} className="fp-btn-primary flex-1 py-3 text-[15px]">Rejouer</button>

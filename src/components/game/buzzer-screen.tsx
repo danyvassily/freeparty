@@ -5,13 +5,15 @@
  * Sur un appareil : chaque joueur a son propre bouton de buzz.
  * Mauvaise réponse = -50 pts et exclusion de la question.
  */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { Question } from "@/lib/questions/schema";
 import type { PrismPlayer } from "@/lib/game/prism-engine";
 import { sound } from "@/lib/audio/sound-engine";
 import { checkTypedAnswer } from "@/lib/game/prism-engine";
 import { PlayerDot } from "@/components/ui/primitives";
 import { Zap, Clock, Ban, Sparkles } from "lucide-react";
+import { PLAYER_COLORS } from "@/lib/store/game";
+import { startQuestionCountdown } from "@/lib/game/quiz-round";
 
 interface BuzzerScreenProps {
   question: Question;
@@ -43,26 +45,25 @@ export function BuzzerScreen({
   const isProgressive = !!question.progressiveClues && question.progressiveClues.length === 3;
   const isTypedMode = question.inputMode === "typed";
   const activePlayers = players.filter((p) => !lockouts.includes(p.id));
+  const submitRef = useRef(onSubmitAnswer);
+  useEffect(() => { submitRef.current = onSubmitAnswer; }, [onSubmitAnswer]);
+
+  useEffect(() => {
+    sound.playQuestionIncoming();
+  }, [question.id]);
 
   // Chrono 8s pour le joueur qui a buzzé
   useEffect(() => {
     if (!isAnswering || !lockedPlayerId) return;
 
-    const timer = setInterval(() => {
-      setAnswerTimeLeft((tl) => {
-        if (tl <= 1) {
-          clearInterval(timer);
-          sound.playWrong();
-          onSubmitAnswer(lockedPlayerId, false);
-          return 0;
-        }
-        if (tl <= 3) sound.playTick();
-        return tl - 1;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [isAnswering, lockedPlayerId, onSubmitAnswer]);
+    return startQuestionCountdown(8, (remaining) => {
+      setAnswerTimeLeft(remaining);
+      if (remaining <= 3 && remaining > 0) sound.playTick();
+    }, () => {
+      sound.playWrong();
+      submitRef.current(lockedPlayerId, false);
+    });
+  }, [isAnswering, lockedPlayerId]);
 
   function handleBuzzerClick(playerId: string) {
     if (isAnswering || lockouts.includes(playerId)) return;
@@ -155,7 +156,8 @@ export function BuzzerScreen({
       {/* Zone buzzer ou réponse */}
       {!isAnswering ? (
         <div className="my-4 flex w-full flex-col items-center">
-          <p className="mb-3 text-[13px] font-medium text-fp-text-dim">Qui a buzzé ?</p>
+          <p className="mb-1 text-[16px] font-black text-fp-text">Posez l&apos;appareil au centre</p>
+          <p className="mb-4 text-center text-[13px] text-fp-text-dim">Chaque joueur touche son propre bouton. Le premier appui verrouille la main.</p>
           <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
             {players.map((p) => {
               const locked = lockouts.includes(p.id);
@@ -165,14 +167,15 @@ export function BuzzerScreen({
                   type="button"
                   disabled={locked}
                   onClick={() => handleBuzzerClick(p.id)}
-                  className={`flex items-center justify-center gap-2 rounded-2xl py-4 transition-all active:scale-95 ${
+                  style={!locked ? { backgroundColor: PLAYER_COLORS[p.avatarColor % PLAYER_COLORS.length] } : undefined}
+                  className={`flex min-h-24 flex-col items-center justify-center gap-2 rounded-2xl px-2 py-4 transition-all active:scale-90 ${
                     locked
                       ? "bg-black/[0.03] text-fp-text-dim opacity-50"
-                      : "bg-fp-primary text-white shadow-md shadow-fp-primary/30 hover:bg-fp-primary-press"
+                      : "text-white shadow-md"
                   }`}
                 >
-                  {locked ? <Ban className="h-4 w-4" /> : <Zap className="h-4 w-4 fill-current" />}
-                  <span className="max-w-[90px] truncate text-[14px] font-semibold">{p.name}</span>
+                  {locked ? <Ban className="h-5 w-5" /> : <Zap className="h-7 w-7 fill-current" />}
+                  <span className="max-w-full truncate text-[15px] font-black">{locked ? `${p.name} éliminé` : `BUZZ · ${p.name}`}</span>
                 </button>
               );
             })}

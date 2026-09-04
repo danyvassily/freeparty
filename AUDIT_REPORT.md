@@ -2,7 +2,18 @@
 
 **Date :** 2026-09-02 · **Banque analysée :** `questions/fr/` — **2 081 questions** (66 fichiers JSON)  
 **Couverture de l'audit :** 100 % de la banque (Lots 1 à 10, 2 081 questions vérifiées)  
-**Verdict global :** 🟢 **RÉSOLU ET CONSOLIDÉ.** L'audit exhaustif de l'ensemble de la banque a identifié et corrigé la totalité des décalages d'indexation (`correctAnswer`). La banque de questions est désormais 100 % valide sur le schéma strict et factuellement exacte avec preuves documentées.
+**Portée du contrôle :** les corrections d'index sont enregistrées dans le dépôt. La validation du schéma et la concordance des index avec ces verdicts ne prouvent pas, à elles seules, que les 2 081 questions sont factuellement exactes. Les sources, formulations ambiguës et faits évolutifs nécessitent une vérification indépendante.
+
+## Contrôle complémentaire du 3 septembre 2026
+
+- Conservation des six commits jusqu'à `21a9dd8`, sans remplacement des corrections précédentes.
+- Collision d'identifiant entre deux variantes de la première épreuve de Squid Game corrigée ; les variantes conservent la même connaissance.
+- Correction de « pingouin » en « manchot » dans le jeu Indices (hors banque QCM).
+- `questions:verify` contrôle désormais les 537 verdicts enregistrés sans prétendre revalider leurs sources ; 1 544 questions ne sont pas couvertes par ces verdicts.
+- Tests de non-régression : unicité des identifiants, correspondance des verdicts, réponses de référence, expiration du chronomètre, Vrai/Faux sans réponse, décompte réel des tours et pourcentages Psycho.
+- Corrections de jeu : fin du blocage à zéro seconde, annulation des transitions après démontage, pause pendant un signalement, nouvelle session au rejeu, demande de 20 questions en Rapid Fire et affichage cohérent des points.
+- Psycho : retrait des effets secondaires des fonctions de mise à jour React, nettoyage du résultat au rejeu, pourcentages fidèles aux scores, avertissement sur la nature ludique du résultat.
+- Aucun déploiement ni import dans une base Supabase distante effectué. Les parties en ligne et la configuration d'authentification de production ne sont pas certifiées par ces contrôles locaux.
 
 ---
 
@@ -50,7 +61,7 @@ Après application de l'ensemble des verdicts via `scripts/questions/audit/apply
 | **3** | D | 401 | 19,3 % |
 | **Total** | | **2 081** | **100 %** |
 
-*(Note : le moteur de jeu `jouxta` mélange aléatoirement les options pour les joueurs à l'exécution lors de la distribution des cartes, garantissant une imprévisibilité totale en jeu).*
+*(Cette distribution décrit les fichiers sources, pas une garantie d'imprévisibilité de l'ordre des options affichées en jeu.)*
 
 ### 3.2 Validation et Tests
 - **Schéma Zod strict (`npm run questions:validate`) :** 66 fichiers vérifiés, 2 081 questions valides, 0 erreur.

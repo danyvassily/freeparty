@@ -29,6 +29,9 @@ import {
   hostPushQuestion,
   hostMarkAnswers,
   submitAnswer,
+  claimRoomBuzzer,
+  submitRoomBuzzerAnswer,
+  resetOnlineRound,
   finishRoom,
   leaveRoom,
   refreshAnswers,
@@ -44,6 +47,7 @@ import type { Question } from "@/lib/questions/schema";
 import type { GameMode } from "@/lib/store/game";
 import { TimerBar, Confetti, PlayerDot, SegmentControl, SectionTitle, PillBadge } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
+import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { AppIcon } from "@/components/ui/icons";
 import { AppNavigation } from "@/components/ui/app-navigation";
 import {
@@ -60,8 +64,10 @@ import {
   RotateCcw,
   User,
   ShieldCheck,
+  Zap,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth/use-auth";
+import { sound } from "@/lib/audio/sound-engine";
 
 type View = "entry" | "create" | "lobby" | "playing" | "results";
 
@@ -122,10 +128,13 @@ export function OnlineRoom() {
   const autoJoinedRef = useRef(false);
 
   const isHost = myPlayer?.is_host === true;
+  const isBuzzerMode = currentMode === "prism";
+  const buzzerPlayer = players.find((player) => player.id === session?.buzzer_player_id);
+  const iOwnBuzzer = Boolean(myPlayer && session?.buzzer_player_id === myPlayer.id);
   const currentQuestion: Question | null =
     questions[index()] ?? (session?.current_question as Question | null) ?? null;
   const revealed = session?.answers_revealed ?? false;
-  const questionCount = session?.question_count ?? questions.length ?? 10;
+  const questionCount = currentMode === "rapidfire" ? 20 : session?.question_count ?? questions.length ?? 10;
   const timePerQuestion = currentMode === "rapidfire" ? 6 : 15;
 
   function index() {
@@ -198,6 +207,18 @@ export function OnlineRoom() {
     };
   }, [session?.state_version, view, revealed, hasCurrentQuestion, timePerQuestion]);
 
+  useEffect(() => {
+    if (view === "playing" && hasCurrentQuestion && !revealed) sound.playQuestionIncoming();
+  }, [view, session?.question_index, hasCurrentQuestion, revealed]);
+
+  const answeredCountForCurrent = answers.filter((answer) => answer.question_index === index()).length;
+  const allAnsweredRef = useRef(false);
+  useEffect(() => {
+    const allAnswered = !isBuzzerMode && players.length > 0 && answeredCountForCurrent >= players.length;
+    if (isHost && allAnswered && !allAnsweredRef.current && !revealed) sound.playAllAnswered();
+    allAnsweredRef.current = allAnswered;
+  }, [answeredCountForCurrent, isBuzzerMode, isHost, players.length, revealed]);
+
   async function create() {
     if (joiningRef.current) return;
     joiningRef.current = true;
@@ -251,48 +272,81 @@ export function OnlineRoom() {
     setJoinCode(roomFromUrl.toUpperCase());
   }, [view, roomFromUrl]);
 
-  async function startGame() {
+  function clearRoundClientState() {
+    questionsRef.current = [];
+    setQuestions([]);
+    setAnswers([]);
+    setAnswered(false);
+    setSelected(null);
+    if (session) localStorage.removeItem(`freeparty-questions-${session.id}`);
+  }
+
+  async function startGame(nextMode: GameMode = currentMode) {
     if (!session || !isHost) return;
     setError(null);
+    setBusy(true);
     try {
-      let qs = questionsRef.current;
-      if (qs.length === 0) {
-        const data = await loadGameQuestions({
-          count: session.question_count ?? 10,
-          category: session.category ?? undefined,
-          players: savedPlayers.slice(0, 1),
-          history: entries,
-          sessionId: session.id,
-          onlineSessionId: session.id,
-          ai: true,
-        });
-        qs = data.questions ?? [];
-        questionsRef.current = qs;
-        setQuestions(qs);
-        try {
-          localStorage.setItem(`freeparty-questions-${session.id}`, JSON.stringify(qs));
-        } catch {
-          // localStorage non bloquant
-        }
+      clearRoundClientState();
+      const resetSession = await resetOnlineRound(session.id, nextMode);
+      sessionRef.current = resetSession;
+      setSession(resetSession);
+      setCurrentMode(nextMode);
+      const requestedCount = nextMode === "rapidfire" ? 20 : resetSession.question_count ?? 10;
+      const data = await loadGameQuestions({
+        count: requestedCount,
+        category: resetSession.category ?? undefined,
+        players: savedPlayers.slice(0, 1),
+        history: entries,
+        sessionId: resetSession.id,
+        onlineSessionId: resetSession.id,
+        ai: true,
+      });
+      const qs = data.questions ?? [];
+      questionsRef.current = qs;
+      setQuestions(qs);
+      try {
+        localStorage.setItem(`freeparty-questions-${resetSession.id}`, JSON.stringify(qs));
+      } catch {
+        // localStorage non bloquant
       }
 
       if (qs.length === 0) throw new Error("Aucune question disponible");
-      await hostPushQuestion(session.id, qs[0], 0, false, session.state_version ?? 0);
+      await hostPushQuestion(resetSession.id, qs[0], 0, false, resetSession.state_version ?? 0);
       setView("playing");
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function buzz() {
+    if (!session || !myPlayer || !isBuzzerMode || session.buzzer_player_id) return;
+    try {
+      const won = await claimRoomBuzzer(session.id, myPlayer.id);
+      if (won) sound.playBuzzerPress();
+      else sound.playWrong();
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : "Buzzer indisponible");
     }
   }
 
   async function sendAnswer(i: number) {
     if (answered || revealed || !session || !myPlayer) return;
+    if (isBuzzerMode && !iOwnBuzzer) return;
     setSelected(i);
     setAnswered(true);
     const elapsed = elapsedSince(startRef.current);
     try {
-      await submitAnswer(session.id, myPlayer.id, index(), i, elapsed);
-    } catch {
-      // idempotent
+      const accepted = isBuzzerMode
+        ? await submitRoomBuzzerAnswer(session.id, myPlayer.id, index(), i, elapsed)
+        : (await submitAnswer(session.id, myPlayer.id, index(), i, elapsed), true);
+      if (!accepted) throw new Error("Un autre joueur a pris le buzzer avant toi");
+      sound.playAnswerLocked();
+    } catch (cause) {
+      setAnswered(false);
+      setSelected(null);
+      setError(cause instanceof Error ? cause.message : "La réponse n'a pas pu être enregistrée");
     }
     if (timerRef.current) clearInterval(timerRef.current);
   }
@@ -358,15 +412,15 @@ export function OnlineRoom() {
   }
 
   // Retour au salon persistant après match (sans recréer de salon !)
-  async function handleReturnToLobby() {
-    questionsRef.current = [];
-    setQuestions([]);
+  async function handleReturnToLobby(nextMode: GameMode = currentMode) {
+    clearRoundClientState();
     if (session && isHost) {
-      const sb = getSupabaseBrowser();
-      if (sb) {
-        await sb.from("game_sessions").update({ phase: "lobby", question_index: -1, current_question: null, answers_revealed: false }).eq("id", session.id);
-      }
+      const resetSession = await resetOnlineRound(session.id, nextMode);
+      sessionRef.current = resetSession;
+      setSession(resetSession);
+      setCurrentMode(nextMode);
     }
+    sound.playModeChanged();
     setView("lobby");
   }
 
@@ -380,6 +434,7 @@ export function OnlineRoom() {
         await sb.from("game_sessions").update({ mode: newMode }).eq("id", session.id);
       }
     }
+    sound.playModeChanged();
   }
 
   // Inviter un ami
@@ -406,7 +461,7 @@ export function OnlineRoom() {
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const qLocal = q ? localizeQuestion(q, lang) : null;
   const correctAnswer = revealed ? q?.correctAnswer : undefined;
-  const answeredCount = answers.filter((a) => a.question_index === index()).length;
+  const answeredCount = answeredCountForCurrent;
   const pseudoValid = pseudo.trim().length >= 2;
 
   // ---------- Vue 1 : Entrée ----------
@@ -728,6 +783,29 @@ export function OnlineRoom() {
           )}
         </div>
 
+        {isHost && (
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5" aria-label="Sélection rapide du mode">
+            {AVAILABLE_ONLINE_MODES.map((mode) => {
+              const option = MODE_META[mode];
+              const active = currentMode === mode;
+              return (
+                <button
+                  key={mode}
+                  type="button"
+                  onClick={() => void handleChangeMode(mode)}
+                  aria-pressed={active}
+                  className={`rounded-2xl border p-3 text-left transition active:scale-[0.98] ${
+                    active ? "border-fp-primary bg-fp-primary/10 ring-1 ring-fp-primary/20" : "border-fp-border bg-white hover:border-fp-primary/35"
+                  }`}
+                >
+                  <AppIcon name={option.icon} className={`h-5 w-5 ${active ? "text-fp-primary" : "text-fp-text-dim"}`} />
+                  <span className="mt-2 block text-[12px] font-extrabold leading-tight text-fp-text">{option.name}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         {/* Modal de sélection de mode pour l'hôte */}
         {showModeModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-xs animate-fade-in">
@@ -850,12 +928,12 @@ export function OnlineRoom() {
         {isHost ? (
           <button
             type="button"
-            onClick={startGame}
-            disabled={players.length < 1}
+            onClick={() => void startGame(currentMode)}
+            disabled={players.length < 1 || busy}
             className="fp-btn-primary mt-8 flex w-full items-center justify-center gap-2 py-4 text-[17px]"
           >
             <Play className="h-5 w-5 fill-white" />
-            <span>Lancer la partie ({players.length} joueur{players.length > 1 ? "s" : ""})</span>
+            <span>{busy ? "Préparation de nouvelles questions…" : `Lancer la partie (${players.length} joueur${players.length > 1 ? "s" : ""})`}</span>
           </button>
         ) : (
           <div className="fp-card mt-8 p-5 text-center flex flex-col items-center justify-center">
@@ -972,8 +1050,31 @@ export function OnlineRoom() {
                 {qLocal!.question}
               </h1>
 
-              {/* 4 Cartes de réponses */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {isBuzzerMode && !session.buzzer_player_id && !revealed && (
+                <div className="mt-7 rounded-3xl border border-fp-primary/20 bg-fp-primary/5 p-5 text-center">
+                  <p className="text-sm font-bold text-fp-text">Tu connais la réponse ?</p>
+                  <p className="mt-1 text-xs text-fp-text-dim">Le premier appui est verrouillé pour tout le salon.</p>
+                  <button
+                    type="button"
+                    onClick={() => void buzz()}
+                    className="mx-auto mt-4 flex min-h-28 w-full max-w-sm items-center justify-center gap-3 rounded-[2rem] bg-fp-danger px-6 text-2xl font-black tracking-wide text-white shadow-xl shadow-fp-danger/25 transition active:scale-95"
+                  >
+                    <Zap className="h-8 w-8 fill-current" />
+                    BUZZER
+                  </button>
+                </div>
+              )}
+
+              {isBuzzerMode && session.buzzer_player_id && !iOwnBuzzer && !revealed && (
+                <div className="mt-7 rounded-3xl border border-fp-warning/30 bg-fp-warning/10 p-6 text-center">
+                  <KawaiiMascot theme="waiting" size={70} animation="wobble" />
+                  <p className="mt-3 text-base font-black text-fp-text">{buzzerPlayer?.name ?? "Un joueur"} a buzzé en premier</p>
+                  <p className="mt-1 text-sm text-fp-text-dim">Sa réponse est en cours. Prépare-toi pour la prochaine question.</p>
+                </div>
+              )}
+
+              {/* 4 Cartes de réponses : tout le monde, ou seulement le gagnant du buzzer */}
+              {(!isBuzzerMode || iOwnBuzzer || revealed) && <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {qLocal!.answers.map((answer, i) => {
                   let cls = "text-fp-text";
                   if (revealed) {
@@ -1005,7 +1106,7 @@ export function OnlineRoom() {
                     </button>
                   );
                 })}
-              </div>
+              </div>}
 
               {/* Explication */}
               {revealed && qLocal?.explanation && (
@@ -1025,7 +1126,7 @@ export function OnlineRoom() {
                   <button
                     type="button"
                     onClick={reveal}
-                    disabled={!q}
+                    disabled={!q || (isBuzzerMode && answeredCount === 0)}
                     className="fp-btn-primary flex flex-1 items-center justify-center gap-2 py-4 text-[16px]"
                   >
                     <Eye className="h-5 w-5" />
@@ -1102,6 +1203,16 @@ export function OnlineRoom() {
           ))}
         </div>
 
+        <RoundRoastPanel
+          seed={`${session?.id ?? "online-round"}-${session?.state_version ?? 0}`}
+          players={sorted.map((player) => ({
+            id: player.id,
+            name: player.name,
+            score: player.score,
+            colorIndex: players.indexOf(player),
+          }))}
+        />
+
         {/* Contrôles Post-Game : Rejouer, Changer de mode, Retour au salon */}
         <div className="mt-8 space-y-3">
           {isHost ? (
@@ -1109,11 +1220,12 @@ export function OnlineRoom() {
               <div className="flex gap-3">
                 <button
                   type="button"
-                  onClick={startGame}
+                  onClick={() => void startGame(currentMode)}
+                  disabled={busy}
                   className="fp-btn-primary flex-1 py-4 text-[16px] flex items-center justify-center gap-2"
                 >
                   <Play className="h-5 w-5 fill-white" />
-                  <span>Rejouer ({currentMode})</span>
+                  <span>{busy ? "Nouvelles questions…" : `Rejouer · ${MODE_META[currentMode]?.name ?? currentMode}`}</span>
                 </button>
                 <button
                   type="button"
@@ -1125,9 +1237,29 @@ export function OnlineRoom() {
                 </button>
               </div>
 
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+                {AVAILABLE_ONLINE_MODES.map((mode) => {
+                  const option = MODE_META[mode];
+                  return (
+                    <button
+                      key={mode}
+                      type="button"
+                      disabled={busy}
+                      onClick={() => void startGame(mode)}
+                      className={`rounded-2xl border p-3 text-left transition active:scale-[0.98] ${
+                        mode === currentMode ? "border-fp-primary bg-fp-primary/10" : "border-fp-border bg-white"
+                      }`}
+                    >
+                      <AppIcon name={option.icon} className="h-5 w-5 text-fp-primary" />
+                      <span className="mt-2 block text-xs font-extrabold text-fp-text">Jouer à {option.name}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
               <button
                 type="button"
-                onClick={handleReturnToLobby}
+                onClick={() => void handleReturnToLobby()}
                 className="fp-btn-ghost w-full py-3 text-[15px] text-fp-primary font-semibold"
               >
                 Retour au salon
@@ -1139,13 +1271,9 @@ export function OnlineRoom() {
                 <p className="text-[14px] font-bold text-fp-text">Le groupe reste ensemble !</p>
                 <p className="text-[12px] text-fp-text-dim">En attente du prochain choix de l&apos;hôte…</p>
               </div>
-              <button
-                type="button"
-                onClick={handleReturnToLobby}
-                className="fp-btn-secondary w-full py-3.5 text-[15px]"
-              >
-                Retourner au salon
-              </button>
+              <p className="text-[12px] text-fp-text-dim">
+                Le salon se rouvrira automatiquement dès que l&apos;hôte choisira le prochain mode.
+              </p>
             </div>
           )}
 
@@ -1180,10 +1308,7 @@ export function OnlineRoom() {
                     <button
                       key={m}
                       type="button"
-                      onClick={() => {
-                        handleChangeMode(m);
-                        handleReturnToLobby();
-                      }}
+                      onClick={() => void handleReturnToLobby(m)}
                       className={`flex w-full items-center gap-3 p-3 rounded-xl text-left transition-all ${
                         currentMode === m ? "bg-fp-primary/10 border border-fp-primary/30" : "hover:bg-black/[0.03]"
                       }`}

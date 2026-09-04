@@ -26,6 +26,53 @@ export interface PsychoProfileResult {
   completedQuestions: number;
 }
 
+export interface PsychoCompatibilityResult {
+  affinity: number;
+  strongestSharedAxis: keyof PsychoAxesScores;
+  biggestDifferenceAxis: keyof PsychoAxesScores;
+}
+
+export interface PsychoGroupResult {
+  averages: PsychoAxesScores;
+  diversity: number;
+  dominantAxis: keyof PsychoAxesScores;
+}
+
+const PSYCHO_AXES = ["audace", "empathie", "ordre", "idealisme"] as const;
+
+/** Affinité ludique : proximité moyenne des quatre axes, sans valeur clinique. */
+export function calculatePsychoCompatibility(a: PsychoProfileResult, b: PsychoProfileResult): PsychoCompatibilityResult {
+  const differences = PSYCHO_AXES.map((axis) => ({ axis, value: Math.abs(a.axes[axis] - b.axes[axis]) }));
+  const averageDifference = differences.reduce((sum, item) => sum + item.value, 0) / differences.length;
+  const sorted = [...differences].sort((x, y) => x.value - y.value);
+  return {
+    affinity: Math.max(0, Math.min(100, Math.round(100 - averageDifference))),
+    strongestSharedAxis: sorted[0].axis,
+    biggestDifferenceAxis: sorted.at(-1)!.axis,
+  };
+}
+
+export function calculatePsychoGroup(profiles: PsychoProfileResult[]): PsychoGroupResult {
+  if (profiles.length === 0) {
+    return { averages: { audace: 50, empathie: 50, ordre: 50, idealisme: 50 }, diversity: 0, dominantAxis: "audace" };
+  }
+  const averages = Object.fromEntries(
+    PSYCHO_AXES.map((axis) => [axis, Math.round(profiles.reduce((sum, profile) => sum + profile.axes[axis], 0) / profiles.length)]),
+  ) as unknown as PsychoAxesScores;
+  const pairDifferences: number[] = [];
+  for (let a = 0; a < profiles.length; a++) {
+    for (let b = a + 1; b < profiles.length; b++) {
+      pairDifferences.push(PSYCHO_AXES.reduce((sum, axis) => sum + Math.abs(profiles[a].axes[axis] - profiles[b].axes[axis]), 0) / 4);
+    }
+  }
+  const dominantAxis = [...PSYCHO_AXES].sort((a, b) => averages[b] - averages[a])[0];
+  return {
+    averages,
+    diversity: pairDifferences.length ? Math.round(pairDifferences.reduce((sum, value) => sum + value, 0) / pairDifferences.length) : 0,
+    dominantAxis,
+  };
+}
+
 /**
  * Calcule le profil psychologique complet à partir des réponses (indices 0 à 3)
  */
@@ -79,9 +126,9 @@ export function calculatePsychoProfile(answers: number[]): PsychoProfileResult {
   const primaryId = sortedArchetypes[0] ?? "cameleon";
   const secondaryId = sortedArchetypes[1] ?? (primaryId === "cameleon" ? "diplomate" : "cameleon");
 
-  const topTwoPoints = archetypeScores[primaryId] + archetypeScores[secondaryId] || 1;
+  const topTwoPoints = archetypeScores[primaryId] + archetypeScores[secondaryId];
 
-  const primaryRatio = Math.round((archetypeScores[primaryId] / topTwoPoints) * 100);
+  const primaryRatio = topTwoPoints === 0 ? 50 : Math.round((archetypeScores[primaryId] / topTwoPoints) * 100);
   const secondaryRatio = 100 - primaryRatio;
 
   // Normalise les axes entre 0% et 100% (valeur neutre = 50%)
@@ -101,9 +148,9 @@ export function calculatePsychoProfile(answers: number[]): PsychoProfileResult {
 
   return {
     primaryArchetype: PSYCHO_ARCHETYPES[primaryId],
-    primaryPercentage: Math.max(52, primaryRatio),
+    primaryPercentage: primaryRatio,
     secondaryArchetype: PSYCHO_ARCHETYPES[secondaryId],
-    secondaryPercentage: Math.min(48, secondaryRatio),
+    secondaryPercentage: secondaryRatio,
     axes,
     allArchetypeScores: archetypeScores,
     completedQuestions: count,
@@ -119,6 +166,7 @@ export function generatePsychoShareText(profile: PsychoProfileResult, playerName
 
   return [
     `🎭 Profil Psycho (${playerName}) sur JOUXTA`,
+    `Jeu de soirée — résultat ludique, sans valeur diagnostique.`,
     `──────────────────────────`,
     `${p.emoji} Archétype Majeur : ${p.name} (${profile.primaryPercentage}%)`,
     `✨ Nuance : ${s.name} (${profile.secondaryPercentage}%)`,

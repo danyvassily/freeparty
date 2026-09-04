@@ -175,9 +175,9 @@
     "version": 1
   },
   {
-    "id": "tv-squid-game-first-game",
-    "conceptId": "squid-game-red-light-green-light",
-    "familyId": "squid-game-rules",
+    "id": "tv-squid-game-first-game-korean-name",
+    "conceptId": "squid-game-red-light",
+    "familyId": "squid-game",
     "type": "mcq",
     "question": "Dans Squid Game, quel jeu d'enfant traditionnel coréen (équivalent d'Un, deux, trois, soleil) ouvre la compétition ?",
     "answers": [
