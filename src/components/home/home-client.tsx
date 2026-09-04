@@ -15,7 +15,7 @@ export function HomeClient() {
     <>
       <AppNavigation />
       <main className="fp-page flex min-h-[calc(100dvh-4rem)] flex-col justify-center">
-        <section className="grid items-center gap-8 overflow-hidden rounded-[2rem] border border-fp-primary/15 bg-[linear-gradient(135deg,#ffffff_15%,#f1efff_100%)] px-5 py-8 shadow-[0_24px_70px_rgba(58,52,130,0.10)] sm:px-10 sm:py-11 lg:grid-cols-[1.2fr_0.8fr] lg:px-14">
+        <section className="grid items-center gap-8 overflow-hidden rounded-[2rem] border border-fp-cyan/70 bg-[linear-gradient(135deg,#ffffff_15%,#e8faf9_100%)] px-5 py-8 shadow-[0_24px_70px_rgba(17,139,120,0.12)] sm:px-10 sm:py-11 lg:grid-cols-[1.2fr_0.8fr] lg:px-14">
           <div>
             <span className="fp-eyebrow">Bienvenue sur {BRAND.name}</span>
             <h1 className="mt-4 max-w-3xl text-[2.35rem] font-black leading-[1.03] tracking-[-0.055em] text-fp-text sm:text-5xl lg:text-[3.45rem]">
@@ -56,7 +56,7 @@ export function HomeClient() {
           </div>
 
           <div className="relative grid min-h-56 place-items-center" aria-hidden="true">
-            <span className="absolute h-52 w-52 rounded-full bg-fp-primary/10 blur-2xl" />
+            <span className="absolute h-52 w-52 rounded-full bg-fp-coral/15 blur-2xl" />
             <KawaiiMascot theme="party" size={210} className="rotate-2 border-4 border-white shadow-xl" />
           </div>
         </section>
@@ -67,15 +67,15 @@ export function HomeClient() {
             <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">Jeu local</strong><span className="mt-1 block text-sm text-fp-text-dim">Tous les modes sur un appareil</span></span>
             <ArrowRight className="h-5 w-5 text-fp-primary transition-transform group-hover:translate-x-1" />
           </Link>
-          <Link href="/play/online" className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-emerald-400">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-100 text-emerald-700"><Globe2 className="h-5 w-5" /></span>
+          <Link href="/play/online" className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-fp-cyan">
+            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-fp-cyan/45 text-fp-success"><Globe2 className="h-5 w-5" /></span>
             <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">Salons en ligne</strong><span className="mt-1 block text-sm text-fp-text-dim">Chacun sur son appareil</span></span>
-            <ArrowRight className="h-5 w-5 text-emerald-700 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="h-5 w-5 text-fp-success transition-transform group-hover:translate-x-1" />
           </Link>
           <Link href={isLoggedIn ? "/auth" : "/auth?mode=register"} className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-fp-primary/35">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-amber-100 text-amber-700"><ShieldCheck className="h-5 w-5" /></span>
+            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-fp-yellow/45 text-fp-warning"><ShieldCheck className="h-5 w-5" /></span>
             <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">{isLoggedIn ? "Mon compte" : "Créer un compte"}</strong><span className="mt-1 block text-sm text-fp-text-dim">Historique et appareils synchronisés</span></span>
-            <ArrowRight className="h-5 w-5 text-amber-700 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="h-5 w-5 text-fp-warning transition-transform group-hover:translate-x-1" />
           </Link>
         </section>
       </main>

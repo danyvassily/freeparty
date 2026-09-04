@@ -23,7 +23,7 @@ function isActive(pathname: string, href: string) {
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <Link href="/" className="group inline-flex min-h-11 items-center gap-2.5 rounded-xl" aria-label={`${BRAND.name}, accueil`}>
-      <span className="grid h-10 w-10 place-items-center rounded-xl bg-fp-primary text-sm font-black tracking-tight text-white shadow-[0_7px_18px_rgba(99,91,255,0.24)] transition-transform group-hover:-rotate-3">
+      <span className="grid h-10 w-10 place-items-center rounded-xl bg-fp-primary text-sm font-black tracking-tight text-white shadow-[0_7px_18px_rgba(238,96,85,0.28)] transition-transform group-hover:-rotate-3">
         JX
       </span>
       {!compact && (

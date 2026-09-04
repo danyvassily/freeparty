@@ -270,7 +270,7 @@ export function QuizGame({ mode }: QuizGameProps) {
         {winner && winner.score > 0 && <Confetti />}
         <div className="text-center">
           <div className="mx-auto mb-2 flex justify-center">
-            <KawaiiMascot theme="party" size={88} className="border border-black/[0.05] shadow-sm" />
+            <KawaiiMascot theme="party" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
           </div>
           <h1 className="mt-3 text-[28px] font-bold text-fp-text">
             {solo ? "Partie terminée" : `${winner.player.name} gagne !`}
@@ -334,7 +334,7 @@ export function QuizGame({ mode }: QuizGameProps) {
 
         {/* Mascotte Arbitre Animée */}
         <div className="mt-6 flex flex-col items-center">
-          <KawaiiMascot theme="referee" size={110} animation="wobble" className="shadow-md" />
+          <KawaiiMascot theme="referee" size={110} animation="bounce" className="shadow-md" />
           <div className="mt-4 flex items-center gap-2 rounded-full bg-black/[0.04] px-3.5 py-1.5">
             <PlayerDot name={activePlayer.name} colorIndex={activePlayer.color} size={28} />
             <span className="text-[15px] font-bold text-fp-text">{activePlayer.name}</span>
@@ -429,7 +429,7 @@ export function QuizGame({ mode }: QuizGameProps) {
           )}
           {isCorrect && (
             <>
-              <KawaiiMascot theme="happy" size={62} animation="pop" />
+              <KawaiiMascot theme="happy" size={62} animation="celebrate" />
               <div>
                 <p className="text-[14px] font-bold text-fp-success">Excellent ! Bonne réponse 🎉</p>
                 <p className="text-[12px] text-fp-text-dim">+10 points pour votre score !</p>
@@ -438,7 +438,7 @@ export function QuizGame({ mode }: QuizGameProps) {
           )}
           {isWrong && (
             <>
-              <KawaiiMascot theme="sad" size={62} animation="pop" />
+              <KawaiiMascot theme="sad" size={62} animation="shake" />
               <div>
                 <p className="text-[14px] font-bold text-fp-danger">Aïe… Mauvaise réponse 😢</p>
                 <p className="text-[12px] text-fp-text-dim">Regarde l&apos;explication ci-dessous.</p>

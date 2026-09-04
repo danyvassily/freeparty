@@ -594,7 +594,7 @@ export function DebateGame() {
       {/* 3. Phase Discussion libre */}
       {phase === "open-discussion" && (
         <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
-          <KawaiiMascot theme="conference" size={96} animation="float" className="mb-3" />
+          <KawaiiMascot theme="conference" size={96} animation="dance" className="mb-3" />
           <h2 className="text-[24px] font-bold text-fp-text">Discussion libre & Débat ouvert</h2>
           <p className="mt-1 max-w-md text-[14px] text-fp-text-dim">
             Tout le monde échange ses arguments sans restriction de tour.
@@ -645,7 +645,7 @@ export function DebateGame() {
       {/* 4. Phase Relance */}
       {phase === "follow-up" && activeFollowUp && (
         <div className="flex flex-1 flex-col items-center justify-center text-center mt-6">
-          <KawaiiMascot theme="debate" size={90} animation="wobble" className="mb-3" />
+          <KawaiiMascot theme="debate" size={90} animation="dance" className="mb-3" />
           <h2 className="text-[22px] font-bold text-fp-text">Pour aller plus loin</h2>
           <div className="fp-card mt-4 p-5 max-w-md w-full border border-black/[0.04]">
             <p className="text-[17px] font-semibold leading-snug text-fp-text">{activeFollowUp}</p>

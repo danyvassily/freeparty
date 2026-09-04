@@ -1025,7 +1025,7 @@ export function OnlineRoom() {
                 )}
                 {isOnlineCorrect && (
                   <>
-                    <KawaiiMascot theme="happy" size={62} animation="pop" />
+                    <KawaiiMascot theme="happy" size={62} animation="celebrate" />
                     <div>
                       <p className="text-[14px] font-bold text-fp-success">Bravo ! Bonne réponse 🎉</p>
                       <p className="text-[12px] text-fp-text-dim">Tu marques des points pour le classement !</p>
@@ -1034,7 +1034,7 @@ export function OnlineRoom() {
                 )}
                 {isOnlineWrong && (
                   <>
-                    <KawaiiMascot theme="sad" size={62} animation="pop" />
+                    <KawaiiMascot theme="sad" size={62} animation="shake" />
                     <div>
                       <p className="text-[14px] font-bold text-fp-danger">Aïe… Mauvaise réponse 😢</p>
                       <p className="text-[12px] text-fp-text-dim">La bonne réponse est indiquée en vert.</p>
@@ -1067,7 +1067,7 @@ export function OnlineRoom() {
 
               {isBuzzerMode && session.buzzer_player_id && !iOwnBuzzer && !revealed && (
                 <div className="mt-7 rounded-3xl border border-fp-warning/30 bg-fp-warning/10 p-6 text-center">
-                  <KawaiiMascot theme="waiting" size={70} animation="wobble" />
+                  <KawaiiMascot theme="waiting" size={70} animation="bounce" />
                   <p className="mt-3 text-base font-black text-fp-text">{buzzerPlayer?.name ?? "Un joueur"} a buzzé en premier</p>
                   <p className="mt-1 text-sm text-fp-text-dim">Sa réponse est en cours. Prépare-toi pour la prochaine question.</p>
                 </div>
@@ -1172,7 +1172,7 @@ export function OnlineRoom() {
         
         <div className="text-center">
           <div className="mx-auto mb-2 flex justify-center">
-            <KawaiiMascot theme="party" size={88} className="border border-black/[0.05] shadow-sm" />
+            <KawaiiMascot theme="party" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
           </div>
           <h1 className="mt-3 text-[28px] sm:text-[34px] font-bold text-fp-text">Partie terminée</h1>
           {winner && (

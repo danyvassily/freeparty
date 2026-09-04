@@ -2,23 +2,27 @@
 
 /* JOUXTA — un système visuel familier, joyeux et accessible. */
 @theme {
-  --color-fp-bg: #f7f7fb;
+  --color-fp-bg: #f7fcfc;
   --color-fp-card: #ffffff;
-  --color-fp-fill: #eef0f7;
-  --color-fp-border: #e3e5ee;
+  --color-fp-fill: #e8faf9;
+  --color-fp-border: #d7e9e8;
   --color-fp-text: #171829;
-  --color-fp-text-dim: #65687a;
-  --color-fp-text-secondary: #65687a;
-  --color-fp-primary: #635bff;
-  --color-fp-primary-press: #4f46e5;
-  --color-fp-primary-dark: #4f46e5;
-  --color-fp-blue: #635bff;
-  --color-fp-gray-5: #e3e5ee;
-  --color-fp-gray-6: #f7f7fb;
-  --color-fp-success: #15803d;
+  --color-fp-text-dim: #5f6b73;
+  --color-fp-text-secondary: #5f6b73;
+  /* Palette JOUXTA : corail, cyan doux et jaune royal. */
+  --color-fp-primary: #ee6055;
+  --color-fp-primary-press: #d94d43;
+  --color-fp-primary-dark: #c9433b;
+  --color-fp-blue: #90f1ef;
+  --color-fp-cyan: #90f1ef;
+  --color-fp-coral: #ee6055;
+  --color-fp-yellow: #f4d35e;
+  --color-fp-gray-5: #d7e9e8;
+  --color-fp-gray-6: #f7fcfc;
+  --color-fp-success: #118b78;
   --color-fp-danger: #dc2626;
-  --color-fp-warning: #d97706;
-  --color-fp-green: #15803d;
+  --color-fp-warning: #b78600;
+  --color-fp-green: #118b78;
   --color-fp-red: #dc2626;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -31,6 +35,10 @@
   --animate-fade: fade 0.2s ease both;
   --animate-kawaii-float: kawaii-float 3s ease-in-out infinite;
   --animate-kawaii-wobble: kawaii-wobble 2.5s ease-in-out infinite;
+  --animate-kawaii-bounce: kawaii-bounce 1.35s ease-in-out infinite;
+  --animate-kawaii-dance: kawaii-dance 1.8s ease-in-out infinite;
+  --animate-kawaii-celebrate: kawaii-celebrate 1.2s ease-in-out infinite;
+  --animate-kawaii-shake: kawaii-shake 0.8s ease-in-out both;
 }
 
 @keyframes pop { 0% { transform: scale(0.96); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
@@ -38,6 +46,10 @@
 @keyframes fade { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes kawaii-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 @keyframes kawaii-wobble { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(-3deg); } 75% { transform: rotate(3deg); } }
+@keyframes kawaii-bounce { 0%, 100% { transform: translateY(0) scale(1); } 45% { transform: translateY(-9px) scale(1.03); } 70% { transform: translateY(0) scale(0.98); } }
+@keyframes kawaii-dance { 0%, 100% { transform: translateY(0) rotate(0deg); } 20% { transform: translateY(-4px) rotate(-7deg); } 40% { transform: translateY(1px) rotate(6deg); } 60% { transform: translateY(-5px) rotate(-5deg); } 80% { transform: translateY(1px) rotate(4deg); } }
+@keyframes kawaii-celebrate { 0%, 100% { transform: translateY(0) rotate(0deg) scale(1); } 25% { transform: translateY(-8px) rotate(-8deg) scale(1.04); } 50% { transform: translateY(0) rotate(0deg) scale(0.98); } 75% { transform: translateY(-8px) rotate(8deg) scale(1.04); } }
+@keyframes kawaii-shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-5px) rotate(-3deg); } 40%, 80% { transform: translateX(5px) rotate(3deg); } }
 
 :root { color-scheme: light; }
 
@@ -52,8 +64,8 @@ html {
 body {
   min-height: 100dvh;
   background:
-    radial-gradient(circle at 8% 0%, rgba(99, 91, 255, 0.09), transparent 28rem),
-    radial-gradient(circle at 92% 15%, rgba(250, 204, 21, 0.08), transparent 24rem),
+    radial-gradient(circle at 8% 0%, rgba(144, 241, 239, 0.25), transparent 28rem),
+    radial-gradient(circle at 92% 15%, rgba(244, 211, 94, 0.17), transparent 24rem),
     var(--color-fp-bg);
   color: var(--color-fp-text);
   font-family: var(--font-sans);
@@ -67,7 +79,7 @@ body {
 button, a, input, select, textarea { font: inherit; }
 button, a { -webkit-touch-callout: none; }
 button:not(:disabled), a { cursor: pointer; }
-::selection { background: rgba(99, 91, 255, 0.18); }
+::selection { background: rgba(144, 241, 239, 0.45); }
 
 .fp-page {
   width: 100%;
@@ -130,9 +142,9 @@ button:not(:disabled), a { cursor: pointer; }
   padding-inline: 1.25rem;
   background: var(--color-fp-primary);
   color: white;
-  box-shadow: 0 8px 20px rgba(99, 91, 255, 0.22);
+  box-shadow: 0 8px 20px rgba(238, 96, 85, 0.24);
 }
-.fp-btn-primary:hover { background: var(--color-fp-primary-press); box-shadow: 0 10px 24px rgba(99, 91, 255, 0.28); }
+.fp-btn-primary:hover { background: var(--color-fp-primary-press); box-shadow: 0 10px 24px rgba(238, 96, 85, 0.3); }
 
 .fp-btn-secondary {
   padding-inline: 1.25rem;
@@ -158,7 +170,7 @@ button:not(:disabled), a { cursor: pointer; }
   transition: border-color 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 .fp-input:hover { border-color: #cfd2df; }
-.fp-input:focus { border-color: var(--color-fp-primary); box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.13); }
+.fp-input:focus { border-color: var(--color-fp-primary); box-shadow: 0 0 0 4px rgba(238, 96, 85, 0.16); }
 .fp-input::placeholder { color: #9295a5; }
 
 .fp-answer {
@@ -172,7 +184,7 @@ button:not(:disabled), a { cursor: pointer; }
 .fp-answer:hover { border-color: color-mix(in srgb, var(--color-fp-primary) 45%, var(--color-fp-border)); background: #fbfaff; }
 .fp-answer:active { transform: scale(0.99); }
 
-:focus-visible { outline: 3px solid rgba(99, 91, 255, 0.55); outline-offset: 3px; }
+:focus-visible { outline: 3px solid rgba(238, 96, 85, 0.6); outline-offset: 3px; }
 ::-webkit-scrollbar { width: 7px; height: 7px; }
 ::-webkit-scrollbar-thumb { background: rgba(23, 24, 41, 0.18); border-radius: 999px; }
 ::-webkit-scrollbar-track { background: transparent; }

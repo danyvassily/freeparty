@@ -391,7 +391,7 @@ export function PsychoGame() {
         <section className="mt-6 overflow-hidden rounded-[2.5rem] border border-fp-border bg-white shadow-2xl">
           <div className="bg-gradient-to-br from-[#f8f7ff] via-white to-[#f0edff] p-6 sm:p-10 text-center relative">
             <div className="flex justify-center">
-              <KawaiiMascot theme={primaryArchetype.kawaiiTheme} size={110} animation="pop" />
+              <KawaiiMascot theme={primaryArchetype.kawaiiTheme} size={110} animation="dance" />
             </div>
 
             <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-fp-primary/10 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-fp-primary">

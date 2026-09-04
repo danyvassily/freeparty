@@ -22,7 +22,7 @@ interface KawaiiMascotProps {
   size?: number;
   className?: string;
   alt?: string;
-  animation?: "float" | "wobble" | "pop" | "none";
+  animation?: "float" | "wobble" | "bounce" | "dance" | "celebrate" | "shake" | "pop" | "none";
 }
 
 const MASCOT_SOURCES: Record<string, { src: string; alt: string; emoji: string; bg: string }> = {
@@ -139,9 +139,17 @@ export function KawaiiMascot({
       ? "animate-[kawaii-float_3s_ease-in-out_infinite]"
       : animation === "wobble"
         ? "animate-[kawaii-wobble_2.5s_ease-in-out_infinite]"
-        : animation === "pop"
-          ? "animate-pop"
-          : "";
+        : animation === "bounce"
+          ? "animate-[kawaii-bounce_1.35s_ease-in-out_infinite]"
+          : animation === "dance"
+            ? "animate-[kawaii-dance_1.8s_ease-in-out_infinite]"
+            : animation === "celebrate"
+              ? "animate-[kawaii-celebrate_1.2s_ease-in-out_infinite]"
+              : animation === "shake"
+                ? "animate-[kawaii-shake_0.8s_ease-in-out_both]"
+                : animation === "pop"
+                  ? "animate-pop"
+                  : "";
 
   return (
     <div
