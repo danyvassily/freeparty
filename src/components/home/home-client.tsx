@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, Globe2, LogIn, Play, ShieldCheck, UserPlus } from "lucide-react";
 import { AppNavigation } from "@/components/ui/app-navigation";
-import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import { PlayerDot } from "@/components/ui/primitives";
 import { useAuth } from "@/lib/auth/use-auth";
 import { BRAND } from "@/lib/brand";
@@ -55,9 +55,16 @@ export function HomeClient() {
             </div>
           </div>
 
-          <div className="relative grid min-h-56 place-items-center" aria-hidden="true">
-            <span className="absolute h-52 w-52 rounded-full bg-fp-coral/15 blur-2xl" />
-            <KawaiiMascot theme="party" size={210} className="rotate-2 border-4 border-white shadow-xl" />
+          <div className="relative flex min-h-64 items-center justify-center lg:min-h-[23rem]" aria-hidden="true">
+            <span className="absolute h-64 w-64 rounded-full bg-fp-cyan/45 blur-3xl" />
+            <Image
+              src="/images/kawaii/home-duel.png"
+              alt="Deux mascottes JOUXTA qui se défient en souriant"
+              width={768}
+              height={512}
+              priority
+              className="relative z-10 w-full max-w-[34rem] object-contain drop-shadow-[0_22px_30px_rgba(17,139,120,0.2)]"
+            />
           </div>
         </section>
 
