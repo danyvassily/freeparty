@@ -204,7 +204,7 @@ export function TeamBattleGame() {
             </div>
             <div className="text-[20px] text-fp-text-dim">—</div>
             <div>
-              <div className="text-[40px] font-bold tabular-nums text-[#ff2d55]">{scoreB}</div>
+              <div className="text-[40px] font-bold tabular-nums text-fp-coral">{scoreB}</div>
               <div className="mt-1 text-[13px] text-fp-text-dim">Équipe B</div>
             </div>
           </div>
@@ -238,7 +238,7 @@ export function TeamBattleGame() {
         <div className="flex items-center gap-2 rounded-full bg-black/[0.05] px-4 py-1.5 text-[14px] font-semibold tabular-nums">
           <span className="text-fp-primary">A · {scoreA}</span>
           <span className="text-fp-text-dim">|</span>
-          <span className="text-[#ff2d55]">{scoreB} · B</span>
+              <span className="text-fp-coral">{scoreB} · B</span>
         </div>
         <span className="text-[13px] text-fp-text-dim tabular-nums">{index + 1}/{questions.length}</span>
       </div>
@@ -251,7 +251,7 @@ export function TeamBattleGame() {
         <div className="flex items-center justify-between gap-2">
           <span
             className={`inline-flex animate-pop items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-semibold text-white ${
-              currentTeam === "A" ? "bg-fp-primary" : "bg-[#ff2d55]"
+              currentTeam === "A" ? "bg-fp-primary" : "bg-fp-coral"
             }`}
           >
             <Swords className="h-3.5 w-3.5" />

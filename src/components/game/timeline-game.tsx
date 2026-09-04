@@ -81,7 +81,7 @@ export function TimelineGame() {
 
     return (
       <main className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4 pb-16 pt-10 text-center animate-rise">
-        <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#5ac8fa]/15 text-[#5ac8fa]">
+        <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-fp-cyan/45 text-fp-success">
           <Clock className="h-7 w-7" />
         </div>
         <h1 className="mt-3 text-[26px] font-bold text-fp-text">

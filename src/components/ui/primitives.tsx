@@ -39,7 +39,7 @@ export function ProgressRing({
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke={danger ? "#dc2626" : "#635bff"}
+          stroke={danger ? "#dc2626" : "#ee6055"}
           strokeWidth={stroke}
           strokeLinecap="round"
           strokeDasharray={circumference}
@@ -119,7 +119,7 @@ export function Confetti({ count = 50 }: { count?: number }) {
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
-    const colors = ["#635bff", "#15803d", "#f59e0b", "#dc2626", "#c026d3", "#0ea5e9"];
+    const colors = ["#ee6055", "#118b78", "#f4d35e", "#d94d43", "#90f1ef", "#277f91"];
     setPieces(
       Array.from({ length: count }, (_, i) => ({
         id: i,
@@ -239,7 +239,7 @@ export function PlayerDot({
     );
   }
 
-  const COLORS = ["#635bff", "#15803d", "#f59e0b", "#dc2626", "#c026d3", "#0ea5e9", "#4338ca", "#6b7280"];
+  const COLORS = ["#ee6055", "#118b78", "#f4d35e", "#d94d43", "#90f1ef", "#277f91", "#e8a93a", "#5f6b73"];
   const bg = COLORS[((colorIndex % COLORS.length) + COLORS.length) % COLORS.length];
   return (
     <span

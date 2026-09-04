@@ -1052,6 +1052,7 @@ export function OnlineRoom() {
 
               {isBuzzerMode && !session.buzzer_player_id && !revealed && (
                 <div className="mt-7 rounded-3xl border border-fp-primary/20 bg-fp-primary/5 p-5 text-center">
+                  <KawaiiMascot theme="buzzer-energy" size={112} animation="bounce" className="mx-auto mb-2" />
                   <p className="text-sm font-bold text-fp-text">Tu connais la réponse ?</p>
                   <p className="mt-1 text-xs text-fp-text-dim">Le premier appui est verrouillé pour tout le salon.</p>
                   <button
@@ -1172,7 +1173,7 @@ export function OnlineRoom() {
         
         <div className="text-center">
           <div className="mx-auto mb-2 flex justify-center">
-            <KawaiiMascot theme="party" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
+            <KawaiiMascot theme="party-dance" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
           </div>
           <h1 className="mt-3 text-[28px] sm:text-[34px] font-bold text-fp-text">Partie terminée</h1>
           {winner && (

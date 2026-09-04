@@ -104,6 +104,18 @@ const MASCOT_SOURCES: Record<string, { src: string; alt: string; emoji: string; 
     emoji: "🏆",
     bg: "from-amber-100 to-yellow-200",
   },
+  "party-dance": {
+    src: "/images/kawaii/party-dance.png",
+    alt: "Mascotte Kawaii qui danse pour célébrer la victoire",
+    emoji: "🎉",
+    bg: "from-cyan-100 to-rose-200",
+  },
+  "buzzer-energy": {
+    src: "/images/kawaii/buzzer-energy.png",
+    alt: "Mascotte Kawaii qui appuie sur le buzzer",
+    emoji: "⚡",
+    bg: "from-cyan-100 to-amber-200",
+  },
   speed: {
     src: "/images/kawaii/speed-buzzer.webp",
     alt: "Mascotte Rapidité & Buzzer Kawaii",

@@ -270,7 +270,7 @@ export function QuizGame({ mode }: QuizGameProps) {
         {winner && winner.score > 0 && <Confetti />}
         <div className="text-center">
           <div className="mx-auto mb-2 flex justify-center">
-            <KawaiiMascot theme="party" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
+            <KawaiiMascot theme="party-dance" size={88} animation="celebrate" className="border border-black/[0.05] shadow-sm" />
           </div>
           <h1 className="mt-3 text-[28px] font-bold text-fp-text">
             {solo ? "Partie terminée" : `${winner.player.name} gagne !`}

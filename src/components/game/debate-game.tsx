@@ -336,7 +336,7 @@ export function DebateGame() {
           </div>
         )}
         {isEthics && (
-          <div className="mt-4 rounded-2xl bg-[#af52de]/10 p-4 text-[13px] text-fp-text">
+          <div className="mt-4 rounded-2xl bg-fp-cyan/30 p-4 text-[13px] text-fp-text">
             <strong>Dilemme éthique :</strong> Réflexion, argumentation puis vote final.
           </div>
         )}
@@ -474,7 +474,7 @@ export function DebateGame() {
 
         {/* Chronomètre global du débat qui défile */}
         <div className="flex items-center gap-1.5 rounded-full bg-black/[0.05] px-3 py-1 text-[14px] font-bold tabular-nums text-fp-text">
-          <span className="inline-block h-2 w-2 rounded-full bg-[#34c759] animate-pulse" />
+          <span className="inline-block h-2 w-2 rounded-full bg-fp-success animate-pulse" />
           <span>{mins}:{secs}</span>
         </div>
       </div>

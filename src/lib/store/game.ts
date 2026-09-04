@@ -64,8 +64,8 @@ export interface GameState {
 }
 
 export const PLAYER_COLORS = [
-  "#007aff", "#34c759", "#ff9500", "#ff2d55",
-  "#af52de", "#5ac8fa", "#ffcc00", "#5856d6",
+  "#ee6055", "#118b78", "#f4d35e", "#d94d43",
+  "#90f1ef", "#277f91", "#e8a93a", "#5f6b73",
 ];
 
 function randomId(): string {
