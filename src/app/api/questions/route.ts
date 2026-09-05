@@ -185,7 +185,7 @@ export async function POST(request: Request) {
         if (!aiLimit.allowed) aiSkipped = "rate_limited";
         else {
           try {
-            const generated = await generateQuestionsWithDeepSeek(Math.min((count - questions.length) * 2, 12), cat);
+            const generated = await generateQuestionsWithDeepSeek(Math.min((count - questions.length) * 2, 12), cat, language);
             const deduplicated = generated.filter((candidate, index, all) =>
               !isKnowledgeDuplicate(candidate, localPool) &&
               !isKnowledgeDuplicate(candidate, questions) &&
