@@ -19,11 +19,13 @@ import { CATEGORY_LABELS } from "@/lib/game/modes";
 import { TimerBar, Confetti, PillBadge } from "@/components/ui/primitives";
 import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { Trophy, Swords, AlertCircle, ChevronLeft } from "lucide-react";
+import { useLanguageStore } from "@/lib/store/language";
 
 export function TeamBattleGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
   const { entries } = useHistoryStore();
+  const language = useLanguageStore((s) => s.language);
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -65,6 +67,7 @@ export function TeamBattleGame() {
           players,
           history: entries,
           sessionId: config?.sessionId ?? crypto.randomUUID(),
+          language,
         });
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];

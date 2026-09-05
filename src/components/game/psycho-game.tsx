@@ -17,6 +17,7 @@ import {
   type PsychoProfileResult,
 } from "@/lib/game/psycho-engine";
 import { sound } from "@/lib/audio/sound-engine";
+import { useLanguageStore } from "@/lib/store/language";
 import { PillBadge, Confetti, PlayerDot } from "@/components/ui/primitives";
 import { KawaiiMascot } from "@/components/ui/kawaii-mascot";
 import {
@@ -35,12 +36,13 @@ import {
 } from "lucide-react";
 
 type Phase = "intro" | "playing" | "analyzing" | "report";
-type PsychoExperience = "individual" | "duo" | "group";
+type PsychoExperience = "individual" | "duo" | "group" | "quick";
 
-const EXPERIENCE_META: Record<PsychoExperience, { name: string; description: string; minPlayers: number; emoji: string }> = {
-  individual: { name: "Portrait individuel", description: "Découvre ton archétype, tes forces et tes contrastes.", minPlayers: 1, emoji: "🪞" },
-  duo: { name: "Affinité duo", description: "Compare deux profils et leurs points d'accord ou de friction.", minPlayers: 2, emoji: "💞" },
-  group: { name: "Dynamique de groupe", description: "Observe l'énergie moyenne et la diversité de toute l'équipe.", minPlayers: 3, emoji: "🫶" },
+const EXPERIENCE_META: Record<PsychoExperience, { name: string; description: string; minPlayers: number; emoji: string; nameEn: string; descriptionEn: string }> = {
+  individual: { name: "Portrait individuel", description: "Découvre ton archétype, tes forces et tes contrastes.", nameEn: "Individual portrait", descriptionEn: "Discover your archetype, strengths and contrasts.", minPlayers: 1, emoji: "🪞" },
+  duo: { name: "Affinité duo", description: "Compare deux profils et leurs points d'accord ou de friction.", nameEn: "Duo affinity", descriptionEn: "Compare two profiles and their points of agreement or friction.", minPlayers: 2, emoji: "💞" },
+  group: { name: "Dynamique de groupe", description: "Observe l'énergie moyenne et la diversité de toute l'équipe.", nameEn: "Group dynamics", descriptionEn: "See your team's shared energy and diversity.", minPlayers: 3, emoji: "🫶" },
+  quick: { name: "Dilemmes express", description: "6 choix rapides pour révéler ton style de soirée en 2 minutes.", nameEn: "Quick dilemmas", descriptionEn: "Six rapid choices to reveal your party style in two minutes.", minPlayers: 1, emoji: "⚡" },
 };
 
 const ANALYZING_STEPS = [
@@ -53,6 +55,7 @@ const ANALYZING_STEPS = [
 export function PsychoGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
+  const language = useLanguageStore((s) => s.language);
 
   const players: Player[] = useMemo(() => {
     if (config?.players && config.players.length > 0) {
@@ -70,24 +73,26 @@ export function PsychoGame() {
   const [analyzingStep, setAnalyzingStep] = useState(0);
   const [copied, setCopied] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const activeQuestions = experience === "quick" ? PSYCHO_QUESTIONS.slice(0, 6) : PSYCHO_QUESTIONS;
+  const questionCount = activeQuestions.length;
 
   const currentPlayer = players[activePlayerIndex] ?? players[0];
   const nextPlayer = players[activePlayerIndex + 1];
   const isLastPlayer = activePlayerIndex >= players.length - 1;
 
-  const currentQuestion = PSYCHO_QUESTIONS[currentIndex] ?? PSYCHO_QUESTIONS[0];
-  const progressPercent = Math.round(((currentIndex + 1) / PSYCHO_QUESTIONS.length) * 100);
+  const currentQuestion = activeQuestions[currentIndex] ?? activeQuestions[0];
+  const progressPercent = Math.round(((currentIndex + 1) / activeQuestions.length) * 100);
 
   // Profil du joueur actif calculé
   const profileResult: PsychoProfileResult | null = useMemo(() => {
     if (completedProfiles[currentPlayer.id]) {
       return completedProfiles[currentPlayer.id];
     }
-    if (answers.length >= PSYCHO_QUESTIONS.length) {
+    if (answers.length >= questionCount) {
       return calculatePsychoProfile(answers);
     }
     return null;
-  }, [completedProfiles, currentPlayer.id, answers]);
+  }, [completedProfiles, currentPlayer.id, answers, questionCount]);
 
   // Phase d'analyse animée
   useEffect(() => {
@@ -115,7 +120,7 @@ export function PsychoGame() {
     nextAnswers[currentIndex] = optionIndex;
     setAnswers(nextAnswers);
 
-    if (currentIndex < PSYCHO_QUESTIONS.length - 1) {
+    if (currentIndex < activeQuestions.length - 1) {
       setCurrentIndex((i) => i + 1);
     } else {
       const res = calculatePsychoProfile(nextAnswers);
@@ -191,9 +196,9 @@ export function PsychoGame() {
         </button>
         <div className="mt-7 text-center">
           <KawaiiMascot theme="thinking" size={105} animation="float" />
-          <p className="mt-4 text-xs font-black uppercase tracking-[0.18em] text-fp-primary">Profil Psycho</p>
-          <h1 className="mt-2 text-3xl font-black text-fp-text sm:text-4xl">Quelle expérience voulez-vous vivre ?</h1>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-fp-text-dim">Trois lectures ludiques basées sur les mêmes dilemmes. Aucun résultat n&apos;est un diagnostic psychologique.</p>
+            <p className="mt-4 text-xs font-black uppercase tracking-[0.18em] text-fp-primary">{language === "en" ? "Party psychology" : "Profil Psycho"}</p>
+          <h1 className="mt-2 text-3xl font-black text-fp-text sm:text-4xl">{language === "en" ? "Choose your experience" : "Quelle expérience voulez-vous vivre ?"}</h1>
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-fp-text-dim">{language === "en" ? "Playful personality games for your group. No result is a psychological diagnosis." : "Des jeux de personnalité ludiques pour votre groupe. Aucun résultat n&apos;est un diagnostic psychologique."}</p>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           {(Object.entries(EXPERIENCE_META) as Array<[PsychoExperience, (typeof EXPERIENCE_META)[PsychoExperience]]>).map(([id, meta]) => {
@@ -207,9 +212,9 @@ export function PsychoGame() {
                 className="fp-card min-h-48 p-5 text-left transition hover:-translate-y-0.5 hover:border-fp-primary/35 disabled:cursor-not-allowed disabled:opacity-45"
               >
                 <span className="text-3xl" aria-hidden="true">{meta.emoji}</span>
-                <span className="mt-5 block text-lg font-black text-fp-text">{meta.name}</span>
-                <span className="mt-2 block text-sm leading-relaxed text-fp-text-dim">{meta.description}</span>
-                <span className="mt-4 block text-xs font-bold text-fp-primary">{available ? `${players.length} joueur${players.length > 1 ? "s" : ""} prêt${players.length > 1 ? "s" : ""}` : `Minimum ${meta.minPlayers} joueurs`}</span>
+                <span className="mt-5 block text-lg font-black text-fp-text">{language === "en" ? meta.nameEn : meta.name}</span>
+                <span className="mt-2 block text-sm leading-relaxed text-fp-text-dim">{language === "en" ? meta.descriptionEn : meta.description}</span>
+                <span className="mt-4 block text-xs font-bold text-fp-primary">{available ? `${players.length} ${language === "en" ? `player${players.length > 1 ? "s" : ""} ready` : `joueur${players.length > 1 ? "s" : ""} prêt${players.length > 1 ? "s" : ""}`}` : `${language === "en" ? "Minimum" : "Minimum"} ${meta.minPlayers} ${language === "en" ? "players" : "joueurs"}`}</span>
               </button>
             );
           })}
@@ -251,7 +256,7 @@ export function PsychoGame() {
         <div className="mt-4">
           <div className="flex items-center justify-between text-xs font-extrabold text-fp-text-dim mb-1.5">
             <span>
-              Question {currentIndex + 1} sur {PSYCHO_QUESTIONS.length}
+              {language === "en" ? `Question ${currentIndex + 1} of ${activeQuestions.length}` : `Question ${currentIndex + 1} sur ${activeQuestions.length}`}
             </span>
             <span>{progressPercent}%</span>
           </div>

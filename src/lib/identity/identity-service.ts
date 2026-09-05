@@ -100,6 +100,7 @@ export async function getParticipantTokens(players: Player[]): Promise<string[]>
 export interface ResolvedProfile {
   device_token: string;
   profile_id: string;
+  elo_rating?: number;
 }
 
 /** Crée les profils anonymes et fusionne automatiquement le profil du premier

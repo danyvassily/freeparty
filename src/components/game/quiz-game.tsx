@@ -25,6 +25,7 @@ import { RoundRoastPanel } from "@/components/game/round-roast-panel";
 import { AlertCircle, Flag, ChevronLeft, HandMetal, Check, X } from "lucide-react";
 import { sound } from "@/lib/audio/sound-engine";
 import { isQuizAnswerCorrect, playerQuestionCount, startQuestionCountdown } from "@/lib/game/quiz-round";
+import { recordEloResults } from "@/lib/ranking/client";
 
 interface QuizGameProps {
   mode: "classic" | "truefalse" | "rapidfire";
@@ -62,6 +63,7 @@ export function QuizGame({ mode }: QuizGameProps) {
   const [scores, setScores] = useState<Record<string, { score: number; correct: number }>>({});
   const [reloadKey, setReloadKey] = useState(0);
   const [sessionId, setSessionId] = useState(() => config?.sessionId ?? crypto.randomUUID());
+  const eloRecordedRef = useRef(false);
 
   const answeredRef = useRef(false);
   const handleAnswerRef = useRef<(i: number) => void>(() => {});
@@ -108,6 +110,7 @@ export function QuizGame({ mode }: QuizGameProps) {
         setIndex(0);
         setSelected(null);
         setScores({});
+        eloRecordedRef.current = false;
         setError(null);
         setReportOpen(false);
         setReportDone(false);
@@ -119,6 +122,7 @@ export function QuizGame({ mode }: QuizGameProps) {
           players,
           history: entries,
           sessionId,
+          language: lang,
         });
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
@@ -146,6 +150,12 @@ export function QuizGame({ mode }: QuizGameProps) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reloadKey]);
+
+  useEffect(() => {
+    if (phase !== "results" || eloRecordedRef.current || players.length < 2) return;
+    eloRecordedRef.current = true;
+    void recordEloResults(sessionId, players, Object.fromEntries(players.map((p) => [p.id, scores[p.id]?.score ?? 0])));
+  }, [phase, players, scores, sessionId]);
 
   const goNext = useCallback(() => {
     answeredRef.current = false;

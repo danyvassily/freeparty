@@ -34,6 +34,7 @@ import { LeCutModal } from "./le-cut-modal";
 import { RoundRoastPanel } from "./round-roast-panel";
 import { ArtworkViewer } from "./artwork-viewer";
 import { Trophy, AlertCircle, ChevronLeft, Zap } from "lucide-react";
+import { useLanguageStore } from "@/lib/store/language";
 
 const DIFFICULTY_LABELS: Record<string, string> = {
   easy: "Facile",
@@ -46,6 +47,7 @@ export function PrismGame() {
   const router = useRouter();
   const config = useGameStore((s) => s.config);
   const { entries, addReport } = useHistoryStore();
+  const language = useLanguageStore((s) => s.language);
 
   const [gameState, setGameState] = useState<PrismGameState | null>(null);
   const [questionsPool, setQuestionsPool] = useState<Question[]>([]);
@@ -92,6 +94,7 @@ export function PrismGame() {
           players: playersConfig,
           history: entries,
           sessionId: config?.sessionId ?? crypto.randomUUID(),
+          language,
         });
         if (cancelled) return;
 

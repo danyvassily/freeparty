@@ -5,6 +5,7 @@ import type { QuestionHistory } from "./schema";
 import type { Question } from "./schema";
 import { getAccessToken, getParticipantTokens, resolvePlayerProfiles } from "@/lib/identity/identity-service";
 import { toParticipantHistories, useHistoryStore } from "@/lib/store/history";
+import { useLanguageStore } from "@/lib/store/language";
 
 interface LoadQuestionsOptions {
   count: number;
@@ -15,6 +16,8 @@ interface LoadQuestionsOptions {
   sessionId: string;
   onlineSessionId?: string;
   ai?: boolean;
+  /** Langue de contenu demandée (distincte de la langue de l'interface). */
+  language?: string;
 }
 
 export interface QuestionPoolResponse {
@@ -47,6 +50,7 @@ export async function loadGameQuestions(options: LoadQuestionsOptions): Promise<
       category: options.category,
       difficulties: options.difficulties,
       ai: options.ai ?? false,
+      language: options.language ?? useLanguageStore.getState().language,
       sessionId: options.sessionId,
       onlineSessionId: options.onlineSessionId,
       participantTokens,

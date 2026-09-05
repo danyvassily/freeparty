@@ -16,6 +16,7 @@ export interface LocalizableTranslation {
 export interface LocalizableQuestion {
   question: string;
   answers: string[];
+  language?: string;
   correctAnswer?: number;
   explanation?: string;
   translations?: Partial<Record<string, LocalizableTranslation>>;
@@ -35,17 +36,24 @@ export const QUESTION_TRANSLATION_LANGS = ["en"] as const;
 
 export function localizeQuestion(q: LocalizableQuestion, lang: string): LocalizedQuestion {
   const base = lang.toLowerCase().split("-")[0];
-  if (base !== "fr") {
-    const t = q.translations?.[base];
-    if (t && t.question.trim().length >= 5 && t.answers && t.answers.length === q.answers.length) {
-      return {
-        question: t.question,
-        answers: t.answers,
-        correctAnswer: q.correctAnswer, // l'index est partagé entre langues
-        explanation: t.explanation ?? q.explanation,
-        lang: base,
-      };
-    }
+  const t = q.translations?.[base];
+  if (t && t.question.trim().length >= 5 && t.answers && t.answers.length === q.answers.length) {
+    return {
+      question: t.question,
+      answers: t.answers,
+      correctAnswer: q.correctAnswer, // l'index est partagé entre langues
+      explanation: t.explanation ?? q.explanation,
+      lang: base,
+    };
+  }
+  if (base !== "fr" && q.language === base) {
+    return {
+      question: q.question,
+      answers: q.answers,
+      correctAnswer: q.correctAnswer,
+      explanation: q.explanation,
+      lang: base,
+    };
   }
   return {
     question: q.question,

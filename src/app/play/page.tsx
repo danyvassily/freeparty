@@ -12,6 +12,7 @@ import { GuessGame } from "@/components/game/guess-game";
 import { DebateGame } from "@/components/game/debate-game";
 import { PsychoGame } from "@/components/game/psycho-game";
 import { Play, Sparkles } from "lucide-react";
+import { IQGame } from "@/components/game/iq-game";
 
 const emptySubscribe = () => () => {};
 
@@ -72,6 +73,8 @@ export default function PlayPage() {
       return <DebateGame />;
     case "psycho":
       return <PsychoGame />;
+    case "iq":
+      return <IQGame />;
     default:
       return <PrismGame />;
   }

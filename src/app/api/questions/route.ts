@@ -20,6 +20,7 @@ const RequestSchema = z.object({
   category: z.string().optional(),
   difficulties: z.array(z.enum(["easy", "medium", "hard", "expert"])).optional(),
   ai: z.boolean().default(false),
+  language: z.enum(["fr", "en"]).default("fr"),
   sessionId: z.string().uuid().optional(),
   onlineSessionId: z.string().uuid().optional(),
   participantTokens: z.array(z.string().min(12).max(200)).min(1).max(8).optional(),
@@ -109,11 +110,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Requête invalide", details: parsed.error.issues }, { status: 400 });
   }
 
-  const { count, category, difficulties, ai, onlineSessionId, participantTokens, participantHistories, history } = parsed.data;
+  const { count, category, difficulties, ai, language, onlineSessionId, participantTokens, participantHistories, history } = parsed.data;
   const sessionId = parsed.data.sessionId ?? crypto.randomUUID();
   const cat = (category ?? "mixed") as QuestionCategory | "mixed";
   const histories: ParticipantHistory[] = participantHistories?.length ? participantHistories : [{ entries: history }];
-  const localPool = loadQuestions("fr").questions;
+  // Le catalogue doit suivre la langue demandée. On ne retombe en français
+  // que si le catalogue traduit n'existe pas encore, jamais silencieusement
+  // lorsque l'anglais est disponible.
+  const localizedPool = loadQuestions(language).questions;
+  const fallbackPool = loadQuestions("fr").questions;
+  const localPool = localizedPool.length > 0 ? localizedPool : fallbackPool;
+  // En ligne, conserver les deux variantes quand elles existent afin que
+  // chaque appareil rende la question dans sa propre langue. La famille et
+  // l'index de bonne réponse restent partagés.
+  if (language === "fr" || language === "en") {
+    const alternateLanguage = language === "fr" ? "en" : "fr";
+    const alternateByFamily = new Map(loadQuestions(alternateLanguage).questions.map((q) => [q.familyId.toLowerCase(), q]));
+    for (const question of localPool) {
+      const alternate = alternateByFamily.get(question.familyId.toLowerCase());
+      if (alternate) {
+        question.translations = {
+          ...(question.translations ?? {}),
+          [alternateLanguage]: { question: alternate.question, answers: alternate.answers, explanation: alternate.explanation },
+        };
+      }
+    }
+  }
   const supabase = participantTokens?.length ? getRequestSupabase(request) : null;
   const stages = stagePools(localPool, cat, difficulties);
 

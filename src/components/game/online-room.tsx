@@ -300,6 +300,7 @@ export function OnlineRoom() {
         sessionId: resetSession.id,
         onlineSessionId: resetSession.id,
         ai: true,
+        language: useLanguageStore.getState().language,
       });
       const qs = data.questions ?? [];
       questionsRef.current = qs;

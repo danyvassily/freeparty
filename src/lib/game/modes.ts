@@ -121,11 +121,21 @@ export const MODE_META: Record<GameMode, ModeMeta> = {
     usesQuestionCatalog: false,
     passAndPlay: false,
   },
+  iq: {
+    id: "iq",
+    name: "QI Express",
+    subtitle: "Logique, suites et mémoire en 8 défis",
+    icon: "psycho",
+    iconBg: "bg-fp-coral",
+    minPlayers: 1,
+    usesQuestionCatalog: false,
+    passAndPlay: true,
+  },
 };
 
 export const MODE_SECTIONS: Array<{ title: string; modes: GameMode[] }> = [
   { title: "Quiz & Compétition", modes: ["prism", "classic", "truefalse", "rapidfire", "timeline", "teambattle"] },
-  { title: "Psychologie & Discussion", modes: ["psycho", "debate", "wyr", "guess"] },
+  { title: "Psychologie & Discussion", modes: ["psycho", "iq", "debate", "wyr", "guess"] },
 ];
 
 export const CATEGORY_LABELS: Record<QuestionCategory | "mixed", string> = {
