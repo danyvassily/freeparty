@@ -19,5 +19,13 @@ export function LanguageHydrator() {
     });
   }, []);
 
+  useEffect(() => {
+    const unsubscribe = useLanguageStore.subscribe(({ language }) => {
+      document.documentElement.lang = language;
+    });
+    document.documentElement.lang = useLanguageStore.getState().language;
+    return unsubscribe;
+  }, []);
+
   return null;
 }

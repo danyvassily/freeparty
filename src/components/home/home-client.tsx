@@ -7,9 +7,11 @@ import { AppNavigation } from "@/components/ui/app-navigation";
 import { PlayerDot } from "@/components/ui/primitives";
 import { useAuth } from "@/lib/auth/use-auth";
 import { BRAND } from "@/lib/brand";
+import { useLanguageStore } from "@/lib/store/language";
 
 export function HomeClient() {
   const { user, isLoggedIn } = useAuth();
+  const en = useLanguageStore((s) => s.language === "en");
 
   return (
     <>
@@ -17,12 +19,12 @@ export function HomeClient() {
       <main className="fp-page flex min-h-[calc(100dvh-4rem)] flex-col justify-center">
         <section className="grid items-center gap-8 overflow-hidden rounded-[2rem] border border-fp-cyan/70 bg-[linear-gradient(135deg,#ffffff_15%,#e8faf9_100%)] px-5 py-8 shadow-[0_24px_70px_rgba(17,139,120,0.12)] sm:px-10 sm:py-11 lg:grid-cols-[1.2fr_0.8fr] lg:px-14">
           <div>
-            <span className="fp-eyebrow">Bienvenue sur {BRAND.name}</span>
+            <span className="fp-eyebrow">{en ? `Welcome to ${BRAND.name}` : `Bienvenue sur ${BRAND.name}`}</span>
             <h1 className="mt-4 max-w-3xl text-[2.35rem] font-black leading-[1.03] tracking-[-0.055em] text-fp-text sm:text-5xl lg:text-[3.45rem]">
-              Une soirée, plein de façons de jouer.
+              {en ? "One night, endless ways to play." : "Une soirée, plein de façons de jouer."}
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-fp-text-dim sm:text-lg">
-              Jouez immédiatement sans compte, ou connectez-vous pour synchroniser votre historique et vos salons.
+              {en ? "Play instantly without an account, or sign in to sync your history and rooms." : "Jouez immédiatement sans compte, ou connectez-vous pour synchroniser votre historique et vos salons."}
             </p>
 
             {isLoggedIn && user ? (
@@ -30,28 +32,28 @@ export function HomeClient() {
                 <div className="flex items-center gap-3">
                   <PlayerDot name={user.name} avatarUrl={user.avatarUrl} size={42} />
                   <div className="min-w-0 flex-1">
-                    <p className="font-extrabold text-fp-text">Bonjour {user.name}</p>
-                    <p className="truncate text-sm text-fp-text-dim">Votre historique est synchronisé.</p>
+                    <p className="font-extrabold text-fp-text">{en ? `Hello ${user.name}` : `Bonjour ${user.name}`}</p>
+                    <p className="truncate text-sm text-fp-text-dim">{en ? "Your history is synced." : "Votre historique est synchronisé."}</p>
                   </div>
                   <ShieldCheck className="h-5 w-5 shrink-0 text-fp-success" />
                 </div>
                 <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-                  <Link href="/play/local" className="fp-btn-primary flex-1 gap-2"><Play className="h-4.5 w-4.5 fill-current" />Jouer</Link>
-                  <Link href="/auth" className="fp-btn-secondary flex-1">Gérer mon compte</Link>
+                  <Link href="/play/local" className="fp-btn-primary flex-1 gap-2"><Play className="h-4.5 w-4.5 fill-current" />{en ? "Play" : "Jouer"}</Link>
+                  <Link href="/auth" className="fp-btn-secondary flex-1">{en ? "Manage account" : "Gérer mon compte"}</Link>
                 </div>
               </div>
             ) : (
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <Link href="/play/local" className="fp-btn-primary gap-2 px-6"><Play className="h-4.5 w-4.5 fill-current" />Jouer sans compte</Link>
-                <Link href="/auth?mode=register" className="fp-btn-secondary gap-2 px-6"><UserPlus className="h-4.5 w-4.5" />Créer un compte</Link>
-                <Link href="/auth?mode=login" className="fp-btn-ghost gap-2 px-4 text-fp-primary"><LogIn className="h-4 w-4" />Se connecter</Link>
+                <Link href="/play/local" className="fp-btn-primary gap-2 px-6"><Play className="h-4.5 w-4.5 fill-current" />{en ? "Play without account" : "Jouer sans compte"}</Link>
+                <Link href="/auth?mode=register" className="fp-btn-secondary gap-2 px-6"><UserPlus className="h-4.5 w-4.5" />{en ? "Create account" : "Créer un compte"}</Link>
+                <Link href="/auth?mode=login" className="fp-btn-ghost gap-2 px-4 text-fp-primary"><LogIn className="h-4 w-4" />{en ? "Sign in" : "Se connecter"}</Link>
               </div>
             )}
 
             <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-fp-text-dim">
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />Compte facultatif</span>
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />1 à 8 joueurs</span>
-              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />Questions inédites</span>
+              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />{en ? "Account optional" : "Compte facultatif"}</span>
+              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />{en ? "1–8 players" : "1 à 8 joueurs"}</span>
+              <span className="inline-flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-fp-success" />{en ? "Fresh questions" : "Questions inédites"}</span>
             </div>
           </div>
 
@@ -71,17 +73,17 @@ export function HomeClient() {
         <section className="mt-6 grid gap-3 md:grid-cols-3" aria-label="Sections de l’application">
           <Link href="/play/local" className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-fp-primary/35">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-fp-primary/10 text-fp-primary"><Play className="h-5 w-5" /></span>
-            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">Jeu local</strong><span className="mt-1 block text-sm text-fp-text-dim">Tous les modes sur un appareil</span></span>
+            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">{en ? "Local game" : "Jeu local"}</strong><span className="mt-1 block text-sm text-fp-text-dim">{en ? "Every mode on one device" : "Tous les modes sur un appareil"}</span></span>
             <ArrowRight className="h-5 w-5 text-fp-primary transition-transform group-hover:translate-x-1" />
           </Link>
           <Link href="/play/online" className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-fp-cyan">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-fp-cyan/45 text-fp-success"><Globe2 className="h-5 w-5" /></span>
-            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">Salons en ligne</strong><span className="mt-1 block text-sm text-fp-text-dim">Chacun sur son appareil</span></span>
+            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">{en ? "Online rooms" : "Salons en ligne"}</strong><span className="mt-1 block text-sm text-fp-text-dim">{en ? "Everyone on their own device" : "Chacun sur son appareil"}</span></span>
             <ArrowRight className="h-5 w-5 text-fp-success transition-transform group-hover:translate-x-1" />
           </Link>
           <Link href={isLoggedIn ? "/auth" : "/auth?mode=register"} className="fp-card group flex min-h-32 items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:border-fp-primary/35">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-fp-yellow/45 text-fp-warning"><ShieldCheck className="h-5 w-5" /></span>
-            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">{isLoggedIn ? "Mon compte" : "Créer un compte"}</strong><span className="mt-1 block text-sm text-fp-text-dim">Historique et appareils synchronisés</span></span>
+            <span className="min-w-0 flex-1"><strong className="block text-base text-fp-text">{isLoggedIn ? (en ? "My account" : "Mon compte") : (en ? "Create an account" : "Créer un compte")}</strong><span className="mt-1 block text-sm text-fp-text-dim">{en ? "Synced history and devices" : "Historique et appareils synchronisés"}</span></span>
             <ArrowRight className="h-5 w-5 text-fp-warning transition-transform group-hover:translate-x-1" />
           </Link>
         </section>

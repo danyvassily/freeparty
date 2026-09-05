@@ -6,6 +6,7 @@ import { Gamepad2, House, Settings, UsersRound } from "lucide-react";
 import { BRAND } from "@/lib/brand";
 import { useAuth } from "@/lib/auth/use-auth";
 import { PlayerDot } from "@/components/ui/primitives";
+import { useLanguageStore } from "@/lib/store/language";
 
 const NAV_ITEMS = [
   { href: "/", label: "Accueil", icon: House },
@@ -39,6 +40,8 @@ export function BrandMark({ compact = false }: { compact?: boolean }) {
 export function AppNavigation() {
   const pathname = usePathname();
   const { user, isLoggedIn } = useAuth();
+  const en = useLanguageStore((s) => s.language === "en");
+  const navItems = NAV_ITEMS.map((item, index) => ({ ...item, label: en ? ["Home", "Play", "Online", "Settings"][index] : item.label }));
 
   return (
     <>
@@ -47,7 +50,7 @@ export function AppNavigation() {
           <BrandMark />
 
           <nav className="hidden items-center gap-1 md:flex" aria-label="Navigation principale">
-            {NAV_ITEMS.slice(0, 4).map(({ href, label, icon: Icon }) => {
+            {navItems.slice(0, 4).map(({ href, label, icon: Icon }) => {
               const active = isActive(pathname, href);
               return (
                 <Link
@@ -78,7 +81,7 @@ export function AppNavigation() {
         className="fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 grid grid-cols-4 rounded-2xl border border-fp-border bg-white/95 p-1.5 shadow-[0_16px_45px_rgba(23,24,41,0.18)] backdrop-blur-xl md:hidden"
         aria-label="Navigation mobile"
       >
-        {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
+        {navItems.map(({ href, label, icon: Icon }) => {
           const active = isActive(pathname, href);
           return (
             <Link
