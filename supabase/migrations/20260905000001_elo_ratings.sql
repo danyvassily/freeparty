@@ -29,7 +29,7 @@ as $$
 declare
   current_rating int;
   new_rating int;
-  inserted boolean;
+  affected int;
 begin
   if not exists (select 1 from player_profiles where id = p_profile_id and user_id = auth.uid()) then
     raise exception 'profile_not_owned';
@@ -39,8 +39,8 @@ begin
   insert into elo_game_results(session_id, profile_id, score, opponent_average, rating_before, rating_after)
   values (p_session_id, p_profile_id, p_score, p_opponent_average, current_rating, new_rating)
   on conflict (session_id, profile_id) do nothing;
-  get diagnostics inserted = row_count;
-  if not inserted then return current_rating; end if;
+  get diagnostics affected = row_count;
+  if affected = 0 then return current_rating; end if;
   update player_profiles set elo_rating = new_rating, elo_games_played = elo_games_played + 1, updated_at = now() where id = p_profile_id;
   return new_rating;
 end;
