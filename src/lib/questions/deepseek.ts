@@ -132,6 +132,7 @@ async function verifyBatch(raw: AiRawQuestion[]): Promise<Set<number>> {
 export async function generateQuestionsWithDeepSeek(
   count: number,
   category: QuestionCategory | "mixed",
+  language: "fr" | "en" = "fr",
 ): Promise<Question[]> {
   if (!isDeepSeekEnabled()) return [];
 
@@ -144,7 +145,7 @@ export async function generateQuestionsWithDeepSeek(
   try {
     const content = await callDeepSeek(
       GEN_SYSTEM,
-      `Génère ${count} questions de quiz en français sur ${theme}. Répartis les difficultés (environ 1/3 easy, 1/2 medium, le reste hard).`,
+      `Génère ${count} questions de quiz en ${language === "en" ? "anglais" : "français"} sur ${theme}. Répartis les difficultés (environ 1/3 easy, 1/2 medium, le reste hard).`,
     );
     const parsed = JSON.parse(content) as { questions?: AiRawQuestion[] };
     raw = Array.isArray(parsed.questions) ? parsed.questions : [];
@@ -173,6 +174,7 @@ export async function generateQuestionsWithDeepSeek(
         ? { en: { question: enParsed.data.question, answers: enParsed.data.answers, explanation: enParsed.data.explanation } }
         : undefined;
 
+    const english = language === "en" && enParsed?.success ? enParsed.data : null;
     const candidate = {
       id: `ai-${stamp}-${i}-${slug.slice(0, 24)}`,
       conceptId: knowledgeKey,
@@ -181,17 +183,17 @@ export async function generateQuestionsWithDeepSeek(
       contentHash: createHash("sha256").update(normalizeText(q.question)).digest("hex"),
       type: "mcq",
       inputMode: "mcq",
-      question: q.question,
-      answers: q.answers,
+      question: english?.question ?? q.question,
+      answers: english?.answers ?? q.answers,
       correctAnswer: q.correctIndex,
       category: category === "mixed" ? "culture-generale" : category,
       subcategory: (q.subcategory ?? "général").slice(0, 60),
       difficulty: q.difficulty ?? "medium",
-      language: "fr",
-      translations,
+      language,
+      translations: language === "fr" ? translations : undefined,
       tags: ["ia"],
       source: { provider: "deepseek", license: "AI-generated" },
-      explanation: q.explanation?.slice(0, 300),
+      explanation: (english?.explanation ?? q.explanation)?.slice(0, 300),
       confidence: 0.9,
       qualityScore: 0.9,
     };

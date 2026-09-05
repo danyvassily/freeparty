@@ -461,6 +461,7 @@ export function OnlineRoom() {
   const lang = useLanguageStore((s) => s.language);
   const setLanguage = useLanguageStore((s) => s.setLanguage);
   const qLocal = q ? localizeQuestion(q, lang) : null;
+  const en = lang === "en";
   const correctAnswer = revealed ? q?.correctAnswer : undefined;
   const answeredCount = answeredCountForCurrent;
   const pseudoValid = pseudo.trim().length >= 2;
@@ -474,13 +475,13 @@ export function OnlineRoom() {
         <header className="pb-7">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3 py-1 text-[12px] font-bold text-emerald-700">
             <Globe className="h-3.5 w-3.5" />
-            Multijoueur en ligne
+            {en ? "Online multiplayer" : "Multijoueur en ligne"}
           </div>
           <h1 className="mt-2 text-[30px] sm:text-[36px] font-bold leading-tight tracking-tight text-fp-text">
-            Salons en ligne
+            {en ? "Online rooms" : "Salons en ligne"}
           </h1>
           <p className="mt-1 text-[15px] text-fp-text-dim">
-            Créez un salon privé ou rejoignez vos amis avec leur code.
+            {en ? "Create a private room or join your friends with their code." : "Créez un salon privé ou rejoignez vos amis avec leur code."}
           </p>
         </header>
 
@@ -492,10 +493,10 @@ export function OnlineRoom() {
             </div>
             <div>
               <p className="text-[13px] font-bold text-fp-text">
-                {isLoggedIn && user ? `Connecté : ${user.name}` : "Joueur invité (sans compte)"}
+                {isLoggedIn && user ? (en ? `Signed in: ${user.name}` : `Connecté : ${user.name}`) : (en ? "Guest player (no account)" : "Joueur invité (sans compte)")}
               </p>
               <p className="text-[11px] text-fp-text-dim">
-                {isLoggedIn ? "Historique et stats sauvegardés sur votre profil" : "Créez un compte pour synchroniser votre historique"}
+                {isLoggedIn ? (en ? "History and stats saved to your profile" : "Historique et stats sauvegardés sur votre profil") : (en ? "Create an account to sync your history" : "Créez un compte pour synchroniser votre historique")}
               </p>
             </div>
           </div>
@@ -509,7 +510,7 @@ export function OnlineRoom() {
           </button>
         </div>
 
-        <SectionTitle>Votre pseudo</SectionTitle>
+        <SectionTitle>{en ? "Your nickname" : "Votre pseudo"}</SectionTitle>
         <div className="fp-card p-4 flex items-center gap-3">
           <PlayerDot name={pseudo || "?"} avatarUrl={user?.avatarUrl} colorIndex={0} size={38} />
           <input
@@ -522,7 +523,7 @@ export function OnlineRoom() {
           />
         </div>
 
-        <SectionTitle>Langue des questions</SectionTitle>
+        <SectionTitle>{en ? "Question language" : "Langue des questions"}</SectionTitle>
         <div className="fp-card flex gap-2 p-2.5">
           {(["fr", "en"] as const).map((l) => (
             <button
@@ -548,7 +549,7 @@ export function OnlineRoom() {
             className="fp-btn-primary flex w-full items-center justify-center gap-2 py-4 text-[16px]"
           >
             <Plus className="h-5 w-5" />
-            <span>Créer un salon</span>
+            <span>{en ? "Create a room" : "Créer un salon"}</span>
           </button>
 
           <div className="relative my-3 text-center">
@@ -576,7 +577,7 @@ export function OnlineRoom() {
               disabled={joinCode.trim().length < 4 || !pseudoValid || busy}
               className="fp-btn-secondary flex items-center justify-center py-3.5 px-6 text-[15px] shrink-0"
             >
-              Rejoindre
+              {en ? "Join" : "Rejoindre"}
             </button>
           </div>
         </div>
@@ -670,7 +671,7 @@ export function OnlineRoom() {
           <SectionTitle>Capacité du salon</SectionTitle>
           <div className="fp-list">
             <div className="flex items-center justify-between px-4 py-3.5">
-              <span className="text-[15px] font-medium text-fp-text">Joueurs max</span>
+              <span className="text-[15px] font-medium text-fp-text">{en ? "Max players" : "Joueurs max"}</span>
               <div className="flex items-center gap-3">
                 <button
                   type="button"
@@ -725,7 +726,7 @@ export function OnlineRoom() {
             className="fp-btn-ghost inline-flex items-center gap-1 px-2 py-1 text-[15px]"
           >
             <ChevronLeft className="h-5 w-5" />
-            <span>Quitter le salon</span>
+            <span>{en ? "Leave room" : "Quitter le salon"}</span>
           </button>
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-fp-success/15 px-3 py-1 text-[12px] font-semibold text-fp-success">
@@ -738,7 +739,7 @@ export function OnlineRoom() {
         {/* Carte Code PIN centrale */}
         <div className="mt-5 fp-card p-5 sm:p-6 text-center border border-black/[0.04]">
           <p className="text-[12px] font-semibold uppercase tracking-wider text-fp-text-dim">
-            Code d&apos;accès au salon
+            {en ? "Room access code" : "Code d&apos;accès au salon"}
           </p>
           <div className="mt-3 flex items-center justify-center gap-3">
             <span className="rounded-2xl bg-black/[0.04] px-6 py-3 font-mono text-[30px] sm:text-[34px] font-bold tracking-[0.25em] text-fp-text">
@@ -853,7 +854,7 @@ export function OnlineRoom() {
         {/* Liste des Joueurs du Salon */}
         <div className="mt-6">
           <div className="flex items-center justify-between px-1 pb-2">
-            <SectionTitle>Joueurs connectés ({players.length}/{session.max_players ?? MAX_PLAYERS})</SectionTitle>
+            <SectionTitle>{en ? `Connected players (${players.length}/${session.max_players ?? MAX_PLAYERS})` : `Joueurs connectés (${players.length}/${session.max_players ?? MAX_PLAYERS})`}</SectionTitle>
             <div className="flex items-center gap-2">
               <button
                 type="button"
@@ -903,7 +904,7 @@ export function OnlineRoom() {
                     <PlayerDot name={f.name} colorIndex={3} size={32} />
                     <div>
                       <p className="text-[14px] font-semibold text-fp-text">{f.name}</p>
-                      <p className="text-[11px] text-fp-success font-medium">● Connecté</p>
+                      <p className="text-[11px] text-fp-success font-medium">● {en ? "Connected" : "Connecté"}</p>
                     </div>
                   </div>
 
@@ -934,7 +935,7 @@ export function OnlineRoom() {
             className="fp-btn-primary mt-8 flex w-full items-center justify-center gap-2 py-4 text-[17px]"
           >
             <Play className="h-5 w-5 fill-white" />
-            <span>{busy ? "Préparation de nouvelles questions…" : `Lancer la partie (${players.length} joueur${players.length > 1 ? "s" : ""})`}</span>
+            <span>{busy ? (en ? "Preparing new questions…" : "Préparation de nouvelles questions…") : (en ? `Start game (${players.length} player${players.length > 1 ? "s" : ""})` : `Lancer la partie (${players.length} joueur${players.length > 1 ? "s" : ""})`)}</span>
           </button>
         ) : (
           <div className="fp-card mt-8 p-5 text-center flex flex-col items-center justify-center">
@@ -966,7 +967,7 @@ export function OnlineRoom() {
             aria-label="Quitter"
           >
             <ChevronLeft className="h-5 w-5" />
-            <span>Quitter</span>
+            <span>{en ? "Leave" : "Quitter"}</span>
           </button>
           
           <div className="flex items-center gap-1.5" aria-label={`Question ${qIndex + 1}`}>
@@ -997,7 +998,7 @@ export function OnlineRoom() {
             <div>
               <div className="flex items-center justify-between">
                 <PillBadge colorClass="bg-fp-primary/10 text-fp-primary">
-                  {isHost ? "Hôte · Répondez !" : "À vous de jouer !"}
+                  {isHost ? (en ? "Host · Answer!" : "Hôte · Répondez !") : (en ? "Your turn!" : "À vous de jouer !")}
                 </PillBadge>
                 <span className="text-[13px] font-medium text-fp-text-dim tabular-nums">
                   {answeredCount}/{players.length} ont répondu
@@ -1132,7 +1133,7 @@ export function OnlineRoom() {
                     className="fp-btn-primary flex flex-1 items-center justify-center gap-2 py-4 text-[16px]"
                   >
                     <Eye className="h-5 w-5" />
-                    <span>Révéler la réponse</span>
+                    <span>{en ? "Reveal answer" : "Révéler la réponse"}</span>
                   </button>
                 ) : (
                   <button
@@ -1140,7 +1141,7 @@ export function OnlineRoom() {
                     onClick={nextQuestion}
                     className="fp-btn-primary flex flex-1 items-center justify-center gap-2 py-4 text-[16px]"
                   >
-                    <span>{index() >= questions.length - 1 ? "Voir le classement final" : "Question suivante"}</span>
+                    <span>{index() >= questions.length - 1 ? (en ? "See final ranking" : "Voir le classement final") : (en ? "Next question" : "Question suivante")}</span>
                     <ArrowRight className="h-5 w-5" />
                   </button>
                 )}
@@ -1284,7 +1285,7 @@ export function OnlineRoom() {
             onClick={leave}
             className="w-full text-center text-[14px] font-medium text-fp-danger pt-2"
           >
-            Quitter définitivement le salon
+            {en ? "Leave the room permanently" : "Quitter définitivement le salon"}
           </button>
         </div>
 

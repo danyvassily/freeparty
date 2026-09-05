@@ -123,6 +123,7 @@ export function QuizGame({ mode }: QuizGameProps) {
           history: entries,
           sessionId,
           language: lang,
+          ai: lang === "en",
         });
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];

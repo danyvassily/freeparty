@@ -95,6 +95,7 @@ export function PrismGame() {
           history: entries,
           sessionId: config?.sessionId ?? crypto.randomUUID(),
           language,
+          ai: language === "en",
         });
         if (cancelled) return;
 

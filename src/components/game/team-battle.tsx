@@ -68,6 +68,7 @@ export function TeamBattleGame() {
           history: entries,
           sessionId: config?.sessionId ?? crypto.randomUUID(),
           language,
+          ai: language === "en",
         });
         if (cancelled) return;
         const pool = (data.questions ?? []) as Question[];
